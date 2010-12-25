@@ -1,0 +1,8 @@
+SPEC?=SPECS/stm-host-havana-kernel.spec
+BUILDAREA?=$(PWD)/../
+
+-include $(BUILDAREA)/Makefile.rpm
+
+rpmpackage:
+	-mkdir SOURCES
+	tar cfz SOURCES/stm-havana-kernel.tgz arch block COPYING CREDITS crypto Documentation drivers fs include init ipc Kbuild kernel lib localversion-stm ltt MAINTAINERS Makefile mm net README REPORTING-BUGS scripts security sound usr

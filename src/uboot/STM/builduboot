@@ -1,0 +1,55 @@
+#!/bin/sh
+
+: ${JOBS:=}
+
+cwd=${0%/*}
+
+ver=stm20
+
+tmp_dir=/tmp/u-boot-$$
+build_dir=BUILT/u-boot
+
+[ -d LOG ] || mkdir LOG || exit 1
+[ -d ${tmp_dir} ] && rm -rf ${tmp_dir} 
+
+mkdir -p ${tmp_dir} || exit 1
+
+[ -d ${build_dir} ] || mkdir -p ${build_dir} || exit 1
+
+#Duolabs
+#LIST_sh4="espresso sti5528eval st220eval stb7100mboard stb7100ref_27 stb7100ref_30 stb7109eref"
+LIST_sh4="stb7100ref_27"
+
+LIST_st200="sti5301mb390 sti5301mb424 stm8010mboard traviata"
+
+build_target() {
+	target=$1
+	make distclean >/dev/null
+	make ${target}_config
+	make ${JOBS} all 2>&1 >LOG/$target.MAKELOG | tee LOG/$target.ERR
+	${CROSS_COMPILE}size u-boot | tee -a LOG/$target.MAKELOG
+}
+
+for arg in $@
+do
+  for target in `eval echo '$LIST_'${arg}`
+  do
+  	case "$arg" in
+  	sh4)
+  		CROSS_COMPILE=sh4-linux-
+  		;;
+  	st200)
+  		CROSS_COMPILE=st231-linux-
+  		;;
+  	esac
+  	build_target ${target}
+  	if [ -x u-boot ] ; then
+		d=${tmp_dir}/${target}-${ver}
+		[ -d $d ] || mkdir $d || exit 1
+  		mv u-boot $d
+  		mv u-boot.bin $d
+  		mv u-boot.srec $d
+  	fi
+  done
+done
+cp -a ${tmp_dir}/* ${build_dir}

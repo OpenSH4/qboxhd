@@ -1,0 +1,22 @@
+#
+# Handle the booting of the co-processors
+#
+
+options stmfb display0=720x576-32@50i:10m:0:pal:rgb:rgb
+
+# try the different core display drivers until one loads
+install stmcore-display \
+  /sbin/modprobe --ignore-install stmcore-display-stx7109c3
+
+install stmfb \
+  /sbin/modprobe stmcore-display; \
+  /sbin/modprobe --ignore-install stmfb; \
+  /usr/bin/hdmi-control --display=0 --unmute --audio-source=spdif ; \
+  /usr/bin/stfbset -a 0
+
+# handle demand loading due to module symbols
+install stmcore-display-stx7109c3 /sbin/modprobe stmfb
+
+# handle demand loading due to use of /dev/fb0
+alias fb0 stmfb
+

@@ -1,0 +1,72 @@
+#!/bin/sh
+#
+# Brief: Mounts a mass storage device: USB HDD/stick or 
+#		iPod/iPhone/iPad. It's called from udev rules
+#		Detect if it's an iPod/iPhone/iPad or an USB HDD/stick and
+#		call the apropriate script.
+#
+# Copyright (c) 2010 Duolabs Spa
+#
+# Author: Pedro Aguilar (pedro@duolabs.com)
+#
+# Changelog
+# Date    Author      Comments
+# ------------------------------------------------------------------------------
+# 100823  paguilar    v1.0 Original
+# 100824  paguilar    v1.1 Fix a bug that wrongly parsed the tmp file that 
+#					  contains the currently mounted idevs.
+#
+
+# Exit if we were called with no args
+if [ "$1" == "" -o "$ACTION" == "" ]; then
+    exit
+fi
+
+devname=$1
+devnum=$2
+
+# FIXME: Do nothing while e2 is formatting an USB HDD
+if [ -e "/tmp/e2_hdd_format" ]; then
+    exit;
+fi
+
+# Get the rootfs device
+BOARD=$(cat /proc/stb/info/model)
+if [ "$BOARD" == "qboxhd-mini" ]; then
+    rootfs_partition=$(blkid | awk -F: '/LABEL="QBOX_HD_MINI"/ { print $1 }')
+else
+    rootfs_partition=$(blkid | awk -F: '/LABEL="QBOX_HD"/ { print $1 }')
+    if [ "$rootfs_partition" == "" ]; then
+        rootfs_partition=$(blkid | awk -F: '/LABEL="QBox_HD"/ { print $1 }')
+    fi  
+fi
+
+# Exit if we were called with the rootfs dev as arg
+if [ "$rootfs_partition" == "/dev/$devname" ]; then
+    exit
+fi
+
+rawdev=$(echo $devname | sed 's/[0-9]//')
+imodel=$(cat /sys/block/$rawdev/device/model | awk -F' ' '/(iPod)|(iPhone)|(iPad)/ { print $1 }')
+
+if [ "$ACTION" == "remove" ]; then
+	idevices=$(cat /tmp/.idev_cur)
+	for i in $idevices; do
+		idev=$(echo $i | awk -F'-' '/(sd[a-z][0-9]?)/ { print $1 }')
+		if [ "$idev" == "$devname" ]; then
+			imodel=$devname
+			break
+		fi
+	done
+fi
+
+if [ "$imodel" != "" ]; then
+    # We have an ipod/iphone/ipad
+    #echo "$ACTION: We have an idevice!!!" >> /home/chido
+    /usr/sbin/usb_idev_detect $BOARD $ACTION $devname $devnum
+else
+    # We have an USB HDD/stick
+    #echo "$ACTION: We have a hdd!!!" >> /home/chido
+    /usr/sbin/usb_hdd_detect $BOARD $ACTION $devname $devnum
+fi
+

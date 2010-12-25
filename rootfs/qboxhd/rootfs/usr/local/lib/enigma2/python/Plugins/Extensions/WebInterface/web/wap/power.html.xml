@@ -1,0 +1,17 @@
+<e2:screen name="DummyWebScreen">
+<html>
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+	<title>Enigma 2 Webinterface (ALPHA)</title>
+
+	<link href="/web-data/tpl/default/style.css" type="text/css" rel="stylesheet" />
+	<link rel="shortcut icon" type="image/x-icon" href="/web-data/img/favicon.ico"/>
+</head>
+<body>
+<p><center><a href="/web/powerstate?newstate=1">deepstandby QBoxHD</a></center></p>
+<p><center><a href="/web/powerstate?newstate=2">reboot QBoxHD</a></center></p>
+<hr/>
+<p><center><a href="/web/powerstate?newstate=3">restart Enigma2</a></center></p>
+</body>
+</html>
+</e2:screen>

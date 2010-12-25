@@ -1,0 +1,14 @@
+#
+# Configuration file
+# /etc/directfbrc_gtk
+#
+
+system = stmfb
+fbdev = /dev/fb0
+mode = 720x576-50i
+depth = 32
+pixelformat = ARGB
+mouse-source = /dev/mice
+mouse-protocol = IMPS/2
+vt-num=1
+

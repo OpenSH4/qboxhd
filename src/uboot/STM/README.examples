@@ -1,0 +1,72 @@
+These are some examples for using u-boot on a target system.
+
+1) Updating u-boot from a live Linux system.
+
+The example script "examples/update-uboot.sh" shows how you 
+can use the mtd partitions to update the u-boot boot loader.
+It assumes that "/dev/mtd0" has been set up on the kernel command
+line with the correct address and length for where u-boot resides
+in flash.  This example does not cope with any form of reset or
+power failure during the update so it could result in an unbootable
+system.
+
+An example for the additional arguments needed of the bootargs command line:
+
+mtdparts=Onboard_Flash:${monitor_len}(uboot),${env_len}(params)
+
+where 
+
+monitor_len = size of u-boot in flash e.g. 0x20000 for stb7100mboard
+env_len     = size of u-boot env in flash e.g. 0x20000 for stb7100mboard
+
+2) Booting multiple linux kernels from disk.
+
+This example shows how you can boot a alternative kernel if the
+default kernel fails to boot correctly.  This example relies on
+an two extra utilities on the target system which can read and
+modify the u-boot environment variables contained in flash. 
+
+To install these utilities type (you will need root access to do the install):
+
+  make install
+
+in the STM/env directory.
+
+This will add the following files to your distribution:
+
+etc/fw_env.config	   -- Config file to define to location of the u-boot environment
+sbin/fw_printenv           -- utility to read u-boot environment
+sbin/fw_setenv             -- utility to write to u-boot environment
+			      source for these utilities is in the directory "STM/env"
+
+The copy the file:
+
+  STM/examples/S99ubooot 
+
+to 
+
+ /opt/STM/STLinux-2.0/devkit/sh4/target/etc/rc.d/rcS.d/S99uboot    -- Example init script to update u-boot environment after boot
+
+You must then modify the file "etc/fw_env.config" for you u-boot configuration.  Again
+this must match the mtd partitions defined on the bootargs command line.
+
+To use the example you must add the contents of the file "examples/multiboot.env"
+to you u-boot environment.  This can be done using the kermit "sendfile" command defined
+in the example kermit init file "kscript".  Again this file should be modified to match 
+you u-boot organisation.
+
+This will setup the "bootcmd" to try to boot the default kernel from disk.  
+If this fails it will try to boot a backup kernel.  If that boot then fails it will 
+just give an error message.
+
+The way this example works is to maintain a u-boot variable "nboots" which is initialised
+to 1 by u-boot before booting the kernel.  If the kernel boots ok the init script 
+"/etc/rc.d/rcS.d/S99uboot" will reset the value of "nboots" back to 0.  Each time u-boot
+attempts to boot a kernel it checks to the value of "nboots":
+
+nboots=0  - Last boot was ok so boot the std kernel
+nboots=1  - Last boot failed so set nboots=2 and try backup kernel
+nboots=2  - Backup boot failed so do not attempt to boot.
+
+This example could be extended to boot a kernel from flash mounting a flash filesystem
+in the case where both attempts to boot from disk failed. 

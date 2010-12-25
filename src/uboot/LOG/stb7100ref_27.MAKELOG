@@ -1,0 +1,47 @@
+ln -s ../common/environment.c environment.c
+ln -s ../lib_generic/crc32.c crc32.c
+gcc -M -Wall -pedantic -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC environment.c img2srec.c mkimage.c crc32.c envcrc.c gen_eth_addr.c bmp_logo.c > .depend
+make[1]: `.depend' is up to date.
+sh4-linux-gcc -M -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -Wall -Wstrict-prototypes hello_world.c stubs.c  > .depend
+make[1]: `.depend' is up to date.
+sh4-linux-gcc -M -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -Wall -Wstrict-prototypes cache_8xx.S cache.c codec.c cpu.c dsp.c ether.c i2c.c memory.c post.c rtc.c spr.c sysmon.c tests.c uart.c usb.c watchdog.c > .depend
+make[1]: `.depend' is up to date.
+sh4-linux-gcc -M -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -Wall -Wstrict-prototypes asm.S cmp.c cmpi.c two.c twox.c three.c threex.c threei.c andi.c srawi.c rlwnm.c rlwinm.c rlwimi.c store.c load.c cr.c b.c multi.c string.c complex.c > .depend
+make[1]: `.depend' is up to date.
+make  CROSS_COMPILE=sh4-linux- -C tools all
+gcc -Wall -pedantic -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC -O -c -o img2srec.o img2srec.c
+gcc -Wall -pedantic -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC -O  -o img2srec img2srec.o
+strip img2srec
+gcc -g -Wall -pedantic -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC -O -c mkimage.c
+gcc -g -Wall -pedantic -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC -O -c crc32.c
+gcc -Wall -pedantic -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC -O  -o mkimage mkimage.o crc32.o
+strip mkimage
+gcc -g -Wall -pedantic -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC -O -c envcrc.c
+gcc -g  -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC -c environment.c
+gcc -Wall -pedantic -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC -O -o envcrc envcrc.o crc32.o environment.o
+gcc -g -Wall -pedantic -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC -O -c gen_eth_addr.c
+gcc -Wall -pedantic -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC -O  -o gen_eth_addr gen_eth_addr.o
+strip gen_eth_addr
+gcc -Wall -pedantic -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC -O -c -o bmp_logo.o bmp_logo.c
+gcc -Wall -pedantic -idirafter ../include -DTEXT_BASE=0x85F00000 -DUSE_HOSTCC -O  -o bmp_logo bmp_logo.o
+strip bmp_logo
+./bmp_logo logos/denx.bmp >/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/bmp_logo.h
+make  CROSS_COMPILE=sh4-linux- -C examples all
+sh4-linux-gcc -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -Wall -Wstrict-prototypes -c -o stubs.o stubs.c
+sh4-linux-ar crv libstubs.a  stubs.o
+a - stubs.o
+sh4-linux-gcc -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -Wall -Wstrict-prototypes -c -o hello_world.o hello_world.c
+sh4-linux-ld -g  -Ttext 0x84000000 \
+		-o hello_world -e hello_world hello_world.o libstubs.a \
+		-L/opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3 -lgcc
+sh4-linux-objcopy -O srec hello_world hello_world.srec 2>/dev/null
+sh4-linux-objcopy -O binary hello_world hello_world.bin 2>/dev/null
+make  CROSS_COMPILE=sh4-linux- -C post all
+sh4-linux-gcc -Wa,-gstabs -D__ASSEMBLY__ -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -c -o cache_8xx.o /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/post/cache_8xx.S
+sh4-linux-gcc -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -Wall -Wstrict-prototypes -c -o cache.o cache.c
+sh4-linux-gcc -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -Wall -Wstrict-prototypes -c -o codec.o codec.c
+sh4-linux-gcc -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -Wall -Wstrict-prototypes -c -o cpu.o cpu.c
+sh4-linux-gcc -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -Wall -Wstrict-prototypes -c -o dsp.o dsp.c
+sh4-linux-gcc -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -Wall -Wstrict-prototypes -c -o ether.o ether.c
+sh4-linux-gcc -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -Wall -Wstrict-prototypes -c -o i2c.o i2c.c
+sh4-linux-gcc -g  -Os  -D__KERNEL__ -DTEXT_BASE=0x85F00000 -I/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include -fno-builtin -ffreestanding -nostdinc -isystem /opt/STM/STLinux-2.3/devkit/sh4/lib/gcc/sh4-linux/4.2.3/include -pipe  -DCONFIG_SH4 -D__SH4__ -DCONFIG_IDENT_STRING="\"st2.0-14\"" -m4 -m4-nofpu -U__sh3__ -Wall -Wstrict-prototypes -c -o memory.o memory.c

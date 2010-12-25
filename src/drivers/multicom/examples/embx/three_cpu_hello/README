@@ -1,0 +1,57 @@
+EMBX Three CPU Example
+======================
+
+This example shows the creation of a shared memory transport containing three
+CPUs on the STx7100/STx7109/STx7200 SoCs. 
+
+The example shows how to achieve the following:
+
+ - initialise the hardware mailbox library on the SoC.
+ - determine which ST231 the code is running on at runtime.
+ - configure the shared memory transport with 3 CPUs.
+ - configure the shared memory transport with a fixed heap location.
+ - initialising EMBX and opening a transport ready for communication.
+ - simple message exchange.
+
+Contents of the example
+-----------------------
+
+ - three_cpu_hello_master.c contains all the code to initialize and run the
+                            master CPU.
+ - three_cpu_hello_slave.c  contains all the code to initialize and run a slave
+                            CPU.
+
+
+Using the example
+-----------------
+
+The example requires GNU make (or strictly compatible) to build and
+should be built at follows:
+
+  make example PLATFORM=<platform> OS_0=os21 OS_1=os21
+
+This will generate three binary executables:
+
+ - obj/os21/st40/three_cpu_hello.out for ST40.
+ - obj/os21/st231/three_cpu_hello_audio_core1.out for ST231 audio LX.
+ - obj/os21/st231/three_cpu_hello_video_core1.out for ST231 video LX.
+                
+The examples should be booted using the appropriate runtime loader, see
+the Multicom user documentation (Appendix A) for further information.
+
+Points to note
+--------------
+
+The file, three_cpu_hello_slave.c contains code that will run on both the
+ST231s. This code will determine at runtime which CPU it is running on and
+configure itself appropriately. Note that although the ST231 images are
+produced from the same C program they are linked at different parts of the
+address space. For this reason it is important to ensure the correct
+executable is loaded onto each processor.
+
+The ST231s should not be booted until the ST40 has booted completely
+and produced the following output.
+
+  three_cpu_hello stated
+  Initialized mailbox library
+  Opening transport, waiting for ST200s to join in

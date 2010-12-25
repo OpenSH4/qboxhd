@@ -1,0 +1,44 @@
+MME multiple companion example
+==============================
+
+This example demonstrates the use of two companions to transform data
+with a single transformer instance on each companion.
+
+Each transformer instance is a simplistic 8-bit mixer that is used to
+combine two signals. The example is based upon the MME getstart
+example. It is strongly recommended that the reader is familiar
+with the getstart example.
+
+Contents of the example
+-----------------------
+
+ - host.c contains the client code that performs transform requests and
+   displays the results as ASCII waveforms.
+ - companion.c contains the minimal code required to boot the companion
+   processor.
+ - mixer.c and mixer.h together form a simple two channel 8-bit mixer.
+
+Using the example
+-----------------
+
+This example is designed to run on STx7100 and STx7200 platforms where
+the master is an ST40 and the companions are ST231s. Additionally this
+example supports only the OS21 operating system on both the ST40 and ST231.
+
+This example requires GNU make (or strictly compatible) to build and
+should be build as follows:
+
+  make PLATFORM=mb442 example
+
+The examples should be booted using the appropriate runtime loader,
+see the Multicom documentation for further information.
+
+Points to note
+--------------
+
+The file, host.c, contains code that will run on both the ST220s. This 
+code will determine at runtime which CPU it is running on and configure 
+itself appropriately. Note that although the ST220 images are produced 
+from the same C program they are linked at different parts of the 
+address space. For this reason it is important to ensure the correct 
+executable is loaded onto each processor.

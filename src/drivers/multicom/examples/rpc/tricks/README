@@ -1,0 +1,40 @@
+RPC Tricks Example
+==================
+
+The tricks example shows peculiar uses of RPC copying strategies
+in order copy structures that would otherwise be impossible.
+
+Contents of the example
+-----------------------
+
+There are three fundamental components of the example.
+
+ - tricks.h collects the RPC decorations describing the entire system
+ - caller.c makes calls to the example functions
+ - callee.c implements the example functions
+ - prefix.h example of copying length prefixed arrays
+ - union.h example of copying unions as opaque binary objects
+
+Using the example
+-----------------
+
+This example requires GNU make (or strictly compatible) to build and
+should be build as follows:
+
+  make PLATFORM=<platform> OS_0=<os_for_cpu0> OS_1=<os_for_cpu1> example
+
+For currently support platforms see the example runtime harness 
+(../../harness).
+
+The examples should be booted using the appropriate runtime loader,
+see the Multicom documentation for further information.
+
+Points to note
+--------------
+
+Do not write RPC interfaces using these techniques if it possible to
+change the API instead. These techniques are intended to make it easier
+to port already designed and frozen APIs.
+
+Each header file is heavily commented, read these comments carefully
+before using these techniques in your own projects.

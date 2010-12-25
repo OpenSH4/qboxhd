@@ -1,0 +1,30 @@
+EMBX Buffer Pool Example
+========================
+
+This example shows a producer/consumer system using a fixed buffer pool
+being managed via EMBX ports.
+
+Contents of the example
+-----------------------
+
+There are two fundamental components of the example.
+
+ - producer.c sets up the buffer pool and then starts generating stuff 
+              for the consumer.
+ - consumer.c receives buffers from the producer and returns them at some
+              later point in time.
+
+Using the example
+-----------------
+
+This example requires GNU make (or strictly compatible) to build and
+should be build as follows:
+
+  make PLATFORM=<platform> OS_0=<os_for_cpu0> OS_1=<os_for_cpu1> example
+
+For currently support platforms see the example runtime harness 
+(../../harness).
+
+The examples should be booted using the appropriate runtime loader,
+see the Multicom user documentation for further information.
+

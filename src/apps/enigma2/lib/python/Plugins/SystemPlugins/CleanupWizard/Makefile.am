@@ -1,0 +1,13 @@
+# installdir = $(pkglibdir)/python/Plugins/SystemPlugins/CleanupWizard
+installdir = $(LIBDIR)/enigma2/python/Plugins/SystemPlugins/CleanupWizard
+
+SUBDIRS = meta
+
+install_PYTHON =	\
+	__init__.py \
+	plugin.py \
+	CleanupWizard.py
+
+dist_install_DATA = \
+	LICENSE \
+	cleanupwizard.xml

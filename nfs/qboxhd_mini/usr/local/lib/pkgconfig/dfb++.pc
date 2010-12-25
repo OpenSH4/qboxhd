@@ -1,0 +1,11 @@
+prefix=/opt/STM/STLinux-2.3/devkit/sh4/target/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: DFB++
+Description: C++ binding for DirectFB, a graphics and windowing library on Linux framebuffer
+Requires: directfb
+Version: 0.9.26
+Libs: -L${libdir} -ldfb++
+Cflags: -I${includedir}/dfb++

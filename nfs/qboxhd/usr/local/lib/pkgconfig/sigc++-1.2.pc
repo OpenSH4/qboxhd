@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SigC++
+Description: Type-safe signal and callback system for C++
+Version: 1.2.7
+Libs: -L${libdir} -lsigc-1.2
+Cflags: -I${libdir}/sigc++-1.2/include -I${includedir}/sigc++-1.2

@@ -1,0 +1,22 @@
+<default>
+	<prerequisites>
+		<!-- hardware can occur more than once -->
+		<hardware type="qboxhd" />
+	</prerequisites>
+	
+	<info>
+		<author>Duolabs Spa</author>
+		<name>QBoxHD Default</name>
+	</info>
+
+		<!-- available types: "directories" -->
+	<files type="directories">
+		<file type="config" name="settings">
+			<prerequisites>
+				<bcastsystem type="DVB-S2" />
+				<satellite type="192" />
+			</prerequisites>
+		</file>
+		<file type="favourites" directory="" name="bouquets.tv" />		
+	</files>
+</default>

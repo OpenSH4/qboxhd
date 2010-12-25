@@ -1,0 +1,123 @@
+set line /dev/ttyS0
+set speed 115200
+
+set carrier-watch off
+set handshake none
+set flow-control none
+robust
+set file type bin
+set file name lit
+set rec pack 1000
+set send pack 1000
+set window 5
+set prompt Kermit>
+set output pacing 4
+
+define stpath /opt/STM/STLinux-2.0/devkit
+define uversion stm20
+
+define tty0 {
+  set line /dev/ttyS0
+  set speed 115200
+  connect
+}
+define tty1 {
+  set line /dev/ttyS1
+  set speed 115200
+  set handshake none
+  set flow-control none
+  connect
+}
+
+define sendcmd {
+  out \%1\13
+  in -1 >
+  sleep
+  end
+}
+
+define sendfile {
+  local f l
+  fopen f \%1
+  #set input echo off
+  while ! \F_eof(\m(f)) {
+    fread \m(f) l 
+    out \m(l)\13
+    in 60 >
+  }
+  set input echo on
+  sleep
+  end
+}
+
+define getvar {
+  set input echo off
+  output "print \%1\13"
+  input 10 \fpattern(=*\13)
+  set input echo on
+  if ERROR {
+    echo "Can't get \%1"
+    exit 1
+  }
+  return \flop(\fstripn(\v(inmatch),1),=)
+}
+
+define sendub {
+  out run sgetub\13
+  in -1 {## Ready}
+  send u-boot.bin
+  in -1 >
+  sendcmd "run cpub"
+  sendcmd "#"
+}
+
+define sendenv {
+  assign \%b \fexecute(getvar board)
+  sendbin $loadaddr \m(stpath)/u-boot/\%b-\m(uversion)/setupenv.ub
+  sendcmd "autoscr $loadaddr"
+  sendcmd "save"
+  sendcmd "#"
+}
+
+define sendbin {
+  out loadb \%1\13
+  in -1 {## Ready}
+  send \%2
+  in -1 >
+}
+
+define serialsetupub {
+  assign \%b \fexecute(getvar board)
+  if equal \%b "" {
+    echo Board not recognised
+    exit
+  } 
+  echo Setting up \%b
+  if exist localenv { sendfile localenv }
+  sendenv
+  assign \%u \fexecute(getvar ubootpath)
+  assign \%v \fexecute(getvar kernelpath)
+  echo uboot \%u
+  echo vmlinux \%v
+  out run setup-serial\13
+  in -1 {## Ready}
+  send \%u/u-boot.bin
+  in -1 {## Ready}
+  send \%v/vmlinux.ub
+  in -1 >
+  sendcmd "#"
+}
+
+define netsetupub {
+  assign \%b \fexecute(getvar board)
+  if equal \%b "" {
+    echo Board not recognised
+    exit
+  } 
+  echo Setting up \%b
+  if exist localenv { sendfile localenv } else {echo "No local setupenv file found"}
+  sendenv
+  sendcmd "run setup-nfs"
+  sendcmd "echo Done"
+  sendcmd "#"
+}

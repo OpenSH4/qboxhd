@@ -1,0 +1,91 @@
+<keymap>
+	
+	<map context="MC_MoviePlayerActions">
+		<key id="KEY_STOP" mapto="leavePlayer" flags="m" />
+		<key id="KEY_EXIT" mapto="leavePlayer" flags="m" />
+		<key id="KEY_TV" mapto="leavePlayer" flags="m" />
+	</map>
+	
+	<map context="MC_AudioPlayerActions">
+		<key id="KEY_OK" mapto="ok" flags="m" />
+		<key id="KEY_PLAY" mapto="ok" flags="m" />
+		<key id="KEY_EXIT" mapto="cancel" flags="m" />
+		<key id="KEY_UP" mapto="up" flags="m" />
+		<key id="KEY_DOWN" mapto="down" flags="m" />
+		<key id="KEY_LEFT" mapto="left" flags="m" />
+		<key id="KEY_RIGHT" mapto="right" flags="m" />
+		<key id="KEY_MENU" mapto="menu" flags="m" />
+		<key id="KEY_VIDEO" mapto="video" flags="m" />
+		<key id="KEY_STOP" mapto="stop" flags="m" />
+		<key id="KEY_INFO" mapto="info" flags="m" />
+		<key id="KEY_CHANNELUP" mapto="nextBouquet" flags="m" />
+		<key id="KEY_CHANNELDOWN" mapto="prevBouquet" flags="m" />
+		<key id="KEY_RED" mapto="red" flags="m" />
+		<key id="KEY_YELLOW" mapto="yellow" flags="m" />
+		<key id="KEY_GREEN" mapto="green" flags="m" />
+		<key id="KEY_BLUE" mapto="blue" flags="m" />
+		<key id="KEY_PREVIOUSSONG" mapto="prevSong" flags="m" />
+		<key id="KEY_NEXTSONG" mapto="nextSong" flags="m" />
+	</map>
+	
+	<map context="MC_iDevsPlayerActions">
+		<key id="KEY_OK" mapto="ok" flags="m" />
+		<key id="KEY_PLAY" mapto="ok" flags="m" />
+		<key id="KEY_EXIT" mapto="cancel" flags="m" />
+		<key id="KEY_UP" mapto="up" flags="m" />
+		<key id="KEY_DOWN" mapto="down" flags="m" />
+		<key id="KEY_LEFT" mapto="left" flags="m" />
+		<key id="KEY_RIGHT" mapto="right" flags="m" />
+		<key id="KEY_STOP" mapto="stop" flags="m" />
+		<key id="KEY_INFO" mapto="info" flags="m" />
+		<key id="KEY_CHANNELUP" mapto="nextBouquet" flags="m" />
+		<key id="KEY_CHANNELDOWN" mapto="prevBouquet" flags="m" />
+		<key id="KEY_RED" mapto="red" flags="m" />
+		<key id="KEY_YELLOW" mapto="yellow" flags="m" />
+		<key id="KEY_GREEN" mapto="green" flags="m" />
+		<key id="KEY_BLUE" mapto="blue" flags="m" />
+		<key id="KEY_PREVIOUSSONG" mapto="prevSong" flags="m" />
+		<key id="KEY_NEXTSONG" mapto="nextSong" flags="m" />
+		<key id="KEY_VIDEO" mapto="video" flags="m" />
+		<key id="KEY_AUDIO" mapto="audio" flags="m" />
+		<key id="KEY_RECORD" mapto="clearSelection" flags="m" />
+	</map>	
+	
+	<map context="MC_VideoPlayerActions">
+		<key id="KEY_OK" mapto="ok" flags="m" />
+		<key id="KEY_EXIT" mapto="cancel" flags="m" />
+		<key id="KEY_UP" mapto="up" flags="m" />
+		<key id="KEY_DOWN" mapto="down" flags="m" />
+		<key id="KEY_LEFT" mapto="left" flags="m" />
+		<key id="KEY_RIGHT" mapto="right" flags="m" />
+		<key id="KEY_MENU" mapto="menu" flags="m" />
+		<key id="KEY_VIDEO" mapto="video" flags="m" />
+		<key id="KEY_STOP" mapto="stop" flags="m" />
+		<key id="KEY_INFO" mapto="info" flags="m" />
+		<key id="KEY_CHANNELUP" mapto="nextBouquet" flags="m" />
+		<key id="KEY_CHANNELDOWN" mapto="prevBouquet" flags="m" />
+		<key id="KEY_RED" mapto="red" flags="m" />
+		<key id="KEY_YELLOW" mapto="yellow" flags="m" />
+		<key id="KEY_GREEN" mapto="green" flags="m" />
+		<key id="KEY_BLUE" mapto="blue" flags="m" />
+	</map>
+	
+	<map context="MC_PictureViewerActions">
+		<key id="KEY_OK" mapto="ok" flags="m" />
+		<key id="KEY_EXIT" mapto="cancel" flags="m" />
+		<key id="KEY_UP" mapto="up" flags="m" />
+		<key id="KEY_DOWN" mapto="down" flags="m" />
+		<key id="KEY_LEFT" mapto="left" flags="m" />
+		<key id="KEY_RIGHT" mapto="right" flags="m" />
+		<key id="KEY_MENU" mapto="menu" flags="m" />
+		<key id="KEY_VIDEO" mapto="video" flags="m" />
+		<key id="KEY_STOP" mapto="stop" flags="m" />
+		<key id="KEY_INFO" mapto="info" flags="m" />
+		<key id="KEY_CHANNELUP" mapto="nextBouquet" flags="m" />
+		<key id="KEY_CHANNELDOWN" mapto="prevBouquet" flags="m" />
+		<key id="KEY_RED" mapto="red" flags="m" />
+		<key id="KEY_YELLOW" mapto="yellow" flags="m" />
+		<key id="KEY_GREEN" mapto="green" flags="m" />
+		<key id="KEY_BLUE" mapto="blue" flags="m" />
+	</map>
+</keymap>

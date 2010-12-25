@@ -1,0 +1,10 @@
+With respect to the original source code, a lot of specific modifications were made
+in order to run it in the QBoxHD that has a STb7101 sh4-based processor.
+Do not expect that after compiling this code it will run flawlessly in 
+another receiver, even if it has the same processor.
+The reason for this is that some of the modified/added code is QBoxHD-driver 
+specific.
+
+The source code in this package is released under the GPL v2.
+See the file LICENSE.GPLv2 for licensing issues.
+

@@ -1,0 +1,8166 @@
+# Copyright (C) 2005 THE tuxbox-enigma'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the tuxbox-enigma package.
+# Automatically generated, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tuxbox-enigma Portuguese\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-11-30 11:00+0100\n"
+"PO-Revision-Date: 2010-10-03 15:45+0100\n"
+"Last-Translator: passete <passete@gmail.com>\n"
+"Language-Team: Muaitai <muaitai@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: PORTUGAL\n"
+"X-Poedit-SourceCharset: iso-8859-15\n"
+
+msgid ""
+"\n"
+"ATTENTION: This device contains a \n"
+"SWAP Partition ACTIVE!!\n"
+"Your system may be instable !!!"
+msgstr ""
+"\n"
+"Atençao: Este aparelho contém uma \n"
+"Partiçao SWAP Ativa!!\n"
+"O sistema pode ser instavé l!!!"
+
+msgid ""
+"\n"
+"Advanced options and settings."
+msgstr ""
+"\n"
+"Opções e ajustes avançados."
+
+msgid ""
+"\n"
+"After pressing OK, please wait!"
+msgstr ""
+"\n"
+" Apos pressionar OK, por favor espere!"
+
+msgid ""
+"\n"
+"Album: "
+msgstr ""
+"\n"
+"Album:"
+
+msgid ""
+"\n"
+"Artist: "
+msgstr ""
+"\n"
+"Artista:"
+
+msgid ""
+"\n"
+"Backup your QBoxHD settings."
+msgstr ""
+"\n"
+"Backup dos seus parametros."
+
+msgid ""
+"\n"
+"Bitrate: "
+msgstr ""
+"\n"
+"Bitrate"
+
+msgid ""
+"\n"
+"Comment: "
+msgstr ""
+"\n"
+"Comentarios:"
+
+msgid ""
+"\n"
+"Edit the upgrade source address."
+msgstr ""
+"\n"
+"Editar a morada do update"
+
+msgid ""
+"\n"
+"Enigma2 will restart after the restore"
+msgstr ""
+"\n"
+"Enigma2 vai reiniciar depois do restauro"
+
+msgid ""
+"\n"
+"Genre: "
+msgstr ""
+"\n"
+"Genero:"
+
+msgid ""
+"\n"
+"Online update of your QBoxHD software."
+msgstr ""
+"\n"
+"Update online do seu QboxHD software."
+
+msgid ""
+"\n"
+"Press OK on your remote control to continue."
+msgstr ""
+"\n"
+"Apoiar na tecla OK para continuar."
+
+msgid ""
+"\n"
+"Restore your QBoxHD settings."
+msgstr ""
+"\n"
+"Restaurar as opçoes da QboxHD."
+
+msgid ""
+"\n"
+"Restore your QBoxHD with a new firmware."
+msgstr ""
+"\n"
+"Restaurar a sua QboxHD com um novo firmware."
+
+msgid ""
+"\n"
+"Restore your backups by date."
+msgstr ""
+"\n"
+"Restaurar os seus backups pela data."
+
+msgid ""
+"\n"
+"Scan for local packages and install them."
+msgstr ""
+"\n"
+"Scan dos pacotes locais com instalaçao."
+
+msgid ""
+"\n"
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"\n"
+"Seleccione o aparelho para o backup.\n"
+"Aparelho atual:"
+
+msgid ""
+"\n"
+"View, install and remove available or installed packages."
+msgstr ""
+"\n"
+"Visione, instale e remova pacotes disponiveis ou instalados."
+
+msgid " "
+msgstr ""
+
+msgid " <    easy    >"
+msgstr "<    facil    >"
+
+msgid " Searching Wireless Network(s). Please wait ..."
+msgstr "Procurando Rede(s) Wireless. por favor espere ..."
+
+msgid " Wireless Network(s) found!"
+msgstr "Rede(s) Wireless encontrado!"
+
+msgid " extensions."
+msgstr "extencoes."
+
+msgid " packages selected."
+msgstr "Pacote seleccionado."
+
+msgid " updates available."
+msgstr "updates disponiveis."
+
+msgid "#000000"
+msgstr "#000000"
+
+msgid "#0064c7"
+msgstr "#0064c7"
+
+msgid "#25062748"
+msgstr "#25062748"
+
+msgid "#389416"
+msgstr "#389416"
+
+msgid "#80000000"
+msgstr "#80000000"
+
+msgid "#80ffffff"
+msgstr "#80ffffff"
+
+msgid "#bab329"
+msgstr "#bab329"
+
+msgid "#f23d21"
+msgstr "#f23d21"
+
+msgid "#ffffff"
+msgstr "#ffffff"
+
+msgid "#ffffffff"
+msgstr "#ffffffff"
+
+#, python-format
+msgid "% used"
+msgstr "% Usado"
+
+msgid "%H:%M"
+msgstr "%H:%M"
+
+#, python-format
+msgid "%d jobs are running in the background!"
+msgstr "% de tarefas estao ativas no fundo!"
+
+#, python-format
+msgid "%d min"
+msgstr "%d min"
+
+#, python-format
+msgid "%d services found!"
+msgstr "%d serviços encontrados!"
+
+#, python-format
+msgid "%d.%03d GB"
+msgstr "%d.%03d GB"
+
+msgid "%d.%B %Y"
+msgstr "%d.%B %Y"
+
+#, python-format
+msgid ""
+"%s\n"
+"(%s, %d MB free)"
+msgstr ""
+"%s\n"
+"(%s, %d MB livres)"
+
+#, python-format
+msgid "%s (%s)\n"
+msgstr "%s (%s)\n"
+
+#, python-format
+msgid "%s not exist"
+msgstr "% nao existe"
+
+msgid "(ZAP)"
+msgstr "(ZAP)"
+
+msgid "(empty)"
+msgstr "(vazio)"
+
+msgid "(show optional DVD audio menu)"
+msgstr "(mostrar DVD menu audio optional)"
+
+msgid "* Only available if more than one interface is active."
+msgstr "* Disponivel so se mais do que uma interface é ativa."
+
+msgid "* Only available when entering hidden SSID or network key"
+msgstr "* Disponivel quando entrar o SSID escondido ou a chave da rede"
+
+msgid "..."
+msgstr "..."
+
+msgid ".NFI Download failed:"
+msgstr ".NFI falhou o carregamento:"
+
+msgid ""
+".NFI file passed md5sum signature check. You can safely flash this image!"
+msgstr ""
+".NFI  boa assinatura, ficheiro aceitado md5sum. Voce poder instalar com "
+"confiança!"
+
+msgid "/usr/share/enigma2 directory"
+msgstr "directoria /usr/share/enigma2 "
+
+msgid "/var directory"
+msgstr "directoria /var "
+
+msgid "0"
+msgstr "0"
+
+msgid "0 Mb/s"
+msgstr "0 Mb/s"
+
+msgid "1"
+msgstr "1"
+
+msgid "1.0"
+msgstr "1.0"
+
+msgid "1.1"
+msgstr "1.1"
+
+msgid "1.2"
+msgstr "1.2"
+
+msgid "12V output"
+msgstr "12V output"
+
+msgid "13 V"
+msgstr "13 V"
+
+msgid "16:10"
+msgstr "16:10"
+
+msgid "16:10 Letterbox"
+msgstr "16:10 Letterbox"
+
+msgid "16:10 PanScan"
+msgstr "16:10 PanScan"
+
+msgid "16:9"
+msgstr "16:9"
+
+msgid "16:9 Letterbox"
+msgstr "16:9 Letterbox"
+
+msgid "16:9 always"
+msgstr "16:9 Sempre"
+
+msgid "18 V"
+msgstr "18 V"
+
+msgid "2"
+msgstr "2"
+
+msgid "3"
+msgstr "3"
+
+msgid "30 minutes"
+msgstr "30 minutos"
+
+msgid "4"
+msgstr "4"
+
+msgid "422"
+msgstr "422"
+
+msgid "4:3"
+msgstr "4:3"
+
+msgid "4:3 Letterbox"
+msgstr "4:3 Letterbox"
+
+msgid "4:3 PanScan"
+msgstr "4:3 PanScan"
+
+msgid "5"
+msgstr "5"
+
+msgid "5 minutes"
+msgstr "5 minutos"
+
+msgid "50 Hz"
+msgstr "50 Hz"
+
+msgid "6"
+msgstr "6"
+
+msgid "60 minutes"
+msgstr "60 minutos"
+
+msgid "7"
+msgstr "7"
+
+msgid "8"
+msgstr "8"
+
+msgid "9"
+msgstr "9"
+
+msgid "<unknown>"
+msgstr "<desconhecido>"
+
+msgid "??"
+msgstr "??"
+
+msgid "A"
+msgstr "A"
+
+#, python-format
+msgid "A %s was removed"
+msgstr "A % foi removida"
+
+#, python-format
+msgid "A %s was removed (%d)"
+msgstr "A %s foi removida (%d)"
+
+#, python-format
+msgid ""
+"A configuration file (%s) was modified since Installation.\n"
+"Do you want to keep your version?"
+msgstr ""
+"Alguns ficheiros (%s) foram alterados depois da instalação.\n"
+"Deseja manter a sua configuração?"
+
+msgid "A device was removed"
+msgstr "Um aparelho foi removido"
+
+msgid ""
+"A finished record timer wants to set your\n"
+"QBoxHD to standby. Do that now?"
+msgstr ""
+"A gravação terminada vai colocar o seu QBoxHD em standby\n"
+"Continuar?"
+
+msgid ""
+"A finished record timer wants to shut down\n"
+"your QBoxHD. Shutdown now?"
+msgstr ""
+"A gravação terminada vai desligar o seu QBoxHD\n"
+"Continuar?"
+
+msgid "A graphical EPG for all services of an specific bouquet"
+msgstr "gravar lista"
+
+msgid ""
+"A mount entry with this name already exists!\n"
+"Update existing entry and continue?\n"
+msgstr ""
+"Uma entrada com o mesmo nome existe! \n"
+"Continuar com esta entrada?\n"
+
+#, python-format
+msgid "A new %s was found"
+msgstr "Foi encontrada novo %"
+
+#, python-format
+msgid "A new %s was found (%d)"
+msgstr "Foi encontrada novo (%d)"
+
+msgid "A new device was found"
+msgstr "Novo aparelho detectado"
+
+msgid ""
+"A new version of MediaCenter is available for download!\n"
+"Do you want to download and install now?"
+msgstr ""
+"Uma nova versao do MediaCenter esta disponivél!\n"
+"quer carregar e instalar agora?"
+
+#, python-format
+msgid ""
+"A record has been started:\n"
+"%s"
+msgstr ""
+"Iniciou a gravação:\n"
+"%s"
+
+msgid ""
+"A recording is currently running.\n"
+"No more recording allowed."
+msgstr ""
+"Actualmente a gravar.\n"
+"Nao pode continuar."
+
+msgid ""
+"A recording is currently running.\n"
+"What do you want to do?"
+msgstr ""
+"A gravação está a decorrer\n"
+"O que deseja fazer?"
+
+msgid ""
+"A recording is currently running. Please stop the recording before trying to "
+"configure the positioner."
+msgstr ""
+"Uma gravação está a decorrer.Por favor páre a gravação antes de tentar "
+"configurar o posicionador"
+
+msgid ""
+"A recording is currently running. Please stop the recording before trying to "
+"start the satfinder."
+msgstr ""
+"Uma gravação está a decorrer.Por favor páre a gravação antes de iniciar a "
+"busca de satelites"
+
+#, python-format
+msgid "A required tool (%s) was not found."
+msgstr "O aparelho necessario (%) nao esta disponivel."
+
+msgid ""
+"A sleep timer wants to deep standby\n"
+"your QBoxHD. Deep standby now?"
+msgstr ""
+"O sleep timer quer meter a box em deep standby\n"
+"Meter em Deep Standby agora?"
+
+msgid ""
+"A sleep timer wants to set your\n"
+"QBoxHD to standby. Do that now?"
+msgstr ""
+"O sleep timer vai colocar o seu\n"
+"QBoxHD em standby. Continuar?"
+
+msgid ""
+"A sleep timer wants to shut down\n"
+"your QBoxHD. Shutdown now?"
+msgstr ""
+"O sleep timer vai desligar o seu\n"
+"QBoxHD. Continuar?"
+
+msgid ""
+"A timer failed to record!\n"
+"Disable TV and try again?\n"
+msgstr ""
+"O temporizador falhou a gravação!\n"
+"Tentar de novo?\n"
+
+msgid "A video streaming solution based on VLC"
+msgstr "Um stream video baseado no VLC"
+
+msgid "A/V Settings"
+msgstr "Definições A/V"
+
+msgid "AA"
+msgstr "AA"
+
+msgid "AB"
+msgstr "AB"
+
+msgid "AC3 default"
+msgstr "AC3 por defeito"
+
+msgid "AC3 downmix"
+msgstr "AC3 downmix"
+
+msgid "AGC"
+msgstr "AGC"
+
+msgid "AGC:"
+msgstr "AGC:"
+
+msgid "AT: Bregenz"
+msgstr "AT: Bregenz"
+
+msgid "AT: Graz"
+msgstr "AT: Graz"
+
+msgid "AT: Innsbruck"
+msgstr "AT: Innsbruck"
+
+msgid "AT: Klagenfurt"
+msgstr "AT: Klagenfurt"
+
+msgid "AT: Linz"
+msgstr "AT: Linz"
+
+msgid "AT: Salzburg"
+msgstr "AT: Salzburg"
+
+msgid "AT: Wien"
+msgstr "AT: Wien"
+
+msgid "ATR"
+msgstr "ATR"
+
+msgid "Abkhazian"
+msgstr "Abkhazian"
+
+msgid "Abort"
+msgstr "Abandonar"
+
+msgid "About"
+msgstr "Sobre"
+
+msgid "About..."
+msgstr "Sobre..."
+
+msgid "Accesspoint:"
+msgstr "Ponto de acesso:"
+
+msgid "Action on long powerbutton press"
+msgstr "Acção ao premir longo do botão power"
+
+msgid "Action:"
+msgstr "Acçao:"
+
+msgid "Activate Picture in Picture"
+msgstr "Activar Imagem na Imagem"
+
+msgid "Activate Swaps"
+msgstr "Ativar Swaps"
+
+msgid "Activate network settings"
+msgstr "Activar definições de rede"
+
+msgid "Active"
+msgstr "Ativo"
+
+msgid "Active WiFi Interface"
+msgstr "Interface Wifi ativa"
+
+msgid ""
+"Active/\n"
+"Inactive"
+msgstr ""
+"Ativo/\n"
+"Inativo"
+
+msgid "Adapter settings"
+msgstr "Parametros do stick"
+
+msgid "Add"
+msgstr "Adicionar"
+
+msgid "Add Bookmark"
+msgstr "Adicionar marca pagina"
+
+msgid "Add WLAN configuration?"
+msgstr "Adicionar a configuraçao Rede Wifi?"
+
+msgid "Add a mark"
+msgstr "Adicionar marca"
+
+msgid "Add a new NFS or CIFS mount point to your QBoxHD."
+msgstr "Adicionar uma nova NFS ou CIFS n no QboxHD."
+
+msgid "Add a new title"
+msgstr "Adicionar novo titulo"
+
+msgid "Add network configuration?"
+msgstr "Adicionar a configuraçao da rede?"
+
+msgid "Add new Playlist"
+msgstr "Adicionar uma nova Playlist"
+
+msgid "Add new network mount point"
+msgstr "Adiocionar um novo ponto de rede?"
+
+msgid "Add timer"
+msgstr "Adicionar Temporizador"
+
+msgid "Add title"
+msgstr "Adicionar titulo"
+
+msgid "Add to bouquet"
+msgstr "Adicionar aos Bouquets"
+
+msgid "Add to favorites"
+msgstr "Adicionar aos meus favoritos"
+
+msgid "Add to favourites"
+msgstr "Adicionar aos favoritos"
+
+msgid "Add to playlist"
+msgstr "Adicionar ao meu Playlist"
+
+msgid "AddOn Installed"
+msgstr "AddOn Instalado"
+
+msgid "AddOn Removed"
+msgstr "AddOn Removido"
+
+msgid "AddOn error"
+msgstr "AddOn erro"
+
+msgid "AddOns"
+msgstr "AddOns"
+
+msgid "AddOns Installed"
+msgstr "AddOns Instalados"
+
+msgid "Added"
+msgstr "Added"
+
+msgid ""
+"Adds enigma2 settings and QBoxHD model informations like SN, rev... if "
+"enabled."
+msgstr ""
+"Adiciona os canais Enigma2 e as informaçoes do QboxHD, como por exemplo o "
+"SN, rev... se ativado"
+
+msgid "Adds network configuration if enabled."
+msgstr "Adiciona a configuraçao da rede se ativado"
+
+msgid "Adds wlan configuration if enabled."
+msgstr "Adiciona a configuraçao da rede Wlan se ativado"
+
+msgid ""
+"Adjust the color settings so that all the color shades are distinguishable, "
+"but appear as saturated as possible. If you are happy with the result, press "
+"OK to close the video fine-tuning, or use the number keys to select other "
+"test screens."
+msgstr ""
+"Ajuste as cores para que as sombras fiquem visiveis, mas apareçam o mais "
+"saturado possivel. Se estiver satisfeito com o resultado, carregue OK para "
+"sair, ou use as teclas com números para selecionar outros ecrãs."
+
+msgid "Advanced"
+msgstr "Avançadas"
+
+msgid "Advanced Customization"
+msgstr "Customizaçao avançada"
+
+msgid "Advanced Options"
+msgstr "Opçoes Avancadas"
+
+msgid "Advanced Video Setup"
+msgstr "Definições de  Video Avançadas"
+
+msgid "Advanced restore"
+msgstr "Restauro avançado"
+
+msgid "Afan (Oromo)"
+msgstr "Afan (Oromo)"
+
+msgid "Afar"
+msgstr "Afar"
+
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+msgid "After event"
+msgstr "Depois do evento"
+
+msgid ""
+"After the start wizard is completed, you need to protect single services. "
+"Refer to your QBoxHD's manual on how to do that."
+msgstr ""
+"Depois de terminado, necessita de proteger alguns serviços. Consulte o "
+"manual da DM."
+
+msgid "Albanian"
+msgstr "Albanian"
+
+msgid "Album"
+msgstr "Album"
+
+#, python-format
+msgid "Album: %s"
+msgstr "Album: %s"
+
+msgid "Album: unknown"
+msgstr "Album: desconhecido"
+
+msgid "Albums"
+msgstr "Albums"
+
+#, python-format
+msgid "Albums: %d"
+msgstr "Albums: %d"
+
+msgid "All"
+msgstr "Todos"
+
+msgid "All Satellites"
+msgstr "Todos os satélites"
+
+msgid "All Skins"
+msgstr "Todas as Skins"
+
+msgid "All Time"
+msgstr "Todo o tempo"
+
+msgid "Alpha"
+msgstr "Alpha"
+
+msgid "Alternative radio mode"
+msgstr "Modo radio alternativo"
+
+msgid "Alternative services tuner priority"
+msgstr "Prioridade dos serviços do Tuner"
+
+msgid "Always ask before sending"
+msgstr "Sempre perguntar antes de enviar"
+
+msgid "Amharic"
+msgstr "Amharic"
+
+msgid "An empty filename is illegal."
+msgstr "Um ficheiro vazio é ilegal."
+
+msgid "An unknown error occured!"
+msgstr "Aconteceu um erro desconhecido"
+
+msgid "Anonymize crashlog?"
+msgstr "Anonimo Crashlog?"
+
+msgid "Antenna Position"
+msgstr "Posiçao da Antena"
+
+msgid "Arabic"
+msgstr "Arabe"
+
+msgid ""
+"Are you sure you want to activate this network configuration?\n"
+"\n"
+msgstr "Voçe tém a certeza que quer ativar esta configuraçao de rede?\n"
+
+msgid ""
+"Are you sure you want to delete\n"
+"following backup:\n"
+msgstr ""
+"Tém a certeza que quer apagar\n"
+"este backup:\n"
+
+msgid "Are you sure you want to exit this wizard?"
+msgstr "Tém a certeza que quer abandonar o questionario?"
+
+msgid ""
+"Are you sure you want to restart your network interfaces?\n"
+"\n"
+msgstr ""
+"Tém a certeza que quer arrancar estas interfaces rede?\n"
+"\n"
+
+msgid ""
+"Are you sure you want to restore\n"
+"following backup:\n"
+msgstr ""
+"Tém a certeza que quer restaurar\n"
+" este  backup:\n"
+
+msgid ""
+"Are you sure you want to restore your Enigma2 backup?\n"
+"Enigma2 will restart after the restore"
+msgstr ""
+"Tém a certeza que quer restaurar o seu Enigama2 backup?\n"
+"O Enigma2 vai arrancar depois du backup"
+
+msgid ""
+"Are you sure you want to save this network mount?\n"
+"\n"
+msgstr ""
+"Tém a certeza que quer guardar este mount da rede?\n"
+"\n"
+
+msgid "Armenian"
+msgstr "Armenian"
+
+msgid "Artist"
+msgstr "Artista"
+
+#, python-format
+msgid "Artist: %s"
+msgstr "Artista: %s"
+
+msgid "Artist: unknown"
+msgstr "Artista: desconhecido"
+
+msgid "Artists"
+msgstr "Artistas"
+
+#, python-format
+msgid "Artists: %d"
+msgstr "Artistas: %d"
+
+msgid "Ascanding"
+msgstr "Ascanding"
+
+msgid "Ask before deep standby:"
+msgstr "Confirmar antes de entrar em deep standby:"
+
+msgid "Ask before shutdown:"
+msgstr "Perguntar antes de desligar:"
+
+msgid "Ask user"
+msgstr "Consultar Utilizador"
+
+msgid "Aspect Ratio"
+msgstr "Aspect Ratio"
+
+msgid "Assamese"
+msgstr "Assamese"
+
+msgid "Audio"
+msgstr "Audio"
+
+msgid "Audio (Current Channel)"
+msgstr "Audio (Canal atual)"
+
+msgid "Audio :"
+msgstr "Audio :"
+
+msgid "Audio Bitrate"
+msgstr "Audio Bitrate"
+
+msgid "Audio Channels"
+msgstr "Canais Audio"
+
+msgid "Audio Codec"
+msgstr "Codec Audio"
+
+msgid "Audio Options..."
+msgstr "Opções de Audio"
+
+msgid "Audio Samplerate"
+msgstr "Samplerate Audio"
+
+msgid "Audio Source"
+msgstr "Fonte Audio"
+
+msgid "Author:"
+msgstr "Autor:"
+
+msgid "Author: "
+msgstr "Autor:"
+
+msgid "Authoring mode"
+msgstr "Modo de Authoring"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Auto chapter split every ? minutes (0=never)"
+msgstr "Dividir os capitulos todos os ? minutos (0=nunca)"
+
+msgid "Auto scart switching"
+msgstr "UsarAuto Scart"
+
+msgid "Automatic"
+msgstr "Automatico"
+
+msgid "Automatic Scan"
+msgstr "Busca automatica"
+
+msgid "Autoplay Delay"
+msgstr "Tempo para a  leitura automatica"
+
+msgid "Autoplay Enable"
+msgstr "Ativar leitura automatica"
+
+msgid "Autos & Vehicles"
+msgstr "Carros & veiculos"
+
+msgid "Available format variables"
+msgstr "Variaveis disponiveis do formato"
+
+msgid "Aymara"
+msgstr "Aymara"
+
+msgid "Azerbaijani"
+msgstr "Azerbaijani"
+
+msgid "B"
+msgstr "B"
+
+msgid "BA"
+msgstr "BA"
+
+msgid "BB"
+msgstr "BB"
+
+msgid "BER"
+msgstr "BER"
+
+msgid "BER:"
+msgstr "BER:"
+
+msgid "Back"
+msgstr "Atras"
+
+msgid "Back in history, be patient ..."
+msgstr "Seja paciente, a voltar atraz ..."
+
+msgid "Background"
+msgstr "Fundo"
+
+msgid "Backup"
+msgstr "Restauro"
+
+msgid "Backup All Skins"
+msgstr "Guardar todas as Skins"
+
+msgid "Backup Channel Settings"
+msgstr "Guardar os canais configurados"
+
+msgid "Backup General Configuration"
+msgstr "Guardar a Configuraçao geral"
+
+msgid "Backup Location"
+msgstr "Local do Backup"
+
+msgid "Backup Mode"
+msgstr "Modo do Backup"
+
+msgid "Backup Network Settings"
+msgstr "Guardar a Configuraçao da rede"
+
+msgid "Backup VAR folder"
+msgstr "Guardar a pasta VAR"
+
+msgid "Backup done."
+msgstr "Backup completado."
+
+msgid "Backup failed."
+msgstr "Falhou o Backup"
+
+msgid "Backup is done. Please press OK to see the result."
+msgstr "Backup Completo. Pressione OK para ver o resultado"
+
+msgid "Backup running"
+msgstr "Backup Ativado"
+
+msgid "Backup running ..."
+msgstr "Backup Ativado ..."
+
+msgid "Backup running..."
+msgstr "Backup Ativado..."
+
+msgid "Backup system settings"
+msgstr "Guardar os dados do sistema"
+
+msgid "Backup/Restore"
+msgstr "Guardar/Restaurar"
+
+msgid "Band"
+msgstr "Banda"
+
+msgid "Bandwidth"
+msgstr "Largura de Banda"
+
+msgid "Bashkir"
+msgstr "Bashkir"
+
+msgid "Basque"
+msgstr "Basque"
+
+msgid "Begin time"
+msgstr "Tempo de inicio"
+
+msgid "Behavior of 'pause' when paused"
+msgstr "Comporatmento da pausa, quando pausado"
+
+msgid "Behavior of 0 key in PiP-mode"
+msgstr "comportamento da tecla 0 no modo PiP"
+
+msgid "Behavior when a movie is started"
+msgstr "Comportamento ao iniciar um Filme"
+
+msgid "Behavior when a movie is stopped"
+msgstr "Comportamento ao parar o Filme"
+
+msgid "Behavior when a movie reaches the end"
+msgstr "Comportamento do Filme ao Terminar"
+
+msgid "Bengali"
+msgstr "Bengali"
+
+msgid "Bhutani"
+msgstr "Bhutani"
+
+msgid "Bihari"
+msgstr "Bihari"
+
+msgid "Bislama"
+msgstr "Bislama"
+
+msgid "Bit rate: "
+msgstr "Bit rate: "
+
+msgid "Bitrate:"
+msgstr "Bitrate:"
+
+msgid "Blue"
+msgstr "Azul"
+
+msgid "Board Leds Brightness"
+msgstr "Brilho dos leds do painel"
+
+msgid "Board Leds Hue"
+msgstr "cor dos leds do painel"
+
+msgid "Board Leds Saturation"
+msgstr "Saturaçao das cores dos leds do painel"
+
+msgid "Board Leds on standby"
+msgstr "Leds do painel em standby"
+
+msgid "Boards Leds"
+msgstr "Leds du bordo"
+
+msgid "Bookmarks"
+msgstr "Marca paginas"
+
+msgid "Breton"
+msgstr "Breton"
+
+msgid "Brightness"
+msgstr "Brilho"
+
+msgid "Browse network neighbourhood"
+msgstr "Procurar as redes dos vizinhos"
+
+msgid "Bulgarian"
+msgstr "Bulgarian"
+
+msgid "Burmese"
+msgstr "Burmese"
+
+msgid "Burn DVD"
+msgstr "Gravar DVD"
+
+msgid "Burn existing image to DVD"
+msgstr "Copiar a imagem existente  em um DVD"
+
+msgid "Burn to DVD..."
+msgstr "Copiar em um DVD..."
+
+msgid "Bus: "
+msgstr "Bus: "
+
+msgid ""
+"By pressing the OK Button on your remote control, the info bar is being "
+"displayed."
+msgstr ""
+"Ao carregar no OK do seu controlo remoto, a barra de info irá aparecer."
+
+msgid "Byelorussian"
+msgstr "Byelorussian"
+
+msgid "C"
+msgstr "C"
+
+msgid "C-Band"
+msgstr "Banda C"
+
+msgid "CF Drive"
+msgstr "Drive de Compact Flash"
+
+msgid "CI assignment"
+msgstr "Atribuir CI"
+
+msgid "CIFS share"
+msgstr "Partilhar CIFS"
+
+msgid "CONAX"
+msgstr "CONAX"
+
+msgid "CVBS"
+msgstr "CVBS"
+
+msgid "Cable"
+msgstr "Cabo"
+
+msgid "Cache Thumbnails"
+msgstr "Cache Thumbnails"
+
+msgid "Call monitoring"
+msgstr "Call monitoring"
+
+msgid "Cambodian"
+msgstr "Cambodian"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Cannot parse feed directory"
+msgstr "Não pode analisar o diretório do feed"
+
+msgid "Capacity: "
+msgstr "Capacidade"
+
+#, python-format
+msgid "Capacity: %d.%03d GB\n"
+msgstr "Capacidade: %d.%03d GB\n"
+
+msgid "Card"
+msgstr "Cartão"
+
+msgid "Catalan"
+msgstr "Catalão"
+
+msgid "Category"
+msgstr "Categoria"
+
+msgid "Change bouquets in quickzap"
+msgstr "Muda de bouquets no zap rápido"
+
+msgid "Change dir."
+msgstr "Mudar de dir ."
+
+msgid "Change hostname"
+msgstr "Mudar Hostname"
+
+msgid "Change pin code"
+msgstr "Alterar o PIN"
+
+msgid "Change service pin"
+msgstr "Alterar o  PIN do canal"
+
+msgid "Change service pins"
+msgstr "Alterar o PIN dos Canais"
+
+msgid "Change setup pin"
+msgstr "Alterar o PIN"
+
+msgid "Change the game level and start new game?"
+msgstr "Mude o nível do jogo e comece o jogo novo?"
+
+msgid "Change the hostname of your QBoxHD."
+msgstr "Mude o hostname de seu QBoxHD."
+
+msgid "Channel"
+msgstr "Canal"
+
+msgid "Channel Search"
+msgstr "Procurar Canais"
+
+msgid "Channel Selection"
+msgstr "Selecção de Canal"
+
+msgid "Channel Settings"
+msgstr "Opçoes dos Canais"
+
+msgid "Channel not in services list"
+msgstr "Canais não estao na lista dos serviços"
+
+msgid "Channel:"
+msgstr "Canal"
+
+#, python-format
+msgid "Channel: %s"
+msgstr "Canais: %s"
+
+msgid "Channellist menu"
+msgstr "Menu da Lista de Canais"
+
+msgid "Chap."
+msgstr "Cap."
+
+msgid "Chapter"
+msgstr "Capitulo"
+
+msgid "Chapter:"
+msgstr "Capitulo:"
+
+msgid "Check"
+msgstr "Verificar"
+
+msgid "Check for Updates on Startup"
+msgstr "Verificar actualizações quando arranca"
+
+msgid "Checking Filesystem..."
+msgstr "Verificar sistema de ficheiros"
+
+msgid "Checking for updates ..."
+msgstr "Verificacçao para actualizações…"
+
+msgid "Chinese"
+msgstr "Chinés"
+
+msgid "Choose AddOn ..."
+msgstr "Escolha o AddOn ..."
+
+msgid "Choose Downloader Server ..."
+msgstr "escolha o server para as actualizações…"
+
+msgid "Choose Section ..."
+msgstr "Escolha a seção…"
+
+msgid "Choose Tuner"
+msgstr "Escolha o Tuner"
+
+msgid "Choose a Wireless Network"
+msgstr "Escolha uma rede wireless"
+
+msgid "Choose backup files"
+msgstr "Escolha o ficheiro backup"
+
+msgid "Choose backup location"
+msgstr "Escolha o lugar do backup"
+
+msgid "Choose bouquet"
+msgstr "Escolha o Bouquet"
+
+msgid "Choose source"
+msgstr "Escolha a fonte"
+
+msgid "Choose target folder"
+msgstr "Seleccione "
+
+msgid "Choose upgrade source"
+msgstr "Escolha a fonte do upgrade"
+
+msgid "Choose your Skin"
+msgstr "Escolha o Tema"
+
+msgid "Circular left"
+msgstr "Esquerda circular"
+
+msgid "Circular right"
+msgstr "Direita circular"
+
+msgid "City"
+msgstr "Cidade"
+
+msgid "Cleanup"
+msgstr "Eliminar"
+
+msgid "Cleanup Wizard"
+msgstr "Qestionario de limpeza"
+
+msgid "Clear before scan"
+msgstr "Eliminar antes da Busca"
+
+msgid "Clear log"
+msgstr "Eliminar o log"
+
+msgid "Close"
+msgstr "Fechar"
+
+msgid "Cocks"
+msgstr "Torneiras"
+
+msgid "Code rate high"
+msgstr "Codigo alto"
+
+msgid "Code rate low"
+msgstr "Codigo baixo"
+
+msgid "Coderate HP"
+msgstr "Coderate HP"
+
+msgid "Coderate LP"
+msgstr "Coderate LP"
+
+msgid "Coding System: "
+msgstr "Sistema de codificação: "
+
+msgid "Collection name"
+msgstr "Nome da coleção"
+
+msgid "Collection settings"
+msgstr "Ajustes da coleção"
+
+msgid "Color Format"
+msgstr "Formato da cor"
+
+msgid "Comedy"
+msgstr "Comédia"
+
+msgid "Coming soon ... :)"
+msgstr ""
+
+msgid "Command execution..."
+msgstr "Execução do comando…"
+
+msgid "Command order"
+msgstr "Ordem de comando"
+
+msgid "Committed DiSEqC command"
+msgstr "comando de DiSEqC comprometido"
+
+msgid "Common Interface"
+msgstr "Interface Comum"
+
+msgid "Common Interface Assignment"
+msgstr "Atribuição du Commun Interface"
+
+msgid "CommonInterface"
+msgstr "CommonInterface"
+
+msgid "Communication"
+msgstr "comunicação"
+
+msgid "Compact Flash"
+msgstr "Compact Flash"
+
+msgid "Compact flash card"
+msgstr "Cartão Compact Flash"
+
+msgid "Complete"
+msgstr "Completo"
+
+msgid "Complex (allows mixing audio tracks and aspects)"
+msgstr "Complexo (autoriza misturar faixas audio e aspectos)"
+
+msgid "Config"
+msgstr "Config"
+
+msgid "Configuration Mode"
+msgstr "Modo de configuração"
+
+msgid "Configuring"
+msgstr "A configurar"
+
+msgid "Conflicting timer"
+msgstr "Conflito no Temporizador"
+
+msgid "Connect"
+msgstr "Ligar"
+
+msgid "Connect to a Wireless Network"
+msgstr "Ligar a uma rede Wireless"
+
+msgid "Connected to"
+msgstr "Ligado a"
+
+msgid "Connected to Fritz!Box!"
+msgstr "Ligado a Fritz!Box!"
+
+msgid "Connected!"
+msgstr "Ligado!"
+
+msgid "Connecting to Fritz!Box..."
+msgstr "A ligar a Fritz!Box!"
+
+#, python-format
+msgid ""
+"Connection to Fritz!Box\n"
+"failed! (%s)\n"
+"retrying..."
+msgstr ""
+"Ligação ao Fritz!Box\n"
+"falhou! (%s)\n"
+"Tentar de novo..."
+
+msgid "Constellation"
+msgstr "Constelação"
+
+msgid "Content does not fit on DVD!"
+msgstr "O conteudo não cabe em um DVD!"
+
+msgid "Continue"
+msgstr "Continua"
+
+msgid "Continue in background"
+msgstr "Continue no fundo"
+
+msgid "Continue playing"
+msgstr "Continue a ler"
+
+msgid "Contrast"
+msgstr "Contraste"
+
+msgid "Corsican"
+msgstr "Corsican"
+
+msgid "Could not connect to QBoxHD .NFI Image Feed Server:"
+msgstr "Não podia conectar ao Feed Server do  QBoxHD .NFI:"
+
+msgid "Could not load Medium! No disc inserted?"
+msgstr "Não podia carregar o disco! Nenhum disco introduzido?"
+
+#, python-format
+msgid ""
+"Could not retrive video url for:\n"
+"%s"
+msgstr ""
+"Não encontra o url video  para:\n"
+"%s"
+
+msgid "Could not retrive video url."
+msgstr "Não encontra o url video"
+
+#, python-format
+msgid "Couldn't record due to conflicting timer %s"
+msgstr "Nao pode gravar  devido a um conflito du timer %s"
+
+msgid "Crashlog settings"
+msgstr "Ajustos do Crashlog"
+
+msgid "CrashlogAutoSubmit"
+msgstr "Envio automatico do Crashlog"
+
+msgid "CrashlogAutoSubmit settings"
+msgstr "Ajustos do Envio automatico do Crashlog"
+
+msgid "CrashlogAutoSubmit settings..."
+msgstr "Ajustos do Envio automatico do Crashlog..."
+
+msgid ""
+"Crashlogs found!\n"
+"Send them to Dream Multimedia ?"
+msgstr ""
+"Encontrou Crashlog!\n"
+"Enviar a Duolabs ?"
+
+msgid "Create DVD-ISO"
+msgstr "Criar DVD-ISO"
+
+msgid "Create movie folder failed"
+msgstr "Falhou a criação da pasta movie"
+
+#, python-format
+msgid "Creating directory %s failed."
+msgstr "Criar o diretório %s falhou."
+
+msgid "Creating partition failed"
+msgstr "Falhou a criação da partição"
+
+msgid "Croatian"
+msgstr "Croata"
+
+msgid "Current Channel Information"
+msgstr "Informação atual do canal"
+
+msgid "Current Transponder"
+msgstr "Transponder actual"
+
+msgid "Current settings:"
+msgstr "Definições actuais:"
+
+msgid "Current version:"
+msgstr "Versão instalada"
+
+msgid "Custom skip time for '1'/'3'-keys"
+msgstr "Tempo definido pelo utilizador, teclas- '1'/'3'"
+
+msgid "Custom skip time for '4'/'6'-keys"
+msgstr "Definir o tempo para as teclas- '4'/'6'"
+
+msgid "Custom skip time for '7'/'9'-keys"
+msgstr "Definir o tempo para as teclas '7'/'9'"
+
+msgid "Customize"
+msgstr "Personalizar"
+
+msgid "Cut"
+msgstr "Cortar"
+
+msgid "Cutlist editor..."
+msgstr "Editor de corte das listas"
+
+msgid "Czech"
+msgstr "Checo"
+
+msgid "D"
+msgstr "D"
+
+msgid "DE: Berlin"
+msgstr "DE: Berlin"
+
+msgid "DE: Frankfurt/Main"
+msgstr "DE: Frankfurt/Main"
+
+msgid "DE: Hamburg"
+msgstr "DE: Hamburg"
+
+msgid "DE: Hannover"
+msgstr "DE: Hannover"
+
+msgid "DE: Koeln"
+msgstr "DE: Koeln"
+
+msgid "DE: Leipzig"
+msgstr "DE: Leipzig"
+
+msgid "DE: Muenchen"
+msgstr "DE: Muenchen"
+
+msgid "DE: Stuttgart"
+msgstr "DE: Stuttgart"
+
+msgid "DHCP"
+msgstr "DHCP"
+
+msgid "DVB-S"
+msgstr "DVB-S"
+
+msgid "DVB-S2"
+msgstr "DVB-S2"
+
+msgid "DVD Device (leave empty for default)"
+msgstr "Dispositivo de DVD (Deixo vazio de origem)"
+
+msgid "DVD Player"
+msgstr "Leitor DVD"
+
+msgid "DVD media toolbox"
+msgstr "Caixa de ferramentas do DVD"
+
+msgid "Danish"
+msgstr "Dinamarquês"
+
+msgid "Date"
+msgstr "Data"
+
+msgid "Decide what should be done when crashlogs are found."
+msgstr "Decida o que deve ser feito quando os crashlogs forem encontrados."
+
+msgid "Decide what should happen to the crashlogs after submission."
+msgstr "Decida o que deve acontecer aos crashlogs após a submissão."
+
+msgid "Deep StandBy Blue"
+msgstr "Deep Standby Azul"
+
+msgid "Deep StandBy Green"
+msgstr "Deep Standby Verde"
+
+msgid "Deep StandBy Red"
+msgstr "Deep Standby Vermelho"
+
+msgid "Deep Standby"
+msgstr "Desligar"
+
+msgid "Deep Standby QBoxHD after"
+msgstr "Meter o QboxHD em Deep Standby depois"
+
+msgid "Default Settings"
+msgstr "Ajustes de origem"
+
+msgid "Default services lists"
+msgstr "Ajustes de origem dos serviços"
+
+msgid "Default settings"
+msgstr "Ajustes de origem"
+
+msgid "Define Custom Button"
+msgstr "Defina a tecla Custom"
+
+msgid "Define custom button..."
+msgstr "Defina a tecla Custom..."
+
+msgid "Delay"
+msgstr "Atraso"
+
+msgid "Delete"
+msgstr "Apagar"
+
+msgid "Delete Playlist"
+msgstr "Apagar a Playlist"
+
+msgid "Delete crashlogs"
+msgstr "Apagar os Crashlogs"
+
+msgid "Delete entry"
+msgstr "Apagar entrada"
+
+msgid "Delete failed!"
+msgstr "Falhou o apagar"
+
+msgid "Delete mount"
+msgstr "Apagar o mount"
+
+#, python-format
+msgid ""
+"Delete no more configured satellite\n"
+"%s?"
+msgstr ""
+"Não suprima mais satélite configurados\n"
+"%s?"
+
+msgid "Descending"
+msgstr "Descer"
+
+msgid "Description"
+msgstr "Descrição"
+
+msgid "Description: "
+msgstr "Descrição: "
+
+#, python-format
+msgid "Description: %s\n"
+msgstr "Descrição: %\n"
+
+msgid "Deselect"
+msgstr "Nao selecionar"
+
+msgid "Destination directory"
+msgstr "Diretório de destino "
+
+msgid "Detected HDD:"
+msgstr "Disco rígido detectado:"
+
+msgid "Detected NIMs:"
+msgstr "NIMs detectado:"
+
+#, python-format
+msgid "Device: %s\n"
+msgstr "Dispositivo: %s\n"
+
+msgid "DiSEqC"
+msgstr "DiSEqC"
+
+msgid "DiSEqC A/B"
+msgstr "DiSEqC A/B"
+
+msgid "DiSEqC A/B/C/D"
+msgstr "DiSEqC A/B/C/D"
+
+msgid "DiSEqC mode"
+msgstr "Modo DiSEqC"
+
+msgid "DiSEqC repeats"
+msgstr "Repetições DiSEqC"
+
+msgid "Dialing:"
+msgstr "A chamar:"
+
+msgid "Dir:"
+msgstr "Dir:"
+
+msgid "Direct playback of linked titles without menu"
+msgstr "Leitura direta de títulos sem menu "
+
+msgid "Directory"
+msgstr "Diretório"
+
+#, python-format
+msgid "Directory %s nonexistent."
+msgstr "Diretório %s inexistente. "
+
+msgid "Directory:"
+msgstr "Diretório:"
+
+msgid "Disable"
+msgstr "Desabilitar"
+
+msgid "Disable Picture in Picture"
+msgstr "Desabilitar Imagem na Imagem"
+
+msgid "Disable Subtitles"
+msgstr "Desabilitar Legendas"
+
+msgid "Disable crashlog reporting"
+msgstr "Relatório do crashlog desativado"
+
+msgid "Disable timer"
+msgstr "Desligar Temporizador"
+
+msgid "Disabled"
+msgstr "Desabilitado"
+
+msgid "Disconnect"
+msgstr "Disconexão "
+
+#, python-format
+msgid ""
+"Disconnected from\n"
+"Fritz!Box! (%s)\n"
+"retrying..."
+msgstr ""
+"Desligado de\n"
+"Fritz!Box! (%s)\n"
+"a tentar..."
+
+msgid "Dish"
+msgstr "Antena"
+
+msgid "Display 16:9 content as"
+msgstr "Mostrar em 16:9"
+
+msgid "Display 4:3 content as"
+msgstr "Mostrar em 4:3"
+
+msgid "Display >16:9 content as"
+msgstr "Afichar >16:9 conteudo como"
+
+msgid "Display Setup"
+msgstr "Definições do Display"
+
+msgid "Display and Userinterface"
+msgstr "Display e interface utilizadores"
+
+msgid "DivX Player"
+msgstr "DivX Player"
+
+msgid "DivX player"
+msgstr "DivX Player"
+
+#, python-format
+msgid ""
+"Do you really want to REMOVE\n"
+"the plugin \"%s\"?"
+msgstr ""
+"Quer realmente REMOVER\n"
+" o plugin \"%s\"? "
+
+msgid ""
+"Do you really want to check the filesystem?\n"
+"This could take lots of time!"
+msgstr ""
+"Deseja mesmo verificar o sistema de ficheiros?\n"
+"Pode levar algum tempo!!!"
+
+#, python-format
+msgid "Do you really want to delete %s?"
+msgstr "Deseja mesmo apagar %s?"
+
+#, python-format
+msgid ""
+"Do you really want to download\n"
+"the addOn \"%s\"?"
+msgstr ""
+"Quer realmente carregar\n"
+"o addOn \"%s\"? "
+
+#, python-format
+msgid ""
+"Do you really want to download\n"
+"the plugin \"%s\"?"
+msgstr ""
+"Quer realmente carregar\n"
+"o addOn \"%s\"? "
+
+msgid "Do you really want to exit?"
+msgstr "Deseja realmente sair?"
+
+msgid ""
+"Do you really want to format the harddisk?\n"
+"All data on the disk will be lost!"
+msgstr ""
+"Você quer realmente formatar o disco duro?\n"
+"todos os dados no disco será perdido!"
+
+msgid ""
+"Do you really want to initialize the harddisk?\n"
+"All data on the disk will be lost!"
+msgstr ""
+"Tem a certeza que quer inicializar o Disco Rigido?\n"
+"Todos os dados serão perdidos!"
+
+#, python-format
+msgid ""
+"Do you really want to install\n"
+"the addOn \"%s\"?"
+msgstr ""
+"Quer realmente instalar\n"
+"o addOn \"%s\"? "
+
+#, python-format
+msgid ""
+"Do you really want to remove\n"
+"the addOn \"%s\"?"
+msgstr ""
+"Quer realmente remover\n"
+"o addOn \"%s\"? "
+
+#, python-format
+msgid "Do you really want to remove directory %s from the disk?"
+msgstr "Você quer realmente remover o diretório %s do disco? "
+
+#, python-format
+msgid "Do you really want to remove your bookmark of %s?"
+msgstr "Você quer realmente remover o seu marcador de pagina %s? "
+
+msgid ""
+"Do you want to backup now?\n"
+"After pressing OK, please wait!"
+msgstr ""
+"Deseja fazer o backup agora?\n"
+"depois de carregar OK,espere por favor!"
+
+msgid "Do you want to burn this collection to DVD medium?"
+msgstr "Você quer gravar esta coleção em um DVD? "
+
+msgid "Do you want to do a service scan?"
+msgstr "Deseja fazer uma busca de canais?"
+
+msgid "Do you want to do another manual service scan?"
+msgstr "Deseja fazer outra busca manual?"
+
+msgid "Do you want to enable the parental control feature on your QBoxHD?"
+msgstr "Deseja activar o Controle Paternal na sua QBoxHD?"
+
+msgid "Do you want to enter a username and password for this host?\n"
+msgstr "Você quer incorporar um username e uma senha para este host?\n"
+
+msgid "Do you want to install default sat lists?"
+msgstr "Você quer instalar esta lista de sats de origem? "
+
+msgid "Do you want to install the package:\n"
+msgstr "Você quer instalar o pacote:\n"
+
+msgid "Do you want to play DVD in drive?"
+msgstr "Você quer ler o DVD instalado?"
+
+msgid "Do you want to preview this DVD before burning?"
+msgstr "Você quer inspecionar este DVD antes de gravar?"
+
+msgid "Do you want to reboot your QBoxHD?"
+msgstr "Você quer rebootar seu QBoxHD?"
+
+msgid "Do you want to remove the package:\n"
+msgstr "Você quer remover o pacote:\n"
+
+msgid "Do you want to restore your settings?"
+msgstr "Deseja fazer um restauro ás definições?"
+
+msgid "Do you want to resume this playback?"
+msgstr "Deseja continuar?"
+
+msgid ""
+"Do you want to submit your email address and name so that we can contact you "
+"if needed?"
+msgstr ""
+"Você quer submeter seu email e o seu nome de modo que nós possamos o "
+"contatar se necessários?"
+
+msgid "Do you want to update your QBoxHD?"
+msgstr "Você quer actualizar seu QBoxHD?"
+
+msgid ""
+"Do you want to update your QBoxHD?\n"
+"After pressing OK, please wait!"
+msgstr ""
+"Deseja actualizar a sua QBoxHD?\n"
+"Carregue OK, por favor espere!"
+
+msgid "Do you want to upgrade the package:\n"
+msgstr "Você quer actualizar o pacote:\n"
+
+msgid "Do you want to view a tutorial?"
+msgstr "Deseja ver o manual?"
+
+msgid "Don't ask, just send"
+msgstr "Nao peça, apenas envie"
+
+msgid "Don't stop current event but disable coming events"
+msgstr "Não parar o programa actual mas desbilitar novos programas"
+
+#, python-format
+msgid "Done - Installed or upgraded %d packages"
+msgstr "OK - %d Pacotes instalados ou actualizados"
+
+#, python-format
+msgid "Done - Installed or upgraded %d packages with %d errors"
+msgstr "OK - %d Pacotes instalados ou actualizados com %d erros"
+
+#, python-format
+msgid "Done - Installed, upgraded or removed %d packages with %d errors"
+msgstr "Feito - instalou, instalou ou removeu pacotes de %d com os erros de %d"
+
+msgid "Download"
+msgstr "Transferência"
+
+msgid "Download .NFI-Files for USB-Flasher"
+msgstr "Transferência .NFI-Files para o pen USB"
+
+msgid "Download AddOns"
+msgstr "Transferência AddOns"
+
+msgid "Download Plugins"
+msgstr "Descarregar Plugins"
+
+msgid "Download Terminate"
+msgstr "Transferência terminada"
+
+msgid "Download Terminate."
+msgstr "Transferência terminada."
+
+msgid "Download of USB flasher boot image failed: "
+msgstr "Falhou a Transferência do boot image pen Usb"
+
+msgid "Downloadable AddOns"
+msgstr "Carrege AddOns"
+
+msgid "Downloadable addOns"
+msgstr "Carrege AddOns"
+
+msgid "Downloadable new plugins"
+msgstr "Novos plugins para descarregar"
+
+msgid "Downloadable plugins"
+msgstr "Plugins para descarregar"
+
+msgid "Downloading"
+msgstr "Downloading"
+
+#, python-format
+msgid "Downloading %s ..."
+msgstr "Transferência %s ..."
+
+msgid "Downloading ..."
+msgstr "Transferência ..."
+
+msgid "Downloading plugin information. Please wait..."
+msgstr "A descarregar novos plugins. Por favor espere..."
+
+msgid "Downloading server information. Please wait..."
+msgstr "Informação da transferência do server. Espere por favor..."
+
+msgid "Duolabs"
+msgstr "Duolabs"
+
+msgid "Duration"
+msgstr "Duração"
+
+msgid "Duration: "
+msgstr "Duração:"
+
+msgid "Dutch"
+msgstr "Holandês"
+
+msgid "E"
+msgstr "E"
+
+msgid "E-Mail Address"
+msgstr "Morada e-mail"
+
+msgid "EPG Selection"
+msgstr "Selecção do EPG"
+
+#, python-format
+msgid "ERROR - failed to scan (%s)!"
+msgstr "ERRO - falha na busca (%s)!"
+
+msgid "East"
+msgstr "Este"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Edit DNS"
+msgstr "EditarDNS"
+
+msgid "Edit IPKG source URL..."
+msgstr "Editar a fonte IPKG e URL..."
+
+msgid "Edit Title"
+msgstr "Editar Titulo"
+
+msgid "Edit bouquets list"
+msgstr "Editar a lista Bouquet"
+
+msgid "Edit chapters of current title"
+msgstr "Editar os capitulos do titulo atual"
+
+msgid "Edit services list"
+msgstr "Editar lista de canais"
+
+msgid "Edit settings"
+msgstr "Editar os canais"
+
+msgid "Edit the Nameserver configuration of your QBoxHD.\n"
+msgstr "Edite a configuração do Nameserver do seu QBoxHD.\n"
+
+msgid "Edit the network configuration of your QBoxHD.\n"
+msgstr "Edite a configuração da rede de seu QBoxHD.\n"
+
+msgid "Edit title"
+msgstr "Editar titulo"
+
+msgid "Education"
+msgstr "Instrução"
+
+msgid "Electronic Program Guide"
+msgstr "Electronic Program Guide"
+
+msgid "Enable"
+msgstr "Activar"
+
+msgid "Enable 5V for active antenna"
+msgstr "Activar saída de 5V para a antena"
+
+msgid "Enable System logs"
+msgstr "Permita logs do sistema"
+
+msgid "Enable multiple bouquets"
+msgstr "Activar Bouquets multiplos"
+
+msgid "Enable parental control"
+msgstr "Activar Controle Paternal"
+
+msgid "Enable timer"
+msgstr "Permita o temporizador"
+
+msgid "Enabled"
+msgstr "Activar"
+
+msgid "Encryption"
+msgstr "Cifragem"
+
+msgid "Encryption Key"
+msgstr "Chave de Cifragem"
+
+msgid "Encryption Keytype"
+msgstr "Chave tipo Cifragem"
+
+msgid "Encryption Type"
+msgstr "Tipo de Cifragem"
+
+msgid "Encryption:"
+msgstr "Cifragem:"
+
+#, python-format
+msgid "Encryption: %s"
+msgstr "Cifragem: %s"
+
+msgid "End time"
+msgstr "Tempo final"
+
+msgid "EndTime"
+msgstr "Terminado"
+
+msgid "English"
+msgstr "Inglês"
+
+msgid ""
+"Enigma2 Skinselector v0.5 BETA\n"
+"\n"
+"If you experience any problems please contact\n"
+"stephan@reichholf.net\n"
+"\n"
+"© 2006 - Stephan Reichholf"
+msgstr ""
+"Enigma2 Skinselector v0.5 BETA\n"
+"\n"
+"Se tiver problemas por favor contacte\n"
+"stephan@reichholf.net\n"
+"\n"
+"© 2006 - Stephan Reichholf"
+
+msgid "Enter"
+msgstr "Entre"
+
+#.   TRANSLATORS: Note that "Enter" in the two strings below should *not*
+#.       be interpreted as "Give speed as input". The intended meaning is
+#.       instead "Initial speed when starting winding", i.e. the speed at
+#.       which "winding mode" is entered when first pressing "rewind" or
+#.       "fast forward". 
+msgid "Enter Fast Forward at speed"
+msgstr "Velocidade do avance rapido"
+
+msgid "Enter IP to scan..."
+msgstr "Entrar ip para scan..."
+
+msgid "Enter MediaCenter menu..."
+msgstr "Entrar o MediaCenter menu..."
+
+msgid "Enter Rewind at speed"
+msgstr "Velocidade do retrocesso rapido"
+
+msgid "Enter VLC-Server as FQDN or IP-Address"
+msgstr "Entre no VLC-Usuário como o FQDN ou o IP address"
+
+msgid "Enter WLAN network name/SSID:"
+msgstr "Entre o nome/SSID do WLAN:"
+
+msgid "Enter WLAN passphrase/key:"
+msgstr "Entre o password/chave da rede WLAN:"
+
+msgid "Enter main menu..."
+msgstr "Menu Principal"
+
+msgid "Enter new hostname for your QBoxHD"
+msgstr "Entre o novo hostname do seu QBoxHD"
+
+msgid "Enter options:"
+msgstr "Incorpore opções:"
+
+msgid "Enter password:"
+msgstr "Incorpore password:"
+
+msgid "Enter pin code"
+msgstr "Incorpore o codigo pin"
+
+msgid "Enter share directory:"
+msgstr "Incorpore o diretório da partilha:"
+
+msgid "Enter share name:"
+msgstr "Incorpore o nome da partilha:"
+
+msgid "Enter the service pin"
+msgstr "Introduzir o PIN"
+
+msgid "Enter user and password for host: "
+msgstr "Incorpore o usuário e a senha do host: "
+
+msgid "Enter username:"
+msgstr "Incorpore o nome do utilizador: "
+
+msgid "Enter your email address so that we can contact you if needed."
+msgstr "Incorpore seu email de modo que nós possamos o contatar se necessário."
+
+msgid "Entertainment"
+msgstr "Entretenimento"
+
+msgid "Error"
+msgstr "Erro"
+
+#, python-format
+msgid ""
+"Error adding video to favorites:\n"
+"%s"
+msgstr ""
+"Erro em adicionando o vídeo aos favoritos:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error adding video to playlist:\n"
+"%s"
+msgstr ""
+"Erro em adicionando o vídeo a playlist:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error contacting YouPorn:\n"
+"%s"
+msgstr ""
+"Erro de contacto com o YouPorn:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error contacting YouTube:\n"
+"%s"
+msgstr ""
+"Erro de contacto com o YouTube:\n"
+"%s"
+
+msgid "Error executing plugin"
+msgstr "Erro de Execução do plugin"
+
+#, python-format
+msgid ""
+"Error loading filelist into server %(server)s:\n"
+"%(error)s"
+msgstr ""
+"Erro do carregamento filelist ao server %(usuário)s:\n"
+"%(erro)s"
+
+#, python-format
+msgid ""
+"Error loading filelist into server %s:\n"
+"%s"
+msgstr ""
+"Erro do carregamento filelist ao server %s:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error loading playlist %(media)s into server %(server)s:\n"
+"%(error)s"
+msgstr ""
+"Erro no carregamento da playlist %(media)s em o server %(server)s:\n"
+"%(erro)s "
+
+#, python-format
+msgid ""
+"Error loading playlist %s into server %s:\n"
+"%s"
+msgstr ""
+"Erro no carregamento da playlist % em o server %s:\n"
+"%s "
+
+#, python-format
+msgid ""
+"Error loading playlist into server %(server)s:\n"
+"%(error)s"
+msgstr ""
+"Erro no carregamento da playlist em o server %(server)s:\n"
+"%(erro)s "
+
+#, python-format
+msgid ""
+"Error loading playlist into server %s:\n"
+"%s"
+msgstr ""
+"Erro no carregamento da playlist em o server %s:\n"
+"%s "
+
+#, python-format
+msgid ""
+"Error loading playlists:\n"
+"%s"
+msgstr ""
+"Erro na carregamento da playlist:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error querying favorites feed:\n"
+"%s"
+msgstr ""
+"Erro que pergunta o feed dos favoritos:\n"
+" %s"
+
+#, python-format
+msgid ""
+"Error querying feed %s:\n"
+"%s"
+msgstr ""
+"Erro que pergunta o feed %s:\n"
+" %s"
+
+#, python-format
+msgid ""
+"Error querying feed for search term %s:\n"
+"%s"
+msgstr ""
+"Erro que pergunta ao feed para procura do termo %s:\n"
+" %s "
+
+#, python-format
+msgid ""
+"Error querying page %s:\n"
+"%s"
+msgstr ""
+"Errro na procura da pagina %s:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error querying page for search term %s:\n"
+"%s"
+msgstr ""
+"Erro na página do termo da busca %s:\n"
+" %s "
+
+#, python-format
+msgid ""
+"Error querying playlist-feed for playlist %s:\n"
+"%s"
+msgstr ""
+"Erro na pergunta na lista de canções %s:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error removing video from favorites:\n"
+"%s"
+msgstr ""
+"Erro que remove o vídeo dos favoritos:\n"
+" %s"
+
+#, python-format
+msgid ""
+"Error removing video from playlist:\n"
+"%s"
+msgstr ""
+"Erro que remove o vídeo da lista de canções:\n"
+" %s"
+
+#, python-format
+msgid ""
+"Error switching directory:\n"
+"%s"
+msgstr ""
+"Erro em mudando de Diretório:\n"
+" %s"
+
+#, python-format
+msgid "Error to install %s."
+msgstr "Erro para instalar %s."
+
+#, python-format
+msgid "Error to remove %s."
+msgstr "Erro para remover %s."
+
+#, python-format
+msgid ""
+"Error updating file- and playlist from server %s:\n"
+"%s"
+msgstr ""
+"Erro actualizando o ficheiro e a lista de canções do server %s:\n"
+" %s"
+
+#, python-format
+msgid ""
+"Error updating filelist from server %(server)s:\n"
+"%(error)s"
+msgstr ""
+"Erro actualizando o filelist do server %(server)s:\n"
+"% (erro)s"
+
+#, python-format
+msgid ""
+"Error updating filelist from server %s:\n"
+"%s"
+msgstr ""
+"Erro actualizando o filelist do server %s:\n"
+"% (erro)s"
+
+#, python-format
+msgid ""
+"Error with VLC server:\n"
+"%s"
+msgstr ""
+"Erro com o VLC server:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error: %s\n"
+"Retry?"
+msgstr ""
+"Erro: %s\n"
+"Re tentar?"
+
+msgid "Error: Twisted-Web not installed"
+msgstr "Erro: Twisted-Web não instalada"
+
+msgid "Esperanto"
+msgstr "Esperanto"
+
+msgid "Estonian"
+msgstr "Estonian"
+
+msgid "Eventview"
+msgstr "Ver Evento"
+
+msgid "Everything is fine"
+msgstr "Tudo OK"
+
+msgid "Execution Progress:"
+msgstr "Progresso"
+
+msgid "Execution finished!!"
+msgstr "Terminado"
+
+msgid "Exif"
+msgstr "Exif"
+
+msgid "Exit"
+msgstr "Exif"
+
+msgid "Exit Audio Player"
+msgstr "Sair do Audio Player"
+
+msgid "Exit editor"
+msgstr "Sair do Editor"
+
+msgid "Exit from web browser successfully"
+msgstr "Saido do web browser com sucesso"
+
+msgid "Exit the cleanup wizard"
+msgstr "saida do questionario da limpeza"
+
+msgid "Exit the wizard"
+msgstr "Sair"
+
+msgid "Exit wizard"
+msgstr "Sair"
+
+msgid "Expert"
+msgstr "Expert"
+
+msgid "Extended Networksetup Plugin..."
+msgstr "Extended Networksetup Plugin..."
+
+msgid "Extended Setup..."
+msgstr "Configurações avançadas"
+
+msgid "Extensions"
+msgstr "Extensões"
+
+msgid "External Harddisk"
+msgstr "Disco duro externo"
+
+msgid "External Harddisk Integrity Check"
+msgstr "Verificaçao da Integridade do Disco duro externo"
+
+msgid "External Harddisk Setup"
+msgstr "Instalação do disco duro externo"
+
+msgid "FEC"
+msgstr "FEC"
+
+#, python-format
+msgid "FP Info: %d"
+msgstr "FP Info: %d"
+
+msgid "Factory reset"
+msgstr "Reset de Fabrica"
+
+msgid "Faeroese"
+msgstr "Faeroese"
+
+msgid "Failed"
+msgstr "Falhou"
+
+msgid "Fast"
+msgstr "Rápido"
+
+msgid "Fast DiSEqC"
+msgstr "DiSEqC rápido"
+
+msgid "Fast Forward speeds"
+msgstr "Velocidade do avance rapido"
+
+msgid "Fast epoch"
+msgstr "Epoch Rapido"
+
+msgid "Favorite Folders"
+msgstr "Pasta dos favoritos"
+
+msgid "Favorited"
+msgstr "Favorited"
+
+msgid "Favorites"
+msgstr "Favoritos"
+
+msgid "Favourites"
+msgstr "Favoritos"
+
+msgid "Fiji"
+msgstr "Fiji"
+
+msgid "File / Folder Options"
+msgstr "Opções do Ficheiro / Pasta"
+
+msgid "Filelist"
+msgstr "Filelist"
+
+msgid "Filesystem Check..."
+msgstr "Verificação do sistema de ficheiros"
+
+msgid ""
+"Filesystem check.\n"
+"Successfully"
+msgstr ""
+"Verificação do Filesystem.\n"
+" com sucesso"
+
+msgid "Filesystem contains uncorrectable errors"
+msgstr "O sistema de ficheiros encontrou erros incorrigiveis"
+
+msgid "Finetune"
+msgstr "Sintonizar fino"
+
+msgid "Finished"
+msgstr "Terminado"
+
+msgid "Finished configuring your network"
+msgstr "Terminado de configurar sua rede"
+
+msgid "Finished restarting your network"
+msgstr "Terminado de reiniciar sua rede"
+
+msgid "Finnish"
+msgstr "Finlandês"
+
+#, python-format
+msgid "Firmware: %s"
+msgstr "Firmware: %s"
+
+msgid ""
+"First we need to download the latest boot environment for the USB flasher."
+msgstr ""
+"Primeiramente nós precisamos de transferir o ultimo boot para o pen usb:"
+
+msgid "Flash"
+msgstr "Flash"
+
+msgid "Flashing failed"
+msgstr "Falhou o Flashing"
+
+msgid "Following tasks will be done after you press continue."
+msgstr "As seguintes tarefas serão feitas depois que você pressiona continua."
+
+msgid ""
+"For WEP 128 encryption you must specify 13 ascii character or 26 hexadecimal "
+"character."
+msgstr ""
+"Para a cifragem de WEP 128 você deve especificar 13 caráteres de ASCII ou "
+"caráter de 26 hexadecimal."
+
+msgid ""
+"For WEP 64 encryption you must specify 5 ascii character or 10 hexadecimal "
+"character."
+msgstr ""
+"Para a cifragem de WEP 64 você deve especificar 5 caráteres de ASCII ou "
+"caráter de 10 hexadecimal."
+
+msgid "For WPA or WPA2 encryption you need to specify 8 to 63 ascii character."
+msgstr ""
+"Para a cifragem WPA ou WPA2 você precisa de especificar o caráter de ASCII 8 "
+"a 63."
+
+msgid "Format"
+msgstr "Formatar"
+
+msgid "Format External Harddisk"
+msgstr "Formatar o disco duro externo"
+
+msgid "Forward in history, be patient ..."
+msgstr "Avançar na história, seja paciente …"
+
+msgid "Frame repeat count during non-smooth winding"
+msgstr "Numero de frames repetidas, a usar com a função Vento Forte."
+
+msgid "Frame size in full view"
+msgstr "Tamanho de quadro em grande"
+
+#, python-format
+msgid "Free: %d.%03d GB\n"
+msgstr "Livre: %d.%03d GB\n"
+
+msgid "French"
+msgstr "Francês"
+
+msgid "Frequency"
+msgstr "Frequencia"
+
+msgid "Frequency bands"
+msgstr "bandas de frequência"
+
+msgid "Frequency scan step size(khz)"
+msgstr "Tamanho das etapas de frequência(khz)"
+
+msgid "Frequency steps"
+msgstr "Etapas da frequência "
+
+msgid "Frequency:"
+msgstr "Frequencia:"
+
+msgid "Fri"
+msgstr "Sex"
+
+msgid "Friday"
+msgstr "Sexta feira"
+
+msgid "Frisian"
+msgstr "Frisian"
+
+msgid "Fritz!Box FON IP address"
+msgstr "Endereço de IP do Fritz-Box FON"
+
+msgid "From Region"
+msgstr "Da região"
+
+msgid "Front Button Setup"
+msgstr "Instalação da tecla dianteira"
+
+msgid "FrontButton Setup"
+msgstr "Instalação da tecladianteira"
+
+#, python-format
+msgid "Frontprocessor version: %d"
+msgstr "Versão do Processador: %d"
+
+msgid "Fsck failed"
+msgstr "Fsck failed"
+
+msgid "Function not yet implemented"
+msgstr "Função não implementada"
+
+msgid ""
+"GUI needs a restart to apply a new skin\n"
+"Do you want to Restart the GUI now?"
+msgstr ""
+"Gui necessita reiniciar para aplicar a nova Skin\n"
+"Deseja reiniciar agora? "
+
+msgid "Galician"
+msgstr "Galician"
+
+msgid "Gaming"
+msgstr "Jogo"
+
+msgid "Gateway"
+msgstr "Gateway"
+
+msgid "Gay"
+msgstr "Alegre"
+
+msgid "General AC3 Delay"
+msgstr "Atraso AC3 geral"
+
+msgid "General AC3 delay"
+msgstr "Atraso AC3 geral"
+
+msgid "General Configuration"
+msgstr "Configuração geral"
+
+msgid "General PCM Delay"
+msgstr "Atraso geral do PCM"
+
+msgid "General PCM delay"
+msgstr "Atraso geral do PCM"
+
+msgid "Genre"
+msgstr "Genero"
+
+#, python-format
+msgid "Genre: %s"
+msgstr "Gênero: %s"
+
+msgid "Genre: unknown"
+msgstr "Gênero: desconhecido"
+
+msgid "Genres"
+msgstr "Gênero"
+
+#, python-format
+msgid "Genres: %d"
+msgstr "Gênero: %d"
+
+msgid "Georgian"
+msgstr "Georgian"
+
+msgid "German"
+msgstr "Alemão"
+
+msgid "Get related videos"
+msgstr "Obter vídeos relacionados"
+
+msgid "Get video responses"
+msgstr "Obter as respostas video"
+
+#, python-format
+msgid ""
+"Getting data from %s.\n"
+" Please wait ..."
+msgstr ""
+"Obtenção dos dados %s.\n"
+"espere por favor…"
+
+msgid "Getting plugin information. Please wait..."
+msgstr "Adquirir a info do plugin.Por favor espere"
+
+msgid "Getting system information..."
+msgstr "Obtenção da informação do sistema…"
+
+msgid "Goto 0"
+msgstr "Ir para 0"
+
+msgid "Goto position"
+msgstr "Ir para posição"
+
+msgid "Graphical Multi EPG"
+msgstr "Multi EPG Gráfico"
+
+msgid "Greek"
+msgstr "Grego"
+
+msgid "Green"
+msgstr "Verde"
+
+msgid "Greenlandic"
+msgstr "Greenlandic"
+
+msgid "Guarani"
+msgstr "Guarani"
+
+msgid "Guard Interval"
+msgstr "Intervalo"
+
+msgid "Guard interval mode"
+msgstr "Manter  modo intervalo"
+
+msgid "Gujarati"
+msgstr "Gujarati"
+
+msgid "HD Quality (Stereo)"
+msgstr "Qualidade HD (Stereo)"
+
+msgid "HTTP Port"
+msgstr "Porta HTTP"
+
+msgid "Harddisk"
+msgstr "Disco rigido"
+
+msgid "Harddisk 2"
+msgstr "Disco duro 2"
+
+msgid ""
+"Harddisk formatted.\n"
+"Successfully"
+msgstr ""
+"Formatagem do disco duro.\n"
+"Sucesso"
+
+msgid "Harddisk setup"
+msgstr "Configuração Disco Rigido"
+
+msgid "Harddisk standby after"
+msgstr "Disco rigido suspenso após "
+
+msgid "Hausa"
+msgstr "Hausa"
+
+msgid "Hebrew"
+msgstr "Hebrew"
+
+msgid "Here is a small overview of the available icon states."
+msgstr "Está aqui uma vista geral pequena dos estados disponíveis dos ícones."
+
+msgid "Hidden network SSID"
+msgstr "Rede escondida SSID"
+
+msgid "Hidden networkname"
+msgstr "Nome da rede escondida"
+
+msgid "Hierarchy Information"
+msgstr "Informação hierarquica"
+
+msgid "Hierarchy mode"
+msgstr "Modo Hierárquico"
+
+msgid "High Quality (Stereo)"
+msgstr "Alta qualidade (stereo)"
+
+msgid "High bitrate support"
+msgstr "Suporta altos bitrates"
+
+msgid "Hindi"
+msgstr "Hindi"
+
+msgid "Horizontal"
+msgstr "Horizontal"
+
+msgid "How many minutes do you want to record?"
+msgstr "Quantos minutos deseja gravar?"
+
+msgid "How to handle found crashlogs?"
+msgstr "Como tratar crashlogs encontrados?"
+
+msgid "Howto & Style"
+msgstr "Como fazer & Estilo"
+
+msgid "Hungarian"
+msgstr "Hungaro"
+
+msgid "IP Address"
+msgstr "Endereço IP"
+
+msgid "IP:"
+msgstr "IP:"
+
+msgid "ISO file is too large for this filesystem!"
+msgstr "O ficheiro ISO é demasiado grande para este filesystem!"
+
+msgid "ISO path"
+msgstr "Caminho do ISO"
+
+msgid "Icelandic"
+msgstr "Islandês"
+
+msgid "If you can see this page, please press OK."
+msgstr "Se consegue ler isto, carregue OK."
+
+msgid ""
+"If you see this, something is wrong with\n"
+"your scart connection. Press OK to return."
+msgstr ""
+"Se está a ver isto, algo está mal com a sua ligação Scart.\n"
+"Carregue OK."
+
+msgid ""
+"If your TV has a brightness or contrast enhancement, disable it. If there is "
+"something called \"dynamic\", set it to standard. Adjust the backlight level "
+"to a value suiting your taste. Turn down contrast on your TV as much as "
+"possible.\n"
+"Then turn the brightness setting as low as possible, but make sure that the "
+"two lowermost shades of gray stay distinguishable.\n"
+"Do not care about the bright shades now. They will be set up in the next "
+"step.\n"
+"If you are happy with the result, press OK."
+msgstr ""
+"Se a sua TV tiver ajuste de brilho ou contraste, desligue.Se tiver algo com "
+"o nome\"dinâmico\", ajuste para Standard. Ajuste o nivel da luz de fundo "
+"para um valor a seu gosto. Baixe o contraste da sua o maximo possível.\n"
+"Depois ajuste o brilho para o mais baixo possivel, mas certifique-se de que "
+"as duas escalas de sombra cinza mais baixas, sejam visiveis.\n"
+"Não se preocupe com as sombras brilhantes agora.Serão ajustadas no próximo "
+"passo.\n"
+"Se os ajustes estão bem, carregue OK."
+
+msgid "Image flash utility"
+msgstr "Ferramenta para flash uma imagem"
+
+msgid "Image-Upgrade"
+msgstr "Actualizar imagem"
+
+msgid "In Progress"
+msgstr "Em progreçao "
+
+msgid ""
+"In order to record a timer, the TV was switched to the recording service!\n"
+msgstr "Para gravar o que programou, a TV voltou ao canal desejado!\n"
+
+msgid "Include your email and name (optional) in the mail?"
+msgstr "Incluir o seu email e nome (opçao) no correio?"
+
+msgid "Increased voltage"
+msgstr "Aumento de voltagem"
+
+msgid "Index"
+msgstr "Index"
+
+msgid "Indonesian"
+msgstr "Indonesian"
+
+msgid "InfoBar"
+msgstr "Barra de Info"
+
+msgid "Infobar timeout"
+msgstr "Tempo da Barra de Info "
+
+msgid "Information"
+msgstr "Informação"
+
+msgid "Init"
+msgstr "Inicio"
+
+msgid "Initialization..."
+msgstr "A iniciar...."
+
+msgid "Initialize"
+msgstr "Iniciado"
+
+msgid ""
+"Initialize harddisk.\n"
+"Successfully"
+msgstr ""
+"Inicializaçao disco duro.\n"
+"Sucesso"
+
+msgid "Initializing Harddisk..."
+msgstr "A iniciar o disco rigido"
+
+msgid ""
+"Initializing Harddisk... \n"
+"This operation can take several minutes depending on the Harddisk size..."
+msgstr ""
+"Inicializaçao disco duro... \n"
+"Esta operação pode durar varios minutos dependendo do tamanho do disco duro…"
+
+msgid "Input"
+msgstr "Entrada"
+
+msgid "Input Key Type"
+msgstr "Entre o Tipo de chave "
+
+msgid "Install"
+msgstr "Instalar"
+
+msgid "Install a new image with a USB stick"
+msgstr "Installar uma nova imagem com um pen USB"
+
+msgid "Install a new image with your web browser"
+msgstr "Installar uma nova imagem com o Web browser"
+
+msgid "Install local IPKG"
+msgstr "Installar IPKG locais"
+
+msgid "Install or remove finished."
+msgstr "Installar ou remover terminado"
+
+msgid "Install settings, skins, software..."
+msgstr "Instalar canais, skins, software..."
+
+msgid "Install software updates..."
+msgstr "Instalar softwares updates"
+
+msgid "Installation Menu"
+msgstr "Menu de instalaçao "
+
+msgid "Installation finished."
+msgstr "Instalaçao terminada"
+
+msgid "Installing"
+msgstr "A instalar"
+
+msgid "Installing ..."
+msgstr "A instalar ..."
+
+msgid "Installing Software..."
+msgstr "A instalar o software..."
+
+msgid "Installing default sat lists... Please wait..."
+msgstr "Inataçao das listas de satélites de origém... Espere por favor…"
+
+msgid "Installing defaults... Please wait..."
+msgstr "Instalaçao de origém... Espere por favor…"
+
+msgid "Installing package content... Please wait..."
+msgstr "Instalando do conteudo do pacote… Espere por favor…"
+
+msgid "Instant Record..."
+msgstr "Gravar agora..."
+
+msgid "Integrated Ethernet"
+msgstr "Ethernet integrada"
+
+msgid "Integrated Wireless"
+msgstr "Wireless Integrado"
+
+msgid "Interlingua"
+msgstr "Interlingua"
+
+msgid "Interlingue"
+msgstr "Interlingue"
+
+msgid "Intermediate"
+msgstr "Intermediario"
+
+msgid "Internal Flash"
+msgstr "Flash Interna"
+
+msgid "Inuktitut (Eskimo)"
+msgstr "Inuktitut (Eskimo)"
+
+msgid "Inupiak"
+msgstr "Inupiak"
+
+msgid "Invalid Location"
+msgstr "Localização Inválida"
+
+#, python-format
+msgid "Invalid directory selected: %s"
+msgstr "Selecionou o diretório inválido: %s"
+
+msgid "Inversion"
+msgstr "Inversão"
+
+msgid "Invert display"
+msgstr "Inverter o Display"
+
+msgid "Ipkg"
+msgstr "Ipkg"
+
+msgid "Irish"
+msgstr "Irish"
+
+msgid "Italian"
+msgstr "Italiano"
+
+#, python-format
+msgid "Items: %d"
+msgstr "Artigos: %d"
+
+msgid "Japanese"
+msgstr "Japanese"
+
+msgid "Javanese"
+msgstr "Javanese"
+
+msgid "Job View"
+msgstr "Opinião do trabalho"
+
+#. TRANSLATORS: (aspect ratio policy: display as fullscreen, even if this breaks the aspect)
+msgid "Just Scale"
+msgstr "Modo Escala"
+
+msgid "Kannada"
+msgstr "Kannada"
+
+msgid "Kashmiri"
+msgstr "Kashmiri"
+
+msgid "Kazakh"
+msgstr "Kazakh"
+
+msgid "Keyboard Map"
+msgstr "Mapa do Teclado"
+
+msgid "Keyboard Setup"
+msgstr "Config. do Teclado"
+
+msgid "Keymap"
+msgstr "Mapa das teclas"
+
+msgid "Kinyarwanda"
+msgstr "Kinyarwanda"
+
+msgid "Kirghiz"
+msgstr "Kirghiz"
+
+msgid "Kirundi"
+msgstr "Kirundi"
+
+msgid "Korean"
+msgstr "Korean"
+
+msgid "Kurdish"
+msgstr "Kurdish"
+
+msgid "LAN Adapter"
+msgstr "Adaptador LAN"
+
+msgid "LNB"
+msgstr "LNB"
+
+msgid "LOF"
+msgstr "LOF"
+
+msgid "LOF/H"
+msgstr "LOF/H"
+
+msgid "LOF/L"
+msgstr "LOF/L"
+
+msgid "Language"
+msgstr "Lingua"
+
+msgid "Language selection"
+msgstr "Selecção do Idioma"
+
+msgid "Language..."
+msgstr "Idioma"
+
+msgid "Laothian"
+msgstr "Laothian"
+
+msgid "Last speed"
+msgstr "Ultima velocidade"
+
+msgid "Latin"
+msgstr "Latino"
+
+msgid "Latitude"
+msgstr "Latitude"
+
+msgid "Latvian"
+msgstr "Latvian"
+
+msgid "Leave DVD Player?"
+msgstr "Sair do leitor DVD?"
+
+msgid "Left"
+msgstr "Esquerda"
+
+msgid "Lets you view/edit files in your QBoxD"
+msgstr "Deixa-o ver/editam-nos ficheiros do seu QBoxD"
+
+#. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
+msgid "Letterbox"
+msgstr "Letterbox"
+
+msgid "Limit east"
+msgstr "Limite de Este"
+
+msgid "Limit west"
+msgstr "Limite de Oeste"
+
+msgid "Limited character set for recording filenames"
+msgstr "Jogo de caracteres limitado para nomes de arquivo da gravação"
+
+msgid "Limits off"
+msgstr "Desligar limites"
+
+msgid "Limits on"
+msgstr "Ligar limites"
+
+msgid "Lingala"
+msgstr "Lingala"
+
+msgid "Link Quality:"
+msgstr "Qualidade da ligação:"
+
+msgid "Link not present."
+msgstr "Ligação nao atual."
+
+msgid "Link:"
+msgstr "Ligação:"
+
+msgid "Linked titles with a DVD menu"
+msgstr "Títulos ligados com um menu de DVD"
+
+msgid "List Bottom"
+msgstr "Parte inferior da lista"
+
+msgid "List Top"
+msgstr "Parte superior da lista"
+
+msgid "List down"
+msgstr "Lista para baixo"
+
+msgid "List of Storage Devices"
+msgstr "Lista de dispositivos de armazenamento"
+
+msgid "List of known VLC-Server Profiles"
+msgstr "Lista de perfis conhecidos do VLC-Server"
+
+msgid "List up"
+msgstr "Lista para cima"
+
+msgid "Lithuanian"
+msgstr "Lituano"
+
+msgid "Load"
+msgstr "Carga"
+
+msgid "Load Length of Movies in Movielist"
+msgstr "Comprimento da carga dos filmes em Movielist"
+
+msgid "Load another Page of current category?"
+msgstr "Carregue uma outra página da categoria atual?"
+
+msgid "Load further entries of current Feed?"
+msgstr "Carregar Entradas adicionais do feed atual?"
+
+msgid "Loading additional videos, be patient ..."
+msgstr "Carregando vídeos adicionais, seja paciente…"
+
+msgid "Loading favorits, be patient ..."
+msgstr "Carregamento dos favoritos, tenha paciencia…"
+
+msgid "Loading playlist, be patient ..."
+msgstr "Carregamento da playlist, tenha paciencia…"
+
+msgid "Loading related videos, be patient ..."
+msgstr "Carregamento dos videos, tenha paciencia…"
+
+msgid "Loading response videos, be patient ..."
+msgstr "Carregamento dos videos, tenha paciencia…"
+
+msgid "Loading standard feed, be patient ..."
+msgstr "Carregamento do feed, tenha paciencia…"
+
+msgid "Loading standard page, be patient ..."
+msgstr "Carregamento da pagina standart, tenha paciencia…"
+
+msgid "Local Network"
+msgstr "Rede Local"
+
+msgid "Local share name"
+msgstr "Nome local da partilha"
+
+msgid "Location"
+msgstr "Localização"
+
+msgid "Lock:"
+msgstr "Lock:"
+
+msgid "Log results to harddisk"
+msgstr "Resultados do registro ao disco duro"
+
+msgid "Login not successful"
+msgstr "Início de uma sessão nao bem sucedido"
+
+msgid "Long Keypress"
+msgstr "Mantenha a tecla pressionada"
+
+msgid "Longitude"
+msgstr "Longitude"
+
+msgid "Low Quality (Mono)"
+msgstr "Má qualidade (mono)"
+
+msgid "MMC Card"
+msgstr "Cartão MMC"
+
+msgid "MORE"
+msgstr "MAIS"
+
+msgid "Macedonian"
+msgstr "Macedonian"
+
+msgid "Main menu"
+msgstr "Menu Principal"
+
+msgid "Mainmenu"
+msgstr "MenuPrincipal"
+
+msgid "Make this mark an 'in' point"
+msgstr "Marcar  como ponto de entrada"
+
+msgid "Make this mark an 'out' point"
+msgstr "Marcar como ponto de saída"
+
+msgid "Make this mark just a mark"
+msgstr "Marcar Somente"
+
+msgid "Malagasy"
+msgstr "Malagasy"
+
+msgid "Malay"
+msgstr "Malay"
+
+msgid "Malayalam"
+msgstr "Malayalam"
+
+msgid "Maltese"
+msgstr "Maltese"
+
+msgid "Manage your receiver's software"
+msgstr "Controle o software do seu deco"
+
+msgid "Manual Scan"
+msgstr "Busca Manual"
+
+msgid "Manual transponder"
+msgstr "Transponder Manual"
+
+msgid "Manufacturer"
+msgstr "Fabricante"
+
+msgid "Maori"
+msgstr "Maori"
+
+msgid "Marathi"
+msgstr "Marathi"
+
+msgid "Margin after record"
+msgstr "Margem depois de gravar"
+
+msgid "Margin before record (minutes)"
+msgstr "Margem antes de gravar(minutos)"
+
+msgid "Media Center"
+msgstr "Media Center"
+
+msgid "Media player"
+msgstr "Reprodutor de Media"
+
+msgid "MediaPlayer"
+msgstr "ReprodutorMedia"
+
+msgid "Medium Quality (Mono)"
+msgstr "Qualidade média (Mono)"
+
+msgid "Medium is not a writeable DVD!"
+msgstr "O dvd não é um DVD virgem!"
+
+msgid "Medium is not empty!"
+msgstr "O dvd não esta vazio!"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Message"
+msgstr "Mensagem"
+
+msgid "Metric"
+msgstr "Métrico"
+
+msgid "Miscellaneous"
+msgstr "Outras opçoes"
+
+msgid "Mkfs failed"
+msgstr "Falha em Mkfs"
+
+msgid "Mode"
+msgstr "Modo"
+
+#, python-format
+msgid "Mode: %s"
+msgstr "Modo: %s"
+
+msgid "Model: "
+msgstr "Modelo:"
+
+#, python-format
+msgid "Model: %s\n"
+msgstr "Modelo: %s\n"
+
+msgid "Modulation"
+msgstr "Modulação"
+
+msgid "Modulator"
+msgstr "Modulador"
+
+msgid "Moldavian"
+msgstr "Moldavian"
+
+msgid "Mon"
+msgstr "Seg"
+
+msgid "Mon-Fri"
+msgstr "Seg-Sex"
+
+msgid "Monday"
+msgstr "Segunda-feira"
+
+msgid "Mongolian"
+msgstr "Mongolian"
+
+msgid "Most Discussed"
+msgstr "A maioria discutiram"
+
+msgid "Most Linked"
+msgstr "A maioria ligada"
+
+msgid "Most Recent"
+msgstr "O mais recente"
+
+msgid "Most Responded"
+msgstr "O mais respondido"
+
+msgid "Most Viewed"
+msgstr "O mais visto"
+
+msgid "Mount failed"
+msgstr "Falha ao fazer o mount"
+
+msgid "Mount informations"
+msgstr "Informações da montagem"
+
+msgid "Mount options"
+msgstr "Opções da montagem"
+
+msgid "Mount type"
+msgstr "Tipo de montagem"
+
+msgid "MountManager"
+msgstr "Gestor de montagem"
+
+msgid "MountPoint: "
+msgstr "Gestor de ponto"
+
+msgid ""
+"Mounted/\n"
+"Unmounted"
+msgstr ""
+"Montado/\n"
+"Desmontado"
+
+msgid "Mountpoints management"
+msgstr "Gestor de pontos de montagem"
+
+msgid "Mounts editor"
+msgstr "Editor de montagem"
+
+msgid "Mounts management"
+msgstr "Gerência de montagem"
+
+msgid "Move Picture in Picture"
+msgstr "Mover Imagem na Imagem"
+
+msgid "Move east"
+msgstr "Mover Este"
+
+msgid "Move west"
+msgstr "Mover Oeste"
+
+msgid "Movie Directory"
+msgstr "Diretório do filme"
+
+msgid "Movielist menu"
+msgstr "Menu da lista de filmes"
+
+msgid "Movies"
+msgstr "Filmes"
+
+msgid "Movies - Action/Adventure"
+msgstr "Filmes - ação/aventura"
+
+msgid "Movies - Anime/Animation"
+msgstr "Filmes - Anime/animação"
+
+msgid "Movies - Classics"
+msgstr "Filmes - clássicos"
+
+msgid "Movies - Documentary"
+msgstr "Filmes - documentário"
+
+msgid "Movies - Drama"
+msgstr "Filmes - Dramas"
+
+msgid "Movies - Family"
+msgstr "Filmes - Familia"
+
+msgid "Movies - Foreign"
+msgstr "Filmes - Estrangeiro"
+
+msgid "Movies - Horror"
+msgstr "Filmes - Horror"
+
+msgid "Movies - Sci-Fi/Fantasy"
+msgstr "Filmes - ficção científica/fantasia"
+
+msgid "Movies - Shorts"
+msgstr "Filmes - Pequena metragem"
+
+msgid "Movies - Thriller"
+msgstr "Filmes - filme policial"
+
+msgid "Moview - Comedy"
+msgstr "Moview - comédia"
+
+msgid "Multi EPG"
+msgstr "EPG Multi"
+
+msgid "Multimedia"
+msgstr "Multimedia"
+
+msgid "Multiple service support"
+msgstr "Suporte para Serviços Multiplos"
+
+msgid "Multisat"
+msgstr "Satelites Multiplos"
+
+msgid "Music"
+msgstr "Musica"
+
+msgid "Mute"
+msgstr "Mute"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "NAS Server Configuration"
+msgstr "Configuração do server NAS"
+
+msgid "NEXT"
+msgstr "Próximo"
+
+msgid "NFI image flashing completed. Press Yellow to Reboot!"
+msgstr "Imagem do NFI flash terminada. Pressione o amarelo para rebootar!"
+
+msgid "NFS share"
+msgstr "Partilha du NFS"
+
+msgid "NIT scan"
+msgstr "Scan do NIT"
+
+msgid "NOW"
+msgstr "Agora"
+
+msgid "NTSC"
+msgstr "NTSC"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Name:"
+msgstr "Nome:"
+
+msgid "Nameserver"
+msgstr "Nome do Server"
+
+#, python-format
+msgid "Nameserver %d"
+msgstr "Nameserver %d"
+
+msgid "Nameserver Setup"
+msgstr "Nameserver Setup"
+
+msgid "Nameserver settings"
+msgstr "Ajustes do Nameserver"
+
+msgid "Nauru"
+msgstr "Nauru"
+
+msgid "Nepali"
+msgstr "Nepali"
+
+msgid "Netmask"
+msgstr "Máscara"
+
+msgid "Network"
+msgstr "Rede"
+
+msgid "Network Configuration..."
+msgstr "Configuração da rede…"
+
+msgid "Network Mount"
+msgstr "Mount da Rede"
+
+msgid "Network SSID"
+msgstr "Rede SSID"
+
+msgid "Network Settings"
+msgstr "Ajustes da Rede"
+
+msgid "Network Setup"
+msgstr "Config.de rede"
+
+msgid "Network scan"
+msgstr "Scan de rede"
+
+msgid "Network settings"
+msgstr "Ajustes da rede"
+
+msgid "Network setup"
+msgstr "Config.de rede"
+
+msgid "Network test"
+msgstr "Teste a rede"
+
+msgid "Network test..."
+msgstr "Teste a rede..."
+
+msgid "Network..."
+msgstr "Rede..."
+
+msgid "Network:"
+msgstr "Rede:"
+
+msgid "NetworkWizard"
+msgstr "Questionario da rede"
+
+msgid "New"
+msgstr "Novo"
+
+msgid "New YouPorn search"
+msgstr "Nova procura YouPorn"
+
+msgid "New YouTube search"
+msgstr "Nova procura YouTube"
+
+msgid "New pin"
+msgstr "Novo Pin"
+
+msgid "New version:"
+msgstr "Nova Versão:"
+
+msgid "Newest Video"
+msgstr "Video Recente"
+
+msgid "News & Politics"
+msgstr "Noticias & Politica"
+
+msgid "Next"
+msgstr "Seguinte"
+
+msgid "Next Favorite Folder"
+msgstr "Proxima Pasta dos Favoritos"
+
+msgid "Next Song"
+msgstr "Canção seguinte"
+
+msgid "No"
+msgstr "Não"
+
+#, python-format
+msgid "No %s."
+msgstr "Não %s"
+
+msgid "No (supported) DVDROM found!"
+msgstr "Nenhum DVDROM (suportado) encontrado!"
+
+msgid "No 50 Hz, sorry. :("
+msgstr "Sem 50Hz, desculpe.:("
+
+msgid "No Connection"
+msgstr "Nenhuma conexão"
+
+msgid "No External Harddisk found"
+msgstr "Nenhum disco duro externo encontrado"
+
+msgid "No HDD found or HDD not initialized!"
+msgstr "HDD não encontrado ou Falha ao Iniciar"
+
+msgid "No Harddisk or NAS found"
+msgstr ""
+
+msgid ""
+"No Keyboard or Mouse detected!\n"
+"To launch the Web Browser you need to have a Keyboard and Mouse connected on "
+"the USB Port.\n"
+"Please connect any USB Keyboard and Mouse into any USB Port on the back side "
+"of your QBox receiver.\n"
+"\n"
+"TIP: If you have no USB Port free left, please use a USB Hub!"
+msgstr ""
+"Nenhum teclado ou rato detectado!\n"
+"Para lançar o web browser você precisa de ter um teclado e um rato "
+"conectados no porto do USB.\n"
+" Conecta por favor todo o teclado e rato do USB em qualquer porto do USB no "
+"lado traseiro de seu receptor de QBox.\n"
+" \n"
+" Tip: Se você não tem nenhum USB livre, use por favor um Hub USB!"
+
+msgid "No Networks found"
+msgstr "Nenhuma rede encontrada"
+
+msgid "No backup needed"
+msgstr "Não necessita de BackUp"
+
+msgid "No backup storage present."
+msgstr "Nenhum armazenamento alternativo presente."
+
+msgid "No configuration saved."
+msgstr "Nenhuma configuração conservada."
+
+msgid ""
+"No data on transponder!\n"
+"(Timeout reading PAT)"
+msgstr ""
+"Nenhuns dados no transponder!\n"
+"(Timeout reading PAT)"
+
+msgid "No description available."
+msgstr "Nenhuma descrição disponível."
+
+msgid "No details for this image file"
+msgstr "Nenhuns detalhes para esta imagem"
+
+msgid "No displayable files on this medium found!"
+msgstr "Não foram encontrados ficheiros Validos!"
+
+msgid "No event info found, recording indefinitely."
+msgstr "Não encontrou o evento, gravar indefinidamente"
+
+msgid "No free tuner!"
+msgstr "Nenhum tuner livre!"
+
+msgid "No more files in this directory"
+msgstr "Não ha mais ficheiros neste diretório"
+
+msgid "No network devices found!"
+msgstr "Nenhum dispositivo da rede encontrado!"
+
+#, python-format
+msgid "No new %s found."
+msgstr "Nenhum novo %s encontrado."
+
+msgid ""
+"No packages were upgraded yet. So you can check your network and try again."
+msgstr "Nenhum pacote actualizado. Verifique a sua rede e tente outra vez."
+
+msgid "No picture on TV? Press EXIT and retry."
+msgstr "Sem imagem na TV? Carregue EXIT e tente de novo."
+
+msgid "No positioner capable frontend found."
+msgstr "Não encontrou posicionador."
+
+msgid "No previous file in this directory"
+msgstr "Nenhum ficheiro precedente neste diretório"
+
+msgid "No purses defined."
+msgstr "Nenhuma bolsa definida."
+
+msgid "No satellite frontend found!!"
+msgstr "Não encontrou o Satelite."
+
+msgid "No subscription defined."
+msgstr "Nenhuma subscrição definida."
+
+msgid "No tags are set on these movies."
+msgstr "Nenhum Tag é ajustado nestes filmes."
+
+msgid "No tuner is configured for use with a diseqc positioner!"
+msgstr "Nenhum receptor encontrado para usar como posicionador de diseqc!"
+
+msgid ""
+"No tuner is enabled!\n"
+"Please setup your tuner settings before you start a service scan."
+msgstr ""
+"Nenhum tuner activo!\n"
+"Configure o seu tuner antes de iniciar a busca de canais."
+
+msgid "No useable USB stick found"
+msgstr "Nenhum pen USB útil encontrado"
+
+msgid ""
+"No valid Enigma-Service to play a VLC-Stream\n"
+"Check your installation and try again!"
+msgstr ""
+"Nenhum Serviço-Enigma válido para ler com VLC-Stram\n"
+" Verifique outra vez a sua instalação e tente de novo!"
+
+msgid ""
+"No valid service PIN found!\n"
+"Do you like to change the service PIN now?\n"
+"When you say 'No' here the service protection stay disabled!"
+msgstr ""
+"PIN invalido!\n"
+"Deseja alterar o PIN do canal agora?\n"
+"Se responder 'NÃO' a protecção do canal fica desabilitada!"
+
+msgid ""
+"No valid setup PIN found!\n"
+"Do you like to change the setup PIN now?\n"
+"When you say 'No' here the setup protection stay disabled!"
+msgstr ""
+"PIN invalido!\n"
+"Deseja alterar o PIN do canal agora?\n"
+"Se responder 'NÃO' a protecção do canal fica desabilitada!"
+
+msgid ""
+"No working local network adapter found.\n"
+"Please verify that you have attached a network cable and your network is "
+"configured correctly."
+msgstr ""
+"Nenhum adaptador de rede local encontrado.\n"
+" Verifique por favor que você ligou um cabo da rede e que sua rede está "
+"configurada corretamente."
+
+msgid ""
+"No working wireless interface found.\n"
+" Please verify that you have WiFi module or enable your local network "
+"interface."
+msgstr ""
+"Nenhum adaptador de rede Wireless local encontrado.\n"
+" Verifique por favor que você ligou o WiFi e que sua rede está configurada "
+"corretamente."
+
+msgid ""
+"No working wireless network adapter found.\n"
+"Please verify that you have attached a compatible WLAN device and your "
+"network is configured correctly."
+msgstr ""
+"Nenhum adaptador de rede Wireless a funcionar foi encontrado.\n"
+" Verifique por favor que você ligou um dongle WiFi compativél e que sua rede "
+"está configurada corretamente."
+
+msgid ""
+"No working wireless network interface found.\n"
+" Please verify that you have attached a compatible WLAN device or enable "
+"your local network interface."
+msgstr ""
+"Nenhum adaptador de rede Wireless a funcionar foi encontrado.\n"
+" Verifique por favor que você ligou um dongle WiFi compativél e que sua rede "
+"está configurada corretamente."
+
+msgid ""
+"No working wireless networkadapter found.\n"
+"Please verify that you have WiFi module and your Network is configured "
+"correctly."
+msgstr ""
+"Nenhum adaptador de rede Wireless a funcionar foi encontrado.\n"
+" Verifique por favor que você ligou um dongle WiFi e que sua rede está "
+"configurada corretamente."
+
+msgid "No, but restart from begin"
+msgstr "Não, reiniciar do inicio"
+
+msgid "No, do nothing."
+msgstr "Não."
+
+msgid "No, just start my QBoxHD"
+msgstr "Não, somente inicie a QBoxHD."
+
+msgid "No, not now"
+msgstr "Não, agora não"
+
+msgid "No, scan later manually"
+msgstr "Não,busca manual depois"
+
+msgid "No, send them never"
+msgstr "Não, nunca os emita"
+
+msgid "None"
+msgstr "Nenhum"
+
+#. TRANSLATORS: (aspect ratio policy: display as fullscreen, with stretching the left/right)
+msgid "Nonlinear"
+msgstr "Não Linear"
+
+msgid "Nonprofits & Activism"
+msgstr "Lucro não & Activismo"
+
+msgid "North"
+msgstr "Norte"
+
+msgid "Norwegian"
+msgstr "Norueguês"
+
+#, python-format
+msgid ""
+"Not enough diskspace. Please free up some diskspace and try again. (%d MB "
+"required, %d MB available)"
+msgstr ""
+"Não ha bastante espaço livre no disco. Por favor faça espaço e tente outra "
+"vez. (%d MB exigido, %d MB disponível)"
+
+msgid ""
+"Nothing to scan!\n"
+"Please setup your tuner settings before you start a service scan."
+msgstr ""
+"Nada para pesquisar!\n"
+"Por favor configure o receptor antes de iniciar uma busca."
+
+msgid "Now Playing"
+msgstr "A Reproduzir"
+
+msgid ""
+"Now, use the contrast setting to turn up the brightness of the background as "
+"much as possible, but make sure that you can still see the difference "
+"between the two brightest levels of shades.If you have done that, press OK."
+msgstr ""
+"Agora use o ajuste do contraste  para aumentar o brilho da luz de fundo, o "
+"maximo possivel, mas certifique-se de que consegue ver adiferença entre os "
+"dois niveis de brilho mais altos. Quando terminar carregue OK."
+
+msgid "OK"
+msgstr "OK"
+
+msgid "OK, guide me through the upgrade process"
+msgstr "OK, ajude-me no processo de update"
+
+msgid "OK, remove another extensions"
+msgstr "OK, remova outras extenções"
+
+msgid "OK, remove some extensions"
+msgstr "OK, remova outras extenções"
+
+msgid "OSD"
+msgstr "OSD"
+
+msgid "OSD Settings"
+msgstr "Definições OSD"
+
+msgid "OSD visibility"
+msgstr "Visibilidade do OSD"
+
+msgid "OTHER CONFIGURATION:"
+msgstr "OUTRA CONFIGURAÇÃO:"
+
+msgid "Occitan"
+msgstr "Occitan"
+
+msgid "Off"
+msgstr "Desligado"
+
+msgid "On"
+msgstr "Ligado"
+
+msgid "One"
+msgstr "Um"
+
+msgid "Online-Upgrade"
+msgstr "Actualiização Online"
+
+msgid "Only Free scan"
+msgstr "omente a varredura"
+
+msgid "Operation Stopped"
+msgstr "A operação parou"
+
+msgid "Operation stopped by user."
+msgstr "Operação parada pelo utilizador."
+
+msgid "Optionally enter your name if you want to."
+msgstr "Opcionalmente entre seu nome se você quizer."
+
+msgid "Orbital Position"
+msgstr "Posição Orbital"
+
+msgid "Order by"
+msgstr "Ordem por"
+
+msgid "Oriya"
+msgstr "Oriya"
+
+#, python-format
+msgid "Overscan Correction [in %(percentsign)s of Video width]"
+msgstr "Correção do Overscan [em %(percentsign)s da largura video]"
+
+msgid "PAL"
+msgstr "PAL"
+
+msgid "PCM"
+msgstr "PCM"
+
+msgid "PIDs"
+msgstr "PIDs"
+
+msgid "Package details for: "
+msgstr "Detalhes do pacote para: "
+
+msgid "Package list update"
+msgstr "Lista de pacotes actualizada"
+
+msgid "Package removal failed.\n"
+msgstr "Remoção do pacote falhadou.\n"
+
+msgid "Package removed successfully.\n"
+msgstr "Removeu o pacote com sucesso.\n"
+
+msgid "Packet management"
+msgstr "Gestor dos Pacotes"
+
+msgid "Packet manager"
+msgstr "Gestionario de pacote"
+
+msgid "Page"
+msgstr "Página"
+
+#. TRANSLATORS: (aspect ratio policy: cropped content on left/right) in doubt, keep english term
+msgid "Pan&Scan"
+msgstr "Pan&Scan"
+
+msgid "Panel Leds on standby"
+msgstr "Leds do painel em standby"
+
+msgid "Parent Directory"
+msgstr "Diretório parente"
+
+msgid "Parental Control"
+msgstr "Controlo parental"
+
+msgid "Parental control"
+msgstr "Controle Paternal"
+
+msgid "Parental control services Editor"
+msgstr "Editor de Canais Controle Paternal"
+
+msgid "Parental control setup"
+msgstr "Editor do Controle Paternal"
+
+msgid "Parental control type"
+msgstr "Tipo de Controle Paternal"
+
+msgid "Pashto"
+msgstr "Pashto"
+
+msgid "Password"
+msgstr "Senha"
+
+msgid "Pause movie at end"
+msgstr "Pausar o filme quando terminar"
+
+msgid "People & Blogs"
+msgstr "Povos & Blogs"
+
+msgid "Persian"
+msgstr "Persian"
+
+msgid "Personal Video Recodings (PVR)"
+msgstr "Personal Video Recodings (PVR)"
+
+msgid "Pets & Animals"
+msgstr "Animais de compahia & Animais"
+
+msgid "Phone number"
+msgstr "Numero de telefone"
+
+msgid "PiPSetup"
+msgstr "Configurar PiP"
+
+msgid "PicturePlayer"
+msgstr "Leitor de fotos"
+
+#. TRANSLATORS: (aspect ratio policy: black bars on left/right) in doubt, keep english term.
+msgid "Pillarbox"
+msgstr "Pillarbox"
+
+msgid "Pilot"
+msgstr "Piloto"
+
+msgid "Pin code needed"
+msgstr "Necessita do PIN"
+
+msgid "Play"
+msgstr "Play"
+
+msgid "Play All"
+msgstr "Ler Todos"
+
+msgid "Play Audio-CD..."
+msgstr "Ler Audio-CD..."
+
+msgid "Play DVD"
+msgstr "Ler DVD"
+
+msgid "Play Music..."
+msgstr "Ouvir Musica..."
+
+msgid "Play recorded movies..."
+msgstr "Reproduzir filmes gravados..."
+
+msgid "Play selected"
+msgstr "Leitura selecionada"
+
+msgid "Play selected file"
+msgstr "Leitura do ficheiro selecionado"
+
+msgid "PlayLists"
+msgstr "Playlists"
+
+msgid "PlayLists Video"
+msgstr "PlayLists Video"
+
+#, python-format
+msgid "PlayLists: %d"
+msgstr "PlayLists: %d"
+
+msgid "Playing video, be patient ..."
+msgstr "Leitura do vídeo, seja paciente…"
+
+msgid "Playlist"
+msgstr "Lista de canções"
+
+msgid "Playlist Description"
+msgstr "Descrição da lista de canções"
+
+msgid "Playlist Name"
+msgstr "Nome da Playlist"
+
+msgid "Playlists"
+msgstr " Lista de canções"
+
+msgid "Please Reboot"
+msgstr "Por favor reinicie"
+
+msgid "Please Select Medium to be Scanned"
+msgstr "Selecione o dispositivo a procurar"
+
+msgid "Please change recording endtime"
+msgstr "Altere o tempo final da gravação"
+
+msgid "Please check your network settings!"
+msgstr "Verifique por favor os ajustes da rede!"
+
+msgid "Please choose .NFI image file from feed server to download"
+msgstr "Escolha por favor o ficheiro de imagem .NFI do server para transferir"
+
+msgid "Please choose an extension..."
+msgstr "Por favor escolha a extensão"
+
+msgid "Please choose he package..."
+msgstr "Escolha o pacote por favor..."
+
+msgid "Please choose the default services lists you want to install."
+msgstr "Escolha por favor as listas serviço de origem que você quer instalar."
+
+msgid "Please connect netcable and then activate this network configuration."
+msgstr "Conecte por favor o netcable e ative esta configuração de rede."
+
+msgid ""
+"Please disconnect all USB devices from your QBoxHD and (re-)attach the "
+"target USB stick (minimum size is 64 MB) now!"
+msgstr ""
+"Desconecte por favor todos os dispositivos USB de seu QBoxHD e (re-) conecte "
+"USB desejado (o tamanho mínimo é MB 64) agora!"
+
+msgid "Please disconnect netcable for activate this network configuration"
+msgstr "Desconecte por favor netcable para ativar esta configuração de rede"
+
+msgid "Please do not change any values unless you know what you are doing!"
+msgstr "Por favor não altere os valores se não tem a certeza do que vai fazer!"
+
+msgid "Please enter a name for the new bouquet"
+msgstr "Escreva o nome do novo Bouquet"
+
+msgid "Please enter a name for the new marker"
+msgstr "Escreva o nome da nova marca"
+
+msgid "Please enter a new filename"
+msgstr "Introduza um nome novo para o ficheiro"
+
+msgid "Please enter filename (empty = use current date)"
+msgstr "Introduza o nome do ficheiro (vazio = usra data actual)"
+
+msgid "Please enter name of the new directory"
+msgstr "Entre por favor o nome do novo diretório "
+
+msgid "Please enter the correct pin code"
+msgstr "Escreva o PIN correcto"
+
+msgid "Please enter the old pin code"
+msgstr "Escreva o PIN antigo"
+
+msgid "Please enter your email address here:"
+msgstr "Incorpore por favor seu email aqui:"
+
+msgid "Please enter your name here (optional):"
+msgstr "Entre por favor seu nome aqui (opcional):"
+
+msgid "Please follow the instructions on the TV"
+msgstr "Siga as instruções na TV"
+
+msgid ""
+"Please note that the previously selected media could not be accessed and "
+"therefore the default directory is being used instead."
+msgstr ""
+"Anote por favor que os meios previamente selecionados não poderiam ser "
+"alcançados e conseqüentemente o diretório de origem está sendo usado "
+"preferivelmente."
+
+msgid "Please press OK to continue."
+msgstr "Pressione por favor OK para continuar."
+
+msgid "Please press OK!"
+msgstr "Carregue em OK"
+
+msgid "Please select .NFI flash image file from medium"
+msgstr "Selecione por favor o ficheiro imagem .NFI do suporte"
+
+msgid "Please select a playlist to delete..."
+msgstr "Seleccione uma lista para apagar..."
+
+msgid "Please select a playlist..."
+msgstr "seleciona uma lista"
+
+msgid "Please select a subservice to record..."
+msgstr "Selecione um subserviço para gravar..."
+
+msgid "Please select a subservice..."
+msgstr "Selecione um subserviço..."
+
+msgid "Please select an extension to remove."
+msgstr "Selecione por favor uma extensão para remover."
+
+msgid "Please select an option below."
+msgstr "Selecione por favor uma opção abaixo."
+
+msgid "Please select medium to use as backup location"
+msgstr "Selecione por favor o suporte para usar-se como backup"
+
+msgid "Please select tag to filter..."
+msgstr "Selecione por favor o Tag para filtrar…"
+
+msgid "Please select target directory or medium"
+msgstr "Selecione por favor o diretório ou o suporte"
+
+msgid "Please select the movie path..."
+msgstr "Por favor seleccione a pasta do Filme..."
+
+msgid "Please set up tuner B"
+msgstr "Por favor selecione o tuner B"
+
+msgid "Please set up tuner C"
+msgstr "Configure tuner C"
+
+msgid "Please set up tuner D"
+msgstr "Configure tuner D"
+
+msgid ""
+"Please use direction keys to move the PiP window.\n"
+"Press Bouquet +/- to resize the window.\n"
+"Press OK to go back to the TV mode or EXIT to cancel the moving."
+msgstr ""
+"Por favor use as teclas direcionais para mover a janela PiP.\n"
+"Carregue em Bouquet +/- para redimensionara janela.\n"
+"OK para voltar ao Modo TV ou EXIT para cancelar."
+
+msgid ""
+"Please use the UP and DOWN keys to select your language. Afterwards press "
+"the OK button."
+msgstr ""
+"Use por favor as teclas em CIMA ou em BAIXO  para selecionar a sua língua. "
+"Pressione mais tarde a tecla OK."
+
+msgid "Please wait for activation of your network configuration..."
+msgstr "Espere por favor a ativação de sua configuração de rede…"
+
+msgid "Please wait for activation of your network mount..."
+msgstr "Espere por favor a ativação da sua montagem de rede…"
+
+msgid "Please wait while removing selected package..."
+msgstr "Espere por favor ao remover o pacote selecionado…"
+
+msgid "Please wait while removing your network mount..."
+msgstr "Espere por favor ao remover sua montagem da rede…"
+
+msgid "Please wait while scanning is in progress..."
+msgstr "Espere por favor quando o scan esta a progressar…"
+
+msgid "Please wait while searching for removable packages..."
+msgstr "Espere por favor ao procurarar por pacotes removíveis…"
+
+msgid "Please wait while updating your network mount..."
+msgstr "Espere por favor ao actualizar sua montagem da rede…"
+
+msgid "Please wait while we configure your network..."
+msgstr "Espere por favor quando nós configurarmos sua rede…"
+
+msgid "Please wait while your network is restarting..."
+msgstr "Espere por favor enquanto a sua rede esta a reiniciar…"
+
+msgid "Please wait..."
+msgstr "Espere por favor…"
+
+msgid "Please wait... Loading list..."
+msgstr "Por favor espere...a carregar a lista..."
+
+msgid "Plugin browser"
+msgstr "Plugins Instalados"
+
+msgid "Plugin manager"
+msgstr "Gestionario de Plugin"
+
+msgid "Plugin manager help..."
+msgstr "Ajuda do Gestionario de Plugin..."
+
+msgid "Plugin manager process information..."
+msgstr "Informação do processo do gestionario de plugin…"
+
+msgid "Plugins"
+msgstr "Plugins"
+
+msgid "Polarity"
+msgstr "Polaridade"
+
+msgid "Polarization"
+msgstr "Polarização"
+
+msgid "Polish"
+msgstr "Polaco"
+
+msgid "Port A"
+msgstr "Porta A"
+
+msgid "Port B"
+msgstr "Porta B"
+
+msgid "Port C"
+msgstr "Porta C"
+
+msgid "Port D"
+msgstr "Porta D"
+
+msgid "Portuguese"
+msgstr "Português"
+
+msgid "Positioner"
+msgstr "Posicionador"
+
+msgid "Positioner fine movement"
+msgstr "Busca Final do Posicionador"
+
+msgid "Positioner movement"
+msgstr "Movimento do Posicionador"
+
+msgid "Positioner setup"
+msgstr "Definições do Posicionador"
+
+msgid "Positioner storage"
+msgstr "Gravar no Posicionador"
+
+msgid "Power threshold in mA"
+msgstr "Power em mA"
+
+msgid "Predefined transponder"
+msgstr "Transponder pré-definido"
+
+msgid "Preparing... Please wait"
+msgstr "Em preparação… Por favor espere "
+
+msgid "Press OK on your remote control to continue."
+msgstr "Pressione OK em seu controlo a distância para continuar."
+
+msgid "Press OK to activate the settings."
+msgstr "Carregue Ok para Activar"
+
+msgid "Press OK to collapse this host"
+msgstr "Pressione OK para desmoronar este host"
+
+msgid "Press OK to edit selected settings."
+msgstr "Pressione OK para editar ajustes selecionados."
+
+msgid "Press OK to edit the settings."
+msgstr "Pressione OK para editar os canais."
+
+msgid "Press OK to expand this host"
+msgstr "Pressione OK para expandir este host"
+
+#, python-format
+msgid "Press OK to get further details for %s"
+msgstr "Pressione OK para ter detalhes adicionais para %s"
+
+msgid "Press OK to mount this share!"
+msgstr "Pressione OK para montar esta partilha!"
+
+msgid "Press OK to mount!"
+msgstr "Pressione OK para montar!"
+
+msgid "Press OK to save settings."
+msgstr "Pressione OK para conservar ajustes."
+
+msgid "Press OK to scan"
+msgstr "Carregue Ok para Busca"
+
+msgid "Press OK to select."
+msgstr "Pressione OK para selecionar."
+
+msgid "Press OK to start the scan"
+msgstr "Carregue Ok para Iniciar Busca"
+
+msgid "Press OK to view full changelog"
+msgstr "Pressione OK para ver o changelog"
+
+msgid "Press custom button..."
+msgstr "Pressione a tecla custom…"
+
+msgid "Prev"
+msgstr "Ant"
+
+msgid "Preview"
+msgstr "Inspeção prévia"
+
+msgid "Preview menu"
+msgstr "Inspeção prévia do menu"
+
+msgid "Previous Favorite Folder"
+msgstr "Pasta dos favoritos precedente"
+
+msgid "Previous Song"
+msgstr "Canção precedente"
+
+msgid "Primary DNS"
+msgstr "DNS primario"
+
+msgid "Priority"
+msgstr "Prioridade"
+
+msgid "Process"
+msgstr "Processo"
+
+msgid "Properties of current title"
+msgstr "Propriedades do título atual"
+
+msgid "Protect services"
+msgstr "Proteger Serviços"
+
+msgid "Protect setup"
+msgstr "Definições de Protecção"
+
+msgid "Provider"
+msgstr "Provedor"
+
+msgid "Provider to scan"
+msgstr "Provedor a procurar"
+
+msgid "Providers"
+msgstr "Provedores"
+
+msgid "Published"
+msgstr "Publicado"
+
+msgid "Punjabi"
+msgstr "Punjabi"
+
+msgid "Python frontend for /tmp/mmi.socket"
+msgstr "Python frontend para /tmp/mmi.socket"
+
+msgid "QBoxHD format data DVD (HDTV compatible)"
+msgstr "Dados DVD do formato QBoxHD (HDTV compatível)"
+
+msgid "QBoxHD software because updates are available."
+msgstr ""
+"Actualização do Software QBoxHD porque as actualizações estão disponíveis."
+
+msgid "Quality"
+msgstr "Qualidade"
+
+msgid "Quechua"
+msgstr "Quechua"
+
+msgid "Quick"
+msgstr "Rapido"
+
+msgid "Quickzap"
+msgstr "Zap Rápido"
+
+msgid "RC Menu"
+msgstr "Menu RC"
+
+msgid "RF output"
+msgstr "Saida RF"
+
+msgid "RGB"
+msgstr "RGB"
+
+msgid "RSS Feed URI"
+msgstr "RSS Feed URI"
+
+msgid "Radio"
+msgstr "Radio"
+
+msgid "Ram Disk"
+msgstr "Disco Ram"
+
+msgid "Random"
+msgstr "Aleatório"
+
+msgid "Rate"
+msgstr "Taxa"
+
+msgid "Rating"
+msgstr "Avaliação"
+
+msgid "Rating: "
+msgstr "Avaliação:"
+
+msgid "Ratings"
+msgstr "Avaliações"
+
+msgid "Really close without saving settings?"
+msgstr "Deseja Sair sem Gravar?"
+
+#, python-format
+msgid "Really delete %(playlist)s?"
+msgstr "Realmente suprimir %(lista de canções)s?"
+
+#, python-format
+msgid "Really delete %(user)s?"
+msgstr "Realmente suprimir %(utilizarores)s?"
+
+msgid "Really delete done timers?"
+msgstr "Deseja apagar os timers?"
+
+msgid "Really delete this Server?"
+msgstr "Suprimir realmente este Servidor?"
+
+msgid "Really delete this favorite?"
+msgstr "Suprimir realmente este favorito?"
+
+msgid "Really exit the subservices quickzap?"
+msgstr "Deseja realmente sair?"
+
+msgid "Really reboot now?"
+msgstr "Quer Realmente reboot agora?"
+
+msgid "Really restart now?"
+msgstr "Quer Realmente recomeçar agora?"
+
+msgid "Really shutdown now?"
+msgstr "Quer Realmente desligar agora?"
+
+msgid "Reboot"
+msgstr "Reboot"
+
+msgid "Receiver Information"
+msgstr "Informação do receptor"
+
+msgid "Recently Featured"
+msgstr "Caracterizado recentemente"
+
+msgid "Reception Settings"
+msgstr "Definições de recepção"
+
+msgid "Record"
+msgstr "Gravar"
+
+#, python-format
+msgid "Record time limited due to conflicting timer %s"
+msgstr "O tempo gravado limitado devido ao conflito com o temporizador %s"
+
+msgid "Recorded files..."
+msgstr "Ficheiros Gravados..."
+
+msgid "Recording"
+msgstr "A gravar"
+
+msgid "Recording(s) are in progress or coming up in few seconds!"
+msgstr "As gravações estão em andamento ou vindo acima em poucos segundos!"
+
+msgid "Recordings"
+msgstr "Gravações"
+
+msgid "Recordings always have priority"
+msgstr "Gravações têm sempre prioridade"
+
+msgid "Red"
+msgstr "Vermelho"
+
+msgid "Reenter new pin"
+msgstr "Reintroduza o PIN"
+
+msgid "Refresh"
+msgstr "Refrescar"
+
+msgid "Refresh Rate"
+msgstr "Refresh Rate"
+
+msgid "Refresh rate selection."
+msgstr "Selecção do refresh rate"
+
+msgid "Relevance"
+msgstr "Relevância"
+
+msgid "Reload"
+msgstr "Recargar"
+
+msgid "Reload Black-/Whitelists"
+msgstr "Recargar Black-/Whitelists"
+
+msgid "Reloading Settings. Please wait ..."
+msgstr "Ajustes dos canais. Espere por favor…"
+
+msgid "Remember service pin"
+msgstr "Recorde o pin de serviço"
+
+msgid "Remember service pin cancel"
+msgstr "Recorde o cancelamento do pin de serviço"
+
+msgid "Remove"
+msgstr "Remova"
+
+msgid "Remove AddOn"
+msgstr "Remova AddOn"
+
+msgid "Remove Bookmark"
+msgstr "Remova Bookmark"
+
+msgid "Remove Plugins"
+msgstr "Remover Plugins"
+
+msgid "Remove a mark"
+msgstr "Remover Marca"
+
+msgid "Remove currently selected title"
+msgstr "Remover o título actualmente selecionado "
+
+msgid "Remove failed."
+msgstr "Remoção falhou."
+
+msgid "Remove finished."
+msgstr "Remoção terminada."
+
+msgid "Remove from favorites"
+msgstr "Remova dos favoritos"
+
+msgid "Remove from playlist"
+msgstr "Remova do playlist"
+
+msgid "Remove plugins"
+msgstr "Remover plugins"
+
+msgid "Remove the broken .NFI file?"
+msgstr "Remova o ficheiro .NFI danificado?"
+
+msgid "Remove the incomplete .NFI file?"
+msgstr "Remova o ficheiro .NFI incompleto?"
+
+msgid "Remove timer"
+msgstr "Remova o temporizador"
+
+msgid "Remove title"
+msgstr "Remover o título"
+
+msgid "Removed successfully."
+msgstr "Removido com sucesso."
+
+msgid "Removing"
+msgstr "Remoção"
+
+#, python-format
+msgid "Removing %s ..."
+msgstr "Remoção %s ..."
+
+msgid "Removing ..."
+msgstr "Remoção ..."
+
+#, python-format
+msgid "Removing directory %s failed. (Maybe not empty.)"
+msgstr "Remoção do diretório %s falhou. (Talvez não esta vazio.)"
+
+msgid "Rename"
+msgstr "Renomear"
+
+msgid "Rename crashlogs"
+msgstr "Renome os crashlogs"
+
+msgid "Repeat"
+msgstr "Repetir"
+
+msgid "Repeat Type"
+msgstr "Tempo de repetição"
+
+msgid "Repeating event currently recording... What do you want to do?"
+msgstr "A repetir o programa que está a gravar actualmente… Continuar? "
+
+msgid "Repeats"
+msgstr "Repetições"
+
+msgid "Rescan"
+msgstr "Rescan"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid "Reset and renumerate title names"
+msgstr "Reset Nomes do título da restauração "
+
+msgid "Resolution"
+msgstr "Definição"
+
+msgid "Restart"
+msgstr "Reiniciar"
+
+msgid "Restart GUI"
+msgstr "Reiniciar GUI"
+
+msgid "Restart GUI now?"
+msgstr "Reiniciar GUI?"
+
+msgid "Restart network"
+msgstr "Reiniciar Rede"
+
+msgid "Restart test"
+msgstr "Teste de Reinicio"
+
+msgid "Restart your network connection and interfaces.\n"
+msgstr "Reinicie a sua conexão e interfaces da rede. \n"
+
+msgid "Restore"
+msgstr "Restaurar"
+
+msgid "Restore backups..."
+msgstr "Restauração dos backups…"
+
+msgid "Restore from \""
+msgstr "Restauração a partir de \""
+
+msgid "Restore running"
+msgstr "Restauração em curso"
+
+msgid "Restore running ..."
+msgstr "Restauração em curso ..."
+
+msgid "Restore running..."
+msgstr "Restauração em curso..."
+
+msgid "Restore system settings"
+msgstr "Restauração dos ajustes sistema"
+
+msgid ""
+"Restoring the settings is done. Please press OK to activate the restored "
+"settings now."
+msgstr "O restauro está concluído. Por favor carregue em OK para activar."
+
+msgid "Restricted Content"
+msgstr "Índice restrito"
+
+msgid "Resume from last position"
+msgstr "Iniciar a partir da ultima posição"
+
+#. TRANSLATORS: The string "Resuming playback" flashes for a moment
+#. TRANSLATORS: at the start of a movie, when the user has selected
+#. TRANSLATORS: "Resume from last position" as start behavior.
+#. TRANSLATORS: The purpose is to notify the user that the movie starts
+#. TRANSLATORS: in the middle somewhere and not from the beginning.
+#. TRANSLATORS: (Some translators seem to have interpreted it as a
+#. TRANSLATORS: question or a choice, but it is a statement.)
+msgid "Resuming playback"
+msgstr "Retomar "
+
+msgid "Return to file browser"
+msgstr "Retorne ao navegador de ficheiros"
+
+msgid "Return to movie list"
+msgstr "Voltar à lista de filmes"
+
+msgid "Return to previous service"
+msgstr "Voltar ao canal anterior"
+
+msgid "Rewind speeds"
+msgstr "Velocidade de retrocesso"
+
+msgid "Rhaeto-Romance"
+msgstr "Rhaeto-Romance"
+
+msgid "Right"
+msgstr "Direita"
+
+msgid "Rolloff"
+msgstr "Rolloff"
+
+msgid "Romanian"
+msgstr "Romanian"
+
+msgid "Rotor turning speed"
+msgstr "velocidade do rotor"
+
+msgid "Running"
+msgstr "A instalar"
+
+msgid "Russian"
+msgstr "Russo"
+
+msgid "S-Video"
+msgstr "S-Video"
+
+msgid "SNR"
+msgstr "SNR"
+
+msgid "SNR:"
+msgstr "SNR:"
+
+msgid "SPDIF"
+msgstr "SPDIF"
+
+msgid "SSID:"
+msgstr "SSID:"
+
+msgid "Samoan"
+msgstr "Samoan"
+
+msgid "Sangro"
+msgstr "Sangro"
+
+msgid "Sanskrit"
+msgstr "Sanskrit"
+
+msgid "Sat"
+msgstr "Sat"
+
+msgid "Sat / Dish Setup"
+msgstr "Definições Sat / Antena "
+
+msgid "Satellite"
+msgstr "Satelite"
+
+msgid "Satellite Equipment Setup"
+msgstr "Definições do Equipamento de Satelite"
+
+msgid "Satellites"
+msgstr "Satelites"
+
+msgid "Satfinder"
+msgstr "Busca Satelites"
+
+msgid "Sats"
+msgstr "Sats"
+
+msgid "Satteliteequipment"
+msgstr "Equipamento satélite"
+
+msgid "Saturday"
+msgstr "Sábado"
+
+msgid "Save"
+msgstr "Salvar"
+
+msgid "Save Playlist"
+msgstr "Gravar lista"
+
+msgid "Save data on device"
+msgstr "Salvar os dados no aparelho"
+
+msgid "Scaling Mode"
+msgstr "Mode de Escala"
+
+msgid "Scan "
+msgstr "Busca"
+
+msgid "Scan Files..."
+msgstr "Scane ficheiros..."
+
+msgid "Scan NFS share"
+msgstr "Scane as partilhas NFS"
+
+msgid "Scan QAM128"
+msgstr "Scan QAM128"
+
+msgid "Scan QAM16"
+msgstr "Scan QAM16"
+
+msgid "Scan QAM256"
+msgstr "Scan QAM256"
+
+msgid "Scan QAM32"
+msgstr "Scan QAM32"
+
+msgid "Scan QAM64"
+msgstr "Scan QAM64"
+
+msgid "Scan SR6875"
+msgstr "Scan SR6875"
+
+msgid "Scan SR6900"
+msgstr "Scan SR6900"
+
+msgid "Scan Wireless Networks"
+msgstr "Scan Redes wireless"
+
+msgid "Scan additional SR"
+msgstr "Scan additional SR"
+
+msgid "Scan band EU HYPER"
+msgstr "Scan band EU HYPER"
+
+msgid "Scan band EU MID"
+msgstr "Scan band EU MID"
+
+msgid "Scan band EU SUPER"
+msgstr "Scan band EU SUPER"
+
+msgid "Scan band EU UHF IV"
+msgstr "Scan band EU UHF IV"
+
+msgid "Scan band EU UHF V"
+msgstr "Scan band EU UHF V"
+
+msgid "Scan band EU VHF I"
+msgstr "Scan band EU VHF I"
+
+msgid "Scan band EU VHF III"
+msgstr "Scan band EU VHF III"
+
+msgid "Scan band US HIGH"
+msgstr "Scan band US HIGH"
+
+msgid "Scan band US HYPER"
+msgstr "Scan band US HYPER"
+
+msgid "Scan band US LOW"
+msgstr "Scan band US LOW"
+
+msgid "Scan band US MID"
+msgstr "Scan band US MID"
+
+msgid "Scan band US SUPER"
+msgstr "Scan band US SUPER"
+
+msgid "Scan range"
+msgstr "Escala do scan"
+
+msgid ""
+"Scan your network for wireless Access Points and connect to them using your "
+"WLAN USB Stick\n"
+msgstr ""
+"Faça o scan da sua rede para pontos de acesso sem fio e conecte-lhes usando "
+"um pen USB  WLAN \n"
+
+msgid ""
+"Scan your network for wireless Access Points and connect to them using your "
+"selected wireless device.\n"
+msgstr ""
+"Faça o scan da sua rede para pontos de acesso sem fio e conecte-lhes usando "
+"um pen USB  WLAN selecionado. \n"
+
+msgid ""
+"Scans default lamedbs sorted by satellite with a connected dish positioner"
+msgstr ""
+"Os scans optam pelos lamedbs classificados pelo satélite com um positioner "
+"conectado ao prato"
+
+msgid "Science & Technology"
+msgstr " Ciência & Tecnologia"
+
+msgid "Scots Gaelic"
+msgstr "Scots Gaelic"
+
+msgid "Screensaver Enable"
+msgstr "Permite o Screensaver "
+
+msgid "Screensaver Interval"
+msgstr "Intervalo do Screensaver "
+
+msgid "Search"
+msgstr "Procura"
+
+msgid "Search Term(s)"
+msgstr "Termos da(s) procura(s)"
+
+msgid "Search and play YouPorn movies"
+msgstr "Leitura e procura de filmes YouPorn"
+
+msgid "Search and play YouTube movies"
+msgstr "Leitura e procura de filmes YouTube"
+
+msgid "Search east"
+msgstr "Procura Este"
+
+msgid "Search for network shares"
+msgstr "Procurar partilhas da Rede"
+
+msgid "Search for network shares..."
+msgstr "Procurar partilhas da Rede..."
+
+msgid "Search west"
+msgstr "Procura Oeste"
+
+msgid "Searching for new installed or removed packages. Please wait..."
+msgstr "Pesquisa por pacotes instalados ou removidos novos. Espere por favor…"
+
+msgid "Searching your network. Please wait..."
+msgstr "Procurarando sua rede. Espere por favor…"
+
+msgid "Searching, be patient ..."
+msgstr "Procurando, seja paciente…"
+
+msgid "Secondary DNS"
+msgstr "DNS Secondario"
+
+msgid "Seek"
+msgstr "Busca"
+
+msgid "Select"
+msgstr "Selecção"
+
+msgid "Select HDD"
+msgstr "Seleccione o Disco"
+
+msgid "Select IPKG source to edit..."
+msgstr "Selecione a fonte IPKG para editar…"
+
+msgid "Select Location"
+msgstr "Seleccione Localização"
+
+msgid "Select Network Adapter"
+msgstr "Selecione adaptador de rede"
+
+msgid "Select a VLC-Server"
+msgstr "Selecione a fonte VLC"
+
+msgid "Select a movie"
+msgstr "Selecione um filme"
+
+msgid "Select audio mode"
+msgstr "Selecione o modo de Audio"
+
+msgid "Select audio track"
+msgstr "Seleciona a pista de audio"
+
+msgid "Select channel to record from"
+msgstr "Selecione o canal que deseja gravar"
+
+msgid "Select files for backup. Currently selected:\n"
+msgstr "Selecione ficheiros para o backup. Selecionado atualmente:\n"
+
+msgid "Select files/folders to backup..."
+msgstr "Selecione ficherios/pastas para backup…"
+
+msgid "Select image"
+msgstr "Selecione imagem"
+
+msgid "Select package"
+msgstr "Selecione pacote"
+
+msgid "Select provider to add..."
+msgstr "Selecione o providor a adicionar..."
+
+msgid "Select refresh rate"
+msgstr "Seleccione o Refresh Rate"
+
+msgid "Select service to add..."
+msgstr "Selecione o serviço a adicionar..."
+
+msgid "Select video input"
+msgstr "Seleccione entrada de Video"
+
+msgid "Select video input with up/down buttons"
+msgstr "Selecione a entrada com as teclas cima/baixo"
+
+msgid "Select video mode"
+msgstr "Seleccione modo de Video"
+
+msgid "Selected source image"
+msgstr "Selecione a fonte de imagem"
+
+msgid "Send DiSEqC"
+msgstr "Envie DiSEqC"
+
+msgid "Send DiSEqC only on satellite change"
+msgstr "Envie DiSEqC so na mudança de satelite"
+
+msgid "Sense Wheel Setup"
+msgstr "Instalação da roda Sense "
+
+msgid "SenseWheel"
+msgstr "Roda Sense "
+
+msgid "SenseWheel Setup"
+msgstr "Instalação da roda Sense "
+
+msgid "Seperate titles with a main menu"
+msgstr "Títulos separados com um menu principal"
+
+msgid "Sequence repeat"
+msgstr "Repita a Sequência"
+
+msgid "Serbian"
+msgstr "Serbian"
+
+msgid "Serbo-Croatian"
+msgstr "Serbo-Croatian"
+
+msgid "Server Address"
+msgstr "Endereço do Servidor"
+
+msgid "Server IP"
+msgstr "IP do Servidor"
+
+msgid "Server Profile Name"
+msgstr "Nome do perfil Servidor"
+
+msgid "Server share"
+msgstr "Partilha do servidor"
+
+msgid "Serverlist"
+msgstr "Lista do servidor"
+
+msgid "Service"
+msgstr "Canal"
+
+msgid "Service Scan"
+msgstr "Busca de Canais"
+
+msgid "Service Searching"
+msgstr "Procura de Canais"
+
+msgid "Service has been added to the favourites."
+msgstr "Adicionado aos Favoritos"
+
+msgid "Service has been added to the selected bouquet."
+msgstr "Adicionado ao Bouquet selecionado"
+
+msgid ""
+"Service invalid!\n"
+"(Timeout reading PMT)"
+msgstr ""
+"Canal invalido!\n"
+"(Timeout reading PMT)"
+
+msgid ""
+"Service not found!\n"
+"(SID not found in PAT)"
+msgstr ""
+"Canal não encontrado!\n"
+"(SID not found in PAT)"
+
+msgid "Service scan"
+msgstr "Busca de Canais"
+
+msgid ""
+"Service unavailable!\n"
+"Check tuner configuration!"
+msgstr ""
+"Serviço indisponivel!\n"
+"Verifique o Tuner!"
+
+msgid "Serviceinfo"
+msgstr "Info "
+
+msgid "Services"
+msgstr "Serviços"
+
+msgid "Sesotho"
+msgstr "Sesotho"
+
+msgid "Set Voltage and 22KHz"
+msgstr "Ajuste a tensão e o 22KHz"
+
+msgid "Set as default Interface"
+msgstr "Ajuste como Interface de origem"
+
+msgid "Set interface as default Interface"
+msgstr "Ajuste a Interface como Interface de origem"
+
+msgid "Set limits"
+msgstr "Definir limites"
+
+msgid "Setswana"
+msgstr "Setswana"
+
+msgid "Settings"
+msgstr "Definições"
+
+msgid "Setup"
+msgstr "Definições"
+
+msgid "Setup Mode"
+msgstr "Modo configuração"
+
+msgid "Shona"
+msgstr "Shona"
+
+msgid ""
+"Short Help:\n"
+"\n"
+"ESC\tdisplay menu\n"
+"ctrl+C or q\tquit\n"
+"g\tgo to url\n"
+"ctrl+R\treload\n"
+"up,down\tselect link\n"
+"right,enter\tfollow link\n"
+"left,z\tgo back\n"
+"/\tsearch\n"
+"n\tfind next\n"
+"N\tfind previous\n"
+"d\tdownload\n"
+"|\tHTTP header\n"
+"\n"
+"Press OK to continue"
+msgstr ""
+"Ajuda:\n"
+"\n"
+"ESC\tdisplay menu\n"
+"ctrl+C or q\tquit\n"
+"g\tgo to url\n"
+"ctrl+R\treload\n"
+"up,down\tselect link\n"
+"right,enter\tfollow link\n"
+"left,z\tgo back\n"
+"/\tsearch\n"
+"n\tfind next\n"
+"N\tfind previous\n"
+"d\tdownload\n"
+"|\tHTTP header\n"
+"\n"
+"Pressione OK para continuar"
+
+msgid "Short Movies"
+msgstr "Filmes Curtos"
+
+msgid "Show / Hide Player"
+msgstr "Mostrar / Esconder o Leitor"
+
+msgid "Show File Info"
+msgstr "Mostrar Info do Ficheiro"
+
+msgid "Show Info"
+msgstr "Mostrar Info"
+
+msgid "Show MC in Extension-Menu"
+msgstr "Mostre MC na Extensão-Menu"
+
+msgid "Show MC in Main-Menu"
+msgstr "Mostre MC no Menu-Principal"
+
+msgid "Show Message when Recording starts"
+msgstr "Mostre mensagem quando começar a gravação"
+
+msgid "Show WLAN Status"
+msgstr "Mostre o estado WLAN"
+
+msgid "Show blinking clock in display during recording"
+msgstr "Mostrar o relogio a piscar durante a gravação"
+
+msgid "Show infobar on channel change"
+msgstr "Mostrar Info ao mudar de canal normal"
+
+msgid "Show infobar on event change"
+msgstr "Mostrar infobar ao mudar de canal"
+
+msgid "Show infobar on skip forward/backward"
+msgstr "Mostrar Info ao mudar de canal rapido < >"
+
+msgid "Show positioner movement"
+msgstr "Mostrar movimento do posicionador"
+
+msgid "Show services beginning with"
+msgstr "Mostrar canais que comecem por..."
+
+msgid "Show the radio player..."
+msgstr "Mostrar o Radio"
+
+msgid "Show the tv player..."
+msgstr "Mostrar TV"
+
+msgid "Show video detail info"
+msgstr "Mostre info dos detalhes Video"
+
+msgid "Shown"
+msgstr "Mostrado"
+
+msgid "Shown page"
+msgstr "Pagina Mostrada"
+
+msgid "Shows the state of your wireless LAN connection.\n"
+msgstr "Mostra o estado de sua conexão sem fio WLAN.\n"
+
+msgid "ShutDown"
+msgstr "Desligar"
+
+msgid "Shutdown QBoxHD after"
+msgstr "Desligar a QBoxHD depois"
+
+msgid "Signal Strength:"
+msgstr "Qualidade do Sinal:"
+
+msgid "Similar"
+msgstr "Igual"
+
+msgid "Similar broadcasts:"
+msgstr "Emissões Identicas:"
+
+msgid "Simple"
+msgstr "Simples"
+
+msgid "Simple titleset (compatibility for legacy players)"
+msgstr "Titleset simples (compatibilidade para jogadores legais)"
+
+msgid "Sindhi"
+msgstr "Sindhi"
+
+msgid "Singhalese"
+msgstr "Singhalese"
+
+msgid "Single"
+msgstr "Unico"
+
+msgid "Single EPG"
+msgstr "EPG unico"
+
+msgid "Single satellite"
+msgstr "Só um Satelite"
+
+msgid "Single transponder"
+msgstr "Transponder unico"
+
+msgid "Singlestep (GOP)"
+msgstr "Singlestep (GOP)"
+
+msgid "Siswati"
+msgstr "Siswati"
+
+#, python-format
+msgid "Size: %d MB\n"
+msgstr "Tamanho: % MB\n"
+
+msgid "Skin Appearance"
+msgstr "Aparência do Skin"
+
+msgid "Skin..."
+msgstr "Skin..."
+
+msgid "Skins"
+msgstr "Skins"
+
+msgid "Sleep Timer"
+msgstr "Temporizador"
+
+msgid "Sleep timer action:"
+msgstr "Definições do temporizador"
+
+msgid "Slideshow Interval (sec.)"
+msgstr "Intervalo do visualizador de imagens (seg.)"
+
+#, python-format
+msgid "Slot %d"
+msgstr "Slot %d"
+
+msgid "Slot 1"
+msgstr "Slot 1"
+
+msgid "Slot 2"
+msgstr "Slot 2"
+
+msgid "Slovak"
+msgstr "Slovak"
+
+msgid "Slovakian"
+msgstr "Slovakian"
+
+msgid "Slovenian"
+msgstr "Slovenian"
+
+msgid "Slow"
+msgstr "Lento"
+
+msgid "Slow Motion speeds"
+msgstr "Velocidades do modo camera lenta"
+
+msgid "SmartCard Information"
+msgstr "Informação da carta inteligente"
+
+msgid "SmartCard not supported."
+msgstr "Carta inteligente não suportada."
+
+msgid "Software"
+msgstr "Software"
+
+msgid "Software manager"
+msgstr "Gestor de Software"
+
+msgid "Software manager..."
+msgstr "Gestor de Software..."
+
+msgid "Software restore"
+msgstr "Restauração do software"
+
+msgid "Software update"
+msgstr "Actualização de software"
+
+msgid "Somali"
+msgstr "Somali"
+
+msgid "Some plugins are not available:\n"
+msgstr "Alguns plugins não estão disponiveis:\n"
+
+msgid "Somewhere else"
+msgstr "Algures"
+
+msgid "Sorry MediaScanner is not installed!"
+msgstr "Desculpe MediaScanner não esta instalado!"
+
+msgid "Sorry no backups found!"
+msgstr "Desculpe nenhuns backups encontrados!"
+
+msgid ""
+"Sorry your Backup destination does not exist\n"
+"\n"
+"Please choose an other one."
+msgstr ""
+"Desculpe mas o seu backup não existe\n"
+"\n"
+"Por favor seleccione outro."
+
+msgid ""
+"Sorry your backup destination is not writeable.\n"
+"Please choose an other one."
+msgstr ""
+"Desculpe destino do seu backup não é writeable.\n"
+"escolha por favor um outro."
+
+msgid "Sorry, no Details available!"
+msgstr "Desculpe, nenhuns detalhes disponíveis!"
+
+msgid ""
+"Sorry, your backup destination is not writeable.\n"
+"\n"
+"Please choose another one."
+msgstr ""
+"Desculpe, o destino do seu backup não é writeable.\n"
+"\n"
+"Escolha por favor outro."
+
+#. TRANSLATORS: This must fit into the header button in the EPG-List
+msgid "Sort A-Z"
+msgstr "ordenar A-Z"
+
+msgid "Sort Order"
+msgstr "Tipo de ordem"
+
+#. TRANSLATORS: This must fit into the header button in the EPG-List
+msgid "Sort Time"
+msgstr "Ordenar por tempo"
+
+msgid "Sound"
+msgstr "Som"
+
+msgid "Soundcarrier"
+msgstr "Soundcarrier"
+
+msgid "South"
+msgstr "Sul"
+
+#, python-format
+msgid "Space: %d.%02d GB Free: %d.%02d GB\n"
+msgstr "Espaço: %d.%02d GB livre: %d.%02d GB\n"
+
+msgid "Spanish"
+msgstr "Catalão"
+
+msgid "Sports"
+msgstr "Desportes"
+
+msgid "StandBy Blue"
+msgstr "Azul StandBy "
+
+msgid "StandBy Green"
+msgstr "Verdel StandBy "
+
+msgid "StandBy Red"
+msgstr "Vermelho StandBy "
+
+msgid "Standby"
+msgstr "Standby"
+
+msgid "Standby / Restart"
+msgstr "Stanby / Reiniciar"
+
+msgid "Standby with Panel"
+msgstr "StandBy com Painel"
+
+msgid "Start from the beginning"
+msgstr "Começar no inicio"
+
+msgid "Start or stop Delayer for this channel..."
+msgstr ""
+
+msgid "Start recording?"
+msgstr "Iniciar a gravação?"
+
+msgid "Start test"
+msgstr "Começe teste"
+
+msgid "StartTime"
+msgstr "Tempo de Inicio"
+
+msgid "Starting on"
+msgstr "A Iniciar"
+
+msgid "Std.Feeds"
+msgstr "Std.Feeds"
+
+msgid "Step east"
+msgstr "Avançar para Este"
+
+msgid "Step west"
+msgstr "Avançar para Oeste"
+
+msgid "Stereo"
+msgstr "Estereo"
+
+msgid "Stop"
+msgstr "Stop"
+
+msgid "Stop Download"
+msgstr "Pare transferência"
+
+msgid "Stop Playback"
+msgstr "Pare Leitura"
+
+msgid "Stop Record..."
+msgstr "Pare Gravação..."
+
+msgid "Stop Timeshift?"
+msgstr "Parar o Timeshift?"
+
+msgid "Stop current event and disable coming events"
+msgstr "Parar programa actual e desabilitar novos programas"
+
+msgid "Stop current event but not coming events"
+msgstr "Parar programa actual, mas não desabilitar novos programas"
+
+msgid "Stop playing this movie?"
+msgstr "Parar a reprodução?"
+
+msgid "Stop test"
+msgstr "Pare o teste"
+
+msgid "Stop testing plane after # failed transponders"
+msgstr "Pare o plano do teste após # falhou identificadores"
+
+msgid "Stop testing plane after # successful transponders"
+msgstr "Pare o plano do teste após # identificadores bem sucedidos"
+
+msgid "Store position"
+msgstr "Guardar posição"
+
+msgid "Stored position"
+msgstr "Posição Guardada"
+
+msgid "Straight"
+msgstr "Direito"
+
+msgid "Subscriptions"
+msgstr "Subscrições"
+
+msgid "Subservice list..."
+msgstr "Lista de Subserviços... "
+
+msgid "Subservices"
+msgstr "Subserviços"
+
+msgid "Subtitle overlay"
+msgstr "Folha de prova do subtítulo"
+
+msgid "Subtitle selection"
+msgstr "Selecção de Legendas"
+
+msgid "Subtitles"
+msgstr "Legendas"
+
+msgid "Subtitles (Current Channel)"
+msgstr "Subtítulos (canal atual)"
+
+msgid "Sudanese"
+msgstr "Sudanese"
+
+msgid "Sudoku Game"
+msgstr "Jogo Sudoku"
+
+msgid "Sun"
+msgstr "Sol"
+
+msgid "Sunday"
+msgstr "Domingo"
+
+msgid "Swahili"
+msgstr "Swahili"
+
+msgid "Swap Services"
+msgstr "Troca entrecanais"
+
+msgid "Swedish"
+msgstr "Sueco"
+
+msgid "Switch to next subservice"
+msgstr "Mudar para o proximo canal"
+
+msgid "Switch to previous subservice"
+msgstr "Mudar para o canal anterior"
+
+msgid "Symbol Rate"
+msgstr "Symbol Rate"
+
+msgid "Symbolrate"
+msgstr "Symbolrate"
+
+msgid "System"
+msgstr "Sistema"
+
+#. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
+msgid "TRANSLATOR_INFO"
+msgstr "TRANSLATOR_INFO"
+
+msgid "TS file is too large for ISO9660 level 1!"
+msgstr "O ficheiro TS é demasiado grande para ISO9660 o nível 1!"
+
+msgid "TV Settings"
+msgstr "Ajustes da TV"
+
+msgid "TV System"
+msgstr "Sistema de TV"
+
+msgid "Table of content for collection"
+msgstr "Tabela de índice para a coleção"
+
+msgid "Tag 1"
+msgstr "Tag 1"
+
+msgid "Tag 2"
+msgstr "Tag 2"
+
+msgid "Tagalog"
+msgstr "Jornal Tag"
+
+msgid "Tags"
+msgstr "Tags"
+
+msgid "Tajik"
+msgstr "Tajik"
+
+msgid "Tamil"
+msgstr "Tamil"
+
+msgid "Tatar"
+msgstr "Tatar"
+
+msgid "Tegulu"
+msgstr "Tegulu"
+
+msgid "Terrestrial"
+msgstr "Terrestre"
+
+msgid "Terrestrial provider"
+msgstr "Provedor Terrestre"
+
+msgid "Test DiSEqC settings"
+msgstr "Teste ajustes de DiSEqC"
+
+msgid "Test Type"
+msgstr "Teste o tipo"
+
+msgid "Test mode"
+msgstr "Modo de teste"
+
+msgid "Test the network configuration of your QBoxHD.\n"
+msgstr "Teste a configuração de rede de seu QBoxHD.\n"
+
+msgid "Test-Messagebox?"
+msgstr "Testar-caixa de mensagens?"
+
+msgid "Thai"
+msgstr "Thai"
+
+msgid ""
+"Thank you for using the wizard. Your box is now ready to use.\n"
+"Please press OK to start using your QBoxHD."
+msgstr ""
+"Obrigado por utilizar o assistente. O seu aparelho está pronto para usar.\n"
+"carregue Ok para iniciar a sua QBoxHD."
+
+msgid ""
+"The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to "
+"create a QBoxHD format data DVD (which will not play in stand-alone DVD "
+"players) instead?"
+msgstr ""
+"O DVD padrão não aceita H.264 (HDTV). Você quer criar preferivelmente dados "
+"DVD do formato de QBoxHD (que não podem ser lidos em DVD ) em vez?"
+
+msgid ""
+"The USB stick is now bootable. Do you want to download the latest image from "
+"the feed server and save it on the stick?"
+msgstr ""
+"O pen USB é agora bootable. Você quer transferir a imagem mais recente do "
+"feed e conservá-la no pen?"
+
+msgid "The backup failed. Please choose a different backup location."
+msgstr "O restauro falhou. Por favor faça o restauro noutra pasta."
+
+#, python-format
+msgid ""
+"The following device was found:\n"
+"\n"
+"%s\n"
+"\n"
+"Do you want to write the USB flasher to this stick?"
+msgstr ""
+"O seguinte dispositivo foi encontrado:\n"
+"\n"
+"%s\n"
+"\n"
+"Você quer escrever o flasher do USB a este pen?"
+
+msgid "The following files were found..."
+msgstr "Os seguintes ficheiros foram encontrados…"
+
+msgid ""
+"The input port should be configured now.\n"
+"You can now configure the screen by displaying some test pictures. Do you "
+"want to do that now?"
+msgstr ""
+"A porta de entrada deve ser configurada agora.\n"
+"Pode agora configurar o ecrã, ao exibir algumas imagens de testes.Deseja "
+"continuar?"
+
+msgid "The installation of the default services lists is finished."
+msgstr "A instalação das lista dos serviços de origem é terminada."
+
+msgid ""
+"The installation of the default settings is finished. You can now continue "
+"configuring your QBoxHD by pressing the OK button on the remote control."
+msgstr ""
+"A instalação dos ajustes de origem é terminada. Você pode agora continuar a "
+"configurar seu QBoxHD pressionando a tecla OK do controlo a distância."
+
+msgid ""
+"The md5sum validation failed, the file may be corrupted! Are you sure that "
+"you want to burn this image to flash memory? You are doing this at your own "
+"risk!"
+msgstr ""
+"A validação do ficheiro md5sum falhou, o ficheiro pode ser corrompido! É "
+"você certo que você quer gravar esta imagem na memória Flash? Você está "
+"fazendo isto em seu próprio risco!"
+
+msgid ""
+"The md5sum validation failed, the file may be downloaded incompletely or be "
+"corrupted!"
+msgstr ""
+"A validação de md5sum falhada, o ficheiro pode ser transferido incompleta ou "
+"ser corrompido!"
+
+msgid "The new Channel List has been saved."
+msgstr "A nova lista de canais foi conservada."
+
+msgid "The package doesn't contain anything."
+msgstr "O pacote não contem nada."
+
+msgid "The package:"
+msgstr "O Pacote:"
+
+#, python-format
+msgid "The path %s already exists."
+msgstr "O trajeto %s já existe."
+
+msgid "The pin code has been changed successfully."
+msgstr "A alterção do PIN coom sucesso."
+
+msgid "The pin code you entered is wrong."
+msgstr "o PIN que introduziu está errado."
+
+msgid "The pin codes you entered are different."
+msgstr "O PIN que introduziu está errado."
+
+#, python-format
+msgid "The results have been written to %s."
+msgstr "Os resultados foram escritos a %s."
+
+msgid "The sleep timer has been activated."
+msgstr "O temporizador foi activado."
+
+msgid "The sleep timer has been disabled."
+msgstr "Desactivou o sleep timer"
+
+msgid "The timer file (timers.xml) is corrupt and could not be loaded."
+msgstr ""
+"O ficheiro Timer (timers.xml) esta corrompido e não pode ser carregado."
+
+msgid ""
+"The wireless LAN plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"O LAN sem fio plugin não esta instalado!\n"
+"instale-o por favor."
+
+msgid ""
+"The wizard can backup your current settings. Do you want to do a backup now?"
+msgstr "O assistente pode guardar os seus dados.Deseja guardá-los agora?"
+
+msgid "The wizard is finished now."
+msgstr "O assitente terminou."
+
+msgid "There are at least "
+msgstr "Há pelo menos "
+
+msgid "There are no default services lists in your image."
+msgstr "Não há nenhuma lista dos serviços do origem na sua imagem."
+
+msgid "There are no default settings in your image."
+msgstr "Não há nenhuma lista dos serviços de origem em sua imagem."
+
+msgid "There are now "
+msgstr "Agora há"
+
+msgid ""
+"There might not be enough Space on the selected Partition.\n"
+"Do you really want to continue?"
+msgstr ""
+"Não existe espaço suficiente na partiçaõ seleccionada.\n"
+"Deseja continuar?"
+
+msgid "There was an error downloading the packetlist. Please try again."
+msgstr "Houve erros na transferencia do packetlist. Tente por favor outra vez."
+
+msgid "There was an error. The package:"
+msgstr "Houve um erro. O pacote:"
+
+#, python-format
+msgid "This .NFI file does not contain a valid %s image!"
+msgstr "Este ficheiro .NFI não contem uma imagem válida de %s!"
+
+msgid ""
+"This .NFI file does not have a md5sum signature and is not guaranteed to "
+"work. Do you really want to burn this image to flash memory?"
+msgstr ""
+"Este ficheiro .NFI não tem uma assinatura md5sum e não é garantida para "
+"trabalhar. Você quer realmente queimar esta imagem na memória Flash?"
+
+msgid ""
+"This .NFI file has a valid md5 signature. Continue programming this image to "
+"flash memory?"
+msgstr ""
+"Este ficheiro .NFI tem uma assinatura md5 válida. Continue a programar esta "
+"imagem na memória Flash?"
+
+msgid ""
+"This DVD RW medium is already formatted - reformatting will erase all "
+"content on the disc."
+msgstr ""
+"Este DVD RW é formatado já - reformatar apagará todo o índice no disco."
+
+msgid "This Month"
+msgstr "Este mês"
+
+#, python-format
+msgid "This QBoxHD can't decode %s streams!"
+msgstr "Este QBoxHD não descodifica %s dos streams!"
+
+#, python-format
+msgid "This QBoxHD can't decode %s video streams!"
+msgstr "Este QBoxHD não descodifica %s video streams!"
+
+#, python-format
+msgid "This QboxHD can't decode %s video streams!"
+msgstr "Este QBoxHD não descodifica %s video streams!"
+
+msgid "This Week"
+msgstr "Esta Semana"
+
+msgid "This is step number 2."
+msgstr "Passo 2."
+
+msgid "This is unsupported at the moment."
+msgstr "Não suportado de momento."
+
+msgid "This plugin is installed."
+msgstr "Este plugin esta  instalado."
+
+msgid "This plugin is not installed."
+msgstr "Este plugin não esta instalado."
+
+msgid "This plugin will be installed."
+msgstr "Este plugin sera instalado."
+
+msgid "This plugin will be removed."
+msgstr "Este plugin sera removido."
+
+msgid ""
+"This test checks for configured Nameservers.\n"
+"If you get a \"unconfirmed\" message:\n"
+"- please check your DHCP, cabling and Adapter setup\n"
+"- if you configured your Nameservers manually please verify your entries in "
+"the \"Nameserver\" Configuration"
+msgstr ""
+"Este teste verifica para ver se há Nameservers configurados.\n"
+"Se você começ a \"não-confirmado\" mensagem:\n"
+"- verifique por favor seus DHCP, cablagem e ajustes da rede\n"
+"- se você configurou os seus Nameservers manualmente verifique as suas "
+"entradas no \"Nameserver\" Configuração"
+
+msgid ""
+"This test checks whether a network cable is connected to your LAN-Adapter.\n"
+"If you get a \"disconnected\" message:\n"
+"- verify that a network cable is attached\n"
+"- verify that the cable is not broken"
+msgstr ""
+"Este teste verifica se um cabo da rede esta conectado ao seu adaptator LAN.\n"
+"se você reçebe uma \"desligado\" mensagem:\n"
+"- verifique que um cabo da rede está ligado\n"
+"- verifique que o cabo não esta danificado"
+
+msgid ""
+"This test checks whether a valid IP Address is found for your LAN Adapter.\n"
+"If you get a \"unconfirmed\" message:\n"
+"- no valid IP Address was found\n"
+"- please check your DHCP, cabling and adapter setup"
+msgstr ""
+"Este teste verifica se um IP address válido foi encontrado para seu "
+"adaptador LAN.\n"
+"se você reçeber \"não-confirmado\" mensagem:\n"
+"- nenhum IP válido foi encontrado\n"
+"- verifique por favor seus DHCP, cablagem e instalação do adaptador"
+
+msgid ""
+"This test checks whether your LAN Adapter is set up for automatic IP Address "
+"configuration with DHCP.\n"
+"If you get a \"disabled\" message:\n"
+" - then your LAN Adapter is configured for manual IP Setup\n"
+"- verify thay you have entered correct IP informations in the AdapterSetup "
+"dialog.\n"
+"If you get an \"enabeld\" message:\n"
+"-verify that you have a configured and working DHCP Server in your network."
+msgstr ""
+"Este teste verifica se o seu adaptador LAN esta configurado para obter IP "
+"automático com DHCP.\n"
+"se você reçebe \"desligado\" mensagem:\n"
+"- seu adaptador do LAN é configurado então para o IP manual Setup\n"
+"- verifique que você incorporou informações corretas do IP ao diálogo do "
+"AdapterSetup.\n"
+"Se você reçebe um \"activo\" mensagem:\n"
+"- verifique que você tem um server configurado e o seu  DHCP esta a "
+"funcionar."
+
+msgid "This test detects your configured LAN-Adapter."
+msgstr "Este teste detecta a configuração correcta do seu LAN."
+
+msgid "Three"
+msgstr "Três."
+
+msgid "Threshold"
+msgstr "Threshold"
+
+msgid "Thu"
+msgstr "Qui"
+
+msgid "Thumbnail Height"
+msgstr "Altura do Thumbnail"
+
+msgid "Thumbnail Width"
+msgstr "Largura do Thumbnail"
+
+msgid "Thumbnails"
+msgstr "Thumbnails"
+
+msgid "Thursday"
+msgstr "Quinta-Feira"
+
+msgid "Tibetan"
+msgstr "Tibetan"
+
+msgid "Tigrinya"
+msgstr "Tigrinya"
+
+msgid "Time"
+msgstr "Hora"
+
+msgid "Time Settings"
+msgstr "Ajustes do tempo"
+
+msgid "Time/Date Input"
+msgstr "Introduzir a Hora/Data"
+
+msgid "Timer"
+msgstr "Temporizador"
+
+msgid "Timer Edit"
+msgstr "Editar o Temporizador"
+
+msgid "Timer Editor"
+msgstr "Editor do Temporizador"
+
+msgid "Timer Type"
+msgstr "Tipo de Temporizador"
+
+msgid ""
+"Timer cannot start.\n"
+"A recording is currently running.\n"
+"No more recording allowed."
+msgstr ""
+"O temporizador não pode começar.\n"
+"Uma gravação está funcionando atualmente.\n"
+"Não é permitido gravar."
+
+msgid "Timer entry"
+msgstr "Entrada para Temporizador"
+
+msgid "Timer log"
+msgstr "Registo do Temporizador"
+
+msgid ""
+"Timer overlap in timers.xml detected!\n"
+"Please recheck it!"
+msgstr ""
+"Sobreposição do temporizador em timers.xml detectado!\n"
+"verifique novamente por favor o!"
+
+msgid "Timer sanity error"
+msgstr "Erro do Temporizador"
+
+msgid "Timer selection"
+msgstr "Selecção do Temporizador"
+
+msgid "Timer status:"
+msgstr "Estado Temporizador:"
+
+msgid "Timeshift"
+msgstr "Timeshift"
+
+msgid "Timeshift not possible!"
+msgstr "Timeshift não permitido!"
+
+msgid "Timeshift path..."
+msgstr "Trajeto do Timeshift…"
+
+msgid "Timezone"
+msgstr "Zona Horária"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Title properties"
+msgstr "Propriedades do título"
+
+msgid "Title: "
+msgstr "Título: "
+
+msgid "Titles"
+msgstr "Títulos: "
+
+#, python-format
+msgid "Titles: %d"
+msgstr "Títulos: %d"
+
+msgid "Titleset mode"
+msgstr "Modo do titleset"
+
+msgid ""
+"To update your QBoxHD firmware, please follow these steps:\n"
+"1) Turn off your box with the rear power switch and plug in the bootable USB "
+"stick.\n"
+"2) Turn mains back on and hold the DOWN button on the front panel pressed "
+"for 10 seconds.\n"
+"3) Wait for bootup and follow instructions of the wizard."
+msgstr ""
+"Para actualizar firmware do QBoxHD, siga por favor estas etapas:\n"
+" 1) Desligue o qbox com o interruptor traseiro e introduzir o pen USB.\n"
+" 2) Ligue a qbox com o mesmo interuptor.\n"
+" 3) espere para o bootup e siga as instruções do questionario."
+
+msgid ""
+"To use the selected feature you have to login to YouTube. Select a user-"
+"profile to login!"
+msgstr ""
+"Para usar a característica selecionada você tem que entrar a YouTube. "
+"Selecione um user-profile para entrar!"
+
+msgid "Today"
+msgstr "Hoje"
+
+msgid "Tokens"
+msgstr "Símbolos"
+
+msgid "Tone mode"
+msgstr "Tone mode"
+
+msgid "Toneburst"
+msgstr "Toneburst"
+
+msgid "Toneburst A/B"
+msgstr "Toneburst A/B"
+
+msgid "Tonga"
+msgstr "Tonga"
+
+msgid "Top Favorites"
+msgstr "Favoritos Top"
+
+msgid "Top Rated"
+msgstr "Avaliado Top"
+
+msgid "Total pages"
+msgstr "Paginas Top"
+
+msgid "Total results"
+msgstr "Resultados totais"
+
+msgid "Track"
+msgstr "Trilha"
+
+msgid "Transcode MPEG/DVD Audio"
+msgstr "Transcode o áudio do MPEG/DVD"
+
+msgid "Transcode MPEG/DVD Video"
+msgstr "Transcode o video do MPEG/DVD"
+
+msgid "Translation"
+msgstr "Tradução"
+
+msgid "Translation:"
+msgstr "Tradução:"
+
+msgid "Transmission Mode"
+msgstr "Modo de Transmissão"
+
+msgid "Transmission mode"
+msgstr "Modo de Transmissão"
+
+msgid "Transponder"
+msgstr "Transponder"
+
+msgid "Transponder Type"
+msgstr "Tipo deTransponder"
+
+msgid "Travel & Events"
+msgstr "Viagem & Eventos"
+
+msgid "Tries left:"
+msgstr "Tries restantes:"
+
+msgid "Try to find used Transponders in cable network.. please wait..."
+msgstr ""
+"Tentar encontrar Transponders usados na rede do cabo. esperar por favor…"
+
+msgid "Try to find used transponders in cable network.. please wait..."
+msgstr ""
+"Tentar encontrar transponders usados na rede do cabo. esperar por favor…"
+
+msgid "Trying to download a new packetlist. Please wait..."
+msgstr "Tentativa de transferir um novo packetlist. Espere por favor…"
+
+msgid "Tsonga"
+msgstr "Tsonga"
+
+msgid "Tue"
+msgstr "Ter"
+
+msgid "Tuesday"
+msgstr "Terça-Feira"
+
+msgid "Tune"
+msgstr "Tune"
+
+msgid "Tune failed!"
+msgstr "Falhou!"
+
+msgid "Tuner"
+msgstr "Tuner"
+
+msgid "Tuner "
+msgstr "Tuner "
+
+msgid "Tuner Slot"
+msgstr "Entrada do tuner"
+
+msgid "Tuner configuration"
+msgstr "Definições do Tuner"
+
+msgid "Tuner status"
+msgstr "Estado do Tuner"
+
+msgid "Turkish"
+msgstr "Turco"
+
+msgid "Turkmen"
+msgstr "Turkmen"
+
+msgid "Twi"
+msgstr "Twi"
+
+msgid "Two"
+msgstr "Dois"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Type of scan"
+msgstr "Tipo de Busca"
+
+msgid "UNKNOWN"
+msgstr "DESCONHECIDO"
+
+msgid "USALS"
+msgstr "USALS"
+
+msgid "USB"
+msgstr "USB"
+
+msgid "USB Stick"
+msgstr "USB Stick"
+
+msgid "USB stick wizard"
+msgstr "Qestionario do pen USB"
+
+msgid "Uigur"
+msgstr "Uigur"
+
+msgid "Ukrainian"
+msgstr "Ukrainian"
+
+msgid ""
+"Unable to complete filesystem check.\n"
+"Error: "
+msgstr ""
+"Erro ao completar a verificação do sistema de ficheiros.\n"
+"Erro:"
+
+msgid ""
+"Unable to initialize harddisk.\n"
+"Error: "
+msgstr ""
+"Erro ao iniciar o HDD.\n"
+"Erro:"
+
+msgid "Uncommitted DiSEqC command"
+msgstr "Instrução de DiSECQ não permitida"
+
+msgid ""
+"Undo\n"
+"Install"
+msgstr ""
+"Anule\n"
+"Instale"
+
+msgid ""
+"Undo\n"
+"Remove"
+msgstr ""
+"Anule\n"
+"Remova"
+
+msgid "Unicable"
+msgstr "CaboUnico"
+
+msgid "Unicable LNB"
+msgstr "CaboUnico LNB"
+
+msgid "Unicable Martix"
+msgstr "CaboUnico Matrix"
+
+msgid "Universal LNB"
+msgstr "LNB Universal "
+
+msgid "Unmount failed"
+msgstr "Desmontagens Falhou"
+
+msgid "Unsupported"
+msgstr "Não suportado"
+
+msgid "Update"
+msgstr "Actualizado"
+
+msgid "Updates your receiver's software"
+msgstr "Actualiza o software do seu QBoxHD"
+
+msgid "Updating Weather Info ..."
+msgstr "Actualizando a informação do tempo…"
+
+msgid "Updating Weather Info failed (Twisted Web not installed)"
+msgstr "Actualizando a informação do tempo falhou (Twisted Web não instalada)"
+
+msgid "Updating finished. Here is the result:"
+msgstr "Actualização terminada.Resultado:"
+
+msgid "Updating... Please wait... This can take some minutes..."
+msgstr "Em actualização...Espere por favor...Pode levar alguns minutos..."
+
+msgid "Upgrade"
+msgstr "Melhoramento"
+
+msgid "Upgrade finished."
+msgstr "O melhoramento terminou."
+
+msgid "Upgrade finished. Do you want to reboot your QBoxHD?"
+msgstr "Actualização terminada.Deseja reiniciar?"
+
+msgid "Upgrading"
+msgstr "A actualizar"
+
+msgid "Upgrading QBoxHD... Please wait"
+msgstr "A actualizar a QBoxHD...Espere por favor"
+
+msgid "Urdu"
+msgstr "Urdu"
+
+msgid "Use"
+msgstr "Usa"
+
+msgid "Use DHCP"
+msgstr "Usar DHCP"
+
+msgid "Use Interface"
+msgstr "Use Interface"
+
+msgid "Use Power Measurement"
+msgstr "Usar medidor de potência"
+
+msgid "Use a gateway"
+msgstr "Use gateway"
+
+#.   TRANSLATORS: The effect of "Non-smooth winding" is that rather
+#.       than using ordinary "continuous" or "smooth" winding, a fast
+#.       sequence of stills is shown when winding at high speeds. This
+#.       makes it much easier too follow when almost each frame comes from
+#.       a new scene. The effect is achieved by repeating each shown frame
+#.       a couple of times. The settings control both at which speed this
+#.       winding mode sets in, and how many times each frame should be
+#.       repeated. This was previously called "Discontinuous playback"
+#.       which was incomprehensible. "Non-smooth winding" may be a better
+#.       term, but note that there is nothing irregular about it. Synonyms
+#.       better suited for translation to other languages may be "stepwise
+#.       winding/playback", or "winding/playback using stills". 
+msgid "Use non-smooth winding at speeds above"
+msgstr "Usar a função Vento Forte nas velocidades acima"
+
+msgid "Use power measurement"
+msgstr "Usar controlo da alimentação"
+
+msgid "Use the Networkwizard to configure your Network\n"
+msgstr "Use o Networkwizard para configurar a sua rede\n"
+
+msgid ""
+"Use the left and right buttons to change an option.\n"
+"\n"
+"Please set up tuner A"
+msgstr ""
+"Use os botões direita e esquerda para seleccionar.\n"
+"\n"
+"Seleccione o Tuner A"
+
+msgid ""
+"Use the up/down keys on your remote control to select an option. After that, "
+"press OK."
+msgstr ""
+"Use os botões cima/baixo do seu comando para selecionar.Depois carregue OK"
+
+msgid "Use usals for this sat"
+msgstr "Usar usals para este satelite"
+
+msgid "Use wizard to set up basic features"
+msgstr "Utilizar o assistente"
+
+msgid "Used service scan type"
+msgstr "Tipo usado na busca"
+
+msgid "User Preferences"
+msgstr "Preferências do usuário"
+
+msgid "User Profile Name"
+msgstr "Nome do perfil do usuário"
+
+msgid "User defined"
+msgstr "Definições do utilizador"
+
+msgid "User management"
+msgstr "Gerência do usuário"
+
+msgid "Usermanager"
+msgstr "Controle do Utilizador"
+
+msgid "Username"
+msgstr "Nome do utilizador"
+
+msgid "Uzbek"
+msgstr "Uzbek"
+
+msgid "VAR folder"
+msgstr "Pasta VAR"
+
+msgid "VCR scart"
+msgstr "Entrada VCR"
+
+msgid "VMGM (intro trailer)"
+msgstr "VMGM  (introdução do trailer)"
+
+msgid "Vertical"
+msgstr "Vertical"
+
+msgid "Video :"
+msgstr "Video :"
+
+msgid "Video Bitrate"
+msgstr "Bitrate video"
+
+msgid "Video Codec"
+msgstr "Codec Video"
+
+msgid "Video Fine-Tuning"
+msgstr "Sintonia fina de Video"
+
+msgid "Video Fine-Tuning Wizard"
+msgstr "Assistente de sintonia fina de Video"
+
+msgid "Video Norm"
+msgstr "Norma Video"
+
+msgid "Video Output"
+msgstr "Saída de Video"
+
+msgid "Video Quality"
+msgstr "Qualidade Video"
+
+msgid "Video Setup"
+msgstr "Definições de Video"
+
+msgid "Video Wizard"
+msgstr "Assistente de Video"
+
+msgid ""
+"Video input selection\n"
+"\n"
+"Please press OK if you can see this page on your TV (or select a different "
+"input port).\n"
+"\n"
+"The next input port will be automatically probed in 10 seconds."
+msgstr ""
+"Selecção da entrada de video\n"
+"\n"
+"Por favor carregue OK se consegue ver esta página (ou seleccione outra porta "
+"de entrada).\n"
+"\n"
+"A porta seleccionada será usada automaticamente dentro de 10 segundos."
+
+msgid "Video mode selection."
+msgstr "Selecção do modo de video"
+
+msgid "Videos"
+msgstr "Videos"
+
+#, python-format
+msgid "Videos: %d"
+msgstr "Videos: %d"
+
+msgid "Vietnamese"
+msgstr "Vietnamese"
+
+msgid "View Count"
+msgstr "Contagem da vista"
+
+msgid "View Movies..."
+msgstr "Visione Filmes..."
+
+msgid "View Photos..."
+msgstr "Visione Fotos..."
+
+msgid "View Rass interactive..."
+msgstr "Ver Rass interactivo..."
+
+msgid "View Video CD..."
+msgstr "Visione Video CD..."
+
+msgid "View details"
+msgstr "Visione Detalhes"
+
+msgid "View list of available "
+msgstr "Lista da vista disponível "
+
+msgid "View list of available CommonInterface extensions"
+msgstr "Vista da lista de extensões disponíveis do CommonInterface"
+
+msgid "View list of available Display and Userinterface extensions."
+msgstr ""
+"Veja a lista de extensões disponíveis da exposição e da interface "
+"utilizadores."
+
+msgid "View list of available EPG extensions."
+msgstr "Veja Lista de extensões disponíveis do EPG."
+
+msgid "View list of available Satteliteequipment extensions."
+msgstr "Lista da vista de extensões satélites disponíveis do material."
+
+msgid "View list of available communication extensions."
+msgstr "Veja lista de extensões disponíveis de uma comunicação."
+
+msgid "View list of available default settings"
+msgstr "Veja a lista de ajustes de origem disponíveis"
+
+msgid "View list of available multimedia extensions."
+msgstr "Veja a lista de extensões disponíveis do multimédia."
+
+msgid "View list of available networking extensions"
+msgstr "Veja a lista de extensões disponíveis dos trabalhos em rede"
+
+msgid "View list of available recording extensions"
+msgstr "Veja a lista de extensões disponíveis da gravação"
+
+msgid "View list of available skins"
+msgstr "Veja a lista dos Skins disponíveis"
+
+msgid "View list of available software extensions"
+msgstr "Veja a lista de extensões disponíveis do software"
+
+msgid "View list of available system extensions"
+msgstr "Veja a lista de extensões de sistema disponíveis"
+
+msgid "View teletext..."
+msgstr "Ver teletexto..."
+
+msgid "View, edit or delete mountpoints on your QBoxHD."
+msgstr "Visione, edite ou suprima mountpoints em seu QBoxHD."
+
+msgid "View, edit or delete usernames and passwords for your network."
+msgstr "Visione, edite ou suprime nomes do utilizador e senhas da sua rede."
+
+msgid "Views"
+msgstr "Vistas"
+
+msgid "Views: "
+msgstr "Vistas:"
+
+msgid "Virtual KeyBoard"
+msgstr "Teclado Virtual"
+
+msgid "Volapuk"
+msgstr "Volapuk"
+
+msgid "Voltage mode"
+msgstr "Modo de voltagem"
+
+msgid "Volume"
+msgstr "Volume"
+
+msgid "W"
+msgstr "W"
+
+msgid "WEP"
+msgstr "WEP"
+
+msgid "WEP 128"
+msgstr "WEP 128"
+
+msgid "WEP 64"
+msgstr "WEP 64"
+
+msgid "WPA"
+msgstr "WPA"
+
+msgid "WPA or WPA2"
+msgstr "WPA ou WPA2"
+
+msgid "WPA2"
+msgstr "WPA2"
+
+msgid "WSS on 4:3"
+msgstr "WSS em 4:3"
+
+msgid "Waiting"
+msgstr "Espera"
+
+msgid "Waiting to removing ..."
+msgstr "Esperar à remoção…"
+
+msgid "Waiting to start download ..."
+msgstr "Esperar para começar a transferência…"
+
+msgid "Watch On Mobile"
+msgstr "Visione no Telemovel"
+
+msgid ""
+"We will now test if your TV can also display this resolution at 50hz. If "
+"your screen goes black, wait 20 seconds and it will switch back to 60hz.\n"
+"Please press OK to begin."
+msgstr ""
+"Vamos agora testar se a sua TV suporta resolução a 50hz.Se o ecrã ficar "
+"preto, espere 20 segundos e irá voltar a 60hz.\n"
+"Carregue OK para começar"
+
+msgid "Wed"
+msgstr "Qua"
+
+msgid "Wednesday"
+msgstr "Quarta-Feira"
+
+msgid "Weekday"
+msgstr "Dia de Semana"
+
+msgid "Welch"
+msgstr "Welch"
+
+msgid ""
+"Welcome to the Cutlist editor.\n"
+"\n"
+"Seek to the start of the stuff you want to cut away. Press OK, select 'start "
+"cut'.\n"
+"\n"
+"Then seek to the end, press OK, select 'end cut'. That's it."
+msgstr ""
+"Boa vinda ao editor de Cutlist.\n"
+" \n"
+" Busca ao começo do material que você quer cortar. Pressione OK, seleccione "
+"'comece corte'.\n"
+" \n"
+"Então a busca à extremidade, pressiona OK, ' seleccione 'corte extremidade'. "
+"ok."
+
+msgid ""
+"Welcome to the Image upgrade wizard. The wizard will assist you in upgrading "
+"the firmware of your QBoxHD by providing a backup facility for your current "
+"settings and a short explanation of how to upgrade your firmware."
+msgstr ""
+"Bem Vindo ao Assistente.Este assistente irá ajudá-lo a preparar a sua "
+"QBoxHD, e permite a copia das suas definições."
+
+msgid ""
+"Welcome to the cleanup wizard.\n"
+"\n"
+"We have detected that your available internal memory has dropped below 2MB.\n"
+"To ensure stable operation of your QBoxHD, the internal memory should be "
+"cleaned up.\n"
+"You can use this wizard to remove some extensions.\n"
+msgstr ""
+"Boa vinda ao questionario de limpeza.\n"
+" \n"
+" Nós detectamos que sua memória interna disponível desceu abaixo de 2MB.\n"
+" para assegurar a operação estável de seu QBoxHD, a memória interna deve ser "
+"limpado.\n"
+" você pode usar este questionario para remover algumas extensões.\n"
+
+msgid ""
+"Welcome.\n"
+"\n"
+"This start wizard will guide you through the basic setup of your QBoxHD.\n"
+"Press the OK button on your remote control to move to the next step."
+msgstr ""
+"Bem Vindo.\n"
+"\n"
+"Este assistente irá ajudá-lo a preparar a sua QBoxHD.\n"
+"Carregue OK no seu controlo remoto para prosseguir."
+
+msgid "Welcome..."
+msgstr "Bémvindo..."
+
+msgid "West"
+msgstr "Este"
+
+msgid "What do you want to scan?"
+msgstr "O que deseja procurar?"
+
+msgid "What to do with submitted crashlogs?"
+msgstr "O que fazer com o crashlogs submetidos?"
+
+msgid "Wheel Leds"
+msgstr "Leds da Roda"
+
+msgid "Wheel Leds Brightness"
+msgstr "Brilho dos Leds da Roda"
+
+msgid "Wheel Leds Hue"
+msgstr "Cor dos Leds da Roda"
+
+msgid "Wheel Leds Saturation"
+msgstr "Saturaçao dos Leds da Roda"
+
+msgid ""
+"When you do a factory reset, you will lose ALL your configuration data\n"
+"(including bouquets, services, satellite data ...)\n"
+"After completion of factory reset, your receiver will restart "
+"automatically!\n"
+"\n"
+"Really do a factory reset?"
+msgstr ""
+"Quando você faz uma restauração da fábrica, você perderá TODOS seus dados de "
+"configuração\n"
+" (que incluem bouquets, serviços, dados satélites…)\n"
+" Após a conclusão da restauração da fábrica, seu receptor reiniciará "
+"automaticamente!\n"
+" \n"
+" Faz realmente uma restauração da fábrica?"
+
+msgid "Where do you want to backup your settings?"
+msgstr "Onde deseja guardar as suas definições?"
+
+msgid "Where to save temporary timeshift recordings?"
+msgstr "Onde conservar gravações provisórias do timeshift?"
+
+msgid "Wireless"
+msgstr "Wireless"
+
+msgid "Wireless Antennas Position"
+msgstr "Posição das antenas sem fios"
+
+msgid "Wireless LAN"
+msgstr "Rede sem Fios LAN"
+
+msgid "Wireless Network"
+msgstr "Rede sem Fios"
+
+msgid "Wireless Network State"
+msgstr "Estado da Rede sem Fios"
+
+msgid "Wolof"
+msgstr "Wolof"
+
+msgid "Write error while recording. Disk full?\n"
+msgstr "Erro ao gravar.Disco cheio?\n"
+
+msgid "Write failed!"
+msgstr "Falhou a Escritura!"
+
+msgid "Writing NFI image file to flash completed"
+msgstr "Escritura do ficheiro imagem NFI na flash terminou"
+
+msgid "Xhosa"
+msgstr "Xhosa"
+
+msgid "YPbPr"
+msgstr "YPbPr"
+
+msgid "YUV"
+msgstr "YUV"
+
+msgid "Year"
+msgstr "Ano"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Yes, and delete this movie"
+msgstr "Sim, e suprima este filme"
+
+msgid "Yes, and don't ask again"
+msgstr "Sim, e não pergunte outra vez"
+
+msgid "Yes, backup my settings!"
+msgstr "Sim, guarde as minhas definições!"
+
+msgid "Yes, do a manual scan now"
+msgstr "Sim, iniciar busca manual"
+
+msgid "Yes, do an automatic scan now"
+msgstr "Sim, iniciar busca automática"
+
+msgid "Yes, do another manual scan now"
+msgstr "Sim, continuar busca manual"
+
+msgid "Yes, perform a shutdown now."
+msgstr "Sim, desligar agora"
+
+msgid "Yes, restore the settings now"
+msgstr "Sim, guardar as definições"
+
+msgid "Yes, returning to movie list"
+msgstr "Sim, voltar à lista de filmes"
+
+msgid "Yes, view the tutorial"
+msgstr "Sim, ver o tutorial"
+
+msgid "Yiddish"
+msgstr "Yiddish"
+
+msgid "Yoruba"
+msgstr "Yoruba"
+
+msgid "You can cancel the installation."
+msgstr "Você pode cancelar a instalação."
+
+msgid "You can cancel the removal."
+msgstr "Você pode cancelar a remoção."
+
+msgid ""
+"You can choose some default settings now. Please select the settings you "
+"want to be installed."
+msgstr ""
+"Você pode escolher alguns ajustes de origem agora. Selecione por favor os "
+"ajustes que você quer que seja instalado."
+
+msgid "You can choose, what you want to install..."
+msgstr "Você pode escolher, o que você quer instalar…"
+
+msgid "You can install this plugin."
+msgstr "Você pode instalar este plugin."
+
+msgid "You can remove this plugin."
+msgstr "Você pode remover este plugin."
+
+msgid "You cannot delete this!"
+msgstr "Não é possivel apagar"
+
+msgid "You chose not to install any default services lists."
+msgstr "Você escolheu não instalar nenhumas listas dos serviços de origem."
+
+msgid ""
+"You chose not to install any default settings. You can however install the "
+"default settings later in the settings menu."
+msgstr ""
+"Você escolheu não instalar nenhuns ajustes de origem. Você pode entretanto "
+"instalar os ajustes de origem mais tarde no menu dos ajustes."
+
+msgid ""
+"You chose not to install anything. Please press OK finish the install wizard."
+msgstr ""
+"Você escolheu de não instalar nada. Pressione por favor OK para terminar o "
+"questionario da instalação."
+
+msgid ""
+"You do not seem to have a harddisk in your QBoxHD. So backing up to a "
+"harddisk is not an option for you."
+msgstr "Disco rigido não encontrado.Esta opção não é válida para si."
+
+msgid ""
+"You have chosen to backup to a compact flash card. The card must be in the "
+"slot. We do not verify if it is really used at the moment. So better backup "
+"to the harddisk!\n"
+"Please press OK to start the backup now."
+msgstr ""
+"Escolheu gravar para compact flash.O card deve estar inserido.Não é possivel "
+"verificar se está em uso.Deve gravar para o Disco rigido!\n"
+"Carregue OK para iniciar."
+
+msgid ""
+"You have chosen to backup to an usb drive. Better backup to the harddisk!\n"
+"Please press OK to start the backup now."
+msgstr ""
+"Escolheu gravar para USB.Deve gravar para o Disco rigido!\n"
+"Carregue OK para iniciar."
+
+msgid ""
+"You have chosen to backup to your harddisk. Please press OK to start the "
+"backup now."
+msgstr ""
+"Escolheu fazer um backup do seu disco rigido. Carregue OK para iniciar."
+
+msgid ""
+"You have chosen to backup your settings. Please press OK to start the backup "
+"now."
+msgstr ""
+"Você de backup os seus ajustes. Pressione por favor OK para começar agora o "
+"backup."
+
+msgid ""
+"You have chosen to create a new .NFI flasher bootable USB stick. This will "
+"repartition the USB stick and therefore all data on it will be erased."
+msgstr ""
+"Você escolheu criar um pen USB bootable com .NFI. Isto vai apagar o pen USB "
+"e conseqüentemente todos os dados neles serão apagados."
+
+msgid ""
+"You have chosen to restore your settings. Enigma2 will restart after "
+"restore. Please press OK to start the restore now."
+msgstr ""
+"Você escolheu restaurar seus ajustes. Enigma2 reiniciará após a restauração. "
+"Pressione por favor OK para começar agora a restauração."
+
+#, python-format
+msgid "You have to wait %s!"
+msgstr "Espere por favor %s!"
+
+msgid ""
+"You need a PC connected to your QBoxHD. If you need further instructions, "
+"please visit the website http://www.duolabs.com.\n"
+"Your QBoxHD will now be halted. After you have performed the update "
+"instructions from the website, your new firmware will ask you to restore "
+"your settings."
+msgstr ""
+"Você precisa um PC conectado a seu QBoxHD. Se você precisa umas instruções "
+"adicionais, visite por favor o Web site http://www.duolabs.com.\n"
+" Seu QBoxHD será parado agora. Depois que você executou as instruções da "
+"actualização do Web site, o seu novo firmware pedira que você restaure os "
+"seus ajustes."
+
+msgid ""
+"You need a PC connected to your QBoxHD. If you need further instructions, "
+"please visit the website http://www.q-box.tv.\n"
+"Your QBoxHD will now be halted. After you have performed the update "
+"instructions from the website, your new firmware will ask you to restore "
+"your settings."
+msgstr ""
+"Necessita de um PC ligado á QBoxHD.Para mais instruções, visite http://www."
+"dm7025.de.\n"
+"A QBoxHD está em espera.Depois de actualizar a sua box seguindo as "
+"instruções, poderá gravar as suas definições. "
+
+msgid ""
+"You need an USB pen drive connected to your QBoxHD with the update/recovery "
+"package. If you need further instructions, please visit the website http://"
+"www.qboxhd.com.\n"
+"Your QBoxHD will now be halted."
+msgstr ""
+"Você precisa um pen USB conectada a seu QBoxHD com o pacote da actualização/"
+"recuperação. Se você precisa instruções adicionais, visite por favor o Web "
+"site http://www.qboxhd.com.\n"
+" Seu QBoxHD será parado agora."
+
+msgid ""
+"You need to set a pin code and hide it from your children.\n"
+"\n"
+"Do you want to set the pin now?"
+msgstr ""
+"Necessita de codigo PIN para esconder.\n"
+"\n"
+"Introduzir PIN?"
+
+msgid "Your QBoxHD is shutting down. Please stand by..."
+msgstr "A Desligar. "
+
+msgid ""
+"Your QBoxHD isn't connected to the internet properly. Please check it and "
+"try again."
+msgstr ""
+"O seu QBoxHD não está conectado á Internet correctamente. Verifique por "
+"favor e tente outra vez. "
+
+msgid "Your QBoxHD will restart after pressing OK on your remote control."
+msgstr ""
+"Seu QBoxHD reiniciará após ter pressionado OK no seu controlo a distância."
+
+msgid "Your TV works with 50 Hz. Good!"
+msgstr "A sua TV trabalha a 50hz.Optimo!"
+
+msgid ""
+"Your backup succeeded. We will now continue to explain the further upgrade "
+"process."
+msgstr "Operação bem sucedida.Continuar a explicar o processo de actualização."
+
+msgid ""
+"Your collection exceeds the size of a single layer medium, you will need a "
+"blank dual layer DVD!"
+msgstr ""
+"A Sua coleção excede o tamanho de um único dvd simples, você precisará de um "
+"DVD com dupla camada!"
+
+msgid "Your email address:"
+msgstr "O Seu email:"
+
+msgid ""
+"Your frontprocessor firmware must be upgraded.\n"
+"Press OK to start upgrade."
+msgstr ""
+"O seu processador deve ser actualizado.\n"
+"Carregue OK para iniciar"
+
+msgid ""
+"Your installer is Expired.\n"
+"Please download new AddOn installer."
+msgstr ""
+"Seu instalador é expirado.\n"
+"Transfira por favor o novo instalador dos AddOn."
+
+msgid "Your name (optional):"
+msgstr "Seu nome (opcional):"
+
+msgid "Your network configuration has been activated."
+msgstr "Sua configuração da sua rede foi ativada."
+
+msgid ""
+"Your network configuration has been activated.\n"
+"A second configured interface has been found.\n"
+"\n"
+"Do you want to disable the second network interface?"
+msgstr ""
+"A Sua configuração de rede foi ativada.\n"
+"Uma segunda rede configurada foi encontrada.\n"
+" \n"
+" Você quer desactivar a segunda rede?"
+
+msgid "Your network mount has been activated."
+msgstr "Sua montagem de rede foi activada."
+
+msgid "Your network mount has been removed."
+msgstr "Sua montagem de rede foi removida."
+
+msgid "Your network mount has been updated."
+msgstr "Sua montagem de rede foi actualizada."
+
+#, python-format
+msgid "Your new Custom Buttom is %s."
+msgstr "A sua nova tecla custom é %s."
+
+msgid "Your new configuration have been saved successfully."
+msgstr "Sua nova configuração foi conservada com sucesso."
+
+msgid "Zap back to service before positioner setup?"
+msgstr "Voltar ao canal  antes de definir o posicionador?"
+
+msgid "Zap back to service before satfinder?"
+msgstr "Voltar ao canal  antes de satfinder?"
+
+msgid "Zhuang"
+msgstr "Zhuang"
+
+msgid "Zulu"
+msgstr "Zulu"
+
+msgid "[alternative edit]"
+msgstr "[alternative edit]"
+
+msgid "[bouquet edit]"
+msgstr "[editar bouquet]"
+
+msgid "[favourite edit]"
+msgstr "[editar favorito]"
+
+msgid "[move mode]"
+msgstr "[modo desloca]"
+
+msgid "a gui to assign services/providers to common interface modules"
+msgstr "um GUI para atribuir serviços/fornecedores aos módulos CI"
+
+msgid "a gui to assign services/providers/caids to common interface modules"
+msgstr "um GUI para atribuir serviços/fornecedores/caids aos módulos CI"
+
+msgid "abort alternatives edit"
+msgstr "abortar a edição de alternativas"
+
+msgid "abort bouquet edit"
+msgstr "Cancelar a edição"
+
+msgid "abort favourites edit"
+msgstr "Cancelar a edição"
+
+msgid "about to start"
+msgstr "A iniciar"
+
+msgid "activate current configuration"
+msgstr "Active a configuração actual"
+
+msgid "add Provider"
+msgstr "adicione o fornecedor"
+
+msgid "add Service"
+msgstr "adicione o Serviço"
+
+msgid "add a nameserver entry"
+msgstr "adicione a entrada do nameserver"
+
+msgid "add alternatives"
+msgstr "adicionar alternativas"
+
+msgid "add bookmark"
+msgstr "adicione o bookmark"
+
+msgid "add bouquet"
+msgstr "Adicionar bouquet"
+
+msgid "add directory to playlist"
+msgstr "Adicionar pasta á lista"
+
+msgid "add file to playlist"
+msgstr "Adicionar ficheiro á lista"
+
+msgid "add files to playlist"
+msgstr "Adicionar á lista de reprodução"
+
+msgid "add marker"
+msgstr "Adicionar marca"
+
+msgid "add recording (enter recording duration)"
+msgstr "Iniciar gravação (inserir tempo de gravção)"
+
+msgid "add recording (enter recording endtime)"
+msgstr "adicionar gravação ( introduza o tempo final)"
+
+msgid "add recording (indefinitely)"
+msgstr "Iniciar gravação (indefinido)"
+
+msgid "add recording (stop after current event)"
+msgstr "Iniciar gravação (terminar no final deste programa) "
+
+msgid "add server"
+msgstr "adicione o servidor"
+
+msgid "add service to bouquet"
+msgstr "Adicionar ao bouquet"
+
+msgid "add service to favourites"
+msgstr "Adicionar aos favoritos"
+
+msgid "add to parental protection"
+msgstr "Adicionar ao controle paternal"
+
+msgid "add user"
+msgstr "adicione o utilizador"
+
+msgid "additional videos"
+msgstr "vídeos adicionais"
+
+msgid "advanced"
+msgstr "Avançados"
+
+msgid "alphabetic sort"
+msgstr "oedenar alfabeticamente"
+
+msgid ""
+"are you sure you want to restore\n"
+"following backup:\n"
+msgstr ""
+"Deseja instalar\n"
+"Ficheiro guardado:\n"
+
+msgid "assigned CAIds"
+msgstr "CAIds atribuídos"
+
+msgid "assigned Services/Provider"
+msgstr "serviços atribuídos/fornecedor"
+
+#, python-format
+msgid "audio track (%s) format"
+msgstr "formato audio da trilha (%s)"
+
+#, python-format
+msgid "audio track (%s) language"
+msgstr "língua audio da trilha (%s)"
+
+msgid "audio tracks"
+msgstr "trilhas audio"
+
+msgid "auto"
+msgstr "Zulu"
+
+msgid "available"
+msgstr "disponível"
+
+msgid "back"
+msgstr "Atrás"
+
+msgid "back in history"
+msgstr "para trás na história"
+
+msgid "background image"
+msgstr "imagem de fundo"
+
+msgid "backgroundcolor"
+msgstr "cor de fundo"
+
+msgid "backward entry"
+msgstr "entrada inversa"
+
+msgid "better"
+msgstr "melhor"
+
+msgid "black"
+msgstr "Preto"
+
+msgid "blacklist"
+msgstr "Lista negra"
+
+msgid "blue"
+msgstr "Azul"
+
+#, python-format
+msgid "burn audio track (%s)"
+msgstr "grave trilha audio (%s)"
+
+msgid "by Exif"
+msgstr "por Exif"
+
+msgid "change recording (duration)"
+msgstr "alterar a gravação (duração)"
+
+msgid "change recording (endtime)"
+msgstr "mudar na gravação (tempo final)"
+
+msgid "chapters"
+msgstr "capítulos"
+
+msgid "check game"
+msgstr "verifique o jogo"
+
+msgid "choose destination directory"
+msgstr "escolha o diretório de destino"
+
+msgid "circular left"
+msgstr "circular esquerda"
+
+msgid "circular right"
+msgstr "circular direita"
+
+msgid "clear playlist"
+msgstr "Limpar lista"
+
+msgid "complex"
+msgstr "complexo"
+
+msgid "config menu"
+msgstr "Menu de configuração"
+
+msgid "confirmed"
+msgstr "confirmado"
+
+msgid "connected"
+msgstr "conectado"
+
+msgid "continue"
+msgstr "continuar"
+
+msgid "copy to bouquets"
+msgstr "copiar para bouquets"
+
+msgid "could not be removed"
+msgstr "não pode ser removido"
+
+msgid "create directory"
+msgstr "crie o diretório"
+
+msgid "daily"
+msgstr "diário"
+
+msgid "day"
+msgstr "dia"
+
+msgid "deep standby"
+msgstr "profundo standby"
+
+msgid "delete"
+msgstr "eliminar"
+
+msgid "delete cut"
+msgstr "eliminar corte"
+
+msgid "delete file"
+msgstr "apagar ficheiro"
+
+msgid "delete playlist entry"
+msgstr "apagar entradads na lista"
+
+msgid "delete saved playlist"
+msgstr "apagar lista gravada"
+
+msgid "delete server"
+msgstr "apagar servidor"
+
+msgid "delete user"
+msgstr "apagar utilizador"
+
+msgid "delete..."
+msgstr "eliminar..."
+
+msgid "disable"
+msgstr "desactivar"
+
+msgid "disable move mode"
+msgstr "desactivar modo deslocar"
+
+msgid "disabled"
+msgstr "desactivar"
+
+msgid "disconnected"
+msgstr "desligado"
+
+msgid "do not change"
+msgstr "Não alterar"
+
+msgid "do nothing"
+msgstr "espere"
+
+msgid "don't record"
+msgstr "não gravar"
+
+msgid "done!"
+msgstr "concluido!"
+
+msgid "edit alternatives"
+msgstr "editar alternativas"
+
+msgid "edit server"
+msgstr "editar servidor"
+
+msgid "edit user"
+msgstr "editar utilizador"
+
+msgid "empty"
+msgstr "vazio"
+
+msgid "enable"
+msgstr "activar"
+
+msgid "enable bouquet edit"
+msgstr "activar a edição dos bouquets"
+
+msgid "enable favourite edit"
+msgstr "activar a edição dos favoritos"
+
+msgid "enable move mode"
+msgstr "activar modo deslocar"
+
+msgid "enabled"
+msgstr "activo"
+
+msgid "end alternatives edit"
+msgstr "terminar edições alternativas"
+
+msgid "end bouquet edit"
+msgstr "terminar edição de bouquets"
+
+msgid "end cut here"
+msgstr "terminar corte aqui"
+
+msgid "end favourites edit"
+msgstr "Terminar edição de favoritos"
+
+msgid "enigma2 and network"
+msgstr "rede e enigma2"
+
+msgid "equal to"
+msgstr "igual a"
+
+msgid "exceeds dual layer medium!"
+msgstr "excede o dvd dupla camada!"
+
+msgid "exit DVD player or return to file browser"
+msgstr "retire o reprodutor de DVD ou retorne ao navegador de ficheiros"
+
+msgid "exit divxplayer"
+msgstr "sair do divxplayer"
+
+msgid "exit mediaplayer"
+msgstr "Saír do mediaplayer"
+
+msgid "exit movielist"
+msgstr "Saír da lista de filmes"
+
+msgid "exit nameserver configuration"
+msgstr "retire a configuração do nameserver"
+
+msgid "exit network adapter configuration"
+msgstr "retire a configuração do adaptador de rede"
+
+msgid "exit network adapter setup menu"
+msgstr "retire o menu da instalação do adaptador de rede"
+
+msgid "exit network interface list"
+msgstr "retire a lista da relação de rede"
+
+msgid "exit networkadapter setup menu"
+msgstr "retire o menu da instalação do adaptador de rede"
+
+msgid "failed"
+msgstr "falhou"
+
+msgid "fileformats (BMP, PNG, JPG, GIF)"
+msgstr "formatos de ficheiros (BMP, png, JPG, GIF)"
+
+msgid "filename"
+msgstr "nome do ficheiro"
+
+msgid "filter off"
+msgstr "filtro desligado"
+
+msgid "filter on"
+msgstr "filtro ligado"
+
+msgid "fine-tune your display"
+msgstr "Ajuste fino o seu Ecrã"
+
+msgid "forward entry"
+msgstr "entrada para diante"
+
+msgid "forward in history"
+msgstr "avançe na história"
+
+msgid "forward to the next chapter"
+msgstr "avançe ao capítulo seguinte"
+
+msgid "free"
+msgstr "livre"
+
+msgid "free diskspace"
+msgstr "Espaço livre"
+
+msgid "go to deep standby"
+msgstr "Ir para reiniciar profundo"
+
+msgid "go to standby"
+msgstr "Ir para Standy"
+
+msgid "grab this frame as bitmap"
+msgstr "agarre este frame como o bitmap"
+
+msgid "green"
+msgstr "verde"
+
+msgid "hear radio..."
+msgstr "Ouvir radio..."
+
+msgid "help..."
+msgstr "ajuda..."
+
+msgid "hidden network"
+msgstr "rede escondida"
+
+msgid "hide extended description"
+msgstr "ocultar descrição"
+
+msgid "hide player"
+msgstr "Esconder reprodutor"
+
+msgid "horizontal"
+msgstr "horizontal"
+
+msgid "hour"
+msgstr "hora"
+
+msgid "hours"
+msgstr "horas"
+
+msgid "immediate shutdown"
+msgstr "Desligar imediatamente"
+
+#, python-format
+msgid ""
+"incoming call!\n"
+"%s calls on %s!"
+msgstr ""
+"Chamada!\n"
+"%s chamdas activas %s!"
+
+msgid "init module"
+msgstr "iniciar modulo"
+
+msgid "init modules"
+msgstr "módulos do init"
+
+msgid "insert mark here"
+msgstr "inserir marca"
+
+msgid "jump back to the previous title"
+msgstr "salte de volta ao título precedente"
+
+msgid "jump forward to the next title"
+msgstr "salte para a frente ao título seguinte"
+
+msgid "jump to listbegin"
+msgstr "saltar para o inicio da lista"
+
+msgid "jump to listend"
+msgstr "saltar parea o fim da lista"
+
+msgid "jump to next marked position"
+msgstr "saltar para a próxima marca"
+
+msgid "jump to previous marked position"
+msgstr "saltar para posição marcada anteriormente"
+
+msgid "leave movie player..."
+msgstr "Sair do reprodutor de media"
+
+msgid "left"
+msgstr "esquerda"
+
+msgid "length"
+msgstr "comprimento"
+
+#, python-format
+msgid "libeplayer2 Error: missing %s"
+msgstr "erro libeplayer2: falta %s "
+
+msgid "list style compact"
+msgstr "estilo de lista compacto"
+
+msgid "list style compact with description"
+msgstr "estilo de lista compacto com descrição"
+
+msgid "list style default"
+msgstr "estilo da lista normal "
+
+msgid "list style single line"
+msgstr "estilo de lista de linha única"
+
+msgid "load playlist"
+msgstr "carregar lista"
+
+msgid "locked"
+msgstr "Sintonizado"
+
+msgid "loopthrough to"
+msgstr "loopthrough a"
+
+msgid "manual"
+msgstr "manual"
+
+msgid "menu"
+msgstr "menu"
+
+msgid "menulist"
+msgstr "lista dos menus"
+
+msgid "mins"
+msgstr "mins"
+
+msgid "minute"
+msgstr "minutos"
+
+msgid "minutes"
+msgstr "minutos"
+
+msgid "month"
+msgstr "mês"
+
+msgid "move PiP to main picture"
+msgstr "mover o PiP para a imagem principal"
+
+msgid "move down to last entry"
+msgstr "abaixe para a última entrada"
+
+msgid "move down to next entry"
+msgstr "abaixe para a entrada seguinte"
+
+msgid "move up to first entry"
+msgstr "mova para a primeira entrada"
+
+msgid "move up to previous entry"
+msgstr "mova para a entrada precedente"
+
+msgid "movie list"
+msgstr "lista de filmes"
+
+msgid "multinorm"
+msgstr "multinorma"
+
+msgid "never"
+msgstr "nunca"
+
+msgid "new game"
+msgstr "novo jogo"
+
+msgid "next channel"
+msgstr "proximo canal"
+
+msgid "next channel in history"
+msgstr "proxima canal na memoria"
+
+msgid "no"
+msgstr "não"
+
+msgid "no CAId selected"
+msgstr "nenhum CAId selecionado"
+
+msgid "no CI slots found"
+msgstr "nenhum CI slot encontrado"
+
+msgid "no HDD found"
+msgstr "Nenhum disco rigido detectado"
+
+msgid "no module found"
+msgstr "Nenhum modulo detectado"
+
+msgid "no standby"
+msgstr "não em modo espera"
+
+msgid "no timeout"
+msgstr "no timeout"
+
+msgid "none"
+msgstr "nenhum"
+
+msgid "not locked"
+msgstr "Não esta sintonizado"
+
+msgid "not used"
+msgstr "não usado"
+
+msgid "nothing connected"
+msgstr "Não conectado"
+
+msgid "of a DUAL layer medium used."
+msgstr "de um dvd DUPLA camada usado."
+
+msgid "of a SINGLE layer medium used."
+msgstr "de um dvd simples usado."
+
+msgid "off"
+msgstr "desligado"
+
+msgid "on"
+msgstr "ligado"
+
+msgid "on READ ONLY medium."
+msgstr "SOMENTE read only LIDO."
+
+msgid "once"
+msgstr "Uma só vez"
+
+msgid "open nameserver configuration"
+msgstr "abra a configuração do nameserver"
+
+msgid "open servicelist"
+msgstr "Abrir lista de canais"
+
+msgid "open servicelist(down)"
+msgstr "Abrir lista de canais (baixo)"
+
+msgid "open servicelist(up)"
+msgstr "Abrir lista de canais (cima)"
+
+msgid "open virtual keyboard input help"
+msgstr "abra a ajuda virtual da entrada com o teclado"
+
+msgid "pass"
+msgstr "passar"
+
+msgid "pause"
+msgstr "pausa"
+
+msgid "play DVD"
+msgstr "leitura DVD"
+
+msgid "play divx file"
+msgstr "leitura de ficheiros divx"
+
+msgid "play entry"
+msgstr "iniciar"
+
+msgid "play from next mark or playlist entry"
+msgstr "Iniciar na proxima MARCA ou entrada na lista "
+
+msgid "play from previous mark or playlist entry"
+msgstr "Iniciar na ultima MARCA ou entrada na lista "
+
+msgid "please press OK when ready"
+msgstr "Carregue OK quando terminar"
+
+msgid "please wait, loading picture..."
+msgstr "Por favor espere, a carregar a imagem"
+
+msgid "previous channel"
+msgstr "canal anterior"
+
+msgid "previous channel in history"
+msgstr "canal anterior na memória"
+
+msgid "private"
+msgstr "privado"
+
+msgid "record"
+msgstr "gravar"
+
+msgid "recording..."
+msgstr "a gravar..."
+
+msgid "red"
+msgstr "vermelho"
+
+msgid "refresh"
+msgstr "refresque"
+
+msgid "related videos"
+msgstr "vídeos relacionados"
+
+msgid "remove a nameserver entry"
+msgstr "remova uma entrada do nameserver"
+
+msgid "remove after this position"
+msgstr "Remover depois desta posição"
+
+msgid "remove all alternatives"
+msgstr "remover todas alternativas"
+
+msgid "remove all new found flags"
+msgstr "remover as novas flags"
+
+msgid "remove before this position"
+msgstr "Remover antes desta posição"
+
+msgid "remove bookmark"
+msgstr "remova o marcador"
+
+msgid "remove directory"
+msgstr "remova o diretório"
+
+msgid "remove entry"
+msgstr "Remover entrada"
+
+msgid "remove from parental protection"
+msgstr "Remover do controle paternal"
+
+msgid "remove new found flag"
+msgstr "Remover a nova flag"
+
+msgid "remove selected satellite"
+msgstr "remova o satélite selecionado"
+
+msgid "remove this mark"
+msgstr "Remover esta marca"
+
+msgid "repeat playlist"
+msgstr "repita a lista de canções"
+
+msgid "repeated"
+msgstr "Repetido"
+
+msgid "response videos"
+msgstr "vídeos da resposta"
+
+msgid "restart game"
+msgstr "reinície jogo"
+
+msgid "rewind to the previous chapter"
+msgstr "rebobinação ao capítulo precedente"
+
+msgid "right"
+msgstr "direita"
+
+msgid "save last directory on exit"
+msgstr "salve o último diretório em saindo "
+
+msgid "save playlist"
+msgstr "guardar lista"
+
+msgid "save playlist on exit"
+msgstr "salve a lista de canções na saída"
+
+msgid "scan done!"
+msgstr "Scan completo!"
+
+#, python-format
+msgid "scan in progress - %d%% done!"
+msgstr "scan em progresso - %d%% OK!"
+
+msgid "scan state"
+msgstr "Estado da busca"
+
+msgid "second"
+msgstr "Segundo"
+
+msgid "second cable of motorized LNB"
+msgstr "Segundo cabo do LNB motorizado"
+
+msgid "seconds"
+msgstr "segundos"
+
+msgid "select"
+msgstr "selecçione"
+
+msgid "select .NFI flash file"
+msgstr "selecçione o ficheiro flash .NFI"
+
+msgid "select CAId"
+msgstr "selecçione CAId"
+
+msgid "select CAId's"
+msgstr "selecçione CAId's"
+
+msgid "select image from server"
+msgstr "selecione a imagem do servidor"
+
+msgid "select interface"
+msgstr "selecione a interface"
+
+msgid "select menu entry"
+msgstr "selecione a entrada do menu"
+
+msgid "select movie"
+msgstr "seleccione o filme"
+
+msgid "select the movie path"
+msgstr "Seleccione a pasta do Filme"
+
+msgid "service pin"
+msgstr "PIN do canal"
+
+msgid "set default"
+msgstr "selecione de origem"
+
+msgid "setup pin"
+msgstr "Definir PIN"
+
+msgid "show DVD main menu"
+msgstr "mostre  o menu principal do DVD"
+
+msgid "show EPG..."
+msgstr "Mostar EPG..."
+
+msgid "show Infoline"
+msgstr "mostre Infoline"
+
+msgid "show Record Menu..."
+msgstr "mostre o menu gravado…"
+
+msgid "show all"
+msgstr "mostrar todos"
+
+msgid "show alternatives"
+msgstr "ver alternativas"
+
+msgid "show event details"
+msgstr "Mostrar detalhes do programa"
+
+msgid "show extended description"
+msgstr "mostrar descrição"
+
+msgid "show first selected tag"
+msgstr "mostre o Tag primeiramente selecionado"
+
+msgid "show second selected tag"
+msgstr "mostre o Tag em segundo selecionado"
+
+msgid "show shutdown menu"
+msgstr "Mostrar menu desligar"
+
+msgid "show single service EPG..."
+msgstr "mostrar EPG simples"
+
+msgid "show tag menu"
+msgstr "mostrar menu de marcas"
+
+msgid "show transponder info"
+msgstr "mostrar a info do transponder "
+
+msgid "shuffle playlist"
+msgstr "modo aleatório"
+
+msgid "shutdown"
+msgstr "Desligar"
+
+msgid "simple"
+msgstr "simples"
+
+msgid "skip backward"
+msgstr "Retroceder"
+
+msgid "skip backward (enter time)"
+msgstr "retroceder (inserir tempo)"
+
+msgid "skip forward"
+msgstr "Avançar"
+
+msgid "skip forward (enter time)"
+msgstr "avançar (inserir tempo)"
+
+msgid "slide picture in loop"
+msgstr "deslize o retrato no laço"
+
+msgid "solve game"
+msgstr "resolva o jogo"
+
+msgid "sort by date"
+msgstr "ordenar por data"
+
+msgid "special characters"
+msgstr "caráteres especiais"
+
+msgid "standard"
+msgstr "standard"
+
+msgid "standby"
+msgstr "standby"
+
+msgid "start cut here"
+msgstr "Iniciar o corte aqui"
+
+msgid "start directory"
+msgstr "comece o diretório"
+
+msgid "start timeshift"
+msgstr "Iniciar timeshift"
+
+msgid "stereo"
+msgstr "Estereo"
+
+msgid "stop PiP"
+msgstr "stop PiP"
+
+msgid "stop entry"
+msgstr "parar"
+
+msgid "stop recording"
+msgstr "Parar a gravação"
+
+msgid "stop timeshift"
+msgstr "Parar timeshift"
+
+msgid "swap PiP and main picture"
+msgstr "alterar PiP com imagem principal"
+
+msgid "switch to bookmarks"
+msgstr "comute aos marcador"
+
+msgid "switch to filelist"
+msgstr "Ver lista de ficheiros"
+
+msgid "switch to playlist"
+msgstr "Ver a lista"
+
+msgid "switch to the next angle"
+msgstr "comute ao ângulo seguinte"
+
+msgid "switch to the next audio track"
+msgstr "comute à trilha audio seguinte"
+
+msgid "switch to the next subtitle language"
+msgstr "comute à língua seguinte do subtítulo"
+
+msgid "template file"
+msgstr "ficheiro de molde"
+
+msgid "textcolor"
+msgstr "cor de texto"
+
+msgid "this recording"
+msgstr "esta gravção"
+
+msgid "this service is protected by a parental control pin"
+msgstr "Este canal está protegido por PIN "
+
+msgid "toggle a cut mark at the current position"
+msgstr "marcar na posição actual"
+
+msgid "toggle time, chapter, audio, subtitle info"
+msgstr "tempo de alavanca, capítulo, áudio, informação do subtítulo"
+
+msgid "unconfirmed"
+msgstr "não-confirmado"
+
+msgid "unknown"
+msgstr "desconhecido"
+
+msgid "unknown service"
+msgstr "Desconhecido"
+
+msgid "until restart"
+msgstr "Até reinicio"
+
+msgid "until standby/restart"
+msgstr "até o standby/reinício"
+
+msgid "use as HDD replacement"
+msgstr "uso como HDD suplente"
+
+msgid "user defined"
+msgstr "Definido pelo utilizador"
+
+msgid "vertical"
+msgstr "vertical"
+
+msgid "view extensions..."
+msgstr "ver extensões"
+
+msgid "view recordings..."
+msgstr "ver gravações..."
+
+msgid "volume down"
+msgstr "baixar o volume"
+
+msgid "volume up"
+msgstr "aumentar o volume"
+
+msgid "wait for ci..."
+msgstr "espere pela ci..."
+
+msgid "wait for mmi..."
+msgstr "espere pelo mmi..."
+
+msgid "waiting"
+msgstr "Em espera"
+
+msgid "was removed successfully"
+msgstr "foi removido com sucesso"
+
+msgid "weekly"
+msgstr "Semanal"
+
+msgid "whitelist"
+msgstr "Lista Branca"
+
+msgid "working"
+msgstr "funcionamento"
+
+msgid "yellow"
+msgstr "amarelo"
+
+msgid "yes"
+msgstr "Sim"
+
+msgid "yes (keep feeds)"
+msgstr "Sim (mantenha os feeds)"
+
+msgid ""
+"your QBoxHD might be unusable now. Please consult the manual for further "
+"assistance before rebooting your QBoxHD."
+msgstr ""
+"O seu QBoxHD pôde estar instável. Consultar por favor o manual para um "
+"auxílio mais detalhado antes de reiniciar o seu QBoxHD."
+
+msgid "zap"
+msgstr "zap"
+
+msgid "zapped"
+msgstr "zapped"
+
+#~ msgid "\"?"
+#~ msgstr "\"?"
+
+#~ msgid "#003258"
+#~ msgstr "#003258"
+
+#~ msgid "#33294a6b"
+#~ msgstr "#33294a6b"
+
+#~ msgid "#77ffffff"
+#~ msgstr "#77ffffff"
+
+#~ msgid "Add files to playlist"
+#~ msgstr "Adicionar ficheiros á lista de reprodução"
+
+#~ msgid "Add title..."
+#~ msgstr "Adicionar titulo..."
+
+#~ msgid "Album:"
+#~ msgstr "Album:"
+
+#~ msgid "All..."
+#~ msgstr "Todos..."
+
+#~ msgid "Burn"
+#~ msgstr "Gravar"
+
+#~ msgid "Burn DVD..."
+#~ msgstr "Gravar DVD..."
+
+#~ msgid "Choose Location"
+#~ msgstr "Seleccione Localização"
+
+#~ msgid "Confirm"
+#~ msgstr "Confirme"
+
+#~ msgid "DOLBY"
+#~ msgstr "DOLBY"
+
+#~ msgid "Default-Wizard"
+#~ msgstr "Assistente"
+
+#~ msgid "Device Setup..."
+#~ msgstr "Definições..."
+
+#~ msgid ""
+#~ "Do you really want to REMOVE\n"
+#~ "the plugin \""
+#~ msgstr ""
+#~ "De certeza que quer REMOVER\n"
+#~ "o plugin \""
+
+#~ msgid ""
+#~ "Do you really want to download\n"
+#~ "the plugin \""
+#~ msgstr "Descarregar plugin \""
+
+#~ msgid "Do you want to view a cutlist tutorial?"
+#~ msgstr "Deseja ver um manual do editor de listas?"
+
+#~ msgid "Edit current title"
+#~ msgstr "Editar o titulo actual"
+
+#~ msgid "Edit title..."
+#~ msgstr "Editar o titulo..."
+
+#~ msgid "End"
+#~ msgstr "Terminar"
+
+#~ msgid "Games / Plugins"
+#~ msgstr "Jogos / Plugins"
+
+#~ msgid "HDMI audio"
+#~ msgstr "Audio HDMI"
+
+#~ msgid "Hello!"
+#~ msgstr "Olá!!"
+
+#~ msgid "Movie Menu"
+#~ msgstr "Menu de Filmes"
+
+#~ msgid "Nameserver Setup..."
+#~ msgstr "Nameserver Setup..."
+
+#~ msgid "New DVD"
+#~ msgstr "Novo DVD"
+
+#~ msgid "Other..."
+#~ msgstr "Outros.."
+
+#~ msgid "Please select keyword to filter..."
+#~ msgstr "Escreva palavra a filtrar"
+
+#~ msgid "Really delete this timer?"
+#~ msgstr "Apagar este timer?"
+
+#~ msgid ""
+#~ "Recording(s) are in progress or coming up in few seconds... really reboot "
+#~ "now?"
+#~ msgstr ""
+#~ "As gravações estão em andamento ou a iniciar em poucos segundos… Deseja "
+#~ "reiniciar agora? "
+
+#~ msgid ""
+#~ "Recording(s) are in progress or coming up in few seconds... really "
+#~ "restart now?"
+#~ msgstr ""
+#~ "As gravações estão em andamento ou a iniciar em poucos segundos… Deseja "
+#~ "reiniciar agora? "
+
+#~ msgid ""
+#~ "Recording(s) are in progress or coming up in few seconds... really "
+#~ "shutdown now?"
+#~ msgstr ""
+#~ "As gravações estão em andamento ou a iniciar em poucos segundos… Deseja "
+#~ "desligar agora? "
+
+#~ msgid "Replace current playlist"
+#~ msgstr "Substituir a lista actual"
+
+#~ msgid "Restart Enigma2"
+#~ msgstr "Reiniciar Enigma2"
+
+#~ msgid "STEREO"
+#~ msgstr "STEREO"
+
+#~ msgid "Save current project to disk"
+#~ msgstr "Gravar para o Disco rigido"
+
+#~ msgid "Save..."
+#~ msgstr "Guardar..."
+
+#~ msgid "Show files from %s"
+#~ msgstr "Mostras os ficheiros de %s"
+
+#~ msgid "Start"
+#~ msgstr "Iniciar"
+
+#~ msgid "Startwizard"
+#~ msgstr "Assistente"
+
+#~ msgid "Step "
+#~ msgstr "Avançar"
+
+#~ msgid ""
+#~ "Unable to initialize harddisk.\n"
+#~ "Please refer to the user manual.\n"
+#~ "Error: "
+#~ msgstr ""
+#~ "Impossivel Inicializar Disco Duro.\n"
+#~ "Por favor consulte o manual.\n"
+#~ "Erro:"
+
+#~ msgid "VCR Switch"
+#~ msgstr "Mudar para VCR"
+
+#~ msgid ""
+#~ "You need to define some keywords first!\n"
+#~ "Press the menu-key to define keywords.\n"
+#~ "Do you want to define keywords now?"
+#~ msgstr ""
+#~ "Necessita definir palavra chave!\n"
+#~ "Carregue em MENU para definir a palavra chave.\n"
+#~ "Deseja definir palavra chave?"
+
+#~ msgid "You selected a playlist"
+#~ msgstr "Seleccionou uma playlist"
+
+#~ msgid "equal to Socket A"
+#~ msgstr "Igual ao socket A"
+
+#~ msgid "full /etc directory"
+#~ msgstr "pasta full /etc "
+
+#~ msgid "loopthrough to socket A"
+#~ msgstr "Passagem atraves do socket A"
+
+#~ msgid "no Picture found"
+#~ msgstr "Imagens não encontradas"
+
+#~ msgid "only /etc/enigma2 directory"
+#~ msgstr "só a pasta /etc/enigma2"
+
+#~ msgid "play next playlist entry"
+#~ msgstr "reproduzir a próxima entrada de lista"
+
+#~ msgid "play previous playlist entry"
+#~ msgstr "reproduzir a entrada de lista anterior"
+
+#~ msgid ""
+#~ "scan done!\n"
+#~ "%d services found!"
+#~ msgstr ""
+#~ "Busca Terminada!\n"
+#~ "%d Canais encontrados!"
+
+#~ msgid ""
+#~ "scan done!\n"
+#~ "No service found!"
+#~ msgstr ""
+#~ "Busca Terminada!\n"
+#~ "%d Nenhum canal encontrado!"
+
+#~ msgid ""
+#~ "scan done!\n"
+#~ "One service found!"
+#~ msgstr ""
+#~ "Busca terminada!\n"
+#~ "Canal encontrado!"
+
+#~ msgid ""
+#~ "scan in progress - %d %% done!\n"
+#~ "%d services found!"
+#~ msgstr ""
+#~ "Busca em progresso - %d %% Terminado!\n"
+#~ "%d Canais encontrados!"
+
+#~ msgid "show first tag"
+#~ msgstr "mostrar primeira marca"
+
+#~ msgid "show second tag"
+#~ msgstr "mostrar segunda marca"
+
+#~ msgid "skip backward (self defined)"
+#~ msgstr "voltar atrás (autodefinido)"
+
+#~ msgid "skip forward (self defined)"
+#~ msgstr "avançar (autodefinido)"
+
+#~ msgid "text"
+#~ msgstr "texto"

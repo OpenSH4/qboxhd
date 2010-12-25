@@ -1,0 +1,15 @@
+#
+# modprobe.d/player2
+#
+
+install player2 \
+    /bin/grep -q 'STb710' /proc/cpuinfo && ( \
+		/sbin/modprobe mpeg2hw mmeName=MPEG2_TRANSFORMER1; \
+		/sbin/modprobe --ignore-install player2; \
+		/sbin/modprobe sth264pp; \
+		/sbin/modprobe stmalloc  \
+    ) || ( \
+		/sbin/modprobe --ignore-install player2; \
+		/sbin/modprobe sth264pp; \
+		/sbin/modprobe stmalloc  \
+    )

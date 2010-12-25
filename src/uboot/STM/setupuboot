@@ -1,0 +1,5 @@
+#!/usr/bin/kermit +
+assign \%m \Fdirname(\%0)
+take \%m/kscript
+serialsetupub
+exit

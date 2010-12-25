@@ -1,0 +1,122 @@
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/exports.h:6,
+                 from stubs.c:1:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:11: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:18: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/little_endian.h:12,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:33,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/exports.h:6,
+                 from stubs.c:1:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:100: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:113: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:127: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from hello_world.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:11: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:18: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/little_endian.h:12,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:33,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from hello_world.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:100: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:113: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:127: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from cache.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:11: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:18: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/little_endian.h:12,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:33,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from cache.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:100: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:113: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:127: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from codec.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:11: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:18: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/little_endian.h:12,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:33,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from codec.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:100: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:113: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:127: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from cpu.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:11: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:18: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/little_endian.h:12,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:33,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from cpu.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:100: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:113: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:127: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from dsp.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:11: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:18: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/little_endian.h:12,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:33,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from dsp.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:100: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:113: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:127: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from ether.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:11: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:18: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/little_endian.h:12,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:33,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from ether.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:100: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:113: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:127: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from i2c.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:11: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:18: warning: type qualifiers ignored on function return type
+In file included from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/little_endian.h:12,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/byteorder.h:33,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/asm/bitops.h:28,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/bitops.h:69,
+                 from /home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/common.h:36,
+                 from i2c.c:24:
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:100: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:113: warning: type qualifiers ignored on function return type
+/home/utente/U-BOOT-TRASLATE/u-boot-1.1.2_stm22_0020/include/linux/byteorder/swab.h:127: warning: type qualifiers ignored on function return type

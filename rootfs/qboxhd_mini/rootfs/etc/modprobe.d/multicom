@@ -1,0 +1,35 @@
+#
+# modprobe.d/multicom
+#
+# Module configuration for multicom
+#
+
+# Automatically register the correct h/ware mailboxes
+install embxmailbox \
+    /bin/grep -q 'STx7200' /proc/cpuinfo && ( \
+        /sbin/modprobe --ignore-install embxmailbox \
+			mailbox0=0xfd800000:44:set2 mailbox1=0xfd801000:0 mailbox2=0xfd802000:0 mailbox3=0xfd803000:0 ; \
+    ) || ( \
+        /sbin/modprobe --ignore-install embxmailbox \
+            mailbox0=0xb9211000:136:set2 mailbox1=0xb9212000:0 ; \
+    )
+
+# Automatically configure the embxshm transport based on the processor type
+install embxshm \
+    /bin/grep -q 'STx7200' /proc/cpuinfo && ( \
+        /sbin/modprobe --ignore-install embxshm \
+        mailbox0=shm:0:31:0x60000000:0:256:256:0:1024:0x40000000:0x08000000:0x80000000:0x08000000 ; \
+    ) || ( \
+        /sbin/modprobe --ignore-install embxshm \
+            mailbox0=shm:0:7:0x60000000:0:256:256:0:1024:0xa4000000:0x10000000 ; \
+    )
+
+# MME
+options mme_host transport0=shm
+install mme_host \
+   /sbin/modprobe stslave; \
+   /sbin/modprobe embxshm; \
+   /sbin/modprobe --ignore-install mme_host
+
+#		mailbox0=0xfd800000:0 mailbox1=0xfd801000:44:set2 mailbox2=0xfd802000:0 mailbox3=0xfd803000:0 ; \
+#             mailbox0=0xfd800000:44:set2 mailbox1=0xfd801000:0 mailbox2=0xfd820000:0 mailbox3=0xfd830000:0 ; \

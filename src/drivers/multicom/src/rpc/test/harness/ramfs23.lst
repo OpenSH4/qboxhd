@@ -1,0 +1,848 @@
+/:
+total 21
+drwxr-xr-x   2 0 0  1256 Nov 24 16:44 bin
+drwxr-xr-x   6 0 0 11640 Nov 24 16:49 dev
+drwxr-xr-x   3 0 0  1896 Nov 24 17:24 lib
+lrwxrwxrwx   1 0 0    11 Nov 24 16:44 linuxrc -> bin/busybox
+drwxr-xr-x   2 0 0    48 Oct 25 13:51 proc
+drwxr-xr-x   2 0 0   440 Nov 24 16:44 sbin
+drwxr-xr-x   6 0 0   144 Nov 24 17:26 usr
+
+/bin:
+total 321
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 ash -> busybox
+-rwxr-xr-x  1 0 0 300088 Oct 25 16:23 busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 cat -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 chgrp -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 chmod -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 chown -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 cp -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 date -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 dd -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 df -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 dmesg -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 echo -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 egrep -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 false -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 fgrep -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 getopt -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 grep -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 gunzip -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 gzip -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 hostname -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 kill -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 ln -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 login -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 ls -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 mkdir -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 mknod -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 mktemp -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 more -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 mount -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 mv -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 pidof -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 ping -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 ps -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 pwd -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 rm -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 rmdir -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 sed -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 sh -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 sleep -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 stty -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 sync -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 tar -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 touch -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 true -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 umount -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 uname -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 uncompress -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 usleep -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 vi -> busybox
+lrwxrwxrwx  1 0 0      7 Nov 24 16:44 zcat -> busybox
+
+/dev:
+total 11
+crw-rw----  1 0  0  14,   4 Oct 13 16:28 audio
+crw-rw----  1 0  0  14,  20 Oct 13 16:28 audio1
+crw-rw----  1 0  0  14,  36 Oct 13 16:28 audio2
+crw-rw----  1 0  0  14,  52 Oct 13 16:28 audio3
+crw-rw----  1 0  0  14,   7 Oct 13 16:28 audioctl
+crw-------  1 0  5   5,   1 Oct 13 16:28 console
+lrwxrwxrwx  1 0  0       11 Nov 24 16:45 core -> /proc/kcore
+crw-rw----  1 0  0  14,   3 Oct 13 16:28 dsp
+crw-rw----  1 0  0  14,  19 Oct 13 16:28 dsp1
+crw-rw----  1 0  0  14,  35 Oct 13 16:28 dsp2
+crw-rw----  1 0  0  14,  51 Oct 13 16:28 dsp3
+crw-rw----  1 0  0  29,   0 Oct 13 16:28 fb0
+crw-rw----  1 0  0  29,   1 Oct 13 16:28 fb1
+crw-rw----  1 0  0  29,   2 Oct 13 16:28 fb2
+crw-rw----  1 0  0  29,   3 Oct 13 16:28 fb3
+crw-rw----  1 0  0  29,   4 Oct 13 16:28 fb4
+crw-rw----  1 0  0  29,   5 Oct 13 16:28 fb5
+crw-rw----  1 0  0  29,   6 Oct 13 16:28 fb6
+crw-rw----  1 0  0  29,   7 Oct 13 16:28 fb7
+lrwxrwxrwx  1 0  0       13 Nov 24 16:45 fd -> /proc/self/fd
+crw-rw-rw-  1 0  0   1,   7 Oct 13 16:28 full
+brw-rw----  1 0  6   3,   0 Oct 13 16:28 hda
+brw-rw----  1 0  6   3,   1 Oct 13 16:28 hda1
+brw-rw----  1 0  6   3,  10 Oct 13 16:28 hda10
+brw-rw----  1 0  6   3,  11 Oct 13 16:28 hda11
+brw-rw----  1 0  6   3,  12 Oct 13 16:28 hda12
+brw-rw----  1 0  6   3,  13 Oct 13 16:28 hda13
+brw-rw----  1 0  6   3,  14 Oct 13 16:28 hda14
+brw-rw----  1 0  6   3,  15 Oct 13 16:28 hda15
+brw-rw----  1 0  6   3,  16 Oct 13 16:28 hda16
+brw-rw----  1 0  6   3,  17 Oct 13 16:28 hda17
+brw-rw----  1 0  6   3,  18 Oct 13 16:28 hda18
+brw-rw----  1 0  6   3,  19 Oct 13 16:28 hda19
+brw-rw----  1 0  6   3,   2 Oct 13 16:28 hda2
+brw-rw----  1 0  6   3,  20 Oct 13 16:28 hda20
+brw-rw----  1 0  6   3,   3 Oct 13 16:28 hda3
+brw-rw----  1 0  6   3,   4 Oct 13 16:28 hda4
+brw-rw----  1 0  6   3,   5 Oct 13 16:28 hda5
+brw-rw----  1 0  6   3,   6 Oct 13 16:28 hda6
+brw-rw----  1 0  6   3,   7 Oct 13 16:28 hda7
+brw-rw----  1 0  6   3,   8 Oct 13 16:28 hda8
+brw-rw----  1 0  6   3,   9 Oct 13 16:28 hda9
+brw-rw----  1 0  6   3,  64 Oct 13 16:28 hdb
+brw-rw----  1 0  6   3,  65 Oct 13 16:28 hdb1
+brw-rw----  1 0  6   3,  74 Oct 13 16:28 hdb10
+brw-rw----  1 0  6   3,  75 Oct 13 16:28 hdb11
+brw-rw----  1 0  6   3,  76 Oct 13 16:28 hdb12
+brw-rw----  1 0  6   3,  77 Oct 13 16:28 hdb13
+brw-rw----  1 0  6   3,  78 Oct 13 16:28 hdb14
+brw-rw----  1 0  6   3,  79 Oct 13 16:28 hdb15
+brw-rw----  1 0  6   3,  80 Oct 13 16:28 hdb16
+brw-rw----  1 0  6   3,  81 Oct 13 16:28 hdb17
+brw-rw----  1 0  6   3,  82 Oct 13 16:28 hdb18
+brw-rw----  1 0  6   3,  83 Oct 13 16:28 hdb19
+brw-rw----  1 0  6   3,  66 Oct 13 16:28 hdb2
+brw-rw----  1 0  6   3,  84 Oct 13 16:28 hdb20
+brw-rw----  1 0  6   3,  67 Oct 13 16:28 hdb3
+brw-rw----  1 0  6   3,  68 Oct 13 16:28 hdb4
+brw-rw----  1 0  6   3,  69 Oct 13 16:28 hdb5
+brw-rw----  1 0  6   3,  70 Oct 13 16:28 hdb6
+brw-rw----  1 0  6   3,  71 Oct 13 16:28 hdb7
+brw-rw----  1 0  6   3,  72 Oct 13 16:28 hdb8
+brw-rw----  1 0  6   3,  73 Oct 13 16:28 hdb9
+brw-rw----  1 0  6  22,   0 Oct 13 16:28 hdc
+brw-rw----  1 0  6  22,   1 Oct 13 16:28 hdc1
+brw-rw----  1 0  6  22,  10 Oct 13 16:28 hdc10
+brw-rw----  1 0  6  22,  11 Oct 13 16:28 hdc11
+brw-rw----  1 0  6  22,  12 Oct 13 16:28 hdc12
+brw-rw----  1 0  6  22,  13 Oct 13 16:28 hdc13
+brw-rw----  1 0  6  22,  14 Oct 13 16:28 hdc14
+brw-rw----  1 0  6  22,  15 Oct 13 16:28 hdc15
+brw-rw----  1 0  6  22,  16 Oct 13 16:28 hdc16
+brw-rw----  1 0  6  22,  17 Oct 13 16:28 hdc17
+brw-rw----  1 0  6  22,  18 Oct 13 16:28 hdc18
+brw-rw----  1 0  6  22,  19 Oct 13 16:28 hdc19
+brw-rw----  1 0  6  22,   2 Oct 13 16:28 hdc2
+brw-rw----  1 0  6  22,  20 Oct 13 16:28 hdc20
+brw-rw----  1 0  6  22,   3 Oct 13 16:28 hdc3
+brw-rw----  1 0  6  22,   4 Oct 13 16:28 hdc4
+brw-rw----  1 0  6  22,   5 Oct 13 16:28 hdc5
+brw-rw----  1 0  6  22,   6 Oct 13 16:28 hdc6
+brw-rw----  1 0  6  22,   7 Oct 13 16:28 hdc7
+brw-rw----  1 0  6  22,   8 Oct 13 16:28 hdc8
+brw-rw----  1 0  6  22,   9 Oct 13 16:28 hdc9
+brw-rw----  1 0  6  22,  64 Oct 13 16:28 hdd
+brw-rw----  1 0  6  22,  65 Oct 13 16:28 hdd1
+brw-rw----  1 0  6  22,  74 Oct 13 16:28 hdd10
+brw-rw----  1 0  6  22,  75 Oct 13 16:28 hdd11
+brw-rw----  1 0  6  22,  76 Oct 13 16:28 hdd12
+brw-rw----  1 0  6  22,  77 Oct 13 16:28 hdd13
+brw-rw----  1 0  6  22,  78 Oct 13 16:28 hdd14
+brw-rw----  1 0  6  22,  79 Oct 13 16:28 hdd15
+brw-rw----  1 0  6  22,  80 Oct 13 16:28 hdd16
+brw-rw----  1 0  6  22,  81 Oct 13 16:28 hdd17
+brw-rw----  1 0  6  22,  82 Oct 13 16:28 hdd18
+brw-rw----  1 0  6  22,  83 Oct 13 16:28 hdd19
+brw-rw----  1 0  6  22,  66 Oct 13 16:28 hdd2
+brw-rw----  1 0  6  22,  84 Oct 13 16:28 hdd20
+brw-rw----  1 0  6  22,  67 Oct 13 16:28 hdd3
+brw-rw----  1 0  6  22,  68 Oct 13 16:28 hdd4
+brw-rw----  1 0  6  22,  69 Oct 13 16:28 hdd5
+brw-rw----  1 0  6  22,  70 Oct 13 16:28 hdd6
+brw-rw----  1 0  6  22,  71 Oct 13 16:28 hdd7
+brw-rw----  1 0  6  22,  72 Oct 13 16:28 hdd8
+brw-rw----  1 0  6  22,  73 Oct 13 16:28 hdd9
+crw-------  1 0  0  89,   0 Oct 13 16:28 i2c-0
+crw-------  1 0  0  89,   1 Oct 13 16:28 i2c-1
+crw-------  1 0  0  89,   2 Oct 13 16:28 i2c-2
+crw-------  1 0  0  89,   3 Oct 13 16:28 i2c-3
+crw-------  1 0  0  89,   4 Oct 13 16:28 i2c-4
+crw-------  1 0  0  89,   5 Oct 13 16:28 i2c-5
+crw-------  1 0  0  89,   6 Oct 13 16:28 i2c-6
+crw-------  1 0  0  89,   7 Oct 13 16:28 i2c-7
+crw-rw----  1 0  0  10,   2 Oct 13 16:28 inportbm
+drwxr-xr-x  2 0  0      360 Oct 13 16:28 input
+crw-rw----  1 0  0  10,   4 Oct 13 16:28 jbm
+crw-r-----  1 0 15   1,   2 Oct 13 16:28 kmem
+crw-rw----  1 0  0  61,   0 Oct 13 16:28 lirc
+crw-rw----  1 0  0  10,   0 Oct 13 16:28 logibm
+brw-rw----  1 0  6   7,   0 Oct 13 16:28 loop0
+brw-rw----  1 0  6   7,   1 Oct 13 16:28 loop1
+brw-rw----  1 0  6   7,   2 Oct 13 16:28 loop2
+brw-rw----  1 0  6   7,   3 Oct 13 16:28 loop3
+brw-rw----  1 0  6   7,   4 Oct 13 16:28 loop4
+brw-rw----  1 0  6   7,   5 Oct 13 16:28 loop5
+brw-rw----  1 0  6   7,   6 Oct 13 16:28 loop6
+brw-rw----  1 0  6   7,   7 Oct 13 16:28 loop7
+crw-r-----  1 0 15   1,   1 Oct 13 16:28 mem
+crw-rw-r--  1 0  0 231,   0 Jul 23 08:57 mme
+crw-rw-r--  1 0  0 241,   0 Jul 23 08:57 mmetest
+crw-rw----  1 0  0  14,   0 Oct 13 16:28 mixer
+crw-rw----  1 0  0  14,  16 Oct 13 16:28 mixer1
+crw-rw----  1 0  0  14,  32 Oct 13 16:28 mixer2
+crw-rw----  1 0  0  14,  48 Oct 13 16:28 mixer3
+lrwxrwxrwx  1 0  0       17 Nov 24 16:45 mouse -> /dev/input/mouse0
+crw-rw----  1 0  6  90,   0 Oct 13 16:28 mtd0
+crw-rw----  1 0  6  90,   2 Oct 13 16:28 mtd1
+crw-rw----  1 0  6  90,  20 Oct 13 16:28 mtd10
+crw-rw----  1 0  6  90,  22 Oct 13 16:28 mtd11
+crw-rw----  1 0  6  90,  24 Oct 13 16:28 mtd12
+crw-rw----  1 0  6  90,  26 Oct 13 16:28 mtd13
+crw-rw----  1 0  6  90,  28 Oct 13 16:28 mtd14
+crw-rw----  1 0  6  90,  30 Oct 13 16:28 mtd15
+crw-rw----  1 0  6  90,  32 Oct 13 16:28 mtd16
+crw-rw----  1 0  6  90,   4 Oct 13 16:28 mtd2
+crw-rw----  1 0  6  90,   6 Oct 13 16:28 mtd3
+crw-rw----  1 0  6  90,   8 Oct 13 16:28 mtd4
+crw-rw----  1 0  6  90,  10 Oct 13 16:28 mtd5
+crw-rw----  1 0  6  90,  12 Oct 13 16:28 mtd6
+crw-rw----  1 0  6  90,  14 Oct 13 16:28 mtd7
+crw-rw----  1 0  6  90,  16 Oct 13 16:28 mtd8
+crw-rw----  1 0  6  90,  18 Oct 13 16:28 mtd9
+brw-rw----  1 0  6  31,   0 Oct 13 16:28 mtdblock0
+brw-rw----  1 0  6  31,   1 Oct 13 16:28 mtdblock1
+brw-rw----  1 0  6  31,  10 Oct 13 16:28 mtdblock10
+brw-rw----  1 0  6  31,  11 Oct 13 16:28 mtdblock11
+brw-rw----  1 0  6  31,  12 Oct 13 16:28 mtdblock12
+brw-rw----  1 0  6  31,  13 Oct 13 16:28 mtdblock13
+brw-rw----  1 0  6  31,  14 Oct 13 16:28 mtdblock14
+brw-rw----  1 0  6  31,  15 Oct 13 16:28 mtdblock15
+brw-rw----  1 0  6  31,  16 Oct 13 16:28 mtdblock16
+brw-rw----  1 0  6  31,   2 Oct 13 16:28 mtdblock2
+brw-rw----  1 0  6  31,   3 Oct 13 16:28 mtdblock3
+brw-rw----  1 0  6  31,   4 Oct 13 16:28 mtdblock4
+brw-rw----  1 0  6  31,   5 Oct 13 16:28 mtdblock5
+brw-rw----  1 0  6  31,   6 Oct 13 16:28 mtdblock6
+brw-rw----  1 0  6  31,   7 Oct 13 16:28 mtdblock7
+brw-rw----  1 0  6  31,   8 Oct 13 16:28 mtdblock8
+brw-rw----  1 0  6  31,   9 Oct 13 16:28 mtdblock9
+crw-rw----  1 0  6  90,   1 Oct 13 16:28 mtdr0
+crw-rw----  1 0  6  90,   3 Oct 13 16:28 mtdr1
+crw-rw----  1 0  6  90,  21 Oct 13 16:28 mtdr10
+crw-rw----  1 0  6  90,  23 Oct 13 16:28 mtdr11
+crw-rw----  1 0  6  90,  25 Oct 13 16:28 mtdr12
+crw-rw----  1 0  6  90,  27 Oct 13 16:28 mtdr13
+crw-rw----  1 0  6  90,  29 Oct 13 16:28 mtdr14
+crw-rw----  1 0  6  90,  31 Oct 13 16:28 mtdr15
+crw-rw----  1 0  6  90,  33 Oct 13 16:28 mtdr16
+crw-rw----  1 0  6  90,   5 Oct 13 16:28 mtdr2
+crw-rw----  1 0  6  90,   7 Oct 13 16:28 mtdr3
+crw-rw----  1 0  6  90,   9 Oct 13 16:28 mtdr4
+crw-rw----  1 0  6  90,  11 Oct 13 16:28 mtdr5
+crw-rw----  1 0  6  90,  13 Oct 13 16:28 mtdr6
+crw-rw----  1 0  6  90,  15 Oct 13 16:28 mtdr7
+crw-rw----  1 0  6  90,  17 Oct 13 16:28 mtdr8
+crw-rw----  1 0  6  90,  19 Oct 13 16:28 mtdr9
+crw-rw----  1 0  6   9, 128 Oct 13 16:28 nst0
+crw-rw----  1 0  6   9, 224 Oct 13 16:28 nst0a
+crw-rw----  1 0  6   9, 160 Oct 13 16:28 nst0l
+crw-rw----  1 0  6   9, 192 Oct 13 16:28 nst0m
+crw-rw----  1 0  6   9, 129 Oct 13 16:28 nst1
+crw-rw----  1 0  6   9, 225 Oct 13 16:28 nst1a
+crw-rw----  1 0  6   9, 161 Oct 13 16:28 nst1l
+crw-rw----  1 0  6   9, 193 Oct 13 16:28 nst1m
+crw-rw-rw-  1 0  0   1,   3 Oct 13 16:28 null
+crw-r-----  1 0 15   1,   4 Oct 13 16:28 port
+crw-------  1 0  0 108,   0 Oct 13 16:28 ppp
+crw-rw----  1 0  0  10,   1 Oct 13 16:28 psaux
+crw-rw-rw-  1 0  5   5,   2 Oct 13 16:28 ptmx
+drwxr-xr-x  2 0  0       48 Oct 13 16:28 pts
+crw-rw-rw-  1 0  5   2,   0 Oct 13 16:28 ptyp0
+crw-rw-rw-  1 0  5   2,   1 Oct 13 16:28 ptyp1
+crw-rw-rw-  1 0  5   2,   2 Oct 13 16:28 ptyp2
+crw-rw-rw-  1 0  5   2,   3 Oct 13 16:28 ptyp3
+crw-rw-rw-  1 0  5   2,   4 Oct 13 16:28 ptyp4
+crw-rw-rw-  1 0  5   2,   5 Oct 13 16:28 ptyp5
+crw-rw-rw-  1 0  5   2,   6 Oct 13 16:28 ptyp6
+crw-rw-rw-  1 0  5   2,   7 Oct 13 16:28 ptyp7
+crw-rw-rw-  1 0  5   2,   8 Oct 13 16:28 ptyp8
+crw-rw-rw-  1 0  5   2,   9 Oct 13 16:28 ptyp9
+crw-rw-rw-  1 0  5   2,  10 Oct 13 16:28 ptypa
+crw-rw-rw-  1 0  5   2,  11 Oct 13 16:28 ptypb
+crw-rw-rw-  1 0  5   2,  12 Oct 13 16:28 ptypc
+crw-rw-rw-  1 0  5   2,  13 Oct 13 16:28 ptypd
+crw-rw-rw-  1 0  5   2,  14 Oct 13 16:28 ptype
+crw-rw-rw-  1 0  5   2,  15 Oct 13 16:28 ptypf
+crw-rw-rw-  1 0  5   2,  16 Oct 13 16:28 ptyq0
+crw-rw-rw-  1 0  5   2,  17 Oct 13 16:28 ptyq1
+crw-rw-rw-  1 0  5   2,  18 Oct 13 16:28 ptyq2
+crw-rw-rw-  1 0  5   2,  19 Oct 13 16:28 ptyq3
+crw-rw-rw-  1 0  5   2,  20 Oct 13 16:28 ptyq4
+crw-rw-rw-  1 0  5   2,  21 Oct 13 16:28 ptyq5
+crw-rw-rw-  1 0  5   2,  22 Oct 13 16:28 ptyq6
+crw-rw-rw-  1 0  5   2,  23 Oct 13 16:28 ptyq7
+crw-rw-rw-  1 0  5   2,  24 Oct 13 16:28 ptyq8
+crw-rw-rw-  1 0  5   2,  25 Oct 13 16:28 ptyq9
+crw-rw-rw-  1 0  5   2,  26 Oct 13 16:28 ptyqa
+crw-rw-rw-  1 0  5   2,  27 Oct 13 16:28 ptyqb
+crw-rw-rw-  1 0  5   2,  28 Oct 13 16:28 ptyqc
+crw-rw-rw-  1 0  5   2,  29 Oct 13 16:28 ptyqd
+crw-rw-rw-  1 0  5   2,  30 Oct 13 16:28 ptyqe
+crw-rw-rw-  1 0  5   2,  31 Oct 13 16:28 ptyqf
+lrwxrwxrwx  1 0  0        4 Nov 24 16:45 ram -> ram1
+brw-rw----  1 0  6   1,   0 Oct 13 16:28 ram0
+brw-rw----  1 0  6   1,   1 Oct 13 16:28 ram1
+brw-rw----  1 0  6   1,  10 Oct 13 16:28 ram10
+brw-rw----  1 0  6   1,  11 Oct 13 16:28 ram11
+brw-rw----  1 0  6   1,  12 Oct 13 16:28 ram12
+brw-rw----  1 0  6   1,  13 Oct 13 16:28 ram13
+brw-rw----  1 0  6   1,  14 Oct 13 16:28 ram14
+brw-rw----  1 0  6   1,  15 Oct 13 16:28 ram15
+brw-rw----  1 0  6   1,  16 Oct 13 16:28 ram16
+brw-rw----  1 0  6   1,   2 Oct 13 16:28 ram2
+brw-rw----  1 0  6   1,   3 Oct 13 16:28 ram3
+brw-rw----  1 0  6   1,   4 Oct 13 16:28 ram4
+brw-rw----  1 0  6   1,   5 Oct 13 16:28 ram5
+brw-rw----  1 0  6   1,   6 Oct 13 16:28 ram6
+brw-rw----  1 0  6   1,   7 Oct 13 16:28 ram7
+brw-rw----  1 0  6   1,   8 Oct 13 16:28 ram8
+brw-rw----  1 0  6   1,   9 Oct 13 16:28 ram9
+crw-rw-rw-  1 0  0   1,   8 Oct 13 16:28 random
+crw-rw----  1 0  0  35,  64 Oct 13 16:28 rmidi0
+crw-rw----  1 0  0  35,  65 Oct 13 16:28 rmidi1
+crw-rw----  1 0  0  35,  66 Oct 13 16:28 rmidi2
+crw-rw----  1 0  0  35,  67 Oct 13 16:28 rmidi3
+crw-rw----  1 0  0  10, 135 Oct 13 16:28 rtc
+brw-rw----  1 0  6  11,   0 Oct 13 16:28 scd0
+brw-rw----  1 0  6  11,   1 Oct 13 16:28 scd1
+brw-rw----  1 0  6   8,   0 Oct 13 16:28 sda
+brw-rw----  1 0  6   8,   1 Oct 13 16:28 sda1
+brw-rw----  1 0  6   8,  10 Oct 13 16:28 sda10
+brw-rw----  1 0  6   8,  11 Oct 13 16:28 sda11
+brw-rw----  1 0  6   8,  12 Oct 13 16:28 sda12
+brw-rw----  1 0  6   8,  13 Oct 13 16:28 sda13
+brw-rw----  1 0  6   8,  14 Oct 13 16:28 sda14
+brw-rw----  1 0  6   8,  15 Oct 13 16:28 sda15
+brw-rw----  1 0  6   8,   2 Oct 13 16:28 sda2
+brw-rw----  1 0  6   8,   3 Oct 13 16:28 sda3
+brw-rw----  1 0  6   8,   4 Oct 13 16:28 sda4
+brw-rw----  1 0  6   8,   5 Oct 13 16:28 sda5
+brw-rw----  1 0  6   8,   6 Oct 13 16:28 sda6
+brw-rw----  1 0  6   8,   7 Oct 13 16:28 sda7
+brw-rw----  1 0  6   8,   8 Oct 13 16:28 sda8
+brw-rw----  1 0  6   8,   9 Oct 13 16:28 sda9
+brw-rw----  1 0  6   8,  16 Oct 13 16:28 sdb
+brw-rw----  1 0  6   8,  17 Oct 13 16:28 sdb1
+brw-rw----  1 0  6   8,  26 Oct 13 16:28 sdb10
+brw-rw----  1 0  6   8,  27 Oct 13 16:28 sdb11
+brw-rw----  1 0  6   8,  28 Oct 13 16:28 sdb12
+brw-rw----  1 0  6   8,  29 Oct 13 16:28 sdb13
+brw-rw----  1 0  6   8,  30 Oct 13 16:28 sdb14
+brw-rw----  1 0  6   8,  31 Oct 13 16:28 sdb15
+brw-rw----  1 0  6   8,  18 Oct 13 16:28 sdb2
+brw-rw----  1 0  6   8,  19 Oct 13 16:28 sdb3
+brw-rw----  1 0  6   8,  20 Oct 13 16:28 sdb4
+brw-rw----  1 0  6   8,  21 Oct 13 16:28 sdb5
+brw-rw----  1 0  6   8,  22 Oct 13 16:28 sdb6
+brw-rw----  1 0  6   8,  23 Oct 13 16:28 sdb7
+brw-rw----  1 0  6   8,  24 Oct 13 16:28 sdb8
+brw-rw----  1 0  6   8,  25 Oct 13 16:28 sdb9
+brw-rw----  1 0  6   8,  32 Oct 13 16:28 sdc
+brw-rw----  1 0  6   8,  33 Oct 13 16:28 sdc1
+brw-rw----  1 0  6   8,  42 Oct 13 16:28 sdc10
+brw-rw----  1 0  6   8,  43 Oct 13 16:28 sdc11
+brw-rw----  1 0  6   8,  44 Oct 13 16:28 sdc12
+brw-rw----  1 0  6   8,  45 Oct 13 16:28 sdc13
+brw-rw----  1 0  6   8,  46 Oct 13 16:28 sdc14
+brw-rw----  1 0  6   8,  47 Oct 13 16:28 sdc15
+brw-rw----  1 0  6   8,  34 Oct 13 16:28 sdc2
+brw-rw----  1 0  6   8,  35 Oct 13 16:28 sdc3
+brw-rw----  1 0  6   8,  36 Oct 13 16:28 sdc4
+brw-rw----  1 0  6   8,  37 Oct 13 16:28 sdc5
+brw-rw----  1 0  6   8,  38 Oct 13 16:28 sdc6
+brw-rw----  1 0  6   8,  39 Oct 13 16:28 sdc7
+brw-rw----  1 0  6   8,  40 Oct 13 16:28 sdc8
+brw-rw----  1 0  6   8,  41 Oct 13 16:28 sdc9
+brw-rw----  1 0  6   8,  48 Oct 13 16:28 sdd
+brw-rw----  1 0  6   8,  49 Oct 13 16:28 sdd1
+brw-rw----  1 0  6   8,  58 Oct 13 16:28 sdd10
+brw-rw----  1 0  6   8,  59 Oct 13 16:28 sdd11
+brw-rw----  1 0  6   8,  60 Oct 13 16:28 sdd12
+brw-rw----  1 0  6   8,  61 Oct 13 16:28 sdd13
+brw-rw----  1 0  6   8,  62 Oct 13 16:28 sdd14
+brw-rw----  1 0  6   8,  63 Oct 13 16:28 sdd15
+brw-rw----  1 0  6   8,  50 Oct 13 16:28 sdd2
+brw-rw----  1 0  6   8,  51 Oct 13 16:28 sdd3
+brw-rw----  1 0  6   8,  52 Oct 13 16:28 sdd4
+brw-rw----  1 0  6   8,  53 Oct 13 16:28 sdd5
+brw-rw----  1 0  6   8,  54 Oct 13 16:28 sdd6
+brw-rw----  1 0  6   8,  55 Oct 13 16:28 sdd7
+brw-rw----  1 0  6   8,  56 Oct 13 16:28 sdd8
+brw-rw----  1 0  6   8,  57 Oct 13 16:28 sdd9
+crw-rw----  1 0  0  14,   1 Oct 13 16:28 sequencer
+crw-------  1 0  6  21,   0 Oct 13 16:28 sg0
+crw-------  1 0  6  21,   1 Oct 13 16:28 sg1
+crw-------  1 0  6  21,  10 Oct 13 16:28 sg10
+crw-------  1 0  6  21,  11 Oct 13 16:28 sg11
+crw-------  1 0  6  21,  12 Oct 13 16:28 sg12
+crw-------  1 0  6  21,  13 Oct 13 16:28 sg13
+crw-------  1 0  6  21,  14 Oct 13 16:28 sg14
+crw-------  1 0  6  21,  15 Oct 13 16:28 sg15
+crw-------  1 0  6  21,  16 Oct 13 16:28 sg16
+crw-------  1 0  6  21,   2 Oct 13 16:28 sg2
+crw-------  1 0  6  21,   3 Oct 13 16:28 sg3
+crw-------  1 0  6  21,   4 Oct 13 16:28 sg4
+crw-------  1 0  6  21,   5 Oct 13 16:28 sg5
+crw-------  1 0  6  21,   6 Oct 13 16:28 sg6
+crw-------  1 0  6  21,   7 Oct 13 16:28 sg7
+crw-------  1 0  6  21,   8 Oct 13 16:28 sg8
+crw-------  1 0  6  21,   9 Oct 13 16:28 sg9
+drwxr-xr-x  2 0  0       48 Oct 13 16:28 shm
+crw-rw----  1 0  0  35, 128 Oct 13 16:28 smpte0
+crw-rw----  1 0  0  35, 129 Oct 13 16:28 smpte1
+crw-rw----  1 0  0  35, 130 Oct 13 16:28 smpte2
+crw-rw----  1 0  0  35, 131 Oct 13 16:28 smpte3
+drwxr-xr-x  2 0  0     2912 Oct 13 16:28 snd
+crw-rw----  1 0  0  14,   6 Oct 13 16:28 sndstat
+lrwxrwxrwx  1 0  0        4 Nov 24 16:45 sr0 -> scd0
+lrwxrwxrwx  1 0  0        4 Nov 24 16:45 sr1 -> scd1
+crw-rw----  1 0  6   9,   0 Oct 13 16:28 st0
+crw-rw----  1 0  6   9,  96 Oct 13 16:28 st0a
+crw-rw----  1 0  6   9,  32 Oct 13 16:28 st0l
+crw-rw----  1 0  6   9,  64 Oct 13 16:28 st0m
+crw-rw----  1 0  6   9,   1 Oct 13 16:28 st1
+crw-rw----  1 0  6   9,  97 Oct 13 16:28 st1a
+crw-rw----  1 0  6   9,  33 Oct 13 16:28 st1l
+crw-rw----  1 0  6   9,  65 Oct 13 16:28 st1m
+crw-r--r--  1 0  0  63,   0 Aug 12 13:04 st20
+crw-r--r--  1 0  0  63,   0 Oct 13 16:28 st220
+lrwxrwxrwx  1 0  0        5 Nov 24 16:45 st220-0 -> st220
+crw-r--r--  1 0  0  63,   1 Oct 13 16:28 st220-1
+crw-r--r--  1 0  0  63,   2 Oct 13 16:28 st220-2
+crw-r--r--  1 0  0  63,   0 Oct 13 16:28 st231
+lrwxrwxrwx  1 0  0        5 Nov 24 16:45 st231-0 -> st231
+crw-r--r--  1 0  0  63,   1 Oct 13 16:28 st231-1
+lrwxrwxrwx  1 0  0        4 Nov 24 16:45 stderr -> fd/2
+lrwxrwxrwx  1 0  0        4 Nov 24 16:45 stdin -> fd/0
+lrwxrwxrwx  1 0  0        4 Nov 24 16:45 stdout -> fd/1
+crw-rw-rw-  1 0  5   5,   0 Oct 13 16:28 tty
+crw-------  1 0  5   4,   0 Oct 13 16:28 tty0
+crw-------  1 0  5   4,   1 Oct 13 16:28 tty1
+crw-------  1 0  5   4,  10 Oct 13 16:28 tty10
+crw-------  1 0  5   4,  11 Oct 13 16:28 tty11
+crw-------  1 0  5   4,  12 Oct 13 16:28 tty12
+crw-------  1 0  5   4,  13 Oct 13 16:28 tty13
+crw-------  1 0  5   4,  14 Oct 13 16:28 tty14
+crw-------  1 0  5   4,  15 Oct 13 16:28 tty15
+crw-------  1 0  5   4,  16 Oct 13 16:28 tty16
+crw-------  1 0  5   4,  17 Oct 13 16:28 tty17
+crw-------  1 0  5   4,  18 Oct 13 16:28 tty18
+crw-------  1 0  5   4,  19 Oct 13 16:28 tty19
+crw-------  1 0  5   4,   2 Oct 13 16:28 tty2
+crw-------  1 0  5   4,   3 Oct 13 16:28 tty3
+crw-------  1 0  5   4,   4 Oct 13 16:28 tty4
+crw-------  1 0  5   4,   5 Oct 13 16:28 tty5
+crw-------  1 0  5   4,   6 Oct 13 16:28 tty6
+crw-------  1 0  5   4,   7 Oct 13 16:28 tty7
+crw-------  1 0  5   4,   8 Oct 13 16:28 tty8
+crw-------  1 0  5   4,   9 Oct 13 16:28 tty9
+crw-rw----  1 0 13 204,  40 Oct 13 16:28 ttyAS0
+crw-rw----  1 0 13 204,  41 Oct 13 16:28 ttyAS1
+crw-rw----  1 0 13 204,  42 Oct 13 16:28 ttyAS2
+crw-rw----  1 0 13 204,  43 Oct 13 16:28 ttyAS3
+crw-rw----  1 0 13 204,  12 Oct 13 16:28 ttyFW0
+crw-rw----  1 0 13 204,  13 Oct 13 16:28 ttyFW1
+crw-rw----  1 0 13 204,  14 Oct 13 16:28 ttyFW2
+crw-rw----  1 0 13 204,  15 Oct 13 16:28 ttyFW3
+crw-rw-rw-  1 0  5   3,   0 Oct 13 16:28 ttyp0
+crw-rw-rw-  1 0  5   3,   1 Oct 13 16:28 ttyp1
+crw-rw-rw-  1 0  5   3,   2 Oct 13 16:28 ttyp2
+crw-rw-rw-  1 0  5   3,   3 Oct 13 16:28 ttyp3
+crw-rw-rw-  1 0  5   3,   4 Oct 13 16:28 ttyp4
+crw-rw-rw-  1 0  5   3,   5 Oct 13 16:28 ttyp5
+crw-rw-rw-  1 0  5   3,   6 Oct 13 16:28 ttyp6
+crw-rw-rw-  1 0  5   3,   7 Oct 13 16:28 ttyp7
+crw-rw-rw-  1 0  5   3,   8 Oct 13 16:28 ttyp8
+crw-rw-rw-  1 0  5   3,   9 Oct 13 16:28 ttyp9
+crw-rw-rw-  1 0  5   3,  10 Oct 13 16:28 ttypa
+crw-rw-rw-  1 0  5   3,  11 Oct 13 16:28 ttypb
+crw-rw-rw-  1 0  5   3,  12 Oct 13 16:28 ttypc
+crw-rw-rw-  1 0  5   3,  13 Oct 13 16:28 ttypd
+crw-rw-rw-  1 0  5   3,  14 Oct 13 16:28 ttype
+crw-rw-rw-  1 0  5   3,  15 Oct 13 16:28 ttypf
+crw-rw-rw-  1 0  5   3,  16 Oct 13 16:28 ttyq0
+crw-rw-rw-  1 0  5   3,  17 Oct 13 16:28 ttyq1
+crw-rw-rw-  1 0  5   3,  18 Oct 13 16:28 ttyq2
+crw-rw-rw-  1 0  5   3,  19 Oct 13 16:28 ttyq3
+crw-rw-rw-  1 0  5   3,  20 Oct 13 16:28 ttyq4
+crw-rw-rw-  1 0  5   3,  21 Oct 13 16:28 ttyq5
+crw-rw-rw-  1 0  5   3,  22 Oct 13 16:28 ttyq6
+crw-rw-rw-  1 0  5   3,  23 Oct 13 16:28 ttyq7
+crw-rw-rw-  1 0  5   3,  24 Oct 13 16:28 ttyq8
+crw-rw-rw-  1 0  5   3,  25 Oct 13 16:28 ttyq9
+crw-rw-rw-  1 0  5   3,  26 Oct 13 16:28 ttyqa
+crw-rw-rw-  1 0  5   3,  27 Oct 13 16:28 ttyqb
+crw-rw-rw-  1 0  5   3,  28 Oct 13 16:28 ttyqc
+crw-rw-rw-  1 0  5   3,  29 Oct 13 16:28 ttyqd
+crw-rw-rw-  1 0  5   3,  30 Oct 13 16:28 ttyqe
+crw-rw-rw-  1 0  5   3,  31 Oct 13 16:28 ttyqf
+crw-rw----  1 0 13 204,   8 Oct 13 16:28 ttySC0
+crw-rw----  1 0 13 204,   9 Oct 13 16:28 ttySC1
+crw-rw----  1 0 13 204,  10 Oct 13 16:28 ttySC2
+crw-rw----  1 0 13 204,  11 Oct 13 16:28 ttySC3
+cr--r--r--  1 0  0   1,   9 Oct 13 16:28 urandom
+lrwxrwxrwx  1 0  0        4 Nov 24 16:45 vcs -> vcs0
+crw-------  1 0  5   7,   0 Oct 13 16:28 vcs0
+crw-------  1 0  5   7,   1 Oct 13 16:28 vcs1
+crw-------  1 0  5   7,  10 Oct 13 16:28 vcs10
+crw-------  1 0  5   7,  11 Oct 13 16:28 vcs11
+crw-------  1 0  5   7,  12 Oct 13 16:28 vcs12
+crw-------  1 0  5   7,  13 Oct 13 16:28 vcs13
+crw-------  1 0  5   7,  14 Oct 13 16:28 vcs14
+crw-------  1 0  5   7,  15 Oct 13 16:28 vcs15
+crw-------  1 0  5   7,  16 Oct 13 16:28 vcs16
+crw-------  1 0  5   7,  17 Oct 13 16:28 vcs17
+crw-------  1 0  5   7,  18 Oct 13 16:28 vcs18
+crw-------  1 0  5   7,  19 Oct 13 16:28 vcs19
+crw-------  1 0  5   7,   2 Oct 13 16:28 vcs2
+crw-------  1 0  5   7,   3 Oct 13 16:28 vcs3
+crw-------  1 0  5   7,   4 Oct 13 16:28 vcs4
+crw-------  1 0  5   7,   5 Oct 13 16:28 vcs5
+crw-------  1 0  5   7,   6 Oct 13 16:28 vcs6
+crw-------  1 0  5   7,   7 Oct 13 16:28 vcs7
+crw-------  1 0  5   7,   8 Oct 13 16:28 vcs8
+crw-------  1 0  5   7,   9 Oct 13 16:28 vcs9
+lrwxrwxrwx  1 0  0        5 Nov 24 16:45 vcsa -> vcsa0
+crw-------  1 0  5   7, 128 Oct 13 16:28 vcsa0
+crw-------  1 0  5   7, 129 Oct 13 16:28 vcsa1
+crw-------  1 0  5   7, 138 Oct 13 16:28 vcsa10
+crw-------  1 0  5   7, 139 Oct 13 16:28 vcsa11
+crw-------  1 0  5   7, 140 Oct 13 16:28 vcsa12
+crw-------  1 0  5   7, 141 Oct 13 16:28 vcsa13
+crw-------  1 0  5   7, 142 Oct 13 16:28 vcsa14
+crw-------  1 0  5   7, 143 Oct 13 16:28 vcsa15
+crw-------  1 0  5   7, 144 Oct 13 16:28 vcsa16
+crw-------  1 0  5   7, 145 Oct 13 16:28 vcsa17
+crw-------  1 0  5   7, 146 Oct 13 16:28 vcsa18
+crw-------  1 0  5   7, 147 Oct 13 16:28 vcsa19
+crw-------  1 0  5   7, 130 Oct 13 16:28 vcsa2
+crw-------  1 0  5   7, 131 Oct 13 16:28 vcsa3
+crw-------  1 0  5   7, 132 Oct 13 16:28 vcsa4
+crw-------  1 0  5   7, 133 Oct 13 16:28 vcsa5
+crw-------  1 0  5   7, 134 Oct 13 16:28 vcsa6
+crw-------  1 0  5   7, 135 Oct 13 16:28 vcsa7
+crw-------  1 0  5   7, 136 Oct 13 16:28 vcsa8
+crw-------  1 0  5   7, 137 Oct 13 16:28 vcsa9
+crw-rw-rw-  1 0  0   1,   5 Oct 13 16:28 zero
+
+/dev/input:
+total 0
+crw-rw----  1 0 0 13, 64 Oct 13 16:28 event0
+crw-rw----  1 0 0 13, 65 Oct 13 16:28 event1
+crw-rw----  1 0 0 13, 66 Oct 13 16:28 event2
+crw-rw----  1 0 0 13, 67 Oct 13 16:28 event3
+crw-rw----  1 0 0 13,  0 Oct 13 16:28 js0
+crw-rw----  1 0 0 13,  1 Oct 13 16:28 js1
+crw-rw----  1 0 0 13,  2 Oct 13 16:28 js2
+crw-rw----  1 0 0 13,  3 Oct 13 16:28 js3
+crw-rw----  1 0 0 13, 63 Oct 13 16:28 mice
+crw-rw----  1 0 0 13, 32 Oct 13 16:28 mouse0
+crw-rw----  1 0 0 13, 33 Oct 13 16:28 mouse1
+crw-rw----  1 0 0 13, 34 Oct 13 16:28 mouse2
+crw-rw----  1 0 0 13, 35 Oct 13 16:28 mouse3
+
+/dev/pts:
+total 0
+
+/dev/shm:
+total 0
+
+/dev/snd:
+total 0
+crw-rw----  1 0 0 116,   0 Oct 13 16:28 controlC0
+crw-rw----  1 0 0 116,  32 Oct 13 16:28 controlC1
+crw-rw----  1 0 0 116,  64 Oct 13 16:28 controlC2
+crw-rw----  1 0 0 116,  96 Oct 13 16:28 controlC3
+crw-rw----  1 0 0 116,   4 Oct 13 16:28 hwC0D0
+crw-rw----  1 0 0 116,   5 Oct 13 16:28 hwC0D1
+crw-rw----  1 0 0 116,   6 Oct 13 16:28 hwC0D2
+crw-rw----  1 0 0 116,   7 Oct 13 16:28 hwC0D3
+crw-rw----  1 0 0 116,  36 Oct 13 16:28 hwC1D0
+crw-rw----  1 0 0 116,  37 Oct 13 16:28 hwC1D1
+crw-rw----  1 0 0 116,  38 Oct 13 16:28 hwC1D2
+crw-rw----  1 0 0 116,  39 Oct 13 16:28 hwC1D3
+crw-rw----  1 0 0 116,  68 Oct 13 16:28 hwC2D0
+crw-rw----  1 0 0 116,  69 Oct 13 16:28 hwC2D1
+crw-rw----  1 0 0 116,  70 Oct 13 16:28 hwC2D2
+crw-rw----  1 0 0 116,  71 Oct 13 16:28 hwC2D3
+crw-rw----  1 0 0 116, 100 Oct 13 16:28 hwC3D0
+crw-rw----  1 0 0 116, 101 Oct 13 16:28 hwC3D1
+crw-rw----  1 0 0 116, 102 Oct 13 16:28 hwC3D2
+crw-rw----  1 0 0 116, 103 Oct 13 16:28 hwC3D3
+crw-rw----  1 0 0 116,   8 Oct 13 16:28 midiC0D0
+crw-rw----  1 0 0 116,   9 Oct 13 16:28 midiC0D1
+crw-rw----  1 0 0 116,  10 Oct 13 16:28 midiC0D2
+crw-rw----  1 0 0 116,  11 Oct 13 16:28 midiC0D3
+crw-rw----  1 0 0 116,  12 Oct 13 16:28 midiC0D4
+crw-rw----  1 0 0 116,  13 Oct 13 16:28 midiC0D5
+crw-rw----  1 0 0 116,  14 Oct 13 16:28 midiC0D6
+crw-rw----  1 0 0 116,  15 Oct 13 16:28 midiC0D7
+crw-rw----  1 0 0 116,  40 Oct 13 16:28 midiC1D0
+crw-rw----  1 0 0 116,  41 Oct 13 16:28 midiC1D1
+crw-rw----  1 0 0 116,  42 Oct 13 16:28 midiC1D2
+crw-rw----  1 0 0 116,  43 Oct 13 16:28 midiC1D3
+crw-rw----  1 0 0 116,  44 Oct 13 16:28 midiC1D4
+crw-rw----  1 0 0 116,  45 Oct 13 16:28 midiC1D5
+crw-rw----  1 0 0 116,  46 Oct 13 16:28 midiC1D6
+crw-rw----  1 0 0 116,  47 Oct 13 16:28 midiC1D7
+crw-rw----  1 0 0 116,  72 Oct 13 16:28 midiC2D0
+crw-rw----  1 0 0 116,  73 Oct 13 16:28 midiC2D1
+crw-rw----  1 0 0 116,  74 Oct 13 16:28 midiC2D2
+crw-rw----  1 0 0 116,  75 Oct 13 16:28 midiC2D3
+crw-rw----  1 0 0 116,  76 Oct 13 16:28 midiC2D4
+crw-rw----  1 0 0 116,  77 Oct 13 16:28 midiC2D5
+crw-rw----  1 0 0 116,  78 Oct 13 16:28 midiC2D6
+crw-rw----  1 0 0 116,  79 Oct 13 16:28 midiC2D7
+crw-rw----  1 0 0 116, 104 Oct 13 16:28 midiC3D0
+crw-rw----  1 0 0 116, 105 Oct 13 16:28 midiC3D1
+crw-rw----  1 0 0 116, 106 Oct 13 16:28 midiC3D2
+crw-rw----  1 0 0 116, 107 Oct 13 16:28 midiC3D3
+crw-rw----  1 0 0 116, 108 Oct 13 16:28 midiC3D4
+crw-rw----  1 0 0 116, 109 Oct 13 16:28 midiC3D5
+crw-rw----  1 0 0 116, 110 Oct 13 16:28 midiC3D6
+crw-rw----  1 0 0 116, 111 Oct 13 16:28 midiC3D7
+crw-rw----  1 0 0 116,  24 Oct 13 16:28 pcmC0D0c
+crw-rw----  1 0 0 116,  16 Oct 13 16:28 pcmC0D0p
+crw-rw----  1 0 0 116,  25 Oct 13 16:28 pcmC0D1c
+crw-rw----  1 0 0 116,  17 Oct 13 16:28 pcmC0D1p
+crw-rw----  1 0 0 116,  26 Oct 13 16:28 pcmC0D2c
+crw-rw----  1 0 0 116,  18 Oct 13 16:28 pcmC0D2p
+crw-rw----  1 0 0 116,  27 Oct 13 16:28 pcmC0D3c
+crw-rw----  1 0 0 116,  19 Oct 13 16:28 pcmC0D3p
+crw-rw----  1 0 0 116,  28 Oct 13 16:28 pcmC0D4c
+crw-rw----  1 0 0 116,  20 Oct 13 16:28 pcmC0D4p
+crw-rw----  1 0 0 116,  29 Oct 13 16:28 pcmC0D5c
+crw-rw----  1 0 0 116,  21 Oct 13 16:28 pcmC0D5p
+crw-rw----  1 0 0 116,  30 Oct 13 16:28 pcmC0D6c
+crw-rw----  1 0 0 116,  22 Oct 13 16:28 pcmC0D6p
+crw-rw----  1 0 0 116,  31 Oct 13 16:28 pcmC0D7c
+crw-rw----  1 0 0 116,  23 Oct 13 16:28 pcmC0D7p
+crw-rw----  1 0 0 116,  56 Oct 13 16:28 pcmC1D0c
+crw-rw----  1 0 0 116,  48 Oct 13 16:28 pcmC1D0p
+crw-rw----  1 0 0 116,  57 Oct 13 16:28 pcmC1D1c
+crw-rw----  1 0 0 116,  49 Oct 13 16:28 pcmC1D1p
+crw-rw----  1 0 0 116,  58 Oct 13 16:28 pcmC1D2c
+crw-rw----  1 0 0 116,  50 Oct 13 16:28 pcmC1D2p
+crw-rw----  1 0 0 116,  59 Oct 13 16:28 pcmC1D3c
+crw-rw----  1 0 0 116,  51 Oct 13 16:28 pcmC1D3p
+crw-rw----  1 0 0 116,  60 Oct 13 16:28 pcmC1D4c
+crw-rw----  1 0 0 116,  52 Oct 13 16:28 pcmC1D4p
+crw-rw----  1 0 0 116,  61 Oct 13 16:28 pcmC1D5c
+crw-rw----  1 0 0 116,  53 Oct 13 16:28 pcmC1D5p
+crw-rw----  1 0 0 116,  62 Oct 13 16:28 pcmC1D6c
+crw-rw----  1 0 0 116,  54 Oct 13 16:28 pcmC1D6p
+crw-rw----  1 0 0 116,  63 Oct 13 16:28 pcmC1D7c
+crw-rw----  1 0 0 116,  55 Oct 13 16:28 pcmC1D7p
+crw-rw----  1 0 0 116,  88 Oct 13 16:28 pcmC2D0c
+crw-rw----  1 0 0 116,  80 Oct 13 16:28 pcmC2D0p
+crw-rw----  1 0 0 116,  89 Oct 13 16:28 pcmC2D1c
+crw-rw----  1 0 0 116,  81 Oct 13 16:28 pcmC2D1p
+crw-rw----  1 0 0 116,  90 Oct 13 16:28 pcmC2D2c
+crw-rw----  1 0 0 116,  82 Oct 13 16:28 pcmC2D2p
+crw-rw----  1 0 0 116,  91 Oct 13 16:28 pcmC2D3c
+crw-rw----  1 0 0 116,  83 Oct 13 16:28 pcmC2D3p
+crw-rw----  1 0 0 116,  92 Oct 13 16:28 pcmC2D4c
+crw-rw----  1 0 0 116,  84 Oct 13 16:28 pcmC2D4p
+crw-rw----  1 0 0 116,  93 Oct 13 16:28 pcmC2D5c
+crw-rw----  1 0 0 116,  85 Oct 13 16:28 pcmC2D5p
+crw-rw----  1 0 0 116,  94 Oct 13 16:28 pcmC2D6c
+crw-rw----  1 0 0 116,  86 Oct 13 16:28 pcmC2D6p
+crw-rw----  1 0 0 116,  95 Oct 13 16:28 pcmC2D7c
+crw-rw----  1 0 0 116,  87 Oct 13 16:28 pcmC2D7p
+crw-rw----  1 0 0 116, 120 Oct 13 16:28 pcmC3D0c
+crw-rw----  1 0 0 116, 112 Oct 13 16:28 pcmC3D0p
+crw-rw----  1 0 0 116, 121 Oct 13 16:28 pcmC3D1c
+crw-rw----  1 0 0 116, 113 Oct 13 16:28 pcmC3D1p
+crw-rw----  1 0 0 116, 122 Oct 13 16:28 pcmC3D2c
+crw-rw----  1 0 0 116, 114 Oct 13 16:28 pcmC3D2p
+crw-rw----  1 0 0 116, 123 Oct 13 16:28 pcmC3D3c
+crw-rw----  1 0 0 116, 115 Oct 13 16:28 pcmC3D3p
+crw-rw----  1 0 0 116, 124 Oct 13 16:28 pcmC3D4c
+crw-rw----  1 0 0 116, 116 Oct 13 16:28 pcmC3D4p
+crw-rw----  1 0 0 116, 125 Oct 13 16:28 pcmC3D5c
+crw-rw----  1 0 0 116, 117 Oct 13 16:28 pcmC3D5p
+crw-rw----  1 0 0 116, 126 Oct 13 16:28 pcmC3D6c
+crw-rw----  1 0 0 116, 118 Oct 13 16:28 pcmC3D6p
+crw-rw----  1 0 0 116, 127 Oct 13 16:28 pcmC3D7c
+crw-rw----  1 0 0 116, 119 Oct 13 16:28 pcmC3D7p
+crw-rw----  1 0 0 116,   1 Oct 13 16:28 seq
+crw-rw----  1 0 0 116,  33 Oct 13 16:28 timer
+
+/lib:
+total 7604
+-rwxr-xr-x 1 0 0  118915 Nov 02 21:44 ld-2.6.1.so
+lrwxrwxrwx 1 0 0      11 Nov 06 11:48 ld-linux.so.2 -> ld-2.6.1.so
+-rw-r--r-- 1 0 0   14293 Nov 02 21:44 libanl-2.6.1.so
+lrwxrwxrwx 1 0 0      15 Nov 06 11:48 libanl.so.1 -> libanl-2.6.1.so
+lrwxrwxrwx 1 0 0      15 Nov 06 11:48 libblkid.so.1 -> libblkid.so.1.0
+-rwxr-xr-x 1 0 0   35731 Nov 03 00:21 libblkid.so.1.0
+-rw-r--r-- 1 0 0    7586 Nov 02 21:43 libBrokenLocale-2.6.1.so
+lrwxrwxrwx 1 0 0      24 Nov 06 11:48 libBrokenLocale.so.1 -> libBrokenLocale-2.6.1.so
+-rwxr-xr-x 1 0 0 1291071 Nov 02 21:44 libc-2.6.1.so
+lrwxrwxrwx 1 0 0      17 Nov 06 11:48 libcfont.so.0 -> libcfont.so.0.0.0
+-rwxr-xr-x 1 0 0   40047 Nov 03 00:33 libcfont.so.0.0.0
+lrwxrwxrwx 1 0 0      17 Nov 06 11:48 libcom_err.so.2 -> libcom_err.so.2.1
+-rwxr-xr-x 1 0 0    8897 Nov 03 00:21 libcom_err.so.2.1
+lrwxrwxrwx 1 0 0      19 Nov 06 11:48 libconsole.so.0 -> libconsole.so.0.0.0
+-rwxr-xr-x 1 0 0   99202 Nov 03 00:33 libconsole.so.0.0.0
+-rw-r--r-- 1 0 0   22155 Nov 02 21:44 libcrypt-2.6.1.so
+lrwxrwxrwx 1 0 0      17 Nov 06 11:48 libcrypt.so.1 -> libcrypt-2.6.1.so
+lrwxrwxrwx 1 0 0      13 Nov 06 11:48 libc.so.6 -> libc-2.6.1.so
+lrwxrwxrwx 1 0 0      19 Nov 06 11:48 libctutils.so.0 -> libctutils.so.0.0.0
+-rwxr-xr-x 1 0 0   57985 Nov 03 00:33 libctutils.so.0.0.0
+-rwxr-xr-x 1 0 0 3160216 Nov 02 22:57 libdb-3.2.so
+lrwxrwxrwx 1 0 0      12 Nov 06 11:48 libdb-3.so -> libdb-3.2.so
+lrwxrwxrwx 1 0 0      12 Nov 06 11:48 libdb.so -> libdb-3.2.so
+-rw-r--r-- 1 0 0   14836 Nov 02 21:44 libdl-2.6.1.so
+lrwxrwxrwx 1 0 0      14 Nov 06 11:48 libdl.so.2 -> libdl-2.6.1.so
+lrwxrwxrwx 1 0 0      13 Nov 06 11:48 libe2p.so.2 -> libe2p.so.2.3
+-rwxr-xr-x 1 0 0   27800 Nov 03 00:21 libe2p.so.2.3
+lrwxrwxrwx 1 0 0      16 Nov 06 11:48 libext2fs.so.2 -> libext2fs.so.2.4
+-rwxr-xr-x 1 0 0  131495 Nov 03 00:21 libext2fs.so.2.4
+-rw-r--r-- 1 0 0  323172 Nov 02 22:15 libgcc_s-4.2.1.so.1
+lrwxrwxrwx 1 0 0      19 Nov 06 11:48 libgcc_s.so.1 -> libgcc_s-4.2.1.so.1
+-rw-r--r-- 1 0 0  521507 Nov 02 21:44 libm-2.6.1.so
+-rw-r--r-- 1 0 0   21673 Nov 02 21:44 libmemusage.so
+lrwxrwxrwx 1 0 0      13 Nov 06 11:48 libm.so.6 -> libm-2.6.1.so
+lrwxrwxrwx 1 0 0      17 Nov 06 11:48 libncurses.so.5 -> libncurses.so.5.5
+-rw-r--r-- 1 0 0  283020 Nov 02 22:53 libncurses.so.5.5
+-rw-r--r-- 1 0 0   87767 Nov 02 21:44 libnsl-2.6.1.so
+lrwxrwxrwx 1 0 0      15 Nov 06 11:48 libnsl.so.1 -> libnsl-2.6.1.so
+-rw-r--r-- 1 0 0   32603 Nov 02 21:44 libnss_compat-2.6.1.so
+lrwxrwxrwx 1 0 0      22 Nov 06 11:48 libnss_compat.so.2 -> libnss_compat-2.6.1.so
+-rw-r--r-- 1 0 0   17806 Nov 02 21:44 libnss_dns-2.6.1.so
+lrwxrwxrwx 1 0 0      19 Nov 06 11:48 libnss_dns.so.2 -> libnss_dns-2.6.1.so
+-rw-r--r-- 1 0 0   43513 Nov 02 21:44 libnss_files-2.6.1.so
+lrwxrwxrwx 1 0 0      21 Nov 06 11:48 libnss_files.so.2 -> libnss_files-2.6.1.so
+-rw-r--r-- 1 0 0   18703 Nov 02 21:44 libnss_hesiod-2.6.1.so
+lrwxrwxrwx 1 0 0      22 Nov 06 11:48 libnss_hesiod.so.2 -> libnss_hesiod-2.6.1.so
+-rw-r--r-- 1 0 0   43717 Nov 02 21:44 libnss_nis-2.6.1.so
+-rw-r--r-- 1 0 0   48530 Nov 02 21:44 libnss_nisplus-2.6.1.so
+lrwxrwxrwx 1 0 0      23 Nov 06 11:48 libnss_nisplus.so.2 -> libnss_nisplus-2.6.1.so
+lrwxrwxrwx 1 0 0      19 Nov 06 11:48 libnss_nis.so.2 -> libnss_nis-2.6.1.so
+-rw-r--r-- 1 0 0    7672 Nov 02 21:44 libpcprofile.so
+-r-xr-xr-x 1 0 0   53496 Nov 03 01:13 libproc-3.2.7.so
+lrwxrwxrwx 1 0 0      16 Nov 06 11:51 libproc.so -> libproc-3.2.7.so
+-rw-r--r-- 1 0 0  120369 Nov 02 21:44 libpthread-2.6.1.so
+lrwxrwxrwx 1 0 0      19 Nov 06 11:48 libpthread.so.0 -> libpthread-2.6.1.so
+-rw-r--r-- 1 0 0   67222 Nov 02 21:44 libresolv-2.6.1.so
+lrwxrwxrwx 1 0 0      18 Nov 06 11:48 libresolv.so.2 -> libresolv-2.6.1.so
+-rw-r--r-- 1 0 0   39266 Nov 02 21:44 librt-2.6.1.so
+lrwxrwxrwx 1 0 0      14 Nov 06 11:48 librt.so.1 -> librt-2.6.1.so
+-rw-r--r-- 1 0 0   16520 Nov 02 21:44 libSegFault.so
+-rwxr-xr-x 1 0 0  327665 Nov 03 00:06 libselinux.so.1
+-rwxr-xr-x 1 0 0  251583 Nov 03 00:03 libsepol.so.1
+-rwxr-xr-x 1 0 0   11796 Nov 03 00:06 libsetrans.so.0
+lrwxrwxrwx 1 0 0      12 Nov 06 11:48 libss.so.2 -> libss.so.2.0
+-rwxr-xr-x 1 0 0   25459 Nov 03 00:21 libss.so.2.0
+-rw-r--r-- 1 0 0   35779 Nov 02 21:44 libthread_db-1.0.so
+lrwxrwxrwx 1 0 0      19 Nov 06 11:48 libthread_db.so.1 -> libthread_db-1.0.so
+-rw-r--r-- 1 0 0   13554 Nov 02 21:44 libutil-2.6.1.so
+lrwxrwxrwx 1 0 0      16 Nov 06 11:48 libutil.so.1 -> libutil-2.6.1.so
+lrwxrwxrwx 1 0 0      14 Nov 06 11:48 libuuid.so.1 -> libuuid.so.1.2
+-rwxr-xr-x 1 0 0   25703 Nov 03 00:21 libuuid.so.1.2
+lrwxrwxrwx 1 0 0      22 Nov 06 11:48 libvolume_id.so.0 -> libvolume_id.so.0.80.0
+-rwxr-xr-x 1 0 0  157878 Nov 03 00:28 libvolume_id.so.0.80.0
+drwxr-xr-x 2 0 0      48 Nov 24 17:32 modules
+
+/lib/modules:
+total 0
+-rwxr-xr-x    1 0        0               0 May  4 12:25 /opt/STM/STLinux-2.3/devkit/sh4/target/sbin/insmod
+
+/proc:
+total 0
+
+/sbin:
+total 8
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 halt -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 ifconfig -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 init -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 klogd -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 lsmod -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 mkswap -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 modprobe -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 pivot_root -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 poweroff -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 reboot -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 rmmod -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 route -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 swapoff -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 swapon -> ../bin/busybox
+lrwxrwxrwx  1 0 0 14 Nov 24 16:44 syslogd -> ../bin/busybox
+
+/usr:
+total 4
+drwxr-xr-x  2 0 0 1184 Nov 24 16:44 bin
+drwxr-xr-x  2 0 0   96 Nov 24 16:44 sbin
+
+/usr/bin:
+total 24
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 [ -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 basename -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 bunzip2 -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 bzcat -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 chvt -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 clear -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 cmp -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 cut -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 deallocvt -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 dirname -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 du -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 env -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 expr -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 find -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 free -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 head -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 hexdump -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 id -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 install -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 killall -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 logger -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 md5sum -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 mkfifo -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 openvt -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 printf -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 readlink -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 renice -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 reset -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 sort -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 strings -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 tail -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 tee -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 telnet -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 test -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 time -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 top -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 tr -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 tty -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 uniq -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 unzip -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 uptime -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 wc -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 wget -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 which -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 whoami -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 xargs -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 yes -> ../../bin/busybox
+
+/usr/sbin:
+total 1
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 chroot -> ../../bin/busybox
+lrwxrwxrwx  1 0 0 17 Nov 24 16:44 telnetd -> ../../bin/busybox
+
