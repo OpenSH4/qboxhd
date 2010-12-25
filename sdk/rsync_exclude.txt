@@ -1,0 +1,16 @@
+usr/bin/freetype-config
+usr/include
+usr/lib/directfb-1.0-0
+usr/lib/libid3tag.*
+usr/local/include
+usr/local/lib/directfb-1.0-0            
+usr/local/lib/libdirectfb* 
+usr/local/lib/libdirect* 
+usr/local/lib/libdfusion*          
+usr/local/lib/libdfb++*          
+usr/local/lib/libjpeg.*
+usr/local/lib/libpng14.*
+usr/local/lib/libxml2.*
+usr/local/lib/libmad.*
+usr/local/lib/pkgconfig
+
