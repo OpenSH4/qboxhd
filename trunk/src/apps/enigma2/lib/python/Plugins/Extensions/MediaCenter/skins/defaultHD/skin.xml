@@ -1,0 +1,277 @@
+<skin>
+		<output id="0">
+			<resolution xres="1280" yres="720" bpp="32" />
+		</output>
+	
+		<!-- DMC Main Menu -->
+		<screen name="DMC_MainMenu" position="0,0" size="1280,720" title="Media Center - Home" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_home.png" />
+			<widget source="title" transparent="1" render="Label" zPosition="2" position="100,80" size="280,35" font="Regular;23" />
+			<widget source="welcomemessage" transparent="1" render="Label" zPosition="2" valign="center" halign="center" position="0,600" size="1280,30" font="Regular;30" />
+			<widget source="menu" render="Listbox" zPosition="2" transparent="1" position="420,180" size="300,230" scrollbarMode="showOnDemand" foregroundColor="#FFFFFF" foregroundColorSelected="#FFFFFF" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/default/images/selection_bar.png" >
+				<convert type="StringList" />
+			</widget>
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconMusic.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_music</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconMyiDevs.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_myidevs</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>			
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconVideo.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_video</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconMyTube.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_mytube</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconInternet.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_webbrowser</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconPicture.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_pictures</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconDVD.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_dvd</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconVLC.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_vlc</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconRadio.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_radio</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images//MenuIconRSS.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_rss</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconWeather.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_weather</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconSettings.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_settings</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
+		</screen>
+
+		<!-- DMC Settings Menu -->
+		<screen name="MC_Settings" position="0,0" size="1280,720" title="Media Center - Settings" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_settings.png" />
+			<widget source="title" transparent="1" render="Label" zPosition="2" position="100,80" size="280,35" font="Regular;23" />
+			<widget source="menu" render="Listbox" zPosition="2" transparent="1" position="320,180" size="200,200" scrollbarMode="showOnDemand" foregroundColor="#FFFFFF" foregroundColorSelected="#FFFFFF" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/default/images/selection_bar.png" >
+				<convert type="StringList" />
+			</widget>
+			<widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/default/images/MenuIconMusic.png" position="140,150" size="150,200" alphatest="on" >
+				<convert type="MenuEntryCompare">menu_music</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
+		</screen>
+
+		<!-- DMC Favorite Folders -->
+		<screen name="MC_FavoriteFolders" position="0,0" size="1280,720" title="Media Center - Favorite Folders" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_sm_favfolders.png" />
+			<widget source="title" transparent="1" render="Label" zPosition="2" position="100,80" size="280,35" font="Regular;23" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-red.png" position="60,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-green.png" position="210,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-yellow.png" position="360,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-blue.png" position="510,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<widget name="key_red" position="60,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#9f1313" transparent="1" />
+			<widget name="key_green" position="210,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
+			<widget name="key_yellow" position="360,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#a08500" transparent="1" />
+			<widget name="key_blue" position="510,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#18188b" transparent="1" />
+			<widget source="favoritelist" render="Listbox" zPosition="2" transparent="1" position="100,200" size="550,310" scrollbarMode="showOnDemand" foregroundColorSelected="#FFFFFF" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/default/images/selection_bar.png" >
+				<convert type="StringList" />
+			</widget>
+		</screen>
+		
+		<!-- DMC Audio Player -->
+		<screen name="MC_AudioPlayer" position="0,0" size="1280,720" title="Media Center - Audio Player" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_audioplayer.png" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-red.png" position="60,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-green.png" position="210,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-yellow.png" position="360,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-blue.png" position="510,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<widget name="key_red" position="60,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#9f1313" transparent="1" />
+			<widget name="key_green" position="210,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
+			<widget name="key_yellow" position="360,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#a08500" transparent="1" />
+			<widget name="key_blue" position="510,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#18188b" transparent="1" />
+			<!-- <widget source="session.VideoPicture" render="Pig" position="740,172" size="393,224" zPosition="5" backgroundColor="transparent" /> -->
+			<widget name="coverArt" position="740,172" size="393,224" zPosition="5" pixmap="skin_default/no_coverArt.png" transparent="1" alphatest="blend" />
+			<widget name="filelist" transparent="1" position="100,190" zPosition="2" size="515,320" scrollbarMode="showNever" />
+			<widget name="fileinfo" zPosition="6" transparent="1" halign="left" position="100,610" size="300,200" font="Regular;15" foregroundColor="#f0f0f0"/>
+			<widget name="currentfavname" zPosition="5" transparent="1" halign="left" position="720,400" size="480,40" font="Regular;22" foregroundColor="#f0f0f0"/>
+			<widget name="currentfolder" zPosition="5" transparent="1" halign="left" position="720,430" size="480,40" font="Regular;18" foregroundColor="#f0f0f0"/>
+			<ePixmap name="endcap_left" position="650,490" zPosition="2" size="15,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/endcap_left.png" transparent="1" alphatest="on" />
+			<ePixmap name="skipback" position="665,490" zPosition="2" size="35,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/skipback_disabled.png" />
+			<widget name="play" position="700,490" zPosition="2" size="35,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/play_disabled.png" />
+			<widget name="stop" position="735,490" zPosition="2" size="35,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/stop_disabled.png" />
+			<ePixmap name="skipforward" position="770,490" zPosition="2" size="35,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/skipforward_disabled.png" />
+			<ePixmap name="endcap_right" position="805,490" zPosition="2" size="15,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/endcap_right.png" transparent="1" alphatest="on" />
+			<widget name="PositionGauge" position="100,585" zPosition="5" size="613,10" pointer="skin_default/position_pointer.png:540,0" seek_pointer="skin_default/position_pointer.png:540,0" transparent="1" />
+			<widget name="curplayingtitle" zPosition="6" transparent="1" halign="center" position="650,610" size="230,20" font="Regular;16" foregroundColor="#f0f0f0"/>
+		</screen>
+		
+		<!-- DMC iDevs Player -->
+		<screen name="MC_iDevsPlayer" position="0,0" size="1280,720" title="Media Center - Audio Player" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_idevsplayer.png" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-red.png" position="60,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-green.png" position="210,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-yellow.png" position="360,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-blue.png" position="510,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<widget name="key_red" position="60,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#9f1313" transparent="1" />
+			<widget name="key_green" position="210,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
+			<widget name="key_yellow" position="360,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#a08500" transparent="1" />
+			<widget name="key_blue" position="510,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#18188b" transparent="1" />
+			
+			<!-- CURRENT MODALITY-->	
+			<widget name="curmodality" zPosition="6" transparent="1" halign="left" position="100,140" size="450,40" font="Regular;20" foregroundColor="#f0f0f0"/>	
+			
+			<widget source="session.VideoPicture" render="Pig" position="740,172" size="393,224" zPosition="5" backgroundColor="transparent" />
+			<widget name="coverArt" position="740,172" size="393,224" zPosition="5" pixmap="skin_default/no_coverArt.png" transparent="1" alphatest="blend" />
+			<widget name="idevsdevicefilelist" transparent="1" position="100,190" zPosition="2" size="515,320" scrollbarMode="showNever" />
+			<widget name="fileinfo" zPosition="6" transparent="1" halign="left" position="100,610" size="300,200" font="Regular;15" foregroundColor="#f0f0f0"/>
+			<ePixmap name="endcap_left" position="650,490" zPosition="2" size="15,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/endcap_left.png" transparent="1" alphatest="on" />
+			<ePixmap name="skipback" position="665,490" zPosition="2" size="35,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/skipback_disabled.png" />
+			<widget name="play" position="700,490" zPosition="2" size="35,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/play_disabled.png" />
+			<widget name="stop" position="735,490" zPosition="2" size="35,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/stop_disabled.png" />
+			<ePixmap name="skipforward" position="770,490" zPosition="2" size="35,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/skipforward_disabled.png" />
+			<ePixmap name="endcap_right" position="805,490" zPosition="2" size="15,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/endcap_right.png" transparent="1" alphatest="on" />
+			<widget name="PositionGauge" position="100,585" zPosition="5" size="613,10" pointer="skin_default/position_pointer.png:540,0" seek_pointer="skin_default/position_pointer.png:540,0" transparent="1" />
+			<widget name="curplayingtitle" zPosition="6" transparent="1" halign="center" position="650,610" size="230,20" font="Regular;16" foregroundColor="#f0f0f0"/>
+		</screen>
+		
+
+		<!-- DMC Video Player -->
+		<screen name="MC_VideoPlayer" position="0,0" size="1280,720" title="Media Center - Video Player" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_videoplayer.png" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-red.png" position="60,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-green.png" position="210,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-yellow.png" position="360,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-blue.png" position="510,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<widget name="key_red" position="60,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#9f1313" transparent="1" />
+			<widget name="key_green" position="210,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
+			<widget name="key_yellow" position="360,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#a08500" transparent="1" />
+			<widget name="key_blue" position="510,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#18188b" transparent="1" />
+			<widget source="session.VideoPicture" render="Pig" position="740,172" size="393,224" zPosition="5" backgroundColor="transparent" />
+			<widget name="filelist" transparent="1" position="100,190" zPosition="2" size="515,320" scrollbarMode="showNever" />
+			<widget name="currentfolder" zPosition="5" transparent="1" halign="left" position="720,440" size="480,40" font="Regular;22" foregroundColor="#f0f0f0"/>
+			<widget name="currentfavname" zPosition="5" transparent="1" halign="left" position="720,470" size="480,40" font="Regular;22" foregroundColor="#f0f0f0"/>
+		</screen>
+
+		<!-- DMC Picture Player -->
+		<screen name="MC_PictureViewer" position="0,0" size="1280,720" title="Media Center - Pic Viewer" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_picplayer.png" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-red.png" position="60,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-green.png" position="210,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-yellow.png" position="360,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-blue.png" position="510,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<widget name="key_red" position="60,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#9f1313" transparent="1" />
+			<widget name="key_green" position="210,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
+			<widget name="key_yellow" position="360,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#a08500" transparent="1" />
+			<widget name="key_blue" position="510,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#18188b" transparent="1" />
+			<widget name="thumbnail" position="808,180" size="450,300" zPosition="2" alphatest="on" />
+			<widget name="filelist" transparent="1" position="100,190" zPosition="2" size="515,320" scrollbarMode="showNever" />
+			<widget name="currentfavname" zPosition="5" transparent="1" halign="left" position="790,400" size="480,40" font="Regular;22" foregroundColor="#f0f0f0"/>
+			<widget name="currentfolder" zPosition="5" transparent="1" halign="left" position="790,430" size="480,40" font="Regular;22" foregroundColor="#f0f0f0"/>
+		</screen>
+
+		<!-- DMC VLC Player - Serverlist -->
+		<screen name="MC_VLCServerlist" position="0,0" size="1280,720" title="Media Center - VLC Player - Serverlist" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_vlc_serverlist.png" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-red.png" position="60,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-green.png" position="210,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-yellow.png" position="360,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-blue.png" position="510,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<widget name="key_red" position="60,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#9f1313" transparent="1" />
+			<widget name="key_green" position="210,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
+			<widget name="key_yellow" position="360,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#a08500" transparent="1" />
+			<widget name="key_blue" position="510,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#18188b" transparent="1" />
+			<widget name="serverlist" transparent="1" position="100,200" zPosition="2" size="288,288" scrollbarMode="showOnDemand" />
+		</screen>
+
+		<!-- DMC VLC Player - Medialist -->
+		<screen name="MC_VLCMedialist" position="0,0" size="1280,720" title="Media Center - VLC Player - Medialist" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_vlc_player.png" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-red.png" position="60,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-green.png" position="210,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-yellow.png" position="360,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-blue.png" position="510,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<widget name="key_red" position="60,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#9f1313" transparent="1" />
+			<widget name="key_green" position="210,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
+			<widget name="key_yellow" position="360,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#a08500" transparent="1" />
+			<widget name="key_blue" position="510,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#18188b" transparent="1" />
+			<widget source="session.VideoPicture" render="Pig" position="740,172" size="393,224" zPosition="5" backgroundColor="transparent" />
+			<widget name="filelist" transparent="1" position="100,200" zPosition="2" size="310,288" scrollbarMode="showNever" />
+			<widget name="currentdir" zPosition="5" transparent="1" halign="left" position="100,640" size="300,60" font="Regular;18" foregroundColor="#f0f0f0"/>
+			<widget name="currentmedia" zPosition="5" transparent="1" halign="center" valign="center" position="450,600" size="800,90" font="Regular;28" foregroundColor="#f0f0f0"/>
+			<widget name="filterstatus" zPosition="5" transparent="1" halign="left" position="100,600" size="100,20" font="Regular;18" foregroundColor="#f0f0f0"/>
+			<widget name="currentserver" zPosition="5" transparent="1" halign="left" position="100,620" size="200,20" font="Regular;18" foregroundColor="#f0f0f0"/>
+			<widget name="listlabel" position="10,10" size="550,20" font="Regular;18"/>
+			<widget name="playlist" transparent="1" position="45,133" zPosition="2" size="310,288" scrollbarMode="showOnDemand"/>
+		</screen>
+		
+		<!-- DMC VLC Player - Favorite Folders-->
+		<screen name="MC_VLCFavoriteFolders" position="0,0" size="1280,720" title="Media Center - VLC Favorites" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_vlc_favfolders.png" />
+			<widget source="title" transparent="1" render="Label" zPosition="2" position="100,80" size="280,35" font="Regular;23" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-red.png" position="60,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-green.png" position="210,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-yellow.png" position="360,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-blue.png" position="510,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<widget name="key_red" position="60,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#9f1313" transparent="1" />
+			<widget name="key_green" position="210,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
+			<widget name="key_yellow" position="360,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#a08500" transparent="1" />
+			<widget name="key_blue" position="510,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#18188b" transparent="1" />
+			<widget source="favoritelist" render="Listbox" zPosition="2" transparent="1" position="100,200" size="550,310" scrollbarMode="showOnDemand" foregroundColorSelected="#FFFFFF" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/default/images/selection_bar.png" >
+				<convert type="StringList" />
+			</widget>
+		</screen>
+		
+		<!-- DMC Radio Player -->
+		<screen name="MC_RadioPlayer" position="0,0" size="1280,720" title="Media Center - Radio Player" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_radioplayer.png" />
+		</screen>
+
+		<!-- DMC RSS Reader -->
+		<screen name="MC_RSSReader" position="0,0" size="1280,720" title="Media Center - RSS Reader" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_rssreader.png" />
+		</screen>
+		
+		<!-- DMC Weather Info -->
+		<screen name="MC_WeatherInfo" position="0,0" size="1280,720" title="Media Center - Weather Info" flags="wfNoBorder" backgroundColor="#1f1f21" >
+			<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/bg_weatherinfo.png" />
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/key-blue.png" position="510,92" zPosition="2" size="140,40" transparent="1" alphatest="on" />
+			<widget name="key_blue" position="510,92" zPosition="3" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#18188b" transparent="1" />
+			<widget name="CurrentCity" zPosition="5" transparent="1" halign="center" position="0,600" size="720,40" font="Regular;30" />
+			<widget name="CatTemp" zPosition="5" transparent="1" halign="left" position="100,280" size="600,40" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="CatPrecip" zPosition="5" transparent="1" halign="left" position="100,310" size="600,40" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="CatUVIndex" zPosition="5" transparent="1" halign="left" position="100,340" size="600,40" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="CatWind" zPosition="5" transparent="1" halign="left" position="100,370" size="600,40" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="CatHumidity" zPosition="5" transparent="1" halign="left" position="100,400" size="600,40" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="TodayPicture" position="464,200" zPosition="2" size="52,52" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/wi_unknown.png" transparent="1" alphatest="on" />
+			<widget name="TodayTemp" zPosition="5" transparent="1" halign="center" position="435,280" size="110,30" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="TodayPrecip" zPosition="5" transparent="1" halign="center" position="435,310" size="110,30" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="TodayUVIndex" zPosition="5" transparent="1" halign="center" position="435,340" size="110,30" font="Regular;22" foregroundColor="#f0f0f0"/>
+			<widget name="TodayWind" zPosition="5" transparent="1" halign="center" position="435,370" size="110,30" font="Regular;20" foregroundColor="#f0f0f0"/>
+			<widget name="TodayHumidity" zPosition="5" transparent="1" halign="center" position="435,4000" size="110,30" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="TmrwPicture" position="748,200" zPosition="2" size="52,52" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/wi_unknown.png" transparent="1" alphatest="on" />
+			<widget name="TmrwTemp" zPosition="5" transparent="1" halign="center" position="720,280" size="110,30" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="TmrwPrecip" zPosition="5" transparent="1" halign="center" position="720,310" size="110,30" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="TmrwUVIndex" zPosition="5" transparent="1" halign="center" position="720,340" size="110,30" font="Regular;22" foregroundColor="#f0f0f0"/>
+			<widget name="TmrwWind" zPosition="5" transparent="1" halign="center" position="720,370" size="110,30" font="Regular;20" foregroundColor="#f0f0f0"/>
+			<widget name="TmrwHumidity" zPosition="5" transparent="1" halign="center" position="720,400" size="110,30" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="TdatPicture" position="1028,200" zPosition="2" size="52,52" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/icons/wi_unknown.png" transparent="1" alphatest="on" />
+			<widget name="TdatTemp" zPosition="5" transparent="1" halign="center" position="999,280" size="110,30" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="TdatPrecip" zPosition="5" transparent="1" halign="center" position="999,310" size="110,30" font="Regular;24" foregroundColor="#f0f0f0"/>
+			<widget name="TdatUVIndex" zPosition="5" transparent="1" halign="center" position="999,340" size="110,30" font="Regular;22" foregroundColor="#f0f0f0"/>
+			<widget name="TdatWind" zPosition="5" transparent="1" halign="center" position="999,370" size="110,30" font="Regular;20" foregroundColor="#f0f0f0"/>
+			<widget name="TdatHumidity" zPosition="5" transparent="1" halign="center" position="999,400" size="110,30" font="Regular;24" foregroundColor="#f0f0f0"/>
+		</screen>
+</skin>

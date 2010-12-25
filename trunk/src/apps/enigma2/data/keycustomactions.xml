@@ -1,0 +1,57 @@
+<customfunctions>
+	
+	<item name="Sense Wheel Menu" requires="QBoxHD">
+<code>
+from Screens.Setup import Setup
+self.session.open( Setup, "sensewheel" )
+</code></item>
+	
+	<item name="FrontButton Setup" requires="QBoxHD_mini">
+<code>
+from Screens.Setup import Setup
+self.session.open( Setup, "frontbutton" )
+</code></item>
+	
+	<item name="SmartCard Info">
+<code>
+from Plugins.Extensions.SmartCardInfo.plugin import SmartCardSelectScreen
+self.session.open( SmartCardSelectScreen )
+</code></item>
+	
+	<item name="Parental Control">
+<code>
+from Screens.ParentalControlSetup import ParentalControlSetup
+self.session.open( ParentalControlSetup )
+</code></item>
+
+	<item name="Common Interface" requires="QBoxHD">
+<code>
+from Screens.Ci import CiSelection
+self.session.open( CiSelection )
+</code></item>
+
+	<item name="Plugin List">
+<code>
+from Screens.PluginBrowser import PluginBrowser
+self.session.open( PluginBrowser )
+</code></item>
+
+	<item name="Network Setup">
+<code>
+from Screens.NetworkSetup import NetworkAdapterSelection
+self.session.open( NetworkAdapterSelection)
+</code></item>
+
+	<item name="Timer Manager">
+<code>
+from Screens.TimerEdit import TimerEditList
+self.session.open( TimerEditList)
+</code></item>
+
+	<item name="Manual Scan">
+<code>
+from Screens.ScanSetup import ScanSetup
+self.session.open( ScanSetup)
+</code></item>
+
+</customfunctions>

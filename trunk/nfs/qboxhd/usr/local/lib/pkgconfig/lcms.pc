@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include
+
+Name: lcms
+Description: LCMS Color Management Library
+Version: 1.14
+Libs: -L${libdir} -llcms
+Cflags: -I${includedir}

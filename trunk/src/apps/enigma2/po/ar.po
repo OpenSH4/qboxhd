@@ -1,0 +1,7996 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: QboxHD Enigma2 Arabic locale\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-11-30 11:00+0100\n"
+"PO-Revision-Date: 2010-10-04 11:09+0100\n"
+"Last-Translator: \n"
+"Language-Team: SSJomaa <sasjomaa@yahoo.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Arabic\n"
+"X-Poedit-Country: TUNISIA\n"
+"X-Poedit-SourceCharset: iso-8859-15\n"
+
+msgid ""
+"\n"
+"ATTENTION: This device contains a \n"
+"SWAP Partition ACTIVE!!\n"
+"Your system may be instable !!!"
+msgstr ""
+"\n"
+"تنبيه : هذا الجهاز يحتوي على \n"
+"قسم تبادل (SWAP) نشط!!\n"
+"قد يتسبب ذلك في عدم استقرار النظام!!!"
+
+msgid ""
+"\n"
+"Advanced options and settings."
+msgstr ""
+"\n"
+"خيارات وإعدادات متقدمة."
+
+msgid ""
+"\n"
+"After pressing OK, please wait!"
+msgstr ""
+"\n"
+"بعد الضغط على موافق ، يرجى الانتظار!"
+
+msgid ""
+"\n"
+"Album: "
+msgstr ""
+"\n"
+"الألبوم :"
+
+msgid ""
+"\n"
+"Artist: "
+msgstr ""
+"\n"
+"الفنان :"
+
+msgid ""
+"\n"
+"Backup your QBoxHD settings."
+msgstr ""
+"\n"
+"النسخ الاحتياطي لإعدادات QBoxHD."
+
+msgid ""
+"\n"
+"Bitrate: "
+msgstr ""
+"\n"
+"التدفق :"
+
+msgid ""
+"\n"
+"Comment: "
+msgstr ""
+"\n"
+"التعليق :"
+
+msgid ""
+"\n"
+"Edit the upgrade source address."
+msgstr ""
+"\n"
+"تحرير عنوان مصدر الترقية."
+
+msgid ""
+"\n"
+"Enigma2 will restart after the restore"
+msgstr ""
+"\n"
+"سيتم إعادة تشغيل إنيقما2 بعد الاستعادة"
+
+msgid ""
+"\n"
+"Genre: "
+msgstr ""
+"\n"
+"النوع :"
+
+msgid ""
+"\n"
+"Online update of your QBoxHD software."
+msgstr ""
+"\n"
+"تحديث البرنامج الخاص بـ QBoxHD على الانترنت."
+
+msgid ""
+"\n"
+"Press OK on your remote control to continue."
+msgstr ""
+"\n"
+"اضغط مفتاح موافق من جهاز التحكم عن بعد للمتابعة."
+
+msgid ""
+"\n"
+"Restore your QBoxHD settings."
+msgstr ""
+"\n"
+"استعادة إعدادات QBoxHD."
+
+msgid ""
+"\n"
+"Restore your QBoxHD with a new firmware."
+msgstr ""
+"\n"
+"استعادة QBoxHD مع برنامج التشغيل الجديد."
+
+msgid ""
+"\n"
+"Restore your backups by date."
+msgstr ""
+"\n"
+"استعادة النسخ الاحتياطية حسب التاريخ."
+
+msgid ""
+"\n"
+"Scan for local packages and install them."
+msgstr ""
+"\n"
+"البحث عن الحزم المحلية وتثبيتها."
+
+msgid ""
+"\n"
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"\n"
+"حدد جهاز النسخ الاحتياطي.\n"
+"الجهاز الحالي :"
+
+msgid ""
+"\n"
+"View, install and remove available or installed packages."
+msgstr ""
+"\n"
+"عرض ، تثبيت و إزالة الحزم المتاحة أو المثبتة."
+
+msgid " "
+msgstr " "
+
+msgid " <    easy    >"
+msgstr " <    سهل    >"
+
+msgid " Searching Wireless Network(s). Please wait ..."
+msgstr "البحث عن شبكة (شبكات) لاسلكية. يرجى الانتظار..."
+
+msgid " Wireless Network(s) found!"
+msgstr "تم العثور على شبكة (شبكات) لاسلكية!"
+
+msgid " extensions."
+msgstr "ملحقات."
+
+msgid " packages selected."
+msgstr "تم اختيار الحزم."
+
+msgid " updates available."
+msgstr "توجد تحديثات متاحة."
+
+msgid "#000000"
+msgstr "#000000"
+
+msgid "#0064c7"
+msgstr "#0064c7"
+
+msgid "#25062748"
+msgstr "#25062748"
+
+msgid "#389416"
+msgstr "#389416"
+
+msgid "#80000000"
+msgstr "#80000000"
+
+msgid "#80ffffff"
+msgstr "#80ffffff"
+
+msgid "#bab329"
+msgstr "#bab329"
+
+msgid "#f23d21"
+msgstr "#f23d21"
+
+msgid "#ffffff"
+msgstr "#ffffff"
+
+msgid "#ffffffff"
+msgstr "#ffffffff"
+
+#, python-format
+msgid "% used"
+msgstr "% used"
+
+msgid "%H:%M"
+msgstr "%H:%M"
+
+#, python-format
+msgid "%d jobs are running in the background!"
+msgstr "%d وظائف تعمل في الخلفية!"
+
+#, python-format
+msgid "%d min"
+msgstr "%d دقيقة"
+
+#, python-format
+msgid "%d services found!"
+msgstr "تم العثور على %d قناة!"
+
+#, python-format
+msgid "%d.%03d GB"
+msgstr "%d.%03d غيغابايت"
+
+msgid "%d.%B %Y"
+msgstr "%d.%B %Y"
+
+#, python-format
+msgid ""
+"%s\n"
+"(%s, %d MB free)"
+msgstr ""
+"%s\n"
+"(%s، %d ميغابايت متاحة)"
+
+#, python-format
+msgid "%s (%s)\n"
+msgstr "%s (%s)\n"
+
+#, python-format
+msgid "%s not exist"
+msgstr "%s غير موجود"
+
+msgid "(ZAP)"
+msgstr "(انتقل)"
+
+msgid "(empty)"
+msgstr "(فارغ)"
+
+msgid "(show optional DVD audio menu)"
+msgstr "(عرض قائمة صوت دي في دي الاختيارية)"
+
+msgid "* Only available if more than one interface is active."
+msgstr "* متاح فقط إذا كانت أكثر من واجهة واحدة نشطة."
+
+msgid "* Only available when entering hidden SSID or network key"
+msgstr "* متاح فقط عند إدخال معرف مجموعة الخدمات المخفية أو مفتاح الشبكة"
+
+msgid "..."
+msgstr "..."
+
+msgid ".NFI Download failed:"
+msgstr "فشل تنزيل .NFI:"
+
+msgid ""
+".NFI file passed md5sum signature check. You can safely flash this image!"
+msgstr "تم التحقق من توقيع md5sum لملف .NFI. يمكنك تنصيب هذه الصورة بأمان!"
+
+msgid "/usr/share/enigma2 directory"
+msgstr "دليل /usr/share/enigma2"
+
+msgid "/var directory"
+msgstr "دليل /var"
+
+msgid "0"
+msgstr "0"
+
+msgid "0 Mb/s"
+msgstr "0 ميجا بايت/ ثانية"
+
+msgid "1"
+msgstr "1"
+
+msgid "1.0"
+msgstr "1.0"
+
+msgid "1.1"
+msgstr "1.1"
+
+msgid "1.2"
+msgstr "1.2"
+
+msgid "12V output"
+msgstr "خرج 12 فولت"
+
+msgid "13 V"
+msgstr "13 فولت"
+
+msgid "16:10"
+msgstr "16:10"
+
+msgid "16:10 Letterbox"
+msgstr "16:10 Letterbox"
+
+msgid "16:10 PanScan"
+msgstr "16:10 PanScan"
+
+msgid "16:9"
+msgstr "16:9"
+
+msgid "16:9 Letterbox"
+msgstr "16:9 Letterbox"
+
+msgid "16:9 always"
+msgstr "16:9 دائما"
+
+msgid "18 V"
+msgstr "18 فولت"
+
+msgid "2"
+msgstr "2"
+
+msgid "3"
+msgstr "3"
+
+msgid "30 minutes"
+msgstr "30 دقيقة"
+
+msgid "4"
+msgstr "4"
+
+msgid "422"
+msgstr "422"
+
+msgid "4:3"
+msgstr "4:3"
+
+msgid "4:3 Letterbox"
+msgstr "4:3 Letterbox"
+
+msgid "4:3 PanScan"
+msgstr "4:3 Letterbox"
+
+msgid "5"
+msgstr "5"
+
+msgid "5 minutes"
+msgstr "5 دقائق"
+
+msgid "50 Hz"
+msgstr "50 هرتز"
+
+msgid "6"
+msgstr "5"
+
+msgid "60 minutes"
+msgstr "60 دقيقة"
+
+msgid "7"
+msgstr "7"
+
+msgid "8"
+msgstr "8"
+
+msgid "9"
+msgstr "9"
+
+msgid "<unknown>"
+msgstr "<غير معروف>"
+
+msgid "??"
+msgstr "؟؟"
+
+msgid "A"
+msgstr "A"
+
+#, python-format
+msgid "A %s was removed"
+msgstr "تمت إزالة %s"
+
+#, python-format
+msgid "A %s was removed (%d)"
+msgstr "تمت إزالة %s (%d)"
+
+#, python-format
+msgid ""
+"A configuration file (%s) was modified since Installation.\n"
+"Do you want to keep your version?"
+msgstr ""
+"تم تعديل ملف التكوين (%s) منذ التثبيت.\n"
+"هل تريد أن تبقي ذلك الإصدار؟"
+
+msgid "A device was removed"
+msgstr "تمت إزالة جهاز"
+
+msgid ""
+"A finished record timer wants to set your\n"
+"QBoxHD to standby. Do that now?"
+msgstr ""
+"مؤقت تسجيل مكتمل يريد وضع\n"
+"QBoxHD في وضع الاستعداد. القيام بذلك الآن؟"
+
+msgid ""
+"A finished record timer wants to shut down\n"
+"your QBoxHD. Shutdown now?"
+msgstr ""
+"مؤقت تسجيل مكتمل يريد إيقاف تشغيل\n"
+"جهاز QBoxHD. إيقاف التشغيل الآن؟"
+
+msgid "A graphical EPG for all services of an specific bouquet"
+msgstr "دليل برامج إلكتروني بياني لجميع خدمات باقة محددة"
+
+msgid ""
+"A mount entry with this name already exists!\n"
+"Update existing entry and continue?\n"
+msgstr ""
+"هناك قيد تركيب بنفس الاسم موجود مسبقا!\n"
+"تحديث القيد الموجود ثم الاستمرار؟\n"
+
+#, python-format
+msgid "A new %s was found"
+msgstr "تم العثور على %s جديد"
+
+#, python-format
+msgid "A new %s was found (%d)"
+msgstr "تم العثور على %s جديد (%d)"
+
+msgid "A new device was found"
+msgstr "تم العثور على جهاز جديد"
+
+msgid ""
+"A new version of MediaCenter is available for download!\n"
+"Do you want to download and install now?"
+msgstr ""
+"إصدار جديد من مركز الوسائط متاح للتتزيل!\n"
+"هل تريد تنزيله وتثبيته الآن؟"
+
+#, python-format
+msgid ""
+"A record has been started:\n"
+"%s"
+msgstr ""
+"تسجيل تم البدء فيه:\n"
+"%s"
+
+msgid ""
+"A recording is currently running.\n"
+"No more recording allowed."
+msgstr ""
+"هناك تسجيل جار الآن.\n"
+"غير مسموح ببدء تسجيل آخر."
+
+msgid ""
+"A recording is currently running.\n"
+"What do you want to do?"
+msgstr ""
+"هناك تسجيل جار الآن.\n"
+"ماذا تريد أن تفعل؟"
+
+msgid ""
+"A recording is currently running. Please stop the recording before trying to "
+"configure the positioner."
+msgstr ""
+"هناك تسجيل جار الآن. من فضلك قم يإيقاف التسجيل قبل محاولة تكوين المحرك."
+
+msgid ""
+"A recording is currently running. Please stop the recording before trying to "
+"start the satfinder."
+msgstr ""
+"هناك تسجيل جار الآن. من فضلك قم بإيقاف التسجيل قبل البدء مع مكتشف القمر "
+"الصناعي."
+
+#, python-format
+msgid "A required tool (%s) was not found."
+msgstr "لم يتم العثور على الأداة المطلوبة (%s)."
+
+msgid ""
+"A sleep timer wants to deep standby\n"
+"your QBoxHD. Deep standby now?"
+msgstr ""
+"مؤقت وضع النوم يطلب إدخال QBoxHD في وضع\n"
+"الاستعداد العميق. الدخول في هذا الوضع الآن؟"
+
+msgid ""
+"A sleep timer wants to set your\n"
+"QBoxHD to standby. Do that now?"
+msgstr ""
+"مؤقت وضع النوم يطلب إدخال QBoxHD في\n"
+"وضع الاستعداد. القيام بذلك الآن؟"
+
+msgid ""
+"A sleep timer wants to shut down\n"
+"your QBoxHD. Shutdown now?"
+msgstr ""
+"مؤقت وضع النوم يطلب إيقاف تشغيل\n"
+"QBoxHD. إيقاف التشغيل الآن؟"
+
+msgid ""
+"A timer failed to record!\n"
+"Disable TV and try again?\n"
+msgstr ""
+"فشل المؤقت في بدء التسجيل!!\n"
+"تعطيل التلفزيون والمحاولة مرة أخرى؟\n"
+
+msgid "A video streaming solution based on VLC"
+msgstr "حل قراءة دفق الفيديو يرتكز على مشغل VLC"
+
+msgid "A/V Settings"
+msgstr "إعدادات الصوت/الفيديو"
+
+msgid "AA"
+msgstr "AA"
+
+msgid "AB"
+msgstr "AB"
+
+msgid "AC3 default"
+msgstr "AC3 افتراضي"
+
+msgid "AC3 downmix"
+msgstr "AC3 دوونميكس"
+
+msgid "AGC"
+msgstr "AGC"
+
+msgid "AGC:"
+msgstr "AGC:"
+
+msgid "AT: Bregenz"
+msgstr "النمسا : بريغنتس"
+
+msgid "AT: Graz"
+msgstr "النمسا : غراتس"
+
+msgid "AT: Innsbruck"
+msgstr "النمسا : انسبروك"
+
+msgid "AT: Klagenfurt"
+msgstr "النمسا : كلاغنفورت"
+
+msgid "AT: Linz"
+msgstr "النمسا : لينز"
+
+msgid "AT: Salzburg"
+msgstr "النمسا : سالزبورغ"
+
+msgid "AT: Wien"
+msgstr "النمسا : فيينا"
+
+msgid "ATR"
+msgstr "ATR"
+
+msgid "Abkhazian"
+msgstr "الأبخازية"
+
+msgid "Abort"
+msgstr "إحباط"
+
+msgid "About"
+msgstr "حول"
+
+msgid "About..."
+msgstr "حول"
+
+msgid "Accesspoint:"
+msgstr "نقطة الوصول :"
+
+msgid "Action on long powerbutton press"
+msgstr "التصرف عند الضغط مطولا على مفتاح التشغيل"
+
+msgid "Action:"
+msgstr "التصرف:"
+
+msgid "Activate Picture in Picture"
+msgstr "تفعيل صورة داخل الصورة"
+
+msgid "Activate Swaps"
+msgstr "تفعيل التبادل (swaps)"
+
+msgid "Activate network settings"
+msgstr "تفعيل إعدادات شبكة الاتصال"
+
+msgid "Active"
+msgstr "نشط"
+
+msgid "Active WiFi Interface"
+msgstr "واجهة الشبكة اللاسلكية النشطة"
+
+msgid ""
+"Active/\n"
+"Inactive"
+msgstr ""
+"نشط/\n"
+"غير نشط"
+
+msgid "Adapter settings"
+msgstr "إعدادات المحول"
+
+msgid "Add"
+msgstr "أضف"
+
+msgid "Add Bookmark"
+msgstr "إضافة إشارة مرجعية"
+
+msgid "Add WLAN configuration?"
+msgstr "إضافة تكوين الشبكة اللاسلكية؟"
+
+msgid "Add a mark"
+msgstr "إضافة علامة"
+
+msgid "Add a new NFS or CIFS mount point to your QBoxHD."
+msgstr "إضافة نقطة تركيب NFS أو CIFS جديدة إلى QBoxHD."
+
+msgid "Add a new title"
+msgstr "أضافة عنوان جديد"
+
+msgid "Add network configuration?"
+msgstr "إضافة تكوين شبكة الاتصال؟"
+
+msgid "Add new Playlist"
+msgstr "إضافة قائمة تشغيل جديدة"
+
+msgid "Add new network mount point"
+msgstr "إضافة نقطة تركيب شبكة جديدة"
+
+msgid "Add timer"
+msgstr "إضافة مؤقت"
+
+msgid "Add title"
+msgstr "إضافة عنوان"
+
+msgid "Add to bouquet"
+msgstr "إضافة إلى باقة"
+
+msgid "Add to favorites"
+msgstr "أضافة إلى المفضلة"
+
+msgid "Add to favourites"
+msgstr "أضافة إلى المفضلة"
+
+msgid "Add to playlist"
+msgstr "اضف الى قائمة التشغيل"
+
+msgid "AddOn Installed"
+msgstr "تم تثبيت الإضافة"
+
+msgid "AddOn Removed"
+msgstr "تمت إزالة الإضافة"
+
+msgid "AddOn error"
+msgstr "خطأ بالإضافة"
+
+msgid "AddOns"
+msgstr "إضافات"
+
+msgid "AddOns Installed"
+msgstr "الإضافات المثبتة"
+
+msgid "Added"
+msgstr "تمت إضافته"
+
+msgid ""
+"Adds enigma2 settings and QBoxHD model informations like SN, rev... if "
+"enabled."
+msgstr ""
+"يضيف إعدادات إنيقما2 ومعلومات نموذج QBoxHD مثل الرقم التسلسلي، والمراجعة... "
+"في حال تمكينه."
+
+msgid "Adds network configuration if enabled."
+msgstr "يضيف تكوين شبكة الاتصال في حال تمكينه."
+
+msgid "Adds wlan configuration if enabled."
+msgstr "يضيف تكوين الشبكة اللاسلكية في حال تمكينه."
+
+msgid ""
+"Adjust the color settings so that all the color shades are distinguishable, "
+"but appear as saturated as possible. If you are happy with the result, press "
+"OK to close the video fine-tuning, or use the number keys to select other "
+"test screens."
+msgstr ""
+"ضبط إعدادات اللون بحيث تكون كل ظلال اللون قابلة للتمييز ، و تبدو مشبعة قدر "
+"الإمكان. إذا كنت راضيا بالنتيجة ، اضغط موافق لإغلاق تدقيق ضبط الفيديو، أو "
+"استخدام مفاتيح الأرقام لتحديد اختبار شاشات أخرى."
+
+msgid "Advanced"
+msgstr "متقدم"
+
+msgid "Advanced Customization"
+msgstr "تخصيص متقدم"
+
+msgid "Advanced Options"
+msgstr "خيارات متقدمة"
+
+msgid "Advanced Video Setup"
+msgstr "ضبط الفيديو المتقدم"
+
+msgid "Advanced restore"
+msgstr "الاستعادة المتقدمة"
+
+msgid "Afan (Oromo)"
+msgstr "العفانية (أورومو)"
+
+msgid "Afar"
+msgstr "العفارية"
+
+msgid "Afrikaans"
+msgstr "الأفريكانية"
+
+msgid "After event"
+msgstr "بعد الحدث"
+
+msgid ""
+"After the start wizard is completed, you need to protect single services. "
+"Refer to your QBoxHD's manual on how to do that."
+msgstr ""
+"بعد الانتهاء من معالج البدء ، تحتاج إلى حماية الخدمات المفردة. قم بالرجوع "
+"إلى دليل QBoxHD لمعرفة كيفية القيام بذلك."
+
+msgid "Albanian"
+msgstr "الألبانية"
+
+msgid "Album"
+msgstr "الألبوم"
+
+#, python-format
+msgid "Album: %s"
+msgstr "الألبوم : %s"
+
+msgid "Album: unknown"
+msgstr "الألبوم : غير معروف"
+
+msgid "Albums"
+msgstr "البومات"
+
+#, python-format
+msgid "Albums: %d"
+msgstr "ألبومات : %d"
+
+msgid "All"
+msgstr "الكل"
+
+msgid "All Satellites"
+msgstr "كل الأقمار"
+
+msgid "All Skins"
+msgstr "كل المظاهر (Skins)"
+
+msgid "All Time"
+msgstr "كل الوقت"
+
+msgid "Alpha"
+msgstr "ألفا"
+
+msgid "Alternative radio mode"
+msgstr "وضع الراديو البديل"
+
+msgid "Alternative services tuner priority"
+msgstr "خدمات أولوية الموالف البديلة"
+
+msgid "Always ask before sending"
+msgstr "السؤال دوما قبل الإرسال"
+
+msgid "Amharic"
+msgstr "الأمهرية"
+
+msgid "An empty filename is illegal."
+msgstr "غير مسموح باسم ملف فارغ."
+
+msgid "An unknown error occured!"
+msgstr "حدث خطأ غير معروف!"
+
+msgid "Anonymize crashlog?"
+msgstr "جعل سجل التحطم (crash) متخفي؟"
+
+msgid "Antenna Position"
+msgstr "موقع الهوائي"
+
+msgid "Arabic"
+msgstr "العربية"
+
+msgid ""
+"Are you sure you want to activate this network configuration?\n"
+"\n"
+msgstr ""
+"هل أنت متأكد أنك تريد تفعيل تكوبن هذه الشبكة؟\n"
+"\n"
+
+msgid ""
+"Are you sure you want to delete\n"
+"following backup:\n"
+msgstr ""
+"هل أنت متأكد أنك تريد حذف\n"
+"النسخ الاحتياطي التالي:\n"
+
+msgid "Are you sure you want to exit this wizard?"
+msgstr "هل أنت متأكد أنك تريد إنهاء هذا المعالج ؟"
+
+msgid ""
+"Are you sure you want to restart your network interfaces?\n"
+"\n"
+msgstr ""
+"هل أنت متأكد أنك تريد إعادة تشغيل واجهات شبكة الاتصال؟\n"
+"\n"
+
+msgid ""
+"Are you sure you want to restore\n"
+"following backup:\n"
+msgstr ""
+"هل أنت متأكد أنك تريد استعادة\n"
+"النسخ الاحتياطي التالي :\n"
+
+msgid ""
+"Are you sure you want to restore your Enigma2 backup?\n"
+"Enigma2 will restart after the restore"
+msgstr ""
+"هل أنت متأكد أنك تريد استعادة النسخ الاحتياطي لإنيقما2؟\n"
+"سوف تتم إعادة تشغيل إنيقما2 بعد الاستعادة"
+
+msgid ""
+"Are you sure you want to save this network mount?\n"
+"\n"
+msgstr ""
+"هل أنت متأكد أنك تريد حفظ هذا التركيب؟\n"
+"\n"
+
+msgid "Armenian"
+msgstr "الأرمينية"
+
+msgid "Artist"
+msgstr "فنان"
+
+#, python-format
+msgid "Artist: %s"
+msgstr "الفنان : %s"
+
+msgid "Artist: unknown"
+msgstr "الفنان : غير معروف"
+
+msgid "Artists"
+msgstr "الفنانون"
+
+#, python-format
+msgid "Artists: %d"
+msgstr "الفنانون : %d"
+
+msgid "Ascanding"
+msgstr "تصاعدي"
+
+msgid "Ask before deep standby:"
+msgstr "السؤال قبل الاستعداد العميق:"
+
+msgid "Ask before shutdown:"
+msgstr "السؤال قبل إبقاف التشغيل:"
+
+msgid "Ask user"
+msgstr "سؤال المستخدم"
+
+msgid "Aspect Ratio"
+msgstr "نسبة ارتفاع العرض"
+
+msgid "Assamese"
+msgstr "الأسامية"
+
+msgid "Audio"
+msgstr "الصوت"
+
+msgid "Audio (Current Channel)"
+msgstr "الصوت (القناة الحالية)"
+
+msgid "Audio :"
+msgstr "الصوت :"
+
+msgid "Audio Bitrate"
+msgstr "دفق الصوت"
+
+msgid "Audio Channels"
+msgstr "قنوات سمعية"
+
+msgid "Audio Codec"
+msgstr "ترميز الصوت"
+
+msgid "Audio Options..."
+msgstr "خيارات الصوت..."
+
+msgid "Audio Samplerate"
+msgstr "معدل نموذج الصوت"
+
+msgid "Audio Source"
+msgstr "مصدر الصوت"
+
+msgid "Author:"
+msgstr "الكاتب :"
+
+msgid "Author: "
+msgstr "الكاتب :"
+
+msgid "Authoring mode"
+msgstr "وضع التأليف"
+
+msgid "Auto"
+msgstr "تلقائي"
+
+msgid "Auto chapter split every ? minutes (0=never)"
+msgstr "تقسيم الفصل تلقائيا كل؟ دقائق (0=أبدا)"
+
+msgid "Auto scart switching"
+msgstr "تبديل تلقائي لمنفذ للسكارت (scart)"
+
+msgid "Automatic"
+msgstr "تلقائي"
+
+msgid "Automatic Scan"
+msgstr "البحث الآلي"
+
+msgid "Autoplay Delay"
+msgstr "مهلة التشغيل التلقائي"
+
+msgid "Autoplay Enable"
+msgstr "تمكين التشغيل التلقائي"
+
+msgid "Autos & Vehicles"
+msgstr "سيارات وعربات"
+
+msgid "Available format variables"
+msgstr "متغيرات التنسيق المتوفرة"
+
+msgid "Aymara"
+msgstr "الأيمارية"
+
+msgid "Azerbaijani"
+msgstr "الأذربيجانية"
+
+msgid "B"
+msgstr "B"
+
+msgid "BA"
+msgstr "BA"
+
+msgid "BB"
+msgstr "BB"
+
+msgid "BER"
+msgstr "BER"
+
+msgid "BER:"
+msgstr "BER:"
+
+msgid "Back"
+msgstr "رجوع"
+
+msgid "Back in history, be patient ..."
+msgstr "رجوع في التاريخ، الرجاء الانتظار ..."
+
+msgid "Background"
+msgstr "خلفية"
+
+msgid "Backup"
+msgstr "نسخ احتياطي"
+
+msgid "Backup All Skins"
+msgstr "نسخ احتياطي لكل المظاهر (Skins)"
+
+msgid "Backup Channel Settings"
+msgstr "نسخ احتياطي لإعدادات القناة"
+
+msgid "Backup General Configuration"
+msgstr "نسخ احتياطي للتكوين العام"
+
+msgid "Backup Location"
+msgstr "موقع النسخ الاحتياطي"
+
+msgid "Backup Mode"
+msgstr "وضع النسخ الاحتياطي"
+
+msgid "Backup Network Settings"
+msgstr "نسخ احتياطي لإعدادات الشبكة"
+
+msgid "Backup VAR folder"
+msgstr "نسخ احتياطي لدليل (VAR)"
+
+msgid "Backup done."
+msgstr "تم النسخ الاحتياطي"
+
+msgid "Backup failed."
+msgstr "فشل النسخ الاحتياطي"
+
+msgid "Backup is done. Please press OK to see the result."
+msgstr "تم النسخ الاحتياطي. يرجى الضغط على موافق لترى النتيجة."
+
+msgid "Backup running"
+msgstr "جاري تنفيذ النسخ الاحتياطي"
+
+msgid "Backup running ..."
+msgstr "جاري تنفيذ النسخ الاحتياطي ..."
+
+msgid "Backup running..."
+msgstr "جاري تنفيذ النسخ الاحتياطي..."
+
+msgid "Backup system settings"
+msgstr "نسخ احتياطي لإعدادات النظام"
+
+msgid "Backup/Restore"
+msgstr "النسخ الاحتياطي/الاستعادة"
+
+msgid "Band"
+msgstr "الحزمة"
+
+msgid "Bandwidth"
+msgstr "عرض النطاق الترددي"
+
+msgid "Bashkir"
+msgstr "الباشكيرية"
+
+msgid "Basque"
+msgstr "الباسكية"
+
+msgid "Begin time"
+msgstr "وقت البدء"
+
+msgid "Behavior of 'pause' when paused"
+msgstr "سلوك مفتاح 'توقف مؤقت' عندما يكون أصلا في وضع التوقف"
+
+msgid "Behavior of 0 key in PiP-mode"
+msgstr "سلوك مفتاح 0 في وضع صورة داخل الصورة"
+
+msgid "Behavior when a movie is started"
+msgstr "السلوك عندما يكون الفيلم بصدد التشغيل"
+
+msgid "Behavior when a movie is stopped"
+msgstr "السلوك عندما يكون الفيلم متوقفا"
+
+msgid "Behavior when a movie reaches the end"
+msgstr "السلوك عندما يكون الفيلم قد وصل إلى نهايته"
+
+msgid "Bengali"
+msgstr "البنغالية"
+
+msgid "Bhutani"
+msgstr "البوتانية"
+
+msgid "Bihari"
+msgstr "البيهارية"
+
+msgid "Bislama"
+msgstr "البيسلاما"
+
+msgid "Bit rate: "
+msgstr "معدل بت :"
+
+msgid "Bitrate:"
+msgstr "دفق :"
+
+msgid "Blue"
+msgstr "أزرق"
+
+msgid "Board Leds Brightness"
+msgstr "سطوع أضواء اللوحة"
+
+msgid "Board Leds Hue"
+msgstr "درجة لون أضواء اللوحة"
+
+msgid "Board Leds Saturation"
+msgstr "تشبع أضواء اللوحة"
+
+msgid "Board Leds on standby"
+msgstr "أضواء اللوحة في وضع الاستعداد"
+
+msgid "Boards Leds"
+msgstr "أضواء اللوحة"
+
+msgid "Bookmarks"
+msgstr "الإشارات المرجعية"
+
+msgid "Breton"
+msgstr "البريتونية"
+
+msgid "Brightness"
+msgstr "السطوع"
+
+msgid "Browse network neighbourhood"
+msgstr "تصفح جوار الشبكة"
+
+msgid "Bulgarian"
+msgstr "البلغارية"
+
+msgid "Burmese"
+msgstr "البورمية"
+
+msgid "Burn DVD"
+msgstr "حرق دي في دي"
+
+msgid "Burn existing image to DVD"
+msgstr "حرق الصورة الموجودة إلى دي في دي"
+
+msgid "Burn to DVD..."
+msgstr "حرق إلى دي في دي..."
+
+msgid "Bus: "
+msgstr "الناقل :"
+
+msgid ""
+"By pressing the OK Button on your remote control, the info bar is being "
+"displayed."
+msgstr "بالضغط على زر موافق على جهاز التحكم عن بعد ، يتم عرض شريط المعلومات."
+
+msgid "Byelorussian"
+msgstr "البييلوروسية"
+
+msgid "C"
+msgstr "C"
+
+msgid "C-Band"
+msgstr "سي باند"
+
+msgid "CF Drive"
+msgstr "محرك CF"
+
+msgid "CI assignment"
+msgstr "مهمة الواجهة المشتركة"
+
+msgid "CIFS share"
+msgstr "مشاركة CIFS"
+
+msgid "CONAX"
+msgstr "كوناكس"
+
+msgid "CVBS"
+msgstr "CVBS"
+
+msgid "Cable"
+msgstr "كابل"
+
+msgid "Cache Thumbnails"
+msgstr "ذاكرة التخزين المؤقت للمصغرات"
+
+msgid "Call monitoring"
+msgstr "رصد المكالمة"
+
+msgid "Cambodian"
+msgstr "الكمبودية"
+
+msgid "Cancel"
+msgstr "إلغاء"
+
+msgid "Cannot parse feed directory"
+msgstr "لا يمكن تحليل تغذية الدليل"
+
+msgid "Capacity: "
+msgstr "سعة :"
+
+#, python-format
+msgid "Capacity: %d.%03d GB\n"
+msgstr "السعة :%d.%03d غيغابايت\n"
+
+msgid "Card"
+msgstr "بطاقة"
+
+msgid "Catalan"
+msgstr "الكاتالانية"
+
+msgid "Category"
+msgstr "الفئة"
+
+msgid "Change bouquets in quickzap"
+msgstr "تغيير الباقات في الانتقال السريع"
+
+msgid "Change dir."
+msgstr "تغيير الدليل."
+
+msgid "Change hostname"
+msgstr "تغيير اسم المضيف"
+
+msgid "Change pin code"
+msgstr "تغيير الرقم السري (pin)"
+
+msgid "Change service pin"
+msgstr "تغيير الرقم السري (pin) للقناة"
+
+msgid "Change service pins"
+msgstr "تغيير الأرقام السرية (pins) للقناة"
+
+msgid "Change setup pin"
+msgstr "تغيير الرقم السري (pin) للضبط"
+
+msgid "Change the game level and start new game?"
+msgstr "تغيير مستوى اللعبة وبدأ لعبة جديدة؟"
+
+msgid "Change the hostname of your QBoxHD."
+msgstr "تغيير اسم المضيف لجهاز QBoxHD."
+
+msgid "Channel"
+msgstr "قناة"
+
+msgid "Channel Search"
+msgstr "بحث القنوات"
+
+msgid "Channel Selection"
+msgstr "اختيار القناة"
+
+msgid "Channel Settings"
+msgstr "إعدادات القناة"
+
+msgid "Channel not in services list"
+msgstr "قناة ليست في قائمة الخدمات"
+
+msgid "Channel:"
+msgstr "القناة:"
+
+#, python-format
+msgid "Channel: %s"
+msgstr "القناة: %s"
+
+msgid "Channellist menu"
+msgstr "قائمة لائحة القنوات"
+
+msgid "Chap."
+msgstr "فصل."
+
+msgid "Chapter"
+msgstr "الفصل"
+
+msgid "Chapter:"
+msgstr "الفصل :"
+
+msgid "Check"
+msgstr "تحقق"
+
+msgid "Check for Updates on Startup"
+msgstr "التحقق من وجود تحديثات عند بدء التشغيل"
+
+msgid "Checking Filesystem..."
+msgstr "فحص ملف النظام..."
+
+msgid "Checking for updates ..."
+msgstr "التحقق من وجود تحديثات..."
+
+msgid "Chinese"
+msgstr "الصينية"
+
+msgid "Choose AddOn ..."
+msgstr "اختيار الإضافة..."
+
+msgid "Choose Downloader Server ..."
+msgstr "اختيار خادم تنزيل..."
+
+msgid "Choose Section ..."
+msgstr "اختر القسم..."
+
+msgid "Choose Tuner"
+msgstr "اختيار موالف"
+
+msgid "Choose a Wireless Network"
+msgstr "اختيار شبكة لاسلكية"
+
+msgid "Choose backup files"
+msgstr "اختيار ملفات النسخ الاحتياطي"
+
+msgid "Choose backup location"
+msgstr "اختيار موقع النسخ الاحتياطي"
+
+msgid "Choose bouquet"
+msgstr "اختيار باقة"
+
+msgid "Choose source"
+msgstr "اختيار مصدر"
+
+msgid "Choose target folder"
+msgstr "اختيار المجلد الهدف"
+
+msgid "Choose upgrade source"
+msgstr "اختيار مصدر الترقية"
+
+msgid "Choose your Skin"
+msgstr "اختيار المظهر (skin)"
+
+msgid "Circular left"
+msgstr "دائري أيسر"
+
+msgid "Circular right"
+msgstr "دائري أيمن"
+
+msgid "City"
+msgstr "المدينة"
+
+msgid "Cleanup"
+msgstr "تنظيف"
+
+msgid "Cleanup Wizard"
+msgstr "معالج التنظيف"
+
+msgid "Clear before scan"
+msgstr "مسح قبل البحث"
+
+msgid "Clear log"
+msgstr "مسح السجل"
+
+msgid "Close"
+msgstr "إغلاق"
+
+msgid "Cocks"
+msgstr "Cocks"
+
+msgid "Code rate high"
+msgstr "معدل ترميز مرتقع"
+
+msgid "Code rate low"
+msgstr "معدل ترميز منخفض"
+
+msgid "Coderate HP"
+msgstr "معدل ترميز مرتفع"
+
+msgid "Coderate LP"
+msgstr "معدل ترميز منخفض"
+
+msgid "Coding System: "
+msgstr "نظام الترميز :"
+
+msgid "Collection name"
+msgstr "اسم المجموعة"
+
+msgid "Collection settings"
+msgstr "إعدادات المجموعة"
+
+msgid "Color Format"
+msgstr "تنسيق الألوان"
+
+msgid "Comedy"
+msgstr "كوميديا"
+
+msgid "Coming soon ... :)"
+msgstr ""
+
+msgid "Command execution..."
+msgstr "تنفيذ الأوامر..."
+
+msgid "Command order"
+msgstr "ترتيب الأوامر"
+
+msgid "Committed DiSEqC command"
+msgstr "تنفيذ أمر دايسك"
+
+msgid "Common Interface"
+msgstr "الواجهة المشتركة"
+
+msgid "Common Interface Assignment"
+msgstr "تعيين واجهة مشتركة"
+
+msgid "CommonInterface"
+msgstr "واجهة مشتركة"
+
+msgid "Communication"
+msgstr "اتصال"
+
+msgid "Compact Flash"
+msgstr "فلاش مدمج"
+
+msgid "Compact flash card"
+msgstr "بطاقة فلاش مدمج"
+
+msgid "Complete"
+msgstr "مكتمل"
+
+msgid "Complex (allows mixing audio tracks and aspects)"
+msgstr "المعقدة (والتي تسمح خلط المسارات الصوتية والهيئات)"
+
+msgid "Config"
+msgstr "التكوين"
+
+msgid "Configuration Mode"
+msgstr "وضع التكوين"
+
+msgid "Configuring"
+msgstr "تكوين"
+
+msgid "Conflicting timer"
+msgstr "تعارض في المؤقت"
+
+msgid "Connect"
+msgstr "ربط"
+
+msgid "Connect to a Wireless Network"
+msgstr "ربط بشبكة لاسلكية"
+
+msgid "Connected to"
+msgstr "متصل بـ"
+
+msgid "Connected to Fritz!Box!"
+msgstr "متصل بـ Fritz!Bix!"
+
+msgid "Connected!"
+msgstr "متصل!"
+
+msgid "Connecting to Fritz!Box..."
+msgstr "جاري الاتصال بـ Fritz!Bix!"
+
+#, python-format
+msgid ""
+"Connection to Fritz!Box\n"
+"failed! (%s)\n"
+"retrying..."
+msgstr ""
+"الاتصال بـ Fritz!Bix!\n"
+"فشل! (%s)\n"
+"جاري إعادة المحاولة..."
+
+msgid "Constellation"
+msgstr "كوكبة"
+
+msgid "Content does not fit on DVD!"
+msgstr "محتوى لا مكن احتواؤه في دي في دي!"
+
+msgid "Continue"
+msgstr "استمرار"
+
+msgid "Continue in background"
+msgstr "الاستمرار في الخلفية"
+
+msgid "Continue playing"
+msgstr "الاستمرار في التشغيل"
+
+msgid "Contrast"
+msgstr "تباين"
+
+msgid "Corsican"
+msgstr "الكورسيكية"
+
+msgid "Could not connect to QBoxHD .NFI Image Feed Server:"
+msgstr "تعذر الاتصال بـ QBoxHD. خادم صورة تغذية NFI :"
+
+msgid "Could not load Medium! No disc inserted?"
+msgstr "لا يمكن تحميل الوسيط! لم يتم إدخال القرص؟"
+
+#, python-format
+msgid ""
+"Could not retrive video url for:\n"
+"%s"
+msgstr ""
+"لا يمكن استرداد رابط الفيديو لـ :\n"
+"%s"
+
+msgid "Could not retrive video url."
+msgstr "لا يمكن استرداد رابط الفيديو."
+
+#, python-format
+msgid "Couldn't record due to conflicting timer %s"
+msgstr "لا يمكن التسجيل بسبب تعارض في المؤقت %s"
+
+msgid "Crashlog settings"
+msgstr "إعدادات سجل الانهيار (crashlog)"
+
+msgid "CrashlogAutoSubmit"
+msgstr "إرسال تلقائي لسجل الانهيار"
+
+msgid "CrashlogAutoSubmit settings"
+msgstr "إعدادات الإرسال التلقائي لسجل الانهيار"
+
+msgid "CrashlogAutoSubmit settings..."
+msgstr "إعدادات الإرسال التلقائي لسجل الانهيار..."
+
+msgid ""
+"Crashlogs found!\n"
+"Send them to Dream Multimedia ?"
+msgstr ""
+"تم العثور على سجلات انهيار!\n"
+"إرسالها إلى فريق الدعم؟"
+
+msgid "Create DVD-ISO"
+msgstr "إنشاء دي في دي ايزو"
+
+msgid "Create movie folder failed"
+msgstr "فشل إنشاء مجلد الفيلم"
+
+#, python-format
+msgid "Creating directory %s failed."
+msgstr "فشل إنشاء الدليل (%s)."
+
+msgid "Creating partition failed"
+msgstr "فشل إنشاء قسم"
+
+msgid "Croatian"
+msgstr "الكرواتية"
+
+msgid "Current Channel Information"
+msgstr "معلومات القناة الحالية"
+
+msgid "Current Transponder"
+msgstr "التردد الحالي"
+
+msgid "Current settings:"
+msgstr "الإعدادات الحالية :"
+
+msgid "Current version:"
+msgstr "الإصدار الحالي :"
+
+msgid "Custom skip time for '1'/'3'-keys"
+msgstr "وقت تخطي مخصص للمفاتيح ‘1‘/‘3‘"
+
+msgid "Custom skip time for '4'/'6'-keys"
+msgstr "وقت تخطي مخصص للمفاتيح ‘4‘/‘6‘"
+
+msgid "Custom skip time for '7'/'9'-keys"
+msgstr "وقت تخطي مخصص للمفاتيح ‘7‘/‘9‘"
+
+msgid "Customize"
+msgstr "تخصيص"
+
+msgid "Cut"
+msgstr "قطع"
+
+msgid "Cutlist editor..."
+msgstr "محرر لائحة القص..."
+
+msgid "Czech"
+msgstr "التشيكية"
+
+msgid "D"
+msgstr "D"
+
+msgid "DE: Berlin"
+msgstr "ألمانيا : برلين"
+
+msgid "DE: Frankfurt/Main"
+msgstr "ألمانيا : فرانكفورت"
+
+msgid "DE: Hamburg"
+msgstr "ألمانيا : هامبورغ"
+
+msgid "DE: Hannover"
+msgstr "ألمانيا : هانوفر"
+
+msgid "DE: Koeln"
+msgstr "ألمانيا : كولن"
+
+msgid "DE: Leipzig"
+msgstr "ألمانيا : لايبزيغ"
+
+msgid "DE: Muenchen"
+msgstr "ألمانيا : ميونخ"
+
+msgid "DE: Stuttgart"
+msgstr "المانيا : شتوتغارت"
+
+msgid "DHCP"
+msgstr "DHCP"
+
+msgid "DVB-S"
+msgstr "DVB-S"
+
+msgid "DVB-S2"
+msgstr "DVB-S2"
+
+msgid "DVD Device (leave empty for default)"
+msgstr "جهاز دي في دي (اتركه فارغا للافتراضي)"
+
+msgid "DVD Player"
+msgstr "مشغل دي في دي"
+
+msgid "DVD media toolbox"
+msgstr "أدوات وسائط دي في دي"
+
+msgid "Danish"
+msgstr "الدانماركية"
+
+msgid "Date"
+msgstr "التاريخ"
+
+msgid "Decide what should be done when crashlogs are found."
+msgstr "يقرر ما ينبغي القيام به عند وجود سجلات انهيار."
+
+msgid "Decide what should happen to the crashlogs after submission."
+msgstr "يقرر ما يجب أن يحدث لسجلات الانهيار بعد أرسالها."
+
+msgid "Deep StandBy Blue"
+msgstr "الاستعداد العميق أزرق"
+
+msgid "Deep StandBy Green"
+msgstr "الاستعداد العميق أخضر"
+
+msgid "Deep StandBy Red"
+msgstr "الاستعداد العميق أحمر"
+
+msgid "Deep Standby"
+msgstr "الاستعداد العميق"
+
+msgid "Deep Standby QBoxHD after"
+msgstr "إدخال QBoxHD في وضع الاستعداد العميق بعد"
+
+msgid "Default Settings"
+msgstr "الإعدادات الافتراضية"
+
+msgid "Default services lists"
+msgstr "لوائح القنوات الافتراضية"
+
+msgid "Default settings"
+msgstr "الإعدادات الافتراضية"
+
+msgid "Define Custom Button"
+msgstr "تحديد زر مخصص"
+
+msgid "Define custom button..."
+msgstr "تحديد زر مخصص..."
+
+msgid "Delay"
+msgstr "مهلة"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Delete Playlist"
+msgstr "حذف قائمة التشغيل"
+
+msgid "Delete crashlogs"
+msgstr "حذف سجلات الانهيار"
+
+msgid "Delete entry"
+msgstr "حذف القيد"
+
+msgid "Delete failed!"
+msgstr "فشل الحذف!"
+
+msgid "Delete mount"
+msgstr "حذف تركيب (mount)"
+
+#, python-format
+msgid ""
+"Delete no more configured satellite\n"
+"%s?"
+msgstr ""
+"حذف القمر الصناعي الذي لم يعد له تكوين\n"
+"%s؟"
+
+msgid "Descending"
+msgstr "تنازلي"
+
+msgid "Description"
+msgstr "الوصف"
+
+msgid "Description: "
+msgstr "الوصف :"
+
+#, python-format
+msgid "Description: %s\n"
+msgstr "الوصف : %s\n"
+
+msgid "Deselect"
+msgstr "إلغاء التحديد :"
+
+msgid "Destination directory"
+msgstr "الدليل الوجهة"
+
+msgid "Detected HDD:"
+msgstr "الأقراص الصلبة المكتشفة :"
+
+msgid "Detected NIMs:"
+msgstr "الموالفات المكتشفة :"
+
+#, python-format
+msgid "Device: %s\n"
+msgstr "الجهاز : %s\n"
+
+msgid "DiSEqC"
+msgstr "دايسك :"
+
+msgid "DiSEqC A/B"
+msgstr "دايسك أ / ب"
+
+msgid "DiSEqC A/B/C/D"
+msgstr "دايسك أ / ب / ج / د"
+
+msgid "DiSEqC mode"
+msgstr "وضع دايسك"
+
+msgid "DiSEqC repeats"
+msgstr "تكرار دايسك"
+
+msgid "Dialing:"
+msgstr "جاري الطلب :"
+
+msgid "Dir:"
+msgstr "الدليل :"
+
+msgid "Direct playback of linked titles without menu"
+msgstr "تشغيل مباشر من العناوين المرتبطة دون قائمة"
+
+msgid "Directory"
+msgstr "الدليل :"
+
+#, python-format
+msgid "Directory %s nonexistent."
+msgstr "الدليل (%s) غير موجود."
+
+msgid "Directory:"
+msgstr "الدليل :"
+
+msgid "Disable"
+msgstr "تعطيل"
+
+msgid "Disable Picture in Picture"
+msgstr "تعطيل صورة داخل الصورة"
+
+msgid "Disable Subtitles"
+msgstr "تعطيل الترجمات"
+
+msgid "Disable crashlog reporting"
+msgstr "تعطيل الإبلاغ عن سجل الانهيار"
+
+msgid "Disable timer"
+msgstr "تعطيل المؤقت"
+
+msgid "Disabled"
+msgstr "معطل"
+
+msgid "Disconnect"
+msgstr "غير متصل"
+
+#, python-format
+msgid ""
+"Disconnected from\n"
+"Fritz!Box! (%s)\n"
+"retrying..."
+msgstr ""
+"تم قطع الاتصال بـ\n"
+"Fritz!Box! (%s)\n"
+"جاري إعادة المحاولة..."
+
+msgid "Dish"
+msgstr "الصحن"
+
+msgid "Display 16:9 content as"
+msgstr "عرض المحتوى 16:9 كـ"
+
+msgid "Display 4:3 content as"
+msgstr "عرض المحتوى 4:3 كـ"
+
+msgid "Display >16:9 content as"
+msgstr "عرض >المحتوى 16:9 كـ"
+
+msgid "Display Setup"
+msgstr "ضبط العرض"
+
+msgid "Display and Userinterface"
+msgstr "العرض و واجهة المستخدم"
+
+msgid "DivX Player"
+msgstr "مشغل ديف اكس"
+
+msgid "DivX player"
+msgstr "مشغل ديف اكس"
+
+#, python-format
+msgid ""
+"Do you really want to REMOVE\n"
+"the plugin \"%s\"?"
+msgstr ""
+"هل تريد حقا  إزالة\n"
+"الملحق \"%s\" ؟"
+
+msgid ""
+"Do you really want to check the filesystem?\n"
+"This could take lots of time!"
+msgstr ""
+"هل تريد حقا للتحقق من نظام ملفات؟\n"
+"قد يستغرق ذلك الكثير من الوقت!"
+
+#, python-format
+msgid "Do you really want to delete %s?"
+msgstr "هل حقا تريد حذف %s؟"
+
+#, python-format
+msgid ""
+"Do you really want to download\n"
+"the addOn \"%s\"?"
+msgstr ""
+"هل حقا تريد تنزيل\n"
+"الإضافة  \"%s\" ؟"
+
+#, python-format
+msgid ""
+"Do you really want to download\n"
+"the plugin \"%s\"?"
+msgstr ""
+"هل حقا تريد تنزيل\n"
+"الملحق  \"%s\" ؟"
+
+msgid "Do you really want to exit?"
+msgstr "هل حقا تريد الخروج؟"
+
+msgid ""
+"Do you really want to format the harddisk?\n"
+"All data on the disk will be lost!"
+msgstr ""
+"هل تريد حقا تهيئة القرص الصلب؟\n"
+"سيتم فقدان كافة البيانات على القرص!"
+
+msgid ""
+"Do you really want to initialize the harddisk?\n"
+"All data on the disk will be lost!"
+msgstr ""
+"هل تريد حقا تهيئة القرص الصلب؟\n"
+"سيتم فقدان كافة البيانات على القرص!"
+
+#, python-format
+msgid ""
+"Do you really want to install\n"
+"the addOn \"%s\"?"
+msgstr ""
+"هل حقا تريد تثبيت\n"
+"الإضافة \"%s\" ؟"
+
+#, python-format
+msgid ""
+"Do you really want to remove\n"
+"the addOn \"%s\"?"
+msgstr ""
+"هل حقا تريد إزالة\n"
+"الإضافة \"%s\" ؟"
+
+#, python-format
+msgid "Do you really want to remove directory %s from the disk?"
+msgstr "هل حقا تريد إزالة الدليل (%s) من القرص؟"
+
+#, python-format
+msgid "Do you really want to remove your bookmark of %s?"
+msgstr "هل حقا تريد إزالة الإشارة المرجعية من %s؟"
+
+msgid ""
+"Do you want to backup now?\n"
+"After pressing OK, please wait!"
+msgstr ""
+"هل تريد النسخ الاحتياطي الآن؟\n"
+"بعد الضغط على موافق ، يرجى الانتظار!"
+
+msgid "Do you want to burn this collection to DVD medium?"
+msgstr "هل تريد حرق هذه المجموعة إلى وسيط دي في دي؟"
+
+msgid "Do you want to do a service scan?"
+msgstr "هل تريد أن تقوم بعملية بحث للقنوات؟"
+
+msgid "Do you want to do another manual service scan?"
+msgstr "هل تريد أن تقوم بعملية بحث يدوي أخرى للقنوات؟"
+
+msgid "Do you want to enable the parental control feature on your QBoxHD?"
+msgstr "هل تريد تمكين ميزة الرقابة الأبوية على QBoxHD؟"
+
+msgid "Do you want to enter a username and password for this host?\n"
+msgstr "هل تريد إدخال اسم المستخدم وكلمة المرور لهذا المضيف؟\n"
+
+msgid "Do you want to install default sat lists?"
+msgstr "هل تريد تثبيت قوائم الأقمار الصناعية الافتراضية؟"
+
+msgid "Do you want to install the package:\n"
+msgstr "هل تريد تثبيت الحزمة :\n"
+
+msgid "Do you want to play DVD in drive?"
+msgstr "هل تريد تشغيل قرص الدي في دي الموجود في محرك الأقراص؟"
+
+msgid "Do you want to preview this DVD before burning?"
+msgstr "هل تريد المعاينة قبل حرق الدي في دي هذا؟"
+
+msgid "Do you want to reboot your QBoxHD?"
+msgstr "هل تريد إعادة إقلاع QBoxHD؟"
+
+msgid "Do you want to remove the package:\n"
+msgstr "هل تريد إزالة الحزمة :\n"
+
+msgid "Do you want to restore your settings?"
+msgstr "هل تريد استعادة الإعدادات؟"
+
+msgid "Do you want to resume this playback?"
+msgstr "هل ترغب في استئناف هذه القراءة؟"
+
+msgid ""
+"Do you want to submit your email address and name so that we can contact you "
+"if needed?"
+msgstr ""
+"هل تريد أن تقدم عنوان بريدك الالكتروني واسمك حتى نتمكن من الاتصال بك إذا لزم "
+"الأمر؟"
+
+msgid "Do you want to update your QBoxHD?"
+msgstr "هل تريد تحديث QBoxHD؟"
+
+msgid ""
+"Do you want to update your QBoxHD?\n"
+"After pressing OK, please wait!"
+msgstr ""
+"هل تريد تحديث QBoxHD؟\n"
+"بعد الضغط على موافق ، يرجى الانتظار!"
+
+msgid "Do you want to upgrade the package:\n"
+msgstr "هل تريد ترقية الحزمة:\n"
+
+msgid "Do you want to view a tutorial?"
+msgstr "هل تريد عرض البرنامج التعليمي؟"
+
+msgid "Don't ask, just send"
+msgstr "لا تسأل ، فقط أرسل"
+
+msgid "Don't stop current event but disable coming events"
+msgstr "لا توقف الحدث الحالي ولكن قم بتعطيل الأحداث القادمة"
+
+#, python-format
+msgid "Done - Installed or upgraded %d packages"
+msgstr "تم -- تركيب أو ترقية %d حزم"
+
+#, python-format
+msgid "Done - Installed or upgraded %d packages with %d errors"
+msgstr "تم -- تركيب أو ترقية %d حزم مع حدوث %d أخطاء"
+
+#, python-format
+msgid "Done - Installed, upgraded or removed %d packages with %d errors"
+msgstr "تم -- تركيب وتحديث أو إزالة %d حزم مع حدوث %d أخطاء"
+
+msgid "Download"
+msgstr "تنزيل"
+
+msgid "Download .NFI-Files for USB-Flasher"
+msgstr "تنزيل ملفات .NFI للتفليش بواسطة اليو اس بي فلاشر"
+
+msgid "Download AddOns"
+msgstr "تنزيل إضافات"
+
+msgid "Download Plugins"
+msgstr "تنزيل ملحقات"
+
+msgid "Download Terminate"
+msgstr "إنهاء التنزيل"
+
+msgid "Download Terminate."
+msgstr "إنهاء التنزيل."
+
+msgid "Download of USB flasher boot image failed: "
+msgstr "فشل تنزيل صورة التمهيد (boot image) لليو اس بي فلاشر :"
+
+msgid "Downloadable AddOns"
+msgstr "إضافات للتنزيل"
+
+msgid "Downloadable addOns"
+msgstr "إضافات للتنزيل"
+
+msgid "Downloadable new plugins"
+msgstr "ملحقات جديدة للتنزيل"
+
+msgid "Downloadable plugins"
+msgstr "ملحقات للتنزيل"
+
+msgid "Downloading"
+msgstr "تنزيل"
+
+#, python-format
+msgid "Downloading %s ..."
+msgstr "تنزيل %s ..."
+
+msgid "Downloading ..."
+msgstr "تنزيل ..."
+
+msgid "Downloading plugin information. Please wait..."
+msgstr "تنزيل معلومات الملحق. يرجى الانتظار..."
+
+msgid "Downloading server information. Please wait..."
+msgstr "تنزيل معلومات الخادم. يرجى الانتظار..."
+
+msgid "Duolabs"
+msgstr "Duolabs"
+
+msgid "Duration"
+msgstr "المدة"
+
+msgid "Duration: "
+msgstr "المدة :"
+
+msgid "Dutch"
+msgstr "الهولندية"
+
+msgid "E"
+msgstr "E"
+
+msgid "E-Mail Address"
+msgstr "عنوان البريد الإلكتروني"
+
+msgid "EPG Selection"
+msgstr "اختيار دليل البرامج"
+
+#, python-format
+msgid "ERROR - failed to scan (%s)!"
+msgstr "خطأ -- فشل بحث (%s)!"
+
+msgid "East"
+msgstr "الشرق"
+
+msgid "Edit"
+msgstr "تحرير "
+
+msgid "Edit DNS"
+msgstr "تحرير نظام أسماء النطاقات (DNS)"
+
+msgid "Edit IPKG source URL..."
+msgstr "تحرير رابط مصدر IPKG..."
+
+msgid "Edit Title"
+msgstr "تحرير العنوان"
+
+msgid "Edit bouquets list"
+msgstr "تحرير قائمة الباقات"
+
+msgid "Edit chapters of current title"
+msgstr "تحرير فصول العنوان الحالي"
+
+msgid "Edit services list"
+msgstr "تحرير قائمة القنوات"
+
+msgid "Edit settings"
+msgstr "تحرير الإعدادات"
+
+msgid "Edit the Nameserver configuration of your QBoxHD.\n"
+msgstr "تحرير تكوين اسم خادم QBoxHD.\n"
+
+msgid "Edit the network configuration of your QBoxHD.\n"
+msgstr "تحرير تكوين الشبكة لـ QBoxHD.\n"
+
+msgid "Edit title"
+msgstr "تحرير العنوان"
+
+msgid "Education"
+msgstr "تعليم"
+
+msgid "Electronic Program Guide"
+msgstr "دليل البرامج الإلكتروني"
+
+msgid "Enable"
+msgstr "تمكين"
+
+msgid "Enable 5V for active antenna"
+msgstr "تمكين 5 فولت للهوائي النشط"
+
+msgid "Enable System logs"
+msgstr "تمكين سجلات النظام"
+
+msgid "Enable multiple bouquets"
+msgstr "تمكين الباقات المتعددة"
+
+msgid "Enable parental control"
+msgstr "تمكين الرقابة الأبوية"
+
+msgid "Enable timer"
+msgstr "تمكين المؤقت"
+
+msgid "Enabled"
+msgstr "ممكن"
+
+msgid "Encryption"
+msgstr "التشفير"
+
+msgid "Encryption Key"
+msgstr "مفتاح التشفير"
+
+msgid "Encryption Keytype"
+msgstr "نوع مفتاح التشفير"
+
+msgid "Encryption Type"
+msgstr "نوع التشفير"
+
+msgid "Encryption:"
+msgstr "التشفير :"
+
+#, python-format
+msgid "Encryption: %s"
+msgstr "التشفير : %s"
+
+msgid "End time"
+msgstr "وقت الإنتهاء"
+
+msgid "EndTime"
+msgstr "وقت الإنتهاء"
+
+msgid "English"
+msgstr "الإنجليزية"
+
+msgid ""
+"Enigma2 Skinselector v0.5 BETA\n"
+"\n"
+"If you experience any problems please contact\n"
+"stephan@reichholf.net\n"
+"\n"
+"© 2006 - Stephan Reichholf"
+msgstr ""
+"محدد مظاهر إنيقما2 إصدار 5 بيتا\n"
+"\n"
+"إذا كنت تواجه أي مشاكل يرجى الاتصال\n"
+"stephan@reichholf.net\n"
+"\n"
+"© 2006 - Stephan Reichholf"
+
+msgid "Enter"
+msgstr "أدخل"
+
+#.   TRANSLATORS: Note that "Enter" in the two strings below should *not*
+#.       be interpreted as "Give speed as input". The intended meaning is
+#.       instead "Initial speed when starting winding", i.e. the speed at
+#.       which "winding mode" is entered when first pressing "rewind" or
+#.       "fast forward". 
+msgid "Enter Fast Forward at speed"
+msgstr "إدخال اللف للأمام بالسرعة"
+
+msgid "Enter IP to scan..."
+msgstr "أدخل عنوان اي بي لتفحصه..."
+
+msgid "Enter MediaCenter menu..."
+msgstr "دخول قائمة مركز الوسائط..."
+
+msgid "Enter Rewind at speed"
+msgstr "إدخال اللف للوراء بالسرعة"
+
+msgid "Enter VLC-Server as FQDN or IP-Address"
+msgstr "إدخال خادم VLC كـ FQDN أو عنوان اي بي"
+
+msgid "Enter WLAN network name/SSID:"
+msgstr "أدخل اسم/معرف مجموعة الخدمات (SSID) لشبكة الاتصال المحلية اللاسلكية :"
+
+msgid "Enter WLAN passphrase/key:"
+msgstr "أدخل عبارة مرور/مفتاح الشبكة اللاسلكية :"
+
+msgid "Enter main menu..."
+msgstr "دخول القائمة الرئيسية..."
+
+msgid "Enter new hostname for your QBoxHD"
+msgstr "أدخل اسم المضيف الجديد لـ QBoxHD"
+
+msgid "Enter options:"
+msgstr "أدخل خيارات :"
+
+msgid "Enter password:"
+msgstr "أدخل كلمة المرور :"
+
+msgid "Enter pin code"
+msgstr "أدخل الرقم السري"
+
+msgid "Enter share directory:"
+msgstr "أدخل دليل المشاركة :"
+
+msgid "Enter share name:"
+msgstr "أدخل اسم المشاركة :"
+
+msgid "Enter the service pin"
+msgstr "أدخل الرقم السري للقناة"
+
+msgid "Enter user and password for host: "
+msgstr "أدخل اسم المستخدم وكلمة المرور للمضيف :"
+
+msgid "Enter username:"
+msgstr "أدخل اسم المستخدم :"
+
+msgid "Enter your email address so that we can contact you if needed."
+msgstr "أدخل عنوان بريدك الالكتروني حتى نتمكن من الاتصال بك إذا لزم الأمر."
+
+msgid "Entertainment"
+msgstr "الترفيه"
+
+msgid "Error"
+msgstr "خطأ"
+
+#, python-format
+msgid ""
+"Error adding video to favorites:\n"
+"%s"
+msgstr ""
+"خطأ في إضافة الفيديو إلى المفضلة :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error adding video to playlist:\n"
+"%s"
+msgstr ""
+"خطأ في إضافة الفيديو الى قائمة التشغيل :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error contacting YouPorn:\n"
+"%s"
+msgstr ""
+"خطأ الاتصال بـ YouPorn :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error contacting YouTube:\n"
+"%s"
+msgstr ""
+"خطأ الاتصال بيوتيوب :\n"
+"%s"
+
+msgid "Error executing plugin"
+msgstr "خطأ في تنفيذ الملحق"
+
+#, python-format
+msgid ""
+"Error loading filelist into server %(server)s:\n"
+"%(error)s"
+msgstr ""
+"خطأ في تحميل قائمة الملفات إلى الخادم %(server)s:\n"
+"%(error)s"
+
+#, python-format
+msgid ""
+"Error loading filelist into server %s:\n"
+"%s"
+msgstr ""
+"خطأ في تحميل قائمة الملفات إلى الخادم %s :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error loading playlist %(media)s into server %(server)s:\n"
+"%(error)s"
+msgstr ""
+"خطأ في تحميل قائمة التشغيل %(media)s إلى الخادم %(server)s:\n"
+"%(error)s"
+
+#, python-format
+msgid ""
+"Error loading playlist %s into server %s:\n"
+"%s"
+msgstr ""
+"خطأ في تحميل قائمة التشغيل %s إلى الخادم %s :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error loading playlist into server %(server)s:\n"
+"%(error)s"
+msgstr ""
+"خطأ في تحميل قائمة التشغيل إلى الخادم %(server)s:\n"
+"%(error)s"
+
+#, python-format
+msgid ""
+"Error loading playlist into server %s:\n"
+"%s"
+msgstr ""
+"خطأ في تحميل قائمة التشغيل إلى الخادم %s :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error loading playlists:\n"
+"%s"
+msgstr ""
+"خطأ في تحميل قوائم التشغيل :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error querying favorites feed:\n"
+"%s"
+msgstr ""
+"خطأ في الاستعلام عن تغذية المفضلة :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error querying feed %s:\n"
+"%s"
+msgstr ""
+"خطأ في الاستعلام عن تغذية %s :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error querying feed for search term %s:\n"
+"%s"
+msgstr ""
+"خطأ في الاستعلام عن تغذية للبحث عن مصطلح %s :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error querying page %s:\n"
+"%s"
+msgstr ""
+"خطأ في الاستعلام عن صفحة %s:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error querying page for search term %s:\n"
+"%s"
+msgstr ""
+"خطأ في الاستعلام عن صفحة للبحث عن مصطلح %s:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error querying playlist-feed for playlist %s:\n"
+"%s"
+msgstr ""
+"خطأ في الاستعلام عن تغذية قائمة التشغيل %s:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error removing video from favorites:\n"
+"%s"
+msgstr ""
+"خطأ في إزالة الفيديو من المفضلة :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error removing video from playlist:\n"
+"%s"
+msgstr ""
+"خطأ في إزالة الفيديو من قائمة التشغيل :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error switching directory:\n"
+"%s"
+msgstr ""
+"خطأ تبديل الدليل :\n"
+"%s"
+
+#, python-format
+msgid "Error to install %s."
+msgstr "خطأ في تثبيت %s."
+
+#, python-format
+msgid "Error to remove %s."
+msgstr "خطأ في إزالة %s."
+
+#, python-format
+msgid ""
+"Error updating file- and playlist from server %s:\n"
+"%s"
+msgstr ""
+"خطأ في تحديث ملف و قائمة التشغيل من الخادم %s:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error updating filelist from server %(server)s:\n"
+"%(error)s"
+msgstr ""
+"خطأ في تحديث قائمة الملفات من الخادم %(server)s:\n"
+"%(error)s"
+
+#, python-format
+msgid ""
+"Error updating filelist from server %s:\n"
+"%s"
+msgstr ""
+"خطأ في تحديث قائمة الملفات من الخادم %s:\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error with VLC server:\n"
+"%s"
+msgstr ""
+"خطأ مع خادم VLC :\n"
+"%s"
+
+#, python-format
+msgid ""
+"Error: %s\n"
+"Retry?"
+msgstr ""
+"خطأ : %s\n"
+"إعادة المحاولة؟"
+
+msgid "Error: Twisted-Web not installed"
+msgstr "خطأ : لم يتم تثبيت TwistedWeb"
+
+msgid "Esperanto"
+msgstr "الاسبرانتو"
+
+msgid "Estonian"
+msgstr "الاستونية"
+
+msgid "Eventview"
+msgstr "عرض الحدث"
+
+msgid "Everything is fine"
+msgstr "كل شيء على ما يرام"
+
+msgid "Execution Progress:"
+msgstr "تقدم التنفيذ :"
+
+msgid "Execution finished!!"
+msgstr "انتهى التنفيذ!"
+
+msgid "Exif"
+msgstr "Exif"
+
+msgid "Exit"
+msgstr "خروج"
+
+msgid "Exit Audio Player"
+msgstr "الخروج من مشغل الصوت"
+
+msgid "Exit editor"
+msgstr "الخروج من المحرر"
+
+msgid "Exit from web browser successfully"
+msgstr "الخروج من مستعرض الويب بنجاح"
+
+msgid "Exit the cleanup wizard"
+msgstr "إنهاء معالج التنظيف"
+
+msgid "Exit the wizard"
+msgstr "إنهاء المعالج"
+
+msgid "Exit wizard"
+msgstr "الخروج من المعالج"
+
+msgid "Expert"
+msgstr "خبير"
+
+msgid "Extended Networksetup Plugin..."
+msgstr "ملحق الإعدادات الموسعة للشبكة..."
+
+msgid "Extended Setup..."
+msgstr "الضبط الموسع"
+
+msgid "Extensions"
+msgstr "ملحقات"
+
+msgid "External Harddisk"
+msgstr "القرص الصلب الخارجي"
+
+msgid "External Harddisk Integrity Check"
+msgstr "التحقق من تكامل القرص الصلب الخارجي"
+
+msgid "External Harddisk Setup"
+msgstr "ضبط القرص الصلب الخارجي"
+
+msgid "FEC"
+msgstr "معامل تصويب الخطأ"
+
+#, python-format
+msgid "FP Info: %d"
+msgstr "معلومات FP : %d"
+
+msgid "Factory reset"
+msgstr "إعدادات المصنع"
+
+msgid "Faeroese"
+msgstr "لغة جزر فارو"
+
+msgid "Failed"
+msgstr "فشل"
+
+msgid "Fast"
+msgstr "سريع"
+
+msgid "Fast DiSEqC"
+msgstr "دايسك سريع "
+
+msgid "Fast Forward speeds"
+msgstr "سرعات اللف للأمام"
+
+msgid "Fast epoch"
+msgstr "وقت سريع"
+
+msgid "Favorite Folders"
+msgstr "مجلدات المفضلة"
+
+msgid "Favorited"
+msgstr "مفضلة"
+
+msgid "Favorites"
+msgstr "المفضلة"
+
+msgid "Favourites"
+msgstr "المفضلة"
+
+msgid "Fiji"
+msgstr "فيجي"
+
+msgid "File / Folder Options"
+msgstr "خيارات ملف/مجلد"
+
+msgid "Filelist"
+msgstr "قائمة الملفات"
+
+msgid "Filesystem Check..."
+msgstr "التحقق من نظام الملفات..."
+
+msgid ""
+"Filesystem check.\n"
+"Successfully"
+msgstr ""
+"تحقق من نظام الملفات.\n"
+"تم بنجاح"
+
+msgid "Filesystem contains uncorrectable errors"
+msgstr " نظام الملفات يحتوي على أخطاء غير القابلة للتصحيح"
+
+msgid "Finetune"
+msgstr "ضبط دقيق"
+
+msgid "Finished"
+msgstr "انتهى"
+
+msgid "Finished configuring your network"
+msgstr "تم الانتهاء من تكوين شبكة الاتصال"
+
+msgid "Finished restarting your network"
+msgstr "تم الانتهاء من إعادة تشغيل الشبكة"
+
+msgid "Finnish"
+msgstr "الفنلندية"
+
+#, python-format
+msgid "Firmware: %s"
+msgstr "البرنامج التشغيلي : %s"
+
+msgid ""
+"First we need to download the latest boot environment for the USB flasher."
+msgstr "أولا نحن بحاجة لتحميل أحدث بيئة تمهيد (boot) لليو اس بي فلاشر."
+
+msgid "Flash"
+msgstr "فلاش"
+
+msgid "Flashing failed"
+msgstr "فشل التفليش"
+
+msgid "Following tasks will be done after you press continue."
+msgstr "سيتم إتمام المهام التالية بعد الضغط على متابعة."
+
+msgid ""
+"For WEP 128 encryption you must specify 13 ascii character or 26 hexadecimal "
+"character."
+msgstr ""
+"لتشفير WEP 128 يجب تحديد 13 حرف أسكي (ascii) أو 26 حرف ست عشري (hexadecimal)."
+
+msgid ""
+"For WEP 64 encryption you must specify 5 ascii character or 10 hexadecimal "
+"character."
+msgstr ""
+"لتشفير WEP 64 يجب تحديد 13 حرف أسكي (ascii) أو 26 حرف ست عشري (hexadecimal)."
+
+msgid "For WPA or WPA2 encryption you need to specify 8 to 63 ascii character."
+msgstr "لتشفير WPA أو WPA2 تحتاج إلى تحديد من 8 إلى 64 حرف أسكي (ascii)."
+
+msgid "Format"
+msgstr "تهيئة"
+
+msgid "Format External Harddisk"
+msgstr "تهيئة القرص الصلب الخارجي"
+
+msgid "Forward in history, be patient ..."
+msgstr "تنقل إلى الأمام في التاريخ، الرجاء الانتظار..."
+
+msgid "Frame repeat count during non-smooth winding"
+msgstr "عداد تكرار الأطر أثناء اللف غير السلس"
+
+msgid "Frame size in full view"
+msgstr "حجم الإطار في العرض الكامل"
+
+#, python-format
+msgid "Free: %d.%03d GB\n"
+msgstr "حر: %d. %03d جيغابايت\n"
+
+msgid "French"
+msgstr "الفرنسية"
+
+msgid "Frequency"
+msgstr "تردد"
+
+msgid "Frequency bands"
+msgstr "نطاقات التردد"
+
+msgid "Frequency scan step size(khz)"
+msgstr "حجم خطوة بحث التردد (كيلو هرتز)"
+
+msgid "Frequency steps"
+msgstr "خطوات التردد"
+
+msgid "Frequency:"
+msgstr "التردد :"
+
+msgid "Fri"
+msgstr "الجمعة"
+
+msgid "Friday"
+msgstr "الجمعة"
+
+msgid "Frisian"
+msgstr "الفريزية"
+
+msgid "Fritz!Box FON IP address"
+msgstr "عنوان اي بي Fritz!Box FON"
+
+msgid "From Region"
+msgstr "من المنطقة"
+
+msgid "Front Button Setup"
+msgstr "ضبط الزر الأمامي"
+
+msgid "FrontButton Setup"
+msgstr "ضبط الزر الأمامي"
+
+#, python-format
+msgid "Frontprocessor version: %d"
+msgstr "إصدار معالج البيانات : %d"
+
+msgid "Fsck failed"
+msgstr "فشل Fsck"
+
+msgid "Function not yet implemented"
+msgstr "وظيفة لم تنفذ بعد"
+
+msgid ""
+"GUI needs a restart to apply a new skin\n"
+"Do you want to Restart the GUI now?"
+msgstr ""
+"واجهة المستخدم الرسومية في حاجة إلى إعادة التشغيل لتطبيق المظهر الجديد\n"
+"هل تريد إعادة تشغيل واجهة المستخدم الرسومية الآن؟"
+
+msgid "Galician"
+msgstr "الجاليكية"
+
+msgid "Gaming"
+msgstr "الألعاب"
+
+msgid "Gateway"
+msgstr "بوابة"
+
+msgid "Gay"
+msgstr "Gay"
+
+msgid "General AC3 Delay"
+msgstr "مهلة AC3 العامة"
+
+msgid "General AC3 delay"
+msgstr "مهلة AC3 العامة"
+
+msgid "General Configuration"
+msgstr "التكوين العام"
+
+msgid "General PCM Delay"
+msgstr "مهلة PCM العامة"
+
+msgid "General PCM delay"
+msgstr "مهلة PCM العامة"
+
+msgid "Genre"
+msgstr "النوع"
+
+#, python-format
+msgid "Genre: %s"
+msgstr "النوع : %s"
+
+msgid "Genre: unknown"
+msgstr "النوع : غير معروف"
+
+msgid "Genres"
+msgstr "الأنواع"
+
+#, python-format
+msgid "Genres: %d"
+msgstr "الأنواع : %d"
+
+msgid "Georgian"
+msgstr "الجورجية"
+
+msgid "German"
+msgstr "الألمانية"
+
+msgid "Get related videos"
+msgstr "الحصول على أشرطة الفيديو ذات الصلة"
+
+msgid "Get video responses"
+msgstr "الحصول على ردود الفيديو"
+
+#, python-format
+msgid ""
+"Getting data from %s.\n"
+" Please wait ..."
+msgstr ""
+"الحصول على البيانات من %s.\n"
+"الرجاء الانتظار..."
+
+msgid "Getting plugin information. Please wait..."
+msgstr "الحصول على معلومات الملحقات. الرجاء الانتظار..."
+
+msgid "Getting system information..."
+msgstr "الحصول على معلومات النظام..."
+
+msgid "Goto 0"
+msgstr "الذهاب إلى 0"
+
+msgid "Goto position"
+msgstr "الذهاب إلى موقع"
+
+msgid "Graphical Multi EPG"
+msgstr "دليل برامج متعدد بياني"
+
+msgid "Greek"
+msgstr "اليونانية"
+
+msgid "Green"
+msgstr "الأخضر"
+
+msgid "Greenlandic"
+msgstr "غرينلاند"
+
+msgid "Guarani"
+msgstr "غواراني"
+
+msgid "Guard Interval"
+msgstr "فاصل الحماية"
+
+msgid "Guard interval mode"
+msgstr "وضع فاصل الحماية"
+
+msgid "Gujarati"
+msgstr "الغوجاراتية"
+
+msgid "HD Quality (Stereo)"
+msgstr "عالية الجودة (ستيريو)"
+
+msgid "HTTP Port"
+msgstr "بوابة HTTP"
+
+msgid "Harddisk"
+msgstr "القرص الصلب"
+
+msgid "Harddisk 2"
+msgstr "القرص الصلب 2"
+
+msgid ""
+"Harddisk formatted.\n"
+"Successfully"
+msgstr ""
+"تمت تهيئة القرص الصلب.\n"
+"بنجاح"
+
+msgid "Harddisk setup"
+msgstr "ضبط القرص الصلب"
+
+msgid "Harddisk standby after"
+msgstr "القرص الصلب في وضع الاستعداد بعد"
+
+msgid "Hausa"
+msgstr "الهوسا"
+
+msgid "Hebrew"
+msgstr "العبرية"
+
+msgid "Here is a small overview of the available icon states."
+msgstr "هنا لمحة صغيرة من رموز الدول المتاحة."
+
+msgid "Hidden network SSID"
+msgstr "معرف مجموعة الخدمات للشبكة مخفي"
+
+msgid "Hidden networkname"
+msgstr "اسم الشبكة مخفي"
+
+msgid "Hierarchy Information"
+msgstr "معلومات التسلسل الهرمي"
+
+msgid "Hierarchy mode"
+msgstr "وضع التسلسل الهرمي"
+
+msgid "High Quality (Stereo)"
+msgstr "جودة عالية (ستيريو)"
+
+msgid "High bitrate support"
+msgstr "دعم التدفقات العالية"
+
+msgid "Hindi"
+msgstr "الهندية"
+
+msgid "Horizontal"
+msgstr "أفقي"
+
+msgid "How many minutes do you want to record?"
+msgstr "كم دقيقة تريد أن تسجل؟"
+
+msgid "How to handle found crashlogs?"
+msgstr "كيفية التعامل مع سجلات الانهيار الموجودة؟"
+
+msgid "Howto & Style"
+msgstr "أدلة استخدام و طرق"
+
+msgid "Hungarian"
+msgstr "المجرية"
+
+msgid "IP Address"
+msgstr "عنوان اي بي"
+
+msgid "IP:"
+msgstr "اي بي :"
+
+msgid "ISO file is too large for this filesystem!"
+msgstr "ملف ايزو كبير جدا بالنسبة لنظام الملفات هذا!"
+
+msgid "ISO path"
+msgstr "مسار ايزو"
+
+msgid "Icelandic"
+msgstr "الآيسلندية"
+
+msgid "If you can see this page, please press OK."
+msgstr "إذا كنت تستطيع مشاهدة هذه الصفحة ، الرجاء الضغط على موافق."
+
+msgid ""
+"If you see this, something is wrong with\n"
+"your scart connection. Press OK to return."
+msgstr ""
+"إذاشاهدت هذه الرسالة، فهناك شيئا خطأ في\n"
+"الاتصال عن طريق منفذ سكارت. اضغط موافق للعودة."
+
+msgid ""
+"If your TV has a brightness or contrast enhancement, disable it. If there is "
+"something called \"dynamic\", set it to standard. Adjust the backlight level "
+"to a value suiting your taste. Turn down contrast on your TV as much as "
+"possible.\n"
+"Then turn the brightness setting as low as possible, but make sure that the "
+"two lowermost shades of gray stay distinguishable.\n"
+"Do not care about the bright shades now. They will be set up in the next "
+"step.\n"
+"If you are happy with the result, press OK."
+msgstr ""
+"إذا كان لجهاز التلفزيون لديك وظيفة تحسين السطوع أو التباين، قم بتعطيلها. إذا "
+"كان به ما يسمى \"وضع ديناميكي\"، عين قيمته إلى قياسية. اضبط مستوى الإضاءة "
+"الخلفية إلى قيمة تناسب ذوقك. قم بتعيين قيمة التباين لجهاز التلفزيون للحد "
+"الأدنى.\n"
+"ثم عين قيمة السطوع للحد الأدنى ، ولكن تأكد من أن أدنى مستويي ظل للون الرمادي "
+"يمكن تمييزهما.\n"
+"لا تهتم للظلال الساطعة الآن. فسيتم تعيينها في الخطوة التالية.\n"
+"إذا كنت راضيا عن النتيجة ، اضغط موافق."
+
+msgid "Image flash utility"
+msgstr "أداة فلاش الصورة"
+
+msgid "Image-Upgrade"
+msgstr "ترقية الصورة"
+
+msgid "In Progress"
+msgstr "في تقدم"
+
+msgid ""
+"In order to record a timer, the TV was switched to the recording service!\n"
+msgstr ""
+"لبدء التسجيل اعتمادا على مؤقت، تم تبديل إلى القناة التي سيتم التسجيل منها!\n"
+
+msgid "Include your email and name (optional) in the mail?"
+msgstr "تضمين بريدك الالكتروني واسمك (اختياري) في الرسالة البريدية؟"
+
+msgid "Increased voltage"
+msgstr "زيادة الجهد الكهربائي (الفولتية)"
+
+msgid "Index"
+msgstr "الصفحة الرئيسية"
+
+msgid "Indonesian"
+msgstr "الاندونيسية"
+
+msgid "InfoBar"
+msgstr "شريط المعلومات"
+
+msgid "Infobar timeout"
+msgstr "مهلة شريط المعلومات"
+
+msgid "Information"
+msgstr "معلومات"
+
+msgid "Init"
+msgstr "تهيئة"
+
+msgid "Initialization..."
+msgstr "تهيئة..."
+
+msgid "Initialize"
+msgstr "تهيئة"
+
+msgid ""
+"Initialize harddisk.\n"
+"Successfully"
+msgstr ""
+"تهيئة القرص الصلب.\n"
+"تمت بنجاح"
+
+msgid "Initializing Harddisk..."
+msgstr "جاري تهيئة القرص الصلب..."
+
+msgid ""
+"Initializing Harddisk... \n"
+"This operation can take several minutes depending on the Harddisk size..."
+msgstr ""
+"تهيئة القرص الصلب...\n"
+"يمكن أن تستغرق هذه العملية عدة دقائق اعتمادا على حجم القرص الصلب..."
+
+msgid "Input"
+msgstr "إدخال"
+
+msgid "Input Key Type"
+msgstr "نوع مفتاح الإدخال"
+
+msgid "Install"
+msgstr "تثبيت"
+
+msgid "Install a new image with a USB stick"
+msgstr "تثبيت صورة جديدة عن طريق يو اس بي (USB stick)"
+
+msgid "Install a new image with your web browser"
+msgstr "تثبيت صورة جديدة عن طريق متصفح الويب"
+
+msgid "Install local IPKG"
+msgstr "تثبيت IPKG محلي"
+
+msgid "Install or remove finished."
+msgstr "انتهت عملية التثبيت أو الإزالة."
+
+msgid "Install settings, skins, software..."
+msgstr "تثبيت الإعدادات ، والمظاهر ، والبرمجيات..."
+
+msgid "Install software updates..."
+msgstr "تثبيت تحديثات البرامج..."
+
+msgid "Installation Menu"
+msgstr "قائمة التثبيت"
+
+msgid "Installation finished."
+msgstr "انتهى التثبيت."
+
+msgid "Installing"
+msgstr "جاري التثبيت"
+
+msgid "Installing ..."
+msgstr "جاري التثبيت..."
+
+msgid "Installing Software..."
+msgstr "جاري تثبيت البرامج...."
+
+msgid "Installing default sat lists... Please wait..."
+msgstr "جاري تركيب لوائح الأقمار الصناعية الافتراضية... يرجى الانتظار..."
+
+msgid "Installing defaults... Please wait..."
+msgstr "جاري تثبيت القيم الافتراضية... يرجى الانتظار..."
+
+msgid "Installing package content... Please wait..."
+msgstr "جاري تثبيت محتوى الحزمة... يرجى الانتظار..."
+
+msgid "Instant Record..."
+msgstr "تسجيل فوري..."
+
+msgid "Integrated Ethernet"
+msgstr "الشبكة المدمجة"
+
+msgid "Integrated Wireless"
+msgstr "الشبكة اللاسلكية المدمجة"
+
+msgid "Interlingua"
+msgstr "إنترلينغوا"
+
+msgid "Interlingue"
+msgstr "الانترلنج"
+
+msgid "Intermediate"
+msgstr "متوسط"
+
+msgid "Internal Flash"
+msgstr "فلاش داخلي"
+
+msgid "Inuktitut (Eskimo)"
+msgstr "الإنكتيتوتية (الإسكيمو)"
+
+msgid "Inupiak"
+msgstr "إينوبياك"
+
+msgid "Invalid Location"
+msgstr "مكان غير صالح"
+
+#, python-format
+msgid "Invalid directory selected: %s"
+msgstr "الدليل المحدد غير صالح: %s"
+
+msgid "Inversion"
+msgstr "عكس"
+
+msgid "Invert display"
+msgstr "عكس العرض"
+
+msgid "Ipkg"
+msgstr "Ipkg"
+
+msgid "Irish"
+msgstr "الأيرلندية"
+
+msgid "Italian"
+msgstr "الإيطالية"
+
+#, python-format
+msgid "Items: %d"
+msgstr "البنود: %d"
+
+msgid "Japanese"
+msgstr "اليابانية"
+
+msgid "Javanese"
+msgstr "الجاوية"
+
+msgid "Job View"
+msgstr "عرض الوظيفة"
+
+#. TRANSLATORS: (aspect ratio policy: display as fullscreen, even if this breaks the aspect)
+msgid "Just Scale"
+msgstr "تحجيم فقط"
+
+msgid "Kannada"
+msgstr "الكانادا"
+
+msgid "Kashmiri"
+msgstr "الكشميرية"
+
+msgid "Kazakh"
+msgstr "الكازاخستانية"
+
+msgid "Keyboard Map"
+msgstr "خريطة لوحة المفاتيح"
+
+msgid "Keyboard Setup"
+msgstr "ضبط لوحة المفاتيح"
+
+msgid "Keymap"
+msgstr "خارطة المفاتيح"
+
+msgid "Kinyarwanda"
+msgstr "الكينيارواندية"
+
+msgid "Kirghiz"
+msgstr "القيرغيزية"
+
+msgid "Kirundi"
+msgstr "الكيروندية"
+
+msgid "Korean"
+msgstr "الكورية"
+
+msgid "Kurdish"
+msgstr "الكردية"
+
+msgid "LAN Adapter"
+msgstr "محول الشبكة المحلية"
+
+msgid "LNB"
+msgstr "LNB"
+
+msgid "LOF"
+msgstr "LOF"
+
+msgid "LOF/H"
+msgstr "LOF/H"
+
+msgid "LOF/L"
+msgstr "LOF/L"
+
+msgid "Language"
+msgstr "اللغة"
+
+msgid "Language selection"
+msgstr "اختيار اللغة"
+
+msgid "Language..."
+msgstr "اللغة..."
+
+msgid "Laothian"
+msgstr "اللوثيانية"
+
+msgid "Last speed"
+msgstr "آخر سرعة"
+
+msgid "Latin"
+msgstr "اللاتينية"
+
+msgid "Latitude"
+msgstr "خط العرض"
+
+msgid "Latvian"
+msgstr "اللاتفية"
+
+msgid "Leave DVD Player?"
+msgstr "الخروج من مشغل دي في دي؟"
+
+msgid "Left"
+msgstr "يسار"
+
+msgid "Lets you view/edit files in your QBoxD"
+msgstr "يتيح لك عرض/ تحرير الملفات في جهاز QBoxD"
+
+#. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
+msgid "Letterbox"
+msgstr "Letterbox"
+
+msgid "Limit east"
+msgstr "الحد الشرقي"
+
+msgid "Limit west"
+msgstr "الحد الغربي"
+
+msgid "Limited character set for recording filenames"
+msgstr "مجموعة أحرف محدودة لتسجيل أسماء الملفات"
+
+msgid "Limits off"
+msgstr "تعطيل الحدود"
+
+msgid "Limits on"
+msgstr "تمكين الحدود"
+
+msgid "Lingala"
+msgstr "ينغالا"
+
+msgid "Link Quality:"
+msgstr "جودة الربط :"
+
+msgid "Link not present."
+msgstr "الرابط غير موجود."
+
+msgid "Link:"
+msgstr "الرابط :"
+
+msgid "Linked titles with a DVD menu"
+msgstr "عناوين مرتبطة مع قائمة دي في دي"
+
+msgid "List Bottom"
+msgstr "أسفل اللائحة"
+
+msgid "List Top"
+msgstr "أعلى اللائحة"
+
+msgid "List down"
+msgstr "أسفل اللائحة"
+
+msgid "List of Storage Devices"
+msgstr "لائحة وحدات التخزين"
+
+msgid "List of known VLC-Server Profiles"
+msgstr "لائحة أوضاع خادم VLC المعروفة"
+
+msgid "List up"
+msgstr "أعلى اللائحة"
+
+msgid "Lithuanian"
+msgstr "اللتوانية"
+
+msgid "Load"
+msgstr "تحميل"
+
+msgid "Load Length of Movies in Movielist"
+msgstr "تحميل طول الأفلام من لائحة الأفلام"
+
+msgid "Load another Page of current category?"
+msgstr "تحميل صفحة أخرى من الفئة الحالية؟"
+
+msgid "Load further entries of current Feed?"
+msgstr "تحميل المزيد من مدخالات التغذية الحالية؟"
+
+msgid "Loading additional videos, be patient ..."
+msgstr "تحميل أشرطة فيديو إضافية ، الرجاء الانتظار ..."
+
+msgid "Loading favorits, be patient ..."
+msgstr "تحميل المفضلة ،  الرجاء الانتظار ..."
+
+msgid "Loading playlist, be patient ..."
+msgstr "تحميل قائمة التشغيل ، الرجاء الانتظار ..."
+
+msgid "Loading related videos, be patient ..."
+msgstr "تحميل أشرطة الفيديو ذات الصلة ،  الرجاء الانتظار ..."
+
+msgid "Loading response videos, be patient ..."
+msgstr "تحميل رد أشرطة الفيديو ،  الرجاء الانتظار ..."
+
+msgid "Loading standard feed, be patient ..."
+msgstr "تحميل التغذية القياسية ،  الرجاء الانتظار ..."
+
+msgid "Loading standard page, be patient ..."
+msgstr "تحميل الصفحة القياسية ،  الرجاء الانتظار ..."
+
+msgid "Local Network"
+msgstr "الشبكة المحلية"
+
+msgid "Local share name"
+msgstr "اسم المشاركة المحلية"
+
+msgid "Location"
+msgstr "الموقع"
+
+msgid "Lock:"
+msgstr "قفل:"
+
+msgid "Log results to harddisk"
+msgstr "سجل النتائج على القرص الصلب"
+
+msgid "Login not successful"
+msgstr "الدخول غير ناجح"
+
+msgid "Long Keypress"
+msgstr "ضغط مطول على مفتاح"
+
+msgid "Longitude"
+msgstr "خط الطول"
+
+msgid "Low Quality (Mono)"
+msgstr "جودة منخفضة (أحادي mono)"
+
+msgid "MMC Card"
+msgstr "بطاقة MMC"
+
+msgid "MORE"
+msgstr "المزيد"
+
+msgid "Macedonian"
+msgstr "المقدونية"
+
+msgid "Main menu"
+msgstr "القائمة الرئيسية"
+
+msgid "Mainmenu"
+msgstr "القائمة الرئيسية"
+
+msgid "Make this mark an 'in' point"
+msgstr "جعل هذه العلامة نقطة 'دخول'"
+
+msgid "Make this mark an 'out' point"
+msgstr "جعل هذه العلامة نقطة 'خروج'"
+
+msgid "Make this mark just a mark"
+msgstr "جعل هذه العلامة مجرد علامة"
+
+msgid "Malagasy"
+msgstr "مدغشقر"
+
+msgid "Malay"
+msgstr "الملايو"
+
+msgid "Malayalam"
+msgstr "الماليالام"
+
+msgid "Maltese"
+msgstr "المالطية"
+
+msgid "Manage your receiver's software"
+msgstr "إدارة برنامج جهاز الاستقبال"
+
+msgid "Manual Scan"
+msgstr "البحث اليدوي"
+
+msgid "Manual transponder"
+msgstr "مرسل يدوي"
+
+msgid "Manufacturer"
+msgstr "الصانع"
+
+msgid "Maori"
+msgstr "الماوري"
+
+msgid "Marathi"
+msgstr "الماراثى"
+
+msgid "Margin after record"
+msgstr "الهامش بعد التسجيل"
+
+msgid "Margin before record (minutes)"
+msgstr "الهامش قبل التسجيل (دقيقة)"
+
+msgid "Media Center"
+msgstr "مركز الوسائط"
+
+msgid "Media player"
+msgstr "مشغل الوسائط"
+
+msgid "MediaPlayer"
+msgstr "مشغل الوسائط"
+
+msgid "Medium Quality (Mono)"
+msgstr "متوسط الجودة (أحادي mono)"
+
+msgid "Medium is not a writeable DVD!"
+msgstr "الوسيط ليس دي في دي قابل للكتابة!"
+
+msgid "Medium is not empty!"
+msgstr "الوسيط ليس فارغا!"
+
+msgid "Menu"
+msgstr "القائمة"
+
+msgid "Message"
+msgstr "رسالة"
+
+msgid "Metric"
+msgstr "متري"
+
+msgid "Miscellaneous"
+msgstr "متفرقات"
+
+msgid "Mkfs failed"
+msgstr "فشل Mkfs"
+
+msgid "Mode"
+msgstr "الوضع"
+
+#, python-format
+msgid "Mode: %s"
+msgstr "الوضع : %s"
+
+msgid "Model: "
+msgstr "نموذج :"
+
+#, python-format
+msgid "Model: %s\n"
+msgstr "نموذج : %s\n"
+
+msgid "Modulation"
+msgstr "تغيير"
+
+msgid "Modulator"
+msgstr "المغير"
+
+msgid "Moldavian"
+msgstr "المولدافية"
+
+msgid "Mon"
+msgstr "الاثنين"
+
+msgid "Mon-Fri"
+msgstr "الاثنين-الجمعة"
+
+msgid "Monday"
+msgstr "الاثنين"
+
+msgid "Mongolian"
+msgstr "المنغولية"
+
+msgid "Most Discussed"
+msgstr "الأكثر مناقشة"
+
+msgid "Most Linked"
+msgstr "الأكثر ارتباطا"
+
+msgid "Most Recent"
+msgstr "الأحدث"
+
+msgid "Most Responded"
+msgstr "الأكثر إجابة"
+
+msgid "Most Viewed"
+msgstr "الأكثر مشاهدة"
+
+msgid "Mount failed"
+msgstr "فشل التركيب"
+
+msgid "Mount informations"
+msgstr "معلومات التركيب"
+
+msgid "Mount options"
+msgstr "خيارات التركيب"
+
+msgid "Mount type"
+msgstr "نوع التركيب"
+
+msgid "MountManager"
+msgstr "إدارة التركيب"
+
+msgid "MountPoint: "
+msgstr "نقطة التركيب:"
+
+msgid ""
+"Mounted/\n"
+"Unmounted"
+msgstr ""
+"مركب/\n"
+"غير مركب"
+
+msgid "Mountpoints management"
+msgstr "إدارة نقاط التركيب"
+
+msgid "Mounts editor"
+msgstr "محرر التركيبات"
+
+msgid "Mounts management"
+msgstr "إدارة التركيب"
+
+msgid "Move Picture in Picture"
+msgstr "نقل صورة داخل صورة"
+
+msgid "Move east"
+msgstr "التحرك شرقا"
+
+msgid "Move west"
+msgstr "التحرك غربا"
+
+msgid "Movie Directory"
+msgstr "دليل الفيلم"
+
+msgid "Movielist menu"
+msgstr "قائمة لائحة الأفلام"
+
+msgid "Movies"
+msgstr "أفلام"
+
+msgid "Movies - Action/Adventure"
+msgstr "أفلام - أكشن/مغامرة"
+
+msgid "Movies - Anime/Animation"
+msgstr "أفلام - أنيمي/رسوم متحركة"
+
+msgid "Movies - Classics"
+msgstr "أفلام - كلاسيكية"
+
+msgid "Movies - Documentary"
+msgstr "أفلام - وثائقية"
+
+msgid "Movies - Drama"
+msgstr "أفلام - دراما"
+
+msgid "Movies - Family"
+msgstr "أفلام - الأسرة"
+
+msgid "Movies - Foreign"
+msgstr "أفلام - أجنبية"
+
+msgid "Movies - Horror"
+msgstr "أفلام - رعب"
+
+msgid "Movies - Sci-Fi/Fantasy"
+msgstr "أفلام - خيال علمي/خيال"
+
+msgid "Movies - Shorts"
+msgstr "أفلام - قصيرة"
+
+msgid "Movies - Thriller"
+msgstr "أفلام -- إثارة"
+
+msgid "Moview - Comedy"
+msgstr "أفلام - كوميديا"
+
+msgid "Multi EPG"
+msgstr "دليل برامح متعدد"
+
+msgid "Multimedia"
+msgstr "الوسائط المتعددة"
+
+msgid "Multiple service support"
+msgstr "دعم الخدمات المتعددة"
+
+msgid "Multisat"
+msgstr "أقمار صناعية متعددة"
+
+msgid "Music"
+msgstr "الموسيقى"
+
+msgid "Mute"
+msgstr "كتم"
+
+msgid "N/A"
+msgstr "غير موجود"
+
+msgid "NAS Server Configuration"
+msgstr "إعدادات مشاركات الشبكة"
+
+msgid "NEXT"
+msgstr "التالي"
+
+msgid "NFI image flashing completed. Press Yellow to Reboot!"
+msgstr "انتهى تفليش صورة  NFI. اضغط الزر الأصفر لإعادة الإقلاع!"
+
+msgid "NFS share"
+msgstr "مشاركة NFS"
+
+msgid "NIT scan"
+msgstr "بحث الشبكة"
+
+msgid "NOW"
+msgstr "الآن"
+
+msgid "NTSC"
+msgstr "NTSC"
+
+msgid "Name"
+msgstr "الاسم"
+
+msgid "Name:"
+msgstr "الاسم :"
+
+msgid "Nameserver"
+msgstr "اسم الخادم"
+
+#, python-format
+msgid "Nameserver %d"
+msgstr "اسم الخادم %d"
+
+msgid "Nameserver Setup"
+msgstr "ضبط اسم الخادم"
+
+msgid "Nameserver settings"
+msgstr "إعدادات اسم الخادم"
+
+msgid "Nauru"
+msgstr "ناورو"
+
+msgid "Nepali"
+msgstr "النيبالية"
+
+msgid "Netmask"
+msgstr "قناع الشبكة"
+
+msgid "Network"
+msgstr "الشبكة"
+
+msgid "Network Configuration..."
+msgstr "تكوين شبكة الاتصال..."
+
+msgid "Network Mount"
+msgstr "تركيب الشبكة"
+
+msgid "Network SSID"
+msgstr "معرف مجموعة خدمات الشبكة"
+
+msgid "Network Settings"
+msgstr "إعدادات الشبكة"
+
+msgid "Network Setup"
+msgstr "ضبط الشبكة"
+
+msgid "Network scan"
+msgstr "بحث الشبكة"
+
+msgid "Network settings"
+msgstr "إعدادات الشبكة"
+
+msgid "Network setup"
+msgstr "ضبط الشبكة"
+
+msgid "Network test"
+msgstr "اختبار الشبكة"
+
+msgid "Network test..."
+msgstr "اختبار الشبكة..."
+
+msgid "Network..."
+msgstr "الشبكة..."
+
+msgid "Network:"
+msgstr "الشبكة :"
+
+msgid "NetworkWizard"
+msgstr "معالج إعداد الشبكة"
+
+msgid "New"
+msgstr "جديد"
+
+msgid "New YouPorn search"
+msgstr "بحث YouPorn جديد"
+
+msgid "New YouTube search"
+msgstr "بحث يوتيوب جديد "
+
+msgid "New pin"
+msgstr "رقم سري جديد"
+
+msgid "New version:"
+msgstr "إصدار جديد :"
+
+msgid "Newest Video"
+msgstr "أحدث فيديو"
+
+msgid "News & Politics"
+msgstr "أخبار وسياسة"
+
+msgid "Next"
+msgstr "التالي"
+
+msgid "Next Favorite Folder"
+msgstr "مجلد المفضلة التالي"
+
+msgid "Next Song"
+msgstr "الأغنية التالية"
+
+msgid "No"
+msgstr "لا"
+
+#, python-format
+msgid "No %s."
+msgstr "لا %s."
+
+msgid "No (supported) DVDROM found!"
+msgstr "لم يتم العثور على DVDROM (مدعوم)!"
+
+msgid "No 50 Hz, sorry. :("
+msgstr "لا وجود لـ 50 هرتز، آسف. :("
+
+msgid "No Connection"
+msgstr "لا يوجد اتصال"
+
+msgid "No External Harddisk found"
+msgstr "لم يتم العثور على قرص صلب خارجي"
+
+msgid "No HDD found or HDD not initialized!"
+msgstr "لم يتم العثور على القرص الصلب أو القرص الصلب غير مهيئ!"
+
+msgid "No Harddisk or NAS found"
+msgstr ""
+
+msgid ""
+"No Keyboard or Mouse detected!\n"
+"To launch the Web Browser you need to have a Keyboard and Mouse connected on "
+"the USB Port.\n"
+"Please connect any USB Keyboard and Mouse into any USB Port on the back side "
+"of your QBox receiver.\n"
+"\n"
+"TIP: If you have no USB Port free left, please use a USB Hub!"
+msgstr ""
+"لم يتم الكشف عن أية لوحة مفاتيح أو فأرة!\n"
+"لتشغيل متصفح الويب تحتاج إلى أن تكون لوحة المفاتيح والفأرة متصلان بمنافذ يو "
+"اس بي.\n"
+"الرجاء توصيل أية لوحة مفاتيح وفأرة بأي منفذ من منافذ يو اس بي بالوجه الخلفي "
+"من جهاز QBoxHD.\n"
+"\n"
+"نصيحة : إذا لم يكن لديك أي منفذ يو اس بي فارغ ، يرجى استخدام لوحة وصل يو اس "
+"بي متعددة المنافذ (USB hub)!"
+
+msgid "No Networks found"
+msgstr "لا توجد شبكات"
+
+msgid "No backup needed"
+msgstr "لا حاجة إلى النسخ الاحتياطي"
+
+msgid "No backup storage present."
+msgstr "لا وجود لوحدة تخزين للنسخ الاحتياطي."
+
+msgid "No configuration saved."
+msgstr "لا وجود لتكوين محفوظ."
+
+msgid ""
+"No data on transponder!\n"
+"(Timeout reading PAT)"
+msgstr ""
+"لا توجد بيانات على المرسل!\n"
+"(إنتهاء مهلة قراءة PAT)"
+
+msgid "No description available."
+msgstr "لا يوجد وصف متاح."
+
+msgid "No details for this image file"
+msgstr "لا توجد أية تفاصيل عن ملف صورة هذا"
+
+msgid "No displayable files on this medium found!"
+msgstr "لم يتم العثور على ملفات للعرض على هذه الوسيطة!"
+
+msgid "No event info found, recording indefinitely."
+msgstr "لا توجد معلومات الحدث ، سيتم التسجيل إلى ما لا نهاية."
+
+msgid "No free tuner!"
+msgstr "لا يوجد موالف حر!"
+
+msgid "No more files in this directory"
+msgstr "لا مزيد من الملفات في هذا الدليل"
+
+msgid "No network devices found!"
+msgstr "لم يتم العثور على أجهزة الشبكة!"
+
+#, python-format
+msgid "No new %s found."
+msgstr "لا توجد %s جديدة."
+
+msgid ""
+"No packages were upgraded yet. So you can check your network and try again."
+msgstr ""
+"لا توجد حزم تمت ترقيتها بعد. بحيث يمكنك التحقق من الشبكة والمحاولة مرة أخرى."
+
+msgid "No picture on TV? Press EXIT and retry."
+msgstr "لا توجد صورة على شاشة التلفزيون؟ اضغط على خروج وأعد المحاولة."
+
+msgid "No positioner capable frontend found."
+msgstr "لم يتم العثور على واجهة محرك مؤهلة."
+
+msgid "No previous file in this directory"
+msgstr "لا وجود لملف سابق في هذا الدليل"
+
+msgid "No purses defined."
+msgstr "لم يتم تحديد موارد."
+
+msgid "No satellite frontend found!!"
+msgstr "لم يتم العثور على واجهة الأقمار الصناعية!"
+
+msgid "No subscription defined."
+msgstr "لم يتم تحديد الاشتراك."
+
+msgid "No tags are set on these movies."
+msgstr "لم يتم تعيين أية علامات على هذه الأفلام."
+
+msgid "No tuner is configured for use with a diseqc positioner!"
+msgstr "لم يتم تكوين أي موالف للاستخدام مع محرك دايسك!"
+
+msgid ""
+"No tuner is enabled!\n"
+"Please setup your tuner settings before you start a service scan."
+msgstr ""
+"لم يتم تمكين أي موالف!\n"
+"يرجى ضبط إعدادات الموالف قبل بدء عملية بحث القنوات."
+
+msgid "No useable USB stick found"
+msgstr "لا توجد وحدة يو اس بي صالحة للاستعمال"
+
+msgid ""
+"No valid Enigma-Service to play a VLC-Stream\n"
+"Check your installation and try again!"
+msgstr ""
+"لا توجد خدمة إينيقما2 صالحة لتشغيل دفق VLC\n"
+"قم بالتحقق من التثبيت وحاول مرة أخرى!"
+
+msgid ""
+"No valid service PIN found!\n"
+"Do you like to change the service PIN now?\n"
+"When you say 'No' here the service protection stay disabled!"
+msgstr ""
+"لم يتم العثور على رقم سري صالح للقناة!\n"
+"هل ترغب في تغيير الرقم السري للقناة الآن؟\n"
+"عندما تختار 'لا' ستبقى حماية القناة معطلة!"
+
+msgid ""
+"No valid setup PIN found!\n"
+"Do you like to change the setup PIN now?\n"
+"When you say 'No' here the setup protection stay disabled!"
+msgstr ""
+"لم يتم العثور على رقم سري صالح للضبط!\n"
+"هل ترغب في تغيير الرقم السري للضبط الآن؟\n"
+"عندما تختار 'لا' ستبقى حماية الضبط معطلة!"
+
+msgid ""
+"No working local network adapter found.\n"
+"Please verify that you have attached a network cable and your network is "
+"configured correctly."
+msgstr ""
+"لم يتم العثور على محول شبكة محلية قيد التشغيل.\n"
+"الرجاء التأكد من أنك قمت بتوصيل كابل الشبكة وأن  تكوين شبكة الاتصال صحيح."
+
+msgid ""
+"No working wireless interface found.\n"
+" Please verify that you have WiFi module or enable your local network "
+"interface."
+msgstr ""
+"لم يتم العثور على واجهة شبكة لاسلكية قيد التشغيل.\n"
+"الرجاء التأكد من أن لديك وحدة شبكة لاسلكية أو قم بتمكين واجهة الشبكة المحلية."
+
+msgid ""
+"No working wireless network adapter found.\n"
+"Please verify that you have attached a compatible WLAN device and your "
+"network is configured correctly."
+msgstr ""
+"لم يتم العثور على محول شبكة لاسلكية قيد التشغيل.\n"
+"الرجاء التأكد من أنك قمت بتوصيل جهاز متوافق مع الشبكة اللاسلكية وأن تكوين "
+"شبكة الاتصال صحيح."
+
+msgid ""
+"No working wireless network interface found.\n"
+" Please verify that you have attached a compatible WLAN device or enable "
+"your local network interface."
+msgstr ""
+"لم يتم العثور على واجهة شبكة لاسلكية قيد التشغيل.\n"
+"الرجاء التأكد من أنك قمت بتوصيل جهاز متوافق مع الشبكة اللاسلكية أو قم بتمكين "
+"واجهة شبكة الاتصال المحلية."
+
+msgid ""
+"No working wireless networkadapter found.\n"
+"Please verify that you have WiFi module and your Network is configured "
+"correctly."
+msgstr ""
+"لم يتم العثور على محول شبكة لاسلكية قيد التشغيل.\n"
+"الرجاء التأكد من أن لديك وحدة شبكة لاسلكية وأن تكوين شبكة الاتصال صحيح."
+
+msgid "No, but restart from begin"
+msgstr "لا ، ولكن أعد التشغيل من البداية"
+
+msgid "No, do nothing."
+msgstr "لا ، لا تفعل شيئا."
+
+msgid "No, just start my QBoxHD"
+msgstr "لا ، فقط شغلQBoxHD"
+
+msgid "No, not now"
+msgstr "لا ، ليس الآن"
+
+msgid "No, scan later manually"
+msgstr "لا ، ابحث يدويا في وقت لاحق"
+
+msgid "No, send them never"
+msgstr "لا ، لا ترسلها أبدا"
+
+msgid "None"
+msgstr "لا شيء"
+
+#. TRANSLATORS: (aspect ratio policy: display as fullscreen, with stretching the left/right)
+msgid "Nonlinear"
+msgstr "غير خطي"
+
+msgid "Nonprofits & Activism"
+msgstr "المنظمات غير الربحية والنشاط"
+
+msgid "North"
+msgstr "الشمال"
+
+msgid "Norwegian"
+msgstr "النرويجية"
+
+#, python-format
+msgid ""
+"Not enough diskspace. Please free up some diskspace and try again. (%d MB "
+"required, %d MB available)"
+msgstr ""
+"مساحة القرص غير كافية. الرجاء تحرير بعض المساحة على القرص وحاول مرة أخرى. (%"
+"d ميغابايت مطلوبة ، %d ميجابايت متوفرة)"
+
+msgid ""
+"Nothing to scan!\n"
+"Please setup your tuner settings before you start a service scan."
+msgstr ""
+"لا شيء لبحثه!\n"
+"يرجى ضبط إعدادات الموالف قبل بدء عملية بحث القنوات."
+
+msgid "Now Playing"
+msgstr "قيد التشغيل الآن"
+
+msgid ""
+"Now, use the contrast setting to turn up the brightness of the background as "
+"much as possible, but make sure that you can still see the difference "
+"between the two brightest levels of shades.If you have done that, press OK."
+msgstr ""
+"الآن ، استخدم إعدادات التباين لزيادة سطوع الخلفية بأكثر قدر ممكن، لكن تأكد "
+"من أنك ما زلت تستطيع رؤية الفرق بين مستويي الظل الأكثر سطوعا. إذا أتممت ذلك "
+"اضغط موافق."
+
+msgid "OK"
+msgstr "موافق"
+
+msgid "OK, guide me through the upgrade process"
+msgstr "حسنا، قم بمساعدتي أثناء عملية الترقية"
+
+msgid "OK, remove another extensions"
+msgstr "حسنا، قم بإزالة ملحقات أخرى"
+
+msgid "OK, remove some extensions"
+msgstr "حسنا، قم بإزالة بعض الملحقات"
+
+msgid "OSD"
+msgstr "العرض على الشاشة"
+
+msgid "OSD Settings"
+msgstr "إعدادات العرض على الشاشة"
+
+msgid "OSD visibility"
+msgstr "شفافية العرض"
+
+msgid "OTHER CONFIGURATION:"
+msgstr "تكوين آخر:"
+
+msgid "Occitan"
+msgstr "الأوكسيتانية"
+
+msgid "Off"
+msgstr "تعطيل"
+
+msgid "On"
+msgstr "تمكين"
+
+msgid "One"
+msgstr "واحد"
+
+msgid "Online-Upgrade"
+msgstr "ترقية عن طريق الانترنت"
+
+msgid "Only Free scan"
+msgstr "بحث المجاني فقط"
+
+msgid "Operation Stopped"
+msgstr "تم إيقاف العملية"
+
+msgid "Operation stopped by user."
+msgstr "تم إيقاف العملية من قبل المستخدم"
+
+msgid "Optionally enter your name if you want to."
+msgstr "أدخل اسمك اختياريا إذا كنت تريد."
+
+msgid "Orbital Position"
+msgstr "الموقع المداري"
+
+msgid "Order by"
+msgstr "الترتيب حسب"
+
+msgid "Oriya"
+msgstr "الأوريا"
+
+#, python-format
+msgid "Overscan Correction [in %(percentsign)s of Video width]"
+msgstr "تصحيح Overscan [في %(percentsign)s من عرض الفيديو]"
+
+msgid "PAL"
+msgstr "PAL"
+
+msgid "PCM"
+msgstr "PCM"
+
+msgid "PIDs"
+msgstr "PIDs"
+
+msgid "Package details for: "
+msgstr "تفاصيل الحزمة لـ :"
+
+msgid "Package list update"
+msgstr "تحديث لائحة الحزم"
+
+msgid "Package removal failed.\n"
+msgstr "فشل إزالة الحزمة.\n"
+
+msgid "Package removed successfully.\n"
+msgstr "إزالة الحزمة تمت بنجاح.\n"
+
+msgid "Packet management"
+msgstr "ادارة الحزم"
+
+msgid "Packet manager"
+msgstr "ادارة الحزم"
+
+msgid "Page"
+msgstr "صفحة"
+
+#. TRANSLATORS: (aspect ratio policy: cropped content on left/right) in doubt, keep english term
+msgid "Pan&Scan"
+msgstr "Pan&Scan"
+
+msgid "Panel Leds on standby"
+msgstr "أضواء اللوحة في وضع الاستعداد"
+
+msgid "Parent Directory"
+msgstr "الدليل الأصل"
+
+msgid "Parental Control"
+msgstr "الرقابة الأبوية"
+
+msgid "Parental control"
+msgstr "الرقابة الأبوية"
+
+msgid "Parental control services Editor"
+msgstr "محرر الرقابة الأبوية للقنوات"
+
+msgid "Parental control setup"
+msgstr "ضبط الرقابة الأبوية"
+
+msgid "Parental control type"
+msgstr "نوع الرقابة الأبوية"
+
+msgid "Pashto"
+msgstr "الباشتو"
+
+msgid "Password"
+msgstr "كلمة المرور"
+
+msgid "Pause movie at end"
+msgstr "أوقف الفيلم عند النهاية"
+
+msgid "People & Blogs"
+msgstr "ناس ومدونات"
+
+msgid "Persian"
+msgstr "الفارسية"
+
+msgid "Personal Video Recodings (PVR)"
+msgstr "تسجيلات الفيديو الشخصية (PVR)"
+
+msgid "Pets & Animals"
+msgstr "حيوانات وحيوانات أليفة"
+
+msgid "Phone number"
+msgstr "رقم الهاتف"
+
+msgid "PiPSetup"
+msgstr "إعداد صورة داخل الصورة"
+
+msgid "PicturePlayer"
+msgstr "عارض الصور"
+
+#. TRANSLATORS: (aspect ratio policy: black bars on left/right) in doubt, keep english term.
+msgid "Pillarbox"
+msgstr "Pillarbox"
+
+msgid "Pilot"
+msgstr "مرشد"
+
+msgid "Pin code needed"
+msgstr "الرمز السري لازم"
+
+msgid "Play"
+msgstr "تشغيل"
+
+msgid "Play All"
+msgstr "تشغيل الكل"
+
+msgid "Play Audio-CD..."
+msgstr "تشغيل قرص صوتي"
+
+msgid "Play DVD"
+msgstr "تشغيل دي في دي"
+
+msgid "Play Music..."
+msgstr "تشغيل الموسيقى..."
+
+msgid "Play recorded movies..."
+msgstr "تشغيل الأفلام المسجلة..."
+
+msgid "Play selected"
+msgstr "تشغيل المحدد"
+
+msgid "Play selected file"
+msgstr "تشغيل الملف المحدد"
+
+msgid "PlayLists"
+msgstr "قوائم التشغيل"
+
+msgid "PlayLists Video"
+msgstr "قوائم تشغيل الفيديو"
+
+#, python-format
+msgid "PlayLists: %d"
+msgstr "قوائم تشغيل : %d"
+
+msgid "Playing video, be patient ..."
+msgstr "جاري تشغيل الفيديو، الرجاء الانتظار ..."
+
+msgid "Playlist"
+msgstr "قائمة التشغيل"
+
+msgid "Playlist Description"
+msgstr "وصف قائمة التشغيل"
+
+msgid "Playlist Name"
+msgstr "اسم قائمة التشغيل"
+
+msgid "Playlists"
+msgstr "قوائم التشغيل"
+
+msgid "Please Reboot"
+msgstr "الرجاء إعادة الإقلاع"
+
+msgid "Please Select Medium to be Scanned"
+msgstr "الرجاء اختيار الوسيطة التي سيتم تفحصها"
+
+msgid "Please change recording endtime"
+msgstr "يرجى تغيير ساعة نهاية التسجيل"
+
+msgid "Please check your network settings!"
+msgstr "يرجى التحقق من إعدادات الشبكة!"
+
+msgid "Please choose .NFI image file from feed server to download"
+msgstr "الرجاء اختيار ملف صورة .NFI من خادم التغذية للتحميل"
+
+msgid "Please choose an extension..."
+msgstr "الرجاء اختيار ملحق ..."
+
+msgid "Please choose he package..."
+msgstr "الرجاء اختيار الحزمة..."
+
+msgid "Please choose the default services lists you want to install."
+msgstr "الرجاء اختيار لائحة القنوات الافتراضية التي تريد تثبيتها."
+
+msgid "Please connect netcable and then activate this network configuration."
+msgstr "الرجاء توصيل netcable ثم تفعيل تكوين شبكة الاتصال هذه."
+
+msgid ""
+"Please disconnect all USB devices from your QBoxHD and (re-)attach the "
+"target USB stick (minimum size is 64 MB) now!"
+msgstr ""
+"يرجى فصل كافة أجهزة يو اس بي عن QBoxHD وإعادة توصيل وحدة يو اس بي الهدف الآن "
+"(الحجم الأدنى 64 ميغابايت)!"
+
+msgid "Please disconnect netcable for activate this network configuration"
+msgstr "يرجى فصل netcable لتنشيط تكوين هذه الشبكة"
+
+msgid "Please do not change any values unless you know what you are doing!"
+msgstr "الرجاء عدم تغيير أي من القيم إلا إذا كنت تعرف مسبقا ما تقوم به!"
+
+msgid "Please enter a name for the new bouquet"
+msgstr "الرجاء إدخال اسم للباقة الجديدة"
+
+msgid "Please enter a name for the new marker"
+msgstr "الرجاء إدخال اسم للعلامة الجديدة"
+
+msgid "Please enter a new filename"
+msgstr "الرجاء إدخال اسم ملف جديد"
+
+msgid "Please enter filename (empty = use current date)"
+msgstr "الرجاء إدخال اسم ملف (فارغ= استخدام التاريخ الحالي)."
+
+msgid "Please enter name of the new directory"
+msgstr "الرجاء إدخال اسم الدليل الجديد"
+
+msgid "Please enter the correct pin code"
+msgstr "الرجاء إدخال الرقم السري الصحيح"
+
+msgid "Please enter the old pin code"
+msgstr "الرجاء إدخال  الرقم السري القديم"
+
+msgid "Please enter your email address here:"
+msgstr "الرجاء إدخال عنوان بريدك الإلكتروني هنا :"
+
+msgid "Please enter your name here (optional):"
+msgstr "من فضلك ادخل اسمك هنا (اختياري) :"
+
+msgid "Please follow the instructions on the TV"
+msgstr "يرجى اتباع التعليمات التي تظهر على التلفزيون"
+
+msgid ""
+"Please note that the previously selected media could not be accessed and "
+"therefore the default directory is being used instead."
+msgstr ""
+"يرجى ملاحظة أنه لا يمكن الوصول إلى الوسيطة المحددة سابقا ، وبالتالي سيتم "
+"استخدام الدليل الافتراضي بدلا من ذلك."
+
+msgid "Please press OK to continue."
+msgstr "يرجى الضغط على موافق للمتابعة."
+
+msgid "Please press OK!"
+msgstr "يرجى الضغط على موافق!"
+
+msgid "Please select .NFI flash image file from medium"
+msgstr "الرجاء اختيار ملف صورة فلاش .NFFI من الوسيطة"
+
+msgid "Please select a playlist to delete..."
+msgstr "الرجاء تحديد قائمة التشغيل التي سيتم حذفها..."
+
+msgid "Please select a playlist..."
+msgstr "الرجاء تحديد قائمة التشغيل."
+
+msgid "Please select a subservice to record..."
+msgstr "الرجاء تحديد الخدمة الفرعية التي سيتم تسجيلها..."
+
+msgid "Please select a subservice..."
+msgstr "الرجاء تحديد خدمة فرعية..."
+
+msgid "Please select an extension to remove."
+msgstr "الرجاء اختيار ملحق لإزالة."
+
+msgid "Please select an option below."
+msgstr "الرجاء تحديد أحد الخيارات التالية."
+
+msgid "Please select medium to use as backup location"
+msgstr "الرجاء اختيار الوسيطة للاستخدام كموقع للنسخ الاحتياطي"
+
+msgid "Please select tag to filter..."
+msgstr "الرجاء اختيار علامة للتصفية..."
+
+msgid "Please select target directory or medium"
+msgstr "الرجاء اختيار الدليل الهدف أو الموسيطة"
+
+msgid "Please select the movie path..."
+msgstr "الرجاء تحديد مسار الفيلم..."
+
+msgid "Please set up tuner B"
+msgstr "يرجى إعداد الموالف ب (B)"
+
+msgid "Please set up tuner C"
+msgstr "يرجى إعداد الموالف ج (C)"
+
+msgid "Please set up tuner D"
+msgstr "يرجى إعداد الموالف د (D)"
+
+msgid ""
+"Please use direction keys to move the PiP window.\n"
+"Press Bouquet +/- to resize the window.\n"
+"Press OK to go back to the TV mode or EXIT to cancel the moving."
+msgstr ""
+"الرجاء استخدام مفاتيح الاتجاه لتحريك نافذة صورة داخل الصورة.\n"
+"اضغط مفتاح باقة -/+ لتغيير حجم النافذة.\n"
+"اضغط على موافق للعودة إلى وضع التلفزيون أو اضغط خروج لإلغاء التحريك."
+
+msgid ""
+"Please use the UP and DOWN keys to select your language. Afterwards press "
+"the OK button."
+msgstr ""
+"يرجى استخدام مفاتيح  أعلى وأسفل لتحديد لغتك. بعد ذلك اضغط على زر موافق."
+
+msgid "Please wait for activation of your network configuration..."
+msgstr "يرجى الانتظار لتفعيل تكوين شبكة الاتصال..."
+
+msgid "Please wait for activation of your network mount..."
+msgstr "يرجى الانتظار لتفعيل تركيب الشبكة..."
+
+msgid "Please wait while removing selected package..."
+msgstr "يرجى الانتظار لحين إزالة الحزمة المختارة..."
+
+msgid "Please wait while removing your network mount..."
+msgstr "يرجى الانتظار لحين إزالة تركيب الشبكة..."
+
+msgid "Please wait while scanning is in progress..."
+msgstr "الرجاء الانتظار بينما تتقدم عملية البحث..."
+
+msgid "Please wait while searching for removable packages..."
+msgstr "الرجاء الانتظار أثناء البحث عن الحزم القابلة للإزالة..."
+
+msgid "Please wait while updating your network mount..."
+msgstr "يرجى الانتظار لحين استكمال تحديث تركيب الشبكة..."
+
+msgid "Please wait while we configure your network..."
+msgstr "الرجاء الانتظار بينما يتم تكوين شبكة الاتصال..."
+
+msgid "Please wait while your network is restarting..."
+msgstr "يرجى الانتظار لحين إعادة تشغيل الشبكة..."
+
+msgid "Please wait..."
+msgstr "الرجاء الانتظار..."
+
+msgid "Please wait... Loading list..."
+msgstr "الرجاء الانتظار... تحميل اللائحة..."
+
+msgid "Plugin browser"
+msgstr "متصفح الملحقات"
+
+msgid "Plugin manager"
+msgstr "إدارة الملحقات"
+
+msgid "Plugin manager help..."
+msgstr "مساعدة لخصوص إدارة الملحقات..."
+
+msgid "Plugin manager process information..."
+msgstr "معلومات عملية إدارة الملحقات..."
+
+msgid "Plugins"
+msgstr "ملحقات"
+
+msgid "Polarity"
+msgstr "قطبية"
+
+msgid "Polarization"
+msgstr "الاستقطاب"
+
+msgid "Polish"
+msgstr "البولندية"
+
+msgid "Port A"
+msgstr "Port A"
+
+msgid "Port B"
+msgstr "Port B"
+
+msgid "Port C"
+msgstr "Port C"
+
+msgid "Port D"
+msgstr "Port D"
+
+msgid "Portuguese"
+msgstr "البرتغالية"
+
+msgid "Positioner"
+msgstr "المحرك"
+
+msgid "Positioner fine movement"
+msgstr "ضبط دقيق لحركة المحرك"
+
+msgid "Positioner movement"
+msgstr "حركة المحرك"
+
+msgid "Positioner setup"
+msgstr "ضبط المحرك"
+
+msgid "Positioner storage"
+msgstr "تخزين المحرك"
+
+msgid "Power threshold in mA"
+msgstr "عتبة الطاقة بـ mA"
+
+msgid "Predefined transponder"
+msgstr "مرسل محدد مسبقا"
+
+msgid "Preparing... Please wait"
+msgstr "جاري الاستعداد... الرجاء الانتظار"
+
+msgid "Press OK on your remote control to continue."
+msgstr "اضغط موافق من جهاز التحكم عن بعد للمتابعة."
+
+msgid "Press OK to activate the settings."
+msgstr "اضغط موافق لتفعيل الإعدادات."
+
+msgid "Press OK to collapse this host"
+msgstr "اضغط موافق لطي عرض هذا المضيف"
+
+msgid "Press OK to edit selected settings."
+msgstr "اضغط موافق لتحرير الإعدادات المحددة."
+
+msgid "Press OK to edit the settings."
+msgstr "اضغط موافق لتحرير الإعدادات."
+
+msgid "Press OK to expand this host"
+msgstr "اضغط على موافق لتوسيع عرض هذا المضيف"
+
+#, python-format
+msgid "Press OK to get further details for %s"
+msgstr "اضغط موافق للحصول على مزيد من التفاصيل حول %s"
+
+msgid "Press OK to mount this share!"
+msgstr "اضغط على موافق لتركيب هذه المشاركة!"
+
+msgid "Press OK to mount!"
+msgstr "اضغط موافق للتركيب!"
+
+msgid "Press OK to save settings."
+msgstr "اضغط موافق لحفظ الإعدادات."
+
+msgid "Press OK to scan"
+msgstr "اضغط موافق للبحث"
+
+msgid "Press OK to select."
+msgstr "اضغط موافق للاختيار."
+
+msgid "Press OK to start the scan"
+msgstr "اضغط موافق لبدء البحث"
+
+msgid "Press OK to view full changelog"
+msgstr "اضغط على موافق لعرض سجل التغييرات الكامل"
+
+msgid "Press custom button..."
+msgstr "اضغط على الزر المخصص..."
+
+msgid "Prev"
+msgstr "السابق"
+
+msgid "Preview"
+msgstr "معاينة"
+
+msgid "Preview menu"
+msgstr "قائمة المعاينة"
+
+msgid "Previous Favorite Folder"
+msgstr "مجلد المفضلة  السابق"
+
+msgid "Previous Song"
+msgstr "الأغنية السابقة"
+
+msgid "Primary DNS"
+msgstr "DNS أولي"
+
+msgid "Priority"
+msgstr "الأولوية"
+
+msgid "Process"
+msgstr "عملية"
+
+msgid "Properties of current title"
+msgstr "خصائص العنوان الحالي"
+
+msgid "Protect services"
+msgstr "حماية القنوات"
+
+msgid "Protect setup"
+msgstr "حماية الضبط"
+
+msgid "Provider"
+msgstr "مزود الخدمة"
+
+msgid "Provider to scan"
+msgstr "مزود الخدمة الذي سيتم بحثه"
+
+msgid "Providers"
+msgstr "مزودو الخدمة"
+
+msgid "Published"
+msgstr "منشور"
+
+msgid "Punjabi"
+msgstr "البنجابية"
+
+msgid "Python frontend for /tmp/mmi.socket"
+msgstr "واجهة بيثون الأمامية لـ /tmp/mmi.socket"
+
+msgid "QBoxHD format data DVD (HDTV compatible)"
+msgstr "تنسيق بيانات دي في دي لـ QBoxHD (متوافق مع التلفزيون عالي الوضوح HDTV)"
+
+msgid "QBoxHD software because updates are available."
+msgstr "برمجيات QBoxHD بسبب توفر التحديثات."
+
+msgid "Quality"
+msgstr "الجودة"
+
+msgid "Quechua"
+msgstr "كيشوا"
+
+msgid "Quick"
+msgstr "سريع"
+
+msgid "Quickzap"
+msgstr "انتقال سريع"
+
+msgid "RC Menu"
+msgstr "قائمة جهاز التحكم عن بعد"
+
+msgid "RF output"
+msgstr "خرج RF"
+
+msgid "RGB"
+msgstr "RGB"
+
+msgid "RSS Feed URI"
+msgstr "رابط معرف الموارد المنتظم (URI) لتغذية RSS"
+
+msgid "Radio"
+msgstr "الراديو"
+
+msgid "Ram Disk"
+msgstr "قرص رام"
+
+msgid "Random"
+msgstr "عشوائي"
+
+msgid "Rate"
+msgstr "معدل"
+
+msgid "Rating"
+msgstr "تصنيف"
+
+msgid "Rating: "
+msgstr "تصنيف :"
+
+msgid "Ratings"
+msgstr "تصنيفات"
+
+msgid "Really close without saving settings?"
+msgstr "هل تريد فعلا الإغلاق دون حفظ الإعدادات؟"
+
+#, python-format
+msgid "Really delete %(playlist)s?"
+msgstr "هل تريد فعلا حذف %(playlist)s ؟"
+
+#, python-format
+msgid "Really delete %(user)s?"
+msgstr "هل تريد فعلا حذف %(user)s ؟"
+
+msgid "Really delete done timers?"
+msgstr "هل تريد فعلا حذف المؤقتات المكتملة؟"
+
+msgid "Really delete this Server?"
+msgstr "هل تريد فعلا حذف هذا الخادم؟"
+
+msgid "Really delete this favorite?"
+msgstr "هل تريد فعلا حذف هذه المفضلة؟"
+
+msgid "Really exit the subservices quickzap?"
+msgstr "هل تريد فعلا مغادرة التنقل السريع الخدمات الفرعية؟"
+
+msgid "Really reboot now?"
+msgstr "هل تريد فعل إعادة الإقلاع الآن؟"
+
+msgid "Really restart now?"
+msgstr "هل تريد فعلا إعادة التشغيل"
+
+msgid "Really shutdown now?"
+msgstr "هل تريد فعل إيقاف التشغيل؟"
+
+msgid "Reboot"
+msgstr "إعادة اللإقلاع"
+
+msgid "Receiver Information"
+msgstr "معلومات جهاز الاستقبال"
+
+msgid "Recently Featured"
+msgstr "عرض مؤخرا"
+
+msgid "Reception Settings"
+msgstr "إعدادات الاستقبال"
+
+msgid "Record"
+msgstr "تسجيل"
+
+#, python-format
+msgid "Record time limited due to conflicting timer %s"
+msgstr "وقت تسجيل محدود بسبب تعارض في المؤقت %s"
+
+msgid "Recorded files..."
+msgstr "الملفات المسجلة..."
+
+msgid "Recording"
+msgstr "تسجيل"
+
+msgid "Recording(s) are in progress or coming up in few seconds!"
+msgstr "التسجيل جار أو أنه سينتهي خلال ثوان قليلة؟"
+
+msgid "Recordings"
+msgstr "تسجيلات"
+
+msgid "Recordings always have priority"
+msgstr "التسجيلات لها دائما الأولوية"
+
+msgid "Red"
+msgstr "أحمر"
+
+msgid "Reenter new pin"
+msgstr "إدخال رقم سري جديد"
+
+msgid "Refresh"
+msgstr "تحديث"
+
+msgid "Refresh Rate"
+msgstr "معدل التحديث"
+
+msgid "Refresh rate selection."
+msgstr "اختيار معدل التحديث."
+
+msgid "Relevance"
+msgstr "ملائمة"
+
+msgid "Reload"
+msgstr "أعد التحميل"
+
+msgid "Reload Black-/Whitelists"
+msgstr "إعادة تحميل القوائم السوداء/البيضاء"
+
+msgid "Reloading Settings. Please wait ..."
+msgstr "إعادة تحميل الإعدادات. الرجاء الانتظار..."
+
+msgid "Remember service pin"
+msgstr "تذكر الرقم السري للقنوات"
+
+msgid "Remember service pin cancel"
+msgstr "تذكر إلغاء الرقم السري للقنوات"
+
+msgid "Remove"
+msgstr "إزالة"
+
+msgid "Remove AddOn"
+msgstr "إزالة الإضاقة"
+
+msgid "Remove Bookmark"
+msgstr "إزالة الإشارة المرجعية"
+
+msgid "Remove Plugins"
+msgstr "إزالة ملحقات"
+
+msgid "Remove a mark"
+msgstr "إزالة علامة مرجعية"
+
+msgid "Remove currently selected title"
+msgstr "إزالة العنوان المحدد حاليا"
+
+msgid "Remove failed."
+msgstr "فشلت عملية الإزالة."
+
+msgid "Remove finished."
+msgstr "إنتهت عملية الإزالة."
+
+msgid "Remove from favorites"
+msgstr "إزالة من المفضلة"
+
+msgid "Remove from playlist"
+msgstr "إزالة من قائمة التشغيل"
+
+msgid "Remove plugins"
+msgstr "إزالة ملحقات"
+
+msgid "Remove the broken .NFI file?"
+msgstr "إزالة ملف .NFI المعطل؟"
+
+msgid "Remove the incomplete .NFI file?"
+msgstr "إزالة ملف .NFFI المنقوص؟"
+
+msgid "Remove timer"
+msgstr "إزالة المؤقت"
+
+msgid "Remove title"
+msgstr "إزالة العنوان"
+
+msgid "Removed successfully."
+msgstr "تمت الإزالة بنجاح."
+
+msgid "Removing"
+msgstr "تجري عملية الإزالة"
+
+#, python-format
+msgid "Removing %s ..."
+msgstr "تجري عملية إزالة %s"
+
+msgid "Removing ..."
+msgstr "تجري عملية الإزالة ..."
+
+#, python-format
+msgid "Removing directory %s failed. (Maybe not empty.)"
+msgstr "فشل إزالة الدليل %s. (ربما هو ليس فارغا.)"
+
+msgid "Rename"
+msgstr "إعادة التسمية"
+
+msgid "Rename crashlogs"
+msgstr "إعادة تسمية سجلات الانهيار (crashlogs)"
+
+msgid "Repeat"
+msgstr "إعادة"
+
+msgid "Repeat Type"
+msgstr "نوع الإعادة"
+
+msgid "Repeating event currently recording... What do you want to do?"
+msgstr "تكرار الحدث الجاري تسجيله الآن... ماذا تريد أن تفعل؟"
+
+msgid "Repeats"
+msgstr "إعادات"
+
+msgid "Rescan"
+msgstr "إعادة البحث"
+
+msgid "Reset"
+msgstr "إعادة تعيين"
+
+msgid "Reset and renumerate title names"
+msgstr "إعادة تعيين وإعادة ترقيم العناوين"
+
+msgid "Resolution"
+msgstr "الدقة"
+
+msgid "Restart"
+msgstr "إعادة تشغيل"
+
+msgid "Restart GUI"
+msgstr "إعادة تشغيل الواجهة الرسومية"
+
+msgid "Restart GUI now?"
+msgstr "إعادة تشغيل الواجهة الرسومية الآن؟"
+
+msgid "Restart network"
+msgstr "إعادة تشغيل الشبكة"
+
+msgid "Restart test"
+msgstr "إعادة اختبار"
+
+msgid "Restart your network connection and interfaces.\n"
+msgstr "إعادة تشغيل اتصال الشبكة و واجهاتها.\n"
+
+msgid "Restore"
+msgstr "استعادة"
+
+msgid "Restore backups..."
+msgstr "استعادة النسخ الاحتياطية..."
+
+msgid "Restore from \""
+msgstr "استعادة من \""
+
+msgid "Restore running"
+msgstr "تجري عملية الاستعادة"
+
+msgid "Restore running ..."
+msgstr "تجري عملية الاستعادة ..."
+
+msgid "Restore running..."
+msgstr "تجري عملية الاستعادة..."
+
+msgid "Restore system settings"
+msgstr "استعادة إعدادات النظام"
+
+msgid ""
+"Restoring the settings is done. Please press OK to activate the restored "
+"settings now."
+msgstr ""
+"تمت استعادة الإعدادات. الرجاء الضغط على موافق لتمكين الإعدادات التي تمت "
+"استعادتها الآن."
+
+msgid "Restricted Content"
+msgstr "محتوى مقيد"
+
+msgid "Resume from last position"
+msgstr "استئناف من الموقع الأخير"
+
+#. TRANSLATORS: The string "Resuming playback" flashes for a moment
+#. TRANSLATORS: at the start of a movie, when the user has selected
+#. TRANSLATORS: "Resume from last position" as start behavior.
+#. TRANSLATORS: The purpose is to notify the user that the movie starts
+#. TRANSLATORS: in the middle somewhere and not from the beginning.
+#. TRANSLATORS: (Some translators seem to have interpreted it as a
+#. TRANSLATORS: question or a choice, but it is a statement.)
+msgid "Resuming playback"
+msgstr "استئناف التشغيل"
+
+msgid "Return to file browser"
+msgstr "العودة إلى متصفح الملفات"
+
+msgid "Return to movie list"
+msgstr "العودة إلى لائحة الأفلام"
+
+msgid "Return to previous service"
+msgstr "العودة إلى القناة السابقة"
+
+msgid "Rewind speeds"
+msgstr "سرعات اللف للوراء"
+
+msgid "Rhaeto-Romance"
+msgstr "رهايتو رومنس"
+
+msgid "Right"
+msgstr "يمين"
+
+msgid "Rolloff"
+msgstr "تراجع"
+
+msgid "Romanian"
+msgstr "الرومانية"
+
+msgid "Rotor turning speed"
+msgstr "سرعة دوران المحرك"
+
+msgid "Running"
+msgstr "حاري التشغيل"
+
+msgid "Russian"
+msgstr "الروسية"
+
+msgid "S-Video"
+msgstr "S-Video"
+
+msgid "SNR"
+msgstr "SNR"
+
+msgid "SNR:"
+msgstr "SNR:"
+
+msgid "SPDIF"
+msgstr "SPDIF"
+
+msgid "SSID:"
+msgstr "SSID:"
+
+msgid "Samoan"
+msgstr "ساموا"
+
+msgid "Sangro"
+msgstr "السانقرو"
+
+msgid "Sanskrit"
+msgstr "السنسكريتية"
+
+msgid "Sat"
+msgstr "القمر الصناعي"
+
+msgid "Sat / Dish Setup"
+msgstr "إعداد الصحن/القمر الصناعي"
+
+msgid "Satellite"
+msgstr "القمر الصناعي"
+
+msgid "Satellite Equipment Setup"
+msgstr "إعداد معدات الأقمار الصناعية"
+
+msgid "Satellites"
+msgstr "الأقمار الصناعية"
+
+msgid "Satfinder"
+msgstr "مكتشف القمر الصناعي"
+
+msgid "Sats"
+msgstr "الأقمار الصناعية"
+
+msgid "Satteliteequipment"
+msgstr "معدات القمر الصناعي"
+
+msgid "Saturday"
+msgstr "السبت"
+
+msgid "Save"
+msgstr "حفظ"
+
+msgid "Save Playlist"
+msgstr "حفظ قائمة التشغيل"
+
+msgid "Save data on device"
+msgstr "حفظ البيانات على الجهاز"
+
+msgid "Scaling Mode"
+msgstr "وضع التحجيم"
+
+msgid "Scan "
+msgstr "بحث"
+
+msgid "Scan Files..."
+msgstr "تفحص الملفات..."
+
+msgid "Scan NFS share"
+msgstr "تفحص مشاركات NFS"
+
+msgid "Scan QAM128"
+msgstr "تفحص QAM128"
+
+msgid "Scan QAM16"
+msgstr "تفحص QAM16"
+
+msgid "Scan QAM256"
+msgstr "تفحص QAM256"
+
+msgid "Scan QAM32"
+msgstr "تفحص QAM32"
+
+msgid "Scan QAM64"
+msgstr "تفحص QAM64"
+
+msgid "Scan SR6875"
+msgstr "تفحص SR6875"
+
+msgid "Scan SR6900"
+msgstr "تفحص SR6900"
+
+msgid "Scan Wireless Networks"
+msgstr "تفحص الشبكات اللاسلكية"
+
+msgid "Scan additional SR"
+msgstr "تفحص SR إضافي"
+
+msgid "Scan band EU HYPER"
+msgstr "تفحص النطاق EU HYPER"
+
+msgid "Scan band EU MID"
+msgstr "تفحص النطاق EU MID"
+
+msgid "Scan band EU SUPER"
+msgstr "تفحص النطاق EU SUPER"
+
+msgid "Scan band EU UHF IV"
+msgstr "تفحص النطاق EU UHF IV"
+
+msgid "Scan band EU UHF V"
+msgstr "تفحص النطاق EU UHF V"
+
+msgid "Scan band EU VHF I"
+msgstr "تفحص النطاق EU VHF I"
+
+msgid "Scan band EU VHF III"
+msgstr "تفحص النطاق EU VHF III"
+
+msgid "Scan band US HIGH"
+msgstr "تفحص النطاق US HIGH"
+
+msgid "Scan band US HYPER"
+msgstr "تفحص النطاق US HYPER"
+
+msgid "Scan band US LOW"
+msgstr "تفحص النطاق US LOW"
+
+msgid "Scan band US MID"
+msgstr "تفحص النطاق US MID"
+
+msgid "Scan band US SUPER"
+msgstr "تفحص النطاق US SUPER"
+
+msgid "Scan range"
+msgstr "تفحص نطاق"
+
+msgid ""
+"Scan your network for wireless Access Points and connect to them using your "
+"WLAN USB Stick\n"
+msgstr ""
+"تفحص نقاط الوصول للشبكة اللاسلكية والاتصال بها باستخدام وحدة يو اس بي "
+"اللاسلكية.\n"
+
+msgid ""
+"Scan your network for wireless Access Points and connect to them using your "
+"selected wireless device.\n"
+msgstr ""
+"تفحص نقاط الوصول للشبكة اللاسلكية والاتصال بها باستخدام الوحدة اللاسلكية "
+"المختارة.\n"
+
+msgid ""
+"Scans default lamedbs sorted by satellite with a connected dish positioner"
+msgstr ""
+" تفحص lamedbs الافتراضية مصنفة وفق الأقمار الصناعية مع محرك متصل بالصحن"
+
+msgid "Science & Technology"
+msgstr "علوم و تكنولوجيا"
+
+msgid "Scots Gaelic"
+msgstr "الغيلية الأسكتلندية"
+
+msgid "Screensaver Enable"
+msgstr "تمكين شاشة التوقف"
+
+msgid "Screensaver Interval"
+msgstr "فاصل شاشة التوقف"
+
+msgid "Search"
+msgstr "البحث"
+
+msgid "Search Term(s)"
+msgstr "مصطلح(ات) البحث"
+
+msgid "Search and play YouPorn movies"
+msgstr "البحث وتشغيل أفلام YouPorn"
+
+msgid "Search and play YouTube movies"
+msgstr "بحث وتشغيل أفلام يوتيوب"
+
+msgid "Search east"
+msgstr "البحث شرقا"
+
+msgid "Search for network shares"
+msgstr "البحث عن مشاركات الشبكة"
+
+msgid "Search for network shares..."
+msgstr "البحث عن مشاركات الشبكة..."
+
+msgid "Search west"
+msgstr "البحث غربا"
+
+msgid "Searching for new installed or removed packages. Please wait..."
+msgstr "البحث عن الحزم الجديدة المثبتة أو التي تمت إزالتها. الرجاء الانتظار..."
+
+msgid "Searching your network. Please wait..."
+msgstr "بحث الشبكة. الرجاء الانتظار..."
+
+msgid "Searching, be patient ..."
+msgstr "جاري البحث، الرجاء الانتظار..."
+
+msgid "Secondary DNS"
+msgstr "DNS ثانوي"
+
+msgid "Seek"
+msgstr "بحث"
+
+msgid "Select"
+msgstr "تحديد"
+
+msgid "Select HDD"
+msgstr "حدد القرص الصلب"
+
+msgid "Select IPKG source to edit..."
+msgstr "حدد مصدر IPKG للتحرير..."
+
+msgid "Select Location"
+msgstr "حدد الموقع"
+
+msgid "Select Network Adapter"
+msgstr "حدد محول شبكة الاتصال"
+
+msgid "Select a VLC-Server"
+msgstr "حدد خادم VLC"
+
+msgid "Select a movie"
+msgstr "اختيار الفيلم"
+
+msgid "Select audio mode"
+msgstr "حدد وضع الصوت"
+
+msgid "Select audio track"
+msgstr "حدد المسار الصوتي"
+
+msgid "Select channel to record from"
+msgstr "حدد قناة لتسجيل منها"
+
+msgid "Select files for backup. Currently selected:\n"
+msgstr "حدد ملفات من أجل النسخ الاحتياطي. المحددة حاليا:\n"
+
+msgid "Select files/folders to backup..."
+msgstr "حدد الملفات والمجلدات للنسخ الاحتياطي..."
+
+msgid "Select image"
+msgstr "حدد الصورة"
+
+msgid "Select package"
+msgstr "حدد الحزمة"
+
+msgid "Select provider to add..."
+msgstr "حدد مزود للإضافة..."
+
+msgid "Select refresh rate"
+msgstr "حدد معدل التحديث"
+
+msgid "Select service to add..."
+msgstr "حدد قناة للإضافة..."
+
+msgid "Select video input"
+msgstr "حدد مدخل الفيديو"
+
+msgid "Select video input with up/down buttons"
+msgstr "حدد مدخل الفيديو عن طريق الزر أعلى/أسفل"
+
+msgid "Select video mode"
+msgstr "حدد وضع الفيديو"
+
+msgid "Selected source image"
+msgstr "تحديد مصدر الصورة"
+
+msgid "Send DiSEqC"
+msgstr "إرسال دايسك"
+
+msgid "Send DiSEqC only on satellite change"
+msgstr "إرسال دايسك فقط على تغيير القمر الصناعي"
+
+msgid "Sense Wheel Setup"
+msgstr "ضبط لوحة اللمس"
+
+msgid "SenseWheel"
+msgstr "لوحة اللمس"
+
+msgid "SenseWheel Setup"
+msgstr "ضبط لوحة اللمس"
+
+msgid "Seperate titles with a main menu"
+msgstr "عناوين منفصلة مع قائمة رئيسية"
+
+msgid "Sequence repeat"
+msgstr "إعادة اللقطات"
+
+msgid "Serbian"
+msgstr "الصربية"
+
+msgid "Serbo-Croatian"
+msgstr "الصربية الكرواتية"
+
+msgid "Server Address"
+msgstr "عنوان الخادم"
+
+msgid "Server IP"
+msgstr "اي بي الخادم"
+
+msgid "Server Profile Name"
+msgstr "اسم وضع الخادم"
+
+msgid "Server share"
+msgstr "مشاركة الخادم"
+
+msgid "Serverlist"
+msgstr "لائحة الخوادم"
+
+msgid "Service"
+msgstr "القناة"
+
+msgid "Service Scan"
+msgstr "بحث القنوات"
+
+msgid "Service Searching"
+msgstr "بحث القنوات"
+
+msgid "Service has been added to the favourites."
+msgstr "تمت إضافة القناة إلى المفضلة."
+
+msgid "Service has been added to the selected bouquet."
+msgstr "تمت إضافة القناة إلى الباقة المحددة."
+
+msgid ""
+"Service invalid!\n"
+"(Timeout reading PMT)"
+msgstr ""
+"قناة غير صالحة!\n"
+"(إنتهاء مهلة قراءة PMT)"
+
+msgid ""
+"Service not found!\n"
+"(SID not found in PAT)"
+msgstr ""
+"قناة غير موجودة!\n"
+"لم يتم إيجاد معرف القناة (SID) في جدول البرامج (PAT)"
+
+msgid "Service scan"
+msgstr "بحث القنوات"
+
+msgid ""
+"Service unavailable!\n"
+"Check tuner configuration!"
+msgstr ""
+"القناة غير متوفرة!\n"
+"تحقق من تكوين الموالف!"
+
+msgid "Serviceinfo"
+msgstr "معلومات القناة"
+
+msgid "Services"
+msgstr "القنوات"
+
+msgid "Sesotho"
+msgstr "سيسوتو"
+
+msgid "Set Voltage and 22KHz"
+msgstr "تعيين الجهد (الفولتية) و22 كيلوهرتز"
+
+msgid "Set as default Interface"
+msgstr "التعيين كواجهة افتراضية"
+
+msgid "Set interface as default Interface"
+msgstr "تعيين الواجهة كواجهة افتراضية"
+
+msgid "Set limits"
+msgstr "تعيين الحدود"
+
+msgid "Setswana"
+msgstr "سيتسوانا"
+
+msgid "Settings"
+msgstr "إعدادات"
+
+msgid "Setup"
+msgstr "ضبط"
+
+msgid "Setup Mode"
+msgstr "وضع الضبط"
+
+msgid "Shona"
+msgstr "شونا"
+
+msgid ""
+"Short Help:\n"
+"\n"
+"ESC\tdisplay menu\n"
+"ctrl+C or q\tquit\n"
+"g\tgo to url\n"
+"ctrl+R\treload\n"
+"up,down\tselect link\n"
+"right,enter\tfollow link\n"
+"left,z\tgo back\n"
+"/\tsearch\n"
+"n\tfind next\n"
+"N\tfind previous\n"
+"d\tdownload\n"
+"|\tHTTP header\n"
+"\n"
+"Press OK to continue"
+msgstr ""
+"تعليمات موجزة :\n"
+"\n"
+"ESC\tإظهار القائمة\n"
+"ctrl+C أو q\tخروج\n"
+"g\tالذهاب للعنوان\n"
+"ctrl+R\tإعادة التحميل\n"
+"أعلى،أسفل\tاختيار الرابط\n"
+"يمين،إدخال\tاتباع الرابط\n"
+"يسار،z\tرجوع\n"
+"/\tبحث\n"
+"n\tبحث التالي\n"
+"N\tبحث السابق\n"
+"d\tتنزيل\n"
+"|\tرأس HTTP\n"
+"\n"
+"اضغط موافق للمتابعة"
+
+msgid "Short Movies"
+msgstr "أفلام قصيرة"
+
+msgid "Show / Hide Player"
+msgstr "إظهار/إخفاء المشغل"
+
+msgid "Show File Info"
+msgstr "عرض معلومات الملف"
+
+msgid "Show Info"
+msgstr "عرض المعلومات"
+
+msgid "Show MC in Extension-Menu"
+msgstr "إظهار مركز الوسائط في قائمة الملحقات"
+
+msgid "Show MC in Main-Menu"
+msgstr "إظهار القائمة الرئيسية لمركز الوسائط"
+
+msgid "Show Message when Recording starts"
+msgstr "عرض رسالة عند بدء التسجيل"
+
+msgid "Show WLAN Status"
+msgstr "عرض حالة الشبكة المحلية اللاسلكية"
+
+msgid "Show blinking clock in display during recording"
+msgstr "عرض ساعة وامضة أثناء التسجيل"
+
+msgid "Show infobar on channel change"
+msgstr "عرض شريط المعلومات عند تغيير القناة"
+
+msgid "Show infobar on event change"
+msgstr "عرض شريط المعلومات عند تغير الحدث"
+
+msgid "Show infobar on skip forward/backward"
+msgstr "عرض شريط المعلومات عند التخطي إلى الأمام/الخلف"
+
+msgid "Show positioner movement"
+msgstr "عرض حركة المحرك"
+
+msgid "Show services beginning with"
+msgstr "عرض القنوات التي تبدأ بـ"
+
+msgid "Show the radio player..."
+msgstr "عرض مشغل الراديو..."
+
+msgid "Show the tv player..."
+msgstr "عرض مشغل التلفزيون..."
+
+msgid "Show video detail info"
+msgstr "عرض تفاصيل معلومات الفيديو"
+
+msgid "Shown"
+msgstr "معروض"
+
+msgid "Shown page"
+msgstr "الصفحة المعروضة"
+
+msgid "Shows the state of your wireless LAN connection.\n"
+msgstr "يعرض حالة اتصال الشبكة المحلية اللاسلكية.\n"
+
+msgid "ShutDown"
+msgstr "إيقاف التشغيل"
+
+msgid "Shutdown QBoxHD after"
+msgstr "إيقاف تشغيل QBoxHD بعد"
+
+msgid "Signal Strength:"
+msgstr "قوة الإشارة :"
+
+msgid "Similar"
+msgstr "مماثل"
+
+msgid "Similar broadcasts:"
+msgstr "البث المماثل :"
+
+msgid "Simple"
+msgstr "بسيط"
+
+msgid "Simple titleset (compatibility for legacy players)"
+msgstr "مجموعة عناوين بسيطة (التوافق المشغلات الموروثة)"
+
+msgid "Sindhi"
+msgstr "السندية"
+
+msgid "Singhalese"
+msgstr "السنهالية"
+
+msgid "Single"
+msgstr "مفرد"
+
+msgid "Single EPG"
+msgstr "دليل برامج مفرد"
+
+msgid "Single satellite"
+msgstr "قمر مفرد"
+
+msgid "Single transponder"
+msgstr "مرسل مفرد"
+
+msgid "Singlestep (GOP)"
+msgstr "خطوة مجموعات الصور (GOP) مفردة"
+
+msgid "Siswati"
+msgstr "سيسواتي"
+
+#, python-format
+msgid "Size: %d MB\n"
+msgstr "الحجم : %d ميغابايت\n"
+
+msgid "Skin Appearance"
+msgstr "المظهر"
+
+msgid "Skin..."
+msgstr "المظهر..."
+
+msgid "Skins"
+msgstr "المظاهر"
+
+msgid "Sleep Timer"
+msgstr "موقت النوم"
+
+msgid "Sleep timer action:"
+msgstr "سلوك مؤقت النوم :"
+
+msgid "Slideshow Interval (sec.)"
+msgstr "الفاصل الزمني لعرض الشرائح (ثواني)"
+
+#, python-format
+msgid "Slot %d"
+msgstr "المنفذ %d"
+
+msgid "Slot 1"
+msgstr "منفذ 1"
+
+msgid "Slot 2"
+msgstr "منفذ 2"
+
+msgid "Slovak"
+msgstr "السلوفاكية"
+
+msgid "Slovakian"
+msgstr "السلوفاكية"
+
+msgid "Slovenian"
+msgstr "السلوفينية"
+
+msgid "Slow"
+msgstr "بطيء"
+
+msgid "Slow Motion speeds"
+msgstr "سرعات العرض البطيئ"
+
+msgid "SmartCard Information"
+msgstr "معلومات البطاقة الذكية"
+
+msgid "SmartCard not supported."
+msgstr "البطاقة الذكية غير معتمدة."
+
+msgid "Software"
+msgstr "البرنامج التشغيلي"
+
+msgid "Software manager"
+msgstr "إدارة البرنامج التشغيلي"
+
+msgid "Software manager..."
+msgstr "إدارة البرنامج التشغيلي..."
+
+msgid "Software restore"
+msgstr "استعادة البرنامج التشغيلي"
+
+msgid "Software update"
+msgstr "تحديث البرنامج التشغيلي"
+
+msgid "Somali"
+msgstr "الصومالية"
+
+msgid "Some plugins are not available:\n"
+msgstr "بعض الملحقات غير متوفرة :\n"
+
+msgid "Somewhere else"
+msgstr "في مكان آخر"
+
+msgid "Sorry MediaScanner is not installed!"
+msgstr "عذرا، لم يتم تثبيت متفحص الوسائط!"
+
+msgid "Sorry no backups found!"
+msgstr "عذرا، لا توجد نسخ احتياطية!"
+
+msgid ""
+"Sorry your Backup destination does not exist\n"
+"\n"
+"Please choose an other one."
+msgstr ""
+"عذرا، وجهة النسخ الاحتياطي غير موجودة\n"
+"\n"
+"الرجاء اختيار وجهة أخرى."
+
+msgid ""
+"Sorry your backup destination is not writeable.\n"
+"Please choose an other one."
+msgstr ""
+"عذرا، وجهة النسخ الاحتياطي ليست قابلة للكتابة.\n"
+"الرجاء اختيار وجهة أخرى."
+
+msgid "Sorry, no Details available!"
+msgstr "عذرا، لا توجد تفاصيل متاحة!"
+
+msgid ""
+"Sorry, your backup destination is not writeable.\n"
+"\n"
+"Please choose another one."
+msgstr ""
+"عذرا، وجهة النسخ الاحتياطي ليست قابلة للكتابة.\n"
+"\n"
+"الرجاء اختيار وجهة أخرى."
+
+#. TRANSLATORS: This must fit into the header button in the EPG-List
+msgid "Sort A-Z"
+msgstr "فرز الف-ياء"
+
+msgid "Sort Order"
+msgstr "ترتيب الفرز"
+
+#. TRANSLATORS: This must fit into the header button in the EPG-List
+msgid "Sort Time"
+msgstr "فرز وقت"
+
+msgid "Sound"
+msgstr "الصوت"
+
+msgid "Soundcarrier"
+msgstr "ناقل الصوت"
+
+msgid "South"
+msgstr "الجنوب"
+
+#, python-format
+msgid "Space: %d.%02d GB Free: %d.%02d GB\n"
+msgstr "المساحة: %d.%02d جيغابايت الفارغة: %d.%02d جيغابايت\n"
+
+msgid "Spanish"
+msgstr "الاسبانية"
+
+msgid "Sports"
+msgstr "الرياضة"
+
+msgid "StandBy Blue"
+msgstr "الاستعداد أزرق"
+
+msgid "StandBy Green"
+msgstr "الاستعداد أخضر"
+
+msgid "StandBy Red"
+msgstr "الاستعداد أحمر"
+
+msgid "Standby"
+msgstr "الاستعداد"
+
+msgid "Standby / Restart"
+msgstr "الاستعداد / إعادة التشغيل"
+
+msgid "Standby with Panel"
+msgstr "الاستعداد عبر لوحة اللمس"
+
+msgid "Start from the beginning"
+msgstr "البدء من الأول"
+
+msgid "Start or stop Delayer for this channel..."
+msgstr ""
+
+msgid "Start recording?"
+msgstr "بدء التسجيل؟"
+
+msgid "Start test"
+msgstr "بدء الاختبار"
+
+msgid "StartTime"
+msgstr "وقت البدء"
+
+msgid "Starting on"
+msgstr "البدء على"
+
+msgid "Std.Feeds"
+msgstr "تغذيات STD"
+
+msgid "Step east"
+msgstr "خطوة شرقا"
+
+msgid "Step west"
+msgstr "خطوة غربا"
+
+msgid "Stereo"
+msgstr "ستيريو"
+
+msgid "Stop"
+msgstr "إيقاف"
+
+msgid "Stop Download"
+msgstr "إيقاف التنزيل"
+
+msgid "Stop Playback"
+msgstr "إيقاف التشغيل"
+
+msgid "Stop Record..."
+msgstr "إيقاف التسجيل..."
+
+msgid "Stop Timeshift?"
+msgstr "إيقاف تحويل الوقت (Timeshift)؟"
+
+msgid "Stop current event and disable coming events"
+msgstr "إيقاف الحدث الحالي وتعطيل الأحداث القادمة"
+
+msgid "Stop current event but not coming events"
+msgstr "إيقاف الحدث الحالي لكن لا تعطل الأحداث القادمة"
+
+msgid "Stop playing this movie?"
+msgstr "إيقاف تشغيل هذا الفيلم؟"
+
+msgid "Stop test"
+msgstr "إيقاف الاختبار"
+
+msgid "Stop testing plane after # failed transponders"
+msgstr "إيقاف الاختبار بعد # فشل المرسلات"
+
+msgid "Stop testing plane after # successful transponders"
+msgstr "إيقاف الاختبار بعد # نجاح المرسلات"
+
+msgid "Store position"
+msgstr "تخزين الموقع"
+
+msgid "Stored position"
+msgstr "المواقع المخزنة"
+
+msgid "Straight"
+msgstr "مستقيم"
+
+msgid "Subscriptions"
+msgstr "الاشتراكات"
+
+msgid "Subservice list..."
+msgstr "لائحة الخدمات الفرعية..."
+
+msgid "Subservices"
+msgstr "الخدمات الفرعية"
+
+msgid "Subtitle overlay"
+msgstr "تراكب الترجمة"
+
+msgid "Subtitle selection"
+msgstr "اختيار الترجمة"
+
+msgid "Subtitles"
+msgstr "الترجمة"
+
+msgid "Subtitles (Current Channel)"
+msgstr "ترجمات (القناة الحالية)"
+
+msgid "Sudanese"
+msgstr "السودانية"
+
+msgid "Sudoku Game"
+msgstr "لعبة سودوكو"
+
+msgid "Sun"
+msgstr "الأحد"
+
+msgid "Sunday"
+msgstr "الأحد"
+
+msgid "Swahili"
+msgstr "السواحلية"
+
+msgid "Swap Services"
+msgstr "تبادل القنوات"
+
+msgid "Swedish"
+msgstr "السويدية"
+
+msgid "Switch to next subservice"
+msgstr "التبديل إلى الخدمة الفرعية التالية"
+
+msgid "Switch to previous subservice"
+msgstr "التبديل إلى الخدمة الفرعية السابقة"
+
+msgid "Symbol Rate"
+msgstr "معدل الترميز"
+
+msgid "Symbolrate"
+msgstr "معدل الترميز"
+
+msgid "System"
+msgstr "النظام"
+
+#. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
+msgid "TRANSLATOR_INFO"
+msgstr ""
+"الترجمة العربية لـ QBoxHD\n"
+"بواسطة : SSJomaa\n"
+"- سبتمبر 2010 -\n"
+"email: sasjomaa@yahoofr"
+
+msgid "TS file is too large for ISO9660 level 1!"
+msgstr "حجم ملف TS كبير جدا بالنسبة لـ ISO9660 level 1!"
+
+msgid "TV Settings"
+msgstr "إعدادات التلفزيون"
+
+msgid "TV System"
+msgstr "نظام التلفزيون"
+
+msgid "Table of content for collection"
+msgstr "جدول محتوى المجموعة"
+
+msgid "Tag 1"
+msgstr "التصنيف 1"
+
+msgid "Tag 2"
+msgstr "التصنيف 2"
+
+msgid "Tagalog"
+msgstr "التاغالوغية"
+
+msgid "Tags"
+msgstr "العلامات"
+
+msgid "Tajik"
+msgstr "الطاجيكية"
+
+msgid "Tamil"
+msgstr "التاميل"
+
+msgid "Tatar"
+msgstr "التتار"
+
+msgid "Tegulu"
+msgstr "التيقولية"
+
+msgid "Terrestrial"
+msgstr "البث الأرضي"
+
+msgid "Terrestrial provider"
+msgstr "مزود خدمة البث الأرضي"
+
+msgid "Test DiSEqC settings"
+msgstr "اختبار إعدادات دايسك"
+
+msgid "Test Type"
+msgstr "نوع الاختبار"
+
+msgid "Test mode"
+msgstr "وضع الاختبار"
+
+msgid "Test the network configuration of your QBoxHD.\n"
+msgstr "اختبار تكوين الشبكة لـ QBoxHD.\n"
+
+msgid "Test-Messagebox?"
+msgstr "تجربة صندوق الرسالة؟"
+
+msgid "Thai"
+msgstr "التايلاندية"
+
+msgid ""
+"Thank you for using the wizard. Your box is now ready to use.\n"
+"Please press OK to start using your QBoxHD."
+msgstr ""
+"شكرا لاستخدام المعالج. جهاز الاستقبال جاهز الآن للاستخدام.\n"
+"الرجاء الضغط على موافق لبدء استخدام QBoxHD."
+
+msgid ""
+"The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to "
+"create a QBoxHD format data DVD (which will not play in stand-alone DVD "
+"players) instead?"
+msgstr ""
+"الدي في دي القياسي لا يدعم H.264 دفق الفيديو عالي الجودة (HDTV). هل تريد "
+"بدلا من ذلك إنشاء تنسيق بيانات دي في دي خاص بـ QBoxHD (والذي لن يشتغل في "
+"مشغلات دي في دي المستقلة)؟"
+
+msgid ""
+"The USB stick is now bootable. Do you want to download the latest image from "
+"the feed server and save it on the stick?"
+msgstr ""
+"وحدة يو اس بي الآن قابلة للاقلاع. هل تريد تنزيل أحدث صورة من خادم التغذية "
+"وحفظها على الوحدة؟"
+
+msgid "The backup failed. Please choose a different backup location."
+msgstr "فشل النسخ الاحتياطي. الرجاء اختيار موقع مختلف للنسخ الاحتياطي."
+
+#, python-format
+msgid ""
+"The following device was found:\n"
+"\n"
+"%s\n"
+"\n"
+"Do you want to write the USB flasher to this stick?"
+msgstr ""
+"تم العثور على الجهاز التالي :\n"
+"\n"
+"%s\n"
+"\n"
+"هل تريد كتابة فلاشر اليو اس بي لهذه الوحدة؟"
+
+msgid "The following files were found..."
+msgstr "تم العثور على الملفات التالية..."
+
+msgid ""
+"The input port should be configured now.\n"
+"You can now configure the screen by displaying some test pictures. Do you "
+"want to do that now?"
+msgstr ""
+"يجب أن يتم تكوين مدخل المنفذ الآن.\n"
+"يمكنك الآن تكوين الشاشة من خلال عرض بعض صور الاختبار. هل تريد ان تفعل ذلك "
+"الآن؟"
+
+msgid "The installation of the default services lists is finished."
+msgstr "انتهاء تثبيت اللوائح الافتراضية للقنوات."
+
+msgid ""
+"The installation of the default settings is finished. You can now continue "
+"configuring your QBoxHD by pressing the OK button on the remote control."
+msgstr ""
+"انتهاء تثبيت الإعدادات الافتراضية. يمكنك الآن متابعة تكوين QBoxHD عن طريق "
+"الضغط على زر موافق على جهاز التحكم عن بعد."
+
+msgid ""
+"The md5sum validation failed, the file may be corrupted! Are you sure that "
+"you want to burn this image to flash memory? You are doing this at your own "
+"risk!"
+msgstr ""
+"فشل التحقق من صحة md5sum ، الملف قد يكون معطوبا! هل أنت متأكد أنك تريد كتابة "
+"هذه الصورة لذاكرة فلاش؟ أنت تفعل ذلك على مسؤوليتك الخاصة!"
+
+msgid ""
+"The md5sum validation failed, the file may be downloaded incompletely or be "
+"corrupted!"
+msgstr ""
+"فشل التحقق من صحة md5sum ، قد يكون تحميل الملف غير مكتمل أو قد يكون معطوبا!"
+
+msgid "The new Channel List has been saved."
+msgstr "تم حفظ لائحة القنوات الجديدة."
+
+msgid "The package doesn't contain anything."
+msgstr "الحزمة لا تحتوي على أي شيء."
+
+msgid "The package:"
+msgstr "الحزمة :"
+
+#, python-format
+msgid "The path %s already exists."
+msgstr "المسار %s موجود مسبقا."
+
+msgid "The pin code has been changed successfully."
+msgstr "تم تغيير الرقم السري بنجاح."
+
+msgid "The pin code you entered is wrong."
+msgstr "الرقم السري الذي أدخلته غير صحيح."
+
+msgid "The pin codes you entered are different."
+msgstr "الأرقام السرية التي أدخلتها غير متطابقة."
+
+#, python-format
+msgid "The results have been written to %s."
+msgstr "تمت كتابة النتائج إلى %s."
+
+msgid "The sleep timer has been activated."
+msgstr "لقد تم تنشيط مؤقت النوم."
+
+msgid "The sleep timer has been disabled."
+msgstr "لقد تم تعطيل مؤقت النوم."
+
+msgid "The timer file (timers.xml) is corrupt and could not be loaded."
+msgstr "ملف المؤقت (timers.xml) معطوب ولا يمكن تحميله."
+
+msgid ""
+"The wireless LAN plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"لم يتم ملحق شبكة الاتصال المحلية اللاسلكية.\n"
+"يرجى تثبيته."
+
+msgid ""
+"The wizard can backup your current settings. Do you want to do a backup now?"
+msgstr ""
+"يمكن للمعالج أن يقوم بالنسخ الاحتياطي للإعدادات الحالية. هل تريد أن تقوم "
+"بذلك الآن؟"
+
+msgid "The wizard is finished now."
+msgstr "انتهى المعالج الآن."
+
+msgid "There are at least "
+msgstr "هناك على الأقل"
+
+msgid "There are no default services lists in your image."
+msgstr "لا توجد لوائح افتراضية للقنوات في الصورة."
+
+msgid "There are no default settings in your image."
+msgstr "لا توجد إعدادات افتراضية في الصورة."
+
+msgid "There are now "
+msgstr "هناك الآن"
+
+msgid ""
+"There might not be enough Space on the selected Partition.\n"
+"Do you really want to continue?"
+msgstr ""
+"قد لا يكون هناك مساحة كافية على القسم المحدد.\n"
+"هل حقا تريد المتابعة؟"
+
+msgid "There was an error downloading the packetlist. Please try again."
+msgstr "هناك خطأ في تحميل لائحة الحزم. يرجى المحاولة مرة أخرى."
+
+msgid "There was an error. The package:"
+msgstr " هناك خطأ. الحزمة :"
+
+#, python-format
+msgid "This .NFI file does not contain a valid %s image!"
+msgstr "ملف .NFI هذا لا يحتوي على صورة %s صالحة!"
+
+msgid ""
+"This .NFI file does not have a md5sum signature and is not guaranteed to "
+"work. Do you really want to burn this image to flash memory?"
+msgstr ""
+"ملف .NFI هذا لا يملك توقيع md5sum وليس مضمونا عمله. هل تريد حقا أن كتابة هذه "
+"الصورة لذاكرة فلاش؟"
+
+msgid ""
+"This .NFI file has a valid md5 signature. Continue programming this image to "
+"flash memory?"
+msgstr "ملف .NFI هذا له توقيع MD5 صالح. مواصلة برمجة هذه الصورة لذاكرة فلاش؟"
+
+msgid ""
+"This DVD RW medium is already formatted - reformatting will erase all "
+"content on the disc."
+msgstr ""
+"تمت تهيئة وسيط DVD RW هذا مسبقا - إعادة التهيئة سوف تمحو جميع محتويات القرص."
+
+msgid "This Month"
+msgstr "هذا الشهر"
+
+#, python-format
+msgid "This QBoxHD can't decode %s streams!"
+msgstr "QBoxHD لا يمكنه فك ترميز تدفق %s!"
+
+#, python-format
+msgid "This QBoxHD can't decode %s video streams!"
+msgstr "QBoxHD لا يمكنه فك ترميز دفق فيديو %s!"
+
+#, python-format
+msgid "This QboxHD can't decode %s video streams!"
+msgstr "QBoxHD لا يمكنه فك ترميز دفق فيديو %s!"
+
+msgid "This Week"
+msgstr "هذا الأسبوع"
+
+msgid "This is step number 2."
+msgstr "هذه هي الخطوة رقم 2."
+
+msgid "This is unsupported at the moment."
+msgstr "هذا غير معتمد في الوقت الراهن."
+
+msgid "This plugin is installed."
+msgstr "هذا الملحق مثبت."
+
+msgid "This plugin is not installed."
+msgstr "هذا الملحق غير مثبت."
+
+msgid "This plugin will be installed."
+msgstr "هذا الملحق سيتم تثبته."
+
+msgid "This plugin will be removed."
+msgstr "هذا الملحق ستتم إزالته."
+
+msgid ""
+"This test checks for configured Nameservers.\n"
+"If you get a \"unconfirmed\" message:\n"
+"- please check your DHCP, cabling and Adapter setup\n"
+"- if you configured your Nameservers manually please verify your entries in "
+"the \"Nameserver\" Configuration"
+msgstr ""
+"يتحقق هذا الاختبار من تكوين أسماء الخوادم.\n"
+"إذا تحصلت على رسالة \"غير مؤكد\":\n"
+"- يرجى مراجعة إعدادات DHCP، والكوابل وضبط المحول\n"
+"- إذا قمت بتكوين أسماء الخوادم يدويا، يرجى التحقق من الإدخالات في تكوين "
+"\"أسماء الخوادم\""
+
+msgid ""
+"This test checks whether a network cable is connected to your LAN-Adapter.\n"
+"If you get a \"disconnected\" message:\n"
+"- verify that a network cable is attached\n"
+"- verify that the cable is not broken"
+msgstr ""
+"يتحقق هذا الاختبار مما إذا كان كبل الشبكة متصل بمحول الشبكة المحلية.\n"
+"إذا تحصلت على رسالة \"غير متصل\":\n"
+"- تحقق من أن كبل شبكة متصل\n"
+"- تحقق من عدم وجود كسر في الكابل"
+
+msgid ""
+"This test checks whether a valid IP Address is found for your LAN Adapter.\n"
+"If you get a \"unconfirmed\" message:\n"
+"- no valid IP Address was found\n"
+"- please check your DHCP, cabling and adapter setup"
+msgstr ""
+"يتحقق هذا الاختبار مما إذا كانت عناوين اي بي صالحة لمحول شبكة الاتصال "
+"المحلية.\n"
+"إذا تحصلت على رسالة \"غير مؤكد\":\n"
+"- لم يتم العثور على عناوين اي بي صالحة\n"
+"- الرجاء مراجعة ضبط DHCCP، الكابلات وضبط المحول"
+
+msgid ""
+"This test checks whether your LAN Adapter is set up for automatic IP Address "
+"configuration with DHCP.\n"
+"If you get a \"disabled\" message:\n"
+" - then your LAN Adapter is configured for manual IP Setup\n"
+"- verify thay you have entered correct IP informations in the AdapterSetup "
+"dialog.\n"
+"If you get an \"enabeld\" message:\n"
+"-verify that you have a configured and working DHCP Server in your network."
+msgstr ""
+"يتحقق هذا الاختبار مما إذا كان محول شبكة الاتصال المحلية معدا للضبط الألي "
+"لعناوين اي بي مع DHCP.\n"
+"إذا تحصلت على رسالة \"معطل\":\n"
+"- تم تكوين محول الشبكة المحلية للضبط اليدوي لعناوين اي بي.\n"
+"- تحقق من أنك أدخلت معلومات عناوين اي بي صحيحة في نافذة إعداد المحول.\n"
+"إذا تحصلت على رسالة \"مفعل\":\n"
+"- تحقق من أن لديك خادم DHCP تم تكوينه بشكل صحيح وأنه يعمل."
+
+msgid "This test detects your configured LAN-Adapter."
+msgstr "يكشف هذا الاختبار تكوين محول الشبكة المحلية."
+
+msgid "Three"
+msgstr "ثلاثة"
+
+msgid "Threshold"
+msgstr "عتبة"
+
+msgid "Thu"
+msgstr "الخميس"
+
+msgid "Thumbnail Height"
+msgstr "ارتفاع الصورة المصغرة"
+
+msgid "Thumbnail Width"
+msgstr "عرض الصورة المصغرة"
+
+msgid "Thumbnails"
+msgstr "الصور المصغرة"
+
+msgid "Thursday"
+msgstr "الخميس"
+
+msgid "Tibetan"
+msgstr "التبتية"
+
+msgid "Tigrinya"
+msgstr "التيغرينية"
+
+msgid "Time"
+msgstr "الوقت"
+
+msgid "Time Settings"
+msgstr "إعدادات الوقت"
+
+msgid "Time/Date Input"
+msgstr "إدخال الوقت/التاريخ"
+
+msgid "Timer"
+msgstr "المؤقت"
+
+msgid "Timer Edit"
+msgstr "تحرير المؤقت"
+
+msgid "Timer Editor"
+msgstr "محرر المؤقت"
+
+msgid "Timer Type"
+msgstr "نوع المؤقت"
+
+msgid ""
+"Timer cannot start.\n"
+"A recording is currently running.\n"
+"No more recording allowed."
+msgstr ""
+"لا يمكن تشغيل المؤقت.\n"
+"هناك تسجيل قيد التشغيل حاليا.\n"
+"لا يسمح بالمزيد من التسجيلات."
+
+msgid "Timer entry"
+msgstr "مدخل المؤقت"
+
+msgid "Timer log"
+msgstr "سجل المؤقت"
+
+msgid ""
+"Timer overlap in timers.xml detected!\n"
+"Please recheck it!"
+msgstr ""
+"تم الكشف عن تداخل في ملف timers.xml!\n"
+"يرجى إعادة التحقق من ذلك!"
+
+msgid "Timer sanity error"
+msgstr "خطأ في المؤقت"
+
+msgid "Timer selection"
+msgstr "اختيار المؤقت"
+
+msgid "Timer status:"
+msgstr "حالة المؤقت :"
+
+msgid "Timeshift"
+msgstr "تحويل الوقت (Timeshift)"
+
+msgid "Timeshift not possible!"
+msgstr "لا يمكن تحويل الوقت (Timeshift)"
+
+msgid "Timeshift path..."
+msgstr "مسار تحويل الوقت (Timeshift)"
+
+msgid "Timezone"
+msgstr "المنطقة الزمنية"
+
+msgid "Title"
+msgstr "العنوان"
+
+msgid "Title properties"
+msgstr "خصائص العنوان"
+
+msgid "Title: "
+msgstr "العنوان :"
+
+msgid "Titles"
+msgstr "العناوين"
+
+#, python-format
+msgid "Titles: %d"
+msgstr "العناوين : %d"
+
+msgid "Titleset mode"
+msgstr "وضع تعيين العناوين"
+
+msgid ""
+"To update your QBoxHD firmware, please follow these steps:\n"
+"1) Turn off your box with the rear power switch and plug in the bootable USB "
+"stick.\n"
+"2) Turn mains back on and hold the DOWN button on the front panel pressed "
+"for 10 seconds.\n"
+"3) Wait for bootup and follow instructions of the wizard."
+msgstr ""
+"لتحديث البرنامج التشغيلي لجهاز QBoxHD، يرجى اتباع الخطوات التالية:\n"
+"1) إغلاق الجهاز من مفتاح الطاقة الخلفي وتوصيل وحدة يو اس بي المعدة للإقلاع.\n"
+"2) فتح مفتاخ الطاقة الخلفي مع الاستمرار في الضغط على مفتاح أسفل على اللوحة "
+"الأمامية لمدة 10 ثوان.\n"
+"3) انتظر الإقلاع واتبع تعليمات المعالج."
+
+msgid ""
+"To use the selected feature you have to login to YouTube. Select a user-"
+"profile to login!"
+msgstr ""
+"لاستخدام الميزة المحددة عليك تسجيل الدخول إلى موقع يوتيوب. حدد وضع شخصي "
+"لتسجيل الدخول!"
+
+msgid "Today"
+msgstr "اليوم"
+
+msgid "Tokens"
+msgstr "الرموز"
+
+msgid "Tone mode"
+msgstr "وضع النغمة"
+
+msgid "Toneburst"
+msgstr "Toneburst"
+
+msgid "Toneburst A/B"
+msgstr "Toneburst A/B"
+
+msgid "Tonga"
+msgstr "تونغا"
+
+msgid "Top Favorites"
+msgstr "الأكثر تفضيلا"
+
+msgid "Top Rated"
+msgstr "الأعلى تقييما"
+
+msgid "Total pages"
+msgstr "مجموع الصفحات"
+
+msgid "Total results"
+msgstr "مجموع النتائج"
+
+msgid "Track"
+msgstr "المسار"
+
+msgid "Transcode MPEG/DVD Audio"
+msgstr "ترميز MPEG/DVD صوتي"
+
+msgid "Transcode MPEG/DVD Video"
+msgstr "ترميز MPEG/DVD صوتي"
+
+msgid "Translation"
+msgstr "ترجمة"
+
+msgid "Translation:"
+msgstr "ترجمة :"
+
+msgid "Transmission Mode"
+msgstr "وضع النقل"
+
+msgid "Transmission mode"
+msgstr "وضع النقل"
+
+msgid "Transponder"
+msgstr "المرسل"
+
+msgid "Transponder Type"
+msgstr "نوع المرسل"
+
+msgid "Travel & Events"
+msgstr "سفر و أحداث"
+
+msgid "Tries left:"
+msgstr "المحاولات المتبقية :"
+
+msgid "Try to find used Transponders in cable network.. please wait..."
+msgstr "محاولة لايجاد الترددات المستخدمة في شبكة الكابل.. الرجاء الانتظار..."
+
+msgid "Try to find used transponders in cable network.. please wait..."
+msgstr "محاولة لايجاد الترددات المستخدمة في شبكة الكابل.. الرجاء الانتظار..."
+
+msgid "Trying to download a new packetlist. Please wait..."
+msgstr "تجري محاولة تحميل لائحة حزم جديدة. الرجاء الانتظار..."
+
+msgid "Tsonga"
+msgstr "تسونجا"
+
+msgid "Tue"
+msgstr "الثلاثاء"
+
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+msgid "Tune"
+msgstr "تعديل"
+
+msgid "Tune failed!"
+msgstr "فشل التعديل!"
+
+msgid "Tuner"
+msgstr "الموالف"
+
+msgid "Tuner "
+msgstr "الموالف"
+
+msgid "Tuner Slot"
+msgstr "منفذ الموالف"
+
+msgid "Tuner configuration"
+msgstr "تكوين الموالف"
+
+msgid "Tuner status"
+msgstr "حالة الموالف"
+
+msgid "Turkish"
+msgstr "التركية"
+
+msgid "Turkmen"
+msgstr "التركمانية"
+
+msgid "Twi"
+msgstr "التوي"
+
+msgid "Two"
+msgstr "اثنان"
+
+msgid "Type"
+msgstr "نوع"
+
+msgid "Type of scan"
+msgstr "نوع البحث"
+
+msgid "UNKNOWN"
+msgstr "غير معروف"
+
+msgid "USALS"
+msgstr "USALS"
+
+msgid "USB"
+msgstr "يو اس بي"
+
+msgid "USB Stick"
+msgstr "وحدة يو اس بي"
+
+msgid "USB stick wizard"
+msgstr "معالج وحدة يو اس بي"
+
+msgid "Uigur"
+msgstr "الاويغورية"
+
+msgid "Ukrainian"
+msgstr "الأوكرانية"
+
+msgid ""
+"Unable to complete filesystem check.\n"
+"Error: "
+msgstr ""
+"غير قادر على إكمال التحقق من الملفات.\n"
+"خطأ :"
+
+msgid ""
+"Unable to initialize harddisk.\n"
+"Error: "
+msgstr ""
+"غير قادر على تهيئة القرص الصلب.\n"
+"خطأ :"
+
+msgid "Uncommitted DiSEqC command"
+msgstr "أمر دايسك لم ينفذ"
+
+msgid ""
+"Undo\n"
+"Install"
+msgstr ""
+"تراجع\n"
+"تثبيت"
+
+msgid ""
+"Undo\n"
+"Remove"
+msgstr ""
+"تراجع\n"
+"إزالة"
+
+msgid "Unicable"
+msgstr "Unicable"
+
+msgid "Unicable LNB"
+msgstr "Unicable LNB"
+
+msgid "Unicable Martix"
+msgstr "Unicable Martix"
+
+msgid "Universal LNB"
+msgstr "LNB عالمي"
+
+msgid "Unmount failed"
+msgstr "فشل إلغاء التركيب"
+
+msgid "Unsupported"
+msgstr "غير مدعوم"
+
+msgid "Update"
+msgstr "التحديث"
+
+msgid "Updates your receiver's software"
+msgstr "تحديثات برنامج تشغيل جهاز الاستقبال"
+
+msgid "Updating Weather Info ..."
+msgstr "تحديث معلومات الطقس..."
+
+msgid "Updating Weather Info failed (Twisted Web not installed)"
+msgstr "فشل تحديث معلومات الطقس (لم يتم تثبيت Twisted-web)"
+
+msgid "Updating finished. Here is the result:"
+msgstr "تم الانتهاء من تحديث. وهذه هي النتائج :"
+
+msgid "Updating... Please wait... This can take some minutes..."
+msgstr "التحديث جار... الرجاء الانتظار... هذا الأمر قد يستغرق بضع الدقائق..."
+
+msgid "Upgrade"
+msgstr "ترقية"
+
+msgid "Upgrade finished."
+msgstr "انتهاء الترقية."
+
+msgid "Upgrade finished. Do you want to reboot your QBoxHD?"
+msgstr "الانتهاء من الترقية. هل تريد إعادة تشغيل QBoxHD؟"
+
+msgid "Upgrading"
+msgstr "عملية الترقية جارية"
+
+msgid "Upgrading QBoxHD... Please wait"
+msgstr "ترقية QBoxHD جارية... الرجاء الانتظار"
+
+msgid "Urdu"
+msgstr "الأردية"
+
+msgid "Use"
+msgstr "استخدم"
+
+msgid "Use DHCP"
+msgstr "استخدام DHCP"
+
+msgid "Use Interface"
+msgstr "استخدام الواجهة"
+
+msgid "Use Power Measurement"
+msgstr "استخدام قياس الطاقة"
+
+msgid "Use a gateway"
+msgstr "استخدام بوابة"
+
+#.   TRANSLATORS: The effect of "Non-smooth winding" is that rather
+#.       than using ordinary "continuous" or "smooth" winding, a fast
+#.       sequence of stills is shown when winding at high speeds. This
+#.       makes it much easier too follow when almost each frame comes from
+#.       a new scene. The effect is achieved by repeating each shown frame
+#.       a couple of times. The settings control both at which speed this
+#.       winding mode sets in, and how many times each frame should be
+#.       repeated. This was previously called "Discontinuous playback"
+#.       which was incomprehensible. "Non-smooth winding" may be a better
+#.       term, but note that there is nothing irregular about it. Synonyms
+#.       better suited for translation to other languages may be "stepwise
+#.       winding/playback", or "winding/playback using stills". 
+msgid "Use non-smooth winding at speeds above"
+msgstr "استخدام اللف غير السلس بالسرعات المحددة أعلاه"
+
+msgid "Use power measurement"
+msgstr "استخدام قياس الطاقة"
+
+msgid "Use the Networkwizard to configure your Network\n"
+msgstr "استخدام معالج شبكة الاتصال لتكوين الشبكة\n"
+
+msgid ""
+"Use the left and right buttons to change an option.\n"
+"\n"
+"Please set up tuner A"
+msgstr ""
+"استخدم زر يمين وزر يسار لتغيير الخيار.\n"
+"\n"
+"يرجى إعداد الموالف أ (A)"
+
+msgid ""
+"Use the up/down keys on your remote control to select an option. After that, "
+"press OK."
+msgstr ""
+"استخدم مفاتيح أعلى/أسفل من جهاز التحكم عن بعد لتحديد خيار. بعد ذلك ، اضغط "
+"موافق."
+
+msgid "Use usals for this sat"
+msgstr "استخدم usals لهذا القمر الصناعي"
+
+msgid "Use wizard to set up basic features"
+msgstr "استخدام المعالج لإعداد الوظائف الأساسية"
+
+msgid "Used service scan type"
+msgstr "نوع بحث القنوات المستخدم"
+
+msgid "User Preferences"
+msgstr "تفضيلات المستخدم"
+
+msgid "User Profile Name"
+msgstr "اسم وضع المستخدم"
+
+msgid "User defined"
+msgstr "محدد من قبل المستخدم"
+
+msgid "User management"
+msgstr "إدارة المستخدمين"
+
+msgid "Usermanager"
+msgstr "مدير المستخدمين"
+
+msgid "Username"
+msgstr "اسم المستخدم"
+
+msgid "Uzbek"
+msgstr "الأوزبكية"
+
+msgid "VAR folder"
+msgstr "مجلد VAR"
+
+msgid "VCR scart"
+msgstr "سكارت VCR"
+
+msgid "VMGM (intro trailer)"
+msgstr "VMGM (فيلم مقدمة قصير)"
+
+msgid "Vertical"
+msgstr "عمودي"
+
+msgid "Video :"
+msgstr "الفيديو :"
+
+msgid "Video Bitrate"
+msgstr "دفق الفيديو"
+
+msgid "Video Codec"
+msgstr "ترميز الفيديو"
+
+msgid "Video Fine-Tuning"
+msgstr "الضبط الدقيق للفيديو"
+
+msgid "Video Fine-Tuning Wizard"
+msgstr "معالج الضبط الدقيق للفيديو"
+
+msgid "Video Norm"
+msgstr "معايير الفيديو"
+
+msgid "Video Output"
+msgstr "خرج الفيديو"
+
+msgid "Video Quality"
+msgstr "جودة الفيديو"
+
+msgid "Video Setup"
+msgstr "ضبط الفيديو"
+
+msgid "Video Wizard"
+msgstr "معالج الفيديو"
+
+msgid ""
+"Video input selection\n"
+"\n"
+"Please press OK if you can see this page on your TV (or select a different "
+"input port).\n"
+"\n"
+"The next input port will be automatically probed in 10 seconds."
+msgstr ""
+"اختيار مدخلات الفيديو\n"
+"\n"
+"الرجاء اضغط موافق إذا كنت تستطيع رؤية هذه الصفحة على جهاز التلفزيون (أو حدد "
+"منفذ إدخال مختلف).\n"
+"\n"
+"سيتم بحث مدخل المنفذ التالي تلقائيا خلال 10 ثوان."
+
+msgid "Video mode selection."
+msgstr "اختيار وضع الفيديو."
+
+msgid "Videos"
+msgstr "أشرطة الفيديو"
+
+#, python-format
+msgid "Videos: %d"
+msgstr "أشرطة الفيديو : %d"
+
+msgid "Vietnamese"
+msgstr "الفيتنامية"
+
+msgid "View Count"
+msgstr "عداد المشاهدات"
+
+msgid "View Movies..."
+msgstr "عرض الأفلام..."
+
+msgid "View Photos..."
+msgstr "عرض الصور..."
+
+msgid "View Rass interactive..."
+msgstr "عرض RASS التفاعلي..."
+
+msgid "View Video CD..."
+msgstr "عرض VideoCD..."
+
+msgid "View details"
+msgstr "عرض التفاصيل"
+
+msgid "View list of available "
+msgstr "عرض لائحة المتاحة"
+
+msgid "View list of available CommonInterface extensions"
+msgstr "عرض لائحة الملحقات المتاحة للواجهة المشتركة"
+
+msgid "View list of available Display and Userinterface extensions."
+msgstr "عرض لائحة ملحقات العرض واجهة المستخدم المتاحة."
+
+msgid "View list of available EPG extensions."
+msgstr "عرض لائحة ملحقات دليل البرامج المتاحة."
+
+msgid "View list of available Satteliteequipment extensions."
+msgstr "عرض لائحة ملحقات معدات الأقمار الصناعية المتاحة."
+
+msgid "View list of available communication extensions."
+msgstr "عرض لائحة ملحقات الاتصال المتاحة."
+
+msgid "View list of available default settings"
+msgstr "عرض لائحة الإعدادات الافتراضية المتاحة"
+
+msgid "View list of available multimedia extensions."
+msgstr "عرض لائحة ملحقات الوسائط المتعددة المتاحة."
+
+msgid "View list of available networking extensions"
+msgstr "عرض لائحة ملحقات الشبكات المتاحة"
+
+msgid "View list of available recording extensions"
+msgstr "عرض لائحة ملحقات التسجيل المتاحة"
+
+msgid "View list of available skins"
+msgstr "عرض لائحة المظاهر المتاحة"
+
+msgid "View list of available software extensions"
+msgstr "عرض لائحة من ملحقات البرامج المتاحة"
+
+msgid "View list of available system extensions"
+msgstr "عرض لائحة من ملحقات النظام المتاحة"
+
+msgid "View teletext..."
+msgstr "عرض التيليتكست..."
+
+msgid "View, edit or delete mountpoints on your QBoxHD."
+msgstr "عرض وتحرير أو حذف نقاط التركيب لـ QBoxHD."
+
+msgid "View, edit or delete usernames and passwords for your network."
+msgstr "عرض وتحرير أو حذف أسماء المستخدمين وكلمات المرور للشبكة."
+
+msgid "Views"
+msgstr "مناظر"
+
+msgid "Views: "
+msgstr "مناظر :"
+
+msgid "Virtual KeyBoard"
+msgstr "لوحة المفاتيح الافتراضية"
+
+msgid "Volapuk"
+msgstr "الفولابوك"
+
+msgid "Voltage mode"
+msgstr "وضع الفولتية"
+
+msgid "Volume"
+msgstr "حجم الصوت"
+
+msgid "W"
+msgstr "W"
+
+msgid "WEP"
+msgstr "WEP"
+
+msgid "WEP 128"
+msgstr "WEP 128"
+
+msgid "WEP 64"
+msgstr "WEP 64"
+
+msgid "WPA"
+msgstr "WPA"
+
+msgid "WPA or WPA2"
+msgstr "WPA or WPA2"
+
+msgid "WPA2"
+msgstr "WPA2"
+
+msgid "WSS on 4:3"
+msgstr "WSS على 3:4"
+
+msgid "Waiting"
+msgstr "في الانتظار"
+
+msgid "Waiting to removing ..."
+msgstr "في انتظار الإزالة..."
+
+msgid "Waiting to start download ..."
+msgstr "في انتظار بدء التنزيل..."
+
+msgid "Watch On Mobile"
+msgstr "مشاهدة على المحمول"
+
+msgid ""
+"We will now test if your TV can also display this resolution at 50hz. If "
+"your screen goes black, wait 20 seconds and it will switch back to 60hz.\n"
+"Please press OK to begin."
+msgstr ""
+"سيتم الآن اختبار ما إن كان جهاز التلفزيون قادرا على عرض دقة 50 هرتز. إذاما "
+"أصبحت الشاشة السوداء، انتظر 20 ثانية ، وسوف تعود الدقة مرة أخرى الى 60 "
+"هرتز.\n"
+"يرجى الضغط على موافق للبدء."
+
+msgid "Wed"
+msgstr "الأربعاء"
+
+msgid "Wednesday"
+msgstr "الأربعاء"
+
+msgid "Weekday"
+msgstr "أيام الأسبوع"
+
+msgid "Welch"
+msgstr "وولش"
+
+msgid ""
+"Welcome to the Cutlist editor.\n"
+"\n"
+"Seek to the start of the stuff you want to cut away. Press OK, select 'start "
+"cut'.\n"
+"\n"
+"Then seek to the end, press OK, select 'end cut'. That's it."
+msgstr ""
+"مرحبا بكم في محرر لائحة الاقتصاص.\n"
+"\n"
+"تقدم إلى النقطة التي تريد بدء الاقتصاص منها. اضغط موافق، اختر 'ابدأ القص'\n"
+"\n"
+"ثم تقدم إلى النهاية، اضغط موافق، 'نهاية القص'."
+
+msgid ""
+"Welcome to the Image upgrade wizard. The wizard will assist you in upgrading "
+"the firmware of your QBoxHD by providing a backup facility for your current "
+"settings and a short explanation of how to upgrade your firmware."
+msgstr ""
+"مرحبا بكم في معالج ترقية الصورة. سيقوم المعالج بمساعدتك في ترقية البرنامج "
+"التشغيلي لجهاز QBoxHD من خلال توفير نسخ احتياطي سهل لإعداداتك الحالية وشرحا "
+"موجزا عن كيفية ترقية البرنامج التشغيلي."
+
+msgid ""
+"Welcome to the cleanup wizard.\n"
+"\n"
+"We have detected that your available internal memory has dropped below 2MB.\n"
+"To ensure stable operation of your QBoxHD, the internal memory should be "
+"cleaned up.\n"
+"You can use this wizard to remove some extensions.\n"
+msgstr ""
+"مرحبا بك في معالج التنظيف.\n"
+"\n"
+"لقد تم الكشف أن الذاكرة الداخلية المتاحة قد انخفض إلى أقل من 2 ميغابايت.\n"
+"لضمان تشغيل مستقر لـ  QBoxHD، يجب تنظيف الذاكرة الداخلية.\n"
+"يمكنك استخدام هذا المعالج لإزالة بعض الملحقات.\n"
+
+msgid ""
+"Welcome.\n"
+"\n"
+"This start wizard will guide you through the basic setup of your QBoxHD.\n"
+"Press the OK button on your remote control to move to the next step."
+msgstr ""
+"مرحبا.\n"
+"\n"
+"هذا المعالج سوف يقودك خلال الضبط الأساسي لـ QBoxHD.\n"
+"اضغط على زر موافق من جهاز التحكم عن بعد للانتقال إلى الخطوة التالية."
+
+msgid "Welcome..."
+msgstr "مرحبا..."
+
+msgid "West"
+msgstr "الغرب..."
+
+msgid "What do you want to scan?"
+msgstr "ماذا تريد أن تتفحص؟"
+
+msgid "What to do with submitted crashlogs?"
+msgstr "ما يجب القيام به مع سجلات الانهيار المقدمة؟"
+
+msgid "Wheel Leds"
+msgstr "أضواء لوحة اللمس"
+
+msgid "Wheel Leds Brightness"
+msgstr "سطوع أضواء لوحة اللمس"
+
+msgid "Wheel Leds Hue"
+msgstr "درجة اللون لأضواء لوحة اللمس"
+
+msgid "Wheel Leds Saturation"
+msgstr "تشبع أضواء لوحة اللمس"
+
+msgid ""
+"When you do a factory reset, you will lose ALL your configuration data\n"
+"(including bouquets, services, satellite data ...)\n"
+"After completion of factory reset, your receiver will restart "
+"automatically!\n"
+"\n"
+"Really do a factory reset?"
+msgstr ""
+"عند القيام بعملية إعادة ضبط المصنع ، سوف تفقد جميع بيانات التكوين\n"
+"(بما في ذلك الباقات، والقنوات و بيانات الأقمار الصناعية...)\n"
+"بعد الانتهاء من عملية إعادة ضبط المصنع ، ستتم إعادة تشغيل جهاز الاستقبال "
+"تلقائيا!\n"
+"\n"
+"هل تريد حقا أن تقوم بإعادة ضبط المصنع؟"
+
+msgid "Where do you want to backup your settings?"
+msgstr "أين تريد وضع النسخ الاحتياطي للإعدادات؟"
+
+msgid "Where to save temporary timeshift recordings?"
+msgstr "ما مكان حفظ تحويل الوقت المؤقت للتسجيلات؟"
+
+msgid "Wireless"
+msgstr "لاسلكي"
+
+msgid "Wireless Antennas Position"
+msgstr "وضعية هوائيات اللاسلكي"
+
+msgid "Wireless LAN"
+msgstr "الشبكة المحلية اللاسلكية"
+
+msgid "Wireless Network"
+msgstr "شبكة لاسلكية"
+
+msgid "Wireless Network State"
+msgstr "حالة الشبكة اللاسلكية"
+
+msgid "Wolof"
+msgstr "الولوف"
+
+msgid "Write error while recording. Disk full?\n"
+msgstr "خطأ في الكتابة على القرص اثناء التسجيل. القرص ممتلئ؟\n"
+
+msgid "Write failed!"
+msgstr "فشلت عملية الكتابة!"
+
+msgid "Writing NFI image file to flash completed"
+msgstr "كتابة ملف صورة  NFI إلى الفلاش انتهت"
+
+msgid "Xhosa"
+msgstr "زوسا"
+
+msgid "YPbPr"
+msgstr "YPbPr"
+
+msgid "YUV"
+msgstr "YUV"
+
+msgid "Year"
+msgstr "السنة"
+
+msgid "Yes"
+msgstr "نعم"
+
+msgid "Yes, and delete this movie"
+msgstr "نعم ، حذف هذا الفيلم"
+
+msgid "Yes, and don't ask again"
+msgstr "نعم ، ولا تسأل مجددا"
+
+msgid "Yes, backup my settings!"
+msgstr "نعم ، نسخ احتياطي للإعدادات!"
+
+msgid "Yes, do a manual scan now"
+msgstr "نعم، قم ببحث اليدوي الآن"
+
+msgid "Yes, do an automatic scan now"
+msgstr "نعم، قم ببحث ألي الآن"
+
+msgid "Yes, do another manual scan now"
+msgstr "نعم، قم ببحث اليدوي آخر الآن"
+
+msgid "Yes, perform a shutdown now."
+msgstr "نعم ، تنفيذ إيقاف تشغيل الآن."
+
+msgid "Yes, restore the settings now"
+msgstr "نعم ، استعادة الإعدادات الآن"
+
+msgid "Yes, returning to movie list"
+msgstr "نعم ، العودة إلى لائحة الأفلام"
+
+msgid "Yes, view the tutorial"
+msgstr "نعم ، عرض البرنامج التعليمي"
+
+msgid "Yiddish"
+msgstr "اليديشية"
+
+msgid "Yoruba"
+msgstr "اليوروبا"
+
+msgid "You can cancel the installation."
+msgstr "يمكنك إلغاء التثبيت."
+
+msgid "You can cancel the removal."
+msgstr "يمكنك إلغاء الإزالة."
+
+msgid ""
+"You can choose some default settings now. Please select the settings you "
+"want to be installed."
+msgstr ""
+"يمكنك اختيار بعض الإعدادات الافتراضية الآن. الرجاء اختيار الإعدادات التي "
+"تريدها ليتم تثبيتها."
+
+msgid "You can choose, what you want to install..."
+msgstr "يمكنك اختيار ما تريد تثبيته..."
+
+msgid "You can install this plugin."
+msgstr "يمكنك تثبيت هذا الملحق."
+
+msgid "You can remove this plugin."
+msgstr "يمكنك إزالة هذا الملحق."
+
+msgid "You cannot delete this!"
+msgstr "لا يمكنك حذف هذا!"
+
+msgid "You chose not to install any default services lists."
+msgstr "لقد اخترت عدم تثبيت أية لوائح قنوات افتراضية."
+
+msgid ""
+"You chose not to install any default settings. You can however install the "
+"default settings later in the settings menu."
+msgstr ""
+"لقد اخترت عدم تثبيت أية إعدادات افتراضية. ومع ذلك يمكنك تثبيت الإعدادات "
+"الافتراضية في وقت لاحق في قائمة الإعدادات."
+
+msgid ""
+"You chose not to install anything. Please press OK finish the install wizard."
+msgstr ""
+"لقد اخترت عدم تثبيت أي شيء. الرجاء الضغط على موافق لإنهاء معالج التثبيت."
+
+msgid ""
+"You do not seem to have a harddisk in your QBoxHD. So backing up to a "
+"harddisk is not an option for you."
+msgstr ""
+"لا يبدو أن لديك قرصا صلبا في QBoxHD. لذلك فخيار النسخ الاحتياطي الى القرص "
+"الصلب ليس خيارا بالنسبة لك."
+
+msgid ""
+"You have chosen to backup to a compact flash card. The card must be in the "
+"slot. We do not verify if it is really used at the moment. So better backup "
+"to the harddisk!\n"
+"Please press OK to start the backup now."
+msgstr ""
+"لقد اخترت النسخ الاحتياطي لبطاقة فلاش مدمج. يجب أن تكون البطاقة في الفتحة. "
+"لم يتم التحقق مما إذا كانت البطاقة مستخدمة حقا في هذه اللحظة. لذا الأفضل "
+"القيام بالنسخ الاحتياطي إلى القرص الصلب!\n"
+"يرجى الضغط على موافق لبدء النسخ الاحتياطي الآن."
+
+msgid ""
+"You have chosen to backup to an usb drive. Better backup to the harddisk!\n"
+"Please press OK to start the backup now."
+msgstr ""
+"لقد اخترت النسخ الاحتياطي إلى محرك أقراص يو اس بي. الأفضل القيام بالنسخ "
+"الاحتياطي إلى القرص الصلب!\n"
+"يرجى الضغط على موافق لبدء النسخ الاحتياطي الآن."
+
+msgid ""
+"You have chosen to backup to your harddisk. Please press OK to start the "
+"backup now."
+msgstr ""
+"لقد اخترت النسخ الاحتياطي إلى القرص الصلب. يرجى الضغط على موافق لبدء النسخ "
+"الاحتياطي الآن."
+
+msgid ""
+"You have chosen to backup your settings. Please press OK to start the backup "
+"now."
+msgstr ""
+"لقد إخترت النسخ الاحتياطي للإعدادات. يرجى الضغط على موافق لبدء النسخ "
+"الاحتياطي الآن."
+
+msgid ""
+"You have chosen to create a new .NFI flasher bootable USB stick. This will "
+"repartition the USB stick and therefore all data on it will be erased."
+msgstr ""
+"لقد إخترت إنشاء ملف .NFI يو اس بي فلاشر جديد قابل للاقلاع . ولهذا ستتم إعادة "
+"تقسيم وحدة ية اس بي ولذا فإن جميع البيانات سوف تمحى."
+
+msgid ""
+"You have chosen to restore your settings. Enigma2 will restart after "
+"restore. Please press OK to start the restore now."
+msgstr ""
+"لقد إخترت استعادة الإعدادات. سوف تتم إعادة تشغيل إنيقما2 بعد الاستعادة. يرجى "
+"الضغط على موافق لبدء الاستعادة الآن."
+
+#, python-format
+msgid "You have to wait %s!"
+msgstr "عليك أن تنتظر %s!"
+
+msgid ""
+"You need a PC connected to your QBoxHD. If you need further instructions, "
+"please visit the website http://www.duolabs.com.\n"
+"Your QBoxHD will now be halted. After you have performed the update "
+"instructions from the website, your new firmware will ask you to restore "
+"your settings."
+msgstr ""
+"أنت في حاجة الى جهاز كمبيوتر متصل بـجهاز QBoxHD. اذا كنت بحاجة الى مزيد من "
+"التعليمات ، يرجى زيارة الموقع http://www.duolabs.com.\n"
+"سوف يتم إيقاف جهاز QBoxHD. وبعد القيام بتنفيذ تعليمات التحديث من الموقع ، "
+"سوف يطلب منك البرنامج التشغيلي الجديد استعادة الإعدادات"
+
+msgid ""
+"You need a PC connected to your QBoxHD. If you need further instructions, "
+"please visit the website http://www.q-box.tv.\n"
+"Your QBoxHD will now be halted. After you have performed the update "
+"instructions from the website, your new firmware will ask you to restore "
+"your settings."
+msgstr ""
+"أنت في حاجة الى جهاز كمبيوتر متصل بـ QBoxHD. اذا كنت بحاجة الى مزيد من "
+"التعليمات ، يرجى زيارة الموقع http://www.q-box.tv.\n"
+"سوف يتم إيقاف جهاز QBoxHD. وبعد القيام بتنفيذ تعليمات التحديث من الموقع ، "
+"سوف يطلب منك البرنامج التشغيلي الجديد استعادة الإعدادات"
+
+msgid ""
+"You need an USB pen drive connected to your QBoxHD with the update/recovery "
+"package. If you need further instructions, please visit the website http://"
+"www.qboxhd.com.\n"
+"Your QBoxHD will now be halted."
+msgstr ""
+"أنت بحاجة إلى وحدة يو اس بي متصلة بـ  QBoxHD مع حزمة التحديث/الاستعادة. اذا "
+"كنت بحاجة الى مزيد من التعليمات، يرجى زيارة الموقع http://www.qboxhd.com.\n"
+"سيتم إيقاف QBoxHD الآن."
+
+msgid ""
+"You need to set a pin code and hide it from your children.\n"
+"\n"
+"Do you want to set the pin now?"
+msgstr ""
+"تحتاج إلى تعيين على الرقم السري وإخفائه من أطفالك.\n"
+"\n"
+"هل تريد تعيين الرقم السري الآن؟"
+
+msgid "Your QBoxHD is shutting down. Please stand by..."
+msgstr "جاري إيقاف تشغيل QBoxHD . الرجاء الانتظار..."
+
+msgid ""
+"Your QBoxHD isn't connected to the internet properly. Please check it and "
+"try again."
+msgstr ""
+"QBoxHD غير متصل بالإنترنت بشكل صحيح. يرجى التحقق من ذلك والمحاولة مرة أخرى."
+
+msgid "Your QBoxHD will restart after pressing OK on your remote control."
+msgstr ""
+"سوف تتم إعادة تشغيل  QBoxHD بعد الضغط على موافق على جهاز التحكم عن بعد."
+
+msgid "Your TV works with 50 Hz. Good!"
+msgstr "التلفزيون يعمل مع 50 هرتز. جيد!"
+
+msgid ""
+"Your backup succeeded. We will now continue to explain the further upgrade "
+"process."
+msgstr "نجحت عملية النسخ الاحتياطي. وسوف نواصل الآن شرح عملية ترقية أخرى."
+
+msgid ""
+"Your collection exceeds the size of a single layer medium, you will need a "
+"blank dual layer DVD!"
+msgstr ""
+"مجموعتك تتجاوز حجم وسيطة ذات طبقة واحدة ، سوف تحتاج لوسيطة دي في دي فارغة "
+"مزدوجة الطبقة!"
+
+msgid "Your email address:"
+msgstr "عنوان بريدك الإلكتروني :"
+
+msgid ""
+"Your frontprocessor firmware must be upgraded.\n"
+"Press OK to start upgrade."
+msgstr ""
+"يجب ترقية البرنامج التشغيلي لمعالج البيانات.\n"
+"اضغط موافق لبدء الترقية."
+
+msgid ""
+"Your installer is Expired.\n"
+"Please download new AddOn installer."
+msgstr ""
+"برنامج التثبيت منتهي الصلاحية.\n"
+"يرجى تنزيل ملحق تثبيت جديد."
+
+msgid "Your name (optional):"
+msgstr "اسمك (اختياري) :"
+
+msgid "Your network configuration has been activated."
+msgstr "لقد تم تنشيط تكوين الشبكة."
+
+msgid ""
+"Your network configuration has been activated.\n"
+"A second configured interface has been found.\n"
+"\n"
+"Do you want to disable the second network interface?"
+msgstr ""
+"لقد تم تنشيط تكوين الشبكة.\n"
+"تم العثور على واجهة ثانية مكتملة التكوين.\n"
+"\n"
+"هل تريد تعطيل واجهة الشبكة الثانية؟"
+
+msgid "Your network mount has been activated."
+msgstr "تم تفعيل تركيب شبكة الاتصال."
+
+msgid "Your network mount has been removed."
+msgstr "تم إزالة تركيب شبكة الاتصال."
+
+msgid "Your network mount has been updated."
+msgstr "تم تحديث تركيب شبكة الاتصال."
+
+#, python-format
+msgid "Your new Custom Buttom is %s."
+msgstr "الزر المخصص الجديد هو %s"
+
+msgid "Your new configuration have been saved successfully."
+msgstr "تم حفظ التكوين الجديد بنجاح."
+
+msgid "Zap back to service before positioner setup?"
+msgstr "العودة إلى القناة العاملة قبل إعداد المحرك؟"
+
+msgid "Zap back to service before satfinder?"
+msgstr "العودة إلى القناة العاملة قبل  مكتشف القمر الصناعي؟"
+
+msgid "Zhuang"
+msgstr "تشوانغ"
+
+msgid "Zulu"
+msgstr "زولو"
+
+msgid "[alternative edit]"
+msgstr "[تحرير بديل]"
+
+msgid "[bouquet edit]"
+msgstr "[تحرير باقة]"
+
+msgid "[favourite edit]"
+msgstr "[تحرير المفضلة]"
+
+msgid "[move mode]"
+msgstr "[وضع النقل]"
+
+msgid "a gui to assign services/providers to common interface modules"
+msgstr "واجهة رسومية لتعيين قنوات/مزودو خدمة لوحدات الواجهة المشتركة"
+
+msgid "a gui to assign services/providers/caids to common interface modules"
+msgstr ""
+"واجهة رسومية لتعيين قنوات/ مزودو خدمة/معرفات الدخول المشروط (caids) لوحدات "
+"الواجهة المشتركة"
+
+msgid "abort alternatives edit"
+msgstr "إلغاء تحرير البدائل"
+
+msgid "abort bouquet edit"
+msgstr "إلغاء تحرير الباقة"
+
+msgid "abort favourites edit"
+msgstr "إلغاء تحرير المفضلة"
+
+msgid "about to start"
+msgstr "على وشك البدء"
+
+msgid "activate current configuration"
+msgstr "تنشيط التكوين الحالي"
+
+msgid "add Provider"
+msgstr "إضافة مزود خدمة"
+
+msgid "add Service"
+msgstr "إضافة قناة"
+
+msgid "add a nameserver entry"
+msgstr "إضافة قيد اسم الخادم"
+
+msgid "add alternatives"
+msgstr "إضافة بدائل"
+
+msgid "add bookmark"
+msgstr "إضافة علامة مرجعية"
+
+msgid "add bouquet"
+msgstr "إضافة باقة"
+
+msgid "add directory to playlist"
+msgstr "إضافة دليل الى قائمة التشغيل"
+
+msgid "add file to playlist"
+msgstr "أضف ملف الى قائمة التشغيل"
+
+msgid "add files to playlist"
+msgstr "إضافة ملفات الى قائمة التشغيل"
+
+msgid "add marker"
+msgstr "إضافة علامة"
+
+msgid "add recording (enter recording duration)"
+msgstr "إضافة تسجيل (إدخال مدة التسجيل)"
+
+msgid "add recording (enter recording endtime)"
+msgstr "إضافة تسجيل (إدخال وقت إنتهاء التسجيل)"
+
+msgid "add recording (indefinitely)"
+msgstr "إضافة تسجيل (غير محدد المدة)"
+
+msgid "add recording (stop after current event)"
+msgstr "إضافة تسجيل (توقف بعد الحدث الحالي)"
+
+msgid "add server"
+msgstr "إضافة خادم"
+
+msgid "add service to bouquet"
+msgstr "إضافة القناة إلى باقة"
+
+msgid "add service to favourites"
+msgstr "إضافة قناة إلى المفضلة"
+
+msgid "add to parental protection"
+msgstr "إضافة الى الحماية الأبوية"
+
+msgid "add user"
+msgstr "إضافة مستخدم"
+
+msgid "additional videos"
+msgstr "أشرطة فيديو إضافية"
+
+msgid "advanced"
+msgstr "متقدم"
+
+msgid "alphabetic sort"
+msgstr "ترتيب أبجدي"
+
+msgid ""
+"are you sure you want to restore\n"
+"following backup:\n"
+msgstr ""
+"هل أنت متأكد أنك تريد استعادة\n"
+"النسخ الاحتياطي التالي :\n"
+
+msgid "assigned CAIds"
+msgstr "تعيين معرفات الدخول المشروط (CAIds)"
+
+msgid "assigned Services/Provider"
+msgstr "تعيين قنوات/مزود خدمة"
+
+#, python-format
+msgid "audio track (%s) format"
+msgstr "تنسيق (%s) للمسار الصوتي"
+
+#, python-format
+msgid "audio track (%s) language"
+msgstr "لغة (%s) للمسار الصوتي"
+
+msgid "audio tracks"
+msgstr "مسارات صوتية"
+
+msgid "auto"
+msgstr "تلقائي"
+
+msgid "available"
+msgstr "متاح"
+
+msgid "back"
+msgstr "رجوع"
+
+msgid "back in history"
+msgstr "العودة في التاريخ"
+
+msgid "background image"
+msgstr "صورة الخلفية"
+
+msgid "backgroundcolor"
+msgstr "لون الخلفية"
+
+msgid "backward entry"
+msgstr "قيد للخلف"
+
+msgid "better"
+msgstr "أفضل"
+
+msgid "black"
+msgstr "أسود"
+
+msgid "blacklist"
+msgstr "القائمة السوداء"
+
+msgid "blue"
+msgstr "أزرق"
+
+#, python-format
+msgid "burn audio track (%s)"
+msgstr "حرق المسار الصوتي (%s)"
+
+msgid "by Exif"
+msgstr "حسب Exif"
+
+msgid "change recording (duration)"
+msgstr "تغيير التسجيل (المدة)"
+
+msgid "change recording (endtime)"
+msgstr "تغيير التسجيل (وقت الإنتهاء)"
+
+msgid "chapters"
+msgstr "فصول"
+
+msgid "check game"
+msgstr "التحقق من اللعبة"
+
+msgid "choose destination directory"
+msgstr "اختر الدليل الوجهة"
+
+msgid "circular left"
+msgstr "دائري أيسر"
+
+msgid "circular right"
+msgstr "دائري أيمن"
+
+msgid "clear playlist"
+msgstr "مسح قائمة التشغيل"
+
+msgid "complex"
+msgstr "معقد"
+
+msgid "config menu"
+msgstr "قائمة التكوين"
+
+msgid "confirmed"
+msgstr "مؤكد"
+
+msgid "connected"
+msgstr "متصل"
+
+msgid "continue"
+msgstr "واصل"
+
+msgid "copy to bouquets"
+msgstr "نسخ إلى باقة"
+
+msgid "could not be removed"
+msgstr "لا يمكن ازالته"
+
+msgid "create directory"
+msgstr "إنشاء دليل"
+
+msgid "daily"
+msgstr "يوميا"
+
+msgid "day"
+msgstr "يوم"
+
+msgid "deep standby"
+msgstr "الاستعداد العميق"
+
+msgid "delete"
+msgstr "حذف"
+
+msgid "delete cut"
+msgstr "حذف الاقتصاص"
+
+msgid "delete file"
+msgstr "حذف ملف"
+
+msgid "delete playlist entry"
+msgstr "حذف قيد قائمة التشغيل"
+
+msgid "delete saved playlist"
+msgstr "حذف قائمة التشغيل المحفوظة"
+
+msgid "delete server"
+msgstr "حذف الخادم"
+
+msgid "delete user"
+msgstr "حذف المستخدم"
+
+msgid "delete..."
+msgstr "حذف..."
+
+msgid "disable"
+msgstr "تعطيل"
+
+msgid "disable move mode"
+msgstr "تعطيل وضع النقل"
+
+msgid "disabled"
+msgstr "معطل"
+
+msgid "disconnected"
+msgstr "غير متصل"
+
+msgid "do not change"
+msgstr "بدون تغيير"
+
+msgid "do nothing"
+msgstr "لا تفعل شيئا"
+
+msgid "don't record"
+msgstr "لا تقم بالتسجيل"
+
+msgid "done!"
+msgstr "تم!"
+
+msgid "edit alternatives"
+msgstr "تحرير البدائل"
+
+msgid "edit server"
+msgstr "تحرير الخادم"
+
+msgid "edit user"
+msgstr "تحرير المستخدم"
+
+msgid "empty"
+msgstr "فارغ"
+
+msgid "enable"
+msgstr "تفعيل"
+
+msgid "enable bouquet edit"
+msgstr "تفعيل تحرير الباقة"
+
+msgid "enable favourite edit"
+msgstr "تفعيل تحرير المفضلة"
+
+msgid "enable move mode"
+msgstr "تفعيل وضع النقل"
+
+msgid "enabled"
+msgstr "ممكن"
+
+msgid "end alternatives edit"
+msgstr "تعطيل تحرير البدائل"
+
+msgid "end bouquet edit"
+msgstr "إنهاء تحرير القائمة"
+
+msgid "end cut here"
+msgstr "إنهاء القص هنا"
+
+msgid "end favourites edit"
+msgstr "إنهاء تحرير المفضلات"
+
+msgid "enigma2 and network"
+msgstr "إنيقما2 والشبكة"
+
+msgid "equal to"
+msgstr "يساوي"
+
+msgid "exceeds dual layer medium!"
+msgstr "يتجاوز الوسيطة ثنائية الطبقة"
+
+msgid "exit DVD player or return to file browser"
+msgstr "الخروج من مشغل دي في دي أو العودة إلى ملف المتصفح"
+
+msgid "exit divxplayer"
+msgstr "الخروج من مشغل ديف اكس"
+
+msgid "exit mediaplayer"
+msgstr "الخروج من مشغل الوسائط"
+
+msgid "exit movielist"
+msgstr "الخروج من لائحة الأفلام"
+
+msgid "exit nameserver configuration"
+msgstr "الخروج من تكوين اسم الخادم"
+
+msgid "exit network adapter configuration"
+msgstr "الخروج من تكوين محول الشبكة"
+
+msgid "exit network adapter setup menu"
+msgstr "الخروج من قائمة ضبط محول الشبكة"
+
+msgid "exit network interface list"
+msgstr "الخروج من لائحة واجهة الشبكة"
+
+msgid "exit networkadapter setup menu"
+msgstr "الخروج من قائمة ضبط محول الشبكة"
+
+msgid "failed"
+msgstr "فشل"
+
+msgid "fileformats (BMP, PNG, JPG, GIF)"
+msgstr "أنواع الملفات (BMP, PNG, JPG, GIF)"
+
+msgid "filename"
+msgstr "اسم الملف"
+
+msgid "filter off"
+msgstr "تعطيل التصفية"
+
+msgid "filter on"
+msgstr "تمكين التصفية"
+
+msgid "fine-tune your display"
+msgstr "ضبط دقيق للعرض"
+
+msgid "forward entry"
+msgstr "تقدم مدخل"
+
+msgid "forward in history"
+msgstr "تقدم في التاريخ"
+
+msgid "forward to the next chapter"
+msgstr "تقدم إلى الفصل التالي"
+
+msgid "free"
+msgstr "حر"
+
+msgid "free diskspace"
+msgstr "المساحة الفارغة"
+
+msgid "go to deep standby"
+msgstr "الدخول في وضع الاستعداد العميق"
+
+msgid "go to standby"
+msgstr "الذهاب إلى وضع الاستعداد"
+
+msgid "grab this frame as bitmap"
+msgstr "التقاط هذا الإطار كصورة نقطية (bitmap)"
+
+msgid "green"
+msgstr "أخضر"
+
+msgid "hear radio..."
+msgstr "سماع الراديو..."
+
+msgid "help..."
+msgstr "مساعدة..."
+
+msgid "hidden network"
+msgstr "شبكة مخفية"
+
+msgid "hide extended description"
+msgstr "إخفاء الوصف الموسع"
+
+msgid "hide player"
+msgstr "إخفاء المشغل"
+
+msgid "horizontal"
+msgstr "أفقي"
+
+msgid "hour"
+msgstr "ساعة"
+
+msgid "hours"
+msgstr "ساعات"
+
+msgid "immediate shutdown"
+msgstr "إيقاف تشغيل فوري"
+
+#, python-format
+msgid ""
+"incoming call!\n"
+"%s calls on %s!"
+msgstr ""
+"مكالمة واردة!\n"
+"%s يدعو %s!"
+
+msgid "init module"
+msgstr "تهيئة الوحدة"
+
+msgid "init modules"
+msgstr "تهيئة الوحدات"
+
+msgid "insert mark here"
+msgstr "إدراج علامة هنا"
+
+msgid "jump back to the previous title"
+msgstr "العودة مرة أخرى إلى العنوان السابق"
+
+msgid "jump forward to the next title"
+msgstr "الذهاب  إلى العنوان التالي"
+
+msgid "jump to listbegin"
+msgstr "الانتقال إلى بداية اللائحة"
+
+msgid "jump to listend"
+msgstr "الانتقال إلى المسموع"
+
+msgid "jump to next marked position"
+msgstr "الانتقال إلى الموقع المعلم النالي"
+
+msgid "jump to previous marked position"
+msgstr "الانتقال إلى الموقع المعلم السابق"
+
+msgid "leave movie player..."
+msgstr "غادر مشغل الأفلام..."
+
+msgid "left"
+msgstr "يسار"
+
+msgid "length"
+msgstr "الطول"
+
+#, python-format
+msgid "libeplayer2 Error: missing %s"
+msgstr "خطأ libeplayer2 : %s مفقود"
+
+msgid "list style compact"
+msgstr "نمط لائحة مضغوط"
+
+msgid "list style compact with description"
+msgstr "نمط لائحة مضغوط مع وصف"
+
+msgid "list style default"
+msgstr "نمط لائحة افتراضي"
+
+msgid "list style single line"
+msgstr "نمط لائحة سطر واحد"
+
+msgid "load playlist"
+msgstr "تحميل قائمة التشغيل"
+
+msgid "locked"
+msgstr "مقفل"
+
+msgid "loopthrough to"
+msgstr "حلقة حتى"
+
+msgid "manual"
+msgstr "يدوي"
+
+msgid "menu"
+msgstr "قائمة"
+
+msgid "menulist"
+msgstr "لائحة القائمة"
+
+msgid "mins"
+msgstr "دقائق"
+
+msgid "minute"
+msgstr "دقيقة"
+
+msgid "minutes"
+msgstr "دقيقة"
+
+msgid "month"
+msgstr "الشهر"
+
+msgid "move PiP to main picture"
+msgstr "نقل صورة داخل الصورة إلى الصورة الرئيسية"
+
+msgid "move down to last entry"
+msgstr "الانتقال إلى آخر قيد"
+
+msgid "move down to next entry"
+msgstr "الانتقال إلى القيد التالي"
+
+msgid "move up to first entry"
+msgstr "الانتقال إلى أول قيد"
+
+msgid "move up to previous entry"
+msgstr "الانتقال إلى القيد السابق"
+
+msgid "movie list"
+msgstr "لائحة الأفلام"
+
+msgid "multinorm"
+msgstr "متعدد المعايير"
+
+msgid "never"
+msgstr "أبدا"
+
+msgid "new game"
+msgstr "لعبة جديدة"
+
+msgid "next channel"
+msgstr "القناة التالية"
+
+msgid "next channel in history"
+msgstr "القناة التالية في السجل التاريخي"
+
+msgid "no"
+msgstr "لا"
+
+msgid "no CAId selected"
+msgstr "لم يتم اختيار معرف الدخول المشروط (CAId)"
+
+msgid "no CI slots found"
+msgstr "لم يتم العثور على فتحات  واجهة مشتركة"
+
+msgid "no HDD found"
+msgstr "لم يتم العثور على قرص صلب"
+
+msgid "no module found"
+msgstr "لم يتم العثور على أية وحدة"
+
+msgid "no standby"
+msgstr "بدون استعداد"
+
+msgid "no timeout"
+msgstr "بدون نهاية مهلة"
+
+msgid "none"
+msgstr "لا شيء"
+
+msgid "not locked"
+msgstr "غير مقفل"
+
+msgid "not used"
+msgstr "غير مستعمل"
+
+msgid "nothing connected"
+msgstr "لا شيء متصل"
+
+msgid "of a DUAL layer medium used."
+msgstr "من وسيطة ثنائية الطبقة مستخدمة."
+
+msgid "of a SINGLE layer medium used."
+msgstr "من وسيطة أحادية الطبقة مستخدمة."
+
+msgid "off"
+msgstr "تعطيل"
+
+msgid "on"
+msgstr "تمكين"
+
+msgid "on READ ONLY medium."
+msgstr "من وسيطة للقراءة فقط."
+
+msgid "once"
+msgstr "مرة واحدة"
+
+msgid "open nameserver configuration"
+msgstr "فتح تكوين أسماء الخوادم"
+
+msgid "open servicelist"
+msgstr "فتح لائحة القنوات"
+
+msgid "open servicelist(down)"
+msgstr "فتح لائحة القنوات (أسفل)"
+
+msgid "open servicelist(up)"
+msgstr "فتح لائحة القنوات (أعلى)"
+
+msgid "open virtual keyboard input help"
+msgstr "فتح مساعدة الإدخال للوحة المفاتيح الافتراضية"
+
+msgid "pass"
+msgstr "نجح"
+
+msgid "pause"
+msgstr "توقف مؤقت"
+
+msgid "play DVD"
+msgstr "تشغيل دي في دي"
+
+msgid "play divx file"
+msgstr "تشغيل ملف ديف اكس"
+
+msgid "play entry"
+msgstr "تشغيل المدخل"
+
+msgid "play from next mark or playlist entry"
+msgstr "التشغيل من العلامة التالية أو مدخل قائمة التشغيل"
+
+msgid "play from previous mark or playlist entry"
+msgstr "التشغيل من العلامة السابقة أو مدخل قائمة التشغيل"
+
+msgid "please press OK when ready"
+msgstr "الرجاء الضغط على موافق عندما تصبح جاهزا"
+
+msgid "please wait, loading picture..."
+msgstr "الرجاء الانتظار ، تحميل الصورة..."
+
+msgid "previous channel"
+msgstr "القناة السابقة"
+
+msgid "previous channel in history"
+msgstr "القناة السابقة في السجل التاريخي"
+
+msgid "private"
+msgstr "خاص"
+
+msgid "record"
+msgstr "سجل"
+
+msgid "recording..."
+msgstr "تسجيل..."
+
+msgid "red"
+msgstr "أحمر"
+
+msgid "refresh"
+msgstr "انعاش"
+
+msgid "related videos"
+msgstr "أشرطة الفيديو ذات الصلة"
+
+msgid "remove a nameserver entry"
+msgstr "إزالة مدخل اسم خادمء"
+
+msgid "remove after this position"
+msgstr " إزالة بعد هذا الموضع"
+
+msgid "remove all alternatives"
+msgstr "إزالة جميع البدائل"
+
+msgid "remove all new found flags"
+msgstr "إزالة كل الإشارات الجديدة التي عثر عليها"
+
+msgid "remove before this position"
+msgstr "إزالة قبل هذا الموضع"
+
+msgid "remove bookmark"
+msgstr "إزالة العلامة المرجعية"
+
+msgid "remove directory"
+msgstr "إزالة الدليل"
+
+msgid "remove entry"
+msgstr "حذف القيد"
+
+msgid "remove from parental protection"
+msgstr "إزالة من الحماية الأبوية"
+
+msgid "remove new found flag"
+msgstr "إزالت الإشارة الجديدة الموجودة"
+
+msgid "remove selected satellite"
+msgstr "إزالة القمر الصناعي المحدد"
+
+msgid "remove this mark"
+msgstr "إزالة هذه العلامة"
+
+msgid "repeat playlist"
+msgstr "إعادة قائمة التشغيل"
+
+msgid "repeated"
+msgstr "معاد"
+
+msgid "response videos"
+msgstr "استجابة أشرطة الفيديو"
+
+msgid "restart game"
+msgstr "إعادة تشغيل اللعبة"
+
+msgid "rewind to the previous chapter"
+msgstr "لف إلى الفصل السابق"
+
+msgid "right"
+msgstr "يمين"
+
+msgid "save last directory on exit"
+msgstr "حفظ آخر دليل عند الخروج"
+
+msgid "save playlist"
+msgstr "حفظ قائمة التشغيل"
+
+msgid "save playlist on exit"
+msgstr "حفظ قائمة التشغيل عند  الخروج"
+
+msgid "scan done!"
+msgstr "تمت عملية البحث!"
+
+#, python-format
+msgid "scan in progress - %d%% done!"
+msgstr "عملية البحث في تقدم - %d%% تم!"
+
+msgid "scan state"
+msgstr "حالة البحث"
+
+msgid "second"
+msgstr "ثان"
+
+msgid "second cable of motorized LNB"
+msgstr "الكابل الثاني لـ LNB المتحرك"
+
+msgid "seconds"
+msgstr "ثانية"
+
+msgid "select"
+msgstr "اختر"
+
+msgid "select .NFI flash file"
+msgstr "اختر ملف فلاش NFI"
+
+msgid "select CAId"
+msgstr "اختر معرف الدخول المشروط (CAId)"
+
+msgid "select CAId's"
+msgstr "اختر معرفات الدخول المشروط (CAIds)"
+
+msgid "select image from server"
+msgstr "اختر صورة من الخادم"
+
+msgid "select interface"
+msgstr "اختر الواجهة"
+
+msgid "select menu entry"
+msgstr "احتر مدخل القائمة"
+
+msgid "select movie"
+msgstr "اختر الفيلم"
+
+msgid "select the movie path"
+msgstr "اختر مسار الفيلم"
+
+msgid "service pin"
+msgstr "الرقم السري للقناة"
+
+msgid "set default"
+msgstr "عين الافتراضي"
+
+msgid "setup pin"
+msgstr "ضبط الرقم السري"
+
+msgid "show DVD main menu"
+msgstr "عرض قائمة دي في دي الرئيسية"
+
+msgid "show EPG..."
+msgstr "عرض دليل البرامج..."
+
+msgid "show Infoline"
+msgstr "عرض سطر المعلومات"
+
+msgid "show Record Menu..."
+msgstr "عرض قائمة التسجيل..."
+
+msgid "show all"
+msgstr "عرض الكل"
+
+msgid "show alternatives"
+msgstr "عرض البدائل"
+
+msgid "show event details"
+msgstr "عرض تفاصيل الحدث"
+
+msgid "show extended description"
+msgstr "عرض التفاصيل الموسعة"
+
+msgid "show first selected tag"
+msgstr "عرض البطاقة المختارة الأولى"
+
+msgid "show second selected tag"
+msgstr "عرض البطاقة المختارة الثانية"
+
+msgid "show shutdown menu"
+msgstr "عرض قائمة إيقاف التشغيل"
+
+msgid "show single service EPG..."
+msgstr "عرض دليل برامج القناة المفرد"
+
+msgid "show tag menu"
+msgstr "عرض قائمة البطاقات"
+
+msgid "show transponder info"
+msgstr "عرض معلومات المرسل"
+
+msgid "shuffle playlist"
+msgstr "قائمة تشغيل عشوائية"
+
+msgid "shutdown"
+msgstr "إيقاف التشغيل"
+
+msgid "simple"
+msgstr "بسيط"
+
+msgid "skip backward"
+msgstr "الرجوع للوراء"
+
+msgid "skip backward (enter time)"
+msgstr "الرجوع للوراء (أدخل الوقت)"
+
+msgid "skip forward"
+msgstr "الذهاب للأمام"
+
+msgid "skip forward (enter time)"
+msgstr "الذهاب للأمام (أدخل الوقت)"
+
+msgid "slide picture in loop"
+msgstr "عرض الشرائح في حلقة"
+
+msgid "solve game"
+msgstr "حل اللعبة"
+
+msgid "sort by date"
+msgstr "الفرز حسب التاريخ"
+
+msgid "special characters"
+msgstr "حروف خاصة"
+
+msgid "standard"
+msgstr "قياسي"
+
+msgid "standby"
+msgstr "الاستعداد"
+
+msgid "start cut here"
+msgstr "بدء القص من هنا"
+
+msgid "start directory"
+msgstr "دليل البدء"
+
+msgid "start timeshift"
+msgstr "بدء تحويل الوقت"
+
+msgid "stereo"
+msgstr "ستيريو"
+
+msgid "stop PiP"
+msgstr "إيقاف صورة داخل الصورة"
+
+msgid "stop entry"
+msgstr "إيقاف المدخل"
+
+msgid "stop recording"
+msgstr "لإيقاف التسجيل"
+
+msgid "stop timeshift"
+msgstr "إيقاف تحويل الوقت"
+
+msgid "swap PiP and main picture"
+msgstr "مبادلة صورة داخل الصورة والصورة الرئيسية"
+
+msgid "switch to bookmarks"
+msgstr "التبديل إلى العلامات المرجعية"
+
+msgid "switch to filelist"
+msgstr "التبديل الى لائحة الملفات"
+
+msgid "switch to playlist"
+msgstr "التبديل الى قائمة التشغيل"
+
+msgid "switch to the next angle"
+msgstr "التبديل إلى الزاوية التالية"
+
+msgid "switch to the next audio track"
+msgstr "التبديل إلى المسار الصوتي التالي"
+
+msgid "switch to the next subtitle language"
+msgstr "التبديل إلى لغة الترجمة التالية"
+
+msgid "template file"
+msgstr "ملف القالب"
+
+msgid "textcolor"
+msgstr "لون النص"
+
+msgid "this recording"
+msgstr "هذا التسجيل"
+
+msgid "this service is protected by a parental control pin"
+msgstr "هذه القناة محمية برقم سري أبوي"
+
+msgid "toggle a cut mark at the current position"
+msgstr "تثبيت علامة قص في الموضع الحالي"
+
+msgid "toggle time, chapter, audio, subtitle info"
+msgstr "تثبيت الوقت، والفصل، والصوت، ومعلومات الترجمة"
+
+msgid "unconfirmed"
+msgstr "غير مؤكدة"
+
+msgid "unknown"
+msgstr "غير معروف"
+
+msgid "unknown service"
+msgstr "قناة مجهولة"
+
+msgid "until restart"
+msgstr "حتى إعادة التشغيل"
+
+msgid "until standby/restart"
+msgstr "حتى الاستعداد/إعادة التشغيل"
+
+msgid "use as HDD replacement"
+msgstr "استعمال كقرص صلب بديل"
+
+msgid "user defined"
+msgstr "محددة من قبل المستخدم"
+
+msgid "vertical"
+msgstr "عمودي"
+
+msgid "view extensions..."
+msgstr "عرض الملحقات..."
+
+msgid "view recordings..."
+msgstr "عرض التسجيلات..."
+
+msgid "volume down"
+msgstr "خفض مستوى الصوت"
+
+msgid "volume up"
+msgstr "رفع مستوى الصوت"
+
+msgid "wait for ci..."
+msgstr "في انتظار الواجهة المشتركة..."
+
+msgid "wait for mmi..."
+msgstr "انتظر mmi..."
+
+msgid "waiting"
+msgstr "في الانتظار"
+
+msgid "was removed successfully"
+msgstr "تمت الإزالة بنجاح"
+
+msgid "weekly"
+msgstr "أسبوعيا"
+
+msgid "whitelist"
+msgstr "القائمة البيضاء"
+
+msgid "working"
+msgstr "جاري العمل"
+
+msgid "yellow"
+msgstr "أصفر"
+
+msgid "yes"
+msgstr "نعم"
+
+msgid "yes (keep feeds)"
+msgstr "نعم (إبقاء التغذية)"
+
+msgid ""
+"your QBoxHD might be unusable now. Please consult the manual for further "
+"assistance before rebooting your QBoxHD."
+msgstr ""
+"جهاز QBoxHD قد يكون غير صالحا للاستخدام الآن. يرجى الرجوع إلى دليل المستخدم "
+"لمزيد من المساعدة قبل إعادة تشغيل QBoxHD."
+
+msgid "zap"
+msgstr "انتقل"
+
+msgid "zapped"
+msgstr "تم الانتقال"
+
+#~ msgid "Allow zapping via Webinterface"
+#~ msgstr "السماح بالانتقال بين القنوات عبر واجهة الويب"
+
+#~ msgid "Autowrite timer"
+#~ msgstr "كتابة تلقائية للمؤقت"
+
+#~ msgid "Current Channel"
+#~ msgstr "القناة الحالية"
+
+#~ msgid "DOLBY"
+#~ msgstr "دولبي"
+
+#~ msgid "Enable /media"
+#~ msgstr "تفعيل /media"
+
+#~ msgid "Enable HTTP Access"
+#~ msgstr "تفعيل دخول HTTP"
+
+#~ msgid "Enable HTTP Authentication"
+#~ msgstr "تفعيل المصادقة لـ HTTP"
+
+#~ msgid "Enable HTTPS Access"
+#~ msgstr "تفعيل دخول HTTPS"
+
+#~ msgid "Enable HTTPS Authentication"
+#~ msgstr "تفعيل المصادقة لـ HTTPS"
+
+#~ msgid "Enable Streaming Authentication"
+#~ msgstr "تفعيل المصادقة للتدفق"
+
+#~ msgid "Enter new hostname for your Dreambox"
+#~ msgstr "أدخل اسم المضيف الجديد لـ QBoxHD"
+
+#~ msgid "HDMI audio"
+#~ msgstr "صوت HDMI"
+
+#~ msgid "HTTPS Port"
+#~ msgstr "منفذ HTTPS"
+
+#~ msgid "Load movie-length"
+#~ msgstr "تحميل طول الفيلم"
+
+#~ msgid "Main Setup"
+#~ msgstr "الضبط الرئيسي"
+
+#~ msgid "Network Neighbourhood"
+#~ msgstr "جوار الشبكة"
+
+#~ msgid "Peripherals:"
+#~ msgstr "الأجهزة الملحقة:"
+
+#~ msgid "Receiver Configuration"
+#~ msgstr "تكوين جهاز الاستقبال"
+
+#~ msgid "STEREO"
+#~ msgstr "ستيريو"
+
+#~ msgid "Select SmartCard Slot"
+#~ msgstr "حدد منفذ البطاقة الذكية"
+
+#~ msgid "Skin Selector"
+#~ msgstr "اختيار المظهر"
+
+#~ msgid "Start Webinterface"
+#~ msgstr "تشغيل واجهة الويب"
+
+#~ msgid "Technical Information about QBoxHD"
+#~ msgstr "المعلومات التقنية لجهاز QBoxHD"
+
+#~ msgid "WebInterface"
+#~ msgstr "واجهة الويب"
+
+#~ msgid "nothing"
+#~ msgstr "لا شيء"

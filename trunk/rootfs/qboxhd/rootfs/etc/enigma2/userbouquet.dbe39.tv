@@ -1,0 +1,24 @@
+#NAME Tv Vlaanderen
+#SERVICE 1:64:342:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Intrattenimento ----------
+#SERVICE 1:0:1:31f0:45f:35:c00000:0:0:0:
+#SERVICE 1:64:343:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Generalisti ----------
+#SERVICE 1:0:1:31e7:45f:35:c00000:0:0:0:
+#SERVICE 1:0:1:31e4:45f:35:c00000:0:0:0:
+#SERVICE 1:0:1:31e3:45f:35:c00000:0:0:0:
+#SERVICE 1:0:1:31e5:45f:35:c00000:0:0:0:
+#SERVICE 1:0:1:31e9:45f:35:c00000:0:0:0:
+#SERVICE 1:64:344:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Cultura ----------
+#SERVICE 1:0:1:31f1:45f:35:c00000:0:0:0:
+#SERVICE 1:64:345:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Musica ----------
+#SERVICE 1:0:1:31ef:45f:35:c00000:0:0:0:
+#SERVICE 1:64:346:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Ragazzi ----------
+#SERVICE 1:0:1:31e8:45f:35:c00000:0:0:0:
+#SERVICE 1:64:347:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Altri ----------
+#SERVICE 1:0:1:7fd:449:35:c00000:0:0:0:
+#SERVICE 1:0:1:31f4:45f:35:c00000:0:0:0:

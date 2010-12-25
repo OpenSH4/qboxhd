@@ -1,0 +1,1640 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>ST Multicom R3.2 Product (3.2.2) Bug List</title>
+  <style type="text/css">
+<!--
+BODY {font-family: sans-serif, Arial, Helvetica; color: #000000 }
+H1 {font-family: sans-serif, Arial, Helvetica; font-weight: bold; color: white; background: #330099;
+padding-top: 5pt; padding-right: 5pt; padding-bottom: 5pt; text-align: right ; }
+H2 {font-family: sans-serif, Arial, Helvetiva; font-weight: bold; color: #330099; margin-left: 30pt; }
+H3 {font-family: sans-serif, Arial, Helvetica; font-weight: bold; color: #330099; margin-left: 15pt; }
+H4 {font-family: sans-serif, Arial, Helvetica; font-weight: bold; color: #330099}
+TH {font-family: sans-serif, Arial, Helvetica; font-weight: bold; color: #330099; background-color: #EEEEEE; text-align: left; size: 2; }
+
+.indent { margin-left: 15pt; }
+.code {font-family: Monospace; color: black; background: #EEEEEE none; padding-left: 5pt; padding-right: 5pt; padding-top: 5pt; padding-bottom: 5pt; margin-left: 5%; margin-right: 5%}
+
+.bugOpen {color: #ff0000}
+.bugVer {color: #0000ff}
+.bugEnh {color: #000099}
+-->
+  </style>
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+<h1><a name="Go_Top"></a>ST Multicom R3.2 Product (3.2.2) Bug List</h1>
+<small>Copyright &copy; 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008&nbsp;
+STMicroelectronics. All Rights Reserved. This document is not to be
+copied in whole or in part.</small><br>
+<br>
+<hr size="2">The <a href="#TG">Components</a>
+section on this page lists the component parts
+represented in this bug list. The components names link to tables that
+give <a href="#HD">headline descriptions</a> of bugs, classified and
+illustrated by the colours shown below:
+<ul>
+  <li><span class="bugOpen">Known defects</span> </li>
+  <li><span class="bugVer">Fixed defects (in the release shown)</span> </li>
+  <li><span class="bugEnh">Enhancements (in the release shown)</span> </li>
+</ul>
+The <span class="bugVer">Fixed</span> column shows the release in
+which the bug was resolved. Each defect may
+also link to a <a href="#DD">detailed description</a>, which are
+listed numerically.
+<p>Links at
+strategic points allow easy browsing by skipping back to the contents.
+Throughout, <a title="Top of page" href="#Go_Top">[Page
+Top]</a>
+returns to the top of the page (here).</p>
+<p>The list
+was compiled on 08 May 2008.</p>
+<p>Further
+details of enhancements and fixed bugs can be found in the
+documentation accompanying the release.<br>
+</p>
+<h2><a name="TG"></a>Components</h2>
+<hr size="2">
+The components are catalogued separately as follows:<br>
+<br>
+<table class="indent" cellspacing="5" cellpadding="2" border="0">
+<tr><th colspan=2>EMBX</th></tr>
+<tr><td class=bug><a name="l_embxshell" href="#embxshell">embxshell</a>&nbsp;</td><td class=bug>EMBX API framework</td></tr>
+<tr><td class=bug><a name="l_embxshm" href="#embxshm">embxshm</a>&nbsp;</td><td class=bug>EMBX shared memory transport</td></tr>
+<tr><th colspan=2>RPC host tools</th></tr>
+<tr><td class=bug><a name="l_rpccc" href="#rpccc">rpccc</a>&nbsp;</td><td class=bug>ST RPC compiler driver</td></tr>
+<tr><td class=bug><a name="l_rpctools" href="#rpctools">rpctools</a>&nbsp;</td><td class=bug>Stripper and stubs generator</td></tr>
+<tr><th colspan=2>MME API</th></tr>
+<tr><td class=bug><a name="l_mme_host" href="#mme_host">mme_host</a>&nbsp;</td><td class=bug>MME host side framework</td></tr>
+<tr><td class=bug><a name="l_mme_companion" href="#mme_companion">mme_companion</a>&nbsp;</td><td class=bug>MME companion side framework</td></tr>
+<tr><th colspan=2>Other</th></tr>
+<tr><td class=bug><a name="l_examples" href="#examples">examples</a>&nbsp;</td><td class=bug>Multicom demonstration programs</td></tr>
+<tr><td class=bug><a name="l_test_suite" href="#test_suite">test_suite</a>&nbsp;</td><td class=bug>Multicom test suites</td></tr>
+<tr><td class=bug><a name="l_configs" href="#configs">configs</a>&nbsp;</td><td class=bug>Toolset configuration files</td></tr>
+<tr><td class=bug><a name="l_other" href="#other">other</a>&nbsp;</td><td class=bug>Miscellaneous</td></tr>
+</table>
+<br>
+<h2><font><font size="2" face="Arial, Helvetica, sans-serif"><a
+ name="HD"></a></font></font>Headline Descriptions</h2>
+<hr size=2>
+<h3><a name="embxshell">embxshell</a></h3>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+  <tr>
+    <th width=15%>Bug ID</th>
+    <th width=10%>Found</th>
+    <th width=10%>Fixed</th>
+    <th width=65%>Headline</th>
+  </tr>
+<tr><td class=bug><a name="l_INSbl25507" href="#INSbl25507">INSbl25507</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>Switch from using kernel_thread() to kthread_run()</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21776" href="#INSbl21776">INSbl21776</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>EMBX_OS_ContigMemFree broken on ST40</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21750" href="#INSbl21750">INSbl21750</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugVer>Out by one error in object registration</span></td></tr>
+<tr><td class=bug><a name="l_INSbl19560" href="#INSbl19560">INSbl19560</a>&nbsp;</td><td class=bug>2.0-Beta&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>EMBX header files are not directly compatible with C++</span></td></tr>
+<tr><td class=bug><a name="l_INSbl19143" href="#INSbl19143">INSbl19143</a>&nbsp;</td><td class=bug>2.0-Beta&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>Risk of cache incoherancy durining automatic shared heap allocation.</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20447" href="#INSbl20447">INSbl20447</a>&nbsp;</td><td class=bug>2.0&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>EMBX_Assert() is not wired up for Linux kernel mode.</span></td></tr>
+<tr><td class=bug><a name="l_INSbl18484" href="#INSbl18484">INSbl18484</a>&nbsp;</td><td class=bug>2.0&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>Incorrect return value from EMBX_RegisterTransport</span></td></tr>
+<tr><td class=bug><a name="l_INSbl19181" href="#INSbl19181">INSbl19181</a>&nbsp;</td><td class=bug>2.0-Beta&nbsp;</td><td class=bug>No&nbsp;</td><td class=bug><span class=bugOpen>A blocking transport closedown, initiated from EMBX_UnregisterTransport, can lead to unsafe behaviour</span></td></tr>
+</table>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_embxshell">Contents</a></font></p>
+<hr size=2>
+<h3><a name="embxshm">embxshm</a></h3>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+  <tr>
+    <th width=15%>Bug ID</th>
+    <th width=10%>Found</th>
+    <th width=10%>Fixed</th>
+    <th width=65%>Headline</th>
+  </tr>
+<tr><td class=bug><a name="l_INSbl28681" href="#INSbl28681">INSbl28681</a>&nbsp;</td><td class=bug>3.2.1&nbsp;</td><td class=bug>3.2.2&nbsp;</td><td class=bug><span class=bugVer>32-bit OS21 host support requires Multicom to be built with a V3.x OS21 based toolkit</span></td></tr>
+<tr><td class=bug><a name="l_INSbl28636" href="#INSbl28636">INSbl28636</a>&nbsp;</td><td class=bug>3.2.1&nbsp;</td><td class=bug>3.2.2&nbsp;</td><td class=bug><span class=bugVer>32-bit: Incorrect cache mode detected when a P3 segment address is passed in under Linux</span></td></tr>
+<tr><td class=bug><a name="l_INSbl28635" href="#INSbl28635">INSbl28635</a>&nbsp;</td><td class=bug>3.2.1&nbsp;</td><td class=bug>3.2.2&nbsp;</td><td class=bug><span class=bugVer>32-bit: Virtual to physical translation error under Linux when supplied with P3 segment address</span></td></tr>
+<tr><td class=bug><a name="l_INSbl26886" href="#INSbl26886">INSbl26886</a>&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug>3.2.1&nbsp;</td><td class=bug><span class=bugEnh>Include support for OS21/ST40 32-bit address spaces</span></td></tr>
+<tr><td class=bug><a name="l_INSbl26887" href="#INSbl26887">INSbl26887</a>&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug>3.1.2&nbsp;</td><td class=bug><span class=bugEnh>Add support for the STi7200's five communicating processors</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21425" href="#INSbl21425">INSbl21425</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>3.1.2&nbsp;</td><td class=bug><span class=bugVer>There is no check for allocation failure in EMBX_OS_ContigMemAlloc() when running ST40/OS21</span></td></tr>
+<tr><td class=bug><a name="l_INSbl24123" href="#INSbl24123">INSbl24123</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>warpRangeAddr is incorrectly communicated to ST231 companion processors</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21607" href="#INSbl21607">INSbl21607</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug><span class=bugVer>Very large allocations incorrectly succeed when the heap is held in memory with the top bit set</span></td></tr>
+<tr><td class=bug><a name="l_INSbl22104" href="#INSbl22104">INSbl22104</a>&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug><span class=bugVer>On Linux host, crash due to test missing for failure of memory allocate EMBX_OS_ContigMemAlloc.</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21951" href="#INSbl21951">INSbl21951</a>&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug><span class=bugEnh>Allow the EMBXSHM heap to be cached</span></td></tr>
+<tr><td class=bug><a name="l_INSbl23664" href="#INSbl23664">INSbl23664</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugVer>Interrupts can interfere with EMBXSHM_receiveNotification</span></td></tr>
+<tr><td class=bug><a name="l_INSbl18813" href="#INSbl18813">INSbl18813</a>&nbsp;</td><td class=bug>2.0-Beta&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>Spinlocks for communication pipes are not adequately protected</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20140" href="#INSbl20140">INSbl20140</a>&nbsp;</td><td class=bug>2.0&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugEnh>Simplification of EMPI buffer flushing</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20113" href="#INSbl20113">INSbl20113</a>&nbsp;</td><td class=bug>2.0&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>EMBXSHM must support dis-contiguous participant maps</span></td></tr>
+<tr><td class=bug><a name="l_INSbl19585" href="#INSbl19585">INSbl19585</a>&nbsp;</td><td class=bug>2.0&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>EMBXSHM leaks shared memory when deregistering objects held outside of the shared region</span></td></tr>
+<tr><td class=bug><a name="l_INSbl19526" href="#INSbl19526">INSbl19526</a>&nbsp;</td><td class=bug>2.0&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>EMBXSHM shutdown is not thread safe</span></td></tr>
+<tr><td class=bug><a name="l_INSbl19495" href="#INSbl19495">INSbl19495</a>&nbsp;</td><td class=bug>2.0&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugEnh>Distributed objects outside the shared heap are always copied</span></td></tr>
+<tr><td class=bug><a name="l_INSbl22905" href="#INSbl22905">INSbl22905</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>No&nbsp;</td><td class=bug><span class=bugOpen>EMBX transport/object test fails when using embxshmc library</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20676" href="#INSbl20676">INSbl20676</a>&nbsp;</td><td class=bug>2.0&nbsp;</td><td class=bug>No&nbsp;</td><td class=bug><span class=bugOpen>Messages can be sent to stale ports</span></td></tr>
+</table>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_embxshm">Contents</a></font></p>
+<hr size=2>
+<h3><a name="rpccc">rpccc</a></h3>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+  <tr>
+    <th width=15%>Bug ID</th>
+    <th width=10%>Found</th>
+    <th width=10%>Fixed</th>
+    <th width=65%>Headline</th>
+  </tr>
+<tr><td class=bug><a name="l_INSbl19361" href="#INSbl19361">INSbl19361</a>&nbsp;</td><td class=bug>1.6&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>rpccc generates illegal temporary file names for windows paths containing a driver letter</span></td></tr>
+<tr><td class=bug><a name="l_INSbl16565" href="#INSbl16565">INSbl16565</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug><span class=bugVer>rpccc uses hardcoded names for the C compiler</span></td></tr>
+<tr><td class=bug><a name="l_INSbl15150" href="#INSbl15150">INSbl15150</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.6&nbsp;</td><td class=bug><span class=bugVer>-L arguments are not presented to st20cc pre-processor mode</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14393" href="#INSbl14393">INSbl14393</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>rpccc ignores the -o option</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14248" href="#INSbl14248">INSbl14248</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>Poor temporary name handling</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14081" href="#INSbl14081">INSbl14081</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>rpccc does not understand st20cc -c2</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13903" href="#INSbl13903">INSbl13903</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.4&nbsp;</td><td class=bug><span class=bugVer>rpccc dumps core if the first argument is not --rpc</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13902" href="#INSbl13902">INSbl13902</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.4&nbsp;</td><td class=bug><span class=bugVer>rpccc does not handle process exit status correctly</span></td></tr>
+</table>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_rpccc">Contents</a></font></p>
+<hr size=2>
+<h3><a name="rpctools">rpctools</a></h3>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+  <tr>
+    <th width=15%>Bug ID</th>
+    <th width=10%>Found</th>
+    <th width=10%>Fixed</th>
+    <th width=65%>Headline</th>
+  </tr>
+<tr><td class=bug><a name="l_INSbl25346" href="#INSbl25346">INSbl25346</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>C++ comments containing unbalances quotes cause parser error</span></td></tr>
+<tr><td class=bug><a name="l_INSbl22676" href="#INSbl22676">INSbl22676</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug><span class=bugVer>Problems handling function pointers</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21979" href="#INSbl21979">INSbl21979</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug><span class=bugVer>Stack allocated semaphores and down_interruptible() do not mix very well</span></td></tr>
+<tr><td class=bug><a name="l_INSbl22228" href="#INSbl22228">INSbl22228</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>2.2&nbsp;</td><td class=bug><span class=bugVer>SEGV in strpcgen when unions are passed in imported functions.</span></td></tr>
+<tr><td class=bug><a name="l_INSbl22227" href="#INSbl22227">INSbl22227</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>2.2&nbsp;</td><td class=bug><span class=bugVer>Uncompilable code generated when imported functions (or structures) contain anonymous unions</span></td></tr>
+<tr><td class=bug><a name="l_INSbl22226" href="#INSbl22226">INSbl22226</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>2.2&nbsp;</td><td class=bug><span class=bugVer>Uncompilable code generated if the signed type specifier appears in an imported function or structure</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20685" href="#INSbl20685">INSbl20685</a>&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>Rename OS_LINUX to OS_LINUX_USER</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20434" href="#INSbl20434">INSbl20434</a>&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>Host tools generate uncompilable code if the same function is imported twice</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20430" href="#INSbl20430">INSbl20430</a>&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>RPC tools incorrectly generate storage for opaque pointers</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20424" href="#INSbl20424">INSbl20424</a>&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>Cannot have functions in RPC expressions</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20323" href="#INSbl20323">INSbl20323</a>&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>Post hoc decoration of structures does not work</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20110" href="#INSbl20110">INSbl20110</a>&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>Subtle flaw concerning the tokenization of GNU style #line statements</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20107" href="#INSbl20107">INSbl20107</a>&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>Incorrect code generation for arrays with structures</span></td></tr>
+<tr><td class=bug><a name="l_INSbl19429" href="#INSbl19429">INSbl19429</a>&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug><span class=bugVer>extern prototypes lead to uncompilable stubs</span></td></tr>
+<tr><td class=bug><a name="l_INSbl19116" href="#INSbl19116">INSbl19116</a>&nbsp;</td><td class=bug>1.6&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug><span class=bugEnh>Warning from generated code for Linux</span></td></tr>
+<tr><td class=bug><a name="l_INSbl18980" href="#INSbl18980">INSbl18980</a>&nbsp;</td><td class=bug>1.6&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug><span class=bugVer>Pointer to constant data are distilled incorrectly</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14794" href="#INSbl14794">INSbl14794</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug><span class=bugVer>Host tools have outrageous memory requirements</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14693" href="#INSbl14693">INSbl14693</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug><span class=bugVer>Type distiller does not distill non-pointer function types</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14562" href="#INSbl14562">INSbl14562</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug><span class=bugVer>typedefs utilizing __attribute__ are not distilled correctly</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14000" href="#INSbl14000">INSbl14000</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.7&nbsp;</td><td class=bug><span class=bugVer>Enhancement: Better error reporting</span></td></tr>
+<tr><td class=bug><a name="l_INSbl15266" href="#INSbl15266">INSbl15266</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.6&nbsp;</td><td class=bug><span class=bugVer>Generator produces broken stubs for void * parameters</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13992" href="#INSbl13992">INSbl13992</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.6&nbsp;</td><td class=bug><span class=bugVer>Too much dynamic memory allocation</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13957" href="#INSbl13957">INSbl13957</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.6&nbsp;</td><td class=bug><span class=bugVer>rpcStubsInit can't be called more than once</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13951" href="#INSbl13951">INSbl13951</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.6&nbsp;</td><td class=bug><span class=bugVer>Odd results from test</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14357" href="#INSbl14357">INSbl14357</a>&nbsp;</td><td class=bug>1.4&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>RPC parser does not understand GNU style #line directives</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14377" href="#INSbl14377">INSbl14377</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>RPC stripper does not spit out numeric constants exactly as they appear</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14375" href="#INSbl14375">INSbl14375</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>RPC stripper is over zealous when variables and members have odd names</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14373" href="#INSbl14373">INSbl14373</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>RPC stripper strips GNU __attribute__() declarations</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14315" href="#INSbl14315">INSbl14315</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>The stripper generates spurious line breaks before #pragma directives</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14278" href="#INSbl14278">INSbl14278</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>The RPC parser does not understand st20cc inline asm constuct</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14199" href="#INSbl14199">INSbl14199</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>Temporary file names preserved in ST20 object files</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14128" href="#INSbl14128">INSbl14128</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>The RPC parser does not understand butting string literals</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14072" href="#INSbl14072">INSbl14072</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>malloc is not always thread-safe on ST20</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13990" href="#INSbl13990">INSbl13990</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>Very large switch tables are mis-compiled on ST20</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13955" href="#INSbl13955">INSbl13955</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>strpcgen does not track declared arenas</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13791" href="#INSbl13791">INSbl13791</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>The RPC stripper is unreliable</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13790" href="#INSbl13790">INSbl13790</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>Use distinctive OS20 task names</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13737" href="#INSbl13737">INSbl13737</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>It's difficult to see why strpctool trips over some source code</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13677" href="#INSbl13677">INSbl13677</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>Cannot pass value terminated arrays</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13676" href="#INSbl13676">INSbl13676</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>Cannot use structure elements to size arrays at run-time</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13931" href="#INSbl13931">INSbl13931</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.4&nbsp;</td><td class=bug><span class=bugVer>Missing cast when calling free() results in uncompilable code</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13930" href="#INSbl13930">INSbl13930</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.4&nbsp;</td><td class=bug><span class=bugVer>Typedefs inside rpc_info do not work</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13607" href="#INSbl13607">INSbl13607</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.4&nbsp;</td><td class=bug><span class=bugVer>Variable sized arrays cannot be passed using RPC</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13455" href="#INSbl13455">INSbl13455</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.4&nbsp;</td><td class=bug><span class=bugVer>RPC Initialization Issues</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13929" href="#INSbl13929">INSbl13929</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.3&nbsp;</td><td class=bug><span class=bugVer>A verbose options would be nice</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13609" href="#INSbl13609">INSbl13609</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.3&nbsp;</td><td class=bug><span class=bugVer>Passing pointers between processors</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13169" href="#INSbl13169">INSbl13169</a>&nbsp;</td><td class=bug>None&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug><span class=bugVer>The generator/stripper issues warnings on gcc's standard headers</span></td></tr>
+</table>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_rpctools">Contents</a></font></p>
+<hr size=2>
+<h3><a name="mme_host">mme_host</a></h3>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+  <tr>
+    <th width=15%>Bug ID</th>
+    <th width=10%>Found</th>
+    <th width=10%>Fixed</th>
+    <th width=65%>Headline</th>
+  </tr>
+<tr><td class=bug><a name="l_INSbl22514" href="#INSbl22514">INSbl22514</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>3.2.1&nbsp;</td><td class=bug><span class=bugVer>Local transformer priorities not honoured on Linux</span></td></tr>
+<tr><td class=bug><a name="l_INSbl26569" href="#INSbl26569">INSbl26569</a>&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug>3.1.2&nbsp;</td><td class=bug><span class=bugEnh>Provide a dynamically linked libmme_host for Linux user mode</span></td></tr>
+<tr><td class=bug><a name="l_INSbl26526" href="#INSbl26526">INSbl26526</a>&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug>3.1.2&nbsp;</td><td class=bug><span class=bugVer>Memory leak in MME_FreeDataBuffer (Linux user mode only)</span></td></tr>
+<tr><td class=bug><a name="l_INSbl23529" href="#INSbl23529">INSbl23529</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>3.1.2&nbsp;</td><td class=bug><span class=bugVer>In SH Linux kernel mode there is a host leak when instantiating and terminating a remote transformer</span></td></tr>
+<tr><td class=bug><a name="l_INSbl25570" href="#INSbl25570">INSbl25570</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>Memory leak in MME_GetTransformerCapability</span></td></tr>
+<tr><td class=bug><a name="l_INSbl25509" href="#INSbl25509">INSbl25509</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>Kernels with CONFIG_DEBUG_SLAB enabled cause the MME API test to fail</span></td></tr>
+<tr><td class=bug><a name="l_INSbl25367" href="#INSbl25367">INSbl25367</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>Cached memory cannot be safely transfered from across the Linux kernel interface</span></td></tr>
+<tr><td class=bug><a name="l_INSbl25107" href="#INSbl25107">INSbl25107</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>The pre-allocated buffer stack will be corrupted if the companion issues a starvation message</span></td></tr>
+<tr><td class=bug><a name="l_INSbl25037" href="#INSbl25037">INSbl25037</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>Updated scatter page meta data (e.g. BytesUsed) is not copied from kernel to userspace on command completion</span></td></tr>
+<tr><td class=bug><a name="l_INSbl24971" href="#INSbl24971">INSbl24971</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>Port name generation when searching for transformers is broken</span></td></tr>
+<tr><td class=bug><a name="l_INSbl24124" href="#INSbl24124">INSbl24124</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>Cleanup code in createTransformMessage is incorrect</span></td></tr>
+<tr><td class=bug><a name="l_INSbl24120" href="#INSbl24120">INSbl24120</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>RemoteTransformer_SendCommand does not release locks on its error paths</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21675" href="#INSbl21675">INSbl21675</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug><span class=bugVer>Allocated databuffers are not properly initialized</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21671" href="#INSbl21671">INSbl21671</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug><span class=bugVer>MME_GetTransformerCapability is not yet implemented</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21665" href="#INSbl21665">INSbl21665</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug><span class=bugVer>It is possible to successful abort command that have never run.</span></td></tr>
+<tr><td class=bug><a name="l_INSbl22064" href="#INSbl22064">INSbl22064</a>&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug><span class=bugVer>Multicom's MME implementation only supports a single companion</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21658" href="#INSbl21658">INSbl21658</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug><span class=bugVer>MME_SendCommand incorrectly issues illegal commands</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21631" href="#INSbl21631">INSbl21631</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug><span class=bugVer>It is possible to register the same transport name twice</span></td></tr>
+<tr><td class=bug><a name="l_INSbl23335" href="#INSbl23335">INSbl23335</a>&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugVer>Local transformer's terminate entrypoint not called on termination</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21664" href="#INSbl21664">INSbl21664</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugVer>Termination does not restore the state of MME to that before initialization</span></td></tr>
+<tr><td class=bug><a name="l_INSbl23679" href="#INSbl23679">INSbl23679</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugVer>Cannot use linux user space and remote transformers concurrently</span></td></tr>
+<tr><td class=bug><a name="l_INSbl23505" href="#INSbl23505">INSbl23505</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugEnh>Relax buffer rules on SH Linux to allow contiguous buffers not allocated with MME_AllocateDataBuffer</span></td></tr>
+<tr><td class=bug><a name="l_INSbl23178" href="#INSbl23178">INSbl23178</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugVer>On Linux fails to handle scatter pages that do not start at the beginning of the allocated buffer</span></td></tr>
+<tr><td class=bug><a name="l_INSbl23170" href="#INSbl23170">INSbl23170</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugVer>Application using remote transformers cannot be debugged in Linux user mode</span></td></tr>
+<tr><td class=bug><a name="l_INSbl23110" href="#INSbl23110">INSbl23110</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugVer>Failure to free kernel memory used for user parameters in MME_SendCommand</span></td></tr>
+<tr><td class=bug><a name="l_INSbl22726" href="#INSbl22726">INSbl22726</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugVer>On Linux, additional info in MME_Command_t is not transported to and from companion</span></td></tr>
+<tr><td class=bug><a name="l_INSbl26688" href="#INSbl26688">INSbl26688</a>&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug>No&nbsp;</td><td class=bug><span class=bugOpen>MME receiver process terminates on receipt of a badly formed message</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21640" href="#INSbl21640">INSbl21640</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>No&nbsp;</td><td class=bug><span class=bugOpen>Error codes are not propogated back from transformer initialization</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21633" href="#INSbl21633">INSbl21633</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>No&nbsp;</td><td class=bug><span class=bugOpen>Deregistration of a transport on the host causes problems on the companion</span></td></tr>
+<tr><td class=bug><a name="l_INSbl23423" href="#INSbl23423">INSbl23423</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>No&nbsp;</td><td class=bug><span class=bugOpen>If app terminates resources such as data buffers and companion transformer threads are not released</span></td></tr>
+</table>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_mme_host">Contents</a></font></p>
+<hr size=2>
+<h3><a name="mme_companion">mme_companion</a></h3>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+  <tr>
+    <th width=15%>Bug ID</th>
+    <th width=10%>Found</th>
+    <th width=10%>Fixed</th>
+    <th width=65%>Headline</th>
+  </tr>
+<tr><td class=bug><a name="l_INSbl25388" href="#INSbl25388">INSbl25388</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>MME_TermTransformer takes a very long time to complete</span></td></tr>
+<tr><td class=bug><a name="l_INSbl25234" href="#INSbl25234">INSbl25234</a>&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>mme.h uses __ST20__ rather than __CORE__ to determine endianness</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21718" href="#INSbl21718">INSbl21718</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug><span class=bugVer>Companion does not properly update buffers provides using MME_SEND_BUFFERS</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21666" href="#INSbl21666">INSbl21666</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug><span class=bugVer>MME_AbortCommand does not permit commands queued on the companion to be aborted</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21662" href="#INSbl21662">INSbl21662</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug><span class=bugVer>MME does not (yet) support transformer priorities</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21661" href="#INSbl21661">INSbl21661</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug><span class=bugVer>Transforms are scheduled in FIFO order</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21644" href="#INSbl21644">INSbl21644</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug><span class=bugVer>Companion side transformer initialization function is not passed NULL for zero sized parameters</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21676" href="#INSbl21676">INSbl21676</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>No&nbsp;</td><td class=bug><span class=bugOpen>MME_DeregisterTransport does not work on the companion</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21634" href="#INSbl21634">INSbl21634</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>No&nbsp;</td><td class=bug><span class=bugOpen>Registering a companion transport twice puts MME into an inconsistant state</span></td></tr>
+</table>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_mme_companion">Contents</a></font></p>
+<hr size=2>
+<h3><a name="examples">examples</a></h3>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+  <tr>
+    <th width=15%>Bug ID</th>
+    <th width=10%>Found</th>
+    <th width=10%>Fixed</th>
+    <th width=65%>Headline</th>
+  </tr>
+<tr><td class=bug><a name="l_INSbl28615" href="#INSbl28615">INSbl28615</a>&nbsp;</td><td class=bug>3.2.1&nbsp;</td><td class=bug>3.2.2&nbsp;</td><td class=bug><span class=bugVer>Incorrect Information in Examples\Harness Readme</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20560" href="#INSbl20560">INSbl20560</a>&nbsp;</td><td class=bug>2.0-Beta&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug><span class=bugVer>EMBX examples do not have README files.</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21673" href="#INSbl21673">INSbl21673</a>&nbsp;</td><td class=bug>3.0I1&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug><span class=bugVer>SimpleTest_AbortCommand should not return MME_SUCCESS</span></td></tr>
+<tr><td class=bug><a name="l_INSbl20684" href="#INSbl20684">INSbl20684</a>&nbsp;</td><td class=bug>2.0&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug><span class=bugVer>Examples do not terminate cleanly on ST40 Linux</span></td></tr>
+<tr><td class=bug><a name="l_INSbl22925" href="#INSbl22925">INSbl22925</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugVer>Examples do not appear to support mb392</span></td></tr>
+<tr><td class=bug><a name="l_INSbl13723" href="#INSbl13723">INSbl13723</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>Cannot build examples using ST20 Embedded Toolset R1.8.1</span></td></tr>
+<tr><td class=bug><a name="l_INSbl22927" href="#INSbl22927">INSbl22927</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>No&nbsp;</td><td class=bug><span class=bugOpen>MME getstart example reports an error when closing down on MB392</span></td></tr>
+</table>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_examples">Contents</a></font></p>
+<hr size=2>
+<h3><a name="test_suite">test_suite</a></h3>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+  <tr>
+    <th width=15%>Bug ID</th>
+    <th width=10%>Found</th>
+    <th width=10%>Fixed</th>
+    <th width=65%>Headline</th>
+  </tr>
+<tr><td class=bug><a name="l_INSbl14422" href="#INSbl14422">INSbl14422</a>&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug>1.6&nbsp;</td><td class=bug><span class=bugVer>The benchmark test locks up on LinuxSH</span></td></tr>
+<tr><td class=bug><a name="l_INSbl14073" href="#INSbl14073">INSbl14073</a>&nbsp;</td><td class=bug>1.1&nbsp;</td><td class=bug>1.5&nbsp;</td><td class=bug><span class=bugVer>The test suite should be shipped as part of the distribution</span></td></tr>
+</table>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_test_suite">Contents</a></font></p>
+<hr size=2>
+<h3><a name="configs">configs</a></h3>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+  <tr>
+    <th width=15%>Bug ID</th>
+    <th width=10%>Found</th>
+    <th width=10%>Fixed</th>
+    <th width=65%>Headline</th>
+  </tr>
+<tr><td class=bug><a name="l_INSbl21770" href="#INSbl21770">INSbl21770</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug><span class=bugVer>STi5528 reference config files risk the ST20 debug library dereferencing undefined pointers</span></td></tr>
+</table>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_configs">Contents</a></font></p>
+<hr size=2>
+<h3><a name="other">other</a></h3>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+  <tr>
+    <th width=15%>Bug ID</th>
+    <th width=10%>Found</th>
+    <th width=10%>Fixed</th>
+    <th width=65%>Headline</th>
+  </tr>
+<tr><td class=bug><a name="l_INSbl26321" href="#INSbl26321">INSbl26321</a>&nbsp;</td><td class=bug>3.1.1&nbsp;</td><td class=bug>3.1.2&nbsp;</td><td class=bug><span class=bugEnh>Port Multicom to STLinux-2.2</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21945" href="#INSbl21945">INSbl21945</a>&nbsp;</td><td class=bug>3.0I2&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug><span class=bugVer>Build process exports internal MME header files</span></td></tr>
+<tr><td class=bug><a name="l_INSbl23106" href="#INSbl23106">INSbl23106</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugEnh>Support ST231 core in Multicom - build system and replacement of dpu_config</span></td></tr>
+<tr><td class=bug><a name="l_INSbl23034" href="#INSbl23034">INSbl23034</a>&nbsp;</td><td class=bug>3.0B1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugVer>Cygwin build fails if RPC_ROOT has spaces in it</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21148" href="#INSbl21148">INSbl21148</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>3.0.4&nbsp;</td><td class=bug><span class=bugVer>Framework test do not build cleanly for ST20 targets</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21053" href="#INSbl21053">INSbl21053</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>2.2&nbsp;</td><td class=bug><span class=bugVer>multirun passes invalid handles to its child processes</span></td></tr>
+<tr><td class=bug><a name="l_INSbl21668" href="#INSbl21668">INSbl21668</a>&nbsp;</td><td class=bug>2.1&nbsp;</td><td class=bug>No&nbsp;</td><td class=bug><span class=bugOpen>The copy out rules in install.mak perform unconditional copies</span></td></tr>
+</table>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_other">Contents</a></font></p>
+<br>
+<h2><font><font size="2" face="Arial, Helvetica, sans-serif"><a
+ name="DD"></a></font></font>Detailed Descriptions</h2>
+<hr size=2><h4><a name="INSbl13169">INSbl13169</a>&nbsp;<span class=bugVer>The generator/stripper issues warnings on gcc's standard headers</span></h4>
+The standard header files for GCC include lots of GCC extensions to the ANSI standard. These cause the stripper and generator to produce a number of warnings. Generally parsing failures can be ignored as the error recovery strategy is quite sufficient. However failure to parse GCC extensions used in *declarations* (e.g. __const__) could cause the stripper to fail to strip some decorations. Similarly the generator may be unable to generate the stubs correctly when the declarations contain GNU extensions.
+<p>
+<p>
+<p>
+<p>Fixed in 1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13169">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13455">INSbl13455</a>&nbsp;<span class=bugVer>RPC Initialization Issues</span></h4>
+On the ST20 side many threads were created by various parts of the RPC system without checking the return code (success/failure code). This has been corrected to provide better error reporting when tasks cannot be created.
+<p>Fixed in 1.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13455">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13607">INSbl13607</a>&nbsp;<span class=bugVer>Variable sized arrays cannot be passed using RPC</span></h4>
+Variable size arrays (i.e. length prefixed rather than terminated) could not be passed across RPC using the automatically generated stubs. The array copying strategy has been extended to permit the array length to be evaluated at runtime.
+<p>Fixed in 1.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13607">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13609">INSbl13609</a>&nbsp;<span class=bugVer>Passing pointers between processors</span></h4>
+It was not previously possible to pass pointers to shared memory between processors using automatically generated stubs. The shared copy strategy has been added to permit this.
+<p>Fixed in 1.3</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13609">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13676">INSbl13676</a>&nbsp;<span class=bugVer>Cannot use structure elements to size arrays at run-time</span></h4>
+Structures consisting of an array and the length of that array could not
+previously be passed using automatically generated stubs. The following examples
+is shown with example decorations demonstrating the new feature.
+<p>
+<div class=code>
+struct&nbsp;sprocket&nbsp;{
+<br>&nbsp;&nbsp;int&nbsp;length;
+<br>&nbsp;&nbsp;inout.array(128,&nbsp;__struct__.length)&nbsp;int&nbsp;*data;
+<br>};
+<br></div>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13676">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13677">INSbl13677</a>&nbsp;<span class=bugVer>Cannot pass value terminated arrays</span></h4>
+Structures consisting of an array and terminating value for that array could not
+previously be passed using automatically generated stubs. The following example
+is shown with example decorations demonstrating the new feature. It will copy an
+array (of up to 128 elements) until it reaches the value term.
+<p>
+<div class=code>
+struct&nbsp;teepipe&nbsp;{
+<br>&nbsp;&nbsp;int&nbsp;term;
+<br>&nbsp;&nbsp;inout.termarray(128,&nbsp;__element__&nbsp;==&nbsp;__struct__.term)&nbsp;int&nbsp;*data;
+<br>};
+<br></div>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13677">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13723">INSbl13723</a>&nbsp;<span class=bugVer>Cannot build examples using ST20 Embedded Toolset R1.8.1</span></h4>
+It was not possible to build the examples for any ST20 toolset after R1.8.1 (including R1.8.1 itself). The act of resolving this bug additionally means that the examples now use the method of linking recommended by the ST20 toolset developers.
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13723">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13737">INSbl13737</a>&nbsp;<span class=bugVer>It's difficult to see why strpctool trips over some source code</span></h4>
+The verbose (-v) options has been extended to provide more useful information. It now displays the complete section of code it could not parse as part of its output.
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13737">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13790">INSbl13790</a>&nbsp;<span class=bugVer>Use distinctive OS20 task names</span></h4>
+Under OS20 the RPC server threads have been given unique names. Instead of all being named "RPC Server Thread" they are now named "RPC Server 01" or similar.
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13790">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13791">INSbl13791</a>&nbsp;<span class=bugVer>The RPC stripper is unreliable</span></h4>
+The RPC stripper has in some cases been very unreliable. Since the last release
+the RPC stripper has undergone heavy testing and a number of improvements have
+been made. Although some of these problems are described under other defect
+numbers the following is a short summary of the changes since the last release.
+<p>
+<ul>
+<li>The parser understands many new type qualifiers that are
+   extensions to ANSI C (e.g. __inline from ST20 and __signed__
+   from GCC).
+<li>The stripper does not consume the whole file before starting
+   to make output, it handles the input a phrase at a time.
+<li>Data members of structs and function parameters can safely
+   name clash with RPC decorations in, out, inout and transient.
+<li>Octal numbers are not stripped of the leading zero.
+<li>Segmentation faults processing GCC's extended #line statements
+   have been prevented.
+</ul>
+<p>
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13791">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13902">INSbl13902</a>&nbsp;<span class=bugVer>rpccc does not handle process exit status correctly</span></h4>
+On Solaris/Linux rpccc used to assume a sub-process has passed even if the sub-process had failed with an exit code of 1. This is no longer the case.
+<p>Fixed in 1.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13902">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13903">INSbl13903</a>&nbsp;<span class=bugVer>rpccc dumps core if the first argument is not --rpc</span></h4>
+Any of the following command lines would cause rpccc to crash during argument
+processing.
+<p>
+<div class=code>
+rpccc&nbsp;-v&nbsp;--rpc&nbsp;st20cc
+<br>rpccc&nbsp;foo
+<br>rpccc&nbsp;--rp
+<br></div>
+<p>
+This has been corrected.
+<p>
+<p>Fixed in 1.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13903">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13929">INSbl13929</a>&nbsp;<span class=bugVer>A verbose options would be nice</span></h4>
+A verbose option (-v) has been added to the RPC host tools to provide extra details about the code that could not be parsed correctly.
+<p>
+<p>Fixed in 1.3</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13929">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13930">INSbl13930</a>&nbsp;<span class=bugVer>Typedefs inside rpc_info do not work</span></h4>
+The tools were unable to parse a typedef seen first in real code and then inside an rpc_info {} declaration. This has been corrected.
+<p>Fixed in 1.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13930">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13931">INSbl13931</a>&nbsp;<span class=bugVer>Missing cast when calling free() results in uncompilable code</span></h4>
+For certain types of data the RPC stubs use malloc.  In some cases the corresponding free() wasn't having it parameter correctly cast, causing a compile error on the stubs.
+<p>
+<p>
+<p>
+<p>Fixed in 1.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13931">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13951">INSbl13951</a>&nbsp;<span class=bugVer>Odd results from test</span></h4>
+The stubs for SH40 Linux were not setting errno to the error code returned from the RPC server. This has been corrected.
+<p>
+<p>
+<p>Fixed in 1.6</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13951">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13955">INSbl13955</a>&nbsp;<span class=bugVer>strpcgen does not track declared arenas</span></h4>
+The RPC stubs generator will now issue warning if functions are imported from or exported to non-existent arenas. It will also warn if the arena specified on the command line does not exist.
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13955">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13957">INSbl13957</a>&nbsp;<span class=bugVer>rpcStubsInit can't be called more than once</span></h4>
+In some cases it is useful for the stubs initialisation function to be called
+more than once.  At the moment this is not allowed.
+<p>
+<p>Fixed in 1.6</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13957">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13990">INSbl13990</a>&nbsp;<span class=bugVer>Very large switch tables are mis-compiled on ST20</span></h4>
+Very large RPC systems produce very large switch tables. There are mis-compiled
+by the ST20 C compiler. RPC now used data based tables to workaround this problem.
+<p>
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13990">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl13992">INSbl13992</a>&nbsp;<span class=bugVer>Too much dynamic memory allocation</span></h4>
+The generated stubs use malloc() (or thread-safe equivalent) to allocate memory
+for the copylists generated in the stubs.
+The use of heap based memory management is often frowned upon for small embedded
+systems and has therefore been replaced with stack based allocation.
+<p>
+<p>Fixed in 1.6</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl13992">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14000">INSbl14000</a>&nbsp;<span class=bugVer>Enhancement: Better error reporting</span></h4>
+The RPC host tools have been significantly improved in all aspects of error
+reporting.
+<p>
+<ul>
+<li>They no longer issue vast numbers of warnings when
+   presented with Microsoft or GNU extensions to the
+   C language.
+<li>They correctly track the current line number making
+   the warnings that are generated much more helpful.
+<li>Most errors in the code generation phase now report
+   line numbers of the broken decorations.
+<li>The tools issue warnings for unusual or suspect RPC
+   decorations and constructs.
+</ul>
+<p>
+<p>Fixed in 1.7</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14000">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14072">INSbl14072</a>&nbsp;<span class=bugVer>malloc is not always thread-safe on ST20</span></h4>
+The generated RPC stubs require a dynamic memory allocator. Traditionally this has been malloc(). Unfortunately on ST20 malloc is not thread-safe unless the system is linked using -runtime os20. STAPI does not link like this (and neither did the examples supplied with RPC R1.4). Therefore to preserve heap integrity stubs generated for OS20 no longer use malloc() to allocate dynamic memory (the thread-safe memory_allocate() is used instead).
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14072">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14073">INSbl14073</a>&nbsp;<span class=bugVer>The test suite should be shipped as part of the distribution</span></h4>
+The RPC distribution now includes the recently written test system. The shakedown and benchmark portions should be released as a separate zip alongside the next release. Other tests (mostly the regression tests) are considered to complex too export outside ST's internal build environment.
+<p>
+The main RPC distribution now includes a test log to demonstrate what testing has taken place.
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14073">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14081">INSbl14081</a>&nbsp;<span class=bugVer>rpccc does not understand st20cc -c2</span></h4>
+Due to an error in the tables driving rpccc there were a number of arguments that it did not understand. This caused longer arguments to be eclipsed by their own substrings. For example st20cc's -c2 argument was being interpreted as -c with the parameter 2 (which makes no sense).
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14081">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14128">INSbl14128</a>&nbsp;<span class=bugVer>The RPC parser does not understand butting string literals</span></h4>
+In the past the RPC was not able to parse butting string literals (e.g. printf("Hello " "World" "!!!"); ). This is not longer the case.
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14128">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14199">INSbl14199</a>&nbsp;<span class=bugVer>Temporary file names preserved in ST20 object files</span></h4>
+The ST20 compiler no longer reports temporary file names for programs compiled with rpccc.
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14199">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14248">INSbl14248</a>&nbsp;<span class=bugVer>Poor temporary name handling</span></h4>
+rpccc's temporary file name generation has been improved so that it honours the TMP environment variable (TMPDIR on Solaris/Linux). This used to cause problems on Windows NT machines when the user did not have write permission on the root of the current drive (e.g. a user working in H:\src\rpc\white\hot would have needed write permission on H:\).
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14248">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14278">INSbl14278</a>&nbsp;<span class=bugVer>The RPC parser does not understand st20cc inline asm constuct</span></h4>
+The RPC parser no longer issues warnings when presented with st20cc'c __asm and __optasm constructs.
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14278">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14315">INSbl14315</a>&nbsp;<span class=bugVer>The stripper generates spurious line breaks before #pragma directives</span></h4>
+The RPC stripper used to generate spurious line breaks immediately before any pragma directive. This did not affect the logical sense or compilability of the program but did cause the line number information for the debugger to be incorrect.
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14315">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14357">INSbl14357</a>&nbsp;<span class=bugVer>RPC parser does not understand GNU style #line directives</span></h4>
+strpcstrip used to fail on Windows NT and Linux platforms when presented with GCC style #line declarations (e.g. # 3 "foo.c") followed by a non-blank line. The Solaris version ran correctly albeit rather slowly.
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14357">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14373">INSbl14373</a>&nbsp;<span class=bugVer>RPC stripper strips GNU __attribute__() declarations</span></h4>
+The RPC stripper tool strips the GNU __attribute__() extension from the code
+(and does not replace it with white space). This can cause programs (and
+headers) reliant on the attributes behavior to fail.
+<p>
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14373">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14375">INSbl14375</a>&nbsp;<span class=bugVer>RPC stripper is over zealous when variables and members have odd names</span></h4>
+The stripper used to strip structure members and function parameters with the names in, out, inout or transient since they looked like RPC decorations. This was because the logic to force RPC decorations to appear before the type specifier (int, char) was not working correctly.
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14375">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14377">INSbl14377</a>&nbsp;<span class=bugVer>RPC stripper does not spit out numeric constants exactly as they appear</span></h4>
+The RPC stripper used to damage octal constants during stripping. The leading zero used differentiate between octal and decimal constants was being removed. This caused octal 022 (decimal 18) to be converted to decimal 22. 0022 would not be affected as only the leading zero was being removed.
+<p>
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14377">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14393">INSbl14393</a>&nbsp;<span class=bugVer>rpccc ignores the -o option</span></h4>
+rpccc used to ignore the -o option (used to specify output files). This made it impossible to place object files in another directory. This limitation has been removed in the case where there is only one source file on the command line.
+<p>Fixed in 1.5</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14393">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14422">INSbl14422</a>&nbsp;<span class=bugVer>The benchmark test locks up on LinuxSH</span></h4>
+The benchmark test shipped with RPC 1.5 did not run correctly on ST40 Linux. The cause of the failure was actually in the test itself not the RPC software. The fault in the test was a bad conditional compilation causing incompatible generated stubs to be generated.
+<p>
+<p>Fixed in 1.6</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14422">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14562">INSbl14562</a>&nbsp;<span class=bugVer>typedefs utilizing __attribute__ are not distilled correctly</span></h4>
+The GNU __attribute__ extension is now filtered out of the input by
+the lexer and is never presented to the parser. This allows header
+files on OS21 and Linux to be stripped with a greatly reduced number
+of warnings.
+<p>
+Technically speaking this makes __attribute__ a reserved word.
+<p>
+<p>Fixed in 1.7</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14562">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14693">INSbl14693</a>&nbsp;<span class=bugVer>Type distiller does not distill non-pointer function types</span></h4>
+Non-pointer function types were not handled correctly by previous versions
+of the RPC host tools. The typedef is not correctly recorded causing later
+uses of that type to generate warnings. This is no longer the case.
+<p>Fixed in 1.7</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14693">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl14794">INSbl14794</a>&nbsp;<span class=bugVer>Host tools have outrageous memory requirements</span></h4>
+The RPC host tools have been rewritten for the R1.7 release. They now have a sensible memory allocation strategy which makes the -zalloc workaround obsolete. -zalloc is still accepted by the tools to ensure old makefiles continue to work but it will cause the RPC tools to issue a warning.
+<p>Fixed in 1.7</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl14794">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl15150">INSbl15150</a>&nbsp;<span class=bugVer>-L arguments are not presented to st20cc pre-processor mode</span></h4>
+The rpccc tool now properly passes -L options to the ST20 C compiler. The -L option affects both the library search path and the command language path. Therefore unlike other compiler drivers the -L option must be presented to all phases of compilation not just the linking stage. As a result commands of the following form will now work correctly.
+rpccc st20cc -L afolder -T afile.cfg another.c
+<p>
+<p>Fixed in 1.6</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl15150">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl15266">INSbl15266</a>&nbsp;<span class=bugVer>Generator produces broken stubs for void * parameters</span></h4>
+The RPC code generator no longer generates uncompilable stubs when functions containing void pointers are passed through the RPC mechanism.
+Note that void pointers can only be passed through RPC as shared or opaque because they point to data of an unknown size.
+<p>
+<p>Fixed in 1.6</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl15266">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl16565">INSbl16565</a>&nbsp;<span class=bugVer>rpccc uses hardcoded names for the C compiler</span></h4>
+rpccc is compiled containing default names for the various C compilers it
+supports. If the compiler name for your platform changes you will no longer
+require a new version of rpccc to be supplied. Instead the is a secret option to
+change the compiler name.
+<p>
+For example assuming you compiler changed name from sh4gcc to st40gcc you would
+invoke rpccc as follows:
+<p>
+<div class=code>
+rpccc&nbsp;-zcc=st40gcc&nbsp;sh4gcc&nbsp;-c&nbsp;compile_me.c
+<br></div>
+<p>Fixed in 1.7</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl16565">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl18484">INSbl18484</a>&nbsp;<span class=bugVer>Incorrect return value from EMBX_RegisterTransport</span></h4>
+EMBX_RegisterTransport will incorrectly return EMBX_SUCCESS if the internal call to EMBX_HandleManager_Init fails.
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl18484">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl18813">INSbl18813</a>&nbsp;<span class=bugVer>Spinlocks for communication pipes are not adequately protected</span></h4>
+The communications pipes are not protected against multiple uses by the same CPU.
+In general access to these pipes will be serialized by the driver lock.
+Unfortunately some of the housekeeping tasks access the pipes without owning the
+driver lock. This can lead to deadlock.
+<p>
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl18813">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl18980">INSbl18980</a>&nbsp;<span class=bugVer>Pointer to constant data are distilled incorrectly</span></h4>
+Old versions of the RPC tools incorrectly distilled pointers to constant data.
+More specifically consider the following function:
+<p>
+<div class=code>
+void&nbsp;func(int&nbsp;*&nbsp;const&nbsp;p);
+<br></div>
+<p>
+This would be incorrectly distilled as:
+<p>
+<div class=code>
+void&nbsp;func(const&nbsp;int&nbsp;*&nbsp;p);
+<br></div>
+<p>
+This would typically result in uncompilable stubs since the generated code would
+not match the prototypes in the headers.
+<p>
+<p>Fixed in 1.7</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl18980">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl19113">INSbl19113</a>&nbsp;<span class=bugVer>Invalidating a port in the EMBX loopback transport is not sufficient</span></h4>
+The implementation of the local port invalidate method in the loopback transport
+does not prevent subsequent connections to the invalidated port. The entry
+in the port table still exists and this means that the remote port connect
+implementation will succeed. This behaviour is incorrect, specifically the
+API documentation states that as a result of EMBX_InvalidatePort the port name
+should become unbound, hence any attempt at connection to that name should 
+fail or block.
+<p>Fixed in 2.0</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl19113">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl19116">INSbl19116</a>&nbsp;<span class=bugEnh>Warning from generated code for Linux</span></h4>
+Eliminated a spurious warning when the stubs were compiled as part of a Linux
+kernel module.
+<p>
+<p>Fixed in 1.7</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl19116">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl19143">INSbl19143</a>&nbsp;<span class=bugVer>Risk of cache incoherancy durining automatic shared heap allocation.</span></h4>
+EMBX_OS_ContigMemAlloc() is typically used to allocate contiguous memory in order
+that it may be used in DMA transactions or addressed from other CPUs. On OS21
+function is implemented by a carefully crafted call to malloc().
+<p>
+Normally malloc() returns cached memory therefore the memory it returns could be
+held in whole or in part in the data cache. Once this memory is populated then it
+will simply be a matter of time before the dirty lines are flushed from the cache
+thus corrupting memory that we have populated without the cache.
+<p>
+This bug can be fixed by altering the semantics of EMBX_OS_ContigMemAlloc().
+This function's contract could explicitly return a P2 address whose contents is
+guaranteed to have been flushed from the
+cache.
+<p>
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl19143">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl19181">INSbl19181</a>&nbsp;<span class=bugOpen>A blocking transport closedown, initiated from EMBX_UnregisterTransport, can lead to unsafe behaviour</span></h4>
+EMBX_UnregisterTransport can be called while the EMBX system is still alive and
+transport instance being unregistered is still being used. In this case the
+transport closedown method will cause EMBX_UnregisterTransport to block the
+calling thread until all references to the transport instance have been closed.
+When EMBX_UnregisterTransport blocks it will release the global driver lock.
+This means that an application could quite legitimately call EMBX_Deinit or
+somewhat dubiously call EMBX_UnregisterTransport again with the same transport
+factory handle. In either of those two cases the framework implementation will
+try and close the transport instance a second time, causing the system to
+fail in an unpredictable manner (it would depend on the exact implementation
+of the transport involved.)
+<p>
+The framework has defined behaviour when multiple threads call EMBX_Deinit due
+to similar circumstances; it should also have a well defined behaviour for this
+situation as well.
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl19181">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl19361">INSbl19361</a>&nbsp;<span class=bugVer>rpccc generates illegal temporary file names for windows paths containing a driver letter</span></h4>
+rpccc no longer generates illegal temporary filenames when the an absolute path containing a driver letter is used to identify the source file.
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl19361">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl19429">INSbl19429</a>&nbsp;<span class=bugVer>extern prototypes lead to uncompilable stubs</span></h4>
+Functions prototypes with extern will generate uncompilable stubs.
+<p>
+e.g.
+  extern int badFunc(void);
+<p>
+Will generate uncompilable collection stubs because the variable used to hold
+the return value will (incorrectly) be declared extern.
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl19429">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl19495">INSbl19495</a>&nbsp;<span class=bugEnh>Distributed objects outside the shared heap are always copied</span></h4>
+EMBXSHM does not support the zero copy of of objects held outside the shared heap.
+<p>
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl19495">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl19526">INSbl19526</a>&nbsp;<span class=bugVer>EMBXSHM shutdown is not thread safe</span></h4>
+The shutdown sequences for EMBXSHM was not thread-safe. While unlikely it was
+possible for the transport handle linkage structures to be freed while the
+invalidate method (which is called from worker threads without global driver
+lock) was walking the transport handle list.
+<p>
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl19526">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl19560">INSbl19560</a>&nbsp;<span class=bugVer>EMBX header files are not directly compatible with C++</span></h4>
+The EMBX header files do not declare function prototypes as extern "C" causing
+linkage problems when used from C++.
+<p>
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl19560">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl19585">INSbl19585</a>&nbsp;<span class=bugVer>EMBXSHM leaks shared memory when deregistering objects held outside of the shared region</span></h4>
+The deregisterObject transport method does not free the shadow copy of a
+distributed object not held in shared memory. This must be fixed.
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl19585">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20107">INSbl20107</a>&nbsp;<span class=bugVer>Incorrect code generation for arrays with structures</span></h4>
+The following header file (developed as part of the examples for RPC R2.0) 
+causes the strpcgen tool to generate uncompileable code for CD_GetTrackInfo.
+<p>
+<div class=code>
+typedef&nbsp;struct&nbsp;CD_TrackInfo&nbsp;{
+<br>	int&nbsp;length;
+<br>	out.string(256)&nbsp;char&nbsp;*name;
+<br>}&nbsp;CD_TrackInfo_t;
+<br>
+<br>int&nbsp;&nbsp;CD_GetTrackInfo(int&nbsp;count,&nbsp;out.array(64,&nbsp;count)&nbsp;CD_TrackInfo_t&nbsp;*info);
+<br></div>
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20107">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20110">INSbl20110</a>&nbsp;<span class=bugVer>Subtle flaw concerning the tokenization of GNU style #line statements</span></h4>
+The lexer in the RPC host tools is responsible for intepreting #line directives.
+It fails to correcty decode a GNU style #line directive of the following form:
+<p>
+<div class=code>
+#&nbsp;1&nbsp;&lt;command-line&gt;
+<br></div>
+<p>
+This is because it scans for the substring 'line' to differentate between GNU
+style and ANSI style #line directives. Because the above string contains the
+substring 'line' it is incorrectly handled as a ANSI style directive.
+<p>
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20110">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20113">INSbl20113</a>&nbsp;<span class=bugVer>EMBXSHM must support dis-contiguous participant maps</span></h4>
+During some optimization work on the spinlocks we introduced a requirement for
+contiguous participant maps.
+<p>
+This is difficult for people to work with in test harnesses and flexible systems
+where the number of participants is determined at runtime.
+<p>
+Instead of counting the number of CPUs the spinlock code should search for the 
+highest set participant bit. This will maintain the high performance for
+contiguous maps without breaking non-configuous ones.
+<p>
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20113">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20140">INSbl20140</a>&nbsp;<span class=bugEnh>Simplification of EMPI buffer flushing</span></h4>
+The EMPI transport factory installs a specific "buffer flush" routine for both 
+the Master and Slave CPUs. The actual flush logic in that routine is only used 
+if the CPU is _not_ the transport Master. If this was only installed, by the 
+factory code, for the slave CPU then the conditional logic can be removed, 
+giving a small performance improvement. Additionally using the default "null" 
+operation on the master will also produce a small performance gain on that CPU 
+as well.
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20140">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20323">INSbl20323</a>&nbsp;<span class=bugVer>Post hoc decoration of structures does not work</span></h4>
+The post-hoc decoration of structures does not work. The host tools issue an
+error regarding multiple declarations and the decorations are ignored.
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20323">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20424">INSbl20424</a>&nbsp;<span class=bugVer>Cannot have functions in RPC expressions</span></h4>
+It currently impossible to have an RPC decoration expression containing a
+function call. For example each of the following cannot currently be used.
+<p>
+<div class=code>
+in.termarray(64,&nbsp;0&nbsp;==&nbsp;strlen(__element__.name))
+<br>in.termarray(64,&nbsp;0&nbsp;==&nbsp;twoargs(a,&nbsp;b))
+<br></div>
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20424">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20430">INSbl20430</a>&nbsp;<span class=bugVer>RPC tools incorrectly generate storage for opaque pointers</span></h4>
+Importing a function of the following form will cause the RPC tools to generate
+invalid code:
+<p>
+<div class=code>
+void&nbsp;function(in.opaque&nbsp;void&nbsp;*data);
+<br></div>
+<p>
+This is because the tools try to generate storage for the void pointer which is
+illegal (because it has type void).
+<p>
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20430">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20434">INSbl20434</a>&nbsp;<span class=bugVer>Host tools generate uncompilable code if the same function is imported twice</span></h4>
+Host tools generate uncompilable code if the same function is imported twice.
+They should check for duplicates, eliminate any duplicates discovered and issue a
+warning.
+<p>
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20434">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20447">INSbl20447</a>&nbsp;<span class=bugVer>EMBX_Assert() is not wired up for Linux kernel mode.</span></h4>
+The EMBX_Assert() macro is not implemented in Linux kernel mode. This is not
+acceptable since the error checking macros offer a very powerful means of
+identifying certain classes of fault.
+<p>
+There is lots of prior-art (albeit contradictory) in the Linux headers. At the
+very least EMBX_Assert() should be a conditional printk.
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20447">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20560">INSbl20560</a>&nbsp;<span class=bugVer>EMBX examples do not have README files.</span></h4>
+There are no README files contained within the EMBX examples explaining their
+purpose (i.e. what they are examples of) or how to build them.
+<p>
+These should be added.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20560">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20655">INSbl20655</a>&nbsp;<span class=bugVer>EMBXSHM silently discards messages that it cannot queue onto a local port</span></h4>
+EMBXSHM silently discards messages that do not fit onto the pre-allocated port
+free list. This is clearly unacceptable since, by allowing one of the three
+transmission routines to return EMBX_SUCCESS, the transport committed to
+deliver the message.
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20655">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20676">INSbl20676</a>&nbsp;<span class=bugOpen>Messages can be sent to stale ports</span></h4>
+It is possible for a local port to receive a message intended for a port that
+has already been invalidated.
+<p>
+Specifically it is possible for a port invalidate acknowledgement to overtake a
+normal message on the message pipes. This can only occur if the pipe has been
+stalled (which is a very rare occurance - it should never happen in a correctly
+tuned application) since otherwise the pipe will be cleared before the
+acknowlegdement is received.
+<p>
+This means that if a processor has a stalled communications pipe, it closes a
+port *and* immediately creates a port it is possible for a message sent by
+another processor to be received on the newly created port when it was intended
+for the closed port.
+<p>
+This bug has never been observed in a real application.
+<p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20676">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20684">INSbl20684</a>&nbsp;<span class=bugVer>Examples do not terminate cleanly on ST40 Linux</span></h4>
+When the RPC examples are run on the ST40 Linux they do not terminate cleanly
+and return to the command prompt.
+<p>Fixed in 3.0B1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20684">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl20685">INSbl20685</a>&nbsp;<span class=bugVer>Rename OS_LINUX to OS_LINUX_USER</span></h4>
+For RPC R2.x the OS_LINUX operating system type was split into OS_LINUX and
+OS_LINUX_KERNEL. This would be better split into OS_LINUX_USER and
+OS_LINUX_KERNEL so that code for the original R1.x series will never generate
+stubs that are not appropriate for the environment.
+<p>
+This also provides us the opportunity to issue helpful warnings when presented
+with OS_LINUX instead of silently generating code for user mode which will be
+wrong some, maybe most, of the time.
+<p>
+<p>Fixed in 2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl20685">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21053">INSbl21053</a>&nbsp;<span class=bugVer>multirun passes invalid handles to its child processes</span></h4>
+multirun does not work when the test suites are launched from a cygwin shell. It
+does work correctly when the test suites are launched from a normal windows
+command shell.
+<p>Fixed in 2.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21053">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21148">INSbl21148</a>&nbsp;<span class=bugVer>Framework test do not build cleanly for ST20 targets</span></h4>
+It is impossible to compile the framework tests for an ST20 because the -c1 or
+-c2 argument is missing from the compile line.
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21148">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21425">INSbl21425</a>&nbsp;<span class=bugVer>There is no check for allocation failure in EMBX_OS_ContigMemAlloc() when running ST40/OS21</span></h4>
+EMBX_OS_ContigMemAlloc() calls memalign() in the ST40/OS21 environment.
+There is no check on the return value being NULL (that is, allocation failure)
+prior to using this value in cache_invalidate_data() and 
+ADDRESS_IN_UNCACHED_MEMORY(). This latter macro adjusts the upper bits
+so all trace of an allocation error is lost and the caller's check for
+NULL is meaningless (in my case the caller is configureTransport()).
+<p>
+Furthermore, there is no way to free the localSharedMemory pool 
+allocated by configureTransport() for a shared memory mailbox factory
+when deinit-ing so that this memory may be reused in a later init.
+<p>
+<p>
+<p>Fixed in 3.1.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21425">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21607">INSbl21607</a>&nbsp;<span class=bugVer>Very large allocations incorrectly succeed when the heap is held in memory with the top bit set</span></h4>
+On the EMBXSHM transport the memory allocator can be made to (incorrectly)
+allocate 0x7fffffff and other absurbly large quantities.
+<p>
+This is due to the range checks failing when the heap's address has the top bit set.
+<p>Fixed in 3.0I2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21607">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21631">INSbl21631</a>&nbsp;<span class=bugVer>It is possible to register the same transport name twice</span></h4>
+It is possible to register the same transport name twice and obtain success on 
+each occasion. For example the in the following code the second assert will 
+fire.
+<p>
+<div class=code>
+err&nbsp;=&nbsp;MME_RegisterTransport("shm");
+<br>assert(MME_SUCCESS&nbsp;==&nbsp;err);
+<br>
+<br>err&nbsp;=&nbsp;MME_RegisterTransport("shm");
+<br>assert(MME_INVALID_ARGUMENT&nbsp;==&nbsp;err);
+<br></div>
+<p>Fixed in 3.0B1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21631">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21633">INSbl21633</a>&nbsp;<span class=bugOpen>Deregistration of a transport on the host causes problems on the companion</span></h4>
+When the host calls MME_DeregisterTransport() this causes MME_Run() to 
+termiate on the companion.
+<p>
+After this point the companion enters a dubious state. Calls to MME_Run() 
+return immediately with success and a call to MME_RegisterTransport() with the 
+original transport name causes the machine to crash (emit an OS21 register 
+dump).
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21633">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21634">INSbl21634</a>&nbsp;<span class=bugOpen>Registering a companion transport twice puts MME into an inconsistant state</span></h4>
+Registering a companion transport twice puts MME into an inconsistant state.
+<p>
+If a companion transport is registered twice the second registration correctly
+returns an error code but incorrectly alters the state of the MME such that
+MME_Run returns immediately.
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21634">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21640">INSbl21640</a>&nbsp;<span class=bugOpen>Error codes are not propogated back from transformer initialization</span></h4>
+The calling MME_InitTransformer() the (remote) transformer initialization
+function is called and returns an MME_ERROR. For some reason this number is
+inconditionally translated from the actual return value MME_INVALID_ARGUMENT to
+MME_TRANSFORMER_NOT_RESPONDING by the MME framework. This is wrong the error
+reported on the host should be the same error that was returned by the companion.
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21640">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21644">INSbl21644</a>&nbsp;<span class=bugVer>Companion side transformer initialization function is not passed NULL for zero sized parameters</span></h4>
+When a companion transformer function is called by the MME framework then the
+parameter point should be NULL if there are no parameters supplied by the
+application (i.e. if the parameter length is 0). This is not the case.
+<p>Fixed in 3.0B1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21644">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21658">INSbl21658</a>&nbsp;<span class=bugVer>MME_SendCommand incorrectly issues illegal commands</span></h4>
+MME_SendCommand incorrectly issues commands with invalid command codes or
+notification codes to the companion.
+<p>Fixed in 3.0B1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21658">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21661">INSbl21661</a>&nbsp;<span class=bugVer>Transforms are scheduled in FIFO order</span></h4>
+Currently transform commands are scheduled in FIFO order rather than due date
+order as required by the API spec.
+<p>Fixed in 3.0I2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21661">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21662">INSbl21662</a>&nbsp;<span class=bugVer>MME does not (yet) support transformer priorities</span></h4>
+MME 3.0 interim 1 does not treats all transformer priorities as the same. This
+will be addressed in the next release.
+<p>Fixed in 3.0I2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21662">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21664">INSbl21664</a>&nbsp;<span class=bugVer>Termination does not restore the state of MME to that before initialization</span></h4>
+When MME is terminated it should return to (or appear to return to) its state
+prior to initialization. This is not the case. After the API is terminated, is 
+it is not possible to re-initialize it.
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21664">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21665">INSbl21665</a>&nbsp;<span class=bugVer>It is possible to successful abort command that have never run.</span></h4>
+MME_AbortCommand() returns success if it is called with a command id that has
+never existed. This is incorrect, MME_SUCCESS means that the command has been
+aborted and will not be executed thus the correct return code is
+MME_INVALID_ARGUMENT.
+<p>Fixed in 3.0I2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21665">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21666">INSbl21666</a>&nbsp;<span class=bugVer>MME_AbortCommand does not permit commands queued on the companion to be aborted</span></h4>
+MME_AbortCommand should be capabable of aborting commands that have been queued
+on the companion but not yet executed. This is not the case. Even worse
+MME_AbortCommand() incorrectly returned MME_SUCCESS when it fails to abort the
+command.
+<p>Fixed in 3.0I2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21666">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21668">INSbl21668</a>&nbsp;<span class=bugOpen>The copy out rules in install.mak perform unconditional copies</span></h4>
+Most of (but not all) of the copy out rules in install.mak unconditionally copy
+the built libraries and other binaries in the target distribution.
+<p>
+This will mess up timestamps (objects will be stamped with the copy time not the
+actual build time) and also poses problems when checking in the result of
+audited builds.
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21668">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21671">INSbl21671</a>&nbsp;<span class=bugVer>MME_GetTransformerCapability is not yet implemented</span></h4>
+Most calls to MME_GetTransformerCapability incorrectly return
+MME_UNKNOWN_TRANSFORMER. This is probably due to the fact the implementation of
+MME_GetTransformerCapability if commented out and it always returns
+MME_UNKNOWN_TRANSFORMER.
+<p>Fixed in 3.0I2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21671">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21673">INSbl21673</a>&nbsp;<span class=bugVer>SimpleTest_AbortCommand should not return MME_SUCCESS</span></h4>
+The getstart example contains an example transformer, simple_test. The
+implementation of abort command in this example is incorrect. The abort function
+should only return MME_SUCCESS if the abort has taken place and the command will
+not be executed. It a transformer does not support aborting in-flight transforms
+it must report MME_INVALID_ARGUMENT.
+<p>Fixed in 3.0I2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21673">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21675">INSbl21675</a>&nbsp;<span class=bugVer>Allocated databuffers are not properly initialized</span></h4>
+When databuffers are allocated all the structure members should be initialized
+to sane values. At present all but two of these members receive undefined values.
+<p>
+All structure elements should be zeroed except StructSize, NumberOfScatterPages,
+ScatterPages_p and TotalSize.
+<p>Fixed in 3.0I2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21675">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21676">INSbl21676</a>&nbsp;<span class=bugOpen>MME_DeregisterTransport does not work on the companion</span></h4>
+The following (companion) code fails on the second assert (assuming the driver
+is already initialized):
+<div class=code>
+err&nbsp;=&nbsp;MME_RegisterTransport("shm");
+<br>assert(MME_SUCCESS&nbsp;==&nbsp;err);
+<br>
+<br>err&nbsp;=&nbsp;MME_DeregisterTransport("shm");
+<br>assert(MME_SUCCESS&nbsp;==&nbsp;err);
+<br></div>
+This is wrong!
+<p>
+Additionally MME_DeregisterTransport() ignores its argument (other than to NULL
+check it.
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21676">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21680">INSbl21680</a>&nbsp;<span class=bugVer>MME_RegisterTransformer copies pointers rather than strings.</span></h4>
+MME_RegisterTransformer() takes a string argument name. This is stored as a
+pointer rather then copied. This means the lifetime of that string must be
+identical to the lifetime of MME, this is typically the full system lifetime.
+<p>
+Ideally MME should copy this string to allow temporarily allocated strings to be
+used.
+<p>Fixed in 3.0I2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21680">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21681">INSbl21681</a>&nbsp;<span class=bugVer>NULL pointer dereference in companion's MME_DeregisterTransformer()</span></h4>
+The companion will dereference a NULL pointer when the last transformer is
+removed from the transformer list. NULL pointer dereference is obviously bad
+style and on ST40 devices causes the operating system to panic.
+<p>Fixed in 3.0I1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21681">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21718">INSbl21718</a>&nbsp;<span class=bugVer>Companion does not properly update buffers provides using MME_SEND_BUFFERS</span></h4>
+The companion code does call EMBX_UpdateObject before returned ownership of
+buffers transfered with MME_SEND_BUFFERS to the host. This will cause failure
+when the MME API is used on a copying transport.
+<p>Fixed in 3.0I2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21718">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21750">INSbl21750</a>&nbsp;<span class=bugVer>Out by one error in object registration</span></h4>
+The checked that determine whether to shadow a distributed object are out by one
+due to incorrect bounds checking. This will cause a object at the very bottom of
+the warp range to incorrectly be shadowed.
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21750">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21770">INSbl21770</a>&nbsp;<span class=bugVer>STi5528 reference config files risk the ST20 debug library dereferencing undefined pointers</span></h4>
+The reference configuration files for STi5528 (MB376) define a slave mode that
+connects to the target without a reset. Due to the way the ST20 debug libraries
+obtain state from the target that has not been reset this can cause the target
+to follow an uninitialized function pointer.
+<p>
+The impact is relatively minor once the board has booted since OS20 will
+initialize the pointer during kernel_initialize(). However this problem has been
+observed to severely impact boot reliability for systems not linked with
+-runtime os20.
+<p>Fixed in 3.0I2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21770">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21776">INSbl21776</a>&nbsp;<span class=bugVer>EMBX_OS_ContigMemFree broken on ST40</span></h4>
+As part of the development of R2.1 the implementation of EMBX_OS_ContigMemAlloc 
+was changed to warp the return pointer to the P2 region on the ST40 CPU. 
+<p>
+However the pointer passed into EMBX_OS_ContigMemFree is not warped back to P1. 
+Under ST40 Linux the bigphysmem implementation will find the pointer is out of 
+range and ignore it, resulting in only a memory leak; under OS21 the newlib 
+free implementaton is likely to corrupt the heap.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21776">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21945">INSbl21945</a>&nbsp;<span class=bugVer>Build process exports internal MME header files</span></h4>
+The only public header file in the MME distribution is mme.h. Unfortunately the
+build process is mis-configured and copies internal header files used by the MME
+implementation into the area reserved for public header files.
+<p>Fixed in 3.0B1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21945">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21951">INSbl21951</a>&nbsp;<span class=bugEnh>Allow the EMBXSHM heap to be cached</span></h4>
+Currently EMBXSHM requires its pool of shared memory to be held in uncached
+memory as a simple means to solve cache coherency problems.
+<p>
+We should be able to extract significantly more performance both for EMBXSHM
+internal accesses and for client systems such are RPC or MME.
+<p>Fixed in 3.0B1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21951">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl21979">INSbl21979</a>&nbsp;<span class=bugVer>Stack allocated semaphores and down_interruptible() do not mix very well</span></h4>
+The generated RPC stubs (and the RPC micro server) allocate semaphores on their
+stacks in order to wait for a message from another thread. Since these waits us
+down_interruptible() they can be aborted by signal delivery. Unfortunately this
+causes the memory for the semaphore to be freed whilst it is still in use by a
+different thread which can ultimately lead to kernel panic.
+<p>Fixed in 3.0B1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl21979">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl22064">INSbl22064</a>&nbsp;<span class=bugVer>Multicom's MME implementation only supports a single companion</span></h4>
+The multicom MME implementation is hard-coded to only support a single companion
+CPU.
+<p>Fixed in 3.0B1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl22064">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl22104">INSbl22104</a>&nbsp;<span class=bugVer>On Linux host, crash due to test missing for failure of memory allocate EMBX_OS_ContigMemAlloc.</span></h4>
+Problematic source: EMBX_OS_ContigMemAlloc. 
+A call to dma_cache_wback_inv() is made with the
+return value from bigphysarea_alloc_pages().
+<p>Fixed in 3.0B1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl22104">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl22226">INSbl22226</a>&nbsp;<span class=bugVer>Uncompilable code generated if the signed type specifier appears in an imported function or structure</span></h4>
+RPC incorrectly distills the signed type specifier (aliasing it to the double
+type specifier) causing uncompilable code to be emitted.
+<p>
+For example to following code will generate uncompilable stubs:
+<div class=code>
+arenas&nbsp;{
+<br>	{&nbsp;st20,&nbsp;OS_OS20,&nbsp;CPU_ST20&nbsp;},
+<br>	{&nbsp;st40,&nbsp;OS_LINUX_USER,&nbsp;CPU_ST40&nbsp;}
+<br>};
+<br>
+<br>transport&nbsp;{
+<br>	{&nbsp;st20,&nbsp;st40,&nbsp;TRANS_EMBX&nbsp;}
+<br>};
+<br>
+<br>
+<br>import&nbsp;{
+<br>	{&nbsp;signedchar,&nbsp;st40,&nbsp;st20&nbsp;}
+<br>};
+<br>
+<br>void&nbsp;signedchar(signed&nbsp;char&nbsp;c);
+<br></div>
+<p>Fixed in 2.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl22226">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl22227">INSbl22227</a>&nbsp;<span class=bugVer>Uncompilable code generated when imported functions (or structures) contain anonymous unions</span></h4>
+When an anonymous union is passed via RPC the generator attempts to include the
+enumeration tag in the generated code, unfortunately anonymous enumerations do
+not have meeningful tags resulting in uncompilable code.
+<p>
+For example:
+<div class=code>
+arenas&nbsp;{
+<br>	{&nbsp;st20,&nbsp;OS_OS20,&nbsp;CPU_ST20&nbsp;},
+<br>	{&nbsp;st40,&nbsp;OS_LINUX_USER,&nbsp;CPU_ST40&nbsp;}
+<br>};
+<br>
+<br>transport&nbsp;{
+<br>	{&nbsp;st20,&nbsp;st40,&nbsp;TRANS_EMBX&nbsp;}
+<br>};
+<br>
+<br>
+<br>import&nbsp;{
+<br>	{&nbsp;anonenum0,&nbsp;st40,&nbsp;st20&nbsp;}
+<br>	{&nbsp;anonenum1,&nbsp;st40,&nbsp;st20&nbsp;}
+<br>};
+<br>typedef&nbsp;enum&nbsp;{
+<br>	ZERO,&nbsp;ONE,&nbsp;TWO
+<br>}&nbsp;INTEGERS;
+<br>
+<br>void&nbsp;anonenum0(INTEGERS&nbsp;i);
+<br>void&nbsp;anonenum1(INTEGERS&nbsp;i);
+<br></div>
+<p>Fixed in 2.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl22227">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl22228">INSbl22228</a>&nbsp;<span class=bugVer>SEGV in strpcgen when unions are passed in imported functions.</span></h4>
+strpcgen makes an illegal memory access (NULL pointer deref.) when generating
+code to pass a union via RPC. Note that it is an error to attempt to passed a
+union via RPC, however this should cause the host tool to issue an error rather
+than failing.
+<p>
+For example:
+<div class=code>
+arenas&nbsp;{
+<br>	{&nbsp;st20,&nbsp;OS_OS20,&nbsp;CPU_ST20&nbsp;},
+<br>	{&nbsp;st40,&nbsp;OS_LINUX_USER,&nbsp;CPU_ST40&nbsp;}
+<br>};
+<br>
+<br>transport&nbsp;{
+<br>	{&nbsp;st20,&nbsp;st40,&nbsp;TRANS_EMBX&nbsp;}
+<br>};
+<br>
+<br>
+<br>import&nbsp;{
+<br>	{&nbsp;oddball,&nbsp;st40,&nbsp;st20&nbsp;}
+<br>};
+<br>
+<br>typedef&nbsp;union&nbsp;named
+<br>{
+<br>	char&nbsp;a;
+<br>}&nbsp;named;
+<br>
+<br>named&nbsp;*oddball(void);
+<br></div>
+<p>Fixed in 2.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl22228">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl22514">INSbl22514</a>&nbsp;<span class=bugVer>Local transformer priorities not honoured on Linux</span></h4>
+The transformer priority is not honoured for local transformers
+on SHLinux. This is noted in the API test by disabling the 
+relevent test.
+<p>
+A fix is dependent on providing an API to manage thread aspects.
+It appears that round robin or fifo (SCHED_RR, SCHED_FIFO)
+is required to be qable to select priorities other than 0 (the
+lowest).
+<p>Fixed in 3.2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl22514">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl22676">INSbl22676</a>&nbsp;<span class=bugVer>Problems handling function pointers</span></h4>
+The following test case generates uncompilable code for direct_register. This
+appears to be due to accidentally printing the (*cb) to the console rather than
+the generated code when declaring the function pointer.
+<p>
+/*
+ * cb.h
+ *
+ * Test case showing incorrect code generation when callbacks are used directly
+ */
+<p>
+arenas {
+        { a, OS_LINUX_USER, CPU_ST40 },
+        { b, OS_LINUX_USER, CPU_ST40 }
+};
+<p>
+transport {
+        { a, b, TRANS_EMBX }
+};
+<p>
+typedef int (*cb_ptr_t)(void *p);
+void cb_ptr_register1(cb_ptr_t cb);
+void cb_ptr_register2(cb_ptr_t cb);
+<p>
+typedef int cb_fn_t(void *p);
+void cb_fn_register1(cb_fn_t *cb);
+void cb_fn_register2(cb_fn_t *cb);
+<p>
+void direct_register1(int (*cb)(void *p));
+void direct_register2(int (*cb)(void *p));
+<p>
+import {
+        { cb_ptr_register1, a, b },
+        { cb_ptr_register2, b, a },
+        { cb_fn_register1, a, b },
+        { cb_fn_register2, b, a },
+        { direct_register1, a, b }
+        { direct_register2, b, a }
+};
+<p>Fixed in 3.0B1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl22676">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl22726">INSbl22726</a>&nbsp;<span class=bugVer>On Linux, additional info in MME_Command_t is not transported to and from companion</span></h4>
+The AdditionalInfo_p (user data) associated with a command is not transported
+to the companion or back to the host.
+<p>
+It turns out that the tests pass nontheless because 
+kernel mode on SH4 can access user space directly without having
+to explictly copy to and from user mode.
+<p>
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl22726">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl22773">INSbl22773</a>&nbsp;<span class=bugVer>MME Linux user mode does not have access to kernel mode local transformers</span></h4>
+Early drafts of the user manual stated:
+'A local transformer registered in kernel space cannot be instantiated from a
+user application.'
+<p>
+This is (incorrectly) documenting buggy behavior. User space applications are
+required to use kernel space local transformers. This is a means user space
+applications can use to operator local hardware transformers.
+<p>Fixed in 3.0B1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl22773">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl22905">INSbl22905</a>&nbsp;<span class=bugOpen>EMBX transport/object test fails when using embxshmc library</span></h4>
+The EMBX transport/object test fails when using the embxshmc library
+which enables caches on the EMBX heap.
+<p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl22905">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl22925">INSbl22925</a>&nbsp;<span class=bugVer>Examples do not appear to support mb392</span></h4>
+The examples do not appear to work on ST220-EVAL (MB392).
+<p>
+<div class=code>
++++&nbsp;Compile&nbsp;ST220&nbsp;source&nbsp;[companion.c].&nbsp;+++
+<br>st200cc&nbsp;-c&nbsp;-mruntime=os21&nbsp;-D__OS21__&nbsp;-D__ST200__&nbsp;-D__ST220__&nbsp;&nbsp;-Os&nbsp;&nbsp;-pedantic
+<br>-ansi&nbsp;-Wall&nbsp;-DMB392&nbsp;-I../../harness&nbsp;&nbsp;-I../../../include&nbsp;&nbsp;companion.c&nbsp;-o
+<br>obj/os21/st220/companion.o
+<br>In&nbsp;file&nbsp;included&nbsp;from&nbsp;companion.c:11:
+<br>../../harness/harness.h:38:2:&nbsp;#error&nbsp;Unknown&nbsp;board/platform
+<br></div>
+<p>
+In fact the examples do work, but they must be compiled for STm8000-Demo (MB379)
+instead.
+<p>
+The harness should be corrected so eliminate this confusion.
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl22925">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl22927">INSbl22927</a>&nbsp;<span class=bugOpen>MME getstart example reports an error when closing down on MB392</span></h4>
+When running the MME getstart example on the ST220-EVAL (MB392) then the
+following error is emitted by the ST220.
+<p>
+<div class=code>
+ERROR:&nbsp;cannot&nbsp;terminate&nbsp;the&nbsp;MME&nbsp;API&nbsp;(1)
+<br></div>
+<p>
+Although the test runs correctly and the remote mixing takes place as expected
+the MME_Term() function is incorrectly reporting that the driver is
+uninitialized during shutdown.
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl22927">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl23034">INSbl23034</a>&nbsp;<span class=bugVer>Cygwin build fails if RPC_ROOT has spaces in it</span></h4>
+There is a problem with the top level makefile for multicom when you run with
+cygwin with spaces in the directory
+<p>
+A potential fix is:
+<p>
+RPC_ROOT = $(shell $(PWD) | sed -e 's/ /\\ /g')
+<p>
+But this does not work on Windows without Cygwin. The generic.mak makefile in
+the example directory will also need to be modified.
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl23034">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl23106">INSbl23106</a>&nbsp;<span class=bugEnh>Support ST231 core in Multicom - build system and replacement of dpu_config</span></h4>
+The ST231 core needs supporting: in the build system and changes
+to dpu_config.
+<p>
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl23106">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl23110">INSbl23110</a>&nbsp;<span class=bugVer>Failure to free kernel memory used for user parameters in MME_SendCommand</span></h4>
+On SHLinux space in the kernel is allocated in which a copy of the 
+user paramters is made. After the command completes, this space is
+not deallocated.
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl23110">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl23170">INSbl23170</a>&nbsp;<span class=bugVer>Application using remote transformers cannot be debugged in Linux user mode</span></h4>
+Due to poor signal handling in the MME kernel module it is impossible to debug
+remote transformers.
+<p>
+There is a user thread blocked in ioctl() waiting for a callback event. When 
+any
+thread within the process hits a breakpoint a signal is sent to all threads,
+including the callback thread, causing the ioctl() to unblock and leave the
+kernel. Unfortunately the return code is mis-managed (ENOTTY rather than EINTR)
+causing the user library to terminate the callback thread rather than simply
+issuing the ioctl() again.
+<p>
+A fix has put in place for R3.0.4 but a test has not been implemented
+so this bug cannot be verified.
+<p>
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl23170">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl23178">INSbl23178</a>&nbsp;<span class=bugVer>On Linux fails to handle scatter pages that do not start at the beginning of the allocated buffer</span></h4>
+If a buffer has been allocated with MME_AllocDataBuffer and an arbitraty
+address in that buffer used to synthesize a 'sub' scatter page
+MME_SendCommand fails to compute and handle the physical address of 
+that sub-page correctly.
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl23178">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl23335">INSbl23335</a>&nbsp;<span class=bugVer>Local transformer's terminate entrypoint not called on termination</span></h4>
+A local transformer's terminate entrypoint is not called on termination -
+making it diffuclt to deallocate allocated resources and deinit hardware.
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl23335">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl23423">INSbl23423</a>&nbsp;<span class=bugOpen>If app terminates resources such as data buffers and companion transformer threads are not released</span></h4>
+On SHLinux if user process terminates resources such as data buffers and 
+companion transformer threads are not released
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl23423">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl23505">INSbl23505</a>&nbsp;<span class=bugEnh>Relax buffer rules on SH Linux to allow contiguous buffers not allocated with MME_AllocateDataBuffer</span></h4>
+On SHLinux user mode, only buffers allocated with MME_AllocateDataBuffer
+may be used.
+<p>
+Relax these rules on to allow contiguous buffers not allocated with 
+MME_AllocateDataBuffer (e.g. allocated by a driver such as V4L2)
+to be used.
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl23505">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl23529">INSbl23529</a>&nbsp;<span class=bugVer>In SH Linux kernel mode there is a host leak when instantiating and terminating a remote transformer</span></h4>
+When using the MME api from SH Linux kernel mode there is a host leak 
+when instantiating and terminating a remote transformer, without
+doing any other operations with the transformer such as sending parameters
+or commands.
+<p>
+Things work for 500 instatiate/terminate iterations and fail for 1000.
+<p>
+It appears threads are not being cleared up - after 500 iterations
+'ps -A' lists a large number of threads and these ids are also seen in
+/proc/... but appear to be stale when 'cat'-ed.
+<p>Fixed in 3.1.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl23529">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl23664">INSbl23664</a>&nbsp;<span class=bugVer>Interrupts can interfere with EMBXSHM_receiveNotification</span></h4>
+EMBXSHM_receiveNotification() was originally writen without any locking since it
+was only ever called from interrupt. It was later modified to be called as an
+interrupt service thread (IST) with the mailbox interrupt masked.
+<p>
+Great care was taken to make it impossible to re-enter
+EMBXSHM_receiveNotification() but this alone was not sufficient to assure
+thread-safety! A timeslice, timer expiry or signal from interrupt can cause the
+IST to be deschedule violating its atomicity assumptions.
+<p>
+This bug will manifest itself as corruption of an port queue, causing unexpected
+behavior such as messages being lost or received out-of-order.
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl23664">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl23667">INSbl23667</a>&nbsp;<span class=bugVer>MME's cache management is not well matched to that of EMBXSHMC</span></h4>
+EMBXSHMC's cache safety semantic is based entirely on the basis that it is safe
+for either CPU to maintain clean but incoherent copies of data in their caches
+for very long periods of time. For this reason before any memory changes
+ownership the receiving CPU will purge their cache. On transmission the CPU
+*may* choose to merely flush their cache since if they ever take ownership of
+memory again they will purge their caches on receipt. This semantic is selected
+in part because it is a good fit for the complexities of speculation on ST200
+devices.
+<p>
+Sadly MME does not follow the same semantic assuming that data is entirely
+purged from the cache on transmission and therefore not purging on receipt. This
+semantic is incorrect on parts with speculation. It is also incorrect because
+memory allocated from the shared heap is not guaranteed to be fully coherent
+(though it is guaranteed not to be dirty). MME optimized data paths (that bypass
+EMBX object based buffer transmission) do not respect the possibility that
+recently allocated memory may be incoherent allowing transformations to act upon
+stale data.
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl23667">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl23679">INSbl23679</a>&nbsp;<span class=bugVer>Cannot use linux user space and remote transformers concurrently</span></h4>
+On SH Linux the MME getstart example instantiates a user space transformer and 
+a remote transformer concurrently.
+<p>
+The local is instantiated and used and then the remote instantiated.
+When a call to MME_AllocDataBuffer for the latter is made, 
+the error MME_INVALID_HANDLE is returned.
+<p>Fixed in 3.0.4</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl23679">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl24120">INSbl24120</a>&nbsp;<span class=bugVer>RemoteTransformer_SendCommand does not release locks on its error paths</span></h4>
+The function RemoteTransformer_SendCommand() does not release the mutex it
+aquired when it exits with an error.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl24120">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl24123">INSbl24123</a>&nbsp;<span class=bugVer>warpRangeAddr is incorrectly communicated to ST231 companion processors</span></h4>
+When EMBXSHM is initializing the warp range address is passed (as a physical
+address) from the host to companion. The companion must then make this range
+addressable.
+<p>
+Unfortunately the current code to do this on ST231 is broken and fails to update
+the pointer with a virtual mapping. This ultimately causes any program based on
+EMBX_Address/EMBX_Offset to die. MME's optimised buffer passing uses these
+functions.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl24123">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl24124">INSbl24124</a>&nbsp;<span class=bugVer>Cleanup code in createTransformMessage is incorrect</span></h4>
+The cleanup code intended to cope with EMBX level failures when a transform
+message is created is broken and may cause objects to be spuriously deregistered.
+<p>
+This is due to freeing uninitialised handles - the handles should be zeroed first.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl24124">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl24971">INSbl24971</a>&nbsp;<span class=bugVer>Port name generation when searching for transformers is broken</span></h4>
+The port name generation in findTransformerWithinTransport() does not work correctly. This means that in systems with three or four CPUs MME may not correctly locate remote transformers.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl24971">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl25037">INSbl25037</a>&nbsp;<span class=bugVer>Updated scatter page meta data (e.g. BytesUsed) is not copied from kernel to userspace on command completion</span></h4>
+The scatter page structure contains various bits of meta data than can be updated
+by transformers and these should be reflected on the host at transformer
+completion. This does not work correctly in Linux user mode, not scatter page meta
+data is copied back into the user supplied scatter page structures. This means
+that BytesUsed and FlagsOut will never be modified.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl25037">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl25107">INSbl25107</a>&nbsp;<span class=bugVer>The pre-allocated buffer stack will be corrupted if the companion issues a starvation message</span></h4>
+When the companion issues a starvation message (a one-way message)
+it allocates 208 bytes for the message using EMBX_Alloc. Unfortunately
+when the message buffer is received by the host it is mistakenly assumed
+to be a buffer allocated by the host and incorrectly placed on the
+pre-allocated buffer stack.
+<p>
+Not only is this effectively a memory leak but also the implementation
+assumes that all buffers on this stack are at least 4096 bytes long leading
+buffer overflows and communication failures.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl25107">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl25234">INSbl25234</a>&nbsp;<span class=bugVer>mme.h uses __ST20__ rather than __CORE__ to determine endianness</span></h4>
+mme.h incorrectly uses the Multicom build system macro, __ST20__, to
+determine which endianness conversion macro to use.
+<p>
+This should use __CORE__ instead.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl25234">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl25346">INSbl25346</a>&nbsp;<span class=bugVer>C++ comments containing unbalances quotes cause parser error</span></h4>
+Comments of the following form cause the RPC parser to report a syntax error:
+<p>
+// don't do this
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl25346">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl25367">INSbl25367</a>&nbsp;<span class=bugVer>Cached memory cannot be safely transfered from across the Linux kernel interface</span></h4>
+The local test fails intermitantly on MB411 platforms running usermode test. The local test consists of a kernel resident transformer and in this case it is managed by a test program running in user mode.
+<p>
+The problem appears to be due to the cache aliasing inherent in most SH4 virtual memory managers.
+<p>
+For EMBXSHM this is generally not a problem since all memory is allocated uncached anyway.
+<p>
+For local transformers (and presumably EMBXSHMC) the problem can be successfully worked around by passing MME_ALLOCATE_UNCACHED to MME_AllocDataBuffer() this is likely to degrade the performance of code that uses the buffers.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl25367">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl25388">INSbl25388</a>&nbsp;<span class=bugVer>MME_TermTransformer takes a very long time to complete</span></h4>
+It currently takes more than 120ms to terminate an MME transformer. This is unacceptably long (would increase perceivable delay on channel switch etc).
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl25388">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl25507">INSbl25507</a>&nbsp;<span class=bugVer>Switch from using kernel_thread() to kthread_run()</span></h4>
+Currently all EMBX and MME threads inside the Linux kernel are created using
+kernel_thread(). This is incorrect since we don't know the calling context
+that the EMBX/MME functions will be called from and kernel_thread() can only
+be (safely) called from other kernel threads (not from user threads that have
+entered the kernel via a system call).
+<p>
+All instances of kernel_thread() should be replaced by kthread_run(). This also
+allows us to fix the races (potential use after free) during thread close down.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl25507">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl25509">INSbl25509</a>&nbsp;<span class=bugVer>Kernels with CONFIG_DEBUG_SLAB enabled cause the MME API test to fail</span></h4>
+When the kernel is compiled with CONFIG_DEBUG_SLAB then the API test fails because the contents of MME_GetTransformerCapability()'s TransformerInfo_p has been corrupted.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl25509">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl25570">INSbl25570</a>&nbsp;<span class=bugVer>Memory leak in MME_GetTransformerCapability</span></h4>
+Every call to MME_GetTransformerCapability() causes a 4K memory leak from the EMBX shared heap. This ultimately knocks the system stone dead.
+<p>Fixed in 3.1.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl25570">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl26321">INSbl26321</a>&nbsp;<span class=bugEnh>Port Multicom to STLinux-2.2</span></h4>
+Multicom 3.1.1 does not work without modification on STLinux-2.2. STLinux-2.2
+uses a new kernel, linux-2.6.17.8 and a new compiler, gcc-4.1.1. Both these
+requires require specific changes to multicom.
+<p>Fixed in 3.1.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl26321">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl26526">INSbl26526</a>&nbsp;<span class=bugVer>Memory leak in MME_FreeDataBuffer (Linux user mode only)</span></h4>
+There is a memory leak in the MME_FreeDataBuffer() proxy function used by
+Linux user mode applications. Unfortunately, although the memory buffer is
+properly freed, the associated buffer descriptor is not.
+<p>Fixed in 3.1.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl26526">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl26569">INSbl26569</a>&nbsp;<span class=bugEnh>Provide a dynamically linked libmme_host for Linux user mode</span></h4>
+For similicity of maintainance and to facilitate the upgrade of ST supplied
+components libmme_host should be provided as a DSO (shared library) rather than
+as a static library.
+<p>
+This is also a requirement of various middleware companies.
+<p>Fixed in 3.1.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl26569">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl26688">INSbl26688</a>&nbsp;<span class=bugOpen>MME receiver process terminates on receipt of a badly formed message</span></h4>
+After sending abort command to Encoder transformer, host receives callback for
+all the commands. After that an extra message from LX is coming for which
+"event.data)[0]" field is 0. This causes termination of receiver thread on
+host and therefore Term command which is send after abort commands is never
+returned. 
+<p>
+Specifically it looks like Encoder transformer has reported completing the same
+command twice. This is illegal and causes Multicom, sadly many tranformer
+authors seem to make the same mistake and the failure mode is difficult to
+diagnose.
+<p>
+Typically this is caused when the transformers abort command calls
+MME_NotifyHost() for the currently executing MME_TRANSFORM command.
+Unless the transformer used MME_TRANSFORM_DEFERRED to defer work to
+a hardware accelerator (or similar) then the abort command shouldn't
+do this since it releases the command structure that the execution
+loop will still be accessing creating a use after free bug. In this
+case abort should raise a flag to mark the command as due for abortion
+and wake the execution thread if it is starving.
+<p>
+One of our users has quite reasonablly suggested that it would be better,
+in case of invalid (unexpected) message you just put a warning print and
+ignore the message for release mode build of multicom rather than failing
+catatrophically.
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl26688">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl26886">INSbl26886</a>&nbsp;<span class=bugEnh>Include support for OS21/ST40 32-bit address spaces</span></h4>
+Think hard about how to support embxshm within 32-bit address spaces (especially
+those without large uncached mappings). This first motivation is OS21/ST40 but
+there are similar problems pending on OS21/ST200 and Linux/ST40 (where we
+currently rely on the ST40's P2 area.
+<p>
+Specically it's probably time to stop using the pointer warp mechanism (simple
+addition) to perform virtual to physical and physical to virtual translation.
+<p>
+This can probably be achieved by modifying the BUS_TO_LOCAL() and LOCAL_TO_BUS()
+macros.
+<p>
+<p>Fixed in 3.2.1</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl26886">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl26887">INSbl26887</a>&nbsp;<span class=bugEnh>Add support for the STi7200's five communicating processors</span></h4>
+The STi7200 has five processors intended to communicate using multicom. At present
+EMBXSHM support only four processors per transport.
+<p>
+This *should* not be a problem since EMBXSHM can be multiply instanciated (e.g.
+host + two audio processors, host + two video processors). Unfortunately the
+discovery algorithms implemented by EMBXSHM_mailbox_factory do not lend themselves
+well to multiple instanciation (might synchronize with the wrong processor).
+<p>
+The 'SHxx' token exchanges should be replaced with a hash of the transport name
+and the processor ID.
+<p>
+Also be aware that some customers may want to extend EMBXSHM to support more than
+four processors (change the MAX_CPUS constant). This has not yet been discussed
+with anyone.
+<p>Fixed in 3.1.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl26887">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl28615">INSbl28615</a>&nbsp;<span class=bugVer>Incorrect Information in Examples\Harness Readme</span></h4>
+The readme file in the examples harness directory (i.e. multicom-3.2.1\examples\harness\README)
+lists some platforms as supported when they are not in this release.
+<p>Fixed in 3.2.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl28615">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl28635">INSbl28635</a>&nbsp;<span class=bugVer>32-bit: Virtual to physical translation error under Linux when supplied with P3 segment address</span></h4>
+From Bugzilla #3811
+<p>
+Multicom fails to correctly translate VMALLOC i.e. P3 segment addresses to physical.
+<p>
+    virtToPhys: addr c0440b00 -&gt; 0x43f85000 : 0
+    Zero Copy: addr c0440b00 paddr 0x43f85000 mode 18
+<p>
+<p>Fixed in 3.2.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl28635">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl28636">INSbl28636</a>&nbsp;<span class=bugVer>32-bit: Incorrect cache mode detected when a P3 segment address is passed in under Linux</span></h4>
+From Bugzilla #3811
+<p>
+These VMALLOC/P3 buffers are being returned with an EMBX_INCOHERENT_MEMORY return code (18)
+<p>
+    virtToPhys: addr c03a0000 -&gt; 0x43fa4000 : 0
+    Zero Copy: addr c03a0000 paddr 0x43fa4000 mode 18
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>Fixed in 3.2.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl28636">Contents</a></font></p>
+<hr size=2><h4><a name="INSbl28681">INSbl28681</a>&nbsp;<span class=bugVer>32-bit OS21 host support requires Multicom to be built with a V3.x OS21 based toolkit</span></h4>
+From Bugzilla #3822
+<p>
+When running in 32-bit (SE) mode on an mb519 using the 4.1.1 toolkit to compile
+the application but using the 3.1.1 compiled multicom libraries we get an error
+when initialising the LX. It appears from the logs that an incorrect physical
+address is being passed to the LX.
+<p>
+<p>Fixed in 3.2.2</p>
+<p><font face="Arial, Helvetica, sans-serif" size=2><a href="#Go_Top" title="Top of page">[Page Top]</a><a href="#l_INSbl28681">Contents</a></font></p>
+<br>
+<br>
+</body>
+</html>

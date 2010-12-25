@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# Check what u-boot thinks has happend
+
+nboots=`fw_printenv nboots`
+
+# reset nboots to say we are ok
+
+if [ -n "$nboots" ] ; then
+  echo "u-boot set $nboots"
+  fw_setenv nboots 0
+else 
+  echo "u-boot nboots not set"
+fi

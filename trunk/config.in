@@ -1,0 +1,107 @@
+###
+### Configuration file used for downloading the repos, 
+### building the kernel image and all the modules, and
+### creating an NFS-ready target fs.
+###
+
+VER=1.0.1
+
+###
+### Toolchain path
+###
+export PATH:=/opt/STM/STLinux-2.3/devkit/sh4/bin:$(PATH)
+
+###
+### Top level paths
+###
+ROOT_DIR=$(PWD)
+REPO_URL=https://qboxhd.svn.sourceforge.net/svnroot/qboxhd
+REPO_URL_DUO=http://192.168.0.83
+
+###
+### Repositories URLs
+###
+REPO_KERNEL=$(REPO_URL)/linux-sh4-kernel/trunk
+REPO_DRIVERS=$(REPO_URL)/drivers
+REPO_APPS=$(REPO_URL)/apps
+REPO_E2=$(REPO_URL)/e2-0.2/e2-0.2/branches/enigma_tdt.duolabs
+REPO_UBOOT=$(REPO_URL)/uboot/trunk
+REPO_GENESIS=$(REPO_URL)/genesis/trunk
+REPO_ROOTFS_QBOXHD=$(REPO_URL)/rootfs/branches/qboxhd_tdt
+REPO_ROOTFS_QBOXHD_MINI=$(REPO_URL)/rootfs/branches/qboxhd_mini_tdt
+
+###
+### tftpboot dir where the kernel image is downloaded
+###
+TFTPBOOT=/tftpboot
+
+###
+### Absolute path to root filesystem
+###
+ROOTFS=$(ROOT_DIR)/rootfs
+
+###
+### Absolute path to NFS root filesystem
+###
+ROOTFS_NFS=$(ROOT_DIR)/nfs
+
+################################################################################
+###
+### 				WARNING!!!
+### Normally you don't need to edit under this line
+###
+################################################################################
+
+###
+### Source paths
+###
+SRC_KERNEL=$(ROOT_DIR)/src/kernel
+SRC_DRIVERS=$(ROOT_DIR)/src/drivers
+SRC_APPS=$(ROOT_DIR)/src/apps
+SRC_E2=$(ROOT_DIR)/src/apps/enigma2
+SRC_UBOOT=$(ROOT_DIR)/src/uboot
+SRC_GENESIS=$(ROOT_DIR)/src/genesis
+SRC_INC=$(SRC_DRIVERS)/include
+SRC_STMFB=$(SRC_DRIVERS)/stmfb
+SRC_MULTICOM=$(SRC_DRIVERS)/multicom
+SRC_PLAYER2=$(SRC_DRIVERS)/player2
+SRC_PTI=$(SRC_DRIVERS)/pti
+SRC_FE=$(SRC_DRIVERS)/frontends/
+SRC_AVS=$(SRC_DRIVERS)/avs
+SRC_E2PROC=$(SRC_DRIVERS)/e2_proc
+SRC_LCD=$(SRC_DRIVERS)/lcd
+SRC_LPC=$(SRC_DRIVERS)/lpc
+SRC_FPANEL=$(SRC_DRIVERS)/fpanel
+SRC_SMARTCARD=$(SRC_DRIVERS)/smartcard
+SRC_SCART=$(SRC_DRIVERS)/scart
+SRC_STARCI2WIN=$(SRC_DRIVERS)/starci2win
+SRC_QBOXHDGENERIC=$(SRC_DRIVERS)/qboxhd_generic
+SRC_QBOXHDINFO=$(SRC_DRIVERS)/qboxhdinfo_proc
+SRC_DELAYER=$(SRC_DRIVERS)/fpga/delayer
+SRC_PROTOCOL=$(SRC_DRIVERS)/protocol
+
+###
+### Build paths
+###
+BUILD_DIR=$(ROOT_DIR)/build
+BUILD_KERNEL=$(BUILD_DIR)/$(BOARD)/kernel
+
+BUILD_STMFB=$(BUILD_DIR)/$(BOARD)/stmfb
+BUILD_MULTICOM=$(BUILD_DIR)/$(BOARD)/multicom
+BUILD_PLAYER2=$(BUILD_DIR)/$(BOARD)/player2
+BUILD_PTI=$(BUILD_DIR)/$(BOARD)/pti
+BUILD_FE=$(BUILD_DIR)/$(BOARD)/frontends
+BUILD_AVS=$(BUILD_DIR)/$(BOARD)/avs
+BUILD_E2PROC=$(BUILD_DIR)/$(BOARD)/e2_proc
+BUILD_LCD=$(BUILD_DIR)/$(BOARD)/lcd
+BUILD_LPC=$(BUILD_DIR)/$(BOARD)/lpc
+BUILD_FPANEL=$(BUILD_DIR)/$(BOARD)/fpanel
+BUILD_SMARTCARD=$(BUILD_DIR)/$(BOARD)/smartcard
+BUILD_SCART=$(BUILD_DIR)/$(BOARD)/scart
+BUILD_STARCI2WIN=$(BUILD_DIR)/$(BOARD)/starci2win
+BUILD_QBOXHDGENERIC=$(BUILD_DIR)/$(BOARD)/qboxhd_generic
+BUILD_QBOXHDINFO=$(BUILD_DIR)/$(BOARD)/qboxhdinfo_proc
+BUILD_DELAYER=$(BUILD_DIR)/$(BOARD)/delayer
+BUILD_PROTOCOL=$(BUILD_DIR)/$(BOARD)/protocol
+
+

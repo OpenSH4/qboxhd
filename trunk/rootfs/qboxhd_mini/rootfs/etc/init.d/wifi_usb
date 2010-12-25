@@ -1,0 +1,155 @@
+#!/bin/sh
+#
+# /etc/init.d/wifi_usb: insmod/rmmod USB wireless network adapters
+#		Start/stop USB wireless network resources.
+#		Only one iface wlan0 is allowed.
+#
+# Copyright (c) 2010 Duolabs Spa
+#
+# Author: pedro@duolabs.com
+#
+
+RETVAL=0
+ID="USB wireless network"
+CONFIG_FILE="/etc/wifi_usb.dat"
+
+init() 
+{
+	if [ "$DRIVER" == ""]; then
+		echo "$ID: FATAL: No driver was given as argument!"
+		exit
+	fi
+
+	wifi_in_use=$(cat /tmp/.wifi_in_use)
+	if [ "$wifi_in_use" == "1" ]; then
+		echo "$ID: FATAL: Only one usb wireless interface can exist!"
+		exit 1
+	fi
+
+	if [ "$DRIVER" == "rt73" ]; then
+		insmod /lib/modules/`uname -r`/rt73.ko
+	elif [ "$DRIVER" == "zd1211rw" ]; then
+		insmod /lib/modules/`uname -r`/zd1211rw.ko
+		/usr/sbin/ifrename -i eth1 -n wlan0
+	fi
+
+	echo 1 > /tmp/.wifi_in_use
+}
+
+start()
+{
+	if [ ! -e /sys/class/net/wlan0 ]; then
+		echo "$ID: FATAL: No wireless network found!"
+		exit 1
+	fi
+
+	echo "$ID: driver $DRIVER"
+
+	if [ "$DRIVER" == "rt73" ]; then
+
+		if [ ! -e $CONFIG_FILE ]; then
+			echo "$ID: FATAL: Configuration file $CONFIG_FILE does not exist!"
+			exit 1
+		fi
+
+		WIFI_CONFIG=$(cat $CONFIG_FILE)
+
+		ssid=$(echo $WIFI_CONFIG | sed 's/SSID\=\([_0-9a-zA-Z-]*\).*/\1/')
+		authmode=$(echo $WIFI_CONFIG | sed 's/.*AuthMode\=\([A-Z]*\).*/\1/')
+		encryptype=$(echo $WIFI_CONFIG | sed 's/.*EncrypType\=\([A-Z]*\).*/\1/')
+
+		# WPA-PSK/WPA2-PSK
+		if [ "$authmode" == "WPAPSK" -o "$authmode" == "WPA2PSK" ]; then
+			wpapsk=$(echo $WIFI_CONFIG | sed 's/.*WPAPSK\=\([_0-9a-zA-Z-]*\).*/\1/')
+
+			iwconfig wlan0 mode managed
+			#echo "iwconfig wlan0 mode managed"
+			iwconfig wlan0 essid "$ssid"
+			#echo "iwconfig wlan0 essid \"$ssid\""
+			iwpriv wlan0 set AuthMode=$authmode
+			#echo "iwpriv wlan0 set AuthMode=$authmode"
+			iwpriv wlan0 set WPAPSK="$wpapsk"
+			#echo "iwpriv wlan0 set WPAPSK=\"$wpapsk\""
+			iwpriv wlan0 set EncrypType=$encryptype
+			#echo "iwpriv wlan0 set EncrypType=$encryptype"
+
+		# WEP
+		elif [ "$authmode" == "SHARED" ]; then
+			defaultkeyid=$(echo $WIFI_CONFIG | sed 's/.*DefaultKeyID\=\([_0-9a-zA-Z-]*\).*/\1/')
+			key1type=$(echo $WIFI_CONFIG | sed 's/.*Key1Type\=\([_0-9a-zA-Z-]*\).*/\1/')
+			key1=$(echo $WIFI_CONFIG | sed 's/.*Key1\=\([_0-9a-zA-Z-]*\).*/\1/')
+			key1str=$(echo $WIFI_CONFIG | sed 's/.*Key1Str\=\([_0-9a-zA-Z-]*\).*/\1/')
+
+			iwconfig wlan0 mode managed
+			iwconfig wlan0 essid "$ssid" key "$key1"
+
+		# Disabled
+		elif [ "$authmode" == "OPEN" ]; then
+			iwconfig wlan0 mode managed
+			iwconfig wlan0 essid "$ssid" 
+
+			echo "disabled"
+		else
+			echo "$ID: FATAL: Invalid AuthMode '$authmode'"
+			exit 1
+		fi
+	fi
+
+	echo "$ID: Started..."
+}
+
+stop()
+{
+	ifconfig wlan0 down
+	echo "$ID: Stopped..."
+}
+
+halt()
+{
+	if [ "$IFACE" != "wlan0" ]; then
+		echo "$ID: FATAL: Invalid wireless interface. Only wlan0 is allowed!"
+		exit 1
+	fi
+
+	wifi_in_use=$(cat /tmp/.wifi_in_use)
+	if [ "$wifi_in_use" == "0" -o ! -e /tmp/.wifi_in_use ]; then
+		echo "$ID: FATAL: Wireless interface does not exist!"
+		exit 1
+	fi
+
+	rmmod rt73 2> /dev/null
+	rmmod zd1211rw 2> /dev/null
+
+	echo 0 > /tmp/.wifi_in_use
+}
+
+DRIVER=$2
+IFACE=$3
+
+case "$1" in
+    init)
+		init
+		;;
+    start)
+		start
+		;;
+    start_with_dhcp)
+		start
+		udhcpc -n -t 10 -p /var/run/udhcpc.wlan0.pid -i wlan0
+		;;
+    stop)
+		stop
+		;;
+    halt)
+		halt
+		;;
+    reinit)
+		halt
+		init
+		;;
+    *)
+		echo "Usage: $0 {init|halt|reinit} {driver_name} {iface_name}"
+esac
+
+exit $RETVAL
+

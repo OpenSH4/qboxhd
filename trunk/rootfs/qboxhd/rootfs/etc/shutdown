@@ -1,0 +1,9 @@
+#!/bin/sh
+# @file shutdown
+#
+# @brief Close and unmounts everything that was left open/mounted
+#        It's called from busybox's init
+#
+# Copyright (c) 2009 Duolabs S.r.l.
+#
+

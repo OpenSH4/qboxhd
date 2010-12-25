@@ -1,0 +1,151 @@
+#!/bin/sh
+#
+# /etc/init.d/networking: start/stop networking daemons.
+#
+# chkconfig: S 40 0
+#
+# Copyright (c) 2009 Duolabs Spa
+#
+
+DHCP=udhcpc
+
+usage() {
+	echo "Usage: /etc/init.d/networking {start|stop|reload|restart}"
+	exit 1
+}
+
+spoofprotect_rp_filter () {
+    # This is the best method: turn on Source Address Verification and get
+    # spoof protection on all current and future interfaces.
+    
+    if [ -e /proc/sys/net/ipv4/conf/all/rp_filter ]; then
+        for f in /proc/sys/net/ipv4/conf/*/rp_filter; do
+            echo 1 > $f
+        done
+        return 0
+    else
+        return 1
+    fi
+}
+
+spoofprotect () {
+    echo -n "Setting up IP spoofing protection: "
+    if spoofprotect_rp_filter; then
+        echo "rp_filter."
+    else
+        echo "FAILED"
+    fi
+}
+
+ip_forward () {
+    if [ -e /proc/sys/net/ipv4/ip_forward ]; then
+        echo -n "Enabling packet forwarding: "
+        echo 1 > /proc/sys/net/ipv4/ip_forward
+        echo "done."
+    fi
+}
+
+syncookies () {
+    if [ -e /proc/sys/net/ipv4/tcp_syncookies ]; then
+        echo -n "Enabling TCP/IP SYN cookies: "
+        echo 1 > /proc/sys/net/ipv4/tcp_syncookies
+        echo "done."
+    fi
+}
+
+disable_tcp_ecn () {
+    if [ -e /proc/sys/net/ipv4/tcp_ecn ]; then
+        echo -n "Disable TCP/IP Explicit Congestion Notification: "
+        echo 0 > /proc/sys/net/ipv4/tcp_ecn
+        echo "done."
+    fi
+}
+
+doopt () {
+    optname=$1
+    default=$2
+    opt=`grep "^$optname=" /etc/network/options`
+    if [ -z "$opt" ]; then
+        opt="$optname=$default"
+    fi
+    optval=${opt#$optname=}
+    if [ "$optval" = "yes" ]; then
+        eval $optname
+    fi
+}
+
+qboxhd_mini_networking() {
+	case "$1" in
+		start)
+			doopt spoofprotect yes
+			doopt syncookies no
+			doopt ip_forward no
+			doopt disable_tcp_ecn yes
+
+			echo -n "Configuring network interfaces: "
+			ifup -a
+			;;
+		stop)
+			echo -n "Deconfiguring network interfaces: "
+			killall -9 $DHCP
+			ifconfig eth0 down
+			ifdown -a
+			;;
+		restart)
+			echo -n "Restarting network interfaces: "
+			qboxhd_mini_networking stop
+			qboxhd_mini_networking start
+			echo "done."
+			;;
+		*)
+			usage
+			;;
+	esac
+}
+
+qboxhd_networking() {
+	case "$1" in
+		start)
+			doopt spoofprotect yes
+			doopt syncookies no
+			doopt ip_forward no
+			doopt disable_tcp_ecn yes
+
+			echo -n "Configuring network interfaces: "
+			ifup -a
+			;;
+		stop)
+			echo -n "Deconfiguring network interfaces: "
+			killall -9 $DHCP
+			ifconfig eth0 down
+			ifdown -a
+			;;
+		reload)
+			;;
+		force-reload)
+			$0 restart
+			;;
+		restart)
+			echo -n "Reconfiguring network interfaces: "
+			qboxhd_networking stop
+			qboxhd_networking start
+			echo "done."
+			;;
+		*)
+			usage
+			;;
+	esac
+}
+
+BOARD=$(cat /proc/stb/info/model)
+
+if [ "$BOARD" == "qboxhd-mini" ]; then
+	qboxhd_mini_networking $1
+elif [ "$BOARD" == "qboxhd" ]; then
+	qboxhd_networking $1
+else
+	usage
+fi
+
+exit 0
+

@@ -1,0 +1,74 @@
+echo Setting up uboot env
+#### sti5528eval
+set arch sh4
+set kpath sti5528eval
+set monitor_sec  1:0 
+set monitor_base 0xA0000000
+set monitor_len  0x00040000 
+set env_sec      1:1
+set env_base	 0xA0040000
+set env_len	 0x00040000
+set vm_sec    	 1:2-25
+set vm_base    	 0xa0080000
+set vm_len	 0x00600000
+set rd_sec    	 1:26-63
+set rd_base      0xa0680000
+set rd_len	 0x00980000
+set set_mtd      'set mtd mtdparts=Onboard_Flash:${monitor_len}(uboot),${env_len}(params),${vm_len}(kernel),-(fs)'
+set load_addr     84800000
+set load_addr2    85000000
+set tty    console=ttySC0,115200
+set mem    mem=128M
+######## set this if you need to set the ethernet address
+### Location of linux kernel
+set stlinux     /opt/STM/STLinux-2.0/devkit
+set uversion    stm20
+set kversion    2.6.11_stm20
+set kernelpath  ${stlinux}/kernel/kernel-${arch}-${kpath}-${kversion}
+set nfsroot     ${stlinux}/${arch}/target
+set ubootpath   ${stlinux}/u-boot/${board}-${uversion}
+### IDE disk boot config
+set rootpart   hda1
+set bootdevice 0:1  # Device & partition for disk boot 0:1
+set bootfile   /boot/vmlinux.ub
+# Auto boot options
+set bootcmd             # set up autoboot command, see examples at end
+set bootdelay 10        # auto boot delay
+######## These should not need changing
+# Varous commands for loading kernels etc
+set cpf 'era $fs; cp.b $f $t $s ; if cmp.b $f $t $s ; then echo done ; else echo COPY FAILED!; fi'  
+
+set update 'fs=$monitor_sec; f=$load_addr; t=$monitor_base s=$monitor_len; run cpf'
+
+set init-ub 'prot off $monitor_sec && run cpub && run cpvm'
+set setup-serial 'echo Installing u-boot; run sgetub && run sgetvm && run init-ub'
+set setup-nfs 'echo Installing u-boot; run getub && run getvm && run init-ub'
+
+set cpvm 'echo Copying vmlinx to flash; fs=$vm_sec; f=$vma; t=$vm_base; s=$vms; run cpf'
+set cprd 'echo Copying ramdisk image to flash; fs=$rd_sec; f=$rda; t=$rd_base; s=$rds; run cpf'
+set cpub 'echo Copying uboot to flash; fs=$monitor_sec; f=$uba; t=$monitor_base; s=$ubs; run cpf'
+
+set getub 'nfs $load_addr2 ${serverip}:${ubootpath}/u-boot.bin; set uba $load_addr2; set ubs $filesize'
+set getvm 'nfs $load_addr ${serverip}:${kernelpath}/vmlinux.ub; set vma $load_addr; set vms $filesize'
+set getrd 'nfs $load_addr ${serverip}:${kernelpath}/ramdisk.ub; set rda $load_addr; set rds $filesize'
+
+set sgetub 'echo Please send u-boot.bin; loadb $load_addr2; set uba $load_addr2; set ubs $filesize'
+set sgetvm 'echo Please send vmlinux.ub; loadb $load_addr; set vma $load_addr; set vms $filesize'
+
+# Various Linux bootargs
+
+set bootargs_ram 'run set_mtd; set bootargs ${tty} ${mem} ${mtd} ramdisk_size=16384 root=/dev/ram0 ${extra}'
+set bootargs_nfs 'run set_mtd;set bootargs ${tty} ${mem} ${mtd} root=/dev/nfs nfsroot=${nfsroot} ${ethinit} rw ip=${ipaddr}:${serverip}:${gatewayip}:${netmask}:${targetname}:eth0:off ${extra}'
+set bootargs_hda 'run set_mtd;set bootargs ${tty} ${mem} ${mtd} root=/dev/${rootpart} ro ${extra}'
+set bootargs_jffs2 'run set_mtd;set bootargs ${tty} ${mem} ${mtd} root=/dev/mtdblock3 rootfstype=jffs2'
+# Various boot commands
+set boot_ram  'run bootargs_ram; bootm $vm_base $rd_base'
+set boot_nfs  'run bootargs_nfs; bootm $vm_base'
+set boot_hda  'run bootargs_hda; bootm $vm_base'
+set boot_disk 'run bootargs_hda; diskboot $load_addr && bootm $load_addr'
+set boot_ext2 'run bootargs_hda; ext2load ide $bootdevice $load_addr $bootfile && bootm $load_addr'
+set boot_jffs2 'run bootargs_jffs2; bootm $vm_base'
+
+# Print flashorg
+
+set flashorg 'echo "u-boot...." ${monitor_base}-${monitor_len}; echo "env......." ${env_base}-${env_len}; echo "vmlinux..." ${vm_base}-${vm_len}; echo "ramdisk..." ${rd_base}-${rd_len}'

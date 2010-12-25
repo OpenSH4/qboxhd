@@ -1,0 +1,31 @@
+#
+# VMII Layer Configuration
+#
+
+menuconfig VMII
+	bool "Virtual Media Independent Interface (VMII) device support"
+
+if VMII
+
+comment "VMII Layer Configuration"
+
+config VMII_ETH
+	depends on VMII
+	tristate "VMII Ethernet generic driver"
+
+config VMII_MDIO
+	depends on VMII
+	bool "VMII MDIO generic layer"
+
+config VMII_PHY
+	depends on VMII
+	bool "VMII phy generic driver"
+
+config VMII_PHY_INTERRUPT
+	depends on VMII_PHY
+	bool "Interrupt support"
+	---help---
+	Active it to use interrupt support for vmii
+
+
+endif # VMII

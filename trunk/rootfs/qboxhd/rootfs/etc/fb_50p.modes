@@ -1,0 +1,33 @@
+
+################################################
+# SD Progressive modes
+
+mode "720x576-50"
+    # D: 27.000 MHz, H: 31.250 kHz, V: 50.000 Hz
+    geometry 720 576 720 576 16
+    timings 37037 68 12 39 5 64 5
+endmode
+
+################################################
+# HD Modes
+
+mode "1280x720-50"
+    # D: 74.250 MHz, H: 37.500 kHz, V: 50.000 Hz
+    geometry 1280 720 1280 720 16
+    timings 13468 220 440 20 5 40 5
+    hsync high
+    vsync high
+endmode
+
+# Not permits in owr chip
+#mode "1920x1080-50"
+#    # D: 148.500 MHz, H: 56.250 kHz, V: 50.000 Hz
+#    geometry 1920 1080 1920 1080 16
+#    timings 6734 148 528 35 5 44 5
+#    hsync high
+#    vsync high
+#endmode
+
+################################################
+
+

@@ -1,0 +1,10 @@
+prefix=/opt/STM/STLinux-2.3/devkit/sh4/target/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libdvbsi++
+Description: C++ parsing library for Service Information (SI) in DVB systems
+Version: 0.3.4
+Libs: -L${libdir} -ldvbsi++
+Cflags: -I${includedir}

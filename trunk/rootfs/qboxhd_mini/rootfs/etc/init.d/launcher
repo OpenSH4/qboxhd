@@ -1,0 +1,110 @@
+#!/bin/sh
+#
+# /etc/init.d/launcher: Start the processes that need to be running since we booted.
+#		  The last process to be started must be enigma2 because we block here
+#         until it exits. We check the exit code and take the correspondent action.
+#		  This script can be executed once we booted
+#
+# Copyright (c) 2009-2010 Duolabs Spa
+#
+# Author: Pedro Aguilar (pedro@duolabs.com)
+#
+
+# Processes that we launch
+BIN_PATH="/usr/local/bin"
+CAMD="2lcamd"
+E2="enigma2"
+
+BOARD=$1
+if [ "$BOARD" == "qboxhd-mini" ]; then
+    ID="QBoxHD mini"
+elif [ "$BOARD" == "qboxhd" ]; then
+    ID="QBoxHD"
+else
+    echo "********************************************************************************"
+    echo "FATAL: Unknown board '$BOARD'" 
+    exit 1
+fi
+
+
+# Start 2lcamd
+pid=$(pgrep $CAMD)
+if [ "$pid" == "" ]; then
+	echo "Starting $CAMD"
+	$BIN_PATH/$CAMD &
+	if [ "$1" == "$CAMD" ]; then
+		exit
+	fi
+else
+	if [ "$1" == "$CAMD" ]; then
+		killall -9 $CAMD
+		echo "Restarting $CAMD"
+		$BIN_PATH/$CAMD &
+		exit
+	else
+		echo "$CAMD is already running"
+	fi
+fi
+
+pid=$(pgrep $E2)
+if [ "$pid" != "" ]; then
+	echo "$E2 is already running. Exiting"
+	exit
+fi
+
+# Start and monitor enigma2
+while [[ "1" ]]
+do
+	# Start enigma2 and block here until it exits
+	echo "Starting $E2"
+	$BIN_PATH/$E2
+	ret=$?
+
+	case "$ret" in
+		0)
+			echo "$E2 exit code $ret -> error"
+			# Give the user 5s to read the green screen of death
+			sleep 5
+			;;
+		1)
+			echo "$E2 exit code $ret -> shutdown"
+
+			# If the decoder is QBoxHD mini, put it in deep standby
+			if [ "$ID" == "QBoxHD mini" ]; then
+				killall -9 $CAMD
+				sleep 3
+				sync
+				scart_mini_slimapp 0
+				echo "halt" > /proc/stb/lpc/support
+			fi
+
+			halt
+			break
+			;;
+		2)
+			echo "$E2 exit code $ret -> reboot"
+			reboot
+			break
+			;;
+		3)
+			echo "$E2 exit code $ret -> restart"
+			;;
+		5)
+			echo "$E2 exit code $ret -> python init error"
+			# Give the user 5s to read the green screen of death
+			sleep 5
+			;;
+		*)
+			echo "$E2 exit code $ret -> unknown"
+			# Give the user 5s to read the green screen of death
+			sleep 5
+			;;
+	esac
+done
+
+if [ "$ret" -lt "1" -o "$ret" -gt "2" ]; then
+	# We shouldn't be here
+	# If we arrived here for any reason, reboot
+	reboot
+fi
+

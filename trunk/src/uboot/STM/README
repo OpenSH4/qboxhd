@@ -1,0 +1,99 @@
+This directory contains some useful scripts for building and installing u-boot:
+
+Build Scripts
+=============
+
+./STM/builduboot <arch>
+
+  builds all the variants for an architecture (sh4 or st200).
+  The built files will be placed in BUILT/u-boot/<board>-stm20
+
+./STM/buildenv <arch>
+  builds standard environments for installing onto u-boot targets
+  The built files will be placed in BUILT/u-boot/<board>-stm20.
+  Each board directory will contain a text version and a u-boot image file. 
+
+./STM/mkenv <board> <outfile> 
+  Writes a standard environment for board to outfile.
+
+./STM/buildlinux <arch>
+  Runs mkimage on all the kernel binaries found in the distribution for arch.
+  The u-boot image files are placed in BUILT/kernel
+
+./STM/mklinux -t <arch> -v <vmlinux> -n <image name> -t <tagefile>
+  Wrapper script for creating a u-boot Linux image file. 
+
+
+kscript
+=======
+
+This is a set of kermit functions for setting up u-boot on a board:
+
+sendcmd <cmd>
+  - send a single command <cmd> to u-boot via serial port
+sendfile <file>
+  - send a script file to u-boot via u-boot
+sendub
+  - copy u-boot.bin from current directory to target via serial port 
+    and copy it to flash 
+sendenv
+  - send the env script file from installed u-boot target board directory and save to flash.
+serialsetupub
+  - send, via serial port, both u-boot and linux kernel from installed u-boot directory and save to flash.
+  - If "setupenv" exists in local directory then will send that as well.
+
+netsetupub
+  - send, via network, both u-boot and linux kernel from installed u-boot directory and save to flash.
+  - If "setupenv" exists in local directory then will send that as well.
+
+Init scripts
+============
+
+There are 2 supporting shell scripts
+
+setupub and netsetupub which call kermit to load u-boot using the kscript functions described above.
+
+
+Standard environment
+====================
+
+This contains a number of scripts for managing u-boot and kernel images:
+
+update
+  copies the u-boot image from $load_addr to flash
+
+setup-serial
+  Loads u-boot and Linux kernel image into flash via serial port
+setup-nfs 
+  Loads u-boot and Linux kernel image into flash via network
+
+getub
+  Get u-boot image, via nfs, form u-boot directory on server into memory
+getvm 
+  Get kernel image, via nfs, from kernel directory on server into memory 
+getrd
+  Get ramdisk image, via nfs, from kernel directory on server into memory
+
+sgetub 
+  Get u-boot image, via serial, form u-boot directory on server into memory
+sgetvm
+  Get kernel image, via serial, from kernel directory on server into memory 
+
+cpub 
+  Copy u-boot image downloaded into memory using getub/sgetub into flash
+cpvm 
+  Copy kernel image downloaded into memory using getvm/sgetvm into flash
+cprd
+  Copy ramdisk image downloaded into memory using getvm/sgetvm into flash
+
+boot_ram
+  Boot Linux kernel from flash using ramdisk filesystem image
+set boot_nfs
+  Boot Linux kernel from flash using nfs mounted filesystem
+set boot_hda  
+  Boot Linux kernel from flash using disk mounted filesystem
+set boot_disk 
+  Boot Linux kernel from dedicated disk partition using disk mounted filesystem
+set boot_ext2 
+  Boot Linux kernel from ext2 disk partition using disk mounted filesystem
+

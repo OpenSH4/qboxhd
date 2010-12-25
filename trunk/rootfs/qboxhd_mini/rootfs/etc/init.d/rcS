@@ -1,0 +1,136 @@
+#!/bin/sh
+#
+# /etc/init.d/rcS: Mounts pseudo-filesystems like /proc
+#	   and starts basic services: udev, syslogd, telnet, etc
+#
+# Copyright (c) 2009 Duolabs Spa
+#
+# Author: Pedro Aguilar (pedro@duolabs.com)
+#
+
+# Mount /tmp, /var/tun and /var/log to be tmpfs
+/bin/mount -t tmpfs -o size=512k,mode=0755 none /tmp
+/bin/mount -t tmpfs -o size=32k,mode=0755 none /var/run
+/bin/mount -t tmpfs -o size=1024k,mode=0755 none /var/log
+
+# Mount /dev/pts
+if [ ! -d /dev/pts ]; then
+	/bin/mkdir -p /dev/pts
+fi
+/bin/mount -t devpts devpts /dev/pts -omode=620
+
+# Mount /proc and /sys if they were not mounted before.
+# This is the case with NFS
+if [ ! -e /sys/block -o ! -e /sys/class ]; then
+	/bin/mount -t proc proc /proc
+	/bin/mount -t sysfs sysfs /sys
+fi
+
+# Reboot asap if we find this file because we must run with a new NOR flash.
+# update.sh creates this file if the NOR flash was updated
+if [ -e /etc/.need_reboot ]; then
+    echo "An update was done in the NOR flash. Rebooting..."
+    rm -f /etc/.need_reboot
+    reboot
+fi
+
+if [ "$QBOXHD_ENV" == "devel" ]; then
+	mount -t usbfs none /proc/bus/usb/
+    insmod /lib/modules/$(uname -r)/qboxhdinfo_proc.ko
+fi
+
+BOARD=$(cat /proc/stb/info/model)
+
+if [ "$BOARD" == "qboxhd-mini" ]; then
+    ID="QBoxHD mini"
+elif [ "$BOARD" == "qboxhd" ]; then
+    ID="QBoxHD"
+else
+    echo "********************************************************************************"
+    echo "FATAL: Unknown board '$BOARD'" 
+    exit 1
+fi
+
+# Create devices when booting for the first time
+if [ -e /etc/.firstboot ]; then
+	echo "First boot: Generating character devices..."
+	cd /dev
+	./MAKEDEV std
+	./MAKEDEV console
+	./MAKEDEV fd
+	./MAKEDEV mtd
+	./MAKEDEV st200
+	./MAKEDEV fb
+	./MAKEDEV pty
+	./MAKEDEV i2c
+
+	mknod /dev/mice c 13 63
+	mknod /dev/sc0 c 169 0
+	mknod /dev/sc1 c 169 1
+	mknod /dev/fpga c 171 0
+	mknod /dev/tsroute c 175 1
+
+	if [ "$ID" == "QBoxHD" ]; then
+		mknod /dev/stv6414_0 c 177 0
+		mknod /dev/ci0 c 170 0
+		mknod /dev/ci1 c 170 1
+		mknod /dev/sw0 c 175 0
+	else
+		mknod /dev/scart_0 c 177 0
+	fi
+
+	# We don't want all the devices created by MAKEDEV
+	rm -f tty?? vcs1? vcsa1? pty* ram1?
+	rm -f i2c-3 i2c-4 i2c-5 i2c-6 i2c-7
+	rm -f fb2 fb3 fb4 fb5 fb6 fb7
+
+	ln -s sc0 sci0
+	ln -s sc1 sci1
+	mkdir -p /dev/snd
+	cd /dev/snd
+	ln -s ../controlC0 .
+	ln -s ../controlC1 .
+
+	cd /
+fi
+
+echo " "
+echo "Welcome to the $ID"
+echo " "
+
+export LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib
+export PATH=$PATH:/usr/local/bin
+
+# initramfs uses mdev, but from now on we want udev
+killall -9 mdev 2>/dev/null
+
+udevd_pid=$(pgrep udevd)
+if [ "$udevd_pid" == "" ]; then
+	udevd --daemon
+	udevadm trigger
+fi
+
+# Start services, daemons and apps
+syslogd -s 500
+klogd
+
+
+/etc/init.d/qboxhd start $BOARD
+
+
+# Start servers
+vsftpd
+inetd /etc/inetd.conf
+
+if [ -e /etc/.firstboot ]; then
+    echo "First boot: Generating SSH keys..."
+    /usr/local/bin/dropbearkey -t rsa -f /etc/dropbear/dropbear_rsa_host_key
+    /usr/local/bin/dropbearkey -t dss -f /etc/dropbear/dropbear_dss_host_key
+
+    rm -f /etc/.firstboot
+fi
+
+for initscript in /etc/rc.d/* ; do
+	$initscript
+done
+

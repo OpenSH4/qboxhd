@@ -1,0 +1,15 @@
+#
+# Configuration file
+# /etc/directfbrc
+#
+
+system = stmfb
+fbdev = /dev/fb0
+depth = 32
+pixelformat = ARGB
+mouse-source = /dev/mice
+mouse-protocol = IMPS/2
+disable-module = lirc
+disable-module = keyboard
+vt-num=1
+

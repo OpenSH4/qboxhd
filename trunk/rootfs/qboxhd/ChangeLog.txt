@@ -1,0 +1,125 @@
+Please visit the official Duolabs forum at www.duolabs.com/forumz for 
+feedback on this QBoxHD software release. Your help will be greatly appreciated!
+
+================================================================================
+
+Release "Stone Distribution" 1.0.12
+
+- Bugfix: Ticket #684: During automatic scan some NITs override our right
+	DVBS2 frequency with wrong parameters.
+- Bugfix: Ticket #697: SPDIF configuration doesn't work properly when e2 starts.
+- Bugfix: Ticket #695: NAS unmount doesn't re-create the hdd dir.
+- Bugfix: Ticket #696: Add EPG path 2.0.1
+- Bugfix: A lot of minor bugfixes.
+
+================================================================================
+
+Release "Stone Distribution" 1.0.10
+
+- Bugfix: Ticket #688: YouTube Bug when playing file.
+- Bugfix: Ticket #686: Fixed auto-rescaling when viewing a channel 
+	for 16:9 or 4:3.
+- Bugfix: Ticket #685: In extension menu with arabic language, the words go
+	out of the screen.
+- Enhancement: Ticket #687: Updated satellites.xml
+
+================================================================================
+
+Release "Stone Distribution" 1.0.7
+
+- Bugfix: Ticket #679: Crash in player2 when Enigma2 restart after a dirty kill.
+- Bugfix: Ticket #562: Crash when using web interface and start recording 
+	simultaneously enigma.
+- Bugfix: Ticket #569: Crash after removing/inserting the antenna cable
+	several times.
+- Bugfix: Ticket #677: Second encrypted channel is not visible when stopping
+	and starting a new encrypted recording/zapping.
+- Bugfix: Ticket #680: Added the aspect ratio scart pin management.
+- Bugfix: Ticket #668: SNR of DVB-T zl10353 seems to be incorrect
+- Bugfix: Ticket #449: Check that SPDIF encoding and bypass work properly
+- Bugfix: Ticket #589: It's slow when you navigating internet, some
+	addresses are not found.
+- Bugfix: Ticket #560: Resize video inside menu.
+- Bugfix: Ticket #664: Backup script has problem with the NOR flash.
+- Bugfix: Ticket #673: White screen when leaving teltext.
+- Bugfix: Ticket #433: U-Boot: Reduce the brightness.
+- Enhancement: Ticket #682: Big memory optimization. Additional 4MB are now
+	available.
+- Enhancement: Ticket #669: Add dir /etc/rc.d for third party scripts
+- Enhancement: Ticket #676: New VLC server version 1.1.4.1
+- Enhancement: Ticket #678: Optimize camd socket management.
+- Enhancement: Ticket #680: Add support for network tunneling (tun/tap).
+	Compiled as module: tun.ko
+- Enhancement: Added support for recording two services from the same
+	transponder.
+- Enhancement: Added languages: polish and updated italian.
+- Enhancement: Ticket #675: Add support for USB wireless network adapters based
+	on the zd1211rw driver.
+	A list of some products that use this driver can be found here:
+	http://wireless.kernel.org/en/users/Devices/USB
+	Devices that use the rt73 driver may work too, but it's not officially 
+	supported.
+
+================================================================================
+
+Release "Stone Distribution" 1.0.5
+
+- Bugfix: Ticket #662: New A/V settings menu.
+- Bugfix: Ticket #663: Add 5v handling of DVB-T.
+- Bugfix: Ticket #661: LCD StandBy Brightness regulation doesn't work correctly.
+- Bugfix: Ticket #645: In the webinterface, buttons red (cancel) and
+	green(ok) are missing.
+- Bugfix: Ticket #647: Restart when pressing button blue or yellow in the info
+	menu when watching a DVB-T channel.
+- Bugfix: Ticket #646: The buttons of the Network test menu don't have labels.
+- Bugfix: Ticket #652: Crash from restore if press twice the green button (ok).
+- Bugfix: Fixed delayer driver.
+- Enhancement: Added languages spanish, portugues and finnish.
+- Enhancement: Added utility fbgrub used for taking snapshots of the OSD.
+	How to use it: Connect via telnet to the qboxhd and execute the following
+	command: fbgrub osd.png
+	A PNG image called osd.png will be created in the current directory that
+	will show the current OSD shown in the LCD-TV.
+
+================================================================================
+
+Release "Stone Distribution" 1.0.4
+
+- Bugfix: Ticket #634: The update procedure doesn't distinguish the boards type
+- Bugfix: Ticket #619: Remove empty default service list
+- Bugfix: Ticket #623: Use the 'exit' button for leaving the video menu
+- Bugfix: Ticket #638: When pressing Timeshift for MKV, the play terminate
+- Bugfix: Ticket #639: Recording with a Timer works only for hdd and not for
+	a NAS.
+- Bugfix: Ticket #636: Scan and zap: Some tp doesn't lock in single and dual
+	feed.
+- Bugfix: Ticket #209: Timezone is not working properly for all countries
+- Bugfix: Ticket #283: Crash in eDVBCIInterfaces::setInputSource(0 0)
+- Enhancement: Updated smartcard driver
+- Enhancement: Updated programmable transport interface driver
+- Enhancement: Add translations for arabic
+
+================================================================================
+
+Release "Stone Distribution" 1.0.2
+
+- Bugfix: Ticket #610: Scan with the rotor doesn't work as expected
+- Bugfix: Ticket #633: The new frontend.cpp is not compatible with 
+	the RETRY_LOCK patch
+- Bugfix: Ticket #575: Automatic scan of dvb-c tuner doesn't work
+- Bugfix: Ticket #376: wifi: Sometimes the fw is not properly loaded or it doesn't
+	load at the right time
+- Bugfix: Ticket #581: SCART output doesn't work after choosing it as output mode 
+	in the video output options.
+- Bugfix: Ticket #203: USB reset
+- Bugfix: Ticket #291: Problem when zapping from a DVB-S tuner to tuner a DVB-T
+- Bugfix: Ticket #599: Pause doesn't completely freezes the ts.
+- Enhancement: Several improvements in default skin
+- Enhancement: Add translations for italian and french
+
+================================================================================
+
+Release "Stone Distribution" 1.0.0
+
+First stable release
+

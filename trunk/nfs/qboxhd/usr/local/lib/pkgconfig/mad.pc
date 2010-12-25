@@ -1,0 +1,11 @@
+prefix=/opt/STM/STLinux-2.3/devkit/sh4/target/usr/local/lib
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: mad
+Description: MPEG audio decoder library
+Requires:
+Version: 0.15.1b
+Libs: -L${libdir}
+Cflags: -L${includedir}

@@ -1,0 +1,392 @@
+
+r79 | paguilar | 2009-03-06 12:04:01 +0100 (Fri, 06 Mar 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/ChangeLog
+   M /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/Makefile.am
+
+Added missing files iwlibs.py and flags.py to WirelessLan/Makefile.am
+------------------------------------------------------------------------
+r78 | paguilar | 2009-03-05 18:07:57 +0100 (Thu, 05 Mar 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/ChangeLog
+   M /e2-0.2/trunk/configure.ac
+   M /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/Makefile.am
+
+Modify configure.ac and WirelessLan/Makefile.am for WiFi plugin
+------------------------------------------------------------------------
+r77 | ivan | 2009-03-05 17:32:34 +0100 (Thu, 05 Mar 2009) | 1 line
+Changed paths:
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/Makefile.am
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/Wlan.py
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/__init__.py
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/flags.py
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/iwlibs.py
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/key-blue.png
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/key-green.png
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/key-red.png
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/key-yellow.png
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/plugin.py
+
+Add WiFi plugin
+------------------------------------------------------------------------
+r76 | ivan | 2009-03-05 17:30:38 +0100 (Thu, 05 Mar 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/python/Components/Network.py
+   M /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/Makefile.am
+   M /e2-0.2/trunk/lib/python/Screens/NetworkSetup.py
+   M /e2-0.2/trunk/lib/python/Tools/NumericalTextInput.py
+
+Add WiFi plugin
+------------------------------------------------------------------------
+r75 | paguilar | 2009-03-04 10:43:38 +0100 (Wed, 04 Mar 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/ChangeLog
+   M /e2-0.2/trunk/lib/base/filepush.cpp
+   M /e2-0.2/trunk/lib/dvb/dvb.cpp
+   M /e2-0.2/trunk/lib/dvb/frontend.cpp
+   M /e2-0.2/trunk/lib/dvb/pmt.cpp
+   M /e2-0.2/trunk/lib/dvb/volume.cpp
+   M /e2-0.2/trunk/lib/gdi/sensewheel.cpp
+
+Fixed volume scattering
+------------------------------------------------------------------------
+r74 | mcecchin | 2009-03-03 16:02:04 +0100 (Tue, 03 Mar 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/python/Plugins/Extensions/MediaPlayer/plugin.py
+   M /e2-0.2/trunk/lib/python/Screens/ServiceScan.py
+
+Resize the menu of Mediaplayer and Servicescan for LCD screen (changed
+lib/python/Screens/ServiceScan.py and
+lib/python/Plugins/Extensions/MediaPlayer/plugin.py)
+------------------------------------------------------------------------
+r73 | mcecchin | 2009-02-24 15:22:38 +0100 (Tue, 24 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/base/ebase.cpp
+   M /e2-0.2/trunk/lib/dvb/pmt.cpp
+
+There is a pacth for changing channel between code channel and clear channel
+------------------------------------------------------------------------
+r72 | mcecchin | 2009-02-23 16:21:49 +0100 (Mon, 23 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/base/ebase.cpp
+   M /e2-0.2/trunk/lib/dvb/pmt.cpp
+   M /e2-0.2/trunk/lib/dvb/scan.cpp
+
+Workaround for avoiding that e2 crashes with some freqs like 706 for dvb-T or
+11200-V-5/6 for dvb-S
+------------------------------------------------------------------------
+r71 | mcecchin | 2009-02-19 18:02:49 +0100 (Thu, 19 Feb 2009) | 1 line
+Changed paths:
+   M
+/e2-0.2/trunk/lib/python/Plugins/Extensions/SmartCardInfo/SmartCardSelectDetailsScreen.py
+
+The polling's timeout of the smartcards was changed (from 500 to 2000 ms)
+------------------------------------------------------------------------
+r70 | mcecchin | 2009-02-17 19:24:56 +0100 (Tue, 17 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/base/filepush.cpp
+   M /e2-0.2/trunk/lib/components/scan.cpp
+   M /e2-0.2/trunk/lib/dvb/decoder.cpp
+   M /e2-0.2/trunk/lib/dvb/dvb.cpp
+   M /e2-0.2/trunk/lib/dvb/frontend.cpp
+   M /e2-0.2/trunk/lib/dvb/scan.cpp
+   M /e2-0.2/trunk/lib/dvb_ci/add_func.h
+   M /e2-0.2/trunk/lib/dvb_ci/dvbci.cpp
+   M /e2-0.2/trunk/lib/service/servicemp3.cpp
+   M /e2-0.2/trunk/lib/service/servicemp3.h
+   M /e2-0.2/trunk/main/enigma.cpp
+   M /e2-0.2/trunk/po/enigma2.pot
+
+Change the timeout for terrestrial scan (from 5000 to 8000). Inserted a work
+arround for dvb-t frequency 706. Now the wheels are fast
+------------------------------------------------------------------------
+r69 | paguilar | 2009-02-05 18:49:43 +0100 (Thu, 05 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/configure.ac
+
+SmartCardInfo configure.ac
+------------------------------------------------------------------------
+r68 | paguilar | 2009-02-05 18:20:03 +0100 (Thu, 05 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/python/Plugins/Extensions/Makefile.am
+
+SmartCardInfo Makefile
+------------------------------------------------------------------------
+r67 | mcecchin | 2009-02-05 16:33:27 +0100 (Thu, 05 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/dvb_ci/add_func.cpp
+   M /e2-0.2/trunk/lib/dvb_ci/dvbci_appmgr.cpp
+   M /e2-0.2/trunk/lib/dvb_ci/starci2win.h
+
+The TS that passes through the starci2win TS1 can be redirected to the modules
+CI. Work around for SamsungCam with dvbt
+------------------------------------------------------------------------
+
+r66 | paguilar | 2009-02-05 14:31:01 +0100 (Thu, 05 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/ChangeLog
+   M /e2-0.2/trunk/lib/base/filepush.cpp
+   M /e2-0.2/trunk/lib/dvb/decoder.cpp
+   M /e2-0.2/trunk/lib/dvb/dvb.cpp
+   M /e2-0.2/trunk/lib/python/Components/Harddisk.py
+   M /e2-0.2/trunk/lib/python/Plugins/Extensions/SmartCardInfo/SmartCard.py
+
+Smartcard slots can be used. Clean-up DVB code
+------------------------------------------------------------------------
+r65 | mcecchin | 2009-01-30 15:15:05 +0100 (Fri, 30 Jan 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/data/timezone.xml
+   M /e2-0.2/trunk/lib/dvb/epgcache.cpp
+
+Change the timezone.xml file, now TZ should works
+------------------------------------------------------------------------
+r64 | mcecchin | 2009-01-30 09:49:41 +0100 (Fri, 30 Jan 2009) | 1 line
+Changed paths:
+   A /e2-0.2/trunk/data/timezone.xml
+   M /e2-0.2/trunk/lib/driver/avswitch.cpp
+   M /e2-0.2/trunk/lib/driver/avswitch.h
+   M /e2-0.2/trunk/lib/dvb/decoder.cpp
+   M /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/Videomode/VideoHardware.py
+
+Solved the problem with timezone (add a timezone.xml file). Pan&Scan,
+PillarBox, Just Scale and Non Linear works. Removed the option DVI and DVI-PC
+in 'AV settings'.
+
+------------------------------------------------------------------------
+r63 | paguilar | 2009-01-28 16:45:32 +0100 (Wed, 28 Jan 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/dvb/db.cpp
+   M /e2-0.2/trunk/lib/python/Screens/ChannelSelection.py
+   M /e2-0.2/trunk/lib/python/Tools/Directories.py
+
+Changed the filenames 'userbouquet.favourites.*' to 'bouquets.*' for
+comptability reasons with DreamEdit
+------------------------------------------------------------------------
+r61 | paguilar | 2009-01-27 17:47:00 +0100 (Tue, 27 Jan 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/data/defaults/QBoxHD/lamedb
+   M /e2-0.2/trunk/data/defaults/QBoxHD/userbouquet.favourites.tv
+   M /e2-0.2/trunk/lib/python/Components/NimManager.py
+
+/proc is used again for detecting tuners. /proc/stb is still missing. Fix the
+default QBoxHD files that were not cleaning the bouquet
+------------------------------------------------------------------------
+r60 | paguilar | 2009-01-16 17:46:12 +0100 (Fri, 16 Jan 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/data/defaults/QBoxHD/Makefile.am
+   A /e2-0.2/trunk/data/defaults/QBoxHD/lamedb
+   D /e2-0.2/trunk/data/defaults/QBoxHD/lamedb.qboxhd
+   M /e2-0.2/trunk/data/defaults/QBoxHD/qboxhd.info
+   A /e2-0.2/trunk/data/defaults/QBoxHD/settings
+   D /e2-0.2/trunk/data/defaults/QBoxHD/settings.qboxhd
+   M /e2-0.2/trunk/data/menu.xml
+   M /e2-0.2/trunk/data/skin_default/icons/dish.png
+   M /e2-0.2/trunk/data/skin_default/icons/dish_scan.png
+   M /e2-0.2/trunk/data/skin_default/rcold.png
+   M /e2-0.2/trunk/lib/dvb/volume.cpp
+   M /e2-0.2/trunk/lib/dvb/volume.h
+   M /e2-0.2/trunk/lib/python/Components/NimManager.py
+   M /e2-0.2/trunk/lib/python/Plugins/Extensions/Makefile.am
+   A /e2-0.2/trunk/run_gdb.sh
+
+Added temporary amixer system call for volume up/down. Fix default settings.
+Fix PNG images with right indexation
+------------------------------------------------------------------------
+
+
+r79 | paguilar | 2009-03-06 12:04:01 +0100 (Fri, 06 Mar 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/ChangeLog
+   M /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/Makefile.am
+
+Added missing files iwlibs.py and flags.py to WirelessLan/Makefile.am
+------------------------------------------------------------------------
+r78 | paguilar | 2009-03-05 18:07:57 +0100 (Thu, 05 Mar 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/ChangeLog
+   M /e2-0.2/trunk/configure.ac
+   M /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/Makefile.am
+
+Modify configure.ac and WirelessLan/Makefile.am for WiFi plugin
+------------------------------------------------------------------------
+r77 | ivan | 2009-03-05 17:32:34 +0100 (Thu, 05 Mar 2009) | 1 line
+Changed paths:
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/Makefile.am
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/Wlan.py
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/__init__.py
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/flags.py
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/iwlibs.py
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/key-blue.png
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/key-green.png
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/key-red.png
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/key-yellow.png
+   A /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/WirelessLan/plugin.py
+
+Add WiFi plugin
+------------------------------------------------------------------------
+r76 | ivan | 2009-03-05 17:30:38 +0100 (Thu, 05 Mar 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/python/Components/Network.py
+   M /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/Makefile.am
+   M /e2-0.2/trunk/lib/python/Screens/NetworkSetup.py
+   M /e2-0.2/trunk/lib/python/Tools/NumericalTextInput.py
+
+Add WiFi plugin
+------------------------------------------------------------------------
+r75 | paguilar | 2009-03-04 10:43:38 +0100 (Wed, 04 Mar 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/ChangeLog
+   M /e2-0.2/trunk/lib/base/filepush.cpp
+   M /e2-0.2/trunk/lib/dvb/dvb.cpp
+   M /e2-0.2/trunk/lib/dvb/frontend.cpp
+   M /e2-0.2/trunk/lib/dvb/pmt.cpp
+   M /e2-0.2/trunk/lib/dvb/volume.cpp
+   M /e2-0.2/trunk/lib/gdi/sensewheel.cpp
+
+Fixed volume scattering
+------------------------------------------------------------------------
+r74 | mcecchin | 2009-03-03 16:02:04 +0100 (Tue, 03 Mar 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/python/Plugins/Extensions/MediaPlayer/plugin.py
+   M /e2-0.2/trunk/lib/python/Screens/ServiceScan.py
+
+Resize the menu of Mediaplayer and Servicescan for LCD screen (changed
+lib/python/Screens/ServiceScan.py and
+lib/python/Plugins/Extensions/MediaPlayer/plugin.py)
+------------------------------------------------------------------------
+r73 | mcecchin | 2009-02-24 15:22:38 +0100 (Tue, 24 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/base/ebase.cpp
+   M /e2-0.2/trunk/lib/dvb/pmt.cpp
+
+There is a pacth for changing channel between code channel and clear channel
+------------------------------------------------------------------------
+r72 | mcecchin | 2009-02-23 16:21:49 +0100 (Mon, 23 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/base/ebase.cpp
+   M /e2-0.2/trunk/lib/dvb/pmt.cpp
+   M /e2-0.2/trunk/lib/dvb/scan.cpp
+
+Workaround for avoiding that e2 crashes with some freqs like 706 for dvb-T or
+11200-V-5/6 for dvb-S
+------------------------------------------------------------------------
+r71 | mcecchin | 2009-02-19 18:02:49 +0100 (Thu, 19 Feb 2009) | 1 line
+Changed paths:
+   M
+/e2-0.2/trunk/lib/python/Plugins/Extensions/SmartCardInfo/SmartCardSelectDetailsScreen.py
+
+The polling's timeout of the smartcards was changed (from 500 to 2000 ms)
+------------------------------------------------------------------------
+r70 | mcecchin | 2009-02-17 19:24:56 +0100 (Tue, 17 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/base/filepush.cpp
+   M /e2-0.2/trunk/lib/components/scan.cpp
+   M /e2-0.2/trunk/lib/dvb/decoder.cpp
+   M /e2-0.2/trunk/lib/dvb/dvb.cpp
+   M /e2-0.2/trunk/lib/dvb/frontend.cpp
+   M /e2-0.2/trunk/lib/dvb/scan.cpp
+   M /e2-0.2/trunk/lib/dvb_ci/add_func.h
+   M /e2-0.2/trunk/lib/dvb_ci/dvbci.cpp
+   M /e2-0.2/trunk/lib/service/servicemp3.cpp
+   M /e2-0.2/trunk/lib/service/servicemp3.h
+   M /e2-0.2/trunk/main/enigma.cpp
+   M /e2-0.2/trunk/po/enigma2.pot
+
+Change the timeout for terrestrial scan (from 5000 to 8000). Inserted a work
+arround for dvb-t frequency 706. Now the wheels are fast
+------------------------------------------------------------------------
+r69 | paguilar | 2009-02-05 18:49:43 +0100 (Thu, 05 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/configure.ac
+
+SmartCardInfo configure.ac
+------------------------------------------------------------------------
+r68 | paguilar | 2009-02-05 18:20:03 +0100 (Thu, 05 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/python/Plugins/Extensions/Makefile.am
+
+SmartCardInfo Makefile
+------------------------------------------------------------------------
+r67 | mcecchin | 2009-02-05 16:33:27 +0100 (Thu, 05 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/dvb_ci/add_func.cpp
+   M /e2-0.2/trunk/lib/dvb_ci/dvbci_appmgr.cpp
+   M /e2-0.2/trunk/lib/dvb_ci/starci2win.h
+
+The TS that passes through the starci2win TS1 can be redirected to the modules
+CI. Work around for SamsungCam with dvbt
+------------------------------------------------------------------------
+
+r66 | paguilar | 2009-02-05 14:31:01 +0100 (Thu, 05 Feb 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/ChangeLog
+   M /e2-0.2/trunk/lib/base/filepush.cpp
+   M /e2-0.2/trunk/lib/dvb/decoder.cpp
+   M /e2-0.2/trunk/lib/dvb/dvb.cpp
+   M /e2-0.2/trunk/lib/python/Components/Harddisk.py
+   M /e2-0.2/trunk/lib/python/Plugins/Extensions/SmartCardInfo/SmartCard.py
+
+Smartcard slots can be used. Clean-up DVB code
+------------------------------------------------------------------------
+r65 | mcecchin | 2009-01-30 15:15:05 +0100 (Fri, 30 Jan 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/data/timezone.xml
+   M /e2-0.2/trunk/lib/dvb/epgcache.cpp
+
+Change the timezone.xml file, now TZ should works
+------------------------------------------------------------------------
+r64 | mcecchin | 2009-01-30 09:49:41 +0100 (Fri, 30 Jan 2009) | 1 line
+Changed paths:
+   A /e2-0.2/trunk/data/timezone.xml
+   M /e2-0.2/trunk/lib/driver/avswitch.cpp
+   M /e2-0.2/trunk/lib/driver/avswitch.h
+   M /e2-0.2/trunk/lib/dvb/decoder.cpp
+   M /e2-0.2/trunk/lib/python/Plugins/SystemPlugins/Videomode/VideoHardware.py
+
+Solved the problem with timezone (add a timezone.xml file). Pan&Scan,
+PillarBox, Just Scale and Non Linear works. Removed the option DVI and DVI-PC
+in 'AV settings'.
+
+------------------------------------------------------------------------
+r63 | paguilar | 2009-01-28 16:45:32 +0100 (Wed, 28 Jan 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/lib/dvb/db.cpp
+   M /e2-0.2/trunk/lib/python/Screens/ChannelSelection.py
+   M /e2-0.2/trunk/lib/python/Tools/Directories.py
+
+Changed the filenames 'userbouquet.favourites.*' to 'bouquets.*' for
+comptability reasons with DreamEdit
+------------------------------------------------------------------------
+r61 | paguilar | 2009-01-27 17:47:00 +0100 (Tue, 27 Jan 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/data/defaults/QBoxHD/lamedb
+   M /e2-0.2/trunk/data/defaults/QBoxHD/userbouquet.favourites.tv
+   M /e2-0.2/trunk/lib/python/Components/NimManager.py
+
+/proc is used again for detecting tuners. /proc/stb is still missing. Fix the
+default QBoxHD files that were not cleaning the bouquet
+------------------------------------------------------------------------
+r60 | paguilar | 2009-01-16 17:46:12 +0100 (Fri, 16 Jan 2009) | 1 line
+Changed paths:
+   M /e2-0.2/trunk/data/defaults/QBoxHD/Makefile.am
+   A /e2-0.2/trunk/data/defaults/QBoxHD/lamedb
+   D /e2-0.2/trunk/data/defaults/QBoxHD/lamedb.qboxhd
+   M /e2-0.2/trunk/data/defaults/QBoxHD/qboxhd.info
+   A /e2-0.2/trunk/data/defaults/QBoxHD/settings
+   D /e2-0.2/trunk/data/defaults/QBoxHD/settings.qboxhd
+   M /e2-0.2/trunk/data/menu.xml
+   M /e2-0.2/trunk/data/skin_default/icons/dish.png
+   M /e2-0.2/trunk/data/skin_default/icons/dish_scan.png
+   M /e2-0.2/trunk/data/skin_default/rcold.png
+   M /e2-0.2/trunk/lib/dvb/volume.cpp
+   M /e2-0.2/trunk/lib/dvb/volume.h
+   M /e2-0.2/trunk/lib/python/Components/NimManager.py
+   M /e2-0.2/trunk/lib/python/Plugins/Extensions/Makefile.am
+   A /e2-0.2/trunk/run_gdb.sh
+
+Added temporary amixer system call for volume up/down. Fix default settings.
+Fix PNG images with right indexation
+------------------------------------------------------------------------
+

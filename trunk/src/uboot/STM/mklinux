@@ -1,0 +1,78 @@
+#!/usr/bin/perl
+
+use Getopt::Std;
+use English;
+
+my $board="";
+my $vmlinux=vmlinux;
+my $name="STLinux 2.0 linux";
+my $targetfile="vmlinux.ub";
+
+%cross=('sh4', sh4,
+	'st200', st231);
+
+if ($#ARGV == -1) {
+  print STDERR "usage: mklinux {options}*\n";
+  print STDERR "  -a arch             arch\n";
+  print STDERR "  -v filename         vmlinux file load\n";
+  print STDERR "  -n name             image name\n";
+  print STDERR "  -t target           target file\n";
+
+  exit 0;
+}
+
+getopts('a:v:n:t:') or die "Illegal command line option\n";
+
+if (defined($opt_a)) {
+  $arch= $opt_a;
+} else {
+  die "Must define arch type\n";
+}
+
+if (defined($opt_v)) {
+  $vmlinux = $opt_v;
+}
+
+if (defined($opt_n)) {
+  $name = $opt_n;
+} else {
+  $name="STLinux 2.0 " . $arch;
+}
+
+if (defined($opt_t)) {
+  $targetfile = $opt_t;
+}
+
+
+$cmd=$cross{$arch}."-linux-nm ".$vmlinux;
+
+my $param_addr_p=0;
+my $entry_addr_p=0;
+
+if (open(NM, $cmd." |")) {
+  while (<NM>) {
+    @fields = split(/\s/);
+    if ($fields[2] eq "empty_zero_page") {
+	$param_addr="0x".$fields[0];
+	break;
+    } elsif ($fields[2] eq "_stext") {
+	$entry_addr="0x".$fields[0];
+	break;
+    } elsif ($fields[2] eq "empty_zero_page_phys") {
+	$param_addr_p="0x".$fields[0];
+	break;
+    } elsif ($fields[2] eq "start_phys") {
+	$entry_addr_p="0x".$fields[0];
+	break;
+    }
+  }
+  close(NM);
+} else { die "Command ".$cmd." failed: $!\n"; }
+
+if ($param_addr_p) {$param_addr=$param_addr_p;}
+if ($entry_addr_p) {$entry_addr=$entry_addr_p;}
+
+system($cross{$arch}."-linux-objcopy", "-O", "binary",  "$vmlinux", "/tmp/vmlinux.bin") ;
+system("gzip", "-f",  "/tmp/vmlinux.bin") ;
+system("mkimage", "-C", "gzip", "-A", $arch, "-O", "linux", "-T", "kernel", "-a", $param_addr, "-e", $entry_addr, "-n", $name, "-d", "/tmp/vmlinux.bin.gz", $targetfile);
+

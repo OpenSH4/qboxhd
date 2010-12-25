@@ -1,0 +1,45 @@
+#
+# modprobe.d/stslave
+#
+# Handle the booting of the co-processors
+#
+
+
+#
+# Select the actual combination required (this should be partially automatic)
+#
+
+install stslave \
+   /bin/grep -q 'STx7200' /proc/cpuinfo && ( \
+      pushd /dev > /dev/null; MAKEDEV st231; popd > /dev/null; \
+      /sbin/modprobe stslave-stx7200-0 ; \
+      /sbin/modprobe stslave-stx7200-1 ; \
+      /sbin/modprobe stslave-stx7200-2 ; \
+      /sbin/modprobe stslave-stx7200-3 ; \
+   ) || ( \
+      pushd /dev > /dev/null; MAKEDEV st231; popd > /dev/null; \
+      /sbin/modprobe stslave-stb7109-0 ; \
+      /sbin/modprobe stslave-stb710x-1 ; \
+   )
+
+
+#
+# Video co-processor targets (STx710x)
+#
+
+install stslave-stb7100-0 \
+   echo STb7100-video: /boot/video.elf; \
+   /bin/stslave -t stb7100.0 -R /boot/video.elf
+
+install stslave-stb7109-0 \
+   echo STb7109-video: /boot/video.elf; \
+   /bin/stslave -t stb7100.0 -R /boot/video.elf
+
+#
+# Audio co-processor targets (STx710x)
+#
+
+install stslave-stb710x-1 \
+   echo STb710x-audio: /boot/audio.elf; \
+   /bin/stslave -t stb7100.1 -R /boot/audio.elf
+

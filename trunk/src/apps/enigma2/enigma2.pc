@@ -1,0 +1,10 @@
+prefix=/opt/STM/STLinux-2.3/devkit/sh4/target/usr/local
+exec_prefix=/opt/STM/STLinux-2.3/devkit/sh4/target/usr/local
+libdir=/opt/STM/STLinux-2.3/devkit/sh4/target/usr/local/lib
+includedir=/opt/STM/STLinux-2.3/devkit/sh4/target/usr/local/include
+
+Name: enigma2
+Description: Enigma2
+Version: 2.4
+Libs: 
+Cflags: -I${includedir}/enigma2

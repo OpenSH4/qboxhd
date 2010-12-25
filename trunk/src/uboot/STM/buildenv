@@ -1,0 +1,22 @@
+#!/bin/sh
+
+cwd=${0%/*}
+
+ver=stm20
+build_dir=BUILT/u-boot
+
+LIST_sh4="espresso sti5528eval st220eval stb7100mboard stb7100ref_27 stb7100ref_30 stb7109eref"
+
+LIST_st200="sti5301mb390 sti5301mb424 stm8010mboard traviata"
+
+for arg in $@
+do
+  for target in `eval echo '$LIST_'${arg}`
+  do
+    d=${build_dir}/${target}-${ver}
+    [ -d $d ] || mkdir -p $d || break
+    $cwd/mkenv $target $d/setupenv
+    $cwd/../tools/mkimage -A $arg -O u-boot -T script -C none -a 0 -e 0 -d $d/setupenv $d/setupenv.ub
+  done
+done
+

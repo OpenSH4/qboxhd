@@ -1,0 +1,31 @@
+#!/bin/sh
+
+cwd=${0%/*}
+
+ver=2.6.11_stm20
+
+tmp_dir=/tmp/u-boot-$$
+build_dir=BUILT
+
+stmdir=/opt/STM/STLinux-2.0/devkit
+
+LIST_sh4="microdev espresso st220eval stb7100mboard st40rastarter stb7100ref sti5528eval"
+LIST_st200="sti5301mb390 sti5301mb424 stm8010mboard"
+
+for arg in $@
+do
+  case "$arg" in
+  sh4)
+	cpu=sh4
+	;;
+  st200)
+	cpu=st231
+  	;;
+  esac
+  for i in ${stmdir}/kernel/kernel-${cpu}-*-${ver} ; do
+    echo $i
+    d=${build_dir}/${i#${stmdir}}
+    [ -d $d ] || mkdir -p $d || break
+    PATH=$cwd/../tools:$PATH ./STM/mklinux -a $arg -v $i/vmlinux -t $d/vmlinux.ub
+  done
+done

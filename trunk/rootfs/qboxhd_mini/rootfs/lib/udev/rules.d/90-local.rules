@@ -1,0 +1,54 @@
+###
+### Custom rules for QBoxHD
+###
+
+###
+### Mass storage devices including ipods and the like
+###
+KERNEL=="sd*[0-9]", ACTION=="add", RUN+="/usr/sbin/usb_detect %k %n"
+KERNEL=="sd*", ACTION=="add", RUN+="/usr/sbin/usb_detect %k %n"
+
+KERNEL=="sd*[0-9]", ACTION=="remove", RUN+="/usr/sbin/usb_detect %k %n"
+KERNEL=="sd*", ACTION=="remove", RUN+="/usr/sbin/usb_detect %k %n"
+
+###
+### USB wireless network adapters: rt73
+###
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="07d1", ATTR{idProduct}=="3c03", RUN+="/etc/init.d/wifi_usb init rt73"
+
+###
+### USB wireless network adapters: zd1211rw
+###
+#ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0ace", ATTR{idProduct}=="1215", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0ace", ATTR{idProduct}=="1211|1215|b215|2011|20ff", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0105", ATTR{idProduct}=="145f", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0586", ATTR{idProduct}=="34[0-1][0-f]", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="079b", ATTR{idProduct}=="004a|0062", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="07b8", ATTR{idProduct}=="6001", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0b05", ATTR{idProduct}=="170c|171b", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0b3b", ATTR{idProduct}=="1630|5630", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0df6", ATTR{idProduct}=="9071|9075|0036", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="126f", ATTR{idProduct}=="a006", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="129b", ATTR{idProduct}=="166[6-7]", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="13b1", ATTR{idProduct}=="001e|0024", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="1435", ATTR{idProduct}=="0711", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="14ea", ATTR{idProduct}=="ab13", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="157e", ATTR{idProduct}=="300[a-d]|3204", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="1740", ATTR{idProduct}=="2000", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="6891", ATTR{idProduct}=="a727", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0053", ATTR{idProduct}=="5301", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0409", ATTR{idProduct}=="0248", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0411", ATTR{idProduct}=="00da", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0471", ATTR{idProduct}=="123[6-7]", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="050d", ATTR{idProduct}=="705c", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="054c", ATTR{idProduct}=="0257", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="07fa", ATTR{idProduct}=="1196", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="083a", ATTR{idProduct}=="4505|e50[1-6]", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0baf", ATTR{idProduct}=="0121", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0cde", ATTR{idProduct}=="001a", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="07fa", ATTR{idProduct}=="1196", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="1582", ATTR{idProduct}=="6003", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="2019", ATTR{idProduct}=="5303", RUN+="/etc/init.d/wifi_usb init zd1211rw"
+
+ACTION=="remove", SUBSYSTEM=="usb", SUBSYSTEM=="net", KERNEL=="wlan[0-9]", RUN+="/etc/init.d/wifi_usb halt dummy %k"
+

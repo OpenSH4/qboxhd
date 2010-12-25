@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="author" content="Daniel Thompson, STMicroelectronics Ltd.">
+<meta name="GENERATOR" content="Mozilla/4.8 [en] (Windows NT 5.0; U) [Netscape]"><title>ST Multicom Release Notes</title>
+
+<style type="text/css">
+<!--
+BODY {font-family: sans-serif, Arial, Helvetica; color: #000000 }
+H1 {font-family: sans-serif, Arial, Helvetica; font-weight: bold; color: white; background: #330099;
+padding-top: 5pt; padding-right: 5pt; padding-bottom: 5pt; text-align: right ; }
+H2 {font-family: sans-serif, Arial, Helvetiva; font-weight: bold; color: #330099; margin-left: 30pt; }
+H3 {font-family: sans-serif, Arial, Helvetica; font-weight: bold; color: #330099; margin-left: 15pt; }
+H4 {font-family: sans-serif, Arial, Helvetica; font-weight: bold; color: #330099}
+TH {font-family: sans-serif, Arial, Helvetica; font-weight: bold; color: #330099; background-color: #EEEEEE; text-align: left; size: 2; }
+.indent { margin-left: 15pt; }
+.code {font-family: Monospace; color: black; background: #EEEEEE none; padding-left: 5pt; padding-right: 5pt; padding-top: 5pt; padding-bottom: 5pt; margin-left: 5%; margin-right: 5%}
+-->
+</style></head>
+<body style="background-color: rgb(255, 255, 255);">
+<h1>
+ST Multicom R3.2.2p2 Release Notes</h1>
+Copyright © 2003-2008&nbsp; STMicroelectronics. All Rights
+Reserved.
+This document is not to be copied in whole or in part.
+<h2>New in this release</h2>
+<ul>
+<li>SH4/ST40 32-bit Space Enhanced (SE) mode support </li>
+<li>SH4/ST40 4.0.2/4.1.1 toolkit support </li>
+<li>STLinux2.3 &amp; udev support.</li>
+<li>ST200 R6.0/6.1 toolkit support</li>
+<li>STb7109/mb442, STi7200/mb519, STi7111/mb618 example support<br>
+</li>
+</ul>
+<h2>Enhancement summary</h2>
+<ul>
+
+<li>Bugzilla 1988 &nbsp;Need
+to support SH4/ST40 running in 32-bit (SE) mode</li><li>Bugzilla 2609 &nbsp;Need
+to be able to create RT threads under Linux</li>
+<li>Bugzilla 3227&nbsp; Need
+to support compilation on x86_64 hosts</li>
+<li>Bugzilla 3629 &nbsp;Support
+for 'O=' option during Linux kernel compilation</li>
+</ul>
+<h2>Bug Fix Summary</h2>
+<ul>
+<li>Bugzilla 2332 &nbsp;Compilation
+issues with latest ST40 4.0.2 toolkits</li>
+<li>Bugzilla 2590&nbsp; Compilation
+issues with the STLinux2.3 kernel</li>
+<li>Bugzilla 2796 &nbsp;Compilation
+issues with the GCC 4.2.1 C++ compiler</li>
+<li>Bugzilla 3261 &nbsp;Wrong
+address translation&nbsp;on ST200</li>
+<li>Bugzilla 3545 &nbsp;Issue with
+Video LX running on an mb618/7111</li>
+<li>Bugzilla 3666&nbsp; 32 bit os21(4.1.1) + multicom 3.2.1 Beta 4
+Crashes in multicom !</li>
+<li>Bugzilla 3811 &nbsp;32 bit space enhanced mode Linux kernel crash</li>
+<li>Bugzilla 3879 &nbsp;Multicom 3.2.1 doesn't compile with ST200 4.2.1</li>
+<li>Bugzilla 3895 &nbsp;Need multicom release compiled for ST40 R4.1.1</li>
+<li>Bugzilla 3988 &nbsp;32-bit Linux crash in EMBX_OS_VirtToPhys()</li>
+<li>Bugzilla 4196 &nbsp;Linux crash in EMBX_OS_VirtToPhys() when NULL pointer passed in</li>
+</ul>
+<br>
+<h2>32-Bit Space Enanced (SE) mode support</h2>
+The Multicom 3.2.x release has been specifically developed to
+support ST40/sh4 hosts running OS21 or Linux in 32-bit (Space enhanced
+mode), although it still supports the sh4 when in 29-bit mode.<br>
+Support
+for many of the older ST platforms has been removed from this release
+(e.g. ST20, ST220 based systems). Users of such systems should not
+upgrade to this release but continue to use the older releases.<br>
+<br>
+As
+far as the Multicom programmer is concerned there should be no host or
+transformer code changes necessary (against the Multicom 3.1.2 release)
+when using this new release, either in 29-bit or 32-bit mode.
+Furthermore the same binary Multicom libraries can be used whichever
+mode the ST40 is running. <br>
+<br>
+The only changes necessary to
+support 32-bit operation are to modify the Multicom EMBXSHM memory
+configuration (see section 9.1 of the Multicom User Guide). Now when
+running in 32-bit mode the Warp range arguments must be specified as
+physical (bus) addresses.<br>
+<br>
+For example on an STi7200/mb519 you may specify the primary Warp range
+as;<br>
+<br>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; warpRangeAddr&nbsp;&nbsp; 0x40000000<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; warpRangeSize&nbsp;&nbsp; 0x10000000</pre>
+<br>
+Which specifies a Warp memory region of 256MB in size starting at the
+base of the LMI#0 physical memory. Any buffers<br>
+whose
+physical addresses lie within this range will be transferred between
+the host and the LX companions using zero-copy memory techniques.<br>
+<br>
+Note:
+In 29-bit mode you are still allowed to specify the Warp range using
+the P1/P2 segment addresses but it may be clearer to change
+them&nbsp;to true physical addresses.<br>
+<br>
+The primary Warp region must enclose
+the EMBXSHM heap allocated by Multicom, this means it generally needs
+to specify the same LMI that the host's code, heap and data are loaded
+into.&nbsp;<br>
+<br>
+If zero-copy is also required for the LMI#1 memory region then it is
+necessary to specify a Secondary Warp Range. The <span style="font-style: italic;">EMBXSHM_MailboxConfig_t</span>
+data structure has been extended to incorporate&nbsp;two new
+members; <span style="font-style: italic;">warpRangeAddr2</span>
+and <span style="font-style: italic;">warpRangeSize2</span>;<br>
+<br>
+<div style="margin-left: 40px;">
+<pre>typedef struct<br>{<br>&nbsp;&nbsp;&nbsp; EMBX_CHAR&nbsp; name[EMBX_MAX_TRANSPORT_NAME+1]; /* The name of this transport */<br>&nbsp;&nbsp;&nbsp; EMBX_UINT&nbsp; cpuID;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Local CPU ID (0 == master) */<br>&nbsp;&nbsp;&nbsp; EMBX_UINT&nbsp; participants[EMBXSHM_MAX_CPUS];&nbsp; /* 1 == participating in this transport */<br>&nbsp;&nbsp;&nbsp; EMBX_UINT&nbsp; pointerWarp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* No longer used */&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; EMBX_UINT&nbsp; maxPorts;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Max ports supported (0 == no limit) */<br>&nbsp;&nbsp;&nbsp; EMBX_UINT&nbsp; maxObjects;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Number of shared objects to support */<br>&nbsp;&nbsp;&nbsp; EMBX_UINT&nbsp; freeListSize;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Number of pre-allocated free nodes per port */<br>&nbsp;&nbsp;&nbsp; EMBX_VOID *sharedAddr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Address of base of shared memory */<br>&nbsp;&nbsp;&nbsp; EMBX_UINT&nbsp; sharedSize;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Size of shared memory */<br>&nbsp;&nbsp;&nbsp; EMBX_VOID *warpRangeAddr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Primary warp range base address */<br>&nbsp;&nbsp;&nbsp; EMBX_UINT&nbsp; warpRangeSize;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Primary warp range size */<br>&nbsp;&nbsp;&nbsp; EMBX_VOID *warpRangeAddr2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Secondary Warp range base address */<br>&nbsp;&nbsp;&nbsp; EMBX_UINT&nbsp; warpRangeSize2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Secondary Warp range size */<br>} EMBXSHM_MailboxConfig_t;</pre>
+</div>
+<br>
+For example on a STi7200/mb519 you may specify the Secondary Warp range
+as;<br>
+<br>
+<pre style="margin-left: 40px;">&nbsp;warpRangeAddr2&nbsp;&nbsp; 0x80000000<br> warpRangeSize2&nbsp;&nbsp; 0x10000000</pre>
+<br>
+Which would specify a 256MB secondary Warp region beginning at the base
+of the LMI#1 physical memory.<br>
+If a secondary Warp range is not required then the <span style="font-style: italic;">warpRangeSize2</span>
+parameter should be set to 0.<br>
+<br>
+Note1: The <span style="font-style: italic;">pointerWarp</span>
+member is still part of the mailbox configuration data, but is not
+longer used by Multicom. The <span style="font-style: italic;">sharedAddr</span> parameter can still be used and a virtual address should be supplied if this is required.<br>
+<br>
+Note2: Due to the changes in the Warp range handling, this release of
+Multicom is <span style="font-weight: bold;">not</span>
+binary compatible with code compiled against earlier versions of
+Multicom. Thus all host and companion code will need to be recompiled
+against the latest Multicom headers and libraries in order to function
+correctly.<br>
+<br>
+<h2>STLinux2.3 udev support</h2>
+The
+STLinux2.3 release enables dynamic device support using udev. This
+allows device drivers to dynamically create device files in /dev.
+However, in order to use this facility Multicom has to make use of GPL
+only exported functions. This code path is not enabled by default and
+must be enabled by specifying ENABLE_GPL=1 in the Multicom build
+options.<br>
+If you do not wish to build the Multicom modules under a GPL licence
+then you will need to statically create the <span style="font-style: italic;">mme</span> device entry
+under <span style="font-style: italic;">lib/udev/devices</span>
+in the target file system, or disable udev support when using the
+STLinux2.3 release.<br>
+<br><h2>STLinux Default thread priorities</h2>The R3.2.1 and later
+releases support RT scheduler thread classes for the Multicom helper
+threads, and by default the following thread priorities are used for a
+Linux host;<br><br><table style="text-align: left; width: 727px; height: 169px; margin-left: 40px;" border="1" cellpadding="2" cellspacing="2"><tbody><tr><td style="text-align: center;"><span style="font-weight: bold;">Thread priority tuneable</span></td><td style="text-align: center;"><span style="font-weight: bold;">Default Value</span></td><td><span style="font-weight: bold;">Scheduler Class</span></td><td><span style="font-weight: bold;">Priority</span></td></tr><tr><td>EMBX_TUNEABLE_THREAD_PRIORITY</td><td style="text-align: center;">-90</td><td style="text-align: center;">RT/RR</td><td style="text-align: center;">70</td></tr><tr><td>MME_TUNEABLE_MANAGER_THREAD_PRIORITY</td><td style="text-align: center;">&nbsp;-80</td><td style="text-align: center;">RT/RR</td><td style="text-align: center;">60</td></tr><tr><td>MME_TUNEABLE_TRANSFORMER_THREAD_PRIORITY</td><td style="text-align: center;">-70</td><td style="text-align: center;">RT/RR</td><td style="text-align: center;">50</td></tr><tr><td>MME_TUNEABLE_EXECUTION_LOOP_HIGHEST_PRIORITY</td><td style="text-align: center;">-20</td><td style="text-align: center;">NORMAL</td><td style="text-align: center;">nice -20</td></tr><tr><td>MME_TUNEABLE_EXECUTION_LOOP_ABOVE_NORMAL_PRIORITY</td><td style="text-align: center;">-10</td><td style="text-align: center;">NORMAL</td><td style="text-align: center;">nice -10</td></tr><tr><td>MME_TUNEABLE_EXECUTION_LOOP_NORMAL_PRIORITY</td><td style="text-align: center;">0</td><td style="text-align: center;">NORMAL</td><td style="text-align: center;">nice 0</td></tr><tr><td>MME_TUNEABLE_EXECUTION_LOOP_BELOW_NORMAL_PRIORITY</td><td style="text-align: center;">10</td><td style="text-align: center;">NORMAL</td><td style="text-align: center;">nice 10</td></tr><tr><td>MME_TUNEABLE_EXECUTION_LOOP_LOWEST_PRIORITY</td><td style="text-align: center;">19</td><td style="text-align: center;">NORMAL</td><td style="text-align: center;">nice 19</td></tr></tbody></table><br><br>The
+tuneable value determines which scheduler class and what priority the
+thread should be created with. Values &lt; -20 will cause an RT
+(SCHED_RR) class thread to be created with priority <span style="font-style: italic;">&lt;value&gt;</span>
++ 20. Values &gt;= -20 will cause a normal Linux scheduler class to be
+used (SCHED_NORMAL) and the priority value will be used to set the
+thread 'nice' level.<br><br>It should be noted that when the Multicom
+host is running on STLinux&nbsp;the only threads that are created on
+the host are the per remote transformer instantiation MME callback ones
+(MME_TUNEABLE_TRANSFORMER_THREAD_PRIORITY) and the two EMBX control
+ones (EMBX_TUNEABLE_THREAD_PRIORITY).<br><br><h2>Toolkit/OS21 compatibility</h2>Multicom
+release R3.2.2 has been reworked to allow it to operate with the
+various ST40 and ST200 compiler toolkits. To do this it makes use of
+weak symbol definitions which allow it to determine at runtime which
+OS21 APIs are available. Hence this means that the prebuilt Multicom
+libraries can be used with any ST40 or ST200 toolkit, either in 29-bit
+mode or 32-bit SE mode, and still operate correctly.&nbsp; However, to
+support 32-bit SE mode the application needs to be compiled using a
+toolkit with a version of OS21 designed to support virtual memory
+operation.
+<h2>Known defects/issues</h2>
+<p>The remainder of this section discusses issues that the user
+may
+encounter
+but that are not considered to be bugs in the ST RPC software.
+</p>
+<ul>
+<li>This release has not been tested with Windows CE. This is
+purely
+a STLinux and&nbsp;OS21 release</li>
+<li>Support of STLinux for versions prior to 2.2 has been
+deprecated.</li>
+<li>Support for ST20 and ST220 based platforms has been removed.</li>
+<li>EMBX distributed objects do not offer the strong buffer
+ownership
+provided by the EMBX message API. This forces the user to be
+responsible for correctly managing buffer ownership when using
+distributed objects with the EMBXSHMC transport.</li><li>make clean does not remove the Linux kernel modules. These will need to be removed manually in order to ensure a clean rebuild.</li>
+</ul>
+<h2>Product license</h2>
+The Multicom product license can be found in <a href="license.pdf">license.pdf</a>.
+<h2>Toolset version information</h2>
+The supplied ST Multicom binary library files have been built using the
+following toolsets;<br>
+<ul>
+<li>ST40 R3.1.1 patch 1</li>
+<li>ST200 R5.1 patch 2</li>
+</ul>
+ST Multicom has been tested using the following toolsets;<br>
+<ul>
+<li>ST40 R4.0.2/R4.1.1 Toolset (OS21)</li>
+<li>STLinux 2.2 for ST40 (kernel version 2.6.17.14_stm22_0038)</li>
+<li>STLinux 2.3 for ST40 (kernel version
+linux-sh4-2.6.23.1_stm23_0104)</li>
+<li>ST200 R5.1 patch 2 Toolset (OS21)</li>
+<li>ST200 R6.1 Toolset (OS21)</li>
+</ul>
+<i>Note: For some of the above toolsets ST is not able to
+guarantee
+binary
+compatibility between toolset releases. The Multicom User Manual
+provides
+instructions on rebuilding the target binaries if this is required.</i>
+</body></html>

@@ -1,0 +1,238 @@
+#!/bin/sh
+#
+# /etc/init.d/qboxhd: insmod drivers for all subsystems: DVB, framebuffer, etc.
+#		  Play intro video, set resolution and start apps
+#
+# Copyright (c) 2009-2010 Duolabs Spa
+#
+# Author: Pedro Aguilar (pedro@duolabs.com)
+#
+
+RETVAL=0;
+DUOLABS_PATH="/usr/local/duolabs"
+MODDIR="/lib/modules/"$(uname -r)
+BOARD=$2
+
+if [ "$BOARD" == "qboxhd-mini" ]; then
+    ID="QBoxHD mini"
+elif [ "$BOARD" == "qboxhd" ]; then
+    ID="QBoxHD"
+else
+    echo "********************************************************************************"
+    echo "FATAL: Unknown board '$BOARD'" 
+    exit 1
+fi
+
+start() 
+{
+	# Start from a clean point
+	rmmod lcd
+    rmmod qboxhdinfo_proc
+    rm -rf /dev/dvb/adapter*
+    if [ "$BOARD" == "qboxhd-mini" ]; then
+        rmmod lpc_mod
+		mknod /dev/lpc_0 c 179 0 2>/dev/null
+        insmod $MODDIR/lpc_mod.ko
+    fi  
+    insmod $MODDIR/qboxhdinfo_proc.ko
+
+	user_emi_reg
+   	insmod $MODDIR/protocol.ko
+
+	echo "$ID: Loading A/V firmware"
+	# MME bug workaround
+	/bin/dd if=/dev/zero of=/dev/st231-0 bs=1024 count=4096
+	/bin/dd if=/dev/zero of=/dev/st231-1 bs=1024 count=4096
+
+	/bin/stslave -t stb7100.0 -R /boot/video.elf
+	/bin/stslave -t stb7100.1 -R /boot/audio.elf
+
+	insmod $MODDIR/e2_proc.ko
+
+	echo "$ID: Loading MME"
+	insmod $MODDIR/embxshell.ko
+	insmod $MODDIR/embxmailbox.ko mailbox0=0xb9211000:136:set2 mailbox1=0xb9212000:0;
+	insmod $MODDIR/embxshm.ko mailbox0=shm:0:7:0x60000000:0:256:256:0:1024:0xa4000000:0x10000000;
+	insmod $MODDIR/mme_host.ko transport0=shm &
+
+    echo "$ID: Initializing frame buffer"
+	insmod $MODDIR/stmcore-display-stx7109c3.ko
+	insmod $MODDIR/stmfb.ko display0=720x576-32@50i:16m:0:pal:rgb:rgb;
+	#insmod $MODDIR/stmfb.ko display0=1280x720-32@50i:8m:0:pal:rgb:rgb display1=720x576-32@50i:8m:0:pal:cvbs
+	#insmod $MODDIR/stmfb.ko display0=1920x1080-32@50i:10m:0:pal:rgb:rgb display1=720x576-16@50i:4m:0:pal:rgb
+
+	# Set layer completely transparent
+	stfbset -a 0
+	# Set mixer background to black screen
+	stfbset -M 0x00000000
+
+	dvo_control
+
+	mknod /dev/rst_0 c 178 0
+	insmod $MODDIR/qboxhd_generic.ko
+
+	echo "$ID: Loading DVB infrastructure"
+	insmod $MODDIR/mmelog.ko
+	insmod $MODDIR/mpeg2hw.ko mmeName=MPEG2_TRANSFORMER0;
+	insmod $MODDIR/ksound.ko
+	insmod $MODDIR/p2div64.ko
+	insmod $MODDIR/stm_v4l2.ko
+	insmod $MODDIR/stmsysfs.ko
+	insmod $MODDIR/pseudocard.ko
+	insmod $MODDIR/platform.ko
+	if [ "$BOARD" == "qboxhd" ]; then
+		insmod $MODDIR/starci2win_mod.ko
+		insmod $MODDIR/cx24116.ko
+		insmod $MODDIR/zl10353.ko
+	fi
+	insmod $MODDIR/avl2108.ko
+	insmod $MODDIR/tda10023.ko
+	insmod $MODDIR/tda10048.ko
+	insmod $MODDIR/tda18218.ko
+	insmod $MODDIR/nimtuner.ko
+
+	/etc/init.d/delayer.sh
+
+	insmod $MODDIR/pti.ko
+	insmod $MODDIR/stmdvb.ko
+	insmod $MODDIR/stm_monitor.ko
+	insmod $MODDIR/player2.ko
+	insmod $MODDIR/stmalloc.ko
+	insmod $MODDIR/sth264pp.ko
+	insmod $MODDIR/silencegen.ko
+
+	# Start wifi iface and dhcp if we're not in a development environment
+	if [ "$QBOXHD_ENV" != "devel" ]; then
+		if [ "$ID" == "QBoxHD" ]; then
+			ifconfig eth0 up
+			/etc/init.d/wifi init
+			ifconfig eth0 down
+			/etc/init.d/networking stop
+			/etc/init.d/networking start
+		fi
+	fi
+
+    if grep -r "mode" /etc/directfbrc
+	then
+		rm -fr /etc/directfbrc
+		ln -s /etc/directfbrc_e2 /etc/directfbrc
+	fi
+
+	if [ "$ID" == "QBoxHD mini" ]; then
+		insmod $MODDIR/scart_mini.ko
+	else
+		insmod $MODDIR/stv6414_i2c.ko
+	fi
+
+	if grep -r "Scart" /etc/fb.modes.supp; then
+		if [ "$ID" == "QBoxHD mini" ]; then
+			scart_mini_slimapp 1
+		else
+			stv6414_slimapp TV_OUT 1
+		fi
+
+		if [ "$QBOXHD_ENV" != "devel" ]; then
+			if [ -e $DUOLABS_PATH/startup.mp4 ]; then
+				# Set volume for intro video: 6%
+				amixer -Dhw:MIXER0 -- sset 'Primary' 4096 >/dev/null
+
+				dvbtest -4 -f l $DUOLABS_PATH/startup.mp4 &
+			fi
+		fi
+	else
+		if [ "$ID" == "QBoxHD mini" ]; then
+			scart_mini_slimapp 0
+		else
+			stv6414_slimapp TV_OUT 0
+		fi
+
+		if [ "$QBOXHD_ENV" != "devel" ]; then
+			if [ -e $DUOLABS_PATH/startup.mp4 ]; then
+				# Set volume for intro video: 6%
+				amixer -Dhw:MIXER0 -- sset 'Primary' 4096 >/dev/null
+
+				dvbtest -4 $DUOLABS_PATH/startup.mp4 &
+			fi
+		fi
+	fi
+
+	if [ "$QBOXHD_ENV" != "devel" ]; then
+		if [ ! -e $DUOLABS_PATH/startup.mp4 ]; then
+			if [ -e $DUOLABS_PATH/startup.png ]; then
+				df_showimage $DUOLABS_PATH/startup.png
+			elif [ -e $DUOLABS_PATH/startup.jpg ]; then
+				df_showimage $DUOLABS_PATH/startup.jpg
+			fi
+		fi
+	fi
+	sleep 1	
+
+	if [ "$ID" == "QBoxHD mini" ]; then
+		mknod /dev/fpanel_0 c 175 0 2>/dev/null
+	fi
+
+	mknod /dev/lcd c 172 0 2>/dev/null
+	insmod $MODDIR/lcd.ko
+	display_image $DUOLABS_PATH/display565.bin
+
+	# Load FPGA drivers
+	fpga_version
+	ubin_loader /lib/firmware/ubfw.bin
+   	insmod $MODDIR/fpanel.ko
+
+	insmod $MODDIR/smartcard.ko
+
+	lircd --release=_RELEASE
+
+	if [ "$ID" == "QBoxHD"  -a ! -e /dev/sw0 ]; then
+		mknod /dev/sw0 c 175 0
+	fi  
+
+	if [ "$QBOXHD_ENV" != "devel" ]; then
+		if [ "$ID" == "QBoxHD mini" ]; then
+			ifconfig eth0 down
+			/etc/init.d/networking stop
+			/etc/init.d/networking start
+		fi
+	fi
+
+	if [ "$QBOXHD_ENV" != "devel" ]; then
+		echo "$ID: Applications startup"
+		/etc/init.d/launcher $BOARD &
+
+		# The intro video can last up to 15s
+		img_cnt=15
+		while [[ "$img_cnt" -gt 0 ]]; do
+			pid=$(pgrep dvbtest)
+			if [ "$pid" != "" ]; then
+				sleep 1;
+			else
+				break;
+			fi  
+			img_cnt=$((img_cnt - 1))
+		done
+		pid=$(pgrep dvbtest)
+		if [ "$pid" != "" ]; then
+			kill -9 $pid
+		fi  
+	fi
+}
+
+stop() 
+{
+	halt
+}
+
+
+case "$1" in
+    start)
+		start
+	;;
+    stop)
+		stop
+	;;
+    *)
+		echo $"Usage: $0 {start|stop}"
+esac
+
+exit $RETVAL

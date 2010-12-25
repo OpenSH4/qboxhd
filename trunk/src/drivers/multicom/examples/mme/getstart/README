@@ -1,0 +1,49 @@
+MME Getting Started Example
+===========================
+
+The getstart example demonstrates the fundementals of using the MME
+API both as a client and as a transformer writer.
+
+The example contains a fairly simplistic 8-bit mixer that is used
+to combine two signals.
+
+Contents of the example
+-----------------------
+
+ - host.c contains the client code that performs transform requests and
+   displays the results as ASCII waveforms.
+ - companion.c contains the minimal code required to boot the companion
+   processor.
+ - mixer.c and mixer.h together form a simple two channel 8-bit mixer.
+
+Using the example
+-----------------
+
+This example requires GNU make (or strictly compatible) to build and
+should be build as follows:
+
+  make PLATFORM=<platform> OS_0=<os_for_cpu0> OS_1=<os_for_cpu1> example
+
+For currently supported platforms see the example runtime harness 
+(../../harness).
+
+The examples should be booted using the appropriate runtime loader,
+see the Multicom documentation for further information.
+
+Points to note
+--------------
+
+This example performs the transform using both a local and a remote 
+transformer. The local transform takes place first since this can
+be completed before the remote processor has even booted. This allows
+the example to be run (albeit partially) even on a single processor
+system.
+
+The mixer is an example of a strictly frame based transformer and is 
+designed to be fully scatter page aware. All reusable transformers 
+should be scatter page aware since otherwise they are more difficult
+to intergrate when used in combination with Linux host processors.
+Since there is a performance cost to being fully scatter page aware
+it is potentially acceptable disable scatter page awareness using the
+C pre-processor in order to maintain performance with a flat memory
+host.

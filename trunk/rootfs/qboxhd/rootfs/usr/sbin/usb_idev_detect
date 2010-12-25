@@ -1,0 +1,149 @@
+#!/bin/sh
+#
+# Brief: Mounts an iPod, iPhone, iPad in /media/iPod, /media/iPhone or 
+#		/media/iPad, respectively. It's called from usr/sbin/usb_detect.
+#		We mantain the list of mounted devices because when unmounting we need
+# 		to know if the removed device was an iPod/iPhone/iPad for distinguishing
+#		from a HDD or from other iPods/iPhones/iPads already mounted.
+#		We mount them as vfat.
+#
+# Copyright (c) 2010 Duolabs Spa
+#
+# Author: Pedro Aguilar (pedro@duolabs.com)
+#
+# Changelog
+# Date    Author      Comments
+# ------------------------------------------------------------------------------
+# 100823  paguilar    v1.0 Original
+# 100824  paguilar    v1.1 Fix a bug that wrongly parsed the tmp file that 
+#					  contains the currently mounted idevs.
+#					  Do not send empty params to the hotplug_manager
+#
+
+# Exit if we were called with no args
+if [ "$1" == "" -o "$2" == "" -o "$3" == "" ]; then
+    exit
+fi
+
+BOARD=$1
+ACTION=$2
+devname=$3
+devnum=$4
+
+# Mount device
+if [ "$ACTION" == "add" ]; then
+
+	num=""
+	prevnum=0
+
+	# If /dev/sdX has at least one partition, skip /dev/sdX
+	partition=/dev/$devname"1"
+	if [ -e "$partition" ]; then
+		exit
+	fi
+
+	# This "locking" mechanism is needed for being sure that each partition 
+	# is mounted in a different /media/hddN. Otherwise the calls to this script
+	# overlap and we mount all the partitions in the same /media/hddN
+	# WARNING: This stops udev from keep serving new devices
+	while [[ "$(cat /tmp/.idev_locked)" -gt "0" ]]; do
+		sleep 1
+	done
+
+	echo 1 > /tmp/.idev_locked
+
+	rawdev=$(echo $devname | sed 's/[0-9]//')
+	imodel=$(cat /sys/block/$rawdev/device/model | awk -F' ' '/(iPod)|(iPhone)|(iPad)/ { print $1 }')
+
+	if [ "$imodel" == "iPod" ]; then
+		mounted=$(mount | awk -F' ' '/\/media\/iPod/ { print $3 }')
+	elif [ "$imodel" == "iPhone" ]; then
+		mounted=$(mount | awk -F' ' '/\/media\/iPhone/ { print $3 }')
+	elif [ "$imodel" == "iPad" ]; then
+		mounted=$(mount | awk -F' ' '/\/media\/iPad/ { print $3 }')
+	fi
+
+	for i in $mounted; do
+		if [ "$imodel" == "iPod" ]; then
+			num=$(echo $i | sed 's/\(\/media\/iPod\)\([0-9]*\)/\2/')
+		elif [ "$imodel" == "iPhone" ]; then
+			num=$(echo $i | sed 's/\(\/media\/iPhone\)\([0-9]*\)/\2/')
+		elif [ "$imodel" == "iPad" ]; then
+			num=$(echo $i | sed 's/\(\/media\/iPad\)\([0-9]*\)/\2/')
+		fi
+
+		if [ "$num" == ""  ]; then
+			num=0
+			prevnum=$num
+		else
+			if [ "$num" -gt "$prevnum" ]; then
+				prevnum=$num
+			fi
+		fi
+	done
+
+	if [ "$num" != "" -a "$num" -ge 0 ]; then
+		num=$(( num + 1 ))
+	fi
+
+	#echo "imodel = $imodel, num = $num" >> /home/chido
+	mkdir -p /media/$imodel$num
+
+	# Try to mount it as VFAT
+	mount -t vfat -o usefree /dev/$devname /media/$imodel$num 2> /dev/null
+	if [ "$?" -ne "0" ]; then
+		# Try to mount it as HFS+
+		mount -t hfsplus -o ro /dev/$devname /media/$imodel$num 2> /dev/null
+		if [ "$?" -ne "0" ]; then
+			echo 0 > /tmp/.idev_locked
+			exit
+		fi
+	fi
+
+	# Add the just mounted iPod/iPhone/iPad device to the list
+	echo "$devname-$imodel" >> /tmp/.idev_cur
+
+	# Calls the HDD hotplug manager used by e2
+	/sbin/hotplug_manager -a "$ACTION" -d "/dev/$devname" -t "$imodel"
+
+	echo 0 > /tmp/.idev_locked
+
+# Unmount device
+elif [ "$ACTION" == "remove" ]; then
+	while [[ "$(cat /tmp/.idev_locked)" -gt "0" ]]; do
+		sleep 1
+	done
+
+	echo 1 > /tmp/.idev_locked
+
+	umount /dev/$devname
+	if [ "$?" -ne "0" ]; then
+		echo 0 > /tmp/.idev_locked
+		exit
+	fi
+
+	lines=$(cat /tmp/.idev_cur)
+	for i in $lines; do
+		#echo "-----" >> /home/chido
+		idev=$(echo $i | awk -F'-' '/(sd[a-z][0-9])/ { print $1 }')
+		#echo "remove: idev: $idev" >> /home/chido
+		imodel=$(echo $i | awk -F'-' '/(sd[a-z][0-9])/ { print $2 }')
+		#echo "remove: imodel: $imodel" >> /home/chido
+		if [ "$idev" != "$devname" ]; then
+			echo $idev-$imodel >> /tmp/.idev_tmp
+		fi
+	done
+	# Remove the just unmounted iPod/iPhone/iPad device from the list
+	if [ -e /tmp/.idev_tmp ]; then
+		mv /tmp/.idev_tmp /tmp/.idev_cur
+	else
+		rm /tmp/.idev_cur
+	fi
+
+	# Calls the HDD hotplug manager used by e2
+	#echo "/sbin/hotplug_manager -a '$ACTION' -d '/dev/$devname' -t '$imodel'" >> /home/chido
+	/sbin/hotplug_manager -a "$ACTION" -d "/dev/$devname" -t "$imodel"
+
+	echo 0 > /tmp/.idev_locked
+fi
+

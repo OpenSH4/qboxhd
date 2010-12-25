@@ -1,0 +1,27 @@
+This is an experimental two-agent test suite for EMBX2. It is
+dubbed the transport test suite because it is only intended to
+test an single transport (whose factory config is compiled into
+the harness).
+
+Usage:
+
+export TARGET=<master-hti>-<slave-hti>
+gmake run
+
+The TARGET variable will be used to include a makefile contained
+in harness/targets/$TARGET.mak. This makefile will provide the
+harness configuration required to launch tests on the stated HTIs.
+
+Although the C is (nearly) capable of supporting many targets the
+makefile harness has a few hardcoded dependancies that should be
+eliminated. However for convenient auto-testing it may be best to
+write the test harness in Perl, with a bit of care we should still
+be able to use the EMBX2 build system to perform the build but this
+should be mastered in Perl.
+
+TODO
+
+ - threaded object test
+ - test EMBX_Address() and EMBX_Offset()
+ - and bandwidth testing the the benchmark test
+

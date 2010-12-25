@@ -1,0 +1,9 @@
+#!/usr/bin/kermit +
+assign \%m \Fdirname(\%0)
+take \%m/kscript
+if exist setupenv {
+  netsetupub
+} else {
+  echo Needs setupenv in current directory
+}
+exit

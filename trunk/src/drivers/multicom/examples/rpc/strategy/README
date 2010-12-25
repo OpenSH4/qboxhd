@@ -1,0 +1,36 @@
+RPC Strategy Example
+====================
+
+The strategy example is an entirely artifical example that demonstrates
+the use of most of the copying strategies RPC supports.
+
+Contents of the example
+-----------------------
+
+There are three fundamental components of the example.
+
+ - strategy.h contains the RPC decorations describing the entire system
+ - caller.c makes calls to the example functions
+ - callee.c implements the example functions
+
+Using the example
+-----------------
+
+This example requires GNU make (or strictly compatible) to build and
+should be build as follows:
+
+  make PLATFORM=<platform> OS_0=<os_for_cpu0> OS_1=<os_for_cpu1> example
+
+For currently support platforms see the example runtime harness 
+(../../harness).
+
+The examples should be booted using the appropriate runtime loader,
+see the Multicom documentation for further information.
+
+Points to note
+--------------
+
+The callback example demonstrated RPC's sophisticated support for passing
+function pointers. Note that the callback is restricted to functions listed 
+in an import block (although it does not matter on which CPU the callback
+is implemented).

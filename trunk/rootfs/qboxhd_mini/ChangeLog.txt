@@ -1,0 +1,95 @@
+Please visit the official Duolabs forum at www.duolabs.com/forumz for feedback 
+on this QBoxHD mini software release. Your help will be greatly appreciated!
+
+================================================================================
+
+Release BETA 0.0.56
+
+- Bugfix: Ticket #684: During automatic scan some NITs override our right
+	DVBS2 frequency with wrong parameters.
+- Bugfix: Ticket #697: SPDIF configuration doesn't work properly when e2 starts.
+- Bugfix: Ticket #695: NAS unmount doesn't re-create the hdd dir.
+- Bugfix: Ticket #696: Add EPG path 2.0.1
+- Bugfix: A lot of minor bugfixes.
+- Enhancement: DVB-T driver fully functional.
+
+================================================================================
+
+Release BETA 0.0.54
+
+- Bugfix: Ticket #688: YouTube Bug when playing file.
+- Bugfix: Ticket #686: Fixed auto-rescaling when viewing a channel 
+	for 16:9 or 4:3.
+- Bugfix: Ticket #685: In extension menu with arabic language, the words go
+	out of the screen.
+- Enhancement: Ticket #687: Updated satellites.xml
+
+================================================================================
+
+Release BETA 0.0.50
+
+- Bugfix: Ticket #679: Crash in player2 when Enigma2 restart after a dirty kill.
+- Bugfix: Ticket #562: Crash when using web interface and start recording 
+	simultaneously.
+- Bugfix: Ticket #677: Second encrypted channel is not visible when stopping
+	and starting a new encrypted recording/zapping.
+- Bugfix: Ticket #680: Added the aspect ratio scart pin management.
+- Enhancement: Ticket #682: Big memory optimization. Additional 4MB are now
+	available.
+- Enhancement: Ticket #676: New VLC server version 1.1.4.1
+- Enhancement: Ticket #678: Optimize camd socket management.
+- Enhancement: Ticket #681: Add support for network tunneling (tun/tap).
+	Compiled as module: tun.ko
+- Enhancement: Added languages: polish and updated italian.
+
+================================================================================
+
+Release BETA 0.0.48
+
+- Bugfix: Ticket #449: Check that SPDIF encoding and bypass work properly.
+- Bugfix: Ticket #569: Crash after removing/inserting the antenna cable several
+	times.
+- Bugfix: Ticket #560: Resize video inside menu.
+- Bugfix: Ticket #664: Backup script has problem with the NOR flash.
+- Bugfix: Ticket #673: White screen when leaving teletext.
+- Bugfix: Ticket #624: Restore USB stick is not detected.
+- Bugfix: Ticket #583: There is a blank screen when moving up/down in the
+	language menu.
+- Bugfix: Ticket #275: MTD: change erase block size.
+- Bugfix: Ticket #433: U-Boot: Reduce the brightness.
+- Bugfix: Ticket #588: Fonts size is too small in the browser.
+- Bugfix: Ticket #567: Viewing channel in web interface is missing.
+- Bugfix: Ticket #585: Scrambled channels don’t display scrambled icon.
+- Bugfix: Ticket #589: It's slow when you navigating internet, some addresses 
+	are not found.
+- Enhancement: Ticket #669: Add dir /etc/rc.d for third party scripts
+- Enhancement: Added support for recording two services from the same
+	transponder.
+- Enhancement: Ticket #675: Add support for USB wireless network adapters based
+	on the zd1211rw driver.
+	A list of some products that use this driver can be found here:
+	http://wireless.kernel.org/en/users/Devices/USB
+
+================================================================================
+
+Release BETA 0.0.44
+
+- Bugfix: Ticket #662: New A/V settings menu.
+- Bugfix: CA driver fixed.
+- Bugfix: Improved delayer driver.
+- Bugfix: Ticket #661: LCD StandBy Brightness regulation doesn't work correctly.
+- Bugfix: Ticket #645: In the webinterface, buttons red (cancel) and
+	green(ok) are missing.
+- Bugfix: Ticket #647: Restart when pressing button blue or yellow in the info
+	menu when watching a DVB-T channel.
+- Bugfix: Ticket #646: The buttons of the Network test menu don't have labels.
+- Bugfix: Ticket #652: Crash from restore if press twice the green button (ok).
+- Bugfix: Fixed delayer driver.
+- Enhancement: Added languages spanish, portugues and finnish.
+- Enhancement: Added utility fbgrub used for taking snapshots of the OSD.
+	How to use it: Connect via telnet to the qboxhd and execute the following
+	command: fbgrub osd.png
+	A PNG image called osd.png will be created in the current directory that
+	will show the current OSD shown in the LCD-TV.
+
+

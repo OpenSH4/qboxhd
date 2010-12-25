@@ -1,0 +1,51 @@
+Runtime Harness for the RPC and EMBX Examples
+=============================================
+
+The runtime harness manages all the complexities of different operating
+systems and target platforms. This allows the examples to demonstrate
+features of RPC and EMBX without unwanted clutter.
+
+Contents of the example
+-----------------------
+
+There are three fundamental components of the example.
+
+ - harness.h is the master header for the runtime harness.
+ - os_abstractions.h provides a type called OS_SIGNAL used
+   by the MME examples to communicate from callbacks.
+ - os_cpu.h contains cpu defines for RPC arena declarations.
+ - os_<operating system>.h contains code to get the OS up and running.
+ - board_<board name>.h contains code to configure a particular board.
+
+Using the example
+-----------------
+
+This example is not intended to be used directly. Instead is hides all the
+complexity of platform configuration from other examples.
+
+Currently supported platforms are:
+
+  mb411		 (CPU 0 is the ST40, CPU_1 is the audio ST231)
+  mb442		 (CPU 0 is the ST40, CPU_1 is the audio ST231)
+  mb519		 (CPU 0 is the ST40, CPU_1 is the audio0 ST231)
+  mb618		 (CPU 0 is the ST40, CPU_1 is the audio ST231)
+
+Points to note
+--------------
+
+This example should not neccessarily be used as a template. This
+harness meets the (fairly unique) requirements of the RPC/EMBX examples.
+
+For example in general the operating system will be configured by 
+existing driver software (e.g. STBOOT for STAPI based systems) and
+therefore all the os_<operating system>.h files are not generally
+useful outside of examples.
+
+The board configuration files are similarly not ideally organised
+for direct inclusion into a more complex environments.
+
+Finally it must be noted that implementing functions like these in
+header files it generally considered bad style. However in these 
+examples it has the useful property that we don't have to build a 
+library in the harness directory before running the examples 
+themselves.

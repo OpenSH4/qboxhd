@@ -1,0 +1,29 @@
+#
+# makefile
+#
+# Copyright (C) STMicroelectronics Limited 2003. All rights reserved.
+#
+# Makefile for MME multiple companion example
+#
+
+APP_NAME   = multicompanion
+
+APP_MASTER = $(APP_NAME)
+APP_SLAVE  = $(APP_NAME)_audio
+APP_VIDEO  = $(APP_NAME)_video
+
+SRCS_MASTER = host.c
+SRCS_SLAVE  = companion.c mixer.c
+
+include ../../harness/harness.mak
+
+# handle CPU 2 as a variant of CPU 1
+
+example : app_video
+
+app_video : BOARD=$(subst audio,video,$(BOARD_1))
+app_video : $(call APPLICATION_1,$(APP_VIDEO))
+
+$(call APPLICATION_1,$(APP_VIDEO)) : $(call OBJS_1,$(SRCS_SLAVE))
+	@$(ECHO) +++ Link $(MACHINE_1) application for CPU 2 [$(call APPLICATION_1,$(APP_VIDEO))] +++
+	$(call BUILD_APP_1,$(call APPLICATION_1,$(APP_VIDEO)),$(call OBJS_1,$(SRCS_SLAVE)))

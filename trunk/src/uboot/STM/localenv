@@ -1,0 +1,10 @@
+######## Modify these parameters for you environment
+set ipaddr      # ipaddress of target 
+set targetname  # network name of target
+set netmask     # netmask
+set gatewayip   # gateway ip address
+set serverip    # ip address of nfs server for kenel & u-boot
+### Add these if your board needs an ethernet address
+#set ethaddr
+#set ethinit nwhwconf=device:eth0,hwaddr:${ethaddr}
+#################################################### 

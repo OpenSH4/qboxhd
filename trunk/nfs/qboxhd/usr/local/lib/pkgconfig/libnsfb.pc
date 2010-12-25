@@ -1,0 +1,12 @@
+prefix=/opt/STM/STLinux-2.3/devkit/sh4/target/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libnsfb
+Description: Provides framebuffer access for netsurf.
+Version: 0.0.1
+#Requires: sdl xcb xcb-icccm xcb-image xcb-keysyms
+Requires: sdl
+Libs: -L${libdir} -lnsfb
+Cflags: -I${includedir}

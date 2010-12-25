@@ -1,0 +1,35 @@
+#
+# (C) Copyright 2006-2008 WyPlay SAS <linux-kernel@wyplay.com>.
+#
+# See file CREDITS for list of people who contributed to this
+# project.
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as
+# published by the Free Software Foundation; version 2 of
+# the License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+# MA 02111-1307 USA
+#
+
+obj-y := setup.o mach.o gpio.o
+
+ifeq ($(CONFIG_USB_CABLE_GADGET), y)
+obj-$(CONFIG_USB_CABLE_GADGET)	+= usbcable.o
+endif
+
+ifeq ($(CONFIG_PM), y)
+obj-$(CONFIG_PM)		+= pm.o
+endif
+
+ifeq ($(CONFIG_PM_DEBUG), y)
+CFLAGS_pm.o	+= -DDEBUG
+endif

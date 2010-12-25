@@ -1,0 +1,47 @@
+RPC Getting Started Example
+===========================
+
+The getstart example demonstrates the construction of a simple RPC 
+interface to control an audio CD player.
+
+Contents of the example
+-----------------------
+
+There are three fundamental components of the example.
+
+ - cdplayer.h provides RPC decorations describing the entire system.
+ - cdplayer.c implements an innovative pure ASCII CD player.
+ - application.c provides a textual interface to control the CD player.
+
+Using the example
+-----------------
+
+This example requires GNU make (or strictly compatible) to build and
+should be build as follows:
+
+  make PLATFORM=<platform> OS_0=<os_for_cpu0> OS_1=<os_for_cpu1> example
+
+For currently support platforms see the example runtime harness 
+(../../harness).
+
+The examples should be booted using the appropriate runtime loader,
+see the Multicom documentation for further information.
+
+Points to note
+--------------
+
+This application has been contructed with the RPC decorations added 
+directly into the C headers used by the rest of the application. For
+this reason we must use the rpccc compiler driver to ensure these
+decorations are stripped from the code before it is compiled. See the 
+posthoc example for an a system contructed without using rpccc.
+
+The design presented in the example is not the only way to implement a 
+CD player with a track list. It would be quite possible to design the 
+CD player system with the search algorithm pushed into the CD player 
+and simply pass search strings to it over RPC. Since the RPC traffic in 
+this example is fairly light either design would be appropriate. In 
+general the choice of which functionality to place on each CPU will 
+depend of the on factors such as CPU load and the locality of dependant
+modules.
+

@@ -1,0 +1,180 @@
+#!/bin/sh
+#
+# /etc/init.d/wifi: Start/stop WiFi resource
+#
+# Copyright (c) 2009 Duolabs Spa
+#
+# Author: ivan@duolabs.com
+#
+
+RETVAL=0;
+ID="rt2880_iNIC"
+MASTERDEVICENAME="eth0"
+WIFIDEVICENAME="ra0"
+DRIVERFILENAME="rt2880_iNIC.ko"
+MODDIR="/lib/modules/2.6.23.17_stm23_0118-qboxhd"
+BOARD_VERSION_FOR_RESET="2"
+
+
+wait_master_running()
+{
+	#wait master running ...
+	for i in 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+	do
+		ifconfig -a $MASTERDEVICENAME | grep "RUNNING"
+		if [ $? == 0 ]; then
+			echo "$ID: Master is UP"
+			return 1
+		fi
+		echo "$ID: Waiting master go up ..."
+		sleep 1
+	done
+	
+	return 0	
+
+}
+
+
+
+check_master_status()
+{
+	# check if eth0 interface is present
+	cat /proc/net/dev | grep $MASTERDEVICENAME > /dev/null
+	if [ $? != 0 ]; then
+		echo "$ID: Master not found."	
+		return 0
+	fi
+
+	#check if it is UP
+	ifconfig $MASTERDEVICENAME | grep "UP " > /dev/null
+	if [ $? != 0 ]; then
+		echo "$ID: Master is DOWN."	
+		return 0
+	fi
+
+	return 1
+}
+
+
+
+init()
+{
+
+	# check if WiFi driver already loaded
+	lsmod $ID | grep $ID > /dev/null
+	if [ $? == 0 ]; then
+		echo "$ID: WiFi driver already loaded."
+		RETVAL=1
+		exit $RETVAL
+	fi
+
+	# check if master runnig
+	if check_master_status; then
+		echo "$ID: Master not running. WiFi driver not loaded."
+		RETVAL=1
+		exit $RETVAL
+	fi
+
+	echo "$ID: Loading WiFi driver ..."
+	insmod $MODDIR/$DRIVERFILENAME mode=sta bridge=1 miimaster=$MASTERDEVICENAME
+	if [ $? == 0 ]; then
+		echo "$ID: WiFi driver loaded."
+	else
+		echo "$ID: WiFi driver not loaded."
+		RETVAL=1
+		exit $RETVAL
+	fi
+
+
+}
+
+
+
+start() 
+{
+	# check if module WiFi is present
+	ifconfig -a $WIFIDEVICENAME > /dev/null
+	if [ $? != 0 ]; then
+		echo "$ID: Module not present."
+		RETVAL=1
+		exit $RETVAL
+	fi
+	
+        # verify if netcable is connected                            
+	/sbin/qboxhd_netcable_detect > /dev/null                     
+	if [ $? == 1 ]; then                                                   
+		echo "$ID: Netcable detect. WiFi not activated."                
+		RETVAL=1                                                        
+		exit $RETVAL                                                    
+	else                                                                    
+		echo "$ID: Netcable not detected."                              
+	fi 	
+
+	# check if module WiFi is alredy activated
+	cat /proc/net/wireless | grep $WIFIDEVICENAME > /dev/null
+	if [ $? == 0 ]; then
+		echo "$ID: WiFi already running."
+		RETVAL=1
+		exit $RETVAL
+	fi
+	
+	# wait master interface go up and running
+	if wait_master_running; then
+		echo "$ID: Master not running. Error to active wifi."
+		RETVAL=1
+		exit $RETVAL
+	fi
+
+	# active WiFi interface
+	ifconfig $WIFIDEVICENAME up
+	echo "$ID: WiFi started ..."
+}
+
+
+
+stop()
+{
+	# stop WiFi interface
+	ifconfig $WIFIDEVICENAME down
+	echo "$ID: WiFi stopped."
+}
+
+
+
+deinit()
+{
+	echo "$ID: Removing WiFi driver"
+	stop
+	rmmod $ID
+	echo "$ID: WiFi driver removed."
+
+}
+
+
+
+case "$1" in
+	init)
+	init
+	;;
+    start)
+	start
+	;;
+    start_with_dhcp)
+    	start
+    	udhcpc -n -t 10 -p /var/run/udhcpc.eth0.pid -i eth0 
+    	;;
+    stop)
+	stop
+	;;
+    restart)
+	stop
+	start
+	;;
+	deinit)
+	deinit
+	;;
+    *)
+	echo $"Usage: $0 {init|start|stop|restart|deinit}"
+esac
+
+exit $RETVAL

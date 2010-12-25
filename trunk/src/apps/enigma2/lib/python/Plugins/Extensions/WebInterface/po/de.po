@@ -1,0 +1,197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: enigma2-plugins-extension-webinterface\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-04 16:59+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Stephan Reichholf <stephan@reichholf.net>\n"
+"Language-Team:  <stephan@reichholf.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-Basepath: V:\\eclipse\\workspaces\\pydev\\enigma2-plugins\\enigma2-"
+"plugins\\webinterface\n"
+"X-Poedit-SearchPath-0: src\n"
+
+msgid "Allow zapping via Webinterface"
+msgstr "Umschalten per Webinterface erlauben"
+
+msgid "Autowrite timer"
+msgstr "Timer automatisch schreiben"
+
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgid "Enable /media"
+msgstr "Aktiviere /media"
+
+msgid "Enable HTTP Access"
+msgstr "HTTP Zugriff aktivieren"
+
+msgid "Enable HTTP Authentication"
+msgstr "HTTP Authentifizierung aktivieren"
+
+msgid "Enable HTTPS Access"
+msgstr "HTTPS Zugriff aktivieren"
+
+msgid "Enable HTTPS Authentication"
+msgstr "HTTPS Authentifizierung aktivieren"
+
+msgid "Enable Streaming Authentication"
+msgstr "Streaming Authenfizierung aktivieren"
+
+msgid "HTTP Port"
+msgstr "HTTP Port"
+
+msgid "HTTPS Port"
+msgstr "HTTPS Port"
+
+msgid "Load movie-length"
+msgstr "Aufnahmelängen laden"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Start Webinterface"
+msgstr "Webinterface starten"
+
+msgid "WebInterface"
+msgstr ""
+
+msgid "Webinterface: Main Setup"
+msgstr "Webinterface: Haupteinstellungen"
+
+#~ msgid "Add"
+#~ msgstr "Hinzufügen"
+
+#~ msgid "Address"
+#~ msgstr "Adresse"
+
+#~ msgid "Authorization"
+#~ msgstr "Autorisierung"
+
+#~ msgid "Change"
+#~ msgstr "Ändern"
+
+#~ msgid "Changing the timer for '%s' failed!"
+#~ msgstr "Timer '%s' konnte nich geändert werden!"
+
+#~ msgid "Configuration for the Webinterface"
+#~ msgstr "Konfiguration des Webinterfaces"
+
+#~ msgid "Could not add timer '%s'!"
+#~ msgstr "Timer '%s' konnte nicht hinzugefügt werden!"
+
+#~ msgid "Could not find timer '%s' with given start and end time!"
+#~ msgstr ""
+#~ "Timer '%s' mit der angegebenen Start- und Endzeit konnte nicht gefunden "
+#~ "werden!"
+
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgid "Disabled"
+#~ msgstr "Deaktiviert"
+
+#~ msgid "EventId not found"
+#~ msgstr "EventId nicht gefunden"
+
+#~ msgid "Illegal Parameter value for Parameter begin : '%s'"
+#~ msgstr "Unerlabter Parameterwert für Parameter begin: '%s'"
+
+#~ msgid "Instant recording started"
+#~ msgstr "Sofortaufnahme gestartet"
+
+#~ msgid "Interfaces"
+#~ msgstr "Schnittstellen"
+
+#~ msgid "Missing Parameter: begin"
+#~ msgstr "Fehlender Parameter: begin"
+
+#~ msgid "Missing Parameter: beginOld"
+#~ msgstr "Fehlender Parameter: beginOld"
+
+#~ msgid "Missing Parameter: description"
+#~ msgstr "Fehlender Parameter: description"
+
+#~ msgid "Missing Parameter: end"
+#~ msgstr "Fehlender Parameter: end"
+
+#~ msgid "Missing Parameter: endOld"
+#~ msgstr "Fehlender Parameter: endOld"
+
+#~ msgid "Missing Parameter: eventid"
+#~ msgstr "Fehlender Parameter: eventid"
+
+#~ msgid "Missing Parameter: name"
+#~ msgstr "Fehelnder Parameter: name"
+
+#~ msgid "Missing Parameter: sRef"
+#~ msgstr "Fehlender Parameter: sRef"
+
+#~ msgid "N/A"
+#~ msgstr "N/V"
+
+#~ msgid "No event found, started infinite recording"
+#~ msgstr "Kein Event gefunden, endlosaufnahme gestartet"
+
+#~ msgid "No matching Timer not found"
+#~ msgstr "Kein zutreffender Timer gefunden"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "Really delete this Interface?"
+#~ msgstr "Diese Schnittstelle wirklich löschen?"
+
+#~ msgid "Require Authorization"
+#~ msgstr "Autorisierung erforderlich"
+
+#~ msgid "SSL"
+#~ msgstr "SSL"
+
+#~ msgid "SSL Encryption"
+#~ msgstr "SSL Verschlüsselung"
+
+#~ msgid "The timer '%s' has been deleted successfully"
+#~ msgstr "Der Timer %s wurde erfolgreich gelöscht"
+
+#~ msgid "The timer has NOT been deleted"
+#~ msgstr "Der Timer wurde NICHT gelöscht"
+
+#~ msgid "Timer %s has been changed!"
+#~ msgstr "Timer %s wurde geändert!"
+
+#~ msgid "Timer added"
+#~ msgstr "Timer hinzugefügt"
+
+#~ msgid "Timer added successfully!"
+#~ msgstr "Timer erfolgreich hinzugefügt!"
+
+#~ msgid "Unexpected Error"
+#~ msgstr "Unerwarteter Fehler"
+
+#~ msgid "Unknown command: '%s'"
+#~ msgstr "Unbekannter Befehl: '%s'"
+
+#~ msgid "Unknown function: '%s'"
+#~ msgstr "Unbekannte Funktion: '%s'"
+
+#~ msgid "Webinterface"
+#~ msgstr "Webinterface"
+
+#~ msgid "Webinterface: Edit Interface"
+#~ msgstr "Webinterface: Schnittstelle bearbeiten"
+
+#~ msgid "Webinterface: List of configured Interfaces"
+#~ msgstr "Webinterface: Liste konfigurierter Schnittstellen"
+
+#~ msgid "no"
+#~ msgstr "nein"
+
+#~ msgid "yes"
+#~ msgstr "ja"

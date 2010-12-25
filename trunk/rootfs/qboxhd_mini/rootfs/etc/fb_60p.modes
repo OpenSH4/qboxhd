@@ -1,0 +1,31 @@
+
+mode "720x480-60"
+    # D: 27.027 MHz, H: 31.500 kHz, V: 60.000 Hz
+    geometry 720 480 720 480 16
+    timings 37000 60 16 30 9 62 6
+endmode
+
+################################################
+# HD Modes
+
+mode "1280x720-60"
+    # D: 74.250 MHz, H: 45.000 kHz, V: 60.000 Hz
+    geometry 1280 720 1280 720 16
+    timings 13468 220 110 20 5 40 5
+    hsync high
+    vsync high
+endmode
+
+
+# Not permits in owr chip
+#mode "1920x1080-60"
+#    # D: 148.500 MHz, H: 67.500 kHz, V: 60.000 Hz
+#    geometry 1920 1080 1920 1080 16
+#    timings 6734 148 88 35 5 44 5
+#    hsync high
+#    vsync high
+#endmode
+
+################################################
+
+

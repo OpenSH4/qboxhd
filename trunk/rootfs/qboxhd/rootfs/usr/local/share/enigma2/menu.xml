@@ -1,0 +1,210 @@
+<menu text="Mainmenu" title="Main menu">
+	<id val="mainmenu" />
+<!-- the following types are allowed:
+	<screen [module="mod"] [screen="classname"]>[arguments]</screen>
+		executes Screen called "classname" from module "Screen.mod"
+		if no module is given, Screen must be globally available.
+		if no screen is given, module is used as screen class name.
+		arguments must be comma seperated (will be fed to eval), and can
+			use stuff from module
+		(of course you must specify at least one of module, screen.)
+	<setup id="id" />
+		opens a setup with specified id
+	<code> .. code .. </code>
+		"exec"s code
+-->
+	
+		<!-- Information -->	
+		<menu level="2" text="Information" entryID="info_screen">
+			<id val="information" />
+			<item level="2" text="Receiver Information" entryID="about_screen"><screen module="About" /></item>
+			<item level="2" text="Current Channel Information" entryID="service_info_screen"><screen module="ServiceInfo" screen="ServiceInfo"/></item>
+			<item level="2" text="Common Interface" entryID="ci_setup" requires="CommonInterface"><screen module="Ci" screen="CiSelection" /></item>
+		</menu>	
+		
+		<!-- User Preferences -->
+		<menu level="2" text="User Preferences" flushConfigOnClose="1" entryID="user_preferences_screen">
+			<id val="user_preferences" />
+			
+			<menu level="2" text="Language" entryID="language_screen">
+				<id val="language" />
+				<item level="2" text="OSD" entryID="language_setup"><screen module="LanguageSelection" /></item>
+				<item level="2" text="Subtitles (Current Channel)" entryID="subtitle_selection"><screen module="Subtitles" screen="Subtitles" /></item>
+				<item level="2" text="Audio (Current Channel)" entryID="audio_selection">
+<code>
+from Screens.InfoBar import InfoBar
+
+if InfoBar.instance is not None:
+	InfoBar.instance.audioSelection()
+</code>	
+				</item>
+			</menu>
+			
+			<item level="2" text="Time Settings" entryID="timezone_setup"><setup id="timezone"/></item>
+			<item level="2" text="TV Settings" entryID="av_setup"><setup id="avsetup"/></item>
+			<item level="2" text="Network Settings" entryID="network_setup"><screen module="NetworkSetup" screen="NetworkAdapterSelection" /></item>
+			<item level="2" text="Parental Control" entryID="parental_setup"><screen module="ParentalControlSetup" screen="ParentalControlSetup" /></item>
+			
+			<menu level="2" text="Miscellaneous" flushConfigOnClose="1" entryID="miscellaneous_screen">
+				<id val="miscellaneous" />
+				
+				<item text="Display Setup" requires="Display"><setup level="2" id="lcd" /></item>
+				<item text="Sense Wheel Setup" requires="SenseWheel"><setup level="2" id="sensewheel" requires="QBoxHD" /></item>
+				<item text="Front Button Setup" requires="FrontButton"><setup level="2" id="frontbutton" requires="QBoxHD_mini" /></item>
+				<item text="Advanced Customization" entryID="usage_setup"><setup level="2" id="usage" /></item>
+			</menu>
+		
+		</menu>
+		
+		<!-- Installation Menu -->
+		<menu level="2" text="Installation Menu" flushConfigOnClose="1" entryID="setup_selection" >
+			<id val="installation_menu" />
+			
+			<menu level="2" text="Channel Search" entryID="service_searching_selection">
+				<id val="scan" />
+				<item text="Automatic Scan" entryID="auto_scan"><screen module="ScanSetup" screen="ScanSimple" /></item>
+				<item text="Manual Scan" entryID="manual_scan"><screen module="ScanSetup" /></item>
+				<item text="OTHER CONFIGURATION:" />
+				<item text="Tuner configuration" entryID="tuner_setup"><screen module="Satconfig" screen="NimSelection" /></item>
+				<item text="Default services lists" entryID="default_lists"><screen module="ScanSetup" screen="DefaultSatLists" /></item>
+			</menu>
+			
+			<menu level="2" text="External Harddisk" entryID="hardisk_selection" >
+				<id val="harddisk" />
+				<item level="2" text="No External Harddisk found" requires="NoHarddisk" />
+				<item level="2" text="External Harddisk Setup" entryID="harddisk_setup" requires="Harddisk" ><setup id="harddisk"/></item>
+				<item level="2" text="Format External Harddisk" entryID="harddisk_init" requires="Harddisk" ><screen module="HarddiskSetup" screen="HarddiskSelection"/></item>
+				<item level="2" text="External Harddisk Integrity Check" entryID="harddisk_check" requires="Harddisk" ><screen module="HarddiskSetup" screen="HarddiskFsckSelection"/></item>
+			</menu>
+			
+			<item level="2" text="Plugins" entryID="plugin_selection"><screen module="PluginBrowser" screen="PluginBrowser" /></item>
+			<item level="2" text="NAS Server Configuration" entryID="network_setup"><screen module="NetworkSetup" screen="NetworkAdapterSelection" /></item>
+			<item level="2" text="Factory reset" entryID="factory_reset">
+<code>
+from Screens.MessageBox import MessageBox
+def msgClosed(ret):
+	if ret:
+		from os import system, _exit
+		system("dvo_control EMG")
+		system("rm -R /etc/enigma2")
+		system("cp -R /usr/share/enigma2/defaults/QBoxHD /etc/enigma2")
+		system("rm -R /etc/tuxbox")
+		system("cp -R /usr/share/enigma2/defaults/tuxbox /etc/tuxbox")
+		_exit(0)
+
+self.session.openWithCallback(msgClosed, MessageBox, _("When you do a factory reset, you will lose ALL your configuration data\n"
+"(including bouquets, services, satellite data ...)\n"
+"After completion of factory reset, your receiver will restart automatically!\n\n"
+"Really do a factory reset?"), MessageBox.TYPE_YESNO)
+</code>
+			</item>
+		</menu>
+		
+		<menu level="2" text="Personal Video Recodings (PVR)" entryID="pvr_selection">
+			<id val="pvr_menu" />
+			<item level="2" text="No Harddisk or NAS found" requires="CanNotRecording" />
+			<item level="2" text="Timer" entryID="timer_edit" requires="CanRecording" ><screen module="TimerEdit" screen="TimerEditList" /></item>
+			<item level="2" text="Recordings" entryID="myrecoding_selection" requires="CanRecording">
+<code>
+from Screens.InfoBar import InfoBar
+
+if InfoBar.instance is not None:
+	InfoBar.instance.showMovies()
+</code>	
+			</item>
+		</menu>
+		
+		<menu text="Standby / Restart" entryID="standby_restart_list">
+			<id val="shutdown" />
+			<item level="2" text="Sleep Timer" entryID="sleep"><screen module="SleepTimerEdit" screen="SleepTimerEdit" /></item>
+			<item level="2" text="Standby" entryID="standby"><screen module="Standby" screen="Standby"/></item>
+			<item level="2" text="Deep Standby" entryID="deep_standby" requires="QBoxHD_mini"><screen module="Standby" screen="TryQuitMainloop" >1</screen></item>
+			<item level="2" text="Restart" entryID="restart"><screen module="Standby" screen="TryQuitMainloop">2</screen></item>
+			<item level="2" text="Restart GUI" entryID="restart_enigma"><screen module="Standby" screen="TryQuitMainloop">3</screen></item>
+			<item level="2" text="ShutDown" entryID="deep_standby" requires="QBoxHD"><screen module="Standby" screen="TryQuitMainloop">1</screen></item>
+		</menu>
+	
+	</menu>
+<!--		
+		
+		<item level="0" text="Subtitles" entryID="subtitle_selection" weight="40"><screen module="Subtitles" screen="Subtitles" /></item>
+		<item level="0" text="Timer" entryID="timer_edit"><screen module="TimerEdit" screen="TimerEditList" /></item>
+		<item level="1" text="VCR scart" entryID="scart_switch" requires="ScartSwitch"><code>self.session.scart.VCRSbChanged(3)</code></item>
+
+		<menu level="0" text="Information" entryID="info_screen">
+			<id val="information" />
+			<item level="1" text="Service" entryID="service_info_screen"><screen module="ServiceInfo" screen="ServiceInfo"/></item>
+			<item level="0" text="About..." entryID="about_screen"><screen module="About" /></item>
+		</menu>
+
+		<item level="1" text="Plugins" entryID="plugin_selection"><screen module="PluginBrowser" screen="PluginBrowser" /></item>
+		<menu level="0" text="Setup" flushConfigOnClose="1" entryID="setup_selection" >
+			<id val="setup" />
+			<menu level="0" text="Service Searching" entryID="service_searching_selection">
+				<id val="scan" />
+				<item text="Tuner configuration" entryID="tuner_setup"><screen module="Satconfig" screen="NimSelection" /></item>
+				<item text="Default services lists" entryID="default_lists"><screen module="ScanSetup" screen="DefaultSatLists" /></item>
+				<item text="Automatic Scan" entryID="auto_scan"><screen module="ScanSetup" screen="ScanSimple" /></item>
+				<item text="Manual Scan" entryID="manual_scan"><screen module="ScanSetup" /></item>
+			</menu>
+			<menu level="0" text="System" entryID="system_selection">
+				<id val="system" />
+				<item level="0" text="Language..." entryID="language_setup"><screen module="LanguageSelection" /></item>
+				<item level="0" entryID="usage_setup"><setup id="usage" /></item>
+				<item level="0" entryID="timezone_setup"><setup id="timezone"/></item>
+				<item level="0" entryID="av_setup"><setup id="avsetup"/></item>
+
+				<item level="1" entryID="rfmod_setup" requires="RfModulator"><setup id="RFmod"/></item>
+				<menu level="0" text="Harddisk..." entryID="hardisk_selection" requires="Harddisk">
+					<id val="harddisk" />
+					
+					<item level="0" entryID="harddisk_setup"><setup id="harddisk"/></item>
+					
+					<item level="0" text="Initialization..." entryID="harddisk_init"><screen module="HarddiskSetup" screen="HarddiskSelection"/></item>
+					<item level="0" text="Filesystem Check..." entryID="harddisk_check"><screen module="HarddiskSetup" screen="HarddiskFsckSelection"/></item>
+				</menu>
+				<item requires="SenseWheel"><setup level="1" id="sensewheel" requires="QBoxHD" /></item>
+				<item requires="FrontButton"><setup level="1" id="frontbutton" requires="QBoxHD_mini" /></item>
+				<item requires="Display"><setup level="1" id="lcd" /></item>
+				<item level="0" text="Network..." entryID="network_setup"><screen module="NetworkSetup" screen="NetworkAdapterSelection" /></item>
+			</menu>
+			<item level="1" text="Common Interface" entryID="ci_setup" requires="CommonInterface"><screen module="Ci" screen="CiSelection" /></item>
+			<item level="0" text="Parental control" entryID="parental_setup"><screen module="ParentalControlSetup" screen="ParentalControlSetup" /></item>
+			<item level="0" text="Default settings" entryID="default_wizard">
+				<code>
+from Screens.DefaultWizard import DefaultWizard
+self.session.open(DefaultWizard, silent = False)
+</code>
+			</item>
+			<item level="0" text="Factory reset" entryID="factory_reset">
+<code>
+from Screens.MessageBox import MessageBox
+def msgClosed(ret):
+	if ret:
+		from os import system, _exit
+		system("dvo_control EMG")
+		system("rm -R /etc/enigma2")
+		system("cp -R /usr/share/enigma2/defaults/QBoxHD /etc/enigma2")
+		system("rm -R /etc/tuxbox")
+		system("cp -R /usr/share/enigma2/defaults/tuxbox /etc/tuxbox")
+		_exit(0)
+
+self.session.openWithCallback(msgClosed, MessageBox, _("When you do a factory reset, you will lose ALL your configuration data\n"
+	"(including bouquets, services, satellite data ...)\n"
+	"After completion of factory reset, your receiver will restart automatically!\n\n"
+	"Really do a factory reset?"), MessageBox.TYPE_YESNO)
+</code></item>
+		</menu>
+		<menu text="Standby / Restart" entryID="standby_restart_list">
+			<id val="shutdown" />
+			<item text="Sleep Timer" entryID="sleep"><screen module="SleepTimerEdit" screen="SleepTimerEdit" /></item>
+			<item text="Standby" entryID="standby"><screen module="Standby" screen="Standby"/></item>
+			<item text="Deep Standby" entryID="deep_standby" requires="QBoxHD_mini"><screen module="Standby" screen="TryQuitMainloop" >1</screen></item>
+			<item text="Restart" entryID="restart"><screen module="Standby" screen="TryQuitMainloop">2</screen></item>
+			<item level="2" text="Restart GUI" entryID="restart_enigma"><screen module="Standby" screen="TryQuitMainloop">3</screen></item>
+			<item text="ShutDown" entryID="deep_standby" requires="QBoxHD"><screen module="Standby" screen="TryQuitMainloop">1</screen></item>
+		</menu>
+		
+		
+</menu>
+-->

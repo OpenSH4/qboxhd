@@ -1,0 +1,33 @@
+EMBX Ping Pong Example
+======================
+
+This example shows the ping-pong of interrupts between two CPUs on the STm8000,
+STx710X and STx7200.
+
+This example is only supported where both the master and companion CPUs are 
+running OS21.
+
+The example shows how to achieve the following:
+
+ - initialise the hardware mailbox library.
+ - acknowledging and raising an interrupt.
+
+Contents of the example
+-----------------------
+
+ - ping_pong_hello_master.c contains all the code to initialize and run the
+                            master CPU.
+ - ping_pong_hello_slave.c  contains all the code to initialize and run a slave
+                            CPU.
+
+
+Using the example
+-----------------
+
+The example requires GNU make (or strictly compatible) to build and
+should be built at follows:
+
+  make example PLATFORM=<platform> OS_0=os21 OS_1=os21
+
+The examples should be booted using the appropriate runtime loader, see
+the Multicom user documentation (Appendix A) for further information.

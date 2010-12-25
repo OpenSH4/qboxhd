@@ -1,0 +1,17 @@
+#NAME DTV
+#SERVICE 1:64:374:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Rai  ----------
+#SERVICE 1:64:375:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Dahlia ----------
+#SERVICE 1:64:376:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Mediaset Premium ----------
+#SERVICE 1:64:377:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Arialice ----------
+#SERVICE 1:64:378:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Blu Mux ----------
+#SERVICE 1:64:379:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Europei ----------
+#SERVICE 1:64:380:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Adulti ----------
+#SERVICE 1:64:381:0:0:0:0:0:0:0:
+#DESCRIPTION ---------- Radio ----------

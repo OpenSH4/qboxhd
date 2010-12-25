@@ -1,0 +1,31 @@
+#
+# For a description of the syntax of this configuration file,
+# see Documentation/kbuild/kconfig-language.txt.
+#
+
+choice
+	prompt "BigPhysArea memory partitioning profile"
+	depends on BPA2 && (SH_WYGAIABOX_01 || SH_WYMDBOX_01)
+	default BPA_PROFILE_VID_128 if SH_WYGAIABOX_01 || SH_WYMDBOX_01
+	help
+	  Should match the video coprocessor driver version in use.
+	  At runtime, may the board actually feature unsufficient
+	  video memory, the small profile will be selected.
+
+	config BPA_PROFILE_VID_64
+		bool "BPA partitioning for 64MB video memory"
+		depends on SH_WYGAIABOX_01 || SH_WYMDBOX_01
+		help
+		  Force restricting allocations to 64MB video memory.
+		  Compatible with boards equipped with 128MB video
+		  memory as well.
+
+	config BPA_PROFILE_VID_128
+		bool "BPA partitioning for 128MB video memory"
+		depends on SH_WYGAIABOX_01 || SH_WYMDBOX_01
+		help
+		  Use 112MB* effective video memory, if available.
+		  * In 29-bit addressing mode, only 112MB out of the 128MB
+		  of physical video memory can be accessed.
+
+endchoice
