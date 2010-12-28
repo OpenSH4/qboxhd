@@ -1,8 +1,8 @@
 usr/bin/freetype-config
-usr/include
+usr/include/*
 usr/lib/directfb-1.0-0
 usr/lib/libid3tag.*
-usr/local/include
+usr/local/include/*
 usr/local/lib/directfb-1.0-0            
 usr/local/lib/libdirectfb* 
 usr/local/lib/libdirect* 
@@ -13,4 +13,4 @@ usr/local/lib/libpng14.*
 usr/local/lib/libxml2.*
 usr/local/lib/libmad.*
 usr/local/lib/pkgconfig
-
+*.svn
