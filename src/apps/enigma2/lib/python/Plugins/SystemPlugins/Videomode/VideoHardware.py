@@ -492,4 +492,4 @@ config.av.edid_override = ConfigYesNo(default = False)
 video_hw = VideoHardware()
 video_hw.setConfiguredMode()
 if QBOXHD:
-	vide_hw.updateHDMIAudioSource()
+	video_hw.updateHDMIAudioSource()
