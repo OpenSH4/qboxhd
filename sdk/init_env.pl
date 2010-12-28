@@ -1,6 +1,7 @@
 #!/bin/perl -Wall
 #
-# @brief Configure and create the paths used for compiling the sources.
+# @brief Configure and create the paths used for building the sources
+# and mount an NFS filesystem.
 # 
 # @author Pedro Aguilar <pedro@duolabs.com>
 #
@@ -40,6 +41,9 @@ foreach my $line (@lines) {
 	elsif ($line =~ /^\s*REPO_URL\s*\=\s*/ ) {
 		$config{'url'} = $';
 	}
+	elsif ($line =~ /^\s*REPO_URL_DUO\s*\=\s*/ ) {
+		$config{'url_duo'} = $';
+	}
 	elsif ($line =~ /^\s*VER\s*\=\s*/ ) {
 		$config{'version'} = $';
 	}
@@ -53,6 +57,24 @@ foreach my $line (@lines) {
 	}
 	elsif ($line =~ /^\s*REPO_DRIVERS\s*\=\s*/) {
 		$config{'url_drivers'} = $';
+	}
+	elsif ($line =~ /^\s*REPO_PTI\s*\=\s*/) {
+		$config{'url_pti'} = $';
+	}
+	elsif ($line =~ /^\s*REPO_SMARTCARD\s*\=\s*/) {
+		$config{'url_smartcard'} = $';
+	}
+	elsif ($line =~ /^\s*REPO_STARCI2WIN\s*\=\s*/) {
+		$config{'url_starci2win'} = $';
+	}
+	elsif ($line =~ /^\s*REPO_QBOXHDINFO\s*\=\s*/) {
+		$config{'url_qboxhdinfo'} = $';
+	}
+	elsif ($line =~ /^\s*REPO_DELAYER\s*\=\s*/) {
+		$config{'url_delayer'} = $';
+	}
+	elsif ($line =~ /^\s*REPO_PROTOCOL\s*\=\s*/) {
+		$config{'url_protocol'} = $';
 	}
 	elsif ($line =~ /^\s*REPO_APPS\s*\=\s*/) {
 		$config{'url_apps'} = $';
@@ -82,6 +104,24 @@ foreach my $line (@lines) {
 	}
 	elsif ($line =~ /SRC_DRIVERS\s*\=\s*/) {
 		$config{'src_drivers'} = $';
+	}
+	elsif ($line =~ /SRC_PTI\s*\=\s*/) {
+		$config{'src_pti'} = $';
+	}
+	elsif ($line =~ /SRC_SMARTCARD\s*\=\s*/) {
+		$config{'src_smartcard'} = $';
+	}
+	elsif ($line =~ /SRC_STARCI2WIN\s*\=\s*/) {
+		$config{'src_starci2win'} = $';
+	}
+	elsif ($line =~ /SRC_QBOXHDINFO\s*\=\s*/) {
+		$config{'src_qboxhdinfo'} = $';
+	}
+	elsif ($line =~ /SRC_DELAYER\s*\=\s*/) {
+		$config{'src_delayer'} = $';
+	}
+	elsif ($line =~ /SRC_PROTOCOL\s*\=\s*/) {
+		$config{'src_protocol'} = $';
 	}
 	elsif ($line =~ /SRC_APPS\s*\=\s*/) {
 		$config{'src_apps'} = $';
@@ -144,18 +184,19 @@ else {
 	die "FATAL: Missing version, root directory or URL";
 }
 
-
 while (my($key, $value) = each(%config)) {
+	$value =~ s/\$\(SRC_DRIVERS\)/$config{'src_drivers'}/;
 	$value =~ s/\$\(REPO_URL\)/$config{'url'}/;
+	$value =~ s/\$\(REPO_URL_DUO\)/$config{'url_duo'}/;
 	$value =~ s/\$\(ROOT_DIR\)/$config{'rootdir'}/;
 
 	$config{$key} = $value;
 }
 
 # Debug
-while (my($key, $value) = each(%config)) {
-	print "$key -> $value";
-}
+#while (my($key, $value) = each(%config)) {
+	#print "$key -> $value";
+#}
 
 ###
 ### Set enigma2 source path and prefix in the script that compiles it
@@ -168,28 +209,61 @@ foreach my $line (@lines) {
 untie @lines;
 
 ###
-### Checkout sources from SVN repo
+### Checkout sources
 ###
+print "\n\nChecking out 'pti'\nURL: $config{'url_pti'}\nDestination: $config{'src_pti'}";
+if (-e "$config{'src_pti'}") {
+	print "Driver already exists. Skipping...";
+}
+else {
+	print "svn checkout $config{'url_pti'} $config{'src_pti'}";
+	my $svn_ret = `svn checkout $config{'url_pti'} $config{'src_pti'}`;
+}
 
-#print "\n\nChecking out 'drivers'\nURL: $config{'url_drivers'}\nDestination: $config{'src_drivers'}";
-#if (-e $config{'src_drivers'}) {
-	#print "Repository already exists. Skipping...";
-#}
-#else {
-	##print "svn checkout $config{'url_drivers'} $config{'src_drivers'}";
-	#my $svn_ret = `svn checkout $config{'url_drivers'} $config{'src_drivers'}`;
-#}
+print "\n\nChecking out 'smartcard'\nURL: $config{'url_smartcard'}\nDestination: $config{'src_smartcard'}";
+if (-e "$config{'src_smartcard'}") {
+	print "Driver already exists. Skipping...";
+}
+else {
+	print "svn checkout $config{'url_smartcard'} $config{'src_smartcard'}";
+	my $svn_ret = `svn checkout $config{'url_smartcard'} $config{'src_smartcard'}`;
+}
 
+print "\n\nChecking out 'starci2win'\nURL: $config{'url_starci2win'}\nDestination: $config{'src_starci2win'}";
+if (-e "$config{'src_starci2win'}") {
+	print "Driver already exists. Skipping...";
+}
+else {
+	print "svn checkout $config{'url_starci2win'} $config{'src_starci2win'}";
+	my $svn_ret = `svn checkout $config{'url_starci2win'} $config{'src_starci2win'}`;
+}
 
-#print "\n\nChecking out 'applications'\nURL: $config{'url_apps'}\nDestination: $config{'src_apps'}";
-#if (-e $config{'src_apps'}) {
-	#print "Repository already exists. Skipping...";
-#}
-#else {
-	##print "svn checkout $config{'url_apps'} $config{'src_apps'}";
-	#my $svn_ret = `svn checkout $config{'url_apps'} $config{'src_apps'}`;
-#}
+print "\n\nChecking out 'qboxhdinfo'\nURL: $config{'url_qboxhdinfo'}\nDestination: $config{'src_qboxhdinfo'}";
+if (-e "$config{'src_qboxhdinfo'}") {
+	print "Driver already exists. Skipping...";
+}
+else {
+	print "svn checkout $config{'url_qboxhdinfo'} $config{'src_qboxhdinfo'}";
+	my $svn_ret = `svn checkout $config{'url_qboxhdinfo'} $config{'src_qboxhdinfo'}`;
+}
 
+print "\n\nChecking out 'delayer'\nURL: $config{'url_delayer'}\nDestination: $config{'src_delayer'}";
+if (-e "$config{'src_delayer'}") {
+	print "Driver already exists. Skipping...";
+}
+else {
+	print "svn checkout $config{'url_delayer'} $config{'src_delayer'}";
+	my $svn_ret = `svn checkout $config{'url_delayer'} $config{'src_delayer'}`;
+}
+
+print "\n\nChecking out 'protocol'\nURL: $config{'url_protocol'}\nDestination: $config{'src_protocol'}";
+if (-e "$config{'src_protocol'}") {
+	print "Driver already exists. Skipping...";
+}
+else {
+	print "svn checkout $config{'url_protocol'} $config{'src_protocol'}";
+	my $svn_ret = `svn checkout $config{'url_protocol'} $config{'src_protocol'}`;
+}
 
 ###
 ### Create build dirs
@@ -220,6 +294,14 @@ foreach my $line (@lines) {
 }
 untie @lines;
 
+tie @lines, 'Tie::File', $nfs_dir."/qboxhd/etc/network/interfaces" or 
+	die "FATAL: Couldn't open '$nfs_dir/qboxhd/etc/network/interfaces'\n";
+foreach my $line (@lines) {
+	$line = "iface eth0 inet static" if ($line =~ /iface eth0 inet dhcp/);
+}
+untie @lines;
+
+
 print "\n\nPopulating NFS target filesystem for QBoxHD mini\nDestination: $nfs_dir/qboxhd_mini";
 `rsync -az --exclude-from=rsync_exclude.txt $rootfs_dir/qboxhd_mini/rootfs/ $nfs_dir/qboxhd_mini`;
 
@@ -231,6 +313,12 @@ foreach my $line (@lines) {
 }
 untie @lines;
 
+tie @lines, 'Tie::File', $nfs_dir."/qboxhd_mini/etc/network/interfaces" or 
+	die "FATAL: Couldn't open '$nfs_dir/qboxhd_mini/etc/network/interfaces'\n";
+foreach my $line (@lines) {
+	$line = "iface eth0 inet static" if ($line =~ /iface eth0 inet dhcp/);
+}
+untie @lines;
 
 print "\nDone!\n"
 

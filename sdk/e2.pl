@@ -29,8 +29,8 @@ use Tie::File;
 
 # WARNING!!!
 # Vars edited by init_env.pl
-my $SRC_E2 = "/home/piter/projects/qboxhd/qboxhd_oss/src/apps/enigma2";
-my $PREFIX = "/home/piter/projects/qboxhd/qboxhd_oss/nfs";
+my $SRC_E2 = "/home/projects/qboxhd/qboxhd_sdk_oss/src/apps/enigma2";
+my $PREFIX = "/home/projects/qboxhd/qboxhd_sdk_oss/nfs";
 
 sub usage()
 {
@@ -172,14 +172,9 @@ sub e2_distclean()
 	print "==================================================";
 	print "Distcleaning...";
 	`make distclean 1>&2`;
+	unlink "configure";
 	print "Done!";
 }
-
-
-
-#$ENV{BUILD} = "i386-linux" if (not defined $ENV{BUILD});
-#$ENV{HOST} = "sh4-linux" if (not defined $ENV{HOST});
-#$ENV{PREFIX} = "/opt/STM/STLinux-2.3/devkit/sh4/target" if (not defined $ENV{PREFIX});
 
 
 if (!$ARGV[0] || !$ARGV[1]) {
