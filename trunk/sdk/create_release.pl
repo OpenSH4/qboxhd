@@ -40,15 +40,13 @@ format USAGE =
 Usage: perl qboxhd_rootfs_create.pl <options> 
 
     @<<<<<<<<<<<<<<<<<<<<<< @|| @>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    "-b board_type", ":", "Board name. Values: qboxhd | qboxhd_mini"
+    "-b <board_type>", ":", "Board name. Values: qboxhd | qboxhd_mini"
     @<<<<<<<<<<<<<<<<<<<<<< @|| @>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    "-r release", ":", "Type of filesystem release. Values: stable | beta"
+    "-r <release>", ":", "Type of filesystem release. Values: stable | beta"
     @<<<<<<<<<<<<<<<<<<<<<< @|| @>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    "-v version", ":", "Optional 3 numbers version. Values: x.y.z"
-    @<<<<<<<<<<<<<<<<<<<<<< @|| @>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    "-p repository_path", ":", "Optional alternative repository"
+    "-v <version>", ":", "Optional 3 numbers version. Values: x.y.z"
 
-Example: perl create_release.pl qboxhd_mini beta -v 0.0.1
+Example: perl create_release.pl -b qboxhd_mini -r beta -v 0.0.1
 
 .
 
@@ -59,8 +57,7 @@ Example: perl create_release.pl qboxhd_mini beta -v 0.0.1
 my ($board, $release, $version, $path);
 GetOptions( 'b|board=s' => \$board,
 			'r|release=s' => \$release,
-			'v|version=s' => \$version,
-			'p|path=s' => \$path
+			'v|version=s' => \$version
 		);
 
 $~ = 'USAGE';
@@ -76,14 +73,14 @@ if (!$release or $release !~ /^stable$/ and $release !~ /^beta$/) {
 }
 
 if ($version !~ /\d+\.\d+\.\d+/) {
-	print "\nFATAL: Invalid version format. It must have three numbers. Eg. 1.0.1"
+	print "\nFATAL: Invalid version format. It must have three numbers. Eg. 1.0.1";
 	write and exit;
 }
 
 my $curdir = getcwd();
 
-# build_path = /sdk/releases/<board_type>/qboxhd_update
-my $build_path = $curdir."../releases/".$board."/qboxhd_update";
+# build_path = /releases/<board_type>/qboxhd_update
+my $build_path = $curdir."/../releases/".$board."/qboxhd_update";
 print "Build path '$build_path' already exists. Aborting..." if (-e $build_path);
 mkpath($build_path, { error => \my $err });
 if (@$err) {
@@ -101,10 +98,10 @@ $build_path =~ /\/qboxhd_update$/;
 my $download_path = $`;
 $download_path = "./" if ($download_path !~ /\w/);
 
-# rootfs_path = /sdk/rootfs/<board_type>/rootfs
-my $rootfs_path = $curdir."../rootfs/".$board."/rootfs";
+# rootfs_path = /rootfs/<board_type>/rootfs
+my $rootfs_path = $curdir."/../rootfs/".$board."/rootfs";
 
-format STDOUT =
+format HEADER =
 
 =========================================================================================
    @<<<<<<<<< @|||||||| @>>>>>>>>>>>>>> @<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -113,17 +110,17 @@ format STDOUT =
 
 .
 
+$~ = 'HEADER';
 write;
 
 my ($login, $pass, $uid, $gid) = getpwnam(getlogin());
-my $curdir = getcwd();
 
-###
-### Checkout the filesystem repo
-###
-#print "Checking out from repository $rootfs_repo";
-#print "Please wait...";
-#my $svn_ret = `svn checkout $rootfs_repo $build_path`;
+print "build_path: $build_path";
+print "rootfs_path: $rootfs_path";
+print "download_path: $download_path";
+
+`cp -a $rootfs_path/../nor $rootfs_path/../*.txt $rootfs_path/../update.sh $build_path`;
+
 
 if ( ! -e $build_path."/update.sh" or ! -x $build_path."/update.sh") {
 	die "FATAL: update.sh script not found or cannot be executed. Aborting!\n"
@@ -183,8 +180,6 @@ foreach my $line (@lines) {
 print "Writing filesystem version in /etc/fs-version: $version";
 untie @lines;
 
-#$svn_ret = `svn commit $rootfs_path/etc/image-version $rootfs_path/etc/fs-version -m "Creating image for the $release version $version"`;
-
 # Remove unwanted stuff
 print "Removing SVN metadata";
 `find $build_path -name .svn | xargs rm -rf `;
@@ -241,17 +236,14 @@ foreach my $bin (@bin_dirs) {
 print "Creating release";
 print "Please wait...";
 chdir($rootfs_path);
-`find . -print0 | cpio -o -0 --format=newc > $build_path/rootfs.cpio`;
+`find -path *.svn -prune -o -print0 | cpio -o -0 --format=newc > $build_path/rootfs.cpio`;
 chdir($curdir);
-
-# Remove the rootfs directory (we already have the cpio)
-#`rm -rf $build_path/rootfs`;
 
 print "Compressing release";
 my $release_filename;
 if ($release =~ /^stable$/) {
 	if ($board =~ /^qboxhd$/) {
-		$release_filename = "qboxhd_update_SD_";
+		$release_filename = "qboxhd_update_";
 	}
 	else {
 		$release_filename = "qboxhd_mini_update_";
@@ -260,7 +252,7 @@ if ($release =~ /^stable$/) {
 else {
 	# We have a beta release
 	if ($board =~ /^qboxhd$/) {
-		$release_filename = "qboxhd_update_SD_";
+		$release_filename = "qboxhd_update_beta_";
 	}
 	else {
 		$release_filename = "qboxhd_mini_update_beta_";
