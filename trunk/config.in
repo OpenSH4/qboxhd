@@ -16,7 +16,7 @@ export PATH:=/opt/STM/STLinux-2.3/devkit/sh4/bin:$(PATH)
 ###
 ROOT_DIR=$(PWD)
 REPO_URL=https://qboxhd.svn.sourceforge.net/svnroot/qboxhd/trunk
-REPO_URL_DUO=http://192.168.0.83
+REPO_URL_DUO=http://devserver
 
 ###
 ### Repositories URLs
@@ -31,7 +31,7 @@ REPO_ROOTFS_QBOXHD=$(REPO_URL)/rootfs/branches/qboxhd_tdt
 REPO_ROOTFS_QBOXHD_MINI=$(REPO_URL)/rootfs/branches/qboxhd_mini_tdt
 
 REPO_PTI=$(REPO_URL_DUO)/drivers/pti/trunk
-REPO_SMARTCARD=$(REPO_URL_DUO)/drivers/pti/trunk
+REPO_SMARTCARD=$(REPO_URL_DUO)/drivers/smartcard/trunk
 REPO_STARCI2WIN=$(REPO_URL_DUO)/drivers/starci2win/trunk
 REPO_QBOXHDINFO=$(REPO_URL_DUO)/drivers/qboxhdinfo_proc/trunk
 REPO_DELAYER=$(REPO_URL_DUO)/drivers/fpga/delayer

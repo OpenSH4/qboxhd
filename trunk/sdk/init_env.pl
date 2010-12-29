@@ -26,11 +26,13 @@ use strict;
 use Tie::File;
 use File::Path;
 use File::Copy;
+use Net::Ping;
 use Cwd;
 
 tie my @lines, 'Tie::File', "../config.in" or die "FATAL: Couldn't open 'config.in'\n";
 
 my $curdir = getcwd();
+my $duolabs_host = "devserver";
 
 my %config;
 my $err;
@@ -211,59 +213,63 @@ untie @lines;
 ###
 ### Checkout sources
 ###
-print "\n\nChecking out 'pti'\nURL: $config{'url_pti'}\nDestination: $config{'src_pti'}";
-if (-e "$config{'src_pti'}") {
-	print "Driver already exists. Skipping...";
-}
-else {
-	print "svn checkout $config{'url_pti'} $config{'src_pti'}";
-	my $svn_ret = `svn checkout $config{'url_pti'} $config{'src_pti'}`;
-}
+my $p = Net::Ping->new();
+if ($p->ping($duolabs_host)) {
+	print "\n\nChecking out 'pti'\nURL: $config{'url_pti'}\nDestination: $config{'src_pti'}";
+	if (-e "$config{'src_pti'}") {
+		print "Driver already exists. Skipping...";
+	}
+	else {
+		#print "svn checkout $config{'url_pti'} $config{'src_pti'}";
+		my $svn_ret = `svn checkout $config{'url_pti'} $config{'src_pti'}`;
+	}
 
-print "\n\nChecking out 'smartcard'\nURL: $config{'url_smartcard'}\nDestination: $config{'src_smartcard'}";
-if (-e "$config{'src_smartcard'}") {
-	print "Driver already exists. Skipping...";
-}
-else {
-	print "svn checkout $config{'url_smartcard'} $config{'src_smartcard'}";
-	my $svn_ret = `svn checkout $config{'url_smartcard'} $config{'src_smartcard'}`;
-}
+	print "\n\nChecking out 'smartcard'\nURL: $config{'url_smartcard'}\nDestination: $config{'src_smartcard'}";
+	if (-e "$config{'src_smartcard'}") {
+		print "Driver already exists. Skipping...";
+	}
+	else {
+		#print "svn checkout $config{'url_smartcard'} $config{'src_smartcard'}";
+		my $svn_ret = `svn checkout $config{'url_smartcard'} $config{'src_smartcard'}`;
+	}
 
-print "\n\nChecking out 'starci2win'\nURL: $config{'url_starci2win'}\nDestination: $config{'src_starci2win'}";
-if (-e "$config{'src_starci2win'}") {
-	print "Driver already exists. Skipping...";
-}
-else {
-	print "svn checkout $config{'url_starci2win'} $config{'src_starci2win'}";
-	my $svn_ret = `svn checkout $config{'url_starci2win'} $config{'src_starci2win'}`;
-}
+	print "\n\nChecking out 'starci2win'\nURL: $config{'url_starci2win'}\nDestination: $config{'src_starci2win'}";
+	if (-e "$config{'src_starci2win'}") {
+		print "Driver already exists. Skipping...";
+	}
+	else {
+		#print "svn checkout $config{'url_starci2win'} $config{'src_starci2win'}";
+		my $svn_ret = `svn checkout $config{'url_starci2win'} $config{'src_starci2win'}`;
+	}
 
-print "\n\nChecking out 'qboxhdinfo'\nURL: $config{'url_qboxhdinfo'}\nDestination: $config{'src_qboxhdinfo'}";
-if (-e "$config{'src_qboxhdinfo'}") {
-	print "Driver already exists. Skipping...";
-}
-else {
-	print "svn checkout $config{'url_qboxhdinfo'} $config{'src_qboxhdinfo'}";
-	my $svn_ret = `svn checkout $config{'url_qboxhdinfo'} $config{'src_qboxhdinfo'}`;
-}
+	print "\n\nChecking out 'qboxhdinfo'\nURL: $config{'url_qboxhdinfo'}\nDestination: $config{'src_qboxhdinfo'}";
+	if (-e "$config{'src_qboxhdinfo'}") {
+		print "Driver already exists. Skipping...";
+	}
+	else {
+		#print "svn checkout $config{'url_qboxhdinfo'} $config{'src_qboxhdinfo'}";
+		my $svn_ret = `svn checkout $config{'url_qboxhdinfo'} $config{'src_qboxhdinfo'}`;
+	}
 
-print "\n\nChecking out 'delayer'\nURL: $config{'url_delayer'}\nDestination: $config{'src_delayer'}";
-if (-e "$config{'src_delayer'}") {
-	print "Driver already exists. Skipping...";
-}
-else {
-	print "svn checkout $config{'url_delayer'} $config{'src_delayer'}";
-	my $svn_ret = `svn checkout $config{'url_delayer'} $config{'src_delayer'}`;
-}
+	print "\n\nChecking out 'delayer'\nURL: $config{'url_delayer'}\nDestination: $config{'src_delayer'}";
+	if (-e "$config{'src_delayer'}") {
+		print "Driver already exists. Skipping...";
+	}
+	else {
+		#print "svn checkout $config{'url_delayer'} $config{'src_delayer'}";
+		my $svn_ret = `svn checkout $config{'url_delayer'} $config{'src_delayer'}`;
+	}
 
-print "\n\nChecking out 'protocol'\nURL: $config{'url_protocol'}\nDestination: $config{'src_protocol'}";
-if (-e "$config{'src_protocol'}") {
-	print "Driver already exists. Skipping...";
+	print "\n\nChecking out 'protocol'\nURL: $config{'url_protocol'}\nDestination: $config{'src_protocol'}";
+	if (-e "$config{'src_protocol'}") {
+		print "Driver already exists. Skipping...";
+	}
+	else {
+		#print "svn checkout $config{'url_protocol'} $config{'src_protocol'}";
+		my $svn_ret = `svn checkout $config{'url_protocol'} $config{'src_protocol'}`;
+	}
 }
-else {
-	print "svn checkout $config{'url_protocol'} $config{'src_protocol'}";
-	my $svn_ret = `svn checkout $config{'url_protocol'} $config{'src_protocol'}`;
-}
+$p->close();
 
 ###
 ### Create build dirs
