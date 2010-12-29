@@ -60,6 +60,9 @@ foreach my $line (@lines) {
 	elsif ($line =~ /^\s*REPO_DRIVERS\s*\=\s*/) {
 		$config{'url_drivers'} = $';
 	}
+	elsif ($line =~ /^\s*REPO_INCLUDE\s*\=\s*/) {
+		$config{'url_include'} = $';
+	}
 	elsif ($line =~ /^\s*REPO_PTI\s*\=\s*/) {
 		$config{'url_pti'} = $';
 	}
@@ -106,6 +109,9 @@ foreach my $line (@lines) {
 	}
 	elsif ($line =~ /SRC_DRIVERS\s*\=\s*/) {
 		$config{'src_drivers'} = $';
+	}
+	elsif ($line =~ /SRC_INCLUDE\s*\=\s*/) {
+		$config{'src_include'} = $';
 	}
 	elsif ($line =~ /SRC_PTI\s*\=\s*/) {
 		$config{'src_pti'} = $';
@@ -215,6 +221,17 @@ untie @lines;
 ###
 my $p = Net::Ping->new();
 if ($p->ping($duolabs_host)) {
+	print "\n\nChecking out 'include'\nURL: $config{'url_include'}\nDestination: $config{'src_include'}";
+	if (-e "$config{'src_include'}") {
+		print "Driver already exists. Skipping...";
+	}
+	else {
+		#print "svn checkout $config{'url_include'} $config{'src_include'}";
+		my $svn_ret = `svn checkout $config{'url_include'} $config{'src_include'}`;
+		print "WARNING: Merging OSS and proprietary files in $config{'src_include'}/../includes";
+		`rsync -az --exclude=*.svn $config{'src_include'}/ $config{'src_include'}/../includes/`
+	}
+
 	print "\n\nChecking out 'pti'\nURL: $config{'url_pti'}\nDestination: $config{'src_pti'}";
 	if (-e "$config{'src_pti'}") {
 		print "Driver already exists. Skipping...";
