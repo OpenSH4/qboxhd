@@ -30,6 +30,7 @@ REPO_GENESIS=$(REPO_URL)/genesis/trunk
 REPO_ROOTFS_QBOXHD=$(REPO_URL)/rootfs/branches/qboxhd_tdt
 REPO_ROOTFS_QBOXHD_MINI=$(REPO_URL)/rootfs/branches/qboxhd_mini_tdt
 
+REPO_INCLUDE=$(REPO_URL_DUO)/drivers/include/trunk
 REPO_PTI=$(REPO_URL_DUO)/drivers/pti/trunk
 REPO_SMARTCARD=$(REPO_URL_DUO)/drivers/smartcard/trunk
 REPO_STARCI2WIN=$(REPO_URL_DUO)/drivers/starci2win/trunk
@@ -68,7 +69,7 @@ SRC_APPS=$(ROOT_DIR)/src/apps
 SRC_E2=$(ROOT_DIR)/src/apps/enigma2
 SRC_UBOOT=$(ROOT_DIR)/src/uboot
 SRC_GENESIS=$(ROOT_DIR)/src/genesis
-SRC_INC=$(SRC_DRIVERS)/include
+SRC_INCLUDE=$(SRC_DRIVERS)/includes.duolabs
 SRC_STMFB=$(SRC_DRIVERS)/stmfb
 SRC_MULTICOM=$(SRC_DRIVERS)/multicom
 SRC_PLAYER2=$(SRC_DRIVERS)/player2
