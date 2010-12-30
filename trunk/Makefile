@@ -402,7 +402,13 @@ $(BUILD_KERNEL): $(SRC_KERNEL)/config.default
 	@echo Creating kernel build directory and applying default configuration
 	@mkdir -p $(BUILD_KERNEL)
 	@echo "Applying default configuration settings (check log incase of errors)"
-	@cp $(SRC_KERNEL)/config.default $(BUILD_KERNEL)/.config
+ifeq ($(BOARD),qboxhd)
+	@cp $(SRC_KERNEL)/config.qboxhd $(BUILD_KERNEL)/.config
+else
+ifeq ($(BOARD),qboxhd_mini)
+	@cp $(SRC_KERNEL)/config.qboxhd_mini $(BUILD_KERNEL)/.config
+endif
+endif
 	@$(KERNEL_COMMAND) oldconfig prepare scripts maketools
 	@touch $@
 
