@@ -47,7 +47,8 @@ format USAGE =
     @<<<<<<<<<<<<<<<<<<<<<< @|| @>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     "-v <version>", ":", "Optional 3 numbers version. Values: x.y.z"
 
-Example: perl create_release.pl -b qboxhd_mini -r beta -v 0.0.1
+@<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+"Example: perl $0 -b qboxhd_mini -r beta -v 0.0.1"
 
 .
 
