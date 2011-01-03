@@ -37,7 +37,8 @@ use File::Basename;
 
 format USAGE =
 
-Usage: perl qboxhd_rootfs_create.pl <options> 
+@<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+"Usage: perl $0 <options>"
 
     @<<<<<<<<<<<<<<<<<<<<<< @|| @>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     "-b <board_type>", ":", "Board name. Values: qboxhd | qboxhd_mini"
@@ -54,13 +55,16 @@ Example: perl create_release.pl -b qboxhd_mini -r beta -v 0.0.1
 ### Check command line input
 ###
 
-my ($board, $release, $version, $path);
+my ($board, $release, $version, $help, $path);
 GetOptions( 'b|board=s' => \$board,
 			'r|release=s' => \$release,
-			'v|version=s' => \$version
+			'v|version=s' => \$version,
+			'h|help' => \$help
 		);
 
 $~ = 'USAGE';
+
+write and exit if ($help);
 
 if (!$board) {
 	print "\nFATAL: NULL board type";
