@@ -62,12 +62,20 @@ GetOptions( 'b|board=s' => \$board,
 
 $~ = 'USAGE';
 
-if (!$board or $board !~ /^qboxhd$/ and $board !~ /^qboxhd_mini$/) {
+if (!$board) {
+	print "\nFATAL: NULL board type";
+	write and exit;
+}
+elsif ($board !~ /^qboxhd$/ and $board !~ /^qboxhd_mini$/) {
 	print "\nFATAL: Invalid board type '$board'";
 	write and exit;
 }
 
-if (!$release or $release !~ /^stable$/ and $release !~ /^beta$/) {
+if (!$release) {
+	print "\nFATAL: NULL release type";
+	write and exit;
+}
+if ($release !~ /^stable$/ and $release !~ /^beta$/) {
 	print "\nFATAL: Invalid release type '$release'";
 	write and exit;
 }
