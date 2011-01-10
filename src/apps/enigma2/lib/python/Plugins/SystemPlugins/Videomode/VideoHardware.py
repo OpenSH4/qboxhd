@@ -473,9 +473,6 @@ class VideoHardware:
 	def setHDMIAudioSource(self, configElement):
 		open("/proc/stb/hdmi/audio_source", "w").write(configElement.value)
 		
-	def updateHDMIAudioSource(self):
-		self.setHDMIAudioSource(config.av.hdmi_audio_source)
-		
 	def updateColor(self, port):
 		print "updateColor: ", port
 		if port == "HDMI":
@@ -491,5 +488,3 @@ class VideoHardware:
 config.av.edid_override = ConfigYesNo(default = False)
 video_hw = VideoHardware()
 video_hw.setConfiguredMode()
-if QBOXHD:
-	video_hw.updateHDMIAudioSource()
