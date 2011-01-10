@@ -43,6 +43,9 @@ Date        Modification                                    Name
 
 #include "../../../../sound/pseudocard/pseudo_mixer.h"
 
+#if defined(CONFIG_SH_QBOXHD_1_0) || defined(CONFIG_SH_QBOXHD_MINI_1_0)
+extern unsigned int hdmi_audio_source_ply;
+#endif
 
 extern struct snd_kcontrol ** pseudoGetControls(int* numbers);
 extern int snd_pseudo_switch_put(struct snd_kcontrol *kcontrol,
@@ -161,7 +164,6 @@ struct dvb_device* AudioInit (struct DeviceContext_s* Context)
 
 extern long stmhdmiio_set_audio_source(unsigned int arg);
 extern long stmhdmiio_get_audio_source(unsigned int *arg);
-unsigned int hdmi_audio_source=STMHDMIIO_AUDIO_SOURCE_NONE;
 
 #endif
 
@@ -176,10 +178,8 @@ int AudioIoctlStop (struct DeviceContext_s* Context)
     {
         struct mutex*   WriteLock       = Context->ActiveAudioWriteLock;
 #if defined(CONFIG_SH_QBOXHD_1_0) || defined(CONFIG_SH_QBOXHD_MINI_1_0)
-		stmhdmiio_get_audio_source(&hdmi_audio_source);
-		DVB_DEBUG("HDMI audio source GET: %d \n",hdmi_audio_source);
-		if(hdmi_audio_source==STMHDMIIO_AUDIO_SOURCE_PCM)
-			stmhdmiio_set_audio_source(STMHDMIIO_AUDIO_SOURCE_NONE);
+	if ( hdmi_audio_source_ply == STMHDMIIO_AUDIO_SOURCE_PCM )
+		stmhdmiio_set_audio_source(STMHDMIIO_AUDIO_SOURCE_NONE);
 #endif
         /* Discard previously injected data to free the lock. */
 		StreamDrain (Context->AudioStream, true);
@@ -304,14 +304,14 @@ int AudioIoctlPlay (struct DeviceContext_s* Context)
 
     if (Result == 0)
     {
-		StreamEnable (Context->AudioStream, true);
+	StreamEnable (Context->AudioStream, true);
         Context->AudioState.play_state    = AUDIO_PLAYING;
+	
 #if defined(CONFIG_SH_QBOXHD_1_0) || defined(CONFIG_SH_QBOXHD_MINI_1_0)
-		if(hdmi_audio_source==STMHDMIIO_AUDIO_SOURCE_NONE)
-			stmhdmiio_get_audio_source(&hdmi_audio_source);
-		DVB_DEBUG("HDMI audio source SET: %d \n",hdmi_audio_source);
-		if(hdmi_audio_source==STMHDMIIO_AUDIO_SOURCE_PCM)
-			stmhdmiio_set_audio_source(STMHDMIIO_AUDIO_SOURCE_PCM);
+	if ( hdmi_audio_source_ply == STMHDMIIO_AUDIO_SOURCE_PCM ) {
+		stmhdmiio_set_audio_source( hdmi_audio_source_ply );
+		printk("HDMI audio source SET: %d\n",hdmi_audio_source_ply);
+	}
 #endif
     }
     DVB_DEBUG("State = %d\n", Context->AudioState.play_state);

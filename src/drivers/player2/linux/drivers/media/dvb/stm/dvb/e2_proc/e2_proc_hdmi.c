@@ -33,7 +33,9 @@ extern long stmhdmiio_get_edid_handling(unsigned int * arg);
 
 extern struct DeviceContext_s* ProcDeviceContext;
 
-
+#if defined(CONFIG_SH_QBOXHD_1_0) || defined(CONFIG_SH_QBOXHD_MINI_1_0)
+unsigned int hdmi_audio_source_ply = STMHDMIIO_AUDIO_SOURCE_PCM;
+#endif
 
 int proc_hdmi_audio_source_write(struct file *file, const char __user *buf,
                            unsigned long count, void *data)
@@ -81,6 +83,9 @@ int proc_hdmi_audio_source_write(struct file *file, const char __user *buf,
 
 		stmhdmiio_set_audio_source(value);
 
+#if defined(CONFIG_SH_QBOXHD_1_0) || defined(CONFIG_SH_QBOXHD_MINI_1_0)
+		hdmi_audio_source_ply = value;
+#endif
 		
 		/* always return count to avoid endless loop */
 		ret = count;	
