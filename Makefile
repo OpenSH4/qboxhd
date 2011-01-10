@@ -73,7 +73,12 @@ all: kernel kernel_install modules modules_install
 
 
 .check_board:
-	$(if $(BOARD),,$(error "FATAL: Invalid board. Type 'make help'"))
+	$(if $(BOARD),,$(error FATAL: No board type was entered. Type 'make help'))
+ifneq ($(BOARD),qboxhd)
+ifneq ($(BOARD),qboxhd_mini)
+	$(error FATAL: Invalid board type. Type 'make help')
+endif
+endif
 
 
 ###############################################################################
