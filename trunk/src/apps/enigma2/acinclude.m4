@@ -446,7 +446,7 @@ AC_DEFUN([AC_PYTHON_DEVEL],[
 		python_path=
 		for i in $QBOXHD_PYTHON_LDFLAGS; do
 			l=`echo $i | sed "s,^-L,,"`
-			python_path=`find $l -type f -name libpython$cross_PYTHON_VERSION.* -print | sed "1q"`
+			python_path=`find $l -maxdepth 3 -type f -name libpython$cross_PYTHON_VERSION.* -print | sed "1q"`
 			if test -n "$python_path" ; then
 				break
 			fi
