@@ -66,9 +66,6 @@ foreach my $line (@lines) {
 	elsif ($line =~ /^\s*REPO_PTI\s*\=\s*/) {
 		$config{'url_pti'} = $';
 	}
-	elsif ($line =~ /^\s*REPO_SMARTCARD\s*\=\s*/) {
-		$config{'url_smartcard'} = $';
-	}
 	elsif ($line =~ /^\s*REPO_STARCI2WIN\s*\=\s*/) {
 		$config{'url_starci2win'} = $';
 	}
@@ -115,9 +112,6 @@ foreach my $line (@lines) {
 	}
 	elsif ($line =~ /SRC_PTI\s*\=\s*/) {
 		$config{'src_pti'} = $';
-	}
-	elsif ($line =~ /SRC_SMARTCARD\s*\=\s*/) {
-		$config{'src_smartcard'} = $';
 	}
 	elsif ($line =~ /SRC_STARCI2WIN\s*\=\s*/) {
 		$config{'src_starci2win'} = $';
@@ -239,15 +233,6 @@ if ($p->ping($duolabs_host)) {
 	else {
 		#print "svn checkout $config{'url_pti'} $config{'src_pti'}";
 		my $svn_ret = `svn checkout $config{'url_pti'} $config{'src_pti'}`;
-	}
-
-	print "\n\nChecking out 'smartcard'\nURL: $config{'url_smartcard'}\nDestination: $config{'src_smartcard'}";
-	if (-e "$config{'src_smartcard'}") {
-		print "Driver already exists. Skipping...";
-	}
-	else {
-		#print "svn checkout $config{'url_smartcard'} $config{'src_smartcard'}";
-		my $svn_ret = `svn checkout $config{'url_smartcard'} $config{'src_smartcard'}`;
 	}
 
 	print "\n\nChecking out 'starci2win'\nURL: $config{'url_starci2win'}\nDestination: $config{'src_starci2win'}";
