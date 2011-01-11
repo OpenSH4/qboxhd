@@ -32,7 +32,6 @@ REPO_ROOTFS_QBOXHD_MINI=$(REPO_URL)/rootfs/branches/qboxhd_mini_tdt
 
 REPO_INCLUDE=$(REPO_URL_DUO)/drivers/include/trunk
 REPO_PTI=$(REPO_URL_DUO)/drivers/pti/trunk
-REPO_STARCI2WIN=$(REPO_URL_DUO)/drivers/starci2win/trunk
 REPO_QBOXHDINFO=$(REPO_URL_DUO)/drivers/qboxhdinfo_proc/trunk
 REPO_DELAYER=$(REPO_URL_DUO)/drivers/fpga/delayer
 REPO_PROTOCOL=$(REPO_URL_DUO)/drivers/protocol/trunk

@@ -235,15 +235,6 @@ if ($p->ping($duolabs_host)) {
 		my $svn_ret = `svn checkout $config{'url_pti'} $config{'src_pti'}`;
 	}
 
-	print "\n\nChecking out 'starci2win'\nURL: $config{'url_starci2win'}\nDestination: $config{'src_starci2win'}";
-	if (-e "$config{'src_starci2win'}") {
-		print "Driver already exists. Skipping...";
-	}
-	else {
-		#print "svn checkout $config{'url_starci2win'} $config{'src_starci2win'}";
-		my $svn_ret = `svn checkout $config{'url_starci2win'} $config{'src_starci2win'}`;
-	}
-
 	print "\n\nChecking out 'qboxhdinfo'\nURL: $config{'url_qboxhdinfo'}\nDestination: $config{'src_qboxhdinfo'}";
 	if (-e "$config{'src_qboxhdinfo'}") {
 		print "Driver already exists. Skipping...";
