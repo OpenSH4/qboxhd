@@ -210,7 +210,7 @@ protocol: .check_board config.in $(BUILD_PROTOCOL)
 ### Modules installation
 ###
 
-modules_install: .check_board .modules_install_kernel stmfb_install multicom_install player2_install frontends_install avs_install e2proc_install lcd_install lpc_install fpanel_install smartcard_install scart_install qboxhd_generic_install starci2win
+modules_install: .check_board .modules_install_kernel stmfb_install multicom_install player2_install frontends_install avs_install e2proc_install lcd_install lpc_install fpanel_install smartcard_install scart_install qboxhd_generic_install starci2win_install
 	@echo All modules installed
 
 .modules_install_kernel: TAG = $(shell cat $(BUILD_KERNEL)/include/linux/utsrelease.h | cut -d'"' -f2)
@@ -343,7 +343,7 @@ protocol_install: config.in
 ### Kernel and modules clean rules
 ###############################################################################
 
-modules_clean: .check_board .modules_clean_kernel stmfb_clean multicom_clean player2_clean frontends_clean avs_clean e2proc_clean lcd_clean lpc_clean fpanel_clean smartcard_clean scart_clean qboxhd_generic_clean starci2win
+modules_clean: .check_board .modules_clean_kernel stmfb_clean multicom_clean player2_clean frontends_clean avs_clean e2proc_clean lcd_clean lpc_clean fpanel_clean smartcard_clean scart_clean qboxhd_generic_clean starci2win_clean
 
 stmfb_clean:
 	@rm -rf $(BUILD_STMFB)
