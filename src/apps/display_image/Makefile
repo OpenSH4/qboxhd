@@ -11,7 +11,6 @@ TARGETS = $(patsubst %.c, %, $(SRC))
 
 all: $(SRC) $(OBJS)
 	$(STRIP) $(TARGETS)
-	@cp -v $(TARGETS) /mnt/rootfs_nfs/usr/local/bin
     
 .c.o:
 	$(CC) $(CFLAGS) $(INC) $< -o $(patsubst %.o, %, $@) -lduoutils
