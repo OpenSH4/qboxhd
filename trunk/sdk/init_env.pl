@@ -215,15 +215,15 @@ untie @lines;
 ###
 my $p = Net::Ping->new();
 if ($p->ping($duolabs_host)) {
-	print "\n\nChecking out 'include'\nURL: $config{'url_include'}\nDestination: $config{'src_include'}";
-	if (-e "$config{'src_include'}") {
+	print "\n\nChecking out 'include'\nURL: $config{'url_include'}\nDestination: $config{'src_include'}.duolabs";
+	if (-e "$config{'src_include'}.duolabs") {
 		print "Driver already exists. Skipping...";
 	}
 	else {
-		#print "svn checkout $config{'url_include'} $config{'src_include'}";
-		my $svn_ret = `svn checkout $config{'url_include'} $config{'src_include'}`;
-		print "WARNING: Merging OSS and proprietary files in $config{'src_include'}/../includes";
-		`rsync -az --exclude=*.svn $config{'src_include'}/ $config{'src_include'}/../includes/`
+		#print "svn checkout $config{'url_include'} $config{'src_include'}.duolabs";
+		my $svn_ret = `svn checkout $config{'url_include'} $config{'src_include'}.duolabs`;
+		print "WARNING: Merging OSS and proprietary files in $config{'src_include'}";
+		`rsync -az --exclude=*.svn $config{'src_include'}.duolabs/ $config{'src_include'}/`
 	}
 
 	print "\n\nChecking out 'pti'\nURL: $config{'url_pti'}\nDestination: $config{'src_pti'}";
