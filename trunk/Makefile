@@ -142,9 +142,7 @@ DELAYER_COMMAND=make -C $(SRC_KERNEL) O=$(BUILD_KERNEL) M=$(BUILD_DELAYER) ARCH=
 PROTOCOL_COMMAND=make -C $(SRC_KERNEL) O=$(BUILD_KERNEL) M=$(BUILD_PROTOCOL) ARCH=$(ARCH) CROSS_COMPILE=$(CROSS_COMPILE) INSTALL_MOD_PATH=$(ROOTFS)
 
 
-
-
-modules: .check_board config.in .modules_kernel stmfb multicom player2 pti frontends avs e2proc lcd lpc fpanel smartcard scart starci2win qboxhd_generic qboxhdinfo delayer protocol
+modules: .check_board config.in .modules_kernel stmfb multicom player2 frontends avs e2proc lcd lpc fpanel smartcard scart qboxhd_generic
 	@echo All modules built
 
 .modules_kernel: $(BUILD_KERNEL)/.config
@@ -212,7 +210,7 @@ protocol: .check_board config.in $(BUILD_PROTOCOL)
 ### Modules installation
 ###
 
-modules_install: .check_board .modules_install_kernel stmfb_install multicom_install player2_install pti_install frontends_install avs_install e2proc_install lcd_install lpc_install fpanel_install smartcard_install scart_install qboxhd_generic_install qboxhdinfo_install starci2win_install delayer_install protocol_install
+modules_install: .check_board .modules_install_kernel stmfb_install multicom_install player2_install frontends_install avs_install e2proc_install lcd_install lpc_install fpanel_install smartcard_install scart_install qboxhd_generic_install 
 	@echo All modules installed
 
 .modules_install_kernel: TAG = $(shell cat $(BUILD_KERNEL)/include/linux/utsrelease.h | cut -d'"' -f2)
@@ -345,7 +343,7 @@ protocol_install: config.in
 ### Kernel and modules clean rules
 ###############################################################################
 
-modules_clean: .check_board .modules_clean_kernel stmfb_clean multicom_clean player2_clean pti_clean frontends_clean avs_clean e2proc_clean lcd_clean lpc_clean fpanel_clean smartcard_clean scart_clean qboxhd_generic_clean qboxhdinfo_clean starci2win_clean delayer_clean protocol_clean 
+modules_clean: .check_board .modules_clean_kernel stmfb_clean multicom_clean player2_clean frontends_clean avs_clean e2proc_clean lcd_clean lpc_clean fpanel_clean smartcard_clean scart_clean qboxhd_generic_clean 
 
 stmfb_clean:
 	@rm -rf $(BUILD_STMFB)
