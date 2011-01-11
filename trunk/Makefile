@@ -69,7 +69,7 @@ config.in:
 	@echo "Please supply a config.in file"
 	@false
 
-all: kernel kernel_install modules modules_install
+all: kernel kernel_install modules modules_install enigma2
 
 
 .check_board:
