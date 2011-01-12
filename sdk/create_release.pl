@@ -178,7 +178,7 @@ else {
 	untie @lines;
 
 	my $nor_path = "../rootfs/$board";
-	print "nor_path: '$nor_path'";
+	#print "nor_path: '$nor_path'";
 	`rsync -az --exclude=*.svn $nor_path/nor $nor_path/*.txt $nor_path/update.sh $build_path`;
 }
 
