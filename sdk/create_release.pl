@@ -6,7 +6,7 @@
 #
 # @author Pedro Aguilar <pedro@duolabs.com>
 #
-# Copyright (C) 2009-2010 Duolabs Spa
+# Copyright (C) 2009-2011 Duolabs Spa
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -37,29 +37,29 @@ use File::Basename;
 
 format USAGE =
 
-@<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-"Usage: perl $0 <options>"
+@<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+"Usage: perl $0 -b <board_type> [-r release] [-f rootfs] [-v version]"
 
-    @<<<<<<<<<<<<<<<<<<<<<< @|| @>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @<<<<<<<<<<<<<<<<<<< @|| @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     "-b <board_type>", ":", "Board name. Values: qboxhd | qboxhd_mini"
-    @<<<<<<<<<<<<<<<<<<<<<< @|| @>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    "-r <release>", ":", "Type of filesystem release. Values: stable | beta"
-    @<<<<<<<<<<<<<<<<<<<<<< @|| @>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @<<<<<<<<<<<<<<<<<<< @|| @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    "-r <release>", ":", "Type of filesystem release. Eg: my_image"
+    @<<<<<<<<<<<<<<<<<<< @|| @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    "-f <rootfs>", ":", "Optional root filesytem path."
+    @<<<<<<<<<<<<<<<<<<< @|| @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     "-v <version>", ":", "Optional 3 numbers version. Values: x.y.z"
 
-@<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-"Example: perl $0 -b qboxhd_mini -r beta -v 0.0.1"
+@<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+"Example: perl $0 -b qboxhd_mini -r x_team -f /qboxhd/rootfs -v 0.0.1"
 
 .
 
-###
-### Check command line input
-###
-
-my ($board, $release, $version, $help, $path);
+# Check command line input
+my ($board, $release, $version, $help, $rootfs_path);
 GetOptions( 'b|board=s' => \$board,
 			'r|release=s' => \$release,
 			'v|version=s' => \$version,
+			'f|rootfs=s' => \$rootfs_path,
 			'h|help' => \$help
 		);
 
@@ -76,25 +76,20 @@ elsif ($board !~ /^qboxhd$/ and $board !~ /^qboxhd_mini$/) {
 	write and exit;
 }
 
-if (!$release) {
-	print "\nFATAL: NULL release type";
-	write and exit;
-}
-if ($release !~ /^stable$/ and $release !~ /^beta$/) {
-	print "\nFATAL: Invalid release type '$release'";
-	write and exit;
-}
+$release = "beta" if (!$release);
 
-if ($version !~ /\d+\.\d+\.\d+/) {
-	print "\nFATAL: Invalid version format. It must have three numbers. Eg. 1.0.1";
-	write and exit;
+if ($version) {
+	if ($version !~ /\d+\.\d+\.\d+/) {
+		print "\nFATAL: Invalid version format. It must have three numbers. Eg. 1.0.1";
+		write and exit;
+	}
 }
 
 my $curdir = getcwd();
 
 # build_path = /releases/<board_type>/qboxhd_update
 my $build_path = $curdir."/../releases/".$board."/qboxhd_update";
-print "Build path '$build_path' already exists. Aborting..." if (-e $build_path);
+die "Build path '$build_path' already exists. Aborting..." unless (! -e $build_path);
 mkpath($build_path, { error => \my $err });
 if (@$err) {
 	for my $diag (@$err) {
@@ -111,13 +106,20 @@ $build_path =~ /\/qboxhd_update$/;
 my $download_path = $`;
 $download_path = "./" if ($download_path !~ /\w/);
 
-# rootfs_path = /rootfs/<board_type>/rootfs
-my $rootfs_path = $curdir."/../rootfs/".$board."/rootfs";
+my $rootfs_alt = 0;
+if (!$rootfs_path) {
+	# Default rootfs path is /rootfs/<board_type>/rootfs
+	$rootfs_path = $curdir."/../rootfs/".$board."/rootfs";
+}
+else {
+	# We're using an alternative rootfs path
+	$rootfs_alt = 1;
+}
 
 format HEADER =
 
 =========================================================================================
-   @<<<<<<<<< @|||||||| @>>>>>>>>>>>>>> @<<<<<<<<<<<<<<<<<<<<<<<<<<
+   @<<<<<<<<< @||||||||||||||||| @>>>>>>>>>>>>>> @<<<<<<<<<<<<<<<<<<<<<<<<<<
    "Creating a", uc($release), "package for the", uc($board)
 =========================================================================================
 
@@ -128,30 +130,84 @@ write;
 
 my ($login, $pass, $uid, $gid) = getpwnam(getlogin());
 
-print "build_path: $build_path";
-print "rootfs_path: $rootfs_path";
-print "download_path: $download_path";
+if (!$rootfs_alt) {
+	`rsync -az --exclude=*.svn $rootfs_path/../nor $rootfs_path/../*.txt $rootfs_path/../update.sh $build_path`;
+}
+else {
+	# When the rootfs is not the default, we copy it inside $build_path/rootfs.
+	# This is needed because when creating the cpio, we need to avoid the contents
+	# of several dirs like /dev, /etc/dropbear and create others like /etc/.firstboot
+	my $new_rootfs_path = $build_path."/rootfs";
+	print "Copying source rootfs '$rootfs_path'";
+	print "to '$new_rootfs_path'";
+	print "Please wait...";
 
-`cp -a $rootfs_path/../nor $rootfs_path/../*.txt $rootfs_path/../update.sh $build_path`;
+	`rsync -az --exclude=*.svn --exclude=dev --exclude=etc/dropbear --exclude=usr/include --exclude=usr/local/include --exclude=usr/local/lib/pkgconfig --exclude=usr/local/lib/sigc++-1.2 $rootfs_path $new_rootfs_path`;
 
+	$rootfs_path = $new_rootfs_path;
 
-if ( ! -e $build_path."/update.sh" or ! -x $build_path."/update.sh") {
-	die "FATAL: update.sh script not found or cannot be executed. Aborting!\n"
+	`touch $rootfs_path/etc/.firstboot`;
+
+	my $tmp_path = $rootfs_path."/etc/dropbear";
+	mkpath($tmp_path, { error => \my $err });
+	if (@$err) {
+		for my $diag (@$err) {
+			my ($file, $message) = %$diag;
+			die "FATAL: mkpath(): $message";
+		}
+	}
+
+	$tmp_path = $rootfs_path."/dev";
+	mkpath($tmp_path, { error => \my $err1 });
+	if (@$err1) {
+		for my $diag (@$err1) {
+			my ($file, $message) = %$diag;
+			die "FATAL: mkpath(): $message";
+		}
+	}
+	chdir($tmp_path);
+	`ln -s ../sbin/MAKEDEV .`;
+	chdir($curdir);
+
+	# Be sure that during the first boot we have a static ip
+	tie my @lines, 'Tie::File', $rootfs_path."/etc/network/interfaces" or  
+		die "FATAL: Couldn't open '$rootfs_path/etc/network/interfaces'\n";
+	foreach my $line (@lines) {
+		$line = "iface eth0 inet static" if ($line =~ /iface eth0 inet dhcp/);
+	}
+	untie @lines;
+
+	my $nor_path = "../rootfs/$board";
+	print "nor_path: '$nor_path'";
+	`rsync -az --exclude=*.svn $nor_path/nor $nor_path/*.txt $nor_path/update.sh $build_path`;
 }
 
-if ( ! -e $build_path."/README.txt" ) {
-	die "FATAL: README file not found. Aborting!\n"
-}
+#print "build_path: $build_path";
+#print "rootfs_path: $rootfs_path";
+#print "download_path: $download_path";
 
-if ( ! -e $build_path."/ChangeLog.txt" ) {
-	die "FATAL: ChangeLog.txt file not found. Aborting!\n"
-}
+# These files must exists in any release
+die "FATAL: update.sh script not found. Aborting!\n" unless (-e $build_path."/update.sh");
+die "FATAL: update.sh script cannot be executed. Aborting!\n" unless (-x $build_path."/update.sh");
+#if ( ! -e $build_path."/update.sh" or ! -x $build_path."/update.sh") {
+	#die "FATAL: update.sh script not found or cannot be executed. Aborting!\n";
+#}
 
-# Abort if rcS exports the QBOXHD_ENV variable 
+die "FATAL: README file not found. Aborting!\n" unless (-e $build_path."/README.txt");
+#if ( ! -e $build_path."/README.txt" ) {
+	#die "FATAL: README file not found. Aborting!\n";
+#}
+
+die "FATAL: ChangeLog.txt file not found. Aborting!\n" unless (-e $build_path."/ChangeLog.txt");
+#if ( ! -e $build_path."/ChangeLog.txt" ) {
+	#die "FATAL: ChangeLog.txt file not found. Aborting!\n";
+#}
+
+# Comment the QBOXHD_ENV variable in /etc/rc.d/rcS 
 my $target_file = $rootfs_path."/etc/init.d/rcS";
 tie my @lines, 'Tie::File', $target_file or die "FATAL: Couldn't open $target_file\n";
 foreach my $line (@lines) {
-	die "FATAL: File '$target_file' is for DEVELOPMENT only!!!\n" if $line =~ /^export\s+QBOXHD_ENV\=/;
+	$line =~ s/^(export\s+QBOXHD_ENV\=)/\#$1/;
 }
 untie @lines;
 
@@ -222,7 +278,7 @@ unlink "$rootfs_path/usr/local/lib/enigma2/python/Plugins/Extensions/YouPornPlay
 
 # Strip libs and binaries
 print "Stripping libraries";
-`find $rootfs_path -name *.so | xargs sh4-linux-strip`;
+`find $rootfs_path -name *.so | xargs sh4-linux-strip 2>/dev/null`;
 
 print "Stripping binaries";
 my @bin_dirs = ("/bin", "/sbin", "/usr/bin", "/usr/sbin", "/usr/local/bin");
@@ -240,26 +296,31 @@ foreach my $bin (@bin_dirs) {
 		next if ($file =~ /usb_detect/);
 		next if ($file =~ /usb_hdd_detect/);
 		next if ($file =~ /usb_idev_detect/);
-		`sh4-linux-strip $bin/$file`;
+		`sh4-linux-strip $bin/$file 2>/dev/null`;
 	}
 	closedir(DIR);
 }
 
-# Create the .tbz
 print "Creating release";
 print "Please wait...";
 chdir($rootfs_path);
+# Create the .cpio discarding *.svn and header and pkgconfig files 
 `find -path *.svn -prune -o -print0 | cpio -o -0 --format=newc > $build_path/rootfs.cpio`;
 chdir($curdir);
 
+# Remove the rootfs directory (we already have the cpio)
+`rm -rf $rootfs_path`;
+
+# Create the .tbz
 print "Compressing release";
 my $release_filename;
-if ($release =~ /^stable$/) {
+if ($release !~ /^beta$/) {
+	# We have a stable release
 	if ($board =~ /^qboxhd$/) {
-		$release_filename = "qboxhd_update_";
+		$release_filename = "qboxhd_update_".$release."_";
 	}
 	else {
-		$release_filename = "qboxhd_mini_update_";
+		$release_filename = "qboxhd_mini_update_".$release."_";
 	}
 }
 else {
