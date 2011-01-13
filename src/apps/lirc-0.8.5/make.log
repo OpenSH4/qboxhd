@@ -1,0 +1,143 @@
+make  all-recursive
+make[1]: Entering directory `/data/src/QboxHd/apps/lircd/lirc-0.8.5'
+Making all in drivers
+make[2]: Entering directory `/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers'
+Making all in lirc_stm
+make[3]: Entering directory `/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm'
+cp ./../lirc_stm/Module*.symvers .
+cp: impossibile fare stat di `./../lirc_stm/Module*.symvers': No such file or directory
+make[3]: [lirc_stm.o] Error 1 (ignored)
+mv Makefile Makefile.automake
+cp ./../Makefile.kernel Makefile
+CPPFLAGS="" CFLAGS="" LDFLAGS="" \
+	make -C /opt/STM/STLinux-2.3/devkit/sh4/target/../../sources/kernel/havana-linux-sh4/ SUBDIRS=/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm modules \
+		KBUILD_VERBOSE=1
+make[4]: Entering directory `/opt/STM/STLinux-2.3.havana/devkit/sources/kernel/havana-linux-sh4-2.6.23.16_stm23_0109-1'
+test -e include/linux/autoconf.h -a -e include/config/auto.conf || (		\
+	echo;								\
+	echo "  ERROR: Kernel configuration is invalid.";		\
+	echo "         include/linux/autoconf.h or include/config/auto.conf are missing.";	\
+	echo "         Run 'make oldconfig && make prepare' on kernel src to fix it.";	\
+	echo;								\
+	/bin/false)
+mkdir -p /data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/.tmp_versions
+rm -f /data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/.tmp_versions/*
+
+  WARNING: Symbol version dump /opt/STM/STLinux-2.3.havana/devkit/sources/kernel/havana-linux-sh4-2.6.23.16_stm23_0109-1/Module.symvers
+           is missing; modules will have no dependencies and modversions.
+
+make -f scripts/Makefile.build obj=/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm
+  gcc -m32 -Wp,-MD,/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/.lirc_stm.o.d  -nostdinc -isystem /usr/lib/gcc/i586-suse-linux/4.3/include -D__KERNEL__ -Iinclude  -include include/linux/autoconf.h -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Os -pipe -msoft-float -mregparm=3 -freg-struct-return -mpreferred-stack-boundary=2  -march=i586 -mtune=generic -ffreestanding -maccumulate-outgoing-args -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -Iinclude/asm-i386/mach-generic -Iinclude/asm-i386/mach-default -fno-omit-frame-pointer -fno-optimize-sibling-calls -g  -fno-stack-protector -Wdeclaration-after-statement -Wno-pointer-sign  -DIRCTL_DEV_MAJOR=61 -DEXPORT_SYMTAB -DHAVE_CONFIG_H -I. -I. -I../.. -I/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/. -I/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/ -I/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/../.. -I/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/../.. -I/opt/STM/STLinux-2.3/devkit/sh4/target/../../sources/kernel/havana-linux-sh4//include/ -I/opt/STM/STLinux-2.3/devkit/sh4/target/../../sources/kernel/havana-linux-sh4//drivers/media/video/  -DMODULE -D"KBUILD_STR(s)=#s" -D"KBUILD_BASENAME=KBUILD_STR(lirc_stm)"  -D"KBUILD_MODNAME=KBUILD_STR(lirc_stm)" -c -o /data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/.tmp_lirc_stm.o /data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c
+In file included from include/linux/marker.h:15,
+                 from include/linux/kernel.h:17,
+                 from /data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:52:
+include/linux/immediate.h:15:27: error: asm/immediate.h: No such file or directory
+In file included from include/linux/marker.h:15,
+                 from include/linux/kernel.h:17,
+                 from /data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:52:
+include/linux/immediate.h:66: warning: ‘struct __immediate’ declared inside parameter list
+include/linux/immediate.h:66: warning: its scope is only this definition or declaration, which is probably not what you want
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:60:23: error: asm/clock.h: No such file or directory
+In file included from include/asm/hw_irq.h:15,
+                 from include/linux/irq.h:193,
+                 from include/asm/hardirq.h:5,
+                 from include/linux/hardirq.h:7,
+                 from include/linux/interrupt.h:11,
+                 from /data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:62:
+include/linux/profile.h: In function ‘profile_hit’:
+include/linux/profile.h:42: error: implicit declaration of function ‘immediate_read’
+include/linux/profile.h:42: error: ‘prof_on’ undeclared (first use in this function)
+include/linux/profile.h:42: error: (Each undeclared identifier is reported only once
+include/linux/profile.h:42: error: for each function it appears in.)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:67:22: error: lirc_dev.h: No such file or directory
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c: In function ‘duodvb_rc_buttondown’:
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:437: error: implicit declaration of function ‘lirc_buffer_write_1’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c: In function ‘lirc_stm_rx_interrupt’:
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1074: error: invalid use of undefined type ‘struct lirc_buffer’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c: In function ‘lirc_stm_read’:
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1250: error: invalid use of undefined type ‘struct lirc_buffer’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1258: error: invalid use of undefined type ‘struct lirc_buffer’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1262: error: implicit declaration of function ‘lirc_buffer_empty’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1268: error: dereferencing pointer to incomplete type
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1268: error: ‘O_NONBLOCK’ undeclared (first use in this function)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1279: error: implicit declaration of function ‘lirc_buffer_read_1’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1281: error: invalid use of undefined type ‘struct lirc_buffer’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1282: error: invalid use of undefined type ‘struct lirc_buffer’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1288: error: invalid use of undefined type ‘struct lirc_buffer’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1250: warning: unused variable ‘mybuf’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c: In function ‘lirc_stm_write’:
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1407: error: dereferencing pointer to incomplete type
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1407: error: ‘O_NONBLOCK’ undeclared (first use in this function)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c: In function ‘lirc_stm_hardware_init’:
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1553: error: implicit declaration of function ‘clk_get’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1553: warning: assignment makes pointer from integer without a cast
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1554: error: implicit declaration of function ‘clk_get_rate’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c: In function ‘lirc_stm_probe’:
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1721: error: implicit declaration of function ‘devm_ioremap_nocache’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1721: warning: assignment makes pointer from integer without a cast
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c: At top level:
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1812: error: variable ‘lirc_stm_fops’ has initializer but incomplete type
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1813: error: unknown field ‘write’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1813: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1813: warning: (near initialization for ‘lirc_stm_fops’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1814: error: unknown field ‘read’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1814: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1814: warning: (near initialization for ‘lirc_stm_fops’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1817: error: variable ‘lirc_stm_plugin’ has initializer but incomplete type
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1818: error: unknown field ‘name’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1818: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1818: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1819: error: unknown field ‘minor’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1819: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1819: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1820: error: unknown field ‘code_length’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1820: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1820: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1821: error: unknown field ‘sample_rate’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1821: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1821: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1823: error: unknown field ‘features’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1823: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1823: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1825: error: unknown field ‘data’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1825: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1825: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1827: error: unknown field ‘add_to_buf’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1827: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1827: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1828: error: unknown field ‘get_queue’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1828: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1828: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1829: error: unknown field ‘set_use_inc’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1829: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1829: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1830: error: unknown field ‘set_use_dec’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1830: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1830: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1831: error: unknown field ‘ioctl’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1831: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1831: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1832: error: unknown field ‘fops’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1832: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1832: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1833: error: unknown field ‘rbuf’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1833: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1833: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1834: error: unknown field ‘owner’ specified in initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1834: warning: excess elements in struct initializer
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1834: warning: (near initialization for ‘lirc_stm_plugin’)
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c: In function ‘lirc_stm_init’:
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1843: error: implicit declaration of function ‘lirc_buffer_init’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1855: error: implicit declaration of function ‘lirc_register_plugin’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1857: error: implicit declaration of function ‘lirc_buffer_free’
+/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.c:1864: error: implicit declaration of function ‘lirc_unregister_plugin’
+make[5]: *** [/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm/lirc_stm.o] Error 1
+make[4]: *** [_module_/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm] Error 2
+make[4]: Leaving directory `/opt/STM/STLinux-2.3.havana/devkit/sources/kernel/havana-linux-sh4-2.6.23.16_stm23_0109-1'
+make[3]: *** [lirc_stm.o] Error 2
+make[3]: Leaving directory `/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers/lirc_stm'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory `/data/src/QboxHd/apps/lircd/lirc-0.8.5/drivers'
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory `/data/src/QboxHd/apps/lircd/lirc-0.8.5'
+make: *** [all] Error 2

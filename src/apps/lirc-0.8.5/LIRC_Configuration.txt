@@ -1,0 +1,30 @@
+
+#set environment
+export BUILD=i386-linux
+export HOST=sh4-linux
+export PATH=$PATH:/opt/STM/STLinux-2.3/devkit/sh4/bin/
+export PREFIX=/opt/STM/STLinux-2.3/devkit/sh4/target
+export KERNEL_SRC_PATH=$PWD/linux
+
+#copy kernel source directory to sibling dir
+mkdir -p $KERNEL_SRC_PATH
+cp -a /opt/STM/STLinux-2.3/devkit/sources/kernel/havana-linux-sh4  $KERNEL_SRC_PATH
+
+#configure kernel dir
+cp /opt/STM/STLinux-2.3.havana/devkit/build/havana-build.mb442/config.default $KERNEL_SRC_PATH/.config
+cd $KERNEL_SRC_PATH
+make oldconfig ARCH=sh CROSS_COMPILE=sh4-linux- && make prepare ARCH=sh CROSS_COMPILE=sh4-linux-
+
+#configure project
+cd ../lirc-0.8.5
+
+./configure  --build=$BUILD --host=$HOST --prefix=$PREFIX/usr/local --exec_prefix=$PREFIX/usr/local --bindir=$PREFIX/usr/local/bin --sbindir=$PREFIX/usr/local/sbin --libdir=$PREFIX/usr/local/lib --includedir=$KERNEL_SRC_PATH/include --with-kerneldir=$KERNEL_SRC_PATH/ --with-moduledir=$PREFIX/lib/modules/2.6.23.16_stm23_0109-1-qboxhd/ --with-driver=lirc_stm --with-x=no
+
+#patch local Makefile
+cd lirc-0.8.5/drivers/lirc_stm/
+cp Makefile.max Makefile
+cd -
+
+#compile
+make ARCH=sh CROSS_COMPILE=sh4-linux-
+
