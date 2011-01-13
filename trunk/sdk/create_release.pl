@@ -89,7 +89,7 @@ my $curdir = getcwd();
 
 # build_path = /releases/<board_type>/qboxhd_update
 my $build_path = $curdir."/../releases/".$board."/qboxhd_update";
-die "Build path '$build_path' already exists. Aborting..." unless (! -e $build_path);
+die "Build path '$build_path' already exists. Aborting!" unless (! -e $build_path);
 mkpath($build_path, { error => \my $err });
 if (@$err) {
 	for my $diag (@$err) {
@@ -142,18 +142,19 @@ else {
 	print "to '$new_rootfs_path'";
 	print "Please wait...";
 
-	`rsync -az --exclude=*.svn --exclude=dev --exclude=etc/dropbear --exclude=usr/include --exclude=usr/local/include --exclude=usr/local/lib/pkgconfig --exclude=usr/local/lib/sigc++-1.2 $rootfs_path $new_rootfs_path`;
+	`rsync -az --exclude=*.svn --exclude=dev --exclude=etc/dropbear --exclude=usr/include --exclude=usr/local/include --exclude=usr/local/lib/pkgconfig --exclude=usr/local/lib/sigc++-1.2 $rootfs_path/ $new_rootfs_path`;
 
 	$rootfs_path = $new_rootfs_path;
 
-	`touch $rootfs_path/etc/.firstboot`;
+	my $ret = `touch $rootfs_path/etc/.firstboot`;
+	die "FATAL: $ret\n" if ($ret);
 
 	my $tmp_path = $rootfs_path."/etc/dropbear";
 	mkpath($tmp_path, { error => \my $err });
 	if (@$err) {
 		for my $diag (@$err) {
 			my ($file, $message) = %$diag;
-			die "FATAL: mkpath(): $message";
+			die "FATAL: mkpath(): $message\n";
 		}
 	}
 
@@ -162,7 +163,7 @@ else {
 	if (@$err1) {
 		for my $diag (@$err1) {
 			my ($file, $message) = %$diag;
-			die "FATAL: mkpath(): $message";
+			die "FATAL: mkpath(): $message\n";
 		}
 	}
 	chdir($tmp_path);
@@ -172,9 +173,9 @@ else {
 	# Be sure that during the first boot we have a static ip
 	tie my @lines, 'Tie::File', $rootfs_path."/etc/network/interfaces" or  
 		die "FATAL: Couldn't open '$rootfs_path/etc/network/interfaces'\n";
-	foreach my $line (@lines) {
-		$line = "iface eth0 inet static" if ($line =~ /iface eth0 inet dhcp/);
-	}
+		foreach my $line (@lines) {
+			$line = "iface eth0 inet static" if ($line =~ /iface eth0 inet dhcp/);
+		}
 	untie @lines;
 
 	my $nor_path = "../rootfs/$board";
@@ -189,19 +190,8 @@ else {
 # These files must exists in any release
 die "FATAL: update.sh script not found. Aborting!\n" unless (-e $build_path."/update.sh");
 die "FATAL: update.sh script cannot be executed. Aborting!\n" unless (-x $build_path."/update.sh");
-#if ( ! -e $build_path."/update.sh" or ! -x $build_path."/update.sh") {
-	#die "FATAL: update.sh script not found or cannot be executed. Aborting!\n";
-#}
-
 die "FATAL: README file not found. Aborting!\n" unless (-e $build_path."/README.txt");
-#if ( ! -e $build_path."/README.txt" ) {
-	#die "FATAL: README file not found. Aborting!\n";
-#}
-
 die "FATAL: ChangeLog.txt file not found. Aborting!\n" unless (-e $build_path."/ChangeLog.txt");
-#if ( ! -e $build_path."/ChangeLog.txt" ) {
-	#die "FATAL: ChangeLog.txt file not found. Aborting!\n";
-#}
 
 # Comment the QBOXHD_ENV variable in /etc/rc.d/rcS 
 my $target_file = $rootfs_path."/etc/init.d/rcS";
