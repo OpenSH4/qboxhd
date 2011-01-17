@@ -1,0 +1,210 @@
+#!/bin/sh
+#
+# @brief This initramfs is used for two purposes:
+# 	 1. To update the NOR flash and USB-based fs. If an update is found, 
+#		write the flash, update the rootfs, mount it and switch_root.
+#		WARNING: We only search in up to 4 USB flash devices
+#	 2. To test the board through a Quality Assurance (QA) fs.
+# 		If this fs is found, the normal booting procedure won't be executed,
+#		This fs is basically a production fs, but without the apps like e2,
+#		instead, it contains apps that test each hw component.
+#
+# Copyright (c) 2009-2010 Duolabs Spa
+#
+# Author: Pedro Aguilar (pedro@duolabs.com)
+#
+
+INITRAMFS_VER=2.0.0
+
+fs_not_found()
+{
+	echo " "
+	echo "********************************************************************************"
+	echo "FATAL: The USB pendrive or the filesystem were not detected" 
+	echo "       Please clean the contacts or replace the USB pendrive"
+	echo "       with a new one and insert it in any of the USB slots"
+
+	df_showimage /etc/images/usb_fs_not_found_720x576.jpg &
+	/etc/init.d/loop_images.sh 1 $DISPLAY_IMAGE usb_fs_not_found_red$IMG.bin usb_fs_not_found_black$IMG.bin &
+	exec sh
+}
+
+# Populate /dev
+cd dev/
+mknod console c 5 1
+ln -s fb0 fb
+mknod lcd c 172 0
+mknod null c 1 3
+mkdir pts
+ln -s ../proc/self/fd/2 stderr
+ln -s ../proc/self/fd/0 stdin
+ln -s ../proc/self/fd/1 stdout
+mknod zero c 1 5
+cd /
+
+# Mount /dev/pts
+if [ ! -d /dev/pts ]; then
+        mkdir -pv /dev/pts
+fi
+mount -t devpts devpts /dev/pts -omode=620
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+
+CPUINFO=$(cat /proc/cpuinfo | awk -F : '/machine/ { print $2 }' | sed 's/^ /\1/')
+if [ "$CPUINFO" == "QBoxHD mini board" ]; then
+	insmod /lib/modules/$(uname -r)/lpc.ko 
+	insmod /lib/modules/$(uname -r)/qboxhdinfo_proc_mini.ko
+	insmod /lib/modules/$(uname -r)/scart_mini.ko 
+	insmod /lib/modules/$(uname -r)/lcd_mini.ko 
+	DISPLAY_IMAGE=/usr/bin/display_image_mini
+	IMG="_mini"
+elif [ "$CPUINFO" == "QBoxHD board" ]; then
+	insmod /lib/modules/$(uname -r)/qboxhdinfo_proc.ko
+	insmod /lib/modules/$(uname -r)/stv6414_i2c.ko
+	insmod /lib/modules/$(uname -r)/lcd.ko 
+	DISPLAY_IMAGE=/usr/bin/display_image
+	IMG=""
+else
+	echo " "
+	echo "********************************************************************************"
+	echo "FATAL: Invalid board type reported by /proc/cpuinfo. Dropping to a shell" 
+	exec sh
+fi
+
+# Instruct the kernel to execute mdev whenever a device is added 
+# or removed so that the device node can be created or destroyed.
+# Then, seed /dev with all the device nodes that were created
+# while the system was booting.
+echo /sbin/mdev > /proc/sys/kernel/hotplug
+mdev -s
+
+BOARD=$(cat /proc/stb/info/model)
+
+echo " "
+echo "$BOARD initramfs v$INITRAMFS_VER"
+echo " "
+
+# Display loading image
+insmod /lib/modules/$(uname -r)/stmcore-display-stx7109c3.ko
+insmod /lib/modules/$(uname -r)/stmfb.ko display0=720x576-32@50i:16m:0:pal:rgb:rgb;
+df_showimage /etc/images/loading_screen.jpg
+
+# Load front-panel lcd display
+dd if=/dev/mtd3 of=/etc/images/boot.bin bs=1024
+$DISPLAY_IMAGE /etc/images/boot.bin
+
+# Let mdev to find the devices
+echo "Searching USB flash device"
+i=0
+usb_found=0
+while [ "$i" != "5" ]; do
+        if [ -e /sys/block/sda ]; then
+		usb_found=1
+		break
+	fi
+	sleep 1
+	i=$((i + 1))
+	echo -n "."
+done
+sleep 3
+
+if [ "$usb_found" == "0" ]; then
+	# USB pendrive not found
+	fs_not_found
+fi
+
+# If the QA fs exists, mount it from the USB flash stick
+QBOX_HD_QA=$(blkid | awk -F: '/LABEL="QBOX_HD_QA"/ { print $1 }')
+if [ "$QBOX_HD_QA" != "" ]; then
+	echo "QA filesystem found in $QBOX_HD_QA. Loading it."
+	mount -t ext3 $QBOX_HD_QA /mnt/update_fs
+
+	# Move the existing /proc and /sys mounts
+	mount --move /proc /mnt/update_fs/proc
+	mount --move /sys /mnt/update_fs/sys
+
+	# Switch to real fs
+	exec switch_root /mnt/update_fs /sbin/init
+
+	# This will only be exec if switch_root failed
+	echo " "
+	echo "********************************************************************************"
+	echo "FATAL: QA filesystem should not return here, dropping to a shell"
+
+	df_showimage /etc/images/flash_error_720x576.jpg &
+	/etc/init.d/loop_images.sh 1 $DISPLAY_IMAGE flash_error_yellow$IMG.bin flash_error_black$IMG.bin &
+	exec sh 
+fi
+
+# Check the MAC address
+dd if=/dev/mtd1 of=/etc/mac_addr bs=4096 skip=0 count=1 2>/dev/null
+/usr/bin/mac_nor_check /etc/mac_addr 4096 0
+if [ "$?" -ne "0" ]; then
+	echo " "
+	echo "********************************************************************************"
+	echo "FATAL: MAC address corrupted or not found, dropping to a shell"
+
+	df_showimage /etc/images/flash_error_720x576.jpg &
+	/etc/init.d/loop_images.sh 1 $DISPLAY_IMAGE flash_error_yellow$IMG.bin flash_error_black$IMG.bin &
+	exec sh
+fi
+
+echo "Checking for updates..."
+/etc/init.d/fsupdate.sh $BOARD
+if [ "$?" -ne "0" ]; then
+	echo " "
+	echo "********************************************************************************"
+	echo "FATAL: Update procedure failed, dropping to a shell"
+
+	exec sh
+fi
+
+# Mount the real fs labeled "QBox_HD", "QBOX_HD" or "QBOX_HD_MINI" 
+# from the USB flash stick
+if [ "$BOARD" == "qboxhd-mini" ]; then
+	FS_DEV=$(blkid | awk -F: '/LABEL="QBOX_HD_MINI"/ { print $1 }')
+	if [ "$FS_DEV" == "" ]; then
+		# Filesystem not found
+		fs_not_found
+	fi
+else
+	FS_DEV=$(blkid | awk -F: '/LABEL="QBOX_HD"/ { print $1 }')
+	if [ "$FS_DEV" == "" ]; then
+		FS_DEV=$(blkid | awk -F: '/LABEL="QBox_HD"/ { print $1 }')
+		if [ "$FS_DEV" == "" ]; then
+			# Filesystem not found
+			fs_not_found
+		fi
+	fi
+fi
+
+echo "Filesystem found in $FS_DEV. Loading it."
+mount -t ext3 -o noatime $FS_DEV /mnt/new_root
+
+# Write initramfs version to the real filesytem
+if [ -e /mnt/new_root/etc/initramfs-version ]; then
+	fs_version=$(cat /mnt/new_root/etc/initramfs-version)
+fi
+
+if [ "$fs_version" != "$INITRAMFS_VER" ]; then
+	echo $INITRAMFS_VER > /mnt/new_root/etc/initramfs-version
+	sync
+fi
+
+# Move the existing /proc and /sys mounts
+mount --move /proc /mnt/new_root/proc
+mount --move /sys /mnt/new_root/sys
+
+# Switch to real fs
+exec switch_root /mnt/new_root /sbin/init
+
+# This will only be exec if switch_root failed
+echo " "
+echo "********************************************************************************"
+echo "FATAL: Failed to switch_root, dropping to a shell"
+
+df_showimage /etc/images/flash_error_720x576.jpg &
+/etc/init.d/loop_images.sh 1 $DISPLAY_IMAGE flash_error_yellow$IMG.bin flash_error_black$IMG.bin &
+exec sh
+
