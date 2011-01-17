@@ -88,6 +88,7 @@ echo " "
 # Display loading image
 insmod /lib/modules/$(uname -r)/stmcore-display-stx7109c3.ko
 insmod /lib/modules/$(uname -r)/stmfb.ko display0=720x576-32@50i:16m:0:pal:rgb:rgb;
+dvo_control
 df_showimage /etc/images/loading_screen.jpg
 
 # Load front-panel lcd display
