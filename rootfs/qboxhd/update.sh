@@ -43,7 +43,8 @@
 # 101004  paguilar    v1.16 Do not upgrade if we're trying to update a different 
 #					  board model 
 # 141004  paguilar    v1.17 Rename qboxhd_update_1 to qboxhd_update
-# 181004  paguilar    v1.18 sync after copying. Remove deprecated code.
+# 101804  paguilar    v1.18 sync after copying. Remove deprecated code.
+# 110117  paguilar    v1.19 Display images to video output with df_showimage.
 
 
 # Ash doesn't support arrays, so we have to check manually if the devs exist. 
@@ -91,7 +92,7 @@ fi
 
 echo " "
 echo "****************************"
-echo "  Update Software v1.17"
+echo "  Update Software v1.19"
 echo "****************************"
 
 ###
@@ -101,6 +102,7 @@ echo "****************************"
 nor_update=0
 max_flash_rewrites=3
 
+df_showimage /etc/images/update_flash_720x576.jpg
 $DISPLAY_IMAGE /etc/images/update_flash$IMG.bin
 
 if [ -e /usr/bin/mtd_md5sum ]; then
@@ -129,7 +131,6 @@ if [ -e /usr/bin/mtd_md5sum ]; then
 				echo "Update: ERROR: Could not write bootloader to flash. Skipping..."
 				echo "Update: Do NOT power-off. The update procedure will try to continue..."
 				sleep 10
-				$DISPLAY_IMAGE /etc/images/update_flash$IMG.bin
 			fi
 
 			nor_update=$(( nor_update + 1 ))
@@ -163,7 +164,6 @@ if [ -e /usr/bin/mtd_md5sum ]; then
 				echo "Update: ERROR: Could not write logo to flash. Skipping..."
 				echo "Update: Do NOT power-off. The update procedure will try to continue..."
 				sleep 10
-				$DISPLAY_IMAGE /etc/images/update_flash$IMG.bin
 			fi
 
 			nor_update=$(( nor_update + 1 ))
@@ -197,7 +197,6 @@ if [ -e /usr/bin/mtd_md5sum ]; then
 				echo "Update: ERROR: Could not write bs to flash. Skipping..."
 				echo "Update: Do NOT power-off. The update procedure will try to continue..."
 				sleep 10
-				$DISPLAY_IMAGE /etc/images/update_flash$IMG.bin
 			fi
 
 			nor_update=$(( nor_update + 1 ))
@@ -231,7 +230,6 @@ if [ -e /usr/bin/mtd_md5sum ]; then
 				echo "Update: ERROR: Could not write kernel image to flash. Skipping..."
 				echo "Update: Do NOT power-off. The update procedure will try to continue..."
 				sleep 10
-				$DISPLAY_IMAGE /etc/images/update_flash$IMG.bin
 			fi
 
 			nor_update=$(( nor_update + 1 ))
@@ -265,7 +263,6 @@ if [ -e /usr/bin/mtd_md5sum ]; then
 				echo "Update: ERROR: Could not write initramfs to flash. Skipping..."
 				echo "Update: Do NOT power-off. The update procedure will try to continue..."
 				sleep 10
-				$DISPLAY_IMAGE /etc/images/update_flash$IMG.bin
 			fi
 
 			nor_update=$(( nor_update + 1 ))
@@ -335,7 +332,7 @@ fi
 ###
 ### Update the filesystem in the USB drive
 ###
-
+df_showimage /etc/images/update_filesystem_720x576.jpg &
 $DISPLAY_IMAGE /etc/images/update_filesystem$IMG.bin
 
 SDA=0
