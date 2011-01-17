@@ -55,9 +55,9 @@ start()
 	insmod $MODDIR/embxshm.ko mailbox0=shm:0:7:0x60000000:0:256:256:0:1024:0xa4000000:0x10000000;
 	insmod $MODDIR/mme_host.ko transport0=shm &
 
-    echo "$ID: Initializing frame buffer"
-	insmod $MODDIR/stmcore-display-stx7109c3.ko
-	insmod $MODDIR/stmfb.ko display0=720x576-32@50i:16m:0:pal:rgb:rgb;
+    #echo "$ID: Initializing frame buffer"
+	#insmod $MODDIR/stmcore-display-stx7109c3.ko
+	#insmod $MODDIR/stmfb.ko display0=720x576-32@50i:16m:0:pal:rgb:rgb;
 	#insmod $MODDIR/stmfb.ko display0=1280x720-32@50i:8m:0:pal:rgb:rgb display1=720x576-32@50i:8m:0:pal:cvbs
 	#insmod $MODDIR/stmfb.ko display0=1920x1080-32@50i:10m:0:pal:rgb:rgb display1=720x576-16@50i:4m:0:pal:rgb
 
@@ -118,11 +118,11 @@ start()
 		ln -s /etc/directfbrc_e2 /etc/directfbrc
 	fi
 
-	if [ "$ID" == "QBoxHD mini" ]; then
-		insmod $MODDIR/scart_mini.ko
-	else
-		insmod $MODDIR/stv6414_i2c.ko
-	fi
+	#if [ "$ID" == "QBoxHD mini" ]; then
+		#insmod $MODDIR/scart_mini.ko
+	#else
+		#insmod $MODDIR/stv6414_i2c.ko
+	#fi
 
 	if grep -r "Scart" /etc/fb.modes.supp; then
 		if [ "$ID" == "QBoxHD mini" ]; then
