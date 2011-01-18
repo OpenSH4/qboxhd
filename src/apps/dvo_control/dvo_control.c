@@ -55,10 +55,10 @@
 #define USING_SCART	0
 #define USING_HDMI 	1
 
-#undef DEBUGD
+#define DEBUGD
 
 #ifdef DEBUGD
-#define fdebug(args...) fprintf(args)
+#define fdebug(args...) fprintf(stderr, ##args)
 #else
 #define fdebug(args...)
 #endif
@@ -154,7 +154,7 @@ static short int set_1920x1080i_50(int fd)
 	struct fb_var_screeninfo screeninfo;
 
 	if (ioctl(fd, FBIOGET_VSCREENINFO, &screeninfo) < 0 ) {
-        fdebug(stderr, "%s: FBIOGET_VSCREENINFO: %s\n", progname, strerror(errno));
+        fdebug("%s: FBIOGET_VSCREENINFO: %s\n", progname, strerror(errno));
         return -1;
     }
 
@@ -189,7 +189,7 @@ static short int set_1920x1080i_50(int fd)
 	screeninfo.vmode = 1;
 
 	if (ioctl(fd, FBIOPUT_VSCREENINFO, &screeninfo) < 0 ) {
-	        fdebug(stderr, "%s: FBIOPUT_VSCREENINFO: %s\n", progname, strerror(errno));
+	        fdebug("%s: FBIOPUT_VSCREENINFO: %s\n", progname, strerror(errno));
 	        return -1;
     }
 
@@ -203,7 +203,7 @@ static short int set_1280x720p_50(int fd)
 
 	if (ioctl(fd, FBIOGET_VSCREENINFO, &screeninfo) < 0 ) 
 	{
-		fdebug(stderr, "%s: FBIOGET_VSCREENINFO: %s\n", progname, strerror(errno));
+		fdebug("%s: FBIOGET_VSCREENINFO: %s\n", progname, strerror(errno));
 		return -1;
         }
 
@@ -235,7 +235,7 @@ static short int set_1280x720p_50(int fd)
 
 	if (ioctl(fd, FBIOPUT_VSCREENINFO, &screeninfo) < 0 ) 
 	{
-		fdebug(stderr, "%s: FBIOPUT_VSCREENINFO: %s\n", progname, strerror(errno));
+		fdebug("%s: FBIOPUT_VSCREENINFO: %s\n", progname, strerror(errno));
 		return -1;
         }
 
@@ -249,7 +249,7 @@ static short int set_720x576p_50(int fd)
 
 	if (ioctl(fd, FBIOGET_VSCREENINFO, &screeninfo) < 0 )
 	{
-		fdebug(stderr, "%s: FBIOGET_VSCREENINFO: %s\n", progname, strerror(errno));
+		fdebug("%s: FBIOGET_VSCREENINFO: %s\n", progname, strerror(errno));
 		return -1;
    	}
 
@@ -279,7 +279,7 @@ static short int set_720x576p_50(int fd)
 
 	if (ioctl(fd, FBIOPUT_VSCREENINFO, &screeninfo) < 0 ) 
 	{
-		fdebug(stderr, "%s: FBIOPUT_VSCREENINFO: %s\n", progname, strerror(errno));
+		fdebug("%s: FBIOPUT_VSCREENINFO: %s\n", progname, strerror(errno));
 		return -1;
         }
 
@@ -335,7 +335,7 @@ static short int set_720x576i_50(int fd)
 	screeninfo.vmode = 1 ;
 
 	if (ioctl(fd, FBIOPUT_VSCREENINFO, &screeninfo) < 0 ) {
-		fdebug(stderr, "%s: FBIOPUT_VSCREENINFO: %s\n", progname, strerror(errno));
+		fdebug("%s: FBIOPUT_VSCREENINFO: %s\n", progname, strerror(errno));
 		return -1;
    	}
 
@@ -398,7 +398,7 @@ bool show_display_name(void)
 	char name[32];
 	int res = get_display_name(name, sizeof(name));
 	if (res < 0) {
-		fdebug(stderr, "ERROR: Cannot determine display name\n");
+		fdebug("ERROR: Cannot determine display name\n");
 		return false;
 	}
 
@@ -417,9 +417,9 @@ int hdmi_connected(void)
 	char *attr = get_attribute(ATTR_HDMI_HOTPLUG);
 
 	if (!attr) {
-		fdebug(stderr, "%s: Cannot determine HDMI connection status of display device\n",
+		fdebug("%s: Cannot determine HDMI connection status of display device\n",
 			progname);
-		fdebug(stderr, "%s: Setting SCART mode\n", progname);
+		fdebug("%s: Setting SCART mode\n", progname);
 		return res;
 	}
 
@@ -427,7 +427,7 @@ int hdmi_connected(void)
 		res = 0;
 	} 
 	else if (!strcmp(attr, "n\n")) {
-		fdebug(stderr, "%s: HDMI display device is NOT connected. Setting SCART mode\n",progname);
+		fdebug("%s: HDMI display device is NOT connected. Setting SCART mode\n",progname);
 	}
 
 	free(attr);
@@ -693,18 +693,24 @@ void set_res(unsigned char mode)
 			break;
 
 		case 10:	//1080i60
+#ifndef INITRAMFS
 			system("rm -fr /etc/fb.modes");
 			system("ln -s /etc/fb_60i.modes /etc/fb.modes");
+#endif
 			sprintf(dfb_mode, "fbset '1920x1080-60i'");	
 			break;
 		case 11:	//720p60
+#ifndef INITRAMFS
 			system("rm -fr /etc/fb.modes");
 			system("ln -s /etc/fb_60p.modes /etc/fb.modes");
+#endif
 			sprintf(dfb_mode, "fbset '1280x720-60'");	
 			break;
 		case 12:	//480p60
+#ifndef INITRAMFS
 			system("rm -fr /etc/fb.modes");
 			system("ln -s /etc/fb_60p.modes /etc/fb.modes");
+#endif
 			sprintf(dfb_mode, "fbset '720x480-60'");	
 			break;
 
@@ -712,13 +718,15 @@ void set_res(unsigned char mode)
 			sprintf(dfb_mode, "fbset '720x576-50i'");	
 			break;
 	}
-	if(mode>=10) system("sync");
-	system(dfb_mode);
 
+	if (mode>=10) 
+		system("sync");
+	system(dfb_mode);
 }
 
 int configuration_file_update(unsigned char mode, char * p)
 {
+#ifndef INITRAMFS
 	char dfb_mode[32];
 	FILE * file=NULL;
 
@@ -778,6 +786,7 @@ int configuration_file_update(unsigned char mode, char * p)
 	fputs(dfb_mode,file);
 	fclose(file);
 	system("sync");
+#endif
 
 	set_res(mode);
 
@@ -791,12 +800,12 @@ bool set_hdmi_modes(char * port)
 	int res = get_modes(modes, lengthof(modes));
 
 	if (res < 0) {
-		fdebug(stderr, "%s: Cannot determine available display modes\n", progname);
+		fdebug("%s: Cannot determine available display modes\n", progname);
 		return -1;
 	}
 	
 	if ((fd = open(FBDEV0, O_RDWR)) < 0) {
-		fdebug(stderr, "%s: Could not open frame buffer device\n", progname);
+		fdebug("%s: Could not open frame buffer device\n", progname);
 		return -1;
 	}
 
@@ -807,11 +816,13 @@ bool set_hdmi_modes(char * port)
 			printf("Setting mode to %dx%d%c-%d\n", 
 				modes[i].x, modes[i].y, modes[i].scan, modes[i].refresh);
 			if (set_1920x1080i_50(fd) < 0) {
-				fdebug(stderr, "%s: Cannot set 1920x1080-50i mode\n", progname);
+				fdebug("%s: Cannot set 1920x1080-50i mode\n", progname);
 				return -1;
 			}
 			else {
+#ifndef INITRAMFS
 				configuration_file_update(0,port);
+#endif
 				return 0;
 
 			}
@@ -824,11 +835,13 @@ bool set_hdmi_modes(char * port)
 			printf("Setting mode to %dx%d%c-%d\n", 
 				modes[i].x, modes[i].y, modes[i].scan, modes[i].refresh);
 			if (set_1280x720p_50(fd) < 0) {
-				fdebug(stderr, "%s: Cannot set 1280x720p-50 mode\n", progname);
+				fdebug("%s: Cannot set 1280x720p-50 mode\n", progname);
 				return -1;
 			}
 			else {
+#ifndef INITRAMFS
 				configuration_file_update(1,port);	
+#endif
 				return 0;
 			}
 		}
@@ -840,11 +853,13 @@ bool set_hdmi_modes(char * port)
 			printf("Setting mode to %dx%d%c-%d\n", 
 				modes[i].x, modes[i].y, modes[i].scan, modes[i].refresh);
 			if (set_720x576p_50(fd) < 0) {
-				fdebug(stderr, "%s: Cannot set 720x576p-50 mode\n", progname);
+				fdebug("%s: Cannot set 720x576p-50 mode\n", progname);
 				return -1;
 			}
 			else {
+#ifndef INITRAMFS
 				configuration_file_update(3,port);	
+#endif
 				return 0;
 			}
 		}
@@ -856,11 +871,13 @@ bool set_hdmi_modes(char * port)
 			printf("Setting mode to %dx%d%c-%d\n", 
 				modes[i].x, modes[i].y, modes[i].scan, modes[i].refresh);
 			if (set_720x576i_50(fd) < 0) {
-				fdebug(stderr, "%s: Cannot set 720x576i-50 mode\n", progname);
+				fdebug("%s: Cannot set 720x576i-50 mode\n", progname);
 				return -1;
 			}
 			else {	
+#ifndef INITRAMFS
 				configuration_file_update(4,port);	
+#endif
 				return 0;
 			}
 		}
@@ -909,37 +926,31 @@ bool set_scart_mode(char * port)
 	int fd;
 
 	if ((fd = open(FBDEV0, O_RDWR)) < 0) {
-		fdebug(stderr, "%s: Could not open frame buffer device\n", progname);
+		fdebug("%s: Could not open frame buffer device\n", progname);
 		return -1;
 	}
 	fdebug("Open device ok ! \n");
 
 	if (set_720x576i_50(fd) < 0) {
-		fdebug(stderr, "%s: Cannot set 720x576i-50 mode\n", progname);
+		fdebug("%s: Cannot set 720x576i-50 mode\n", progname);
 		return -1;
 	}
 	else
         configuration_file_update(5,port);	
-	// TODO: save settings to file /etc/directfbrc
 
-	flush_video_buffer();
+	// TODO: save settings to file /etc/directfbrc
 
 	return 0;
 }
 
 int main(int argc, char *argv[])
 {
-	int ret=0;
-	/* for resolution...*/
-	char port[64];
-	int res_x=0,res_y=0,freq=0;
-	unsigned char mode='i';
-	FILE *tmp_f=NULL;
-	char * t1=NULL;
-
-#ifdef DEBUGD
-	system("killall -9 /usr/bin/df_dok ");
-#endif
+#ifndef INITRAMFS
+	int 			ret = 0, res_x = 0,res_y = 0,freq = 0;
+	char 			port[64];
+	char 			*t1 = NULL;
+	unsigned char 	mode = 'i';
+	FILE 			*tmp_f = NULL;
 
 	memset(port,0,64);
 
@@ -997,23 +1008,29 @@ int main(int argc, char *argv[])
 
 	reset_buff(progname, NAME_SIZE);
 	strncpy(progname, argv[0], NAME_SIZE);
+#endif
 
 	// If we have the HDMI cable plugged in
 	if (hdmi_connected() == 0) {
 		// Find the modes that the LCD TV supports and set the best one for us
-
+#ifdef INITRAMFS
+		set_hdmi_modes(0);
+#else
 		set_hdmi_modes(port);
-
+#endif
 		flush_video_buffer();
 		status = USING_HDMI;
 		fdebug("\n %s :: USING_HDMI\n", argv[0]);
 	}
 	// else assume the SCART is connected and set a mode for it
+#ifndef INITRAMFS
 	else {
 		set_scart_mode(port);
+		flush_video_buffer();
 		status = USING_SCART;
 		fdebug("\n %s :: USING_SCART\n", argv[0]);
 	}
+#endif
 
 	return 0;
 }
