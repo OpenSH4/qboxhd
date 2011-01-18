@@ -55,7 +55,7 @@
 #define USING_SCART	0
 #define USING_HDMI 	1
 
-#define DEBUGD
+#undef DEBUGD
 
 #ifdef DEBUGD
 #define fdebug(args...) fprintf(stderr, ##args)
