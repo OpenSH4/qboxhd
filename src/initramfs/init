@@ -14,7 +14,7 @@
 # Author: Pedro Aguilar (pedro@duolabs.com)
 #
 
-INITRAMFS_VER=2.0.0
+INITRAMFS_VER=2.0.1
 
 fs_not_found()
 {
