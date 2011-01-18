@@ -25,13 +25,12 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 
-
 use strict;
-use Tie::File;
-use File::Path;
 use Cwd;
-use Digest::MD5 qw(md5 md5_hex);
+use Tie::File;
 use Getopt::Long;
+use File::Path qw(make_path remove_tree);
+use Digest::MD5 qw(md5 md5_hex);
 use IO::Compress::Gzip qw(gzip $GzipError) ;
 
 format USAGE =
@@ -130,8 +129,9 @@ foreach my $line (@lines) {
 }
 untie @lines;
 
-chdir($src_path);
-print "Creating cpio file";
+print "Copying and creating cpio file...";
+`rsync -az --exclude=*.svn $src_path $build_path/`;
+chdir("$build_path/initramfs");
 `find . -print0 | cpio -o -0 --format=newc -O $build_path/initramfs.cpio`;
 print "Compressing...";
 gzip "$build_path/initramfs.cpio" => "$build_path/initramfs.cpio.gz",-Level => 9 
@@ -143,11 +143,24 @@ die "FATAL: File initramfs.cpio.gz does not exit in '$build_path'. Aborting\n!" 
 `./mkimage -A sh4 -O linux -T ramdisk -a 0x84000000 -e 0x84000000 -n "QBoxHD initramfs" -d $build_path/initramfs.cpio.gz $dst_path/uinitramfs`;
 
 # Calculate md5 digest
-print "Calculating MD5 digest";
+print "Calculating MD5 digest...";
 open(my $fd, '<', "$dst_path/uinitramfs") or die $!;
 read $fd, my $md5data, 1000000000;
 my $digest = md5_hex($md5data);
 close($fd);
+
+print "Cleaning...";
+remove_tree("$build_path/initramfs", { error => \my $err});
+if (@$err) {
+	for my $diag (@$err) {
+		my ($file, $message) = %$diag;
+		print "WARNING: remove_tree(): $message\n";
+	}
+}
+my @goners = ("$build_path/initramfs.cpio", "$build_path/initramfs.cpio.gz");
+unlink @goners or warn "WARNING: Could not clean files: $!";
+
+#`rm -rf $build_path/initramfs`;
 
 format REPORT =
 
@@ -159,7 +172,7 @@ format REPORT =
    @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
    "Source path", $src_path
    @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-   "Destination path", $dst_path
+   "Destination path", "$dst_path/uinitramfs"
    @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
    "MD5 digest", $digest
 =========================================================================================
