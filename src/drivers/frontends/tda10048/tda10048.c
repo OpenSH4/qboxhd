@@ -329,6 +329,19 @@ error:
 	return ret;
 }
 
+#if defined CONFIG_SH_QBOXHD_1_0 || defined CONFIG_SH_QBOXHD_MINI_1_0
+static void tda10048_standby(struct dvb_frontend *fe)
+{
+	unsigned char t=0xFF;
+	struct tda10048_state *state = fe->demodulator_priv;
+	tda10048_writereg(state, TDA10048_CONF_C4_1,
+					tda10048_readreg(state, TDA10048_CONF_C4_1) | 0x01);
+	
+	/* Set the TS pins in tri-state */
+	tda10048_writereg(state, TDA10048_CONF_TRISTATE1, t);
+}
+#endif
+
 static int tda10048_set_phy2(struct dvb_frontend *fe, u32 sample_freq_hz,
 			     u32 if_hz)
 {
@@ -787,6 +800,11 @@ static int tda10048_set_frontend(struct dvb_frontend *fe,
 
 	dprintk(1, "%s(frequency=%d)\n", __func__, p->frequency);
 
+#if defined CONFIG_SH_QBOXHD_1_0 || defined CONFIG_SH_QBOXHD_MINI_1_0
+	tda10048_writereg(state, TDA10048_CONF_C4_1,
+					tda10048_readreg(state, TDA10048_CONF_C4_1) & (~(0x01)));
+#endif
+
 	/* Update the I/F pll's if the bandwidth changes */
 	if (p->u.ofdm.bandwidth != state->bandwidth) {
 		tda10048_set_if(fe, p->u.ofdm.bandwidth);
@@ -809,6 +827,8 @@ static int tda10048_set_frontend(struct dvb_frontend *fe,
 	/* Enable demod TPS auto detection and begin acquisition */
 	tda10048_writereg(state, TDA10048_AUTO, 0x57);
 #if defined CONFIG_SH_QBOXHD_1_0 || defined CONFIG_SH_QBOXHD_MINI_1_0
+	/* Exit from tristate */
+	tda10048_writereg(state, TDA10048_CONF_TRISTATE1, 0x21);
 	msleep(100);	//wait to lock
 #endif	
 	return 0;
@@ -1228,6 +1248,9 @@ static struct dvb_frontend_ops tda10048_ops = {
 	.read_signal_strength = tda10048_read_signal_strength,
 	.read_snr = tda10048_read_snr,
 	.read_ucblocks = tda10048_read_ucblocks,
+#if defined CONFIG_SH_QBOXHD_1_0 || defined CONFIG_SH_QBOXHD_MINI_1_0
+	.sleep = tda10048_standby
+#endif
 };
 
 module_param(debug, int, 0644);
@@ -1239,7 +1262,7 @@ module_param(debug, int, 0644);
 #define MOD               ""
 #endif
 
-#define TDA10048_DRV_VERSION	"0.0.2"MOD
+#define TDA10048_DRV_VERSION	"0.0.3"MOD
 MODULE_VERSION(TDA10048_DRV_VERSION);
 MODULE_PARM_DESC(debug, "Enable verbose debug messages");
 
