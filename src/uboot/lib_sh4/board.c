@@ -309,7 +309,6 @@ char * use_default_env;
 	lpc_init();
 #endif
 
-
 //Duolabs
 for(i=0;i<20;i++)
 	eth[i]='\0';
@@ -344,7 +343,7 @@ IsLinked=0x00;
 	monitor_flash_len = (ulong) & _uboot_end_data - TEXT_BASE;
 
 	/* configure available FLASH banks */
-	
+
 	flashWriteEnable();
 	size = flash_init ();
 	display_flash_config (size);
@@ -404,6 +403,9 @@ IsLinked=0x00;
 		NetLoop(DHCP_ONLY_IPs);
 
 		printf("Exit to DHCP ... \n");
+
+		if( (NetServerIP==0) && (NetOurGatewayIP!=0) )
+			NetServerIP=NetOurGatewayIP;	//maybe it is the same of gateway
 
 		/* The 4 IPs are ok */
 		if( (NetOurIP!=0) && (NetServerIP!=0) &&
@@ -477,12 +479,24 @@ IsLinked=0x00;
 #endif
 		}
 		else
-		{
+		{	
+			boot_args=getenv ("bootargs");
+			if(strstr(boot_args,"root=/dev/nfs")!=NULL)	/* Find root=/dev/nfs */
+			{
 #ifndef CONFIG_QBOXHD_mini
-			display_print(" IP ... NO LINK\n");
+				display_print(" IP ... NFS\n");
 #else
-			display_print("ip ... no link\n");
+				display_print("ip: ... NFS\n");
 #endif
+			}
+			else
+			{
+#ifndef CONFIG_QBOXHD_mini
+				display_print(" IP ... NO LINK\n");
+#else
+				display_print("ip ... no link\n");
+#endif
+			}
 		}
 		last_position+=(8*1);
 		set_pen_color(0xF800);	/* RED */

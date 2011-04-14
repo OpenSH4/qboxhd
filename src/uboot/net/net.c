@@ -405,6 +405,11 @@ restart:
 			BootpTry = 0;
 			NetOurIP = 0;
 			NetServerIP = 0;
+
+			/* siaddr maybe return 0*/			
+			NetOurGatewayIP=0;
+
+			
 			if(IsLinked!=0)	/* There is the cable */
 				DhcpRequest();		/* Basically same as BOOTP */
 			else
