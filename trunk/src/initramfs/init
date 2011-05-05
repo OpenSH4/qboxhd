@@ -14,7 +14,7 @@
 # Author: Pedro Aguilar (pedro@duolabs.com)
 #
 
-INITRAMFS_VER=2.0.1
+INITRAMFS_VER=2.0.3
 
 fs_not_found()
 {
@@ -89,7 +89,14 @@ echo " "
 insmod /lib/modules/$(uname -r)/stmcore-display-stx7109c3.ko
 insmod /lib/modules/$(uname -r)/stmfb.ko display0=720x576-32@50i:16m:0:pal:rgb:rgb;
 dvo_control
-df_showimage /etc/images/loading_screen.jpg
+#df_showimage /etc/images/loading_screen.jpg
+if [ "$CPUINFO" == "QBoxHD mini board" ]; then
+	df_showimage /etc/images/loading_screen.jpg
+elif [ "$CPUINFO" == "QBoxHD board" ]; then
+	df_showimage /etc/images/loading_screen_HD.jpg
+else
+	echo "Invalid CPUINFO: $CPUINFO"
+fi
 
 # Load front-panel lcd display
 dd if=/dev/mtd3 of=/etc/images/boot.bin bs=1024
