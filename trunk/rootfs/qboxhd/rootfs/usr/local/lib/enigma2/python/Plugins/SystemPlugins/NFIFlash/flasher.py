@@ -60,20 +60,20 @@ class NFISummary(Screen):
 
 class NFIFlash(Screen):
 	skin = """
-		<screen name="NFIFlash" position="90,95" size="560,420" title="Image flash utility">
-			<ePixmap pixmap="skin_default/buttons/green.png" position="140,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
-			<ePixmap pixmap="skin_default/buttons/yellow.png" position="280,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
-			<ePixmap pixmap="skin_default/buttons/blue.png" position="420,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
-			<widget source="key_green" render="Label" position="140,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
-			<widget source="key_yellow" render="Label" position="280,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#a08500" transparent="1" />
-			<widget source="key_blue" render="Label" position="420,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#18188b" transparent="1" />
-			<widget source="listlabel" render="Label" position="16,44" size="200,21" valign="center" font="Regular;18" />
-			<widget name="filelist" position="0,68" size="260,260" scrollbarMode="showOnDemand" />
-			<widget source="infolabel" render="Label" position="270,44" size="280,284" font="Regular;16" />
-			<widget source="job_progressbar" render="Progress" position="10,374" size="540,26" borderWidth="1" backgroundColor="#254f7497" />
-			<widget source="job_progresslabel" render="Label" position="180,378" zPosition="2" font="Regular;18" halign="center" transparent="1" size="200,22" foregroundColor="#000000" />
-			<widget source="statusbar" render="Label" position="10,404" size="540,16" font="Regular;16" foregroundColor="#cccccc" />
-		</screen>"""
+		<screen name="NFIFlash" position="center,center" size="560,420" title="Image flash utility">
+                      <ePixmap pixmap="skin_default/buttons/green.png" position="120,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
+                      <ePixmap pixmap="skin_default/buttons/yellow.png" position="265,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
+                      <ePixmap pixmap="skin_default/buttons/blue.png" position="410,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
+                      <widget source="key_green" render="Label" position="120,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="un1f771f" transparent="1" />
+                      <widget source="key_yellow" render="Label" position="265,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="una08500" transparent="1" />
+                      <widget source="key_blue" render="Label" position="410,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="un18188b" transparent="1" />
+                      <widget source="listlabel" render="Label" position="16,44" size="200,21" valign="center" font="Regular;18" />
+                      <widget name="filelist" position="0,68" size="260,260" scrollbarMode="showOnDemand" />
+                      <widget source="infolabel" render="Label" position="270,44" size="280,284" font="Regular;16" />
+                      <widget source="job_progressbar" render="Progress" position="10,374" size="540,26" borderWidth="1" backgroundColor="un254f7497" />
+                      <widget source="job_progresslabel" render="Label" position="180,378" zPosition="2" font="Regular;18" halign="center" transparent="1" size="200,22" foregroundColor="black" />
+                      <widget source="statusbar" render="Label" position="10,404" size="540,16" font="Regular;16" foregroundColor="grey" />
+                </screen>"""
 
 	def __init__(self, session, cancelable = True, close_on_finish = False):
 		self.skin = NFIFlash.skin

@@ -45,6 +45,7 @@
 # 141004  paguilar    v1.17 Rename qboxhd_update_1 to qboxhd_update
 # 101804  paguilar    v1.18 sync after copying. Remove deprecated code.
 # 110117  paguilar    v1.19 Display images to video output with df_showimage.
+# 110502  devel  	  v1.20 Wait a few seconds to search the USB keys and added the initial sync command.
 
 
 # Ash doesn't support arrays, so we have to check manually if the devs exist. 
@@ -63,6 +64,9 @@ search_dev ()
 }
 
 PACKAGE=qboxhd
+
+#sync for compressed file
+sync
 
 BOARD=$1
 if [ "$BOARD" != "qboxhd-mini" -a "$BOARD" != "qboxhd" ]; then
@@ -92,7 +96,7 @@ fi
 
 echo " "
 echo "****************************"
-echo "  Update Software v1.19"
+echo "  Update Software v1.20"
 echo "****************************"
 
 ###
@@ -334,6 +338,11 @@ fi
 ###
 df_showimage /etc/images/update_filesystem_720x576.jpg &
 $DISPLAY_IMAGE /etc/images/update_filesystem$IMG.bin
+
+#some USB key are a bit slow
+echo "Wait 7 seconds to detect the usb keys"
+sleep 7
+sync
 
 SDA=0
 SDB=0

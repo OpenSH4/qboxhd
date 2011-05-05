@@ -22,7 +22,7 @@ from time import sleep
 
 class PositionerSetup(Screen):
 	skin = """
-		<screen position="100,100" size="560,400" title="Positioner setup..." >
+		<screen position="center,center" size="560,400" title="Positioner setup..." >
 			<widget name="list" position="100,0" size="350,155" />
 
 			<widget name="red" position="0,155" size="140,80" backgroundColor="red" halign="center" valign="center" font="Regular;21" />
@@ -39,7 +39,6 @@ class PositionerSetup(Screen):
 			<widget name="lock_state" position="60,320" size="150,22" font="Regular;21" />
 			<widget name="snr_bar" position="60,270" size="150,22" />
 			<widget name="ber_bar" position="60,295" size="150,22" />
-
 			<eLabel text="Frequency:" position="300,245" size="120,22" font="Regular;21" />
 			<eLabel text="Symbolrate:" position="300,270" size="120,22" font="Regular;21" />
 			<eLabel text="FEC:" position="300,295" size="120,22" font="Regular;21" />
@@ -411,7 +410,7 @@ tuning = None
 
 class TunerScreen(ScanSetup):
 	skin = """
-		<screen position="90,100" size="520,400" title="Tune">
+		<screen position="center,center" size="520,400" title="Tune">
 			<widget name="config" position="20,10" size="460,350" scrollbarMode="showOnDemand" />
 			<widget name="introduction" position="20,360" size="350,30" font="Regular;23" />
 		</screen>"""
@@ -557,7 +556,7 @@ class TunerScreen(ScanSetup):
 
 class RotorNimSelection(Screen):
 	skin = """
-		<screen position="140,165" size="400,130" title="select Slot">
+		<screen position="center,center" size="400,130" title="select Slot">
 			<widget name="nimlist" position="20,10" size="360,100" />
 		</screen>"""
 

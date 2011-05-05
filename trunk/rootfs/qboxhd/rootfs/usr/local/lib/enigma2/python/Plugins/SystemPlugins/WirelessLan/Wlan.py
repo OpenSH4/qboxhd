@@ -1,4 +1,7 @@
 # for localized messages
+# version stone 1.0.7 and 1.0.10 and 1.0.12
+# version stone 0.0.50 and 0.0.54 and 0.0.56
+
 from qboxhd import QBOXHD, QBOXHD_MINI
 from __init__ import _
 
@@ -293,7 +296,7 @@ class WlanList(HTMLComponent, GUIComponent):
 		self.l = None
 		self.l = eListboxPythonMultiContent()
 		
-		self.l.setFont(0, gFont("Regular", 32))
+		self.l.setFont(0, gFont("Regular", 24)) # Original ("Regular", 32)
 		self.l.setFont(1, gFont("Regular", 18))
 		self.l.setFont(2, gFont("Regular", 16))
 		self.l.setBuildFunc(self.buildWlanListEntry)
@@ -313,11 +316,14 @@ class WlanList(HTMLComponent, GUIComponent):
 			essid = bssid
 		
 		res.append( MultiContentEntryText(pos=(0, 0), size=(470, 35), font=0, flags=RT_HALIGN_LEFT, text=essid) )
-		res.append( MultiContentEntryText(pos=(350, 0), size=(80, 20), font=1, flags=RT_HALIGN_LEFT, text=_("Quality")))
+	        #res.append( MultiContentEntryText(pos=(350, 0), size=(80, 20), font=1, flags=RT_HALIGN_LEFT, text=_("Quality"))) 
+                res.append( MultiContentEntryText(pos=(385, 0), size=(80, 20), font=1, flags=RT_HALIGN_LEFT, text=_("Quality")))
 		if int(signal) > 0:
-			res.append( MultiContentEntryText(pos=(420, 0), size=(80, 35), font=0, flags=RT_HALIGN_RIGHT, text=("%s" %signal) + "%" ))
+                        #res.append( MultiContentEntryText(pos=(420, 0), size=(80, 35), font=0, flags=RT_HALIGN_RIGHT, text=("%s" %signal) + "%" )) 
+			res.append( MultiContentEntryText(pos=(460, 0), size=(80, 35), font=0, flags=RT_HALIGN_RIGHT, text=("%s" %signal) + "%" ))
 		else:
-			res.append( MultiContentEntryText(pos=(420, 0), size=(120, 35), font=0, flags=RT_HALIGN_RIGHT, text=("%s" %signal) + " dBm" ))
+                        #res.append( MultiContentEntryText(pos=(420, 0), size=(120, 35), font=0, flags=RT_HALIGN_RIGHT, text=("%s" %signal) + " dBm" )) 
+			res.append( MultiContentEntryText(pos=(460, 0), size=(120, 35), font=0, flags=RT_HALIGN_RIGHT, text=("%s" %signal) + " dBm" ))
 		res.append( MultiContentEntryText(pos=(0, 40), size=(180, 20), font=1, color = 0xFFA323, color_sel = 0xFFA323, flags=RT_HALIGN_LEFT, text=_("Mode: %s") %wlanmode ))
 		res.append( MultiContentEntryText(pos=(140, 40), size=(330, 20), font=1, color = 0xFFA323, color_sel = 0xFFA323, flags=RT_HALIGN_LEFT, text=_("Encryption: %s") % (encryption) ))
 		if channel != None:
