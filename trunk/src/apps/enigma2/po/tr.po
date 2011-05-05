@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 Turkish Locale\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-30 11:00+0100\n"
+"POT-Creation-Date: 2011-04-04 15:05+0200\n"
 "PO-Revision-Date: 2009-04-28 19:49+0200\n"
 "Last-Translator: Zülfikar VEYİSOĞLU <z.veyisoglu@hobiagaci.com>\n"
 "Language-Team: http://hobiagaci.com <z.veyisoglu@hobiagaci.com>\n"
@@ -188,12 +188,12 @@ msgstr "#ffffff"
 msgid "#ffffffff"
 msgstr "#ffffffff"
 
-#, python-format
-msgid "% used"
-msgstr ""
-
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#, python-format
+msgid "%d iDevs connected"
+msgstr ""
 
 #, python-format
 msgid "%d jobs are running in the background!"
@@ -704,20 +704,6 @@ msgstr ""
 msgid "Album"
 msgstr "Albüm"
 
-#, python-format
-msgid "Album: %s"
-msgstr ""
-
-msgid "Album: unknown"
-msgstr ""
-
-msgid "Albums"
-msgstr ""
-
-#, python-format
-msgid "Albums: %d"
-msgstr ""
-
 msgid "All"
 msgstr "Tümü"
 
@@ -808,20 +794,6 @@ msgstr ""
 
 msgid "Artist"
 msgstr "Sanatçı"
-
-#, python-format
-msgid "Artist: %s"
-msgstr ""
-
-msgid "Artist: unknown"
-msgstr ""
-
-msgid "Artists"
-msgstr ""
-
-#, python-format
-msgid "Artists: %d"
-msgstr ""
 
 msgid "Ascanding"
 msgstr ""
@@ -925,6 +897,9 @@ msgstr "BER"
 msgid "BER:"
 msgstr "BER:"
 
+msgid "BS Info: unknown"
+msgstr ""
+
 msgid "Back"
 msgstr "Geri"
 
@@ -975,6 +950,9 @@ msgstr ""
 
 msgid "Backup running..."
 msgstr "Yedekleme çalışıyor..."
+
+msgid "Backup successfully!"
+msgstr ""
 
 msgid "Backup system settings"
 msgstr "Sistem ayarlarını yedekle"
@@ -1406,6 +1384,12 @@ msgstr ""
 
 msgid "Could not connect to QBoxHD .NFI Image Feed Server:"
 msgstr "QBoxHD .NFI bellenim sunucusuna bağlanamıyor:"
+
+msgid ""
+"Could not establish a connection to the server.\n"
+"Please check if the wire is connected or if your internet connection is "
+"working properly."
+msgstr ""
 
 msgid "Could not load Medium! No disc inserted?"
 msgstr "DVD medyası yüklenemedi. DVD diski takılı değil mi?"
@@ -2059,9 +2043,13 @@ msgstr ""
 "\n"
 "Â© 2006 - Stephan Reichholf"
 
+msgid "Enigma: unknown"
+msgstr ""
+
 msgid "Enter"
 msgstr ""
 
+#. #-#-#-#-#  enigma2.pot (PACKAGE VERSION)  #-#-#-#-#
 #.   TRANSLATORS: Note that "Enter" in the two strings below should *not*
 #.       be interpreted as "Give speed as input". The intended meaning is
 #.       instead "Initial speed when starting winding", i.e. the speed at
@@ -2363,6 +2351,9 @@ msgstr "FEC"
 msgid "FP Info: %d"
 msgstr ""
 
+msgid "FP Info: unknown"
+msgstr ""
+
 msgid "Factory reset"
 msgstr "Fabrika ayarlarına dön"
 
@@ -2431,10 +2422,6 @@ msgstr "Ağ yeniden başlatıldı"
 msgid "Finnish"
 msgstr "Fince"
 
-#, python-format
-msgid "Firmware: %s"
-msgstr ""
-
 msgid ""
 "First we need to download the latest boot environment for the USB flasher."
 msgstr ""
@@ -2461,6 +2448,26 @@ msgid ""
 msgstr ""
 
 msgid "For WPA or WPA2 encryption you need to specify 8 to 63 ascii character."
+msgstr ""
+
+msgid ""
+"For remove features uninstalled, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to Reboot your QBoxHD.\n"
+"Reboot it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to turn OFF and turn ON your "
+"QBoxHD."
 msgstr ""
 
 msgid "Format"
@@ -2568,20 +2575,6 @@ msgstr "Genel PCM gecikmesi"
 msgid "Genre"
 msgstr "Tür"
 
-#, python-format
-msgid "Genre: %s"
-msgstr ""
-
-msgid "Genre: unknown"
-msgstr ""
-
-msgid "Genres"
-msgstr ""
-
-#, python-format
-msgid "Genres: %d"
-msgstr ""
-
 msgid "Georgian"
 msgstr ""
 
@@ -2592,12 +2585,6 @@ msgid "Get related videos"
 msgstr ""
 
 msgid "Get video responses"
-msgstr ""
-
-#, python-format
-msgid ""
-"Getting data from %s.\n"
-" Please wait ..."
 msgstr ""
 
 msgid "Getting plugin information. Please wait..."
@@ -2708,6 +2695,9 @@ msgid "IP Address"
 msgstr "IP Adresi"
 
 msgid "IP:"
+msgstr ""
+
+msgid "IP: unknown"
 msgstr ""
 
 msgid "ISO file is too large for this filesystem!"
@@ -2909,10 +2899,6 @@ msgstr ""
 msgid "Italian"
 msgstr "İtalyanca"
 
-#, python-format
-msgid "Items: %d"
-msgstr ""
-
 msgid "Japanese"
 msgstr ""
 
@@ -2933,6 +2919,9 @@ msgid "Kashmiri"
 msgstr ""
 
 msgid "Kazakh"
+msgstr ""
+
+msgid "Kernel: unknown"
 msgstr ""
 
 msgid "Keyboard Map"
@@ -3225,10 +3214,6 @@ msgstr ""
 msgid "Model: "
 msgstr "Model: "
 
-#, python-format
-msgid "Model: %s\n"
-msgstr ""
-
 msgid "Modulation"
 msgstr "Modülasyon"
 
@@ -3497,15 +3482,14 @@ msgstr ""
 msgid "No"
 msgstr "Hayır"
 
-#, python-format
-msgid "No %s."
-msgstr ""
-
 msgid "No (supported) DVDROM found!"
 msgstr "Desteklenen DVDROM  bulunamadı!"
 
 msgid "No 50 Hz, sorry. :("
 msgstr "50 Hz desteklemiyor, üzgünüm. :("
+
+msgid "No AddOns installed."
+msgstr ""
 
 msgid "No Connection"
 msgstr ""
@@ -3548,6 +3532,9 @@ msgstr ""
 "Transponder'da yayın yok!\n"
 "(PAT okunurken zaman aşımı oluştu)"
 
+msgid "No data received from Server."
+msgstr ""
+
 msgid "No description available."
 msgstr "Açıklayıcı bilgi yok."
 
@@ -3562,6 +3549,9 @@ msgstr "EPG bilgisi bulunamadı, süresiz kaydediliyor."
 
 msgid "No free tuner!"
 msgstr "Boş tuner yok!"
+
+msgid "No iDevs connected"
+msgstr ""
 
 msgid "No more files in this directory"
 msgstr ""
@@ -3917,16 +3907,6 @@ msgid "Play selected"
 msgstr ""
 
 msgid "Play selected file"
-msgstr ""
-
-msgid "PlayLists"
-msgstr ""
-
-msgid "PlayLists Video"
-msgstr ""
-
-#, python-format
-msgid "PlayLists: %d"
 msgstr ""
 
 msgid "Playing video, be patient ..."
@@ -4312,6 +4292,9 @@ msgstr "Raydo"
 msgid "Ram Disk"
 msgstr "Ram Disk"
 
+msgid "Ramfs: unknown"
+msgstr ""
+
 msgid "Random"
 msgstr "Rastgele"
 
@@ -4537,6 +4520,12 @@ msgstr "Test'i yenile"
 msgid "Restart your network connection and interfaces.\n"
 msgstr "Ağ bağlantısını ve ağ arayüzlerini yeniden başlatın.\n"
 
+msgid "Restarting Enigma ..."
+msgstr ""
+
+msgid "Restarting Network ..."
+msgstr ""
+
 msgid "Restore"
 msgstr "Geri yükle"
 
@@ -4554,6 +4543,9 @@ msgstr ""
 
 msgid "Restore running..."
 msgstr "Geri yükleme çalışıyor..."
+
+msgid "Restore successfully!"
+msgstr ""
 
 msgid "Restore system settings"
 msgstr "Sistem ayarlarını geri yükle"
@@ -4913,10 +4905,16 @@ msgstr ""
 msgid "Server Address"
 msgstr ""
 
+msgid "Server Error."
+msgstr ""
+
 msgid "Server IP"
 msgstr ""
 
 msgid "Server Profile Name"
+msgstr ""
+
+msgid "Server not Ready."
 msgstr ""
 
 msgid "Server share"
@@ -5124,10 +5122,6 @@ msgstr "Tekadım (GOP)"
 msgid "Siswati"
 msgstr ""
 
-#, python-format
-msgid "Size: %d MB\n"
-msgstr ""
-
 msgid "Skin Appearance"
 msgstr ""
 
@@ -5254,10 +5248,6 @@ msgstr "Ses taşıyıcı"
 
 msgid "South"
 msgstr "Güney"
-
-#, python-format
-msgid "Space: %d.%02d GB Free: %d.%02d GB\n"
-msgstr ""
 
 msgid "Spanish"
 msgstr "İspanyolca"
@@ -5447,6 +5437,12 @@ msgid "Tamil"
 msgstr ""
 
 msgid "Tatar"
+msgstr ""
+
+msgid "Technical Information about QBox Mini"
+msgstr ""
+
+msgid "Technical Information about QBoxHD"
 msgstr ""
 
 msgid "Tegulu"
@@ -5846,13 +5842,6 @@ msgstr "Başlık özellikleri"
 msgid "Title: "
 msgstr ""
 
-msgid "Titles"
-msgstr ""
-
-#, python-format
-msgid "Titles: %d"
-msgstr ""
-
 msgid "Titleset mode"
 msgstr "Başlıkseti kipi"
 
@@ -6115,6 +6104,7 @@ msgstr "Güç Ölçümünü Kullan"
 msgid "Use a gateway"
 msgstr "Ağ geçidi kullan"
 
+#. #-#-#-#-#  enigma2.pot (PACKAGE VERSION)  #-#-#-#-#
 #.   TRANSLATORS: The effect of "Non-smooth winding" is that rather
 #.       than using ordinary "continuous" or "smooth" winding, a fast
 #.       sequence of stills is shown when winding at high speeds. This
@@ -6241,13 +6231,6 @@ msgstr ""
 
 msgid "Video mode selection."
 msgstr "Görüntü kipi seçimi."
-
-msgid "Videos"
-msgstr ""
-
-#, python-format
-msgid "Videos: %d"
-msgstr ""
 
 msgid "Vietnamese"
 msgstr ""
@@ -6777,6 +6760,12 @@ msgid "Your new Custom Buttom is %s."
 msgstr ""
 
 msgid "Your new configuration have been saved successfully."
+msgstr ""
+
+#, python-format
+msgid ""
+"Your new selected language is %s.\n"
+"Please restart GUI to make it effective."
 msgstr ""
 
 msgid "Zap back to service before positioner setup?"

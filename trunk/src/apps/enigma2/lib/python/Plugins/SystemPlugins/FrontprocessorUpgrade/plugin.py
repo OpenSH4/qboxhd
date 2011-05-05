@@ -17,13 +17,14 @@ def getUpgradeVersion():
 
 class FPUpgrade(Screen):
 	skin = """
-		<screen position="150,200" size="450,200" title="FP upgrade required" >
-			<widget name="text" position="0,0" size="550,50" font="Regular;20" />
-			<widget name="oldversion_label" position="10,100" size="290,25" font="Regular;20" />
-			<widget name="newversion_label" position="10,125" size="290,25" font="Regular;20" />
-			<widget name="oldversion" position="300,100" size="50,25" font="Regular;20" />
-			<widget name="newversion" position="300,125" size="50,25" font="Regular;20" />
-		</screen>"""
+		<screen position="center,center" size="450,200" title="FP upgrade required">
+                    <widget name="text" position="0,0" size="450,50" font="Regular;20" />
+                    <widget name="oldversion_label" position="35,100" size="310,25" font="Regular;20" />
+                    <widget name="newversion_label" position="35,125" size="310,25" font="Regular;20" />
+                    <widget name="oldversion" position="345,100" size="60,25" font="Regular;20" />
+                    <widget name="newversion" position="345,125" size="60,25" font="Regular;20" />
+                    </screen>"""
+	
 	def __init__(self, session):
 		self.skin = FPUpgrade.skin
 		Screen.__init__(self, session)
@@ -50,10 +51,11 @@ class FPUpgrade(Screen):
 
 class SystemMessage(Screen):
 	skin = """
-		<screen position="150,200" size="450,200" title="System Message" >
-			<widget source="text" position="0,0" size="450,200" font="Regular;20" halign="center" valign="center" render="Label" />
-			<ePixmap pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
-		</screen>"""
+		<screen position="center,center" size="450,200" title="System Message">
+                     <widget source="text" position="0,0" size="450,200" font="Regular;20" halign="center" valign="center" render="Label" />
+                     <ePixmap pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
+                </screen>"""
+	
 	def __init__(self, session, message):
 		from Components.Sources.StaticText import StaticText
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-30 11:00+0100\n"
+"POT-Creation-Date: 2011-04-04 15:05+0200\n"
 "PO-Revision-Date: 2009-08-02 15:48+0100\n"
 "Last-Translator: Laco Filo <filowood@post.mbc.sk>\n"
 "Language-Team: none\n"
@@ -186,12 +186,12 @@ msgstr "#ffffff"
 msgid "#ffffffff"
 msgstr "#ffffffff"
 
-#, python-format
-msgid "% used"
-msgstr ""
-
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#, python-format
+msgid "%d iDevs connected"
+msgstr ""
 
 #, python-format
 msgid "%d jobs are running in the background!"
@@ -687,20 +687,6 @@ msgstr ""
 msgid "Album"
 msgstr "Album"
 
-#, python-format
-msgid "Album: %s"
-msgstr ""
-
-msgid "Album: unknown"
-msgstr ""
-
-msgid "Albums"
-msgstr ""
-
-#, python-format
-msgid "Albums: %d"
-msgstr ""
-
 msgid "All"
 msgstr "Všetky"
 
@@ -791,20 +777,6 @@ msgstr ""
 
 msgid "Artist"
 msgstr "Umelec"
-
-#, python-format
-msgid "Artist: %s"
-msgstr ""
-
-msgid "Artist: unknown"
-msgstr ""
-
-msgid "Artists"
-msgstr ""
-
-#, python-format
-msgid "Artists: %d"
-msgstr ""
 
 msgid "Ascanding"
 msgstr ""
@@ -908,6 +880,9 @@ msgstr "BER"
 msgid "BER:"
 msgstr "BER:"
 
+msgid "BS Info: unknown"
+msgstr ""
+
 msgid "Back"
 msgstr "Späť"
 
@@ -958,6 +933,9 @@ msgstr ""
 
 msgid "Backup running..."
 msgstr "Zálohovanie beží..."
+
+msgid "Backup successfully!"
+msgstr ""
 
 msgid "Backup system settings"
 msgstr "Záloha nastavení systému"
@@ -1388,6 +1366,12 @@ msgid "Corsican"
 msgstr ""
 
 msgid "Could not connect to QBoxHD .NFI Image Feed Server:"
+msgstr ""
+
+msgid ""
+"Could not establish a connection to the server.\n"
+"Please check if the wire is connected or if your internet connection is "
+"working properly."
 msgstr ""
 
 msgid "Could not load Medium! No disc inserted?"
@@ -2042,9 +2026,13 @@ msgstr ""
 "\n"
 "© 2006 - Stephan Reichholf"
 
+msgid "Enigma: unknown"
+msgstr ""
+
 msgid "Enter"
 msgstr ""
 
+#. #-#-#-#-#  enigma2.pot (PACKAGE VERSION)  #-#-#-#-#
 #.   TRANSLATORS: Note that "Enter" in the two strings below should *not*
 #.       be interpreted as "Give speed as input". The intended meaning is
 #.       instead "Initial speed when starting winding", i.e. the speed at
@@ -2346,6 +2334,9 @@ msgstr "FEC"
 msgid "FP Info: %d"
 msgstr ""
 
+msgid "FP Info: unknown"
+msgstr ""
+
 msgid "Factory reset"
 msgstr "Továrenské nastavenia"
 
@@ -2414,10 +2405,6 @@ msgstr "Reštartovanie siete je skončené"
 msgid "Finnish"
 msgstr "Fínčina"
 
-#, python-format
-msgid "Firmware: %s"
-msgstr ""
-
 msgid ""
 "First we need to download the latest boot environment for the USB flasher."
 msgstr ""
@@ -2443,6 +2430,26 @@ msgid ""
 msgstr ""
 
 msgid "For WPA or WPA2 encryption you need to specify 8 to 63 ascii character."
+msgstr ""
+
+msgid ""
+"For remove features uninstalled, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to Reboot your QBoxHD.\n"
+"Reboot it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to turn OFF and turn ON your "
+"QBoxHD."
 msgstr ""
 
 msgid "Format"
@@ -2550,20 +2557,6 @@ msgstr "Oneskorenie PCM"
 msgid "Genre"
 msgstr "Žáner"
 
-#, python-format
-msgid "Genre: %s"
-msgstr ""
-
-msgid "Genre: unknown"
-msgstr ""
-
-msgid "Genres"
-msgstr ""
-
-#, python-format
-msgid "Genres: %d"
-msgstr ""
-
 msgid "Georgian"
 msgstr ""
 
@@ -2574,12 +2567,6 @@ msgid "Get related videos"
 msgstr ""
 
 msgid "Get video responses"
-msgstr ""
-
-#, python-format
-msgid ""
-"Getting data from %s.\n"
-" Please wait ..."
 msgstr ""
 
 msgid "Getting plugin information. Please wait..."
@@ -2690,6 +2677,9 @@ msgid "IP Address"
 msgstr "Adresa IP"
 
 msgid "IP:"
+msgstr ""
+
+msgid "IP: unknown"
 msgstr ""
 
 msgid "ISO file is too large for this filesystem!"
@@ -2889,10 +2879,6 @@ msgstr ""
 msgid "Italian"
 msgstr "Taliančina"
 
-#, python-format
-msgid "Items: %d"
-msgstr ""
-
 msgid "Japanese"
 msgstr ""
 
@@ -2913,6 +2899,9 @@ msgid "Kashmiri"
 msgstr ""
 
 msgid "Kazakh"
+msgstr ""
+
+msgid "Kernel: unknown"
 msgstr ""
 
 msgid "Keyboard Map"
@@ -3205,10 +3194,6 @@ msgstr ""
 msgid "Model: "
 msgstr "Model: "
 
-#, python-format
-msgid "Model: %s\n"
-msgstr ""
-
 msgid "Modulation"
 msgstr "Modulácia"
 
@@ -3476,15 +3461,14 @@ msgstr ""
 msgid "No"
 msgstr "Nie"
 
-#, python-format
-msgid "No %s."
-msgstr ""
-
 msgid "No (supported) DVDROM found!"
 msgstr "Nenájdený (podporovaný) DVDROM!"
 
 msgid "No 50 Hz, sorry. :("
 msgstr "Nedá sa nastaviť 50 Hz. "
+
+msgid "No AddOns installed."
+msgstr ""
 
 msgid "No Connection"
 msgstr ""
@@ -3527,6 +3511,9 @@ msgstr ""
 "Žiadne dáta na transpondéri!\n"
 "(Čas vypršal pri čítaní PAT)"
 
+msgid "No data received from Server."
+msgstr ""
+
 msgid "No description available."
 msgstr "Nie je k dispozícii opis"
 
@@ -3541,6 +3528,9 @@ msgstr "Žiadne informácie EPG, spúšťam nekonečné nahrávanie"
 
 msgid "No free tuner!"
 msgstr "Nie je voľný tuner!"
+
+msgid "No iDevs connected"
+msgstr ""
 
 msgid "No more files in this directory"
 msgstr ""
@@ -3894,16 +3884,6 @@ msgid "Play selected"
 msgstr ""
 
 msgid "Play selected file"
-msgstr ""
-
-msgid "PlayLists"
-msgstr ""
-
-msgid "PlayLists Video"
-msgstr ""
-
-#, python-format
-msgid "PlayLists: %d"
 msgstr ""
 
 msgid "Playing video, be patient ..."
@@ -4287,6 +4267,9 @@ msgstr "Rádio"
 msgid "Ram Disk"
 msgstr "Ram Disk"
 
+msgid "Ramfs: unknown"
+msgstr ""
+
 msgid "Random"
 msgstr "Náhodne"
 
@@ -4511,6 +4494,12 @@ msgstr "Zopakovať test"
 msgid "Restart your network connection and interfaces.\n"
 msgstr "Reštartujte sieťové pripojenie a rozhrania.\n"
 
+msgid "Restarting Enigma ..."
+msgstr ""
+
+msgid "Restarting Network ..."
+msgstr ""
+
 msgid "Restore"
 msgstr "Obnoviť"
 
@@ -4528,6 +4517,9 @@ msgstr ""
 
 msgid "Restore running..."
 msgstr "Prebieha obnova..."
+
+msgid "Restore successfully!"
+msgstr ""
 
 msgid "Restore system settings"
 msgstr "Obnoviť systémové nastavenia"
@@ -4887,10 +4879,16 @@ msgstr ""
 msgid "Server Address"
 msgstr ""
 
+msgid "Server Error."
+msgstr ""
+
 msgid "Server IP"
 msgstr ""
 
 msgid "Server Profile Name"
+msgstr ""
+
+msgid "Server not Ready."
 msgstr ""
 
 msgid "Server share"
@@ -5098,10 +5096,6 @@ msgstr "Jeden krok (GOP)"
 msgid "Siswati"
 msgstr ""
 
-#, python-format
-msgid "Size: %d MB\n"
-msgstr ""
-
 msgid "Skin Appearance"
 msgstr ""
 
@@ -5229,10 +5223,6 @@ msgstr "Nosný kmitočet zvuku"
 
 msgid "South"
 msgstr "južne"
-
-#, python-format
-msgid "Space: %d.%02d GB Free: %d.%02d GB\n"
-msgstr ""
 
 msgid "Spanish"
 msgstr "Španielčina"
@@ -5422,6 +5412,12 @@ msgid "Tamil"
 msgstr ""
 
 msgid "Tatar"
+msgstr ""
+
+msgid "Technical Information about QBox Mini"
+msgstr ""
+
+msgid "Technical Information about QBoxHD"
 msgstr ""
 
 msgid "Tegulu"
@@ -5810,13 +5806,6 @@ msgstr "Vlastnosti titulu"
 msgid "Title: "
 msgstr ""
 
-msgid "Titles"
-msgstr ""
-
-#, python-format
-msgid "Titles: %d"
-msgstr ""
-
 msgid "Titleset mode"
 msgstr "Režim sady titulov"
 
@@ -6075,6 +6064,7 @@ msgstr "Použiť meranie spotreby"
 msgid "Use a gateway"
 msgstr "Použiť bránu"
 
+#. #-#-#-#-#  enigma2.pot (PACKAGE VERSION)  #-#-#-#-#
 #.   TRANSLATORS: The effect of "Non-smooth winding" is that rather
 #.       than using ordinary "continuous" or "smooth" winding, a fast
 #.       sequence of stills is shown when winding at high speeds. This
@@ -6201,13 +6191,6 @@ msgstr ""
 
 msgid "Video mode selection."
 msgstr "Voľba režimu obrazu"
-
-msgid "Videos"
-msgstr ""
-
-#, python-format
-msgid "Videos: %d"
-msgstr ""
 
 msgid "Vietnamese"
 msgstr ""
@@ -6716,6 +6699,12 @@ msgid "Your new Custom Buttom is %s."
 msgstr ""
 
 msgid "Your new configuration have been saved successfully."
+msgstr ""
+
+#, python-format
+msgid ""
+"Your new selected language is %s.\n"
+"Please restart GUI to make it effective."
 msgstr ""
 
 msgid "Zap back to service before positioner setup?"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-30 11:00+0100\n"
+"POT-Creation-Date: 2011-04-04 15:05+0200\n"
 "PO-Revision-Date: 2009-04-27 19:27+0100\n"
 "Last-Translator: \n"
 "Language-Team:  <Benny.DeTandt@gmail.com>\n"
@@ -194,12 +194,12 @@ msgstr "#ffffff"
 msgid "#ffffffff"
 msgstr "#ffffffff"
 
-#, python-format
-msgid "% used"
-msgstr ""
-
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#, python-format
+msgid "%d iDevs connected"
+msgstr ""
 
 #, python-format
 msgid "%d jobs are running in the background!"
@@ -710,20 +710,6 @@ msgstr ""
 msgid "Album"
 msgstr "Album"
 
-#, python-format
-msgid "Album: %s"
-msgstr ""
-
-msgid "Album: unknown"
-msgstr ""
-
-msgid "Albums"
-msgstr ""
-
-#, python-format
-msgid "Albums: %d"
-msgstr ""
-
 msgid "All"
 msgstr "Alles"
 
@@ -814,20 +800,6 @@ msgstr ""
 
 msgid "Artist"
 msgstr "Artiest"
-
-#, python-format
-msgid "Artist: %s"
-msgstr ""
-
-msgid "Artist: unknown"
-msgstr ""
-
-msgid "Artists"
-msgstr ""
-
-#, python-format
-msgid "Artists: %d"
-msgstr ""
 
 msgid "Ascanding"
 msgstr ""
@@ -931,6 +903,9 @@ msgstr "BER"
 msgid "BER:"
 msgstr "BER:"
 
+msgid "BS Info: unknown"
+msgstr ""
+
 msgid "Back"
 msgstr "Terug"
 
@@ -981,6 +956,9 @@ msgstr ""
 
 msgid "Backup running..."
 msgstr "Back-up bezig..."
+
+msgid "Backup successfully!"
+msgstr ""
 
 msgid "Backup system settings"
 msgstr "Back-up uw instellingen"
@@ -1414,6 +1392,12 @@ msgstr ""
 
 msgid "Could not connect to QBoxHD .NFI Image Feed Server:"
 msgstr "Kan niet connecteren naar QBoxHD .NFI Feed Server:"
+
+msgid ""
+"Could not establish a connection to the server.\n"
+"Please check if the wire is connected or if your internet connection is "
+"working properly."
+msgstr ""
 
 msgid "Could not load Medium! No disc inserted?"
 msgstr "Kan medium niet laden! Geen disk in speler?"
@@ -2065,9 +2049,13 @@ msgstr ""
 "\n"
 "© 2007 - Stephan Reichholf"
 
+msgid "Enigma: unknown"
+msgstr ""
+
 msgid "Enter"
 msgstr ""
 
+#. #-#-#-#-#  enigma2.pot (PACKAGE VERSION)  #-#-#-#-#
 #.   TRANSLATORS: Note that "Enter" in the two strings below should *not*
 #.       be interpreted as "Give speed as input". The intended meaning is
 #.       instead "Initial speed when starting winding", i.e. the speed at
@@ -2369,6 +2357,9 @@ msgstr "FEC"
 msgid "FP Info: %d"
 msgstr ""
 
+msgid "FP Info: unknown"
+msgstr ""
+
 msgid "Factory reset"
 msgstr "Fabrieksinstellingen"
 
@@ -2437,10 +2428,6 @@ msgstr "Herstarten van uw netwerk is voltooid"
 msgid "Finnish"
 msgstr "Fins"
 
-#, python-format
-msgid "Firmware: %s"
-msgstr ""
-
 msgid ""
 "First we need to download the latest boot environment for the USB flasher."
 msgstr "Eerst dienen we de opstart omgeving voor de USB flasher te downloaden."
@@ -2465,6 +2452,26 @@ msgid ""
 msgstr ""
 
 msgid "For WPA or WPA2 encryption you need to specify 8 to 63 ascii character."
+msgstr ""
+
+msgid ""
+"For remove features uninstalled, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to Reboot your QBoxHD.\n"
+"Reboot it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to turn OFF and turn ON your "
+"QBoxHD."
 msgstr ""
 
 msgid "Format"
@@ -2572,20 +2579,6 @@ msgstr "Algemene PCM vertraging"
 msgid "Genre"
 msgstr "Genre"
 
-#, python-format
-msgid "Genre: %s"
-msgstr ""
-
-msgid "Genre: unknown"
-msgstr ""
-
-msgid "Genres"
-msgstr ""
-
-#, python-format
-msgid "Genres: %d"
-msgstr ""
-
 msgid "Georgian"
 msgstr ""
 
@@ -2596,12 +2589,6 @@ msgid "Get related videos"
 msgstr ""
 
 msgid "Get video responses"
-msgstr ""
-
-#, python-format
-msgid ""
-"Getting data from %s.\n"
-" Please wait ..."
 msgstr ""
 
 msgid "Getting plugin information. Please wait..."
@@ -2712,6 +2699,9 @@ msgid "IP Address"
 msgstr "IP Adres"
 
 msgid "IP:"
+msgstr ""
+
+msgid "IP: unknown"
 msgstr ""
 
 msgid "ISO file is too large for this filesystem!"
@@ -2911,10 +2901,6 @@ msgstr ""
 msgid "Italian"
 msgstr "Italiaans"
 
-#, python-format
-msgid "Items: %d"
-msgstr ""
-
 msgid "Japanese"
 msgstr ""
 
@@ -2935,6 +2921,9 @@ msgid "Kashmiri"
 msgstr ""
 
 msgid "Kazakh"
+msgstr ""
+
+msgid "Kernel: unknown"
 msgstr ""
 
 msgid "Keyboard Map"
@@ -3227,10 +3216,6 @@ msgstr ""
 msgid "Model: "
 msgstr "Model: "
 
-#, python-format
-msgid "Model: %s\n"
-msgstr ""
-
 msgid "Modulation"
 msgstr "Modulatie"
 
@@ -3498,15 +3483,14 @@ msgstr ""
 msgid "No"
 msgstr "Nee"
 
-#, python-format
-msgid "No %s."
-msgstr ""
-
 msgid "No (supported) DVDROM found!"
 msgstr "Geen (ondersteunde) DVDROM gevonden!"
 
 msgid "No 50 Hz, sorry. :("
 msgstr "Geen 50Hz, sorry! :("
+
+msgid "No AddOns installed."
+msgstr ""
 
 msgid "No Connection"
 msgstr ""
@@ -3549,6 +3533,9 @@ msgstr ""
 "Geen data op transponder!\n"
 "(Timeout reading PAT)"
 
+msgid "No data received from Server."
+msgstr ""
+
 msgid "No description available."
 msgstr "Geen beschrijving beschikbaar."
 
@@ -3563,6 +3550,9 @@ msgstr "Geen EPG gegevens gevonden. Opname voor onbepaalde tijd."
 
 msgid "No free tuner!"
 msgstr "Geen vrije tuner!"
+
+msgid "No iDevs connected"
+msgstr ""
 
 msgid "No more files in this directory"
 msgstr ""
@@ -3919,16 +3909,6 @@ msgid "Play selected"
 msgstr ""
 
 msgid "Play selected file"
-msgstr ""
-
-msgid "PlayLists"
-msgstr ""
-
-msgid "PlayLists Video"
-msgstr ""
-
-#, python-format
-msgid "PlayLists: %d"
 msgstr ""
 
 msgid "Playing video, be patient ..."
@@ -4318,6 +4298,9 @@ msgstr "Radio"
 msgid "Ram Disk"
 msgstr "Ram Disk"
 
+msgid "Ramfs: unknown"
+msgstr ""
+
 msgid "Random"
 msgstr "Random"
 
@@ -4542,6 +4525,12 @@ msgstr "Herstart test"
 msgid "Restart your network connection and interfaces.\n"
 msgstr "Herstart het netwerk en alle adapters.\n"
 
+msgid "Restarting Enigma ..."
+msgstr ""
+
+msgid "Restarting Network ..."
+msgstr ""
+
 msgid "Restore"
 msgstr "Herstellen"
 
@@ -4559,6 +4548,9 @@ msgstr ""
 
 msgid "Restore running..."
 msgstr "Herstellen bezig..."
+
+msgid "Restore successfully!"
+msgstr ""
 
 msgid "Restore system settings"
 msgstr "Herstel uw instellingen"
@@ -4919,10 +4911,16 @@ msgstr ""
 msgid "Server Address"
 msgstr ""
 
+msgid "Server Error."
+msgstr ""
+
 msgid "Server IP"
 msgstr ""
 
 msgid "Server Profile Name"
+msgstr ""
+
+msgid "Server not Ready."
 msgstr ""
 
 msgid "Server share"
@@ -5130,10 +5128,6 @@ msgstr "Stap voor stap"
 msgid "Siswati"
 msgstr ""
 
-#, python-format
-msgid "Size: %d MB\n"
-msgstr ""
-
 msgid "Skin Appearance"
 msgstr ""
 
@@ -5260,10 +5254,6 @@ msgstr "Geluidskanaal"
 
 msgid "South"
 msgstr "Zuid"
-
-#, python-format
-msgid "Space: %d.%02d GB Free: %d.%02d GB\n"
-msgstr ""
 
 msgid "Spanish"
 msgstr "Spaans"
@@ -5456,6 +5446,12 @@ msgid "Tamil"
 msgstr ""
 
 msgid "Tatar"
+msgstr ""
+
+msgid "Technical Information about QBox Mini"
+msgstr ""
+
+msgid "Technical Information about QBoxHD"
 msgstr ""
 
 msgid "Tegulu"
@@ -5854,13 +5850,6 @@ msgstr "Titel instellingen"
 msgid "Title: "
 msgstr ""
 
-msgid "Titles"
-msgstr ""
-
-#, python-format
-msgid "Titles: %d"
-msgstr ""
-
 msgid "Titleset mode"
 msgstr "Titelset modus"
 
@@ -6127,6 +6116,7 @@ msgstr "Gebruik stroommeting"
 msgid "Use a gateway"
 msgstr "Gateway gebruiken"
 
+#. #-#-#-#-#  enigma2.pot (PACKAGE VERSION)  #-#-#-#-#
 #.   TRANSLATORS: The effect of "Non-smooth winding" is that rather
 #.       than using ordinary "continuous" or "smooth" winding, a fast
 #.       sequence of stills is shown when winding at high speeds. This
@@ -6251,13 +6241,6 @@ msgstr ""
 
 msgid "Video mode selection."
 msgstr "Video modus selectie"
-
-msgid "Videos"
-msgstr ""
-
-#, python-format
-msgid "Videos: %d"
-msgstr ""
 
 msgid "Vietnamese"
 msgstr ""
@@ -6784,6 +6767,12 @@ msgid "Your new Custom Buttom is %s."
 msgstr ""
 
 msgid "Your new configuration have been saved successfully."
+msgstr ""
+
+#, python-format
+msgid ""
+"Your new selected language is %s.\n"
+"Please restart GUI to make it effective."
 msgstr ""
 
 msgid "Zap back to service before positioner setup?"

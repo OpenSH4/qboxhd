@@ -20,14 +20,14 @@ class About(Screen):
 		if QBOXHD:
 			self.fist_time = True
 			if QBOXHD_MINI:
-				self["Title"] = StaticText("Technical Information about QBox mini")
+				self["Title"] = StaticText(_("Technical Information about QBox Mini"))
 			else:
-				self["Title"] = StaticText("Technical Information about QBox")
+				self["Title"] = StaticText(_("Technical Information about QBoxHD"))
 			
-			self["EnigmaVersion"] = StaticText("Enigma: unknown")
-			self["ImageVersion"] = StaticText("Filesystem: unknown")
+			self["EnigmaVersion"] = StaticText(_("Enigma: unknown"))
+			self["ImageVersion"] = StaticText(("Filesystem: unknown"))
 			self["TunerHeader"] = StaticText(_("Detected NIMs:"))
-			self["FPVersion"] = StaticText("FP Info: unknown")
+			self["FPVersion"] = StaticText(_("FP Info: unknown"))
 
 			for count in (0, 1, 2, 3):
 				self["Tuner" + str(count)] = StaticText("")
@@ -35,13 +35,13 @@ class About(Screen):
 			self["HDDHeader"] = StaticText(_("Detected HDD:"))
 			self["hddA"] = StaticText(_("none"))
 				
-			self["KernelInfo"] = StaticText("Kernel: unknown")
-			self["RamfsInfo"] = StaticText("Ramfs: unknown")
-			self["BSinfo"] = StaticText("BS Info: unknown")
-			self["IPInfo"] = StaticText("IP: unknown")
-			self["MouseInfo"] = StaticText("unknown")
-			self["KeyboardInfo"] = StaticText("unknown")
-			self["IPhoneInfo"] = StaticText("No iDevs connected")
+			self["KernelInfo"] = StaticText(_("Kernel: unknown"))
+			self["RamfsInfo"] = StaticText(_("Ramfs: unknown"))
+			self["BSinfo"] = StaticText(_("BS Info: unknown"))
+			self["IPInfo"] = StaticText(_("IP: unknown"))
+			self["MouseInfo"] = StaticText(_("unknown"))
+			self["KeyboardInfo"] = StaticText(_("unknown"))
+			self["IPhoneInfo"] = StaticText(_("No iDevs connected"))
 			
 			self.onShown.append(self.onCreate)
 		else:
@@ -54,7 +54,7 @@ class About(Screen):
 			if fp_version is not None:
 				fp_version = _("FP Info: %d") % fp_version
 			else:
-				fp_version = "FP Info: unknown"
+				fp_version = _("FP Info: unknown")
 	
 			self["FPVersion"] = StaticText(fp_version)
 	
@@ -90,7 +90,7 @@ class About(Screen):
 		if fp_version is not None:
 			fp_version = _("FP Info: %d") % fp_version
 		else:
-			fp_version = "FP Info: unknown"
+			fp_version = _("FP Info: unknown")
 
 		self["FPVersion"].setText(fp_version)
 
@@ -104,9 +104,9 @@ class About(Screen):
 		hddlist = harddiskmanager.HDDList()
 		hdd = hddlist and hddlist[0][1] or None
 		if hdd is not None and hdd.model() != "":
-			self["hddA"].setText(("%s\n(%s, %d MB free)") % (hdd.model(), hdd.capacity(),hdd.free()))
+			self["hddA"].setText(_("%s\n(%s, %d MB free)") % (hdd.model(), hdd.capacity(),hdd.free()))
 		else:
-			self["hddA"].setText("none")
+			self["hddA"].setText(_("none"))
 			
 		#Kernel Info
 		self["KernelInfo"].setText("Kernel: " + about.getKernelInfo())
@@ -121,9 +121,9 @@ class About(Screen):
 		# Keyboard Info
 		self["KeyboardInfo"].setText(about.getKeyBoardInfo())
 		
-		iphonedescr = "No iDevs connected"
+		iphonedescr = _("No iDevs connected")
 		if (idevsdevicemanager.getiPodCount() > 0 or idevsdevicemanager.getiPhoneCount() > 0 or idevsdevicemanager.getiPadCount() > 0):
-			iphonedescr = "%d iDevs connected" % (idevsdevicemanager.getiPodCount() + idevsdevicemanager.getiPhoneCount() + idevsdevicemanager.getiPadCount())
+			iphonedescr = _("%d iDevs connected") % (idevsdevicemanager.getiPodCount() + idevsdevicemanager.getiPhoneCount() + idevsdevicemanager.getiPadCount())
 			
 		self["IPhoneInfo"].setText(iphonedescr)
 		

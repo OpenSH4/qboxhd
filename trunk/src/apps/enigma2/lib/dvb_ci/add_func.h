@@ -32,6 +32,9 @@ typedef struct
 unsigned char BlackBoxGetLastChannels(bb_channels *channels);
 unsigned char BlackBoxSwitch(bb_channels *channels);
 
+#ifdef QBOXHD_MINI
+void start_check_TSM(void);
+#endif
 
 /* Switching TS */
 void set_tuner_to_cam(int tuner_no, data_source source);

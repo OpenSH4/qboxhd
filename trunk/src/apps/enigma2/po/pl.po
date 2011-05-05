@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-30 11:00+0100\n"
+"POT-Creation-Date: 2011-04-04 15:05+0200\n"
 "PO-Revision-Date: 2010-10-02 15:48+0100\n"
 "Last-Translator: Dorian Ciaglinski <dorianoz@tlen.pl>\n"
 "Language-Team: none\n"
@@ -206,12 +206,12 @@ msgstr "#ffffff"
 msgid "#ffffffff"
 msgstr "#ffffffff"
 
-#, python-format
-msgid "% used"
-msgstr "% używanych"
-
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#, python-format
+msgid "%d iDevs connected"
+msgstr ""
 
 #, python-format
 msgid "%d jobs are running in the background!"
@@ -731,20 +731,6 @@ msgstr "Albański"
 msgid "Album"
 msgstr "Album"
 
-#, python-format
-msgid "Album: %s"
-msgstr "Album: %s"
-
-msgid "Album: unknown"
-msgstr "Album: nieznany"
-
-msgid "Albums"
-msgstr "Albumy"
-
-#, python-format
-msgid "Albums: %d"
-msgstr "Albumy: %d"
-
 msgid "All"
 msgstr "Wszystkie"
 
@@ -837,20 +823,6 @@ msgstr "Armeński"
 
 msgid "Artist"
 msgstr "Artysta"
-
-#, python-format
-msgid "Artist: %s"
-msgstr "Artysta: %s"
-
-msgid "Artist: unknown"
-msgstr "Artysta: nieznany"
-
-msgid "Artists"
-msgstr "Artyści"
-
-#, python-format
-msgid "Artists: %d"
-msgstr "Artyści: %d"
 
 msgid "Ascanding"
 msgstr "Rosnąco"
@@ -954,6 +926,9 @@ msgstr "BER"
 msgid "BER:"
 msgstr "BER:"
 
+msgid "BS Info: unknown"
+msgstr ""
+
 msgid "Back"
 msgstr "Powrót"
 
@@ -1004,6 +979,9 @@ msgstr "Kopia Zapasowa trwa ..."
 
 msgid "Backup running..."
 msgstr "Kopia zapasowa uruchomiona..."
+
+msgid "Backup successfully!"
+msgstr ""
 
 msgid "Backup system settings"
 msgstr "Kopia ustawień systemowych"
@@ -1435,6 +1413,12 @@ msgstr "Korsykański"
 
 msgid "Could not connect to QBoxHD .NFI Image Feed Server:"
 msgstr "Połączenie z QBoxHD .NFI Image Serwerem nie powiodło sie:"
+
+msgid ""
+"Could not establish a connection to the server.\n"
+"Please check if the wire is connected or if your internet connection is "
+"working properly."
+msgstr ""
 
 msgid "Could not load Medium! No disc inserted?"
 msgstr "Nie mogę odczytać nośnika. Czy nośnik znajduje się w czytniku?"
@@ -2099,9 +2083,13 @@ msgstr ""
 "\n"
 "© 2006 - Stephan Reichholf"
 
+msgid "Enigma: unknown"
+msgstr ""
+
 msgid "Enter"
 msgstr "Wejście"
 
+#. #-#-#-#-#  enigma2.pot (PACKAGE VERSION)  #-#-#-#-#
 #.   TRANSLATORS: Note that "Enter" in the two strings below should *not*
 #.       be interpreted as "Give speed as input". The intended meaning is
 #.       instead "Initial speed when starting winding", i.e. the speed at
@@ -2452,6 +2440,9 @@ msgstr "FEC"
 msgid "FP Info: %d"
 msgstr "FP Info: %d"
 
+msgid "FP Info: unknown"
+msgstr ""
+
 msgid "Factory reset"
 msgstr "Ustawienia fabryczne"
 
@@ -2522,10 +2513,6 @@ msgstr "Zakończono restartowanie sieci"
 msgid "Finnish"
 msgstr "Fiński"
 
-#, python-format
-msgid "Firmware: %s"
-msgstr "Oprogramowanie Firmowe: %s"
-
 msgid ""
 "First we need to download the latest boot environment for the USB flasher."
 msgstr ""
@@ -2558,6 +2545,26 @@ msgstr ""
 msgid "For WPA or WPA2 encryption you need to specify 8 to 63 ascii character."
 msgstr ""
 "Dla szyfrowania WPA lub WAP2 musisz zdefiniować od 8 do 63 znaków ascii."
+
+msgid ""
+"For remove features uninstalled, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to Reboot your QBoxHD.\n"
+"Reboot it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to turn OFF and turn ON your "
+"QBoxHD."
+msgstr ""
 
 msgid "Format"
 msgstr "Format"
@@ -2664,20 +2671,6 @@ msgstr "Główne opóźnienie PCM"
 msgid "Genre"
 msgstr "Gatunek"
 
-#, python-format
-msgid "Genre: %s"
-msgstr "Rodzaj %s"
-
-msgid "Genre: unknown"
-msgstr "Rodzaj: nieznany"
-
-msgid "Genres"
-msgstr "Rodzaje"
-
-#, python-format
-msgid "Genres: %d"
-msgstr "Rodzaje: %d"
-
 msgid "Georgian"
 msgstr "Gruziński"
 
@@ -2689,14 +2682,6 @@ msgstr "Znajdź powiązane video"
 
 msgid "Get video responses"
 msgstr "Otrzymaj odpowiedź video"
-
-#, python-format
-msgid ""
-"Getting data from %s.\n"
-" Please wait ..."
-msgstr ""
-"Zbiera dane z %s.\n"
-" Proczę czekaj ..."
 
 msgid "Getting plugin information. Please wait..."
 msgstr "Zdobywanie info o pluginie. Proszę czekać..."
@@ -2809,6 +2794,9 @@ msgstr "Adres IP"
 
 msgid "IP:"
 msgstr "IP:"
+
+msgid "IP: unknown"
+msgstr ""
 
 msgid "ISO file is too large for this filesystem!"
 msgstr "Plik ISO jest za duży dla tego systemu plików!"
@@ -3010,10 +2998,6 @@ msgstr "Irlandzki"
 msgid "Italian"
 msgstr "Włoski"
 
-#, python-format
-msgid "Items: %d"
-msgstr "Obiekty: %d"
-
 msgid "Japanese"
 msgstr "japoński"
 
@@ -3035,6 +3019,9 @@ msgstr "Kaszmirski"
 
 msgid "Kazakh"
 msgstr "Kozacki"
+
+msgid "Kernel: unknown"
+msgstr ""
 
 msgid "Keyboard Map"
 msgstr "Mapa klawiatury"
@@ -3326,10 +3313,6 @@ msgstr "Tryb: %s"
 msgid "Model: "
 msgstr "Model: "
 
-#, python-format
-msgid "Model: %s\n"
-msgstr "Model: %s\n"
-
 msgid "Modulation"
 msgstr "Modulacja"
 
@@ -3600,15 +3583,14 @@ msgstr "Następna Piosenka"
 msgid "No"
 msgstr "Nie"
 
-#, python-format
-msgid "No %s."
-msgstr "Nie %s."
-
 msgid "No (supported) DVDROM found!"
 msgstr "Nie znaleziono (wspomaganego) nośnika DVDROM!"
 
 msgid "No 50 Hz, sorry. :("
 msgstr "Brak 50 Hz, przepraszam. :("
+
+msgid "No AddOns installed."
+msgstr ""
 
 msgid "No Connection"
 msgstr "Brak połączenia"
@@ -3658,6 +3640,9 @@ msgstr ""
 "Brak danych na transponderze!\n"
 "(Koniec czasu czytania PAT)"
 
+msgid "No data received from Server."
+msgstr ""
+
 msgid "No description available."
 msgstr "Brak dostępnego opisu."
 
@@ -3672,6 +3657,9 @@ msgstr "Nie znaleziono informacji o wydarzeniu, nagrywanie nieokreślone."
 
 msgid "No free tuner!"
 msgstr "Brak wolnego tunera!"
+
+msgid "No iDevs connected"
+msgstr ""
 
 msgid "No more files in this directory"
 msgstr "Brak plików w tym folderze"
@@ -4035,16 +4023,6 @@ msgstr "Odtwórz wybrany"
 
 msgid "Play selected file"
 msgstr "Odtwórz wybrany plik"
-
-msgid "PlayLists"
-msgstr "Listy Odtwarzania"
-
-msgid "PlayLists Video"
-msgstr "Lista Odtwarzania Video"
-
-#, python-format
-msgid "PlayLists: %d"
-msgstr "Listy Odtwarzania: %d"
 
 msgid "Playing video, be patient ..."
 msgstr "Odtwarzanie video, bądź cierpliwy ..."
@@ -4431,6 +4409,9 @@ msgstr "Radio"
 msgid "Ram Disk"
 msgstr "Ram Dysk"
 
+msgid "Ramfs: unknown"
+msgstr ""
+
 msgid "Random"
 msgstr "Losowo"
 
@@ -4656,6 +4637,12 @@ msgstr "Restart testu"
 msgid "Restart your network connection and interfaces.\n"
 msgstr "Restart adaprera i połaczenia sieciowego.\n"
 
+msgid "Restarting Enigma ..."
+msgstr ""
+
+msgid "Restarting Network ..."
+msgstr ""
+
 msgid "Restore"
 msgstr "Przywróć"
 
@@ -4673,6 +4660,9 @@ msgstr "Odzyskiwanie Trwa ..."
 
 msgid "Restore running..."
 msgstr "Przywracanie uruchomione..."
+
+msgid "Restore successfully!"
+msgstr ""
 
 msgid "Restore system settings"
 msgstr "Przywróć ustawienia systemowe"
@@ -5034,11 +5024,17 @@ msgstr "Serbsko-Chorwacki"
 msgid "Server Address"
 msgstr "Adres Serwera"
 
+msgid "Server Error."
+msgstr ""
+
 msgid "Server IP"
 msgstr "IP Serwera"
 
 msgid "Server Profile Name"
 msgstr "Nazwa Profilu Serwera"
+
+msgid "Server not Ready."
+msgstr ""
 
 msgid "Server share"
 msgstr "Udział Serwera"
@@ -5261,10 +5257,6 @@ msgstr "Pojedyńczy krok (GOP)"
 msgid "Siswati"
 msgstr "Suazi"
 
-#, python-format
-msgid "Size: %d MB\n"
-msgstr "Rozmiar: %d MB\n"
-
 msgid "Skin Appearance"
 msgstr "Wygląd Skórek"
 
@@ -5391,10 +5383,6 @@ msgstr "Rozproszenie dźwięku"
 
 msgid "South"
 msgstr "Południe"
-
-#, python-format
-msgid "Space: %d.%02d GB Free: %d.%02d GB\n"
-msgstr "Przestrzeń: %d.%02d GB Wolnego: %d.%02d GB\n"
 
 msgid "Spanish"
 msgstr "Hiszpański"
@@ -5589,6 +5577,12 @@ msgstr "Tamilski"
 
 msgid "Tatar"
 msgstr "Tatar"
+
+msgid "Technical Information about QBox Mini"
+msgstr ""
+
+msgid "Technical Information about QBoxHD"
+msgstr ""
 
 msgid "Tegulu"
 msgstr "Tegulu"
@@ -5988,13 +5982,6 @@ msgstr "Właściwości tytułu"
 msgid "Title: "
 msgstr "Tytuł"
 
-msgid "Titles"
-msgstr "Tytuły"
-
-#, python-format
-msgid "Titles: %d"
-msgstr "Tytuły: %d"
-
 msgid "Titleset mode"
 msgstr "Tryb ustawienia tytułu"
 
@@ -6263,6 +6250,7 @@ msgstr "Użyj Pomiaru Mocy"
 msgid "Use a gateway"
 msgstr "Użyj bramy"
 
+#. #-#-#-#-#  enigma2.pot (PACKAGE VERSION)  #-#-#-#-#
 #.   TRANSLATORS: The effect of "Non-smooth winding" is that rather
 #.       than using ordinary "continuous" or "smooth" winding, a fast
 #.       sequence of stills is shown when winding at high speeds. This
@@ -6388,13 +6376,6 @@ msgstr ""
 
 msgid "Video mode selection."
 msgstr "Wybór trybu wideo"
-
-msgid "Videos"
-msgstr "Video"
-
-#, python-format
-msgid "Videos: %d"
-msgstr "Video: %d"
 
 msgid "Vietnamese"
 msgstr "Wietnamski"
@@ -6936,6 +6917,12 @@ msgstr "Twoj nowy przycisk potrzeb użytkownika to %s."
 
 msgid "Your new configuration have been saved successfully."
 msgstr "Twoja nowa konfiguracja została zapisana poprawnie"
+
+#, python-format
+msgid ""
+"Your new selected language is %s.\n"
+"Please restart GUI to make it effective."
+msgstr ""
 
 msgid "Zap back to service before positioner setup?"
 msgstr "Przełączyć spowrotem na serwis przed ustawieniem pozycjonera?"
@@ -7952,6 +7939,9 @@ msgstr "Przełączony"
 #~ msgid "\"?"
 #~ msgstr "\"?"
 
+#~ msgid "% used"
+#~ msgstr "% używanych"
+
 #~ msgid ".NFI Flasher bootable USB stick successfully created."
 #~ msgstr "Utworzenie bootowalnego nośnika USB z .NFI Flasher powiodło się."
 
@@ -7960,6 +7950,18 @@ msgstr "Przełączony"
 
 #~ msgid "Album:"
 #~ msgstr "Album:"
+
+#~ msgid "Album: %s"
+#~ msgstr "Album: %s"
+
+#~ msgid "Album: unknown"
+#~ msgstr "Album: nieznany"
+
+#~ msgid "Albums"
+#~ msgstr "Albumy"
+
+#~ msgid "Albums: %d"
+#~ msgstr "Albumy: %d"
 
 #~ msgid "All..."
 #~ msgstr "Wszystkie..."
@@ -7988,6 +7990,18 @@ msgstr "Przełączony"
 
 #~ msgid "Artist:"
 #~ msgstr "Artysta:"
+
+#~ msgid "Artist: %s"
+#~ msgstr "Artysta: %s"
+
+#~ msgid "Artist: unknown"
+#~ msgstr "Artysta: nieznany"
+
+#~ msgid "Artists"
+#~ msgstr "Artyści"
+
+#~ msgid "Artists: %d"
+#~ msgstr "Artyści: %d"
 
 #~ msgid "August"
 #~ msgstr "Sierpień"
@@ -8121,6 +8135,9 @@ msgstr "Przełączony"
 #~ msgid "February"
 #~ msgstr "Luty"
 
+#~ msgid "Firmware: %s"
+#~ msgstr "Oprogramowanie Firmowe: %s"
+
 #~ msgid "Fix USB stick"
 #~ msgstr "Napraw pamięć USB"
 
@@ -8133,6 +8150,25 @@ msgstr "Przełączony"
 #~ msgid "Genre:"
 #~ msgstr "Gatunek:"
 
+#~ msgid "Genre: %s"
+#~ msgstr "Rodzaj %s"
+
+#~ msgid "Genre: unknown"
+#~ msgstr "Rodzaj: nieznany"
+
+#~ msgid "Genres"
+#~ msgstr "Rodzaje"
+
+#~ msgid "Genres: %d"
+#~ msgstr "Rodzaje: %d"
+
+#~ msgid ""
+#~ "Getting data from %s.\n"
+#~ " Please wait ..."
+#~ msgstr ""
+#~ "Zbiera dane z %s.\n"
+#~ " Proczę czekaj ..."
+
 #~ msgid "HDMI audio"
 #~ msgstr "HDMI audio"
 
@@ -8142,6 +8178,9 @@ msgstr "Przełączony"
 #~ msgstr ""
 #~ "Instalacja/\n"
 #~ "Kasowanie"
+
+#~ msgid "Items: %d"
+#~ msgstr "Obiekty: %d"
 
 #~ msgid "January"
 #~ msgstr "Styczeń"
@@ -8173,6 +8212,9 @@ msgstr "Przełączony"
 #~ msgid "Message..."
 #~ msgstr "Wiadomość..."
 
+#~ msgid "Model: %s\n"
+#~ msgstr "Model: %s\n"
+
 #~ msgid "Month"
 #~ msgstr "Miesiąc"
 
@@ -8184,6 +8226,9 @@ msgstr "Przełączony"
 
 #~ msgid "New DVD"
 #~ msgstr "Nowe DVD"
+
+#~ msgid "No %s."
+#~ msgstr "Nie %s."
 
 #~ msgid ""
 #~ "No working local networkadapter found.\n"
@@ -8253,6 +8298,15 @@ msgstr "Przełączony"
 
 #~ msgid "Partitioning USB stick..."
 #~ msgstr "Tworzenie partycji na nośniku USB..."
+
+#~ msgid "PlayLists"
+#~ msgstr "Listy Odtwarzania"
+
+#~ msgid "PlayLists Video"
+#~ msgstr "Lista Odtwarzania Video"
+
+#~ msgid "PlayLists: %d"
+#~ msgstr "Listy Odtwarzania: %d"
 
 #~ msgid ""
 #~ "Please attach your Zydas ZD1211B chipset compatibe WLAN USB Stick to your "
@@ -8357,8 +8411,14 @@ msgstr "Przełączony"
 #~ msgid "Show files from %s"
 #~ msgstr "Pokaż pliki od %s"
 
+#~ msgid "Size: %d MB\n"
+#~ msgstr "Rozmiar: %d MB\n"
+
 #~ msgid "Sort by Name"
 #~ msgstr "Sortuj po Nazwie"
+
+#~ msgid "Space: %d.%02d GB Free: %d.%02d GB\n"
+#~ msgstr "Przestrzeń: %d.%02d GB Wolnego: %d.%02d GB\n"
 
 #~ msgid "Start"
 #~ msgstr "Rozpocznij"
@@ -8417,6 +8477,12 @@ msgstr "Przełączony"
 #~ msgid "Title:"
 #~ msgstr "Tytuł:"
 
+#~ msgid "Titles"
+#~ msgstr "Tytuły"
+
+#~ msgid "Titles: %d"
+#~ msgstr "Tytuły: %d"
+
 #~ msgid ""
 #~ "To make sure you intend to do this, please remove the target USB stick "
 #~ "now and stick it back in upon prompt. Press OK when you have taken the "
@@ -8439,6 +8505,12 @@ msgstr "Przełączony"
 
 #~ msgid "VCR Switch"
 #~ msgstr "Automatycznie przełącz VCR"
+
+#~ msgid "Videos"
+#~ msgstr "Video"
+
+#~ msgid "Videos: %d"
+#~ msgstr "Video: %d"
 
 #~ msgid "View"
 #~ msgstr "Wyświetl"

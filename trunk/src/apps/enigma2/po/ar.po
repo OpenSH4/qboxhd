@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QboxHD Enigma2 Arabic locale\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-30 11:00+0100\n"
+"POT-Creation-Date: 2011-04-04 15:05+0200\n"
 "PO-Revision-Date: 2010-10-04 11:09+0100\n"
 "Last-Translator: \n"
 "Language-Team: SSJomaa <sasjomaa@yahoo.fr>\n"
@@ -204,12 +204,12 @@ msgstr "#ffffff"
 msgid "#ffffffff"
 msgstr "#ffffffff"
 
-#, python-format
-msgid "% used"
-msgstr "% used"
-
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#, python-format
+msgid "%d iDevs connected"
+msgstr ""
 
 #, python-format
 msgid "%d jobs are running in the background!"
@@ -727,20 +727,6 @@ msgstr "الألبانية"
 msgid "Album"
 msgstr "الألبوم"
 
-#, python-format
-msgid "Album: %s"
-msgstr "الألبوم : %s"
-
-msgid "Album: unknown"
-msgstr "الألبوم : غير معروف"
-
-msgid "Albums"
-msgstr "البومات"
-
-#, python-format
-msgid "Albums: %d"
-msgstr "ألبومات : %d"
-
 msgid "All"
 msgstr "الكل"
 
@@ -833,20 +819,6 @@ msgstr "الأرمينية"
 
 msgid "Artist"
 msgstr "فنان"
-
-#, python-format
-msgid "Artist: %s"
-msgstr "الفنان : %s"
-
-msgid "Artist: unknown"
-msgstr "الفنان : غير معروف"
-
-msgid "Artists"
-msgstr "الفنانون"
-
-#, python-format
-msgid "Artists: %d"
-msgstr "الفنانون : %d"
 
 msgid "Ascanding"
 msgstr "تصاعدي"
@@ -950,6 +922,9 @@ msgstr "BER"
 msgid "BER:"
 msgstr "BER:"
 
+msgid "BS Info: unknown"
+msgstr ""
+
 msgid "Back"
 msgstr "رجوع"
 
@@ -1000,6 +975,9 @@ msgstr "جاري تنفيذ النسخ الاحتياطي ..."
 
 msgid "Backup running..."
 msgstr "جاري تنفيذ النسخ الاحتياطي..."
+
+msgid "Backup successfully!"
+msgstr ""
 
 msgid "Backup system settings"
 msgstr "نسخ احتياطي لإعدادات النظام"
@@ -1431,6 +1409,12 @@ msgstr "الكورسيكية"
 
 msgid "Could not connect to QBoxHD .NFI Image Feed Server:"
 msgstr "تعذر الاتصال بـ QBoxHD. خادم صورة تغذية NFI :"
+
+msgid ""
+"Could not establish a connection to the server.\n"
+"Please check if the wire is connected or if your internet connection is "
+"working properly."
+msgstr ""
 
 msgid "Could not load Medium! No disc inserted?"
 msgstr "لا يمكن تحميل الوسيط! لم يتم إدخال القرص؟"
@@ -2095,9 +2079,13 @@ msgstr ""
 "\n"
 "© 2006 - Stephan Reichholf"
 
+msgid "Enigma: unknown"
+msgstr ""
+
 msgid "Enter"
 msgstr "أدخل"
 
+#. #-#-#-#-#  enigma2.pot (PACKAGE VERSION)  #-#-#-#-#
 #.   TRANSLATORS: Note that "Enter" in the two strings below should *not*
 #.       be interpreted as "Give speed as input". The intended meaning is
 #.       instead "Initial speed when starting winding", i.e. the speed at
@@ -2447,6 +2435,9 @@ msgstr "معامل تصويب الخطأ"
 msgid "FP Info: %d"
 msgstr "معلومات FP : %d"
 
+msgid "FP Info: unknown"
+msgstr ""
+
 msgid "Factory reset"
 msgstr "إعدادات المصنع"
 
@@ -2517,10 +2508,6 @@ msgstr "تم الانتهاء من إعادة تشغيل الشبكة"
 msgid "Finnish"
 msgstr "الفنلندية"
 
-#, python-format
-msgid "Firmware: %s"
-msgstr "البرنامج التشغيلي : %s"
-
 msgid ""
 "First we need to download the latest boot environment for the USB flasher."
 msgstr "أولا نحن بحاجة لتحميل أحدث بيئة تمهيد (boot) لليو اس بي فلاشر."
@@ -2548,6 +2535,26 @@ msgstr ""
 
 msgid "For WPA or WPA2 encryption you need to specify 8 to 63 ascii character."
 msgstr "لتشفير WPA أو WPA2 تحتاج إلى تحديد من 8 إلى 64 حرف أسكي (ascii)."
+
+msgid ""
+"For remove features uninstalled, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to Reboot your QBoxHD.\n"
+"Reboot it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to turn OFF and turn ON your "
+"QBoxHD."
+msgstr ""
 
 msgid "Format"
 msgstr "تهيئة"
@@ -2654,20 +2661,6 @@ msgstr "مهلة PCM العامة"
 msgid "Genre"
 msgstr "النوع"
 
-#, python-format
-msgid "Genre: %s"
-msgstr "النوع : %s"
-
-msgid "Genre: unknown"
-msgstr "النوع : غير معروف"
-
-msgid "Genres"
-msgstr "الأنواع"
-
-#, python-format
-msgid "Genres: %d"
-msgstr "الأنواع : %d"
-
 msgid "Georgian"
 msgstr "الجورجية"
 
@@ -2679,14 +2672,6 @@ msgstr "الحصول على أشرطة الفيديو ذات الصلة"
 
 msgid "Get video responses"
 msgstr "الحصول على ردود الفيديو"
-
-#, python-format
-msgid ""
-"Getting data from %s.\n"
-" Please wait ..."
-msgstr ""
-"الحصول على البيانات من %s.\n"
-"الرجاء الانتظار..."
 
 msgid "Getting plugin information. Please wait..."
 msgstr "الحصول على معلومات الملحقات. الرجاء الانتظار..."
@@ -2799,6 +2784,9 @@ msgstr "عنوان اي بي"
 
 msgid "IP:"
 msgstr "اي بي :"
+
+msgid "IP: unknown"
+msgstr ""
 
 msgid "ISO file is too large for this filesystem!"
 msgstr "ملف ايزو كبير جدا بالنسبة لنظام الملفات هذا!"
@@ -3000,10 +2988,6 @@ msgstr "الأيرلندية"
 msgid "Italian"
 msgstr "الإيطالية"
 
-#, python-format
-msgid "Items: %d"
-msgstr "البنود: %d"
-
 msgid "Japanese"
 msgstr "اليابانية"
 
@@ -3025,6 +3009,9 @@ msgstr "الكشميرية"
 
 msgid "Kazakh"
 msgstr "الكازاخستانية"
+
+msgid "Kernel: unknown"
+msgstr ""
 
 msgid "Keyboard Map"
 msgstr "خريطة لوحة المفاتيح"
@@ -3316,10 +3303,6 @@ msgstr "الوضع : %s"
 msgid "Model: "
 msgstr "نموذج :"
 
-#, python-format
-msgid "Model: %s\n"
-msgstr "نموذج : %s\n"
-
 msgid "Modulation"
 msgstr "تغيير"
 
@@ -3589,15 +3572,14 @@ msgstr "الأغنية التالية"
 msgid "No"
 msgstr "لا"
 
-#, python-format
-msgid "No %s."
-msgstr "لا %s."
-
 msgid "No (supported) DVDROM found!"
 msgstr "لم يتم العثور على DVDROM (مدعوم)!"
 
 msgid "No 50 Hz, sorry. :("
 msgstr "لا وجود لـ 50 هرتز، آسف. :("
+
+msgid "No AddOns installed."
+msgstr ""
 
 msgid "No Connection"
 msgstr "لا يوجد اتصال"
@@ -3648,6 +3630,9 @@ msgstr ""
 "لا توجد بيانات على المرسل!\n"
 "(إنتهاء مهلة قراءة PAT)"
 
+msgid "No data received from Server."
+msgstr ""
+
 msgid "No description available."
 msgstr "لا يوجد وصف متاح."
 
@@ -3662,6 +3647,9 @@ msgstr "لا توجد معلومات الحدث ، سيتم التسجيل إل�
 
 msgid "No free tuner!"
 msgstr "لا يوجد موالف حر!"
+
+msgid "No iDevs connected"
+msgstr ""
 
 msgid "No more files in this directory"
 msgstr "لا مزيد من الملفات في هذا الدليل"
@@ -4022,16 +4010,6 @@ msgstr "تشغيل المحدد"
 
 msgid "Play selected file"
 msgstr "تشغيل الملف المحدد"
-
-msgid "PlayLists"
-msgstr "قوائم التشغيل"
-
-msgid "PlayLists Video"
-msgstr "قوائم تشغيل الفيديو"
-
-#, python-format
-msgid "PlayLists: %d"
-msgstr "قوائم تشغيل : %d"
 
 msgid "Playing video, be patient ..."
 msgstr "جاري تشغيل الفيديو، الرجاء الانتظار ..."
@@ -4417,6 +4395,9 @@ msgstr "الراديو"
 msgid "Ram Disk"
 msgstr "قرص رام"
 
+msgid "Ramfs: unknown"
+msgstr ""
+
 msgid "Random"
 msgstr "عشوائي"
 
@@ -4641,6 +4622,12 @@ msgstr "إعادة اختبار"
 msgid "Restart your network connection and interfaces.\n"
 msgstr "إعادة تشغيل اتصال الشبكة و واجهاتها.\n"
 
+msgid "Restarting Enigma ..."
+msgstr ""
+
+msgid "Restarting Network ..."
+msgstr ""
+
 msgid "Restore"
 msgstr "استعادة"
 
@@ -4658,6 +4645,9 @@ msgstr "تجري عملية الاستعادة ..."
 
 msgid "Restore running..."
 msgstr "تجري عملية الاستعادة..."
+
+msgid "Restore successfully!"
+msgstr ""
 
 msgid "Restore system settings"
 msgstr "استعادة إعدادات النظام"
@@ -5019,11 +5009,17 @@ msgstr "الصربية الكرواتية"
 msgid "Server Address"
 msgstr "عنوان الخادم"
 
+msgid "Server Error."
+msgstr ""
+
 msgid "Server IP"
 msgstr "اي بي الخادم"
 
 msgid "Server Profile Name"
 msgstr "اسم وضع الخادم"
+
+msgid "Server not Ready."
+msgstr ""
 
 msgid "Server share"
 msgstr "مشاركة الخادم"
@@ -5246,10 +5242,6 @@ msgstr "خطوة مجموعات الصور (GOP) مفردة"
 msgid "Siswati"
 msgstr "سيسواتي"
 
-#, python-format
-msgid "Size: %d MB\n"
-msgstr "الحجم : %d ميغابايت\n"
-
 msgid "Skin Appearance"
 msgstr "المظهر"
 
@@ -5376,10 +5368,6 @@ msgstr "ناقل الصوت"
 
 msgid "South"
 msgstr "الجنوب"
-
-#, python-format
-msgid "Space: %d.%02d GB Free: %d.%02d GB\n"
-msgstr "المساحة: %d.%02d جيغابايت الفارغة: %d.%02d جيغابايت\n"
 
 msgid "Spanish"
 msgstr "الاسبانية"
@@ -5574,6 +5562,12 @@ msgstr "التاميل"
 
 msgid "Tatar"
 msgstr "التتار"
+
+msgid "Technical Information about QBox Mini"
+msgstr ""
+
+msgid "Technical Information about QBoxHD"
+msgstr "المعلومات التقنية لجهاز QBoxHD"
 
 msgid "Tegulu"
 msgstr "التيقولية"
@@ -5969,13 +5963,6 @@ msgstr "خصائص العنوان"
 msgid "Title: "
 msgstr "العنوان :"
 
-msgid "Titles"
-msgstr "العناوين"
-
-#, python-format
-msgid "Titles: %d"
-msgstr "العناوين : %d"
-
 msgid "Titleset mode"
 msgstr "وضع تعيين العناوين"
 
@@ -6241,6 +6228,7 @@ msgstr "استخدام قياس الطاقة"
 msgid "Use a gateway"
 msgstr "استخدام بوابة"
 
+#. #-#-#-#-#  enigma2.pot (PACKAGE VERSION)  #-#-#-#-#
 #.   TRANSLATORS: The effect of "Non-smooth winding" is that rather
 #.       than using ordinary "continuous" or "smooth" winding, a fast
 #.       sequence of stills is shown when winding at high speeds. This
@@ -6367,13 +6355,6 @@ msgstr ""
 
 msgid "Video mode selection."
 msgstr "اختيار وضع الفيديو."
-
-msgid "Videos"
-msgstr "أشرطة الفيديو"
-
-#, python-format
-msgid "Videos: %d"
-msgstr "أشرطة الفيديو : %d"
 
 msgid "Vietnamese"
 msgstr "الفيتنامية"
@@ -6909,6 +6890,12 @@ msgstr "الزر المخصص الجديد هو %s"
 
 msgid "Your new configuration have been saved successfully."
 msgstr "تم حفظ التكوين الجديد بنجاح."
+
+#, python-format
+msgid ""
+"Your new selected language is %s.\n"
+"Please restart GUI to make it effective."
+msgstr ""
 
 msgid "Zap back to service before positioner setup?"
 msgstr "العودة إلى القناة العاملة قبل إعداد المحرك؟"
@@ -7920,8 +7907,35 @@ msgstr "انتقل"
 msgid "zapped"
 msgstr "تم الانتقال"
 
+#~ msgid "% used"
+#~ msgstr "% used"
+
+#~ msgid "Album: %s"
+#~ msgstr "الألبوم : %s"
+
+#~ msgid "Album: unknown"
+#~ msgstr "الألبوم : غير معروف"
+
+#~ msgid "Albums"
+#~ msgstr "البومات"
+
+#~ msgid "Albums: %d"
+#~ msgstr "ألبومات : %d"
+
 #~ msgid "Allow zapping via Webinterface"
 #~ msgstr "السماح بالانتقال بين القنوات عبر واجهة الويب"
+
+#~ msgid "Artist: %s"
+#~ msgstr "الفنان : %s"
+
+#~ msgid "Artist: unknown"
+#~ msgstr "الفنان : غير معروف"
+
+#~ msgid "Artists"
+#~ msgstr "الفنانون"
+
+#~ msgid "Artists: %d"
+#~ msgstr "الفنانون : %d"
 
 #~ msgid "Autowrite timer"
 #~ msgstr "كتابة تلقائية للمؤقت"
@@ -7953,11 +7967,36 @@ msgstr "تم الانتقال"
 #~ msgid "Enter new hostname for your Dreambox"
 #~ msgstr "أدخل اسم المضيف الجديد لـ QBoxHD"
 
+#~ msgid "Firmware: %s"
+#~ msgstr "البرنامج التشغيلي : %s"
+
+#~ msgid "Genre: %s"
+#~ msgstr "النوع : %s"
+
+#~ msgid "Genre: unknown"
+#~ msgstr "النوع : غير معروف"
+
+#~ msgid "Genres"
+#~ msgstr "الأنواع"
+
+#~ msgid "Genres: %d"
+#~ msgstr "الأنواع : %d"
+
+#~ msgid ""
+#~ "Getting data from %s.\n"
+#~ " Please wait ..."
+#~ msgstr ""
+#~ "الحصول على البيانات من %s.\n"
+#~ "الرجاء الانتظار..."
+
 #~ msgid "HDMI audio"
 #~ msgstr "صوت HDMI"
 
 #~ msgid "HTTPS Port"
 #~ msgstr "منفذ HTTPS"
+
+#~ msgid "Items: %d"
+#~ msgstr "البنود: %d"
 
 #~ msgid "Load movie-length"
 #~ msgstr "تحميل طول الفيلم"
@@ -7965,11 +8004,26 @@ msgstr "تم الانتقال"
 #~ msgid "Main Setup"
 #~ msgstr "الضبط الرئيسي"
 
+#~ msgid "Model: %s\n"
+#~ msgstr "نموذج : %s\n"
+
 #~ msgid "Network Neighbourhood"
 #~ msgstr "جوار الشبكة"
 
+#~ msgid "No %s."
+#~ msgstr "لا %s."
+
 #~ msgid "Peripherals:"
 #~ msgstr "الأجهزة الملحقة:"
+
+#~ msgid "PlayLists"
+#~ msgstr "قوائم التشغيل"
+
+#~ msgid "PlayLists Video"
+#~ msgstr "قوائم تشغيل الفيديو"
+
+#~ msgid "PlayLists: %d"
+#~ msgstr "قوائم تشغيل : %d"
 
 #~ msgid "Receiver Configuration"
 #~ msgstr "تكوين جهاز الاستقبال"
@@ -7980,14 +8034,29 @@ msgstr "تم الانتقال"
 #~ msgid "Select SmartCard Slot"
 #~ msgstr "حدد منفذ البطاقة الذكية"
 
+#~ msgid "Size: %d MB\n"
+#~ msgstr "الحجم : %d ميغابايت\n"
+
 #~ msgid "Skin Selector"
 #~ msgstr "اختيار المظهر"
+
+#~ msgid "Space: %d.%02d GB Free: %d.%02d GB\n"
+#~ msgstr "المساحة: %d.%02d جيغابايت الفارغة: %d.%02d جيغابايت\n"
 
 #~ msgid "Start Webinterface"
 #~ msgstr "تشغيل واجهة الويب"
 
-#~ msgid "Technical Information about QBoxHD"
-#~ msgstr "المعلومات التقنية لجهاز QBoxHD"
+#~ msgid "Titles"
+#~ msgstr "العناوين"
+
+#~ msgid "Titles: %d"
+#~ msgstr "العناوين : %d"
+
+#~ msgid "Videos"
+#~ msgstr "أشرطة الفيديو"
+
+#~ msgid "Videos: %d"
+#~ msgstr "أشرطة الفيديو : %d"
 
 #~ msgid "WebInterface"
 #~ msgstr "واجهة الويب"

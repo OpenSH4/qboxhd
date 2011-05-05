@@ -7,6 +7,7 @@ config.audio.volume=38
 config.usage.quickzap_bouquet_change=true
 config.usage.blinking_display_clock_during_recording=true
 config.usage.multibouquet=true
+config.usage.showdish=true
 config.sensewheel.standbyboardled=true
 config.sensewheel.ledboardvalue=99
 config.sensewheel.ledboardhue=359

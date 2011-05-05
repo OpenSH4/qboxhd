@@ -231,7 +231,11 @@ public:
             }
         }
 
-        tsmchecker_timer->start(100);
+#ifdef QBOXHD_MINI
+        tsmchecker_timer->start(150);
+#else
+         tsmchecker_timer->start(100);
+#endif
         //ppDebug("BlackBoxTsmChecker: end\n");
     }
 
@@ -254,7 +258,12 @@ public:
         {
             tsmchecker_timer = eTimer::create(eApp);
             CONNECT(tsmchecker_timer->timeout, BB_Timer::BB_TsmChecker);
+#ifdef QBOXHD_MINI
+            tsmchecker_timer->start(150);
+#else
             tsmchecker_timer->start(100);
+#endif
+
         }
     }
 
@@ -493,7 +502,17 @@ unsigned char BlackBoxSwitch(bb_channels *channels)
     return 1;
 }
 
-
+#ifdef QBOXHD_MINI
+void start_check_TSM(void)
+{
+	static BB_Timer *bb_timer = 0;
+	if(bb_timer == 0)
+	{
+		eDebug("\nCreate the check timer\n");
+		bb_timer = new BB_Timer;	//Prepare timer for checking TSMerger inputs
+	}
+}
+#endif
 
 void set_tuner_to_cam ( int tuner_no, data_source source )
 {
