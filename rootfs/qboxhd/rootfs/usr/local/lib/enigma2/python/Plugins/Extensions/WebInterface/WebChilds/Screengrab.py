@@ -4,12 +4,18 @@ from twisted.web import resource, http, http_headers, server
 
 from os import path as os_path, remove as os_remove
 from os.path import getsize as os_path_getsize
-				
+
+from qboxhd import QBOXHD			
+
 class GrabResource(resource.Resource):
 	'''
 		this is a interface to Seddis AiO Dreambox Screengrabber
 	'''
-	GRAB_BIN = '/usr/bin/grab'
+	if QBOXHD:
+		GRAB_BIN = '/usr/local/bin/fbgrab'
+	else:
+		GRAB_BIN = '/usr/bin/grab'
+
 	SPECIAL_ARGS = ('format', 'filename', 'save')
 
 	def render(self, request):
@@ -70,9 +76,16 @@ class GrabResource(resource.Resource):
 			request.setHeader('Content-Disposition', 'inline; filename=screenshot.%s;' %imageformat)
 			request.setHeader('Content-Type','image/%s' %imageformat)
 
-			filename = filename+imageformat
-			append(filename)
-			cmd = [self.GRAB_BIN, self.GRAB_BIN] + args
+			if QBOXHD:
+				format='png'
+				imageformat='png'
+				filename = '/home/screenshot.png'
+				append(filename)
+				cmd = self.GRAB_BIN+" "+filename
+			else:
+				filename = filename+imageformat
+				append(filename)
+				cmd = [self.GRAB_BIN, self.GRAB_BIN] + args
 
 			GrabStream(request, cmd, filename, save)
 
@@ -93,8 +106,12 @@ class GrabStream:
 		self.container.appClosed.append(self.cmdFinished)
 		self.container.dataAvail.append(self.dataAvail)
 
-		print '[Screengrab.py] starting AiO grab with cmdline:', cmd
-		self.container.execute(*cmd)
+		if QBOXHD:
+			print '[Screengrab.py] starting fbgrab with cmdline:', cmd
+			self.container.execute(cmd)
+		else:
+			print '[Screengrab.py] starting AiO grab with cmdline:', cmd
+			self.container.execute(*cmd)
 
 	def cmdFinished(self, data):
 		print '[Screengrab.py] cmdFinished'

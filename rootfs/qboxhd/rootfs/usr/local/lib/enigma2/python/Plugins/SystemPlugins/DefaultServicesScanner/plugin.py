@@ -17,7 +17,7 @@ from enigma import eTimer, eDVBDB
 
 class DefaultServiceScan(ServiceScan):
 	skin = """
-		<screen position="150,115" size="420,390" title="Service Scan">
+		<screen position="center,center" size="420,390" title="Service Scan">
 		<widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="5,5" size="64,64" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
@@ -55,7 +55,7 @@ class DefaultServiceScan(ServiceScan):
 
 class DefaultServicesScannerPlugin(ScanSetup):
 	skin = """
-		<screen position="100,115" size="520,390" title="Service scan">
+		<screen position="center,center" size="520,390" title="Service scan">
 			<widget name="config" position="10,10" size="500,350" scrollbarMode="showOnDemand" />
 			<widget name="introduction" position="10,365" size="500,25" font="Regular;20" halign="center" />
 		</screen>"""

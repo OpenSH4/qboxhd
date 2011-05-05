@@ -10,7 +10,7 @@ from Components.NimManager import nimmanager as nimmgr
 
 class SecParameterSetup(Screen, ConfigListScreen):
 	skin = """
-		<screen position="100,100" size="560,400" title="Satellite Equipment Setup" >
+		<screen position="center,center" size="560,400" title="Satellite Equipment Setup" >
 			<widget name="config" position="10,10" size="540,390" />
 		</screen>"""
 	def __init__(self, session):

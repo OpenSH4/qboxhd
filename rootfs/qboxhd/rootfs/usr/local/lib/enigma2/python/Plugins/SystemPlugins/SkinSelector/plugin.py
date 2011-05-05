@@ -17,7 +17,7 @@ class SkinSelector(Screen):
 	# for i18n:
 	# _("Choose your Skin")
 	skin = """
-		<screen position="75,138" size="600,320" title="Choose your Skin" >
+		<screen position="center,center" size="600,320" title="Choose your Skin" >
 			<widget name="SkinList" position="10,10" size="275,300" scrollbarMode="showOnDemand" />
 			<widget name="Preview" position="305,45" size="280,210" alphatest="on"/>
 		</screen>

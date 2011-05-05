@@ -10,7 +10,7 @@ def RGB(r,g,b):
 
 class VideoFinetune(Screen):
 	skin = """
-		<screen position="0,0" size="720,576">
+		<screen position="center,center" size="720,576">
 			<widget source="Canvas" render="Canvas" position="0,0" size="720,576" />
 		</screen>"""
 
