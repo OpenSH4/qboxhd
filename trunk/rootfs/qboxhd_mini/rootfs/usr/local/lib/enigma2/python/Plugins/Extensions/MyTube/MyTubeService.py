@@ -256,7 +256,7 @@ class MyTubeFeedEntry():
 					
 					urls.append((url_link, format))
 					
-					#print " >>> url: %s, format: %s" % ( url_link, format )
+					#print " >>> format: %s, url: %s" % ( format, url_link )
 					
 				if len( urls ) > 0 :
 					if not isHDAvailable:

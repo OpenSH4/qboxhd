@@ -3,6 +3,31 @@ on this QBoxHD mini software release. Your help will be greatly appreciated!
 
 ================================================================================
 
+Release BETA 0.0.59
+
+- Bugfix: Fixed a bug in update procedure when it searches the connected USB keys.
+- Bugfix: Upgrade satellites.xml.
+- Bugfix: Fixed a bug in u-boot configuration (in some cases it caused the white screen LCD).
+- Bugfix: Some minor bugfixes.
+
+================================================================================
+
+Release BETA 0.0.58
+
+- Bugfix: Ticket #703: Parental Control without icon for bouquets.
+- Bugfix: Ticket #710: DHCP doesn't work in u-boot when there isn't the siaddr parameter.
+- Bugfix: Ticket #563: OSD screenshot from WebInterface doesn't work.
+- Bugfix: Ticket #709: Upgrade terrestrial.xml with new transponders (Belgium and Copenhagen).
+- Bugfix: Ticket #708: Upgrade satellite.xml with new transponders.
+- Bugfix: Ticket #591: Crash with big jpeg pictures (>= 1.5MB) in Media Player.
+		(if >= 1.5MB, it is showed stretched). 
+- Bugfix: Ticket #713: Sometimes there isn't stream from DVB-T.
+- Bugfix: Fixed a minor bug in lcd driver.
+- Bugfix: Fixed some Skin bugs.
+- Enhancement: Create a ramdisk with video images.
+
+================================================================================
+
 Release BETA 0.0.56
 
 - Bugfix: Ticket #684: During automatic scan some NITs override our right

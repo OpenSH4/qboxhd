@@ -66,7 +66,7 @@ class Feedlist(MenuList):
 
 class NFOViewer(Screen):
 	skin = """
-		<screen name="NFOViewer" position="110,115" size="540,400" title="Changelog viewer" >
+		<screen name="NFOViewer" position="center,center" size="540,400" title="Changelog viewer" >
 			<widget name="changelog" position="10,10" size="520,380" font="Regular;16" />
 		</screen>"""
 
@@ -96,7 +96,7 @@ class NFIDownload(Screen):
 	LIST_SOURCE = 1
 	LIST_DEST = 2
 	skin = """
-		<screen name="NFIDownload" position="90,95" size="560,420" title="Image download utility">
+		<screen name="NFIDownload" position="center,center" size="560,420" title="Image download utility">
 			<ePixmap pixmap="skin_default/buttons/red.png" position="0,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
 			<ePixmap pixmap="skin_default/buttons/green.png" position="140,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
 			<ePixmap pixmap="skin_default/buttons/yellow.png" position="280,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
@@ -104,15 +104,12 @@ class NFIDownload(Screen):
 			<widget source="key_red" render="Label" position="0,0" zPosition="1" size="140,40" font="Regular;19" valign="center" halign="center" backgroundColor="#9f1313" transparent="1" />
 			<widget source="key_green" render="Label" position="140,0" zPosition="1" size="140,40" font="Regular;19" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
 			<widget source="key_yellow" render="Label" position="280,0" zPosition="1" size="140,40" font="Regular;19" valign="center" halign="center" backgroundColor="#a08500" transparent="1" />
-			<widget source="key_blue" render="Label" position="420,0" zPosition="1" size="140,40" font="Regular;19" valign="center" halign="center" backgroundColor="#18188b" transparent="1" />
-			
+			<widget source="key_blue" render="Label" position="420,0" zPosition="1" size="140,40" font="Regular;19" valign="center" halign="center" backgroundColor="#18188b" transparent="1" />			
 			<widget source="label_top" render="Label" position="10,44" size="240,20" font="Regular;16" />
 			<widget name="feedlist" position="10,66" size="250,222" scrollbarMode="showOnDemand" />
 			<widget name="destlist" position="0,66" size="260,222" scrollbarMode="showOnDemand" />
-
 			<widget source="label_bottom" render="Label" position="10,312" size="240,18" font="Regular;16"/>
-			<widget source="path_bottom" render="Label" position="10,330" size="250,42" font="Regular;18" />
-			
+			<widget source="path_bottom" render="Label" position="10,330" size="250,42" font="Regular;18" />			
 			<widget source="infolabel" render="Label" position="270,44" size="280,284" font="Regular;16" />
 			<widget source="job_progressbar" render="Progress" position="10,374" size="540,26" borderWidth="1" backgroundColor="#254f7497" />
 			<widget source="job_progresslabel" render="Label" position="130,378" zPosition="2" font="Regular;18" halign="center" transparent="1" size="300,22" foregroundColor="#000000" />

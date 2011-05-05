@@ -19,7 +19,7 @@ from os import system, path as os_path
 
 class CIselectMainMenu(Screen):
 	skin = """
-		<screen position="180,150" size="350,270"  title="CI assignment" >
+		<screen position="center,center" size="350,270"  title="CI assignment" >
 			<widget name="CiList" position="10,10" size="330,200" scrollbarMode="showOnDemand" />
 			<ePixmap position="10,210" size="290,2" pixmap="skin_default/div-h.png" transparent="1" alphatest="on" />
 			<ePixmap pixmap="skin_default/buttons/red.png" position="10,220" size="140,40" alphatest="on" />
@@ -110,7 +110,7 @@ class CIselectMainMenu(Screen):
 
 class CIconfigMenu(Screen):
 	skin = """
-		<screen position="60,80" size="595,436" title="CI assignment" >
+		<screen position="center,center" size="595,436" title="CI assignment" >
 			<widget name="CAidList.desc" position="10,10" size="575,22" font="Regular;20" />
 			<widget name="CAidList" position="10,40" size="575,45" font="Regular;20" />
 			<widget name="ServiceList.desc" position="10,90" size="575,22" font="Regular;20" />
@@ -315,7 +315,7 @@ class CIconfigMenu(Screen):
 
 class easyCIconfigMenu(CIconfigMenu):
 	skin = """
-		<screen position="80,80" size="470,420" title="CI assignment" >
+		<screen position="center,center" size="470,420" title="CI assignment" >
 			<widget name="ServiceList.desc" position="10,10" size="420,22" font="Regular;20" />
 			<widget name="ServiceList" position="10,40" size="450,340" scrollbarMode="showOnDemand" />
 			<ePixmap position="10,360" size="450,2" pixmap="skin_default/div-h.png" transparent="1" alphatest="on" />
@@ -347,7 +347,7 @@ class easyCIconfigMenu(CIconfigMenu):
 
 class CAidSelect(Screen):
 	skin = """
-		<screen position="210,140" size="310,290"  title="select CAId's" >
+		<screen position="center,center" size="310,290"  title="select CAId's" >
 			<widget name="list" position="10,10" size="290,210" scrollbarMode="showOnDemand" />
 			<ePixmap position="10,230" size="290,2" pixmap="skin_default/div-h.png" transparent="1" alphatest="on" />
 			<ePixmap pixmap="skin_default/buttons/red.png" position="10,240" size="140,40" alphatest="on" />
@@ -394,7 +394,7 @@ class CAidSelect(Screen):
 
 class myProviderSelection(ChannelSelectionBase):
 	skin = """
-		<screen position="80,80" size="560,430" title="Select provider to add...">
+		<screen position="center,center" size="560,430" title="Select provider to add...">
 			<ePixmap pixmap="skin_default/buttons/red.png" position="0,0" size="140,40" alphatest="on" />
 			<ePixmap pixmap="skin_default/buttons/green.png" position="140,0" size="140,40" alphatest="on" />
 			<ePixmap pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40" alphatest="on" />
@@ -498,7 +498,7 @@ class myProviderSelection(ChannelSelectionBase):
 
 class myChannelSelection(ChannelSelectionBase):
 	skin = """
-		<screen position="80,80" size="560,430" title="Select service to add...">
+		<screen position="center,center" size="560,430" title="Select service to add...">
 			<ePixmap pixmap="skin_default/buttons/red.png" position="0,0" size="140,40" alphatest="on" />
 			<ePixmap pixmap="skin_default/buttons/green.png" position="140,0" size="140,40" alphatest="on" />
 			<ePixmap pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40" alphatest="on" />

@@ -115,7 +115,12 @@ class SENSEWHEEL:
 	def setEnableFlag(self, value):
 		self.flag_enable_sense = value
 			
-			
+###			
+	def setInitEnableFlag(self, value):
+		self.orig_flag_enable_sense = value
+		self.flag_enable_sense = value
+
+
 	def IsFlagSenseEnabled(self):
 		return self.flag_enable_sense;
 	
@@ -353,8 +358,18 @@ def InitSenseWheel():
 	
 	config.sensewheel.enabled = ConfigEnableDisable()
 	config.sensewheel.enabled.addNotifier(setEnableFlag)
-	config.sensewheel.enabled.apply = lambda : setEnableFlag(config.sensewheel.enabled)
-	
+	config.sensewheel.enabled.apply = lambda : setEnableFlag(config.sensewheel.enabled.value)
+### Init ###
+	isensewheel.setInitEnableFlag(config.sensewheel.enabled.value)
+	if ( isensewheel.IsFlagSenseEnabled() ):
+		print"ENABLE"
+		isensewheel.enableSense()
+	else:
+		print"DISABLE"
+		isensewheel.setPanelLedsEnable( False )
+		isensewheel.disableSense() #-<
+############
+
 	config.sensewheel.enabled.addNotifierLoad(reloadAndExitFromSensePlugin);
 	config.sensewheel.enabled.addNotifierSave(saveAndExitFromSensePlugin);
 	
