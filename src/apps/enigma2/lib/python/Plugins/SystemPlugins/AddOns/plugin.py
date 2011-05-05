@@ -160,7 +160,7 @@ class AddOnBrowser(Screen):
 
 		if ( len(self.AddOnInstalled) == 0 ):
 			self["list"].instance.hide()
-			self["text"].setText("No AddOns installed.")
+			self["text"].setText(_("No AddOns installed."))
 		else:
 			self["list"].instance.show()
 
@@ -744,14 +744,14 @@ class ChooseSectionDownloadable(Screen):
 			global TURN_OFF_ON_QBOXHD_AFTER_INSTALL_FLAG
 
 			if TURN_OFF_ON_QBOXHD_AFTER_INSTALL_FLAG:
-				self.session.openWithCallback(None, MessageBox, "For view new features installed, you have to turn OFF and turn ON your QBoxHD.", MessageBox.TYPE_INFO)
+				self.session.openWithCallback(None, MessageBox, _("For view new features installed, you have to turn OFF and turn ON your QBoxHD."), MessageBox.TYPE_INFO)
 				self.close()
 
 			elif REBOOT_AFTER_INSTALL_FLAG:
-				self.session.openWithCallback(self.chooseReboot, MessageBox, "For view new features installed, you have to Reboot your QBoxHD.Reboot it now?")
+				self.session.openWithCallback(self.chooseReboot, MessageBox, _("For view new features installed, you have to Reboot your QBoxHD.\nReboot it now?"))
 
 			elif RESTART_ENIGMA_AFTER_OPERATION_FLAG:
-				self.session.openWithCallback(self.chooseRestart, MessageBox, "For view new features installed, you have to restart Enigma2.\nRestart it now?")
+				self.session.openWithCallback(self.chooseRestart, MessageBox, _("For view new features installed, you have to restart Enigma2.\nRestart it now?"))
 
 
 
@@ -811,13 +811,13 @@ class ChooseSectionDownloadable(Screen):
 
 		elif ( result != ServerDownloadBrowser.OK ):
 			if errcode == ServerDownloadQuery.URL_ERROR:
-				self["text"].setText( "Could not establish a connection to the server.\nPlease check if the wire is connected or if your internet connection is working properly." )
+				self["text"].setText(_("Could not establish a connection to the server.\nPlease check if the wire is connected or if your internet connection is working properly."))
 			elif errcode == ServerDownloadQuery.NO_DATA_RECEIVED:
-				self["text"].setText( "No data received from Server." )
+				self["text"].setText(_("No data received from Server."))
 			elif errcode == ServerDownloadQuery.SERVER_DOWN or errcode == ServerDownloadQuery.NOT_VALID_SERVER_XML:
-				self["text"].setText( "Server not Ready." )
+				self["text"].setText(_("Server not Ready."))
 			else:
-				self["text"].setText( "Server Error." )
+				self["text"].setText(_("Server Error."))
 
 			return
 
@@ -957,7 +957,7 @@ class AddOnRemoveInProgress(Screen):
 	def close_download(self):
 		global RESTART_ENIGMA_AFTER_OPERATION_FLAG
 		if RESTART_ENIGMA_AFTER_OPERATION_FLAG:
-			self.session.openWithCallback(self.chooseRestart, MessageBox, "For remove features uninstalled, you have to restart Enigma2.\nRestart it now?")
+			self.session.openWithCallback(self.chooseRestart, MessageBox, _("For remove features uninstalled, you have to restart Enigma2.\nRestart it now?"))
 		else:
 			self.close()
 

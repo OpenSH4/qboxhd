@@ -6,4 +6,4 @@ install_PYTHON = \
 	ConditionalShowHide.py ServicePosition.py ValueRange.py RdsInfo.py Streaming.py \
 	StaticMultiList.py ServiceTime.py MovieInfo.py MenuEntryCompare.py StringListSelection.py \
 	ValueBitTest.py TunerInfo.py ConfigEntryTest.py TemplatedMultiContent.py ProgressToText.py \
-	Combine.py ExtendedServiceInfo.py HDlogo.py MaxCryptoInfo.pyc MaxServiceInfo.pyc
+	Combine.py ExtendedServiceInfo.py HDlogo.py

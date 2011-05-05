@@ -55,7 +55,11 @@ class ePicLoad: public eMainloop, public eThread, public Object, public iObject
 
 	Cfilepara *m_filepara;
 	bool threadrunning;
-	
+
+#ifdef QBOXHD
+	unsigned char swap_on;
+#endif
+
 	struct PConf
 	{
 		int max_x;

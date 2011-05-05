@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-30 11:00+0100\n"
+"POT-Creation-Date: 2011-04-04 15:05+0200\n"
 "PO-Revision-Date: 2010-10-11 09:18+0200\n"
 "Last-Translator: jj <jj@jj.jj>\n"
 "Language-Team: none\n"
@@ -203,12 +203,12 @@ msgstr "#ffffff"
 msgid "#ffffffff"
 msgstr "#ffffffff"
 
-#, python-format
-msgid "% used"
-msgstr "% on käytetty"
-
 msgid "%H:%M"
 msgstr "%t:%m"
+
+#, python-format
+msgid "%d iDevs connected"
+msgstr ""
 
 #, python-format
 msgid "%d jobs are running in the background!"
@@ -732,20 +732,6 @@ msgstr "Albanian"
 msgid "Album"
 msgstr "Albumi"
 
-#, python-format
-msgid "Album: %s"
-msgstr "Albumi: %s"
-
-msgid "Album: unknown"
-msgstr "Albumi: tuntematon"
-
-msgid "Albums"
-msgstr "Albumit"
-
-#, python-format
-msgid "Albums: %d"
-msgstr "Albumit: %d"
-
 msgid "All"
 msgstr "Kaikki"
 
@@ -838,20 +824,6 @@ msgstr "Armenian"
 
 msgid "Artist"
 msgstr "Esittäjä"
-
-#, python-format
-msgid "Artist: %s"
-msgstr "Artisti: %s"
-
-msgid "Artist: unknown"
-msgstr "Artisti: tuntematon"
-
-msgid "Artists"
-msgstr "Artistit"
-
-#, python-format
-msgid "Artists: %d"
-msgstr "Artistit: %d"
 
 msgid "Ascanding"
 msgstr "Ascanding"
@@ -955,6 +927,9 @@ msgstr "BER"
 msgid "BER:"
 msgstr "BER:"
 
+msgid "BS Info: unknown"
+msgstr ""
+
 msgid "Back"
 msgstr "Takaisin"
 
@@ -1005,6 +980,9 @@ msgstr "Varmuuskopiointi käynnissä ..."
 
 msgid "Backup running..."
 msgstr "Varmuuskopiointi käynnissä..."
+
+msgid "Backup successfully!"
+msgstr ""
 
 msgid "Backup system settings"
 msgstr "Varmuuskopioi asetukset"
@@ -1440,6 +1418,12 @@ msgstr "Corsican"
 
 msgid "Could not connect to QBoxHD .NFI Image Feed Server:"
 msgstr "NFI-ohjelmistopäivityksien palvelimelle ei saatu yhteyttä:"
+
+msgid ""
+"Could not establish a connection to the server.\n"
+"Please check if the wire is connected or if your internet connection is "
+"working properly."
+msgstr ""
 
 msgid "Could not load Medium! No disc inserted?"
 msgstr "Levyä ei voitu ladata! Levy puuttuu?"
@@ -2122,9 +2106,13 @@ msgstr ""
 "\n"
 "© 2006 - Stephan Reichholf"
 
+msgid "Enigma: unknown"
+msgstr ""
+
 msgid "Enter"
 msgstr "Enter"
 
+#. #-#-#-#-#  enigma2.pot (PACKAGE VERSION)  #-#-#-#-#
 #.   TRANSLATORS: Note that "Enter" in the two strings below should *not*
 #.       be interpreted as "Give speed as input". The intended meaning is
 #.       instead "Initial speed when starting winding", i.e. the speed at
@@ -2476,6 +2464,9 @@ msgstr "FEC"
 msgid "FP Info: %d"
 msgstr "FP Info: %d"
 
+msgid "FP Info: unknown"
+msgstr ""
+
 msgid "Factory reset"
 msgstr "Palauta tehdasasetukset"
 
@@ -2546,10 +2537,6 @@ msgstr "Verkko käynnistyi uudelleen"
 msgid "Finnish"
 msgstr "Suomi"
 
-#, python-format
-msgid "Firmware: %s"
-msgstr "Firmware: %s"
-
 msgid ""
 "First we need to download the latest boot environment for the USB flasher."
 msgstr ""
@@ -2578,6 +2565,26 @@ msgstr ""
 
 msgid "For WPA or WPA2 encryption you need to specify 8 to 63 ascii character."
 msgstr "WPA tai WPA2 salaukseen vaaditaan 8 - 63 ascii merkkiä."
+
+msgid ""
+"For remove features uninstalled, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to Reboot your QBoxHD.\n"
+"Reboot it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to turn OFF and turn ON your "
+"QBoxHD."
+msgstr ""
 
 msgid "Format"
 msgstr "Alusta"
@@ -2686,20 +2693,6 @@ msgstr "PCM-viive (ms)"
 msgid "Genre"
 msgstr "Genre"
 
-#, python-format
-msgid "Genre: %s"
-msgstr "Genre: %s"
-
-msgid "Genre: unknown"
-msgstr "Genre: tuntematon"
-
-msgid "Genres"
-msgstr "Genret"
-
-#, python-format
-msgid "Genres: %d"
-msgstr "Genret: %d"
-
 msgid "Georgian"
 msgstr "Georgian"
 
@@ -2711,14 +2704,6 @@ msgstr "Hae liittyvät videot"
 
 msgid "Get video responses"
 msgstr "Hae videon vastaukset"
-
-#, python-format
-msgid ""
-"Getting data from %s.\n"
-" Please wait ..."
-msgstr ""
-"Haetaan tietoa %s.\n"
-" Odota ..."
 
 msgid "Getting plugin information. Please wait..."
 msgstr "Haetaan tietoja lisäosista. Odota..."
@@ -2831,6 +2816,9 @@ msgstr "IP-osoite"
 
 msgid "IP:"
 msgstr "IP:"
+
+msgid "IP: unknown"
+msgstr ""
 
 msgid "ISO file is too large for this filesystem!"
 msgstr "ISO-tiedosto on liian suuri tälle tiedostojärjestelmälle!"
@@ -3037,10 +3025,6 @@ msgstr "Irish"
 msgid "Italian"
 msgstr "Italia"
 
-#, python-format
-msgid "Items: %d"
-msgstr "Esineet: %d"
-
 msgid "Japanese"
 msgstr "Japanese"
 
@@ -3062,6 +3046,9 @@ msgstr "Kashmiri"
 
 msgid "Kazakh"
 msgstr "Kazakh"
+
+msgid "Kernel: unknown"
+msgstr ""
 
 msgid "Keyboard Map"
 msgstr "Näppäinasettelu"
@@ -3353,10 +3340,6 @@ msgstr "Moodi: %s"
 msgid "Model: "
 msgstr "Malli: "
 
-#, python-format
-msgid "Model: %s\n"
-msgstr "Malli: %s\n"
-
 msgid "Modulation"
 msgstr "Modulaatio"
 
@@ -3628,15 +3611,14 @@ msgstr "Seuraava kappale"
 msgid "No"
 msgstr "Ei"
 
-#, python-format
-msgid "No %s."
-msgstr "Ei %s."
-
 msgid "No (supported) DVDROM found!"
 msgstr "DVDROM-asemaa ei löytynyt!"
 
 msgid "No 50 Hz, sorry. :("
 msgstr "Ei 50Hz tilaa. :("
+
+msgid "No AddOns installed."
+msgstr ""
 
 msgid "No Connection"
 msgstr "Ei yhteyttä"
@@ -3687,6 +3669,9 @@ msgstr ""
 "Lähettimessä ei dataa!\n"
 "(Aikaraja ylittyi luettaessa PAT)"
 
+msgid "No data received from Server."
+msgstr ""
+
 msgid "No description available."
 msgstr "Kuvausta ei ole saatavilla."
 
@@ -3703,6 +3688,9 @@ msgstr ""
 
 msgid "No free tuner!"
 msgstr "Kaikki virittimet ovat jo käytössä!"
+
+msgid "No iDevs connected"
+msgstr ""
 
 msgid "No more files in this directory"
 msgstr "Ei enempää tiedostoja hakemistossa"
@@ -4074,16 +4062,6 @@ msgstr "Toista valitut"
 
 msgid "Play selected file"
 msgstr "Toista valittu tiedosto"
-
-msgid "PlayLists"
-msgstr "Soittolistat"
-
-msgid "PlayLists Video"
-msgstr "Soittolistat Video"
-
-#, python-format
-msgid "PlayLists: %d"
-msgstr "Soittolistat: %d"
 
 msgid "Playing video, be patient ..."
 msgstr "Toistetaan video, odota ..."
@@ -4469,6 +4447,9 @@ msgstr "Radio"
 msgid "Ram Disk"
 msgstr "RAM-levy"
 
+msgid "Ramfs: unknown"
+msgstr ""
+
 msgid "Random"
 msgstr "Satunnainen"
 
@@ -4695,6 +4676,12 @@ msgstr ""
 "Käynnistä verkkokortti ja yhteys uudelleen.\n"
 "\n"
 
+msgid "Restarting Enigma ..."
+msgstr ""
+
+msgid "Restarting Network ..."
+msgstr ""
+
 msgid "Restore"
 msgstr "Palauta "
 
@@ -4712,6 +4699,9 @@ msgstr "Palauttaminen käynnissä ..."
 
 msgid "Restore running..."
 msgstr "Palauttaminen käynnissä..."
+
+msgid "Restore successfully!"
+msgstr ""
 
 msgid "Restore system settings"
 msgstr "Palauta asetukset"
@@ -5072,11 +5062,17 @@ msgstr "Serbo-Croatian"
 msgid "Server Address"
 msgstr "Palvelimen IP-osoite"
 
+msgid "Server Error."
+msgstr ""
+
 msgid "Server IP"
 msgstr "Palvelin IP"
 
 msgid "Server Profile Name"
 msgstr "Palvelimen profilili nimi"
+
+msgid "Server not Ready."
+msgstr ""
 
 msgid "Server share"
 msgstr "Palvelimen jako"
@@ -5301,10 +5297,6 @@ msgstr "Kuva-kuvalta (GOP)"
 msgid "Siswati"
 msgstr "Siswati"
 
-#, python-format
-msgid "Size: %d MB\n"
-msgstr "Koko: %d MB\n"
-
 msgid "Skin Appearance"
 msgstr "Skinin valinta"
 
@@ -5431,10 +5423,6 @@ msgstr "Äänikantoaallon taajuus"
 
 msgid "South"
 msgstr "Etelä"
-
-#, python-format
-msgid "Space: %d.%02d GB Free: %d.%02d GB\n"
-msgstr "Koko: %d.%02d GB Vapaa: %d.%02d GB\n"
 
 msgid "Spanish"
 msgstr "Espanja"
@@ -5626,6 +5614,12 @@ msgstr "Tamil"
 
 msgid "Tatar"
 msgstr "Tatar"
+
+msgid "Technical Information about QBox Mini"
+msgstr ""
+
+msgid "Technical Information about QBoxHD"
+msgstr ""
 
 msgid "Tegulu"
 msgstr "Tegulu"
@@ -6039,13 +6033,6 @@ msgstr "Ominaisuudet"
 msgid "Title: "
 msgstr "Otsikko: "
 
-msgid "Titles"
-msgstr "Otsikot"
-
-#, python-format
-msgid "Titles: %d"
-msgstr "Otsikot: %d"
-
 msgid "Titleset mode"
 msgstr "Tila"
 
@@ -6312,6 +6299,7 @@ msgstr "Käytä virran mittausta"
 msgid "Use a gateway"
 msgstr "Käytä yhdyskäytävää"
 
+#. #-#-#-#-#  enigma2.pot (PACKAGE VERSION)  #-#-#-#-#
 #.   TRANSLATORS: The effect of "Non-smooth winding" is that rather
 #.       than using ordinary "continuous" or "smooth" winding, a fast
 #.       sequence of stills is shown when winding at high speeds. This
@@ -6455,13 +6443,6 @@ msgstr ""
 
 msgid "Video mode selection."
 msgstr "Video-tilan valinta."
-
-msgid "Videos"
-msgstr "Videot"
-
-#, python-format
-msgid "Videos: %d"
-msgstr "Videot: %d"
 
 msgid "Vietnamese"
 msgstr "Vietnamese"
@@ -7007,6 +6988,12 @@ msgstr "Uusi Custom-painike on %s."
 
 msgid "Your new configuration have been saved successfully."
 msgstr "Asetukset tallennettu onnistuneesti."
+
+#, python-format
+msgid ""
+"Your new selected language is %s.\n"
+"Please restart GUI to make it effective."
+msgstr ""
 
 msgid "Zap back to service before positioner setup?"
 msgstr ""
@@ -8026,11 +8013,60 @@ msgstr "kanavanvaihto"
 msgid "zapped"
 msgstr "vaihdettu"
 
+#~ msgid "% used"
+#~ msgstr "% on käytetty"
+
+#~ msgid "Album: %s"
+#~ msgstr "Albumi: %s"
+
+#~ msgid "Album: unknown"
+#~ msgstr "Albumi: tuntematon"
+
+#~ msgid "Albums"
+#~ msgstr "Albumit"
+
+#~ msgid "Albums: %d"
+#~ msgstr "Albumit: %d"
+
+#~ msgid "Artist: %s"
+#~ msgstr "Artisti: %s"
+
+#~ msgid "Artist: unknown"
+#~ msgstr "Artisti: tuntematon"
+
+#~ msgid "Artists"
+#~ msgstr "Artistit"
+
+#~ msgid "Artists: %d"
+#~ msgstr "Artistit: %d"
+
 #~ msgid "DOLBY"
 #~ msgstr "DOLBY"
 
 #~ msgid "Details"
 #~ msgstr "Tiedot"
+
+#~ msgid "Firmware: %s"
+#~ msgstr "Firmware: %s"
+
+#~ msgid "Genre: %s"
+#~ msgstr "Genre: %s"
+
+#~ msgid "Genre: unknown"
+#~ msgstr "Genre: tuntematon"
+
+#~ msgid "Genres"
+#~ msgstr "Genret"
+
+#~ msgid "Genres: %d"
+#~ msgstr "Genret: %d"
+
+#~ msgid ""
+#~ "Getting data from %s.\n"
+#~ " Please wait ..."
+#~ msgstr ""
+#~ "Haetaan tietoa %s.\n"
+#~ " Odota ..."
 
 #~ msgid "HDMI audio"
 #~ msgstr "HDMI ääni"
@@ -8042,14 +8078,50 @@ msgstr "vaihdettu"
 #~ "Asenna/\n"
 #~ "Poista"
 
+#~ msgid "Items: %d"
+#~ msgstr "Esineet: %d"
+
 #~ msgid "Lets you view/edit files in your QBoxHD"
 #~ msgstr "Katsele/muokkaa QBoxHDin tiedostoja"
 
 #~ msgid "Message..."
 #~ msgstr "Viesti..."
 
+#~ msgid "Model: %s\n"
+#~ msgstr "Malli: %s\n"
+
+#~ msgid "No %s."
+#~ msgstr "Ei %s."
+
+#~ msgid "PlayLists"
+#~ msgstr "Soittolistat"
+
+#~ msgid "PlayLists Video"
+#~ msgstr "Soittolistat Video"
+
+#~ msgid "PlayLists: %d"
+#~ msgstr "Soittolistat: %d"
+
 #~ msgid "STEREO"
 #~ msgstr "STEREO"
+
+#~ msgid "Size: %d MB\n"
+#~ msgstr "Koko: %d MB\n"
+
+#~ msgid "Space: %d.%02d GB Free: %d.%02d GB\n"
+#~ msgstr "Koko: %d.%02d GB Vapaa: %d.%02d GB\n"
+
+#~ msgid "Titles"
+#~ msgstr "Otsikot"
+
+#~ msgid "Titles: %d"
+#~ msgstr "Otsikot: %d"
+
+#~ msgid "Videos"
+#~ msgstr "Videot"
+
+#~ msgid "Videos: %d"
+#~ msgstr "Videot: %d"
 
 #~ msgid "View"
 #~ msgstr "Näytä"

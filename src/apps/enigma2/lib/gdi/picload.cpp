@@ -558,6 +558,10 @@ ePicLoad::ePicLoad()
 	m_conf.resizetype = 1;
 	memset(m_conf.background,0x00,sizeof(m_conf.background));
 	m_conf.thumbnailsize = 180;
+#ifdef QBOXHD
+	swap_on=0;
+#endif
+
 }
 
 void ePicLoad::waitFinished()
@@ -590,7 +594,8 @@ void ePicLoad::thread()
 void ePicLoad::decodePic()
 {
 	eDebug("[Picload] decode picture... %s",m_filepara->file);
-	
+
+#ifndef QBOXHD	
 	switch(m_filepara->id)
 	{
 		case F_PNG:	m_filepara->pic_buffer = png_load(m_filepara->file, &m_filepara->ox, &m_filepara->oy);	break;
@@ -603,6 +608,50 @@ void ePicLoad::decodePic()
 	{
 		resizePic();
 	}
+#else
+	FILE * fd_tmp=0;
+	int size_tmp=0;
+	fd_tmp=fopen(m_filepara->file,"rb");
+	fseek(fd_tmp, 0, SEEK_END);
+	size_tmp=ftell(fd_tmp);
+	fclose(fd_tmp);
+
+	if(swap_on==0)
+	{
+		char *str_tmp=(char *)malloc(64);
+		int len_str=0;
+		memset(str_tmp,0,64);
+		fd_tmp=fopen("/proc/swaps","rb");	
+		fgets(str_tmp,64,fd_tmp);
+		memset(str_tmp,0,64);
+		fgets(str_tmp,64,fd_tmp);
+		fclose(fd_tmp);
+		len_str=strlen(str_tmp);
+		//eDebug("\n\n--->str_tmp:%s\n--->len_str:%d\n\n\n",str_tmp,len_str);	
+		if(len_str!=0) swap_on=1;
+		free(str_tmp);
+	}
+
+	//if(x*y>8*1024*1024)
+	if( (swap_on==0) && (size_tmp>1572864) )//1.5MB
+		decodeThumb();
+	else
+	{
+		switch(m_filepara->id)
+		{
+			case F_PNG:	m_filepara->pic_buffer = png_load(m_filepara->file, &m_filepara->ox, &m_filepara->oy);	break;
+			case F_JPEG:	m_filepara->pic_buffer = jpeg_load(m_filepara->file, &m_filepara->ox, &m_filepara->oy);	break;
+			case F_BMP:	m_filepara->pic_buffer = bmp_load(m_filepara->file, &m_filepara->ox, &m_filepara->oy);	break;
+			case F_GIF:	m_filepara->pic_buffer = gif_load(m_filepara->file, &m_filepara->ox, &m_filepara->oy);	break;
+		}
+	
+		if(m_filepara->pic_buffer != NULL)
+		{
+			resizePic();
+		}
+	}
+
+#endif
 }
 
 void ePicLoad::decodeThumb()

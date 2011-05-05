@@ -155,10 +155,8 @@ class BackupSetup(Screen, ConfigListScreen):
 	skin = """
 		<screen position="center,center" size="560,400" title="Backup">
 			<widget name="config" position="5,5" size="550,360" scrollbarMode="showOnDemand" zPosition="1"/>
-
 			<widget name="key_red" position="280,360" size="140,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18"/>
 			<widget name="key_green" position="420,360" size="140,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18"/>
-
 			<ePixmap name="red" pixmap="skin_default/buttons/red.png" position="280,360" size="140,40" zPosition="4" transparent="1" alphatest="on"/>
 			<ePixmap name="green" pixmap="skin_default/buttons/green.png" position="420,360" size="140,40" zPosition="4" transparent="1" alphatest="on"/>
 		</screen>"""
@@ -270,7 +268,7 @@ class BackupSetup(Screen, ConfigListScreen):
 		if QBOXHD:
 			cmds="sync"                                                            
 			self.container.execute(cmds)                                           
- 		self.backupMsg["text"].setText("Backup successfully!")
+ 		self.backupMsg["text"].setText(_("Backup successfully!"))
 		self.container.appClosed.remove(self.BackupFinish)
 
 
@@ -321,10 +319,8 @@ class RestoreMenu(Screen, ConfigListScreen):
 	skin = """
 		<screen position="center,center" size="560,400" title="Restore">
 			<widget name="config" position="5,5" size="550,360" scrollbarMode="showOnDemand" zPosition="1"/>
-
 			<widget name="key_red" position="280,360" size="140,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18"/>
 			<widget name="key_green" position="420,360" size="140,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18"/>
-
 			<ePixmap name="red" pixmap="skin_default/buttons/red.png" position="280,360" size="140,40" zPosition="4" transparent="1" alphatest="on"/>
 			<ePixmap name="green" pixmap="skin_default/buttons/green.png" position="420,360" size="140,40" zPosition="4" transparent="1" alphatest="on"/>
 		</screen>"""
@@ -476,7 +472,7 @@ class RestoreMenu(Screen, ConfigListScreen):
 			cmds="sync"
 			self.container.execute(cmds)
 		
-		self.restoreMsg["text"].setText("Restore successfully!")
+		self.restoreMsg["text"].setText(_("Restore successfully!"))
 		self.container.appClosed.remove(self.RestoreFinish)
 		self.disable_ok = False
 		sleep(2)
@@ -494,26 +490,26 @@ class RestoreMenu(Screen, ConfigListScreen):
 
 		if (self.networkbackup.value):
 			if self.steprestartcounter == 0:
-				self.restoreMsg["text"].setText("Restarting Network ...")
+				self.restoreMsg["text"].setText(_("Restarting Network ..."))
 
 			elif self.steprestartcounter == 1:
 				iNetwork.deactivateNetworkConfig()
 				iNetwork.activateNetworkConfig()
 
 			elif self.steprestartcounter == 2:
-				self.restoreMsg["text"].setText("Restarting Enigma ...")
+				self.restoreMsg["text"].setText(_("Restarting Enigma ..."))
 
 			elif self.steprestartcounter == 3:
-				self.session.open(Console, title = "Restarting Enigma ...", cmdlist = ["killall -9 enigma2"])
+				self.session.open(Console, title = _("Restarting Enigma ..."), cmdlist = ["killall -9 enigma2"])
 				return
 
 		else:
 
 			if self.steprestartcounter == 0:
-				self.restoreMsg["text"].setText("Restarting Enigma ...")
+				self.restoreMsg["text"].setText(_("Restarting Enigma ..."))
 
 			elif self.steprestartcounter == 1:
-				self.session.open(Console, title = "Restarting Enigma ...", cmdlist = ["killall -9 enigma2"])
+				self.session.open(Console, title = _("Restarting Enigma ..."), cmdlist = ["killall -9 enigma2"])
 				return
 
 		print "[STEP] %s" % str(self.steprestartcounter)

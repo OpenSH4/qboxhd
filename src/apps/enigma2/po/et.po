@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-18 16:11+0100\n"
+"POT-Creation-Date: 2011-04-04 15:05+0200\n"
 "PO-Revision-Date: 2011-01-18 16:08+0100\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid ""
@@ -204,6 +204,10 @@ msgstr "#ffffffff"
 
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#, python-format
+msgid "%d iDevs connected"
+msgstr ""
 
 #, python-format
 msgid "%d jobs are running in the background!"
@@ -918,6 +922,9 @@ msgstr "BER"
 msgid "BER:"
 msgstr "BER:"
 
+msgid "BS Info: unknown"
+msgstr ""
+
 msgid "Back"
 msgstr "Tagasi"
 
@@ -968,6 +975,9 @@ msgstr "Varundus käib ..."
 
 msgid "Backup running..."
 msgstr "Varundus käib ..."
+
+msgid "Backup successfully!"
+msgstr ""
 
 msgid "Backup system settings"
 msgstr "Loo varukoopia"
@@ -1399,6 +1409,12 @@ msgstr "Korsika"
 
 msgid "Could not connect to QBoxHD .NFI Image Feed Server:"
 msgstr "Ei saa vastuvõtjaga ühendust .NFI tarkvara Server:"
+
+msgid ""
+"Could not establish a connection to the server.\n"
+"Please check if the wire is connected or if your internet connection is "
+"working properly."
+msgstr ""
 
 msgid "Could not load Medium! No disc inserted?"
 msgstr "Ei saa plaati avada! Pole plaati sisestatud?"
@@ -2065,6 +2081,9 @@ msgstr ""
 "\n"
 "© 2006 - Stephan Reichholf"
 
+msgid "Enigma: unknown"
+msgstr ""
+
 msgid "Enter"
 msgstr "Sisesta"
 
@@ -2418,6 +2437,9 @@ msgstr "FEC"
 msgid "FP Info: %d"
 msgstr "FP Info: %d"
 
+msgid "FP Info: unknown"
+msgstr ""
+
 msgid "Factory reset"
 msgstr "Tehaseseadete taastamine"
 
@@ -2516,6 +2538,26 @@ msgstr ""
 
 msgid "For WPA or WPA2 encryption you need to specify 8 to 63 ascii character."
 msgstr "WPA või WPA2 krüpteeringuks peate määrama 8 kuni 63 ASCII sümbolit."
+
+msgid ""
+"For remove features uninstalled, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to Reboot your QBoxHD.\n"
+"Reboot it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to restart Enigma2.\n"
+"Restart it now?"
+msgstr ""
+
+msgid ""
+"For view new features installed, you have to turn OFF and turn ON your "
+"QBoxHD."
+msgstr ""
 
 msgid "Format"
 msgstr "Vorminda"
@@ -2745,6 +2787,9 @@ msgstr "IP aadress"
 msgid "IP:"
 msgstr "IP:"
 
+msgid "IP: unknown"
+msgstr ""
+
 msgid "ISO file is too large for this filesystem!"
 msgstr "ISO fail on liiga suur failisüsteemile!"
 
@@ -2966,6 +3011,9 @@ msgstr "Kashmiri"
 
 msgid "Kazakh"
 msgstr "Kasahstani"
+
+msgid "Kernel: unknown"
+msgstr ""
 
 msgid "Keyboard Map"
 msgstr "Klaviatuur"
@@ -3532,6 +3580,9 @@ msgstr "Leitud mitte toetatud DVDROM!"
 msgid "No 50 Hz, sorry. :("
 msgstr "Puudub 50 Hz, vabandust. :-("
 
+msgid "No AddOns installed."
+msgstr ""
+
 msgid "No Connection"
 msgstr "Pole ühendust"
 
@@ -3581,6 +3632,9 @@ msgstr ""
 "Pole andmeid transponderil!\n"
 "(Timeout PAT lugemisel)"
 
+msgid "No data received from Server."
+msgstr ""
+
 msgid "No description available."
 msgstr "Kirjeldust ei ole."
 
@@ -3595,6 +3649,9 @@ msgstr "Saatel pole teada lõppaeg. Salvestatakse pidevalt."
 
 msgid "No free tuner!"
 msgstr "Pole vaba tuunerit!"
+
+msgid "No iDevs connected"
+msgstr ""
 
 msgid "No more files in this directory"
 msgstr "Selles kaustas pole rohkem faile"
@@ -4341,6 +4398,9 @@ msgstr "Raadio"
 msgid "Ram Disk"
 msgstr "RAM-ketas"
 
+msgid "Ramfs: unknown"
+msgstr ""
+
 msgid "Random"
 msgstr "Juhuslik"
 
@@ -4565,6 +4625,12 @@ msgstr "Taaskäivituse test"
 msgid "Restart your network connection and interfaces.\n"
 msgstr "Taaskäivita võrguühendus ja adapter.\n"
 
+msgid "Restarting Enigma ..."
+msgstr ""
+
+msgid "Restarting Network ..."
+msgstr ""
+
 msgid "Restore"
 msgstr "Taasta"
 
@@ -4582,6 +4648,9 @@ msgstr "Taastamine..."
 
 msgid "Restore running..."
 msgstr "Taastamine..."
+
+msgid "Restore successfully!"
+msgstr ""
 
 msgid "Restore system settings"
 msgstr "Taasta seaded"
@@ -4943,11 +5012,17 @@ msgstr "Serbohorvaadi"
 msgid "Server Address"
 msgstr "Serveri aadress"
 
+msgid "Server Error."
+msgstr ""
+
 msgid "Server IP"
 msgstr "Serveri IP"
 
 msgid "Server Profile Name"
 msgstr "Serveri profiili nimi"
+
+msgid "Server not Ready."
+msgstr ""
 
 msgid "Server share"
 msgstr "Serveri võrgukoht"
@@ -5486,6 +5561,12 @@ msgstr "Tamil"
 
 msgid "Tatar"
 msgstr "Tatari"
+
+msgid "Technical Information about QBox Mini"
+msgstr ""
+
+msgid "Technical Information about QBoxHD"
+msgstr ""
 
 msgid "Tegulu"
 msgstr "Tegulu"
@@ -6796,6 +6877,12 @@ msgstr "Su uus tellitud nupp on %s."
 
 msgid "Your new configuration have been saved successfully."
 msgstr "Sinu uus seadistus on edukalt salvestatud."
+
+#, python-format
+msgid ""
+"Your new selected language is %s.\n"
+"Please restart GUI to make it effective."
+msgstr ""
 
 msgid "Zap back to service before positioner setup?"
 msgstr "Taastan varem häälestatud kanalile?"

@@ -715,6 +715,8 @@ void eDVBCIInterfaces::recheckPMTHandlers()
         //eDebugCI("****************************************************************** BlackBoxSwitch Start");
         BlackBoxSwitch(&channels);
         //eDebugCI("****************************************************************** BlackBoxSwitch End");
+	#else
+		start_check_TSM();
     #endif //QBOXHD_MINI
 #endif //QBOXHD
 }

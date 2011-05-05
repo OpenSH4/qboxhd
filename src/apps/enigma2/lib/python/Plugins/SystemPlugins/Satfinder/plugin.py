@@ -226,7 +226,7 @@ class Satfinder(ScanSetup):
 
 class SatNimSelection(Screen):
 	skin = """
-		<screen position="140,165" size="400,130" title="select Slot">
+		<screen position="center,center" size="400,130" title="select Slot">
 			<widget name="nimlist" position="20,10" size="360,100" />
 		</screen>"""
 		

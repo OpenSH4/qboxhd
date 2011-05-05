@@ -65,7 +65,7 @@ class LanguageSelection(Screen):
 		self.run()
 		if QBOXHD:
 			if not self.wizard_active:
-				self.session.openWithCallback(self.saveCB, MessageBox, ("Your new selected language is %s.\nPlease restart GUI to make it effective.") % str(_cached(config.osd.language.value)), type = MessageBox.TYPE_INFO)
+				self.session.openWithCallback(self.saveCB,MessageBox,_("Your new selected language is %s.\nPlease restart GUI to make it effective.") % str(_cached(config.osd.language.value)), type = MessageBox.TYPE_INFO)
 			else:
 				self.close()
 		else:
