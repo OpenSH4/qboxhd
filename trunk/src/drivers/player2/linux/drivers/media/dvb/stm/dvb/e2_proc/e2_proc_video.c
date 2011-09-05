@@ -259,19 +259,19 @@ int proc_video_policy_get(void) {
 				//TODO: set the correct modes
 				if (policy_e2 == VIDEO_POL_LETTER_BOX) 
 				{
-							policy_ply = VIDEO_LETTER_BOX;
+					policy_ply = VIDEO_LETTER_BOX;
 					aspect_ply = VIDEO_FORMAT_4_3;
 	
 				} 
 				else if (policy_e2 == VIDEO_POL_PAN_SCAN) 
 				{
-							policy_ply = VIDEO_PAN_SCAN;
+					policy_ply = VIDEO_PAN_SCAN;
 					aspect_ply = VIDEO_FORMAT_4_3;
 	
 				} 
 				else if (policy_e2 == VIDEO_POL_BEST_FIT) 
 				{
-							policy_ply = VIDEO_LETTER_BOX;
+					policy_ply = VIDEO_LETTER_BOX;
 					aspect_ply = VIDEO_FORMAT_16_9;
 				}
 			}
@@ -357,32 +357,33 @@ int proc_video_aspect_write(struct file *file, const char __user *buf,
 		myString[count] = '\0';
 		//printk("%s\n", myString);
 
-		aspect_e2 = VIDEO_FORMAT_16_9;
 		
-		printk("%s\n", myString);
 		
 		if (strncmp("4:3", myString, count - 1) == 0)
 		{
+			printk("%s - set 4:3\n", __FUNCTION__);
 			aspect_e2 = VIDEO_FORMAT_4_3;
 		}
-		
-		if (strncmp("16:9", myString, count - 1) == 0)
+		else if (strncmp("16:9", myString, count - 1) == 0)
 		{
+			printk("%s - set 16:9\n", __FUNCTION__);
 			aspect_e2 = VIDEO_FORMAT_16_9;
 		}
-
-		/*if (strncmp("221:1", myString, count - 1) == 0)
-		{
-			aspect_e2 = VIDEO_FORMAT_221_1;
-		}*/
-		
 		//we dont support any, whatever this is
-		if (strncmp("any", myString, count - 1) == 0)
+		else if (strncmp("any", myString, count - 1) == 0)
 		{
+			printk("%s - set 4:3 (any)\n", __FUNCTION__);
 			aspect_e2 = VIDEO_FORMAT_4_3;
 		}
-
-		//printk("Video Format = %d\n", format);
+		else
+		{
+			printk("%s - UNKNOWN. Set 16:9 default\n", __FUNCTION__);
+			aspect_e2 = VIDEO_FORMAT_16_9;
+		}
+		
+#if defined CONFIG_SH_QBOXHD_1_0 || defined CONFIG_SH_QBOXHD_MINI_1_0		
+		aspect_ply = aspect_e2;
+#endif
 
 		/* always return count to avoid endless loop */
 		ret = count;
@@ -466,28 +467,28 @@ int proc_video_policy_write(struct file *file, const char __user *buf,
 
 		if (ProcDeviceContext->VideoStream != NULL)
 		{
-		   policy_ply = proc_video_policy_get();
+			policy_ply = proc_video_policy_get();
 #if defined CONFIG_SH_QBOXHD_1_0 || defined CONFIG_SH_QBOXHD_MINI_1_0
-		   aspect_ply = aspect_e2;
+			aspect_ply = aspect_e2; 
 			if (ProcDeviceContext->VideoSize.aspect_ratio ==  VIDEO_FORMAT_4_3)
 			{
 #else
-		   aspect_ply = proc_video_aspect_get();
+			aspect_ply = proc_video_aspect_get();
 #endif
-		    //printk("Calling StreamSetOption ->PLAY_OPTION_VIDEO_ASPECT_RATIO\n");
-		   result  = StreamSetOption (ProcDeviceContext->VideoStream, PLAY_OPTION_VIDEO_ASPECT_RATIO, aspect_ply);
-			if (result != 0)
-				printk("Error setting stream option %d\n", result);
-			else
-	    		ProcDeviceContext->VideoState.video_format = (video_format_t)aspect_ply;
+				//printk("Calling StreamSetOption ->PLAY_OPTION_VIDEO_ASPECT_RATIO\n");
+				result  = StreamSetOption (ProcDeviceContext->VideoStream, PLAY_OPTION_VIDEO_ASPECT_RATIO, aspect_ply);
+				if (result != 0)
+					printk("Error setting stream option %d\n", result);
+				else
+					ProcDeviceContext->VideoState.video_format = (video_format_t)aspect_ply;
 
-			result  = StreamSetOption (ProcDeviceContext->VideoStream, PLAY_OPTION_VIDEO_DISPLAY_FORMAT, policy_ply);
-			if (result != 0)
-				printk("Failed to set option %d\n", result);
-			else
-	    		ProcDeviceContext->VideoState.display_format = (video_displayformat_t)policy_ply;
+				result  = StreamSetOption (ProcDeviceContext->VideoStream, PLAY_OPTION_VIDEO_DISPLAY_FORMAT, policy_ply);
+				if (result != 0)
+					printk("Failed to set option %d\n", result);
+				else
+					ProcDeviceContext->VideoState.display_format = (video_displayformat_t)policy_ply;
 #if defined CONFIG_SH_QBOXHD_1_0 || defined CONFIG_SH_QBOXHD_MINI_1_0
-		   }
+			}
 #endif
 		} else
 		   printk("Can't set policy, VideoStream NULL\n");
@@ -538,9 +539,9 @@ int proc_video_policy2_get(void) {
 			policy2_ply = VIDEO_PAN_SCAN;
 		else if (policy2_e2 == VIDEO_POL_BEST_FIT) 
 			policy2_ply = VIDEO_FULL_SCREEN;
-
-	   //SCART
-	   avs_command_kernel(SAAIOSWSS, SAA_WSS_169F);
+		
+		//SCART
+		avs_command_kernel(SAAIOSWSS, SAA_WSS_169F);
 	}
 /* Dagobert: You cannot use this semaphore here because this will be called from
  * VideoIoctl which holds this semaphore too. This means deadlock.
@@ -590,13 +591,14 @@ int proc_video_policy2_write(struct file *file, const char __user *buf,
 		{
 		   policy2_ply = proc_video_policy2_get();
 
+		    aspect_ply = aspect_e2; 
 			if (ProcDeviceContext->VideoSize.aspect_ratio !=  VIDEO_FORMAT_4_3) {
 
-				result  = StreamSetOption (ProcDeviceContext->VideoStream, PLAY_OPTION_VIDEO_ASPECT_RATIO, aspect_e2);
+				result  = StreamSetOption (ProcDeviceContext->VideoStream, PLAY_OPTION_VIDEO_ASPECT_RATIO, aspect_ply);
 				if (result != 0)
 					printk("Error setting stream option %d\n", result);
 				else
-					ProcDeviceContext->VideoState.video_format = (video_format_t)aspect_e2;
+					ProcDeviceContext->VideoState.video_format = (video_format_t)aspect_ply;
 	
 				result  = StreamSetOption (ProcDeviceContext->VideoStream, PLAY_OPTION_VIDEO_DISPLAY_FORMAT, policy2_ply);
 				if (result != 0)

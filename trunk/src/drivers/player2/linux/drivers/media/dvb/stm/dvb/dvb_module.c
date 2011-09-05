@@ -102,7 +102,7 @@ dvb_debug = 0;
 module_param(dvb_debug, int, 0644);
 MODULE_PARM_DESC(dvb_debug, "Control for DVB_DEBUG\n");
 
-#define STMDVB_VERSION       "0.0.8"MOD
+#define STMDVB_VERSION       "0.0.9"MOD
 MODULE_VERSION(STMDVB_VERSION);
 
 

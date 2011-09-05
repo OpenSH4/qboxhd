@@ -45,10 +45,10 @@ extern struct DeviceContext_s* ProcDeviceContext;
 #define dprintk(level, x...) do { if (stdemux_debug && (level <= stdemux_debug)) printk(TAGDEBUG x); } while (0)
 #else
 #define dprintk(x...)
-#endif DVB_DEMUX_DEBUG
+#endif /* DVB_DEMUX_DEBUG */
 
 
-#endif
+#endif /* defined CONFIG_SH_QBOXHD_1_0 || defined CONFIG_SH_QBOXHD_MINI_1_0 */
 
 /*{{{  prototypes*/
 static int VideoOpen                    (struct inode           *Inode,
@@ -179,13 +179,13 @@ struct dvb_device* VideoInit (struct DeviceContext_s* Context)
     Context->VideoState.play_state              = VIDEO_STOPPED;
     Context->VideoState.stream_source           = VIDEO_SOURCE_DEMUX;
 #ifdef __TDT__
- /* Set 16:9 as standard */
+    /* Set 16:9 as standard */
     Context->VideoState.video_format            = VIDEO_FORMAT_16_9;
     Context->VideoState.display_format          = VIDEO_LETTER_BOX;
 #else
     Context->VideoState.video_format            = VIDEO_FORMAT_4_3;
     Context->VideoState.display_format          = VIDEO_CENTER_CUT_OUT;
-#endif
+#endif /*  __TDT__ */
 
     Context->VideoSize.w                        = 0;
     Context->VideoSize.h                        = 0;
@@ -332,7 +332,7 @@ int SwitchDVBCurrDecoder (struct DeviceContext_s*        Context,
 		Context->VideoState.video_format = (video_format_t) proc_video_aspect_get();
 
 		VideoIoctlSetDisplayFormat (Context, (unsigned int)Context->VideoState.display_format);
-		VideoIoctlSetFormat        (Context, Context->VideoState.video_format);
+		VideoIoctlSetFormat        (Context, (unsigned int)Context->VideoState.video_format);
 	}
 
 	return Result;
@@ -507,7 +507,7 @@ int VideoIoctlPlay (struct DeviceContext_s* Context)
             if (Result == 0)
                 Result  = VideoIoctlSetDisplayFormat (Context, (unsigned int)Context->VideoState.display_format);
             if (Result == 0)
-                Result  = VideoIoctlSetFormat        (Context, Context->VideoState.video_format);
+                Result  = VideoIoctlSetFormat        (Context, (unsigned int)Context->VideoState.video_format);
             if (Result == 0)
                 StreamRegisterEventSignalCallback (Context->VideoStream, Context, (stream_event_signal_callback)VideoSetEvent);
             if (Result == 0)
@@ -1712,6 +1712,9 @@ static void VideoSetEvent (struct DeviceContext_s* Context,
     unsigned int                Next;
     struct video_event*         VideoEvent;
     unsigned int                EventReceived   = false;
+    int		result;
+    video_displayformat_t display_format;
+    video_format_t video_format;
 
     /*DVB_DEBUG("\n");*/
 
@@ -1745,17 +1748,17 @@ static void VideoSetEvent (struct DeviceContext_s* Context,
                 the 16/9 icon or not */
 
 #if defined CONFIG_SH_QBOXHD_1_0 || defined CONFIG_SH_QBOXHD_MINI_1_0
-			if (Context->VideoSize.aspect_ratio ==  VIDEO_FORMAT_4_3)
-				Context->VideoState.display_format = (video_displayformat_t) proc_video_policy_get();
-			else
-				Context->VideoState.display_format = (video_displayformat_t) proc_video_policy2_get();
+	    if (Context->VideoSize.aspect_ratio ==  VIDEO_FORMAT_4_3)
+		    display_format = (video_displayformat_t) proc_video_policy_get();
+	    else
+		    display_format = (video_displayformat_t) proc_video_policy2_get();
 #else
-			Context->VideoState.display_format = (video_displayformat_t) proc_video_policy_get();
+	    Context->VideoState.display_format = (video_displayformat_t) proc_video_policy_get();
 #endif
-			Context->VideoState.video_format = (video_format_t) proc_video_aspect_get();
+	    video_format = (video_format_t) proc_video_aspect_get();
 
-			VideoIoctlSetDisplayFormat (Context, (unsigned int)Context->VideoState.display_format);
-			VideoIoctlSetFormat        (Context, Context->VideoState.video_format);
+	    result  = VideoIoctlSetDisplayFormat (Context, (unsigned int)display_format);
+	    result  = VideoIoctlSetFormat        (Context, (unsigned int)video_format);
 #endif
 
             Context->PixelAspectRatio.Numerator         = Event->u.size.pixel_aspect_ratio_numerator;
