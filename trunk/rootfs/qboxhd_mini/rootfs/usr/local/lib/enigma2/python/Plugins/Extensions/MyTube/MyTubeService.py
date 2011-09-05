@@ -11,7 +11,7 @@ from Components.config import KEY_DELETE, KEY_BACKSPACE, KEY_LEFT, KEY_RIGHT, KE
 
 from twisted.web import client
 from twisted.internet import reactor
-from urllib2 import Request, URLError, HTTPError, urlopen as urlopen2
+from urllib2 import Request, URLError, HTTPError, urlopen as urlopen2, quote as urllib2_quote, unquote as urllib2_unquote
 from socket import gaierror,error
 import re, os, sys, socket
 from urllib import quote, unquote_plus, unquote   #FancyURLopener,
@@ -230,12 +230,13 @@ class MyTubeFeedEntry():
 		token = unquote(mobj.group(1))
 	
 		if QBOXHD:
-			mobj = re.search(r'(?m)&fmt_url_map=([^&]+)(?:&|$)', infopage)
+			#mobj = re.search(r'(?m)&fmt_url_map=([^&]+)(?:&|$)', infopage)
+			mobj = re.search(r'(?m)&url_encoded_fmt_stream_map=([^&]+)(?:&|$)', infopage)
 			if mobj is None:
 				myurl = 'http://www.youtube.com/get_video?video_id=%s&t=%s&eurl=&el=&ps=&asv=' % (video_id, token)
 			else:
 				strurls = unquote(mobj.group(1))
-				listurls = strurls.split(",")
+    				listurls = strurls.split(",")
 				
 				# 5  = 240p ( SD not available )
 				# 34 = 360p ( SD not available )
@@ -247,16 +248,20 @@ class MyTubeFeedEntry():
 				urls=[]
 				
 				for url in listurls:
-					separator = url.index("|");
-					if separator == -1:
-						continue
-					      
-					format = url[:separator]
-					url_link = url[separator+1:]
+					listargs = url.split("&")
 					
-					urls.append((url_link, format))
-					
-					#print " >>> format: %s, url: %s" % ( format, url_link )
+					url_link = None
+					format = -1
+					for arg in listargs:
+						if arg[:3] == 'url':
+							url_link = unquote(arg[4:])
+						elif arg[:4] == 'itag':
+							format = arg[5:]
+				  
+					if (format != -1) and (url_link is not None):
+						urls.append((url_link, format))
+						#print " >>> format: %s, url: %s" % ( format, url_link )
+						
 					
 				if len( urls ) > 0 :
 					if not isHDAvailable:
